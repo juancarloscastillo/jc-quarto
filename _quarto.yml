@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "jc-castillo"
+  navbar:
+    left:
+      - docencia/docencia.qmd
+      - links.qmd
+      
+format:
+  html:
+#    theme: cosmo
+    theme: 
+     dark: darkly
+     light: flatly
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,28 @@
+<article>
+  <header>
+    <h1><%= page.title %></h1>
+    <% if (page.subtitle) { %>
+      <p><em><%= page.subtitle %></em></p>
+    <% } %>
+    <% if (page.date) { %>
+      <p><time><%= page.date %></time></p>
+    <% } %>
+  </header>
+
+  <% if (page.links && page.links.length > 0) { %>
+    <div class="post-buttons">
+      <% page.links.forEach(link => { %>
+        <a href="<%= link.href %>" target="<%= link.target || '_self' %>" class="btn btn-primary">
+          <% if (link.icon) { %>
+            <i class="fa fa-<%= link.icon %>"></i>
+          <% } %>
+          <%= link.text %>
+        </a>
+      <% }) %>
+    </div>
+  <% } %>
+
+  <main>
+    <%= page.content %>
+  </main>
+</article>

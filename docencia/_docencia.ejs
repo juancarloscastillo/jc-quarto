@@ -1,0 +1,24 @@
+<% if (listing.items && listing.items.length) { %>
+  <div class="listing-container">
+    <% listing.items.forEach(item => { %>
+      <div class="listing-item">
+        <h3><a href="<%= item.page_url %>"><%= item.title %></a></h3>
+        <% if (item.description) { %>
+          <p><%= item.description %></p>
+        <% } %>
+        <% if (item.links && item.links.length) { %>
+          <div class="listing-buttons">
+            <% item.links.forEach(link => { %>
+              <a href="<%= link.url %>" class="btn btn-primary" target="_blank">
+                <% if (link.icon) { %>
+                  <i class="<%= link.icon_pack %> fa-<%= link.icon %>"></i>
+                <% } %>
+                <%= link.name %>
+              </a>
+            <% }) %>
+          </div>
+        <% } %>
+      </div>
+    <% }) %>
+  </div>
+<% } %>

@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "docencia/posts/correlacional/index.html",
+    "href": "docencia/posts/correlacional/index.html",
+    "title": "Estadística correlacional",
+    "section": "",
+    "text": "Al finalizar el curso los estudiantes conocerán los fundamentos del análisis estadístico inferencial. Se espera que los estudiantes sean capaces de:\n\nelaborar de manera pertinente hipótesis estadísticas\naplicar estadísticos de asociación y correlación, a partir de los cuáles puedan desarrollar análisis de problemas sociales\ncorroborar el cumplimiento de las condiciones de aplicación de cada estadístico\nutilizar diferentes softwares de análisis estadístico\ncontrastar hipótesis de investigación\nelaborar conclusiones integrando fundamentos teóricos con herramientas de análisis estadístico de resultados.\n\nComplementariamente se espera que los estudiantes adquieran herramientas que les permitan comunicar resultados de investigación en contextos sociales, profesionales y académicos.\nLa metodología incluye clases lectivas, presentaciones de invitados, y presentación de trabajos grupales."
+  },
+  {
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "Links",
+    "section": "",
+    "text": "Taller Ciencia Abierta UValpo Enero 2024\nCIPER 2019 La demanda por igualdad y los caminos que cuentan con amplio respaldo ciudadano\n“Notas sobre los resultados de Chile en la última prueba internacional de formación ciudadana”, con Daniel Miranda en CIPER (Diciembre 2017).\n“La meritocracia, ¿una tragedia?”, en El Mostrador (Diciembre 2017).\nComentario al libro Desiguales (Larrañaga, Cociña & Frei, PNUD 2017), en seminario COES-PNUD, Octubre 2017.\n“CASEN y Cohesión: oportunidades y precauciones”, con Mauro Basaure en El Mostrador (Septiembre 2016).\n“La nueva Casen y las exigencias a la política social en Chile”, con Mauro Basaure en El Dínamo (Octubre 2016).\n“Selección en particulares y la complicidad de los psicólogos” en El Mostrador (Enero 2015).\n“De la educación cívica a la educación para la ciudadanía”, en El Mostrador (Septiembre 2014)"
+  },
+  {
+    "objectID": "links.html#writing-literature-reviews-publication-others",
+    "href": "links.html#writing-literature-reviews-publication-others",
+    "title": "Links",
+    "section": "Writing, literature reviews, publication & others",
+    "text": "Writing, literature reviews, publication & others\n\nver ahora en: https://jc-castillo.com/post/escritura-academica/"
+  },
+  {
+    "objectID": "links.html#teaching-resources",
+    "href": "links.html#teaching-resources",
+    "title": "Links",
+    "section": "Teaching & resources",
+    "text": "Teaching & resources\n\nStatistics & R cartoons by Allison Horst\nFlinga board\nMenti\nQuarto for Academics"
+  },
+  {
+    "objectID": "links.html#survey-research",
+    "href": "links.html#survey-research",
+    "title": "Links",
+    "section": "Survey research",
+    "text": "Survey research\n\nChatGPTest: Opportunities and Cautionary Tales of Utilizing AI for Questionnaire Pretesting\n\n\nFollowing people\n\nKieran Healy\nYihui Xie\nLeslie McCall"
+  },
+  {
+    "objectID": "links.html#procrastinación",
+    "href": "links.html#procrastinación",
+    "title": "Links",
+    "section": "Procrastinación",
+    "text": "Procrastinación\n\nCircles\nSombras"
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Juan Carlos Castillo",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »"
+  },
+  {
+    "objectID": "docencia/posts/ciencia-social-abierta/index.html",
+    "href": "docencia/posts/ciencia-social-abierta/index.html",
+    "title": "Ciencia Social Abierta",
+    "section": "",
+    "text": "Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.\nPartiendo desde la concepción de Ciencia Abierta (Open Science) y de investigación reproducible, este curso presenta formas alternativas a la manera tradicional de concebir la generación de conocimiento de manera cerrada y competitiva, y desde ahí se proponen y ejercitan una serie de herramientas técnicas en el análisis de datos que facilitan la reproducibilidad, colaboración y comunicación de procesos de investigación.\nEl curso permitirá a los participantes lograr un producto de investigación (artículo, documento de trabajo) con foco en el análisis de datos realizado de manera abierta y reproducible.\n\nCada versión del curso tiene una página web desde su primera versión en el año 2020. Las versiones se encuentran alojadas en Github, se desarrollan principalmente con Blogdown/Hugo y el deploy se realiza en Netlify.\nVersiones:\n\n2021\n2020"
+  },
+  {
+    "objectID": "docencia/docencia.html",
+    "href": "docencia/docencia.html",
+    "title": "Docencia",
+    "section": "",
+    "text": "Estadística correlacional\n\n\n\n\n\n\nAug 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nCiencia Social Abierta\n\n\n\n\n\n\nMar 1, 2020\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]

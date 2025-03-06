@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "86d6da4f"
+  },
+  "about.qmd": {
+    "about.html": "67f01d53"
+  },
+  "links.qmd": {
+    "links.html": "8b640cbb"
+  },
+  "docencia/docencia.qmd": {
+    "docencia.html": "a11a068c"
+  },
+  "docencia/multinivel/index.md": {
+    "index.html": "e37c1fd4"
+  },
+  "docencia/posts/ciencia-social-abierta/index.md": {
+    "index.html": "ed2ea654"
+  },
+  "docencia/posts/correlacional/index.md": {
+    "index.html": "60268358"
+  },
+  "docencia/posts/ciencia-social-abierta/index.qmd": {
+    "index.html": "660cd5c4"
+  }
+}
