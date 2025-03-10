@@ -1,0 +1,49 @@
+---
+title: "Conocimiento y Prácticas de Ciencia Abierta"
+subtitle: Financiado por COES
+# Date published
+date: "2022-03-31"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+# Resumen
+
+Durante los últimos años, el mundo académico ha experimentado una serie de desafíos relacionados con el concepto de apertura, que pueden describirse en dos aspectos principales. El primero se refiere a la llamada crisis de replicación (Baker, 2016; Nosek et al., 2015; Peng, 2015), referida a las dificultades para replicar los resultados de la investigación debido a la falta de transparencia en el proceso de investigación, donde se ha sido posible evidenciar importantes variaciones en los resultados en equipos de investigación con datos idénticos (Breznau et al., 2021). Esto ha tenido como consecuencia no sólo el fracaso en la replicación de muchos hallazgos publicados, sino también el descubrimiento y la denuncia de datos y resultados falsos (Chopik et al., 2018) con el fin de lograr publicar en  revistas de alto impacto. El segundo desafío proviene de la apertura en términos de acceso, mediante el cual varias comunidades académicas han reaccionado contra las altas barreras de pago y el modelo de negocio impuesto por las compañías editoriales para acceder a los productos de la investigación científica: las universidades pagan una suscripción para acceder al trabajo incluso de sus propios investigadores, y a su vez el público fuera de la academia debe pagar nuevamente por obtener productos financiados por sus impuestos. Una de las reacciones más comentadas ha sido la cancelación de las suscripciones a revistas como Elsevier por parte de grandes universidades como UCLA, lo cual posteriormente se resolvió a través de un acuerdo basado en la adopción y promoción de prácticas en Open Access.
+
+Las barreras en la transparencia y el acceso son síntomas de una cultura académica presionada por la publicación de indicadores que están sesgados hacia resultados "significativos" en términos estadísticos, lo que lleva a una tendencia a forzar los resultados (p-hacking), llegando incluso a manipular y falsear datos para confirmar las hipótesis propuestas (Head et al., 2015) o también el establecer hipótesis ad-hoc luego de conocer los resultados de un estudio (Hollenbeck & Wright, 2017; Kerr, 1998). Esto tiene como consecuencia que finalmente el principal público objetivo de la ciencia son los editores de revistas de alto rango, dejando de lado a otros públicos como la sociedad civil, el estado y la ciudadanía. Tal escenario es particularmente sensible para las ciencias sociales, que se supone basan sus estudios en problemas sociales relevantes para las personas, las comunidades y las sociedades en general.
+
+Un número creciente de iniciativas en todo el mundo están abordando temas de replicabilidad, transparencia y acceso en la ciencia, como el Centro para la Ciencia Abierta (COS), la Iniciativa de Berkeley para la Transparencia en Ciencias Sociales (BITSS) y el proyecto Teaching Integrity in Empirical Research (TIER). Estas iniciativas fomentan la apertura en diferentes etapas del proceso de investigación, como la transparencia de los diseños de investigación a través de prerregistros de estudios, la reproducibilidad de los análisis y la manipulación de datos, así como en la publicación de preimpresiones libres de barreras de pago. Muchas de estas prácticas han sido adoptadas por revistas como recomendaciones o incluso requisitos para su publicación, así como promovidas por instituciones científicas gubernamentales. Todo esto implica un gran cambio en la forma de concebir, hacer y enseñar ciencia. Además, parece un paso necesario para hacer que la ciencia sea más relevante y cercana a quienes están fuera de la academia. En otras palabras, sería difícil mejorar la apertura y el intercambio con las comunidades locales si el trabajo dentro de la academia es mayormente cerrado y no colaborativo.
+
+Como muchos otros desarrollos en la ciencia, el movimiento de la ciencia abierta ha llegado lentamente a América Latina, particularmente en las ciencias sociales. Aunque ha habido algunas iniciativas en los últimos años (como el Congreso de Ciencia Abierta y Ciudadanía en Argentina 2018, OpenCon LatAm Colombia 2019), la mayoría de ellas son promovidas desde las ciencias naturales. En esta línea, a partir del año 2021 la Agencia Nacional de Investigación y Desarrollo (ANID) realizará la implementación de una Política de acceso abierto de información científica y datos de investigación, la cual busca establecer un estándar de acceso público a los productos de investigación que hayan sido financiados por recursos de ANID, por lo tanto es de carácter estratégico desarrollar iniciativas que se propongan contribuir a la apertura de la ciencia.
+
+A partir de este diagnóstico, el presente proyecto tiene por objetivo analizar el conocimiento, creencias y prácticas de ciencia abierta en académic_s de ciencias sociales en Chile, y desde este análisis generar recomendaciones y propuestas tanto para el quehacer académico como a las políticas científicas.
+
+## Metodología
+
+### Primera estapa: Open research practices.
+
+Un primer paso es la realización de estudios cualitativos y cuantitativos en facultades y escuelas de ciencias sociales en Chile. Para ello se realizarán las siguientes actividades:
+
+- Estudio cualitativo: 10 a 15 entrevistas a académicos nacionales de carreras de ciencias sociales sobre prácticas, creencias y conocimiento de ciencia abierta.
+
+- Encuesta online: el diseño del estudio se elaborará sobre la base de estudios internacionales (Baker, 2016; Banks et al., 2019; Knudtson et al., 2019) así como también en relación a las temáticas emergentes del análisis cualitativo de entrevistas. El foco nuevamente serán las prácticas, creencias y conocimiento de la ciencia abierta. Se contactará para ello a estudiantes de doctorado, investigador_s y profesor_s de departamentos de ciencias sociales del país (sociología, ciencias políticas, economía, psicología, trabajo social, geografía, estudios urbanos, comunicaciones). El cuestionario será diseñado en Qualtrics y distribuido por correo electrónico.
+
+Con los análisis de la encuesta y de las entrevistas se elaborará un reporte de resultados que será publicado como pre-print usando la herramienta desarrollada por el Open Science Framework para dicho propósito. Posteriormente, se elaborará un artículo científico que será enviado a revista indexada, como el Journal of Research Practices (Scopus) o The Social Science Journal.
+
+### Segunda etapa: Promoción de apertura
+
+Esta segunda etapa se enfoca en dos dimensiones:
+
+1. Difusión y colaboración
+
+Consiste en hacer disponible instructivos y protocolos de ciencia abierta, especialmente para el ámbito académico nacional (traducción y adaptación de instructivos y protocolos de ciencia abierta al español – COS, TIER).  Esto también incluye robustecer el trabajo realizado hasta ahora por parte de LISA, junto con la documentación que ya ha sido desarrollada en el Centro en el acceso abierto de datos (https://coes.cl/repositorio-coes/). De esta manera, sería posible establecer nuevos lineamientos fundamentados en la sistematización de literatura especializada. Esta información quedará de libre acceso en los sitios web del Laboratorio de Ciencia Social Abierta y de COES.
+
+Respecto a lo anterior, también consideramos relevante el incluir la dimensión cualitativa de la investigación, donde debemos poner un foco especial, dado que los esfuerzos de ciencia abierta en COES han tomado en consideración solo los datos de carácter cuantitativo.
+
+Adicionalmente a la difusión de documentación, se realizarán diversas instancias de difusión para poner en discusión los resultados obtenidos, tales como seminarios con actores de la sociedad civil y del mundo académico y de políticas públicas. Dentro de los cual destacamos la planificación de la primera versión de la Escuela de Verano en Ciencia Abierta encabezada por LISA durante el mes de enero de 2022, la cual tendrá como objetivo el contribuir a la formación de investigadores jóvenes en temáticas referentes a la apertura de datos, transparencia de diseños de investigación y reproducibilidad en investigación social empírica.
+
+2. Propuesta para Política Pública
+
+Sobre la base de la sistematización de lo expuesto en (a) se elaborará una propuesta a ANID en torno a estándares de apertura para proyectos de investigación en ciencias sociales, lo cual busca complementar y robustecer la actual Política de acceso de información científica y datos de investigación.

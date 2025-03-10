@@ -1,0 +1,61 @@
+---
+title: Sugerencias para defensas y presentaciones
+subtitle: Para tesis, memorias, conferencias y otros
+categories: [academic]
+# Date published
+date: "2021-05-25"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+
+## Recomendaciones generales
+
+- El documento de presentación no es "la presentación", es una parte de ella. La preparación de la presentación no consiste solo en "hacer el ppt", sino el guión de lo que se va a hacer y decir.
+
+- El documento de presentación (beamer, ppt, Xaringan o lo que sea) es para la audiencia, no un resumen para que lea el presentador/a. En cantidad de texto, acá siempre menos es más.
+
+- Máximo 3 ideas por lámina, letra grande
+
+- Buenas indicaciones y ejemplos de estilo de presentación se pueden ver [aquí](https://github.com/andrewheiss/talks/blob/master/2014-09-02_practically-perfect-policy-presentations/presentation/Practically%20Perfect%20Professional%20Policy%20Presentations,%20short.pdf), por Andrew Heiss
+
+- Si la investigación incluye análisis empírico, al menos la mitad del tiempo debe estar dedicado a eso (o sea, al menos desde la mitad partir con la sección de metodología)
+
+
+- Ensayar la presentación, ojalá con alguien que comente y tome el tiempo.
+
+- Llegar por lo menos unos 10 min. antes para "reconocer terreno", ver todo el tema de la conexión, proyección, y elegir dónde ponerse en la sala; recomiendo de espaldas a la proyección. Pueden elegir si presentan sentados o parados, como se sientan más seguros. A mi me parece que estar parado genera una sensación de estar más apropiado del tema.
+
+- No está prohibido ni es mal visto consultar notas y/o leer. Independiente de si se lee o no, de todas maneras recomiendo escribir el "guión" de la presentación, para ir chequeando que se ha dicho lo que se quería decir. Y este guión puede incluir más cosas de las que están en las slides, lo cual yo recomiendo. O sea, no repetir lo que ya se puede leer en la slide, sino que a partir de eso agregar algo más.
+
+- Hacer al menos una pausa para tomar agua
+
+- Al contrario de lo que se cree, el tiempo en la dosificación de los contenidos genera la sensación de manejo del tema. Al contrario, estar apurado denota falta de manejo y poca preparación. Preparar la presentación para no tener que correr.
+
+- Nunca decir: "... se me está acabando el tiempo así que no voy a alcanzar a decir lo que pensaba decir". Echarle la culpa al tiempo de no haber preparado bien la presentación queda pésimo
+
+- Las preguntas son una oportunidad de demostrar el manejo de su tema de investigación y de lucirse un poco, y no como un cuestionamiento a su capacidad para realizar una buena investigación.
+
+- Tener papel y lápiz para anotar las preguntas, y también les recomiendo tomarse un tiempo para anotar las ideas que se les van ocurriendo en relación a cada una, para que luego no se les olvide incorporarlas en sus respuestas.
+
+
+## Para el caso específico de defensas de tesis
+
+- La presentación se divide en dos momentos claros: resumen de la tesis y respuesta a comentarios.
+
+- El resumen de la tesis debe ser de 15-20 minutos, considerar esto para el número de diapositivas del documento de presentación. Recomendación: 1 por minuto. Y destacar lo central, no correr, la comisión conoce la tesis así que mencionar solamente lo más relevante. Si como parte de la comisión alguien no ha leído la tesis, apuntar principalmente el resumen a este tipo de audiencia.
+
+- Los 10 minutos restantes se deben referir a cómo se hicieron cargo de los comentarios de la última entrega/etapa en el documento final. Aquí les sugiero referirse personalmente a los profesores y a cómo los comentarios realizados por nosotros en evaluaciones anteriores y en el transcurso del seminario de tesis fueron siendo incorporadas en esta última versión (... o no).
+
+- De vestimenta, también tiene que ver con cómo se sientan más segur_s. Yo para las defensas en general voy con chaqueta, ya que me parece que si el/la alumno/a aparece con ropa más formal que la comisión es algo extraño. Se los digo porque aquí las asimetrías muy evidentes de vestuario pueden ser algo que llame la atención, y la idea es que no llame la atención. Así que mejor, semi-formal neutral.
+
+- Y recordar algo que es evidente: es una defensa, se tienen que creer el argumento central y la aproximación metodológica mostrando seguridad, en lugar de decir "me salió esto ..." y pedir disculpas.
+
+- Y a pesar de que igual es una instancia de exposición y evaluación que en general no suele ser cómoda para nadie, traten de pasarlo bien y aprovechar el momento. La actitud de "ojalá salir de esto lo más rápido posible" se nota y no es buena para nadie. Pocas veces se defiende un trabajo, y es el momento de lucirse.
+
+## Links
+ 
+- ![](/images/20thesis-defense-questions.png)
+
+- ![How to tell a compelling story in scientific presentations](https://www.nature.com/articles/d41586-021-03603-2?s=03)

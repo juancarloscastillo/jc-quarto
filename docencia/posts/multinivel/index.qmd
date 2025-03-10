@@ -1,0 +1,30 @@
+---
+title: Modelos Multinivel
+subtitle: Curso optativo Sociología - Universidad de Chile. También realizado anteriormente como optativo en el Magíster de Sociología de la P. Universidad Católica (2014-2018)
+categories: [cursos]
+# Date published
+date: "2023-08-01"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+  links:
+    - icon: external-link
+      text: Website
+      href: https://multinivel-facso.netlify.app
+      target: _blank
+    - icon: github
+      text: Github
+      href: https://github.com/cursos-metodos-facso/multinivel-facso
+      target: _blank
+---
+
+# Métodos Multinivel
+
+Gran parte de la investigación sociológica hace referencia al contexto en que las personas viven y se desenvuelven, como por ejemplo lugares de trabajo, salas de clases, barrios, países. Sin embargo, modelos tradicionales como ANOVA y regresión poseen limitaciones a la hora de integrar datos en distintos niveles (individual y contextual), así como también la interacción entre ambos (por ejemplo, la relación entre nivel de vulnerabilidad de escuelas, capital cultural de los padres y rendimiento académico de estudiantes). El presente curso aborda el análisis simultáneo de datos en distintos niveles mediante modelamiento multinivel. Comienza con una problematización de la integración del contexto en el análisis sociológico de datos, para luego describir las principales características y usos de modelos multinivel.
+
+El curso tiene una orientación práctica y aplicada a problemas de investigación en torno a los cuales se desarrollará un trabajo de investigación.
+
+----
+
+Link a página del curso versión 2019 [aquí](https://multinivel.netlify.app/)

@@ -6,6 +6,8 @@ website:
   navbar:
     left:
       - docencia/docencia.qmd
+      - proyectos/proyectos.qmd
+      - blog/blog.qmd
       - links.qmd
       
 format:

@@ -22,5 +22,86 @@
   },
   "docencia/posts/ciencia-social-abierta/index.qmd": {
     "index.html": "660cd5c4"
+  },
+  "proyectos/proyectos.qmd": {
+    "proyectos.html": "81eb123b"
+  },
+  "proyectos/posts/coes/index.qmd": {
+    "index.html": "8b59bb63"
+  },
+  "proyectos/posts/fondecyt-ciudadania1/index.qmd": {
+    "index.html": "1c1fe86f"
+  },
+  "docencia/posts/correlacional/index.qmd": {
+    "index.html": "4e08c87c"
+  },
+  "blog/defensas-presentaciones/index.qmd": {
+    "index.html": "2896f45a"
+  },
+  "blog/blog.qmd": {
+    "blog.html": "3442567d"
+  },
+  "blog/escritura-academica/index.qmd": {
+    "index.html": "df1de057"
+  },
+  "blog/posts/defensas-presentaciones/index.qmd": {
+    "index.html": "07eebf15"
+  },
+  "blog/posts/escritura-academica/index.qmd": {
+    "index.html": "7084979c"
+  },
+  "docencia/posts/multinivel/index.qmd": {
+    "index.html": "e60071a2"
+  },
+  "docencia/posts/talleres-seminarios/index.qmd": {
+    "index.html": "667d041a"
+  },
+  "docencia/posts/coloquio/index.qmd": {
+    "index.html": "19305dc9"
+  },
+  "docencia/posts/metodologia1/index.qmd": {
+    "index.html": "216fee44"
+  },
+  "docencia/posts/estrategias-ic/index.qmd": {
+    "index.html": "c3214dcd"
+  },
+  "docencia/posts/encuestas-sociales/index.qmd": {
+    "index.html": "98a4d871"
+  },
+  "docencia/posts/desarrollo-tesis/index.qmd": {
+    "index.html": "08820d03"
+  },
+  "docencia/posts/estadistica-multivariada/index.qmd": {
+    "index.html": "789f58ea"
+  },
+  "proyectos/posts/fondecyt-ciudadania2/index.qmd": {
+    "index.html": "d2a11d96"
+  },
+  "proyectos/posts/fondecyt-iniciacion/index.qmd": {
+    "index.html": "0082d801"
+  },
+  "proyectos/posts/fondecyt-edumer/index.qmd": {
+    "index.html": "5d459e0b"
+  },
+  "proyectos/posts/minicoes-ciencia-abierta/index.qmd": {
+    "index.html": "a32fb43c"
+  },
+  "proyectos/posts/otros-proyectos/index.qmd": {
+    "index.html": "e8ba2ab8"
+  },
+  "proyectos/posts/price/index.qmd": {
+    "index.html": "4366b13e"
+  },
+  "proyectos/posts/ocs-coes/index.qmd": {
+    "index.html": "a13cee06"
+  },
+  "proyectos/posts/lisa/index.qmd": {
+    "index.html": "15a68a54"
+  },
+  "proyectos/posts/fondecyt-economiamoral/index.qmd": {
+    "index.html": "bed11b9e"
+  },
+  "proyectos/posts/nudos/index.qmd": {
+    "index.html": "b94efde2"
   }
 }

@@ -1,0 +1,109 @@
+---
+title: "Guía de memorias y tesis"
+date: "2024-08-28"
+about:
+  template: marquee
+  image: "featured.png"
+---
+
+La guía de seminarios de grado/memorias/tesis es una actividad de acompañamiento semestral de tesistas que incluye:
+
+- reuniones periódicas de presentación de avances y retroalimentación
+
+- presentación oral del trabajo una vez al semestre
+
+- entrega de dos informes semestrales (ver abajo detalle)
+
+<br>
+
+## Informes y fechas
+
+Se entregarán 2 informes durante el semestre, uno de avance y uno final. Cada informe debe ir acompañado de un párrafo de autoevaluación y de una nota.
+
+- Seminario de grado:
+
+  - informe de avance: contempla la definición del problema de investigación, objeto de estudio, pregunta de investigación, revisión inicial de literatura, propuesta de sección metodológica disponibilidad de datos. (app. 1000 palabras).
+
+  - informe final: debe incorporar los comentarios al informe de avance y avanzar en la propuesta metodológica incluyendo análisis preliminares univariados. (app 4000 palabras)
+
+- Seminario de título 1
+
+  - informe de avance: ajuste de antecedentes conceptuales y finalización de sección metodológica. (app 5000 palabras)
+
+  - informe final: incorporación de comentarios y avance de análisis bivariados (app. 8000 palabras)
+
+- Seminario de título 2
+
+  - informe de avance: finalización de análisis y contraste de hipótesis, borrador de conclusión
+
+  - informe final: incorporación de comentarios y finalización de conclusiones. (app 10000/12000 palabras)
+
+
+<br>
+
+### Funcionamiento:
+
+- seminaristas/tesistas se incorporan a [canal de Slack](https://join.slack.com/t/seminarios-facso/shared_invite/zt-2pz3yo72o-tz4yi7zRGTEFZLZQbkBx1Q), donde se comparte información relativa a las investigaciones y se hace entrega de los informes
+
+- la entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/) (video taller [aquí](https://www.dropbox.com/s/u3g2x74nj31jsu1/zoom_0.mp4?raw=1)), que permite ambas salidas. Documento de presentación [aquí](documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html)
+
+- los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/) en el caso de informes en html, o se enviarán comentarios por Slack
+
+- Después de la entrega de cada informe, anotarse en los [horarios de reunión con estudiantes](/contacto) para recibir retroalimentación
+
+- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK), video sesión disponible [aquí](https://www.dropbox.com/s/4if7bpbbhuo7406/zoom_0.mp4?raw=1)
+
+- Para facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de [Git/Github](https://github.com/)
+
+- También por temas de apertura se recomienda inscribir el proyecto en el [Open Science Framework](https://osf.io/)
+
+### Calendario de actividades (2do sem 2024)
+
+- Agosto: primera reunión de organización
+
+- Septiembre: 
+  - Miércoles 11: reunión
+  - Miércoles 25: reunión
+
+- Octubre
+  - Viernes 4: entrega informe de avance
+  - Miércoles 16: reunión
+  - Miércoles 30: reunión
+
+- Noviembre
+  - Miércoles 13: reunión
+  - Viernes 22: entrega informe final
+  - Miércoles 27: presentación oral final
+
+Los horarios de reuniones grupales de miércoles en la tarde son por lo general a las 15:00 para seminario de grado, y a las 16:00 para seminario de título
+
+Además de estas actividades, luego de la entrega de cada informe se realizará una reunión de retroalimentación individual del trabajo.
+
+<iframe src="https://calendar.google.com/calendar/embed?src=c_b52380b872af208e4f98dfc1f82c7fffc7bbe57879364d0c2096c3f892bc4986%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+# Links
+
+- [Research Gaps](/images/research_gaps.jpeg)
+
+- [Criteria of Research Quality in Sociology: An Analytical-Empirical Perspective](https://osf.io/preprints/socarxiv/69wrq/)
+
+- Taller escritura académica 2021, link [documento presentación](../../seminarios-talleres/escritura-academica/escritura-academica.html)
+
+- [Presentación tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/)
+
+- [Del rigor en la ciencia](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/)
+
+- [Manterola & Otzen (2013) Porqué Investigar y Cómo Conducir una Investigación](https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0717-95022013000400056)
+
+- [Becker (2011) Manual de Escritura para Científicos Sociales](http://www.derechoshumanos.unlp.edu.ar/assets/files/documentos/manual-de-escritura-para-cientificos-sociales.pdf)
+
+- [Good tips for academic writing from Kevin Lafferty](http://trophiccascades.forestry.oregonstate.edu/sites/trophic/files/Lafferty_WritingScientificPaper.pdf)
+
+- [Publicación de artículos académicos: buenas prácticas y recomendaciones para la redacción y envío a revistas científicas](https://repositori.upf.edu/handle/10230/44599)
+
+- [Formulación de una investigación cuantitativa (documento de presentación)](https://estrategias-ic.netlify.app/docpres/02_formu/02_formu.html#1).
+
+- [Hernández et al El Planteamiento Cuantitativo del Problema](https://estrategias-ic.netlify.app/readings/cap3Hernandezetal2014.pdf)

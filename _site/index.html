@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JC Castillo Website – jc-castillo</title>
+<title>JC Castillo Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -46,13 +48,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -61,13 +57,98 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-docencia .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-docencia'] = new List('listing-docencia', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-proyectos .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-proyectos'] = new List('listing-proyectos', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -76,32 +157,40 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">jc-castillo</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./docencia/docencia.html"> 
-<span class="menu-text">Docencia</span></a>
+    <a class="nav-link" href="./docencia/docencia.html" rel="" target="">
+ <span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./links.html"> 
-<span class="menu-text">Links</span></a>
+    <a class="nav-link" href="./proyectos/proyectos.html" rel="" target="">
+ <span class="menu-text">Proyectos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog/blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./links.html" rel="" target="">
+ <span class="menu-text">Links</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -112,7 +201,6 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-
 
 
 
@@ -136,13 +224,21 @@ https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
 <div class="quarto-title">
 <h1 class="title">Juan Carlos Castillo</h1>
 </div>
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
   </div>
 </header>
     <div class="about-links">
-  <a href="https://deeppolicylab.github.io" class="about-link" rel="" target="_blank">
-    <i class="bi bi-sun"></i>
-     <span class="about-link-text">DeepPolicyLab</span>
+  <a href="https://scholar.google.es/citations?user=CPJ0qfQAAAAJ&amp;hl=es&amp;oi=ao" class="about-link" rel="" target="">
+    <i class="bi bi-mortarboard-fill"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://github.com/juancarloscastillo" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="/docs/short-cv.pdf" class="about-link" rel="" target="">
+    <i class="bi bi-file-earmark-person"></i>
+     <span class="about-link-text"></span>
   </a>
 </div>
   </div>
@@ -154,13 +250,8 @@ https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
 </div></div>
 </div>
 
-<section id="recent-posts" class="level2">
-<h2 data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="posts.qmd#category=paper">Papers</a>&nbsp;, &nbsp;<a href="posts.qmd#category=news">News</a>&nbsp;, &nbsp;<a href="posts.qmd#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.qmd">More »</a></p>
-<div id="recent-posts">
-
-</div>
-</section>
+<!-- ## Recent Posts -->
+<!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
 <div class="section-text">
 <div class="section-container darkblue-background">
 <div class="section-block">
@@ -176,6 +267,438 @@ https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
 </div>
 </div>
 </div>
+<div class="background-frame alt-background">
+<div class="content-block">
+<p align="left" style="font-size:36px; font-weight:bold;">
+Docencia
+</p>
+<div id="listing-docencia" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cursos" data-listing-date-sort="1527220800000" data-listing-file-modified-sort="1741284427565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/talleres-seminarios/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/talleres-seminarios/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Talleres y seminarios
+</h5>
+<div class="card-text listing-description">
+Aquí algunos talleres, seminarios y cursos breves en distintos temas
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="cursos" data-listing-date-sort="1551409200000" data-listing-file-modified-sort="1741283937270" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/estadistica-multivariada/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/estadistica-multivariada/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Estadística Multivariada
+</h5>
+<div class="card-text listing-description">
+Cada versión del curso centraliza la información en una…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741357293328" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/ciencia-social-abierta/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/ciencia-social-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ciencia Social Abierta
+</h5>
+<div class="card-text listing-description">
+Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741284072609" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/estrategias-ic/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/estrategias-ic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Estrategias de investigación cuantitativa
+</h5>
+<div class="card-text listing-description">
+Al finalizar el curso los/as estudiantes conocerán distintas estrategias de…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741284179812" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/metodologia1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/metodologia1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Metodología 1
+</h5>
+<div class="card-text listing-description">
+Desarrollado junto a Kevin Carrasco y Pablo Pérez.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="cursos" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741283823896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/encuestas-sociales/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/encuestas-sociales/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Encuestas sociales
+</h5>
+<div class="card-text listing-description">
+Este seminario de profundización metodológica está dirigido a quienes tengan interés en adquirir herramientas que les permitan responder de manera adecuada a las demandas…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741275175292" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/correlacional/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/correlacional/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Estadística correlacional
+</h5>
+<div class="card-text listing-description">
+Al finalizar el curso los estudiantes conocerán los fundamentos del análisis estadístico inferencial. Se espera que los estudiantes sean capaces de:
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741284322421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/multinivel/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/multinivel/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Modelos Multinivel
+</h5>
+<div class="card-text listing-description">
+Gran parte de la investigación sociológica hace referencia al contexto en que las personas viven y se desenvuelven, como por ejemplo lugares de trabajo, salas de clases…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-listing-date-sort="1724817600000" data-listing-file-modified-sort="1741283507668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<a href="./docencia/posts/desarrollo-tesis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/desarrollo-tesis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Guía de memorias y tesis
+</h5>
+<div class="card-text listing-description">
+La guía de seminarios de grado/memorias/tesis es una actividad de acompañamiento semestral de tesistas que incluye:
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="cursos" data-listing-file-modified-sort="1741284533848" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/coloquio/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/coloquio/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Coloquio de investigación en desigualdad y ciudadanía
+</h5>
+<div class="card-text listing-description">
+El objetivo de este coloquio mensual es presentar…
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</div>
+</div>
+<div class="background-frame alt-background">
+<div class="content-block">
+<p align="left" style="font-size:36px; font-weight:bold;">
+Proyectos
+</p>
+<div id="listing-proyectos" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Varios" data-listing-date-sort="1270004400000" data-listing-file-modified-sort="1741364858782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/otros-proyectos/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Otros proyectos
+</h5>
+<div class="card-text listing-description">
+<strong>Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC</strong> (2013 - 2014) CONICYT DRI 130074, principal researcher.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Fondecyt" data-listing-date-sort="1364698800000" data-listing-file-modified-sort="1741365598551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<a href="./proyectos/posts/fondecyt-iniciacion/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-iniciacion/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Social justice and citizenship participation: An international comparison with focus on the case of Chile
+</h5>
+<div class="card-text listing-description">
+El proyecto de investigación “Justicia distributiva y participación ciudadana” se desarrolló entre los años 2012 y 2015, y tuvo como principal objetivo analizar el rol que…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="FONDAP" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741363582421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/coes/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+COES
+</h5>
+<div class="card-text listing-description">
+El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por el programa FONDAP de ANID y desarrolla investigación colaborativa en temas relacionados al conflicto social y la cohesión en Chile, por medio de un…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Fondecyt" data-listing-date-sort="1427770800000" data-listing-file-modified-sort="1741274078181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/fondecyt-ciudadania1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Formación ciudadana I Socialización política y experiencia escolar - Chile en contexto internacional
+</h5>
+<div class="card-text listing-description">
+La hipótesis general de investigación es que el currículo escolar, junto a una serie de factores contextuales, poseen una influencia en la formación cívica y ciudadana. El…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Fondecyt" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1741365614797" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<a href="./proyectos/posts/fondecyt-economiamoral/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-economiamoral/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Economía moral de la meritocracia y preferencias redistributivas
+</h5>
+<div class="card-text listing-description">
+El objetivo general de nuestra investigación fue <strong>analizar la relación entre creencias en la meritocracia y preferencias redistributivas desde una perspectiva de economía moral</strong>, atendiendo al contexto institucional en Chile y en perspectiva comparativa internacional. El caso de Chile surge como relevante para este estudio dada su historia de…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="Fondecyt" data-listing-date-sort="1522465200000" data-listing-file-modified-sort="1741363843141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./proyectos/posts/fondecyt-ciudadania2/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania2/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Formación Ciudadana II: Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela.
+</h5>
+<div class="card-text listing-description">
+La investigación propuesta hará intenso uso del conocimiento secundario existente sobre educación ciudadana que realiza la escolaridad en Chile, aprovechando las bases de…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="Fondecyt" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364156290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./proyectos/posts/fondecyt-edumer/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-edumer/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
+</h5>
+<div class="card-text listing-description">
+Una de las características de Chile como caso de estudio a nivel internacional son las desigualdades en logro académico. Estas desigualdades en la etapa escolar han sido…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364329638" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/lisa/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/lisa/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Laboratorio de Investigación Social Abierta
+</h5>
+<div class="card-text listing-description">
+El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="COES" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364599561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/ocs-coes/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Observatorio de Cohesión Social
+</h5>
+<div class="card-text listing-description">
+El Observatorio de Cohesión Social (OCS) es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES), desde donde se busca contribuir al estudio de la…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364473737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<a href="./proyectos/posts/minicoes-ciencia-abierta/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/minicoes-ciencia-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Conocimiento y Prácticas de Ciencia Abierta
+</h5>
+<div class="card-text listing-description">
+Durante los últimos años, el mundo académico ha experimentado una serie de desafíos relacionados con el concepto de apertura, que pueden describirse en dos aspectos…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="Fondecyt" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364884738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/price/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/price/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+PRICE
+</h5>
+<div class="card-text listing-description">
+El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a partir de la vinculación de distintos proyectos de…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="Milenio" data-listing-date-sort="1680231600000" data-listing-file-modified-sort="1741364518963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<a href="./proyectos/posts/nudos/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/nudos/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Núcleo Milenio de Desigualdades y Oportunidades Digitales
+</h5>
+<div class="card-text listing-description">
+Concepto: Las tecnologías digitales han reconfigurado estructuras de poder y la vida pública, pero la prometida inclusión con la masificación de herramientas digitales ha…
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</div>
+</div>
+<div class="background-frame alt-background">
+<div class="content-block">
+<p align="left" style="font-size:36px; font-weight:bold;">
+Post Recientes
+</p>
+<div id="listing-blog" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="academic" data-listing-date-sort="1621915200000" data-listing-file-modified-sort="1741275597553" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="./blog/posts/defensas-presentaciones/index.html"> <p class="card-img-top"><img src="blog/posts/defensas-presentaciones/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/defensas-presentaciones/index.html">
+<h3 class="no-anchor listing-title">
+Sugerencias para defensas y presentaciones
+</h3>
+<div class="listing-subtitle">
+Para tesis, memorias, conferencias y otros
+</div>
+<div class="listing-description">
+El documento de…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/defensas-presentaciones/index.html">
+<div class="listing-date">
+May 25, 2021
+</div>
+<div class="listing-reading-time">
+4 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="academic" data-listing-date-sort="1665802800000" data-listing-file-modified-sort="1741276216119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="thumbnail">
+<p><a href="./blog/posts/escritura-academica/index.html"> <p class="card-img-top"><img src="blog/posts/escritura-academica/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/escritura-academica/index.html">
+<h3 class="no-anchor listing-title">
+Escritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+Acá presento una propuesta de estructura y contenidos de escritura académica, con foco en…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/escritura-academica/index.html">
+<div class="listing-date">
+Oct 15, 2022
+</div>
+<div class="listing-reading-time">
+10 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div class="button">
+<p><a href="./blog/blog.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Descubre más</a></p>
+</div>
+</div>
+</div>
+
 
 
 
@@ -222,33 +745,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -317,15 +813,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = true;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'alternate';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -353,7 +847,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -385,50 +890,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -438,17 +904,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -460,130 +917,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -627,7 +961,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -653,32 +986,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -739,7 +1046,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 

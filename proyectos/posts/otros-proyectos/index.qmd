@@ -1,0 +1,19 @@
+---
+title: "Otros proyectos "
+#subtitle: subtitulo
+summary: "Algunos proyectos anteriores"
+categories: [Varios]
+# Date published
+date: "2010-03-31"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+---
+
+# Otros
+
+- **Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC** (2013 - 2014) CONICYT DRI 130074, principal researcher.
+
+- **Inequality, social justice and political participation** (2011 - 2012) Inicio UC 11/2011, principal researcher.
+
+- **Testing the stability of perception and justification of economic inequality in Chile: A cross-sectional time comparison** (2010 - 2011)	Inicio 24/2010, principal researcher.

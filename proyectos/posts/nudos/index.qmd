@@ -1,0 +1,41 @@
+---
+title: "Núcleo Milenio de Desigualdades y Oportunidades Digitales "
+categories: [Milenio]
+# Date published
+date: "2023-03-31"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+# Resumen
+
+Concepto: Las tecnologías digitales han reconfigurado estructuras de poder y la vida pública, pero la prometida inclusión con la masificación de herramientas digitales ha chocado con desigualdades y sesgos en la producción, transmisión y usos de medios digitales en cuanto a contenidos y dispositivos. La pandemia visibilizó brechas que afectan a grupos vulnerables, como mujeres, personas de menor nivel socioeconómico, comunidades rurales y adultos mayores. El Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS) reúne a expertos en comunicación, ciencia política y sociología con trayectoria en el estudio de brechas y oportunidades de los medios digitales. 
+
+Objetivo general: NUDOS apunta a avanzar en la comprensión científica de las capacidades de empoderamiento y las fuentes de desigualdad y sesgos en la producción, transmisión y uso de medios digitales y sus implicancias en los ámbitos social, político e informativo. El foco estará especialmente en personas vulnerables (mujeres, estatus socioeconómico más bajo, residencia rural y adultos mayores), prioritarias para las políticas de inclusión digital.
+ 
+Contribuciones: Teóricamente, integraremos en un solo marco las tensiones entre oportunidades, capacidades y desigualdades de medios digitales y sus implicancias en tres dominios diferentes de la desigualdad en Chile: social, político e informativo. Reforzaremos las conexiones conceptuales entre teorías de desigualdad social, política y digital. Metodológicamente, combinaremos técnicas de las ciencias sociales con métodos computacionales. Propondremos políticas e intervenciones públicas que consideren las oportunidades y desigualdades de la inclusión digital, y formaremos jóvenes académicos para reforzar la masa crítica que examina estos temas. 
+ 
+Rasgos distintivos: Las desigualdades estructurales y la alta tasa de penetración de tecnologías digitales en Chile ofrecen un contexto particularmente relevante para estudiar los desafíos y oportunidades de la digitalización, muchos de los cuales aplican también a otros contextos latinoamericanos. Con todo, no existen centros de investigación en Chile ni en América Latina que estudien específicamente las desigualdades digitales. NUDOS reunirá a expertos en los ámbitos social, político e informativo para avanzar en un marco integrado, con los medios digitales como común denominador.
+ 
+Logros a corto y largo plazo:
+- Científico: Producir investigación sobre cómo las tecnologías se convierten en oportunidades de empoderamiento y en fuentes de desigualdades, sobre todo en poblaciones vulnerables en los ámbitos social, político e informativo.
+- Capital humano: Financiar a 3 investigadores jóvenes, 1 postdoctorado, 3 estudiantes de posgrado y formar a estudiantes de maestría y pregrado para fortalecer la masa crítica que estudia medios digitales, con un enfoque interdisciplinario.
+- Redes: Reforzar los lazos existentes y desarrollar nuevas colaboraciones con centros de todo el mundo e iniciativas de investigación.
+- Extensión y políticas públicas: Trabajar con el sector público y organizaciones de la sociedad civil relacionadas con tecnologías digitales para promover políticas de inclusión digital bien fundamentadas. 
+
+
+# Documentos
+
+
+# Equipo
+
+- Investigadores principales:
+  
+  - Ingrid Bachmann - Directora. Comunicaciones UC
+  - Teresa Correa - Subdirectora. Comunicaciones UDP
+  - Sebastián Valenzuela - Investigador Principal. Comunicaciones UC
+  - Sergio Toro - Investigador Principal. Universidad Mayor
+  - Juan Carlos Castillo - Investigador Principal - Sociología UChile
+
+# Tesistas

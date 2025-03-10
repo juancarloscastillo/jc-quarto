@@ -11,11 +11,53 @@ about:
   image-width: 70%
   image-shape: round
   links:
-    - icon: sun
-      text: DeepPolicyLab
-      href: https://deeppolicylab.github.io
-      target: _blank
-
+    - icon: mortarboard-fill
+      href: https://scholar.google.es/citations?user=CPJ0qfQAAAAJ&hl=es&oi=ao
+    - icon: github
+      href: https://github.com/juancarloscastillo
+    - icon: file-earmark-person
+      href: docs/short-cv.pdf
+listing:
+	
+- id: docencia
+  contents: 
+    - docencia/posts/*/*.qmd
+  sort: date
+  type: grid
+  grid-columns: 3
+  image-height: 150px
+  fields: [image, title, description]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false
+  
+- id: proyectos
+  contents: 
+    - proyectos/posts/*/*.qmd
+  sort: date
+  type: grid
+  grid-columns: 3
+  image-height: 150px
+  fields: [image, title, description]
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: false
+  
+- id: blog
+  contents: 
+    - blog/posts/*/*.qmd
+  sort: date
+  type: default
+  max-items: 5
+  image-height: 150px
+  fields: [image, title, description, date, author, reading-time]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false
+      
 ---
 
 <link rel="me" href="https://mastodon.social/@hegang">
@@ -38,25 +80,44 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 :::
 
-## Recent Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
+<!-- ## Recent Posts -->
+<!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
 
-:::{#recent-posts}
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+<p align="left" style="font-size:36px; font-weight:bold;">Docencia</p>
+
+:::{#docencia}
 :::
 
 
-
-
-::: {.section-text}
-::: {.section-container .darkblue-background}
-::: {.section-block}
-::: {style="text-align: center;"}
-
-# Research Committee 42
-# **Social Psychology**
-
-![](https://www.isa-sociology.org/img/isa-en.svg){width=50%}
 :::
 :::
+
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+<p align="left" style="font-size:36px; font-weight:bold;">Proyectos</p>
+
+:::{#proyectos}
+:::
+
+
+:::
+:::
+
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+<p align="left" style="font-size:36px; font-weight:bold;">Post Recientes</p>
+
+:::{#blog}
+:::
+
+::: {.button}
+[Descubre más](blog/blog.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
 :::
 :::

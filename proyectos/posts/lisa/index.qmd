@@ -1,0 +1,12 @@
+---
+title: "Laboratorio de Investigación Social Abierta "
+subtitle: LISA-COES
+# Date published
+date: "2021-03-31"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+
+El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía. Nos enfocamos en promover y construir herramientas de los cuatro componentes principales de la ciencia abierta: (1) diseño transparente, (2) apertura de datos, (3) análisis reproducibles y (4) publicaciones libres.

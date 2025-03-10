@@ -1,6 +1,7 @@
 ---
 title: Ciencia Social Abierta
 subtitle: Curso optativo Sociología - Universidad de Chile
+abstract: Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
 categories: [cursos]
 # Date published
 date: "2020-03-01"  #year-

@@ -2,6 +2,17 @@
   "listingMap": {
     "docencia/docencia.qmd": [
       "posts"
+    ],
+    "proyectos/proyectos.qmd": [
+      "posts"
+    ],
+    "index.qmd": [
+      "docencia/posts/*/*.qmd",
+      "proyectos/posts/*/*.qmd",
+      "blog/posts/*/*.qmd"
+    ],
+    "blog/blog.qmd": [
+      "posts"
     ]
   }
 }
