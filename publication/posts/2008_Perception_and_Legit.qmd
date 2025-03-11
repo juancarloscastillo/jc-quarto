@@ -1,0 +1,11 @@
+---
+title : "Perception and Legitimacy of Income Inequality in International Comparison"
+date : "2008-08-01"
+author : ["\relax JC Castillo", "J. Gerlitz", "M. Schrenker"]
+categories : ["Presentation"]
+publication : " . Boston"
+publication_short : " . Boston"
+abstract : "(Abstract not available)"
+abstract_short : ""
+tags : ["legitimacy ideology Chile"]
+---

@@ -1,0 +1,12 @@
+---
+title : "Perception of economic inequality: Concepts, associated factors and prospects of a burgeoning research agenda"
+date : "2022-01-01"
+author : ["Juan-Carlos Castillo", "Juan Diego Garcia-Castro", "Martin Venegas"]
+categories : ["Article"]
+publication : "International Journal of Social Psychology, 37(1) 180--207  https://doi.org/10.1080/02134748.2021.2009275"
+publication_short : "International Journal of Social Psychology, 37(1) 180--207  https://doi.org/10.1080/02134748.2021.2009275"
+abstract : "Perceptions of economic inequality have become a topic of growing interest in research from different social science disciplines. This article presents an up-to-date literature review of studies on this topic, stressing aspects related to its conceptualisation and measurement, as well as psychosocial, socioeconomic and contextual factors associated with the perception of inequality. This review ends by pointing out some consequences of perception of inequality and identifying some pathways for future research agendas KEYWORDS perception of economic inequality, measuring the perception of inequality, economic inequality, social status  --- RESUMEN ESPAÑOL: La percepción de desigualdad económica se ha vuelto un tema de creciente interés en investigaciones de distintas disciplinas de las ciencias sociales. El presente artículo presenta una revisión actualizada del estado del arte de los estudios en este tema, destacando aspectos de conceptualización, medición, así como factores psicosociales, socioeconómicos y contextuales vinculados a la percepción de desigualdad. Esta revisión termina señalando algunas consecuencias de la percepción de la desigualdad e identificando algunas vías de desarrollo para agendas de investigación a futuro. PALABRAS CLAVE percepción de desigualdad económica, medición de percepción de desigualdad, desigualdad económica, posición social"
+abstract_short : ""
+url_source : "https://www.tandfonline.com/doi/full/10.1080/02134748.2021.2009275"
+tags : ["distributive fairness","inequality perception"]
+---

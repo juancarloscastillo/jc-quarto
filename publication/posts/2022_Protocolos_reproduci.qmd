@@ -1,0 +1,14 @@
+---
+title : "Protocolos reproducibles y reportes dinámicos con R / Rmarkdown"
+date : "2022-01-01"
+author : ["Juan-Carlos Castillo"]
+categories : ["Presentation"]
+publication : " Laboratorio de Investigación Social Abierta (LISA) - COES . Online"
+publication_short : " Laboratorio de Investigación Social Abierta (LISA) - COES . Online"
+abstract : "Este curso tiene 2 partes. La primera introduce el lenguaje Markdown y su vinculación con R (RMarkdown) para desarrollar reportes que incluyen tanto texto como análisis de datos en una misma hoja de código. En la segunda parte se presenta un protocolo de análisis reproducible que permite un orden de carpetas de proyecto de manera simple y transparente. Este taller se realiza en el marco de la actividad  Aprendiendo Metodología por Valentina, actividad destinada a colaborar con el financiamiento de un tratarmiento médico de alto costo."
+abstract_short : ""
+url_source : "https://lisa-coes.github.io/presentaciones/tallerRmarkdown-IPOEnero2022/taller-reprod-enero2022.html"
+---
+<iframe width="700"  height="450"  src="https://drive.google.com/file/d/1OsRZE-xBPv4T33VcLQvYk7oABf__L-CK/preview" width="640" height="480" allow="autoplay"></iframe>
+
+<iframe width="700"  height="450"  src="https://drive.google.com/file/d/1g98ZMizIBsdyPo5zhRPzNw6QKTq4YYNQ/preview" width="640" height="480" allow="autoplay"></iframe>

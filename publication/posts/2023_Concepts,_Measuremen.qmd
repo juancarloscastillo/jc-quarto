@@ -1,0 +1,38 @@
+---
+title : "Concepts, Measurement and Indicators of Social Cohesion: A Longitudinal Perspective"
+date : "2023-06-01"
+author : ["Juan-Carlos Castillo", "Ignacio Caceres", "Kevin Carrasco"]
+categories : ["Presentation"]
+publication : " ISA XX World Congress of Sociology . Melbourne"
+publication_short : " ISA XX World Congress of Sociology . Melbourne"
+abstract : "The conceptualization and measurement of social cohesion is far from being consensual. The different proposals coming from the academia as well as public interest organizations are diverse, making the assessment and comparison of social cohesion indicators and indexes a difficult task. In the present paper we first describe and compare several international projects aimed at conceptualizing and measuring social cohesion, such as the Social Cohesion Radar (Germany/international), the Scanlon-Monash Social Cohesion Index (Australia), ECOSOCIAL (Latin America), Mapping Social Cohesion (Canada) and the Civic Engagement and Social Cohesion report (USA). Based on this comparison, in a second part we identify the main commonalities in dimensions and subdimensions, which then are tested using data from the panel survey ELSOC (Estudio Longitudinal Social de Chile, N=3.000, 2016-2022). Results from factor analysis allow identifying four main dimensions of social cohesion: equality in social relationships, belongness, common benefits and territorial ties. Based on these results, we present a description of stability and change of social coheison indicators in Chile over the last years. The change in these indicators is discussed taking into account the recent sociopolitical context, characterized by a social outbrake in 2019 and the writing of a new constitution."
+abstract_short : ""
+url_pdf : "" 
+
+url_project: ""
+
+url_slides: "https://ocscoes.github.io/presentaciones/ISA-Melbourne-2023.html"
+
+url_video: ""
+
+url_poster: ""
+# 
+links:
+
+- icon: github
+
+  icon_pack: fab
+
+  name: Github
+
+  url: https://github.com/ocscoes/medicion-cohesion-elsoc
+
+---
+
+![](https://ocscoes.github.io/presentaciones/images/ISA.png)textbackslashtextbackslash 
+
+## Documento de presentación
+
+(F para pantalla completa)
+
+<iframe width="700"  height="450" src="https://ocscoes.github.io/presentaciones/ISA-Melbourne-2023.html" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

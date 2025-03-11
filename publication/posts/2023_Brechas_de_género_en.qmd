@@ -1,0 +1,36 @@
+---
+title : "Brechas de género en la percepción y justificación de desigualdad salarial en Chile 1999-2019."
+date : "2023-08-01"
+author : ["Juan-Carlos Castillo", "Kevin Carrasco"]
+categories : ["Presentation"]
+publication : " Conferencia DEMOSAL . Buenos Aires"
+publication_short : " Conferencia DEMOSAL . Buenos Aires"
+abstract : "Las brechas salariales entre hombres y mujeres son una de las principales expresiones económicas de la desigualdad de género. De acuerdo a datos de la OCDE, en promedio en Chile los salarios de los hombres son un 12% más altos que los de las mujeres, llegando incluso a casi un 25% cuando se ajusta por horas trabajadas. Si bien existe amplia documentación de este tipo de brechas socioeconómicas, existe escasa investigación sobre si la desigualdad salarial entre hombres y mujeres es percibida y justificada en la población, mucho menos sobre los factores asociados a la percepción y justificación de estas brechas. Utilizando datos de la encuesta del International Social Survey Programme - ISSP (módulos desigualdad económica 1999, 2009 y 2019, levantados por CEP en Chile), el presente artículo se centra en un análisis descriptivo de los cambios de percepción y justificación de brechas salariales por género en los últimos 20 años. Los resultados indican que, si bien en Chile en promedio se percibe una alta desigualdad salarial, las mujeres perciben y justifican menor desigualdad salarial consistentemente a través del tiempo. Las implicancias de estos resultados en relación al impulso de cambios políticos y culturales que permitan reducir la brecha de género se abordan en las conclusiones."
+abstract_short : ""
+url_pdf : "" 
+
+url_project: ""
+
+url_slides: "https://justicia-distributiva.github.io/brechas-genero/presentations/DEMOSAL2023/DEMOSAL2023.html#1"
+
+url_video: ""
+
+url_poster: ""
+# 
+links:
+
+- icon: github
+
+  icon_pack: fab
+
+  name: Github
+
+  url: https://justicia-distributiva.github.io/brechas-genero/
+---
+![](https://justicia-distributiva.github.io/brechas-genero/presentations/DEMOSAL2023/images/DEMOSAL.png)
+
+## Documento de presentación
+
+(F para pantalla completa)
+
+<iframe width="700"  height="450" src="https://justicia-distributiva.github.io/brechas-genero/presentations/DEMOSAL2023/DEMOSAL2023.html#1" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

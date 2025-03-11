@@ -1,0 +1,13 @@
+---
+title : "Measuring Perceptions and Preferences for Meritocracy"
+date : "2021-12-01"
+author : ["Juan Castillo", "Julio Cesar Iturra Sanhueza", "Francisco Javier Meneses Rivas", "Luis Maldonado", "Jorge Atria"]
+categories : ["Article"]
+publication : "Socarxiv OSF preprint"
+publication_short : "Socarxiv OSF preprint"
+abstract : "(Abstract not available)"
+abstract_short : ""
+url_source : "https://osf.io/preprints/socarxiv/mwk52/"
+tags : ["submitted"]
+---
+[OSF Preregistration](https://osf.io/z45y2)[Github Repo](https://github.com/justicia-distributiva/merit-scale)

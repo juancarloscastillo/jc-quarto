@@ -1,0 +1,36 @@
+---
+title : "Perceived salary and gender gaps in survey research"
+date : "2023-07-01"
+author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Julio Iturra"]
+categories : ["Presentation"]
+publication : " ESRA . Milán"
+publication_short : " ESRA . Milán"
+abstract : "The perception of economic inequality is a growing research area in survey studies. Although there are different operationalizations and measurement options, perceived salary gaps are widely used as they offer several advantages in terms of large variance which allows group comparisons. The items used to build the perceived salary gap are direct questions about the perceived salary for a low-status occupation (i.e. factory line worker) and a high-status occupation (i.e. manager), which are included in several waves of surveys as ISSP. The present paper delves into an issue barely considered so far when using this kind of items, namely the gender of the occupations. The English version of these items is gender-neutral, which is characteristic of this language by using the pronoun “the”. Therefore, firstly we do not know whether respondents attribute a gender to the occupations when answering the questions. For instance, when asked about a “manager”, are respondents thinking about a man or a woman? Would it be a different response if gender were specified? Secondly, these items need to mention a specific gender in many languages that do not have the neutral option, and by default, a male gender is used (as for instance “El gerente” / he-manager in Spanish). In this sense, it could be argued that most of what we know so far is about male perceived gaps Using data from the Desiguales Survey in Chile (2017, N=2,613) we compare the perceived salaries for four different occupations where gender was specified and randomly assigned: half of the respondents were asked about male occupations and the other half about female occupations. Preliminary results show that women perceived lower salaries than men in general and, when asked about women’s occupations, the perceived salary is even lower."
+abstract_short : ""
+url_pdf : "" 
+
+url_project: ""
+
+url_slides: "https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/ESRA2023.html#1"
+
+url_video: ""
+
+url_poster: ""
+# 
+links:
+
+- icon: github
+
+  icon_pack: fab
+
+  name: Github
+
+  url: https://justicia-distributiva.github.io/brechas-genero/
+---
+![](https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/images/ESRA.png)
+
+## Documento de presentación
+
+(F para pantalla completa)
+
+<iframe width="700"  height="450" src="https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/ESRA2023.html#1" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

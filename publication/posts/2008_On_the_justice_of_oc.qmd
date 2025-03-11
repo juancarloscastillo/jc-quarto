@@ -1,0 +1,11 @@
+---
+title : "On the justice of occupational earnings in Chile: A factorial survey analysis"
+date : "2008-08-01"
+author : ["\relax JC Castillo"]
+categories : ["Presentation"]
+publication : " . Australia, Flinders University"
+publication_short : " . Australia, Flinders University"
+abstract : "(Abstract not available)"
+abstract_short : ""
+tags : ["social justice research Chile legitimacy reward justice"]
+---

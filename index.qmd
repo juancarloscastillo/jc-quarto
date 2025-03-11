@@ -19,11 +19,22 @@ about:
       href: contacto.html
 
 listing:
-	
+- id: publication
+  contents: 
+    - publication/posts/*.qmd
+  sort: date desc
+  type: default
+  fields: [title, date, author, categories]
+  max-items: 5
+  categories: false
+  sort-ui: false
+  feed: false
+  page-size: 500
+  
 - id: docencia
   contents: 
     - docencia/posts/*/*.qmd
-  sort: date
+  sort: date desc
   type: grid
   grid-columns: 3
   image-height: 150px
@@ -36,20 +47,20 @@ listing:
 - id: proyectos
   contents: 
     - proyectos/posts/*/*.qmd
-  sort: date
+  sort: date desc
   type: grid
   grid-columns: 3
   image-height: 150px
-  fields: [image, title, description]
-  categories: true
+  fields: [image, title, description, categories]
+  categories: false
   sort-ui: false
-  filter-ui: false
+  filter-ui: [categories]
   feed: false
   
 - id: blog
   contents: 
     - blog/posts/*/*.qmd
-  sort: date
+  sort: date desc
   type: default
   max-items: 5
   image-height: 150px
@@ -84,20 +95,12 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 <!-- ## Recent Posts -->
 <!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
 
-::: {.background-frame .alt-background}
-::: {.content-block}
-
-<p align="left" style="font-size:36px; font-weight:bold;">Docencia</p>
-
-:::{#docencia}
-:::
-
-
-:::
-:::
-
 ::: {.background-frame}
 ::: {.content-block}
+
+
+::: {#proyectosh1}
+:::
 
 <p align="left" style="font-size:36px; font-weight:bold;">Proyectos</p>
 
@@ -110,6 +113,42 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 ::: {.background-frame .alt-background}
 ::: {.content-block}
+
+::: {#publicationh1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Publicaciones y Presentaciones recientes</p>
+
+:::{#publication}
+:::
+
+::: {.button}
+[Todas las publicaciones](publication/publication.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+::: {#docenciah1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Docencia</p>
+
+:::{#docencia}
+:::
+
+
+:::
+:::
+
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+::: {#blogh1}
+:::
 
 <p align="left" style="font-size:36px; font-weight:bold;">Post Recientes</p>
 

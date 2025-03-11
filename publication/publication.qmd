@@ -1,0 +1,12 @@
+---
+title: "Publicaciones y Presentaciones"
+page-layout: full
+listing:
+  contents: posts/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [title, date, author, categories]
+  filter-ui: [categories, date]
+title-block-banner: true
+---

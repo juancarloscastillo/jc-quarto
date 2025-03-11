@@ -1,0 +1,34 @@
+---
+title : "Socialización de la meritocracia en la escuela y justificación de la desigualdad económica"
+date : "2023-08-01"
+author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Mauricio Salgado", "Camila Moyano", "Nicolas Angelcos"]
+categories : ["Presentation"]
+publication : " Conferencia DEMOSAL . Buenos Aires"
+publication_short : " Conferencia DEMOSAL . Buenos Aires"
+abstract : "Los crecientes niveles de desigualdad económica y concentración del ingreso han impulsado en los últimos años la investigación sobre las preferencias redistributivas (Becker, 2021; Rueda & Stegmueller, 2019), entendidas como aquellas creencias sobre la necesidad de transferencias económicas y acceso universal a los servicios sociales por parte de aquellos con menos recursos. recursos, generalmente por parte del Estado. La información sobre estas preferencias es relevante para los gobiernos democráticos ya que su legitimidad responde en parte a su capacidad para gestionar las demandas de justicia social. A pesar de la creciente investigación en este campo, hasta ahora el foco se ha centrado principalmente en la población adulta, dejando de lado la pregunta sobre cómo se desarrollan y socializan estas preferencias en la edad escolar, así como cómo se ven influenciadas por factores sociales, culturales y económicos. . Utilizando datos de 6.511 estudiantes de 8º grado en Chile (Encuesta de la Agencia de Calidad de la Educación de Chile, 2017), este estudio tiene como objetivo analizar en qué medida las experiencias de justicia social en la edad escolar (por ejemplo, la asignación de calificaciones), así como las percepciones meritocráticas sobre la distribución de recompensas. en la sociedad, están relacionados con las preferencias redistributivas de los estudiantes. Como la meritocracia se concibe como un sistema donde las recompensas se distribuyen justamente según el esfuerzo y el talento individual (Young, 1958), la hipótesis central de este artículo es que aquellos estudiantes que perciben más meritocracia exhibirán menos preferencias por la redistribución (Batruch et al., 2021), moderando los posibles impactos de socialización de las familias. Los resultados de la estimación multinivel (efectos aleatorios) muestran que los estudiantes con una mayor percepción de meritocracia en la sociedad en realidad muestran menores preferencias por justificar el acceso a beneficios sociales basados hspace{0pt}hspace{0pt}en el ingreso individual, sin embargo, la percepción de meritocracia también se asocia con mayores preferencias por reducir la brecha económica entre ricos y pobres. Se discuten las implicaciones de estos resultados para la socialización política de los estudiantes por parte de la familia de origen y la escuela."
+abstract_short : ""
+url_pdf : "" 
+
+url_project: ""
+
+url_slides: "https://educacion-meritocracia.github.io/meritocracia-escuela-agencia/presentations//demosal2023/demosal2023.html"
+
+url_video: ""
+
+url_poster: ""
+# 
+links:
+
+- icon: github
+
+  icon_pack: fab
+
+  name: Github
+
+  url: https://github.com/educacion-meritocracia/meritocracia-escuela-agencia/
+---
+## Documento de presentación
+
+(F para pantalla completa)
+
+<iframe width="700"  height="450" src="https://educacion-meritocracia.github.io/meritocracia-escuela-agencia/presentations//demosal2023/demosal2023.html" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

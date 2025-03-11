@@ -9,10 +9,14 @@
     "index.qmd": [
       "docencia/posts/*/*.qmd",
       "proyectos/posts/*/*.qmd",
-      "blog/posts/*/*.qmd"
+      "blog/posts/*/*.qmd",
+      "publication/posts/*.qmd"
     ],
     "blog/blog.qmd": [
       "posts"
+    ],
+    "publication/publication.qmd": [
+      "posts/*.qmd"
     ]
   }
 }

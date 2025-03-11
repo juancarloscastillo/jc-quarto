@@ -1,0 +1,13 @@
+---
+title : "Measurement and Analysis of Social Cohesion"
+date : "2022-01-01"
+author : ["Juan-Carlos Castillo", "Matias Bargsted"]
+categories : ["Presentation"]
+publication : " Research Institute Social Cohesion - Jahrestagung Forschungscluster 2 . Bremen  (Online)"
+publication_short : " Research Institute Social Cohesion - Jahrestagung Forschungscluster 2 . Bremen  (Online)"
+abstract : "Die empirische Erforschung des gesellschaftlichen Zusammenhalts erfordert, das Konzept bzw. die jeweils interessierenden Aspekte des gesellschaftlichen Zusammenhalts operationalisierbar und messbar zu machen. Dafür müssen nicht nur theoretische Konzeptionen des gesellschaftlichen Zusammenhalts ausgearbeitet, sondern auch geeignete Erhebungsinstrumente entwickelt und Dateninfrastrukturen geschaffen werden. Im FGZ ist deshalb mit dem Zusammenhaltspanel ein neuer Längsschnitt-Survey entwickelt worden, der sowohl etablierte wie neuartige Erhebungsinstrumente zur systematischen Analyse des gesellschaftlichen Zusammenhalts in Deutschland enthält. Mit dem Regionalpanel werden zudem 12 ausgewählte Regionen in Deutschland intensiv im Hinblick auf die lokalen Strukturbedingungen des Zusammenhalts vor Ort analysierbar. Mit diesen Surveys möchte das FGZ einen zentralen Beitrag leisten zum Aufbau und zur Erweiterung nationaler wie internationaler Dateninfrastrukturen zur empirischen Analyse des gesellschaftlichen Zusammenhalts. Das Panel beschäftigt sich vor diesem Hintergrund mit den Fragen der Konzeption und Analyse gesellschaftlichen Zusammenhalts auf Basis von quantitativen Surveys. Jan Delhey präsentiert Überlegungen und Analysen zum gesellschaftlichen Zusammenhalt aus den Perspektiven der Sozialindikatoren und Quality-of-Life- Forschung sowie des „Radar gesellschaftlicher Zusammenhalt“. Ein weiterer Vortrag stellt die konzeptionellen Überlegungen und empirischen Befunde zum gesellschaftlichen Zusammenhalt in Deutschland auf Basis der FGZ-Surveys des Zusammenhaltspanels und des Regionalpanels vor. Das Centro de Estudios del Conflicto y la Cohesión Social (COES) hat als chilenisches Pendant zum FGZ einen Survey zur Analyse des gesellschaftlichen Zusammenhalts in Chile entwickelt. Juan Carlos Castillo und Matías Bargsted (beide COES) präsentieren auf dessen Basis empirische Analysen zum gesellschaftlichen Zusammenhalt in einem der ungleichsten Länder der Welt."
+abstract_short : ""
+url_source : "https://ocscoes.github.io/presentaciones/RISC-bremen-january2022.html"
+---
+
+[Github Repo](https://github.com/ocscoes/presentaciones)

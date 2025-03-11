@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nate Breznau">
+<meta name="author" content="Eike Mark Rinke">
+<meta name="author" content="Alexander Wuttke">
+<meta name="author" content="Hung H. V. Nguyen">
+<meta name="author" content="Muna Adem">
+<meta name="author" content="Jule Adriaans">
+<meta name="author" content="Amalia Alvarez-Benjumea">
+<meta name="author" content="Henrik K. Andersen">
+<meta name="author" content="Daniel Auer">
+<meta name="author" content="Flavio Azevedo">
+<meta name="author" content="Oke Bahnsen">
+<meta name="author" content="Dave Balzer">
+<meta name="author" content="Gerrit Bauer">
+<meta name="author" content="Paul C. Bauer">
+<meta name="author" content="Markus Baumann">
+<meta name="author" content="Sharon Baute">
+<meta name="author" content="Verena Benoit">
+<meta name="author" content="Julian Bernauer">
+<meta name="author" content="Carl Berning">
+<meta name="author" content="Anna Berthold">
+<meta name="author" content="Felix S. Bethke">
+<meta name="author" content="Thomas Biegert">
+<meta name="author" content="Katharina Blinzler">
+<meta name="author" content="Johannes N. Blumenberg">
+<meta name="author" content="Licia Bobzien">
+<meta name="author" content="Andrea Bohman">
+<meta name="author" content="Thijs Bol">
+<meta name="author" content="Amie Bostic">
+<meta name="author" content="Zuzanna Brzozowska">
+<meta name="author" content="Katharina Burgdorf">
+<meta name="author" content="Kaspar Burger">
+<meta name="author" content="Kathrin B. Busch">
+<meta name="author" content="Juan Carlos-Castillo">
+<meta name="author" content="Nathan Chan">
+<meta name="author" content="Pablo Christmann">
+<meta name="author" content="Roxanne Connelly">
+<meta name="author" content="Christian S. Czymara">
+<meta name="author" content="Elena Damian">
+<meta name="author" content="Alejandro Ecker">
+<meta name="author" content="Achim Edelmann">
+<meta name="author" content="Maureen A. Eger">
+<meta name="author" content="Simon Ellerbrock">
+<meta name="author" content="Anna Forke">
+<meta name="author" content="Andrea Forster">
+<meta name="author" content="Chris Gaasendam">
+<meta name="author" content="Konstantin Gavras">
+<meta name="author" content="Vernon Gayle">
+<meta name="author" content="Theresa Gessler">
+<meta name="author" content="Timo Gnambs">
+<meta name="author" content="Amelie Godefroidt">
+<meta name="author" content="Max Gromping">
+<meta name="author" content="Martin Gross">
+<meta name="author" content="Stefan Gruber">
+<meta name="author" content="Tobias Gummer">
+<meta name="author" content="Andreas Hadjar">
+<meta name="author" content="Jan Paul Heisig">
+<meta name="author" content="Sebastian Hellmeier">
+<meta name="author" content="Stefanie Heyne">
+<meta name="author" content="Magdalena Hirsch">
+<meta name="author" content="Mikael Hjerm">
+<meta name="author" content="Oshrat Hochman">
+<meta name="author" content="Andreas Hovermann">
+<meta name="author" content="Sophia Hunger">
+<meta name="author" content="Christian Hunkler">
+<meta name="author" content="Nora Huth">
+<meta name="author" content="Zsofia S. Ignacz">
+<meta name="author" content="Laura Jacobs">
+<meta name="author" content="Jannes Jacobsen">
+<meta name="author" content="Bastian Jaeger">
+<meta name="author" content="Sebastian Jungkunz">
+<meta name="author" content="Nils Jungmann">
+<meta name="author" content="Mathias Kauff">
+<meta name="author" content="Manuel Kleinert">
+<meta name="author" content="Julia Klinger">
+<meta name="author" content="Jan-Philipp Kolb">
+<meta name="author" content="Marta Kolczynska">
+<meta name="author" content="John Kuk">
+<meta name="author" content="Katharina Kunissen">
+<meta name="author" content="Dafina {Kurti Sinatra}">
+<meta name="author" content="Alexander Langenkamp">
+<meta name="author" content="Philipp M. Lersch">
+<meta name="author" content="Lea-Maria Lobel">
+<meta name="author" content="Philipp Lutscher">
+<meta name="author" content="Matthias Mader">
+<meta name="author" content="Joan E. Madia">
+<meta name="author" content="Natalia Malancu">
+<meta name="author" content="Luis Maldonado">
+<meta name="author" content="Helge Marahrens">
+<meta name="author" content="Nicole Martin">
+<meta name="author" content="Paul Martinez">
+<meta name="author" content="Jochen Mayerl">
+<meta name="author" content="Oscar J. Mayorga">
+<meta name="author" content="Patricia McManus">
+<meta name="author" content="Kyle McWagner">
+<meta name="author" content="Cecil Meeusen">
+<meta name="author" content="Daniel Meierrieks">
+<meta name="author" content="Jonathan Mellon">
+<meta name="author" content="Friedolin Merhout">
+<meta name="author" content="Samuel Merk">
+<meta name="author" content="Daniel Meyer">
+<meta name="author" content="Leticia Micheli">
+<meta name="author" content="Jonathan Mijs">
+<meta name="author" content="Cristobal Moya">
+<meta name="author" content="Marcel Neunhoeffer">
+<meta name="author" content="Daniel Nust">
+<meta name="author" content="Olav Nygard">
+<meta name="author" content="Fabian Ochsenfeld">
+<meta name="author" content="Gunnar Otte">
+<meta name="author" content="Anna O. Pechenkina">
+<meta name="author" content="Christopher Prosser">
+<meta name="author" content="Louis Raes">
+<meta name="author" content="Kevin Ralston">
+<meta name="author" content="Miguel R. Ramos">
+<meta name="author" content="Arne Roets">
+<meta name="author" content="Jonathan Rogers">
+<meta name="author" content="Guido Ropers">
+<meta name="author" content="Robin Samuel">
+<meta name="author" content="Gregor Sand">
+<meta name="author" content="Ariela Schachter">
+<meta name="author" content="Merlin Schaeffer">
+<meta name="author" content="David Schieferdecker">
+<meta name="author" content="Elmar Schlueter">
+<meta name="author" content="Regine Schmidt">
+<meta name="author" content="Katja M. Schmidt">
+<meta name="author" content="Alexander Schmidt-Catran">
+<meta name="author" content="Claudia Schmiedeberg">
+<meta name="author" content="Jurgen Schneider">
+<meta name="author" content="Martijn Schoonvelde">
+<meta name="author" content="Julia Schulte-Cloos">
+<meta name="author" content="Sandy Schumann">
+<meta name="author" content="Reinhard Schunck">
+<meta name="author" content="Jurgen Schupp">
+<meta name="author" content="Julian Seuring">
+<meta name="author" content="Henning Silber">
+<meta name="author" content="Willem Sleegers">
+<meta name="author" content="Nico Sonntag">
+<meta name="author" content="Alexander Staudt">
+<meta name="author" content="Nadia Steiber">
+<meta name="author" content="Nils Steiner">
+<meta name="author" content="Sebastian Sternberg">
+<meta name="author" content="Dieter Stiers">
+<meta name="author" content="Dragana Stojmenovska">
+<meta name="author" content="Nora Storz">
+<meta name="author" content="Erich Striessnig">
+<meta name="author" content="Anne-Kathrin Stroppe">
+<meta name="author" content="Janna Teltemann">
+<meta name="author" content="Andrey Tibajev">
+<meta name="author" content="Brian Tung">
+<meta name="author" content="Giacomo Vagni">
+<meta name="author" content="Jasper {Van Assche}">
+<meta name="author" content="Meta { oopsortlindenvan der Linden}">
+<meta name="author" content="Jolanda { oopsortnollvan der Noll}">
+<meta name="author" content="Arno {Van Hootegem}">
+<meta name="author" content="Stefan Vogtenhuber">
+<meta name="author" content="Bogdan Voicu">
+<meta name="author" content="Fieke Wagemans">
+<meta name="author" content="Nadja Wehl">
+<meta name="author" content="Hannah Werner">
+<meta name="author" content="Brenton M. Wiernik">
+<meta name="author" content="Fabian Winter">
+<meta name="author" content="Christof Wolf">
+<meta name="author" content="Yuki Yamada">
+<meta name="author" content="Nan Zhang">
+<meta name="author" content="Conrad Ziller">
+<meta name="author" content="Stefan Zins">
+<meta name="author" content="Tomasz Zoltak">
+<meta name="dcterms.date" content="2022-11-01">
+
+<title>jc-castillo - Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">jc-castillo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.html#listing-publication" rel="" target="">
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="dropdown-header">
+ <span class="menu-text">Publicaciones y Presentaciones</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#listing-docencia" rel="" target="">
+ <span class="menu-text">Docencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#listing-proyectos" rel="" target="">
+ <span class="menu-text">Proyectos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#listing-blog" rel="" target="">
+ <span class="menu-text">Post Recientes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../links.html" rel="" target="">
+ <span class="menu-text">Links</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contacto.html" rel="" target="">
+ <span class="menu-text">Contacto</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Observing many researchers using the same data and hypothesis reveals a hidden universe of uncertainty</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Article</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nate Breznau </p>
+             <p>Eike Mark Rinke </p>
+             <p>Alexander Wuttke </p>
+             <p>Hung H. V. Nguyen </p>
+             <p>Muna Adem </p>
+             <p>Jule Adriaans </p>
+             <p>Amalia Alvarez-Benjumea </p>
+             <p>Henrik K. Andersen </p>
+             <p>Daniel Auer </p>
+             <p>Flavio Azevedo </p>
+             <p>Oke Bahnsen </p>
+             <p>Dave Balzer </p>
+             <p>Gerrit Bauer </p>
+             <p>Paul C. Bauer </p>
+             <p>Markus Baumann </p>
+             <p>Sharon Baute </p>
+             <p>Verena Benoit </p>
+             <p>Julian Bernauer </p>
+             <p>Carl Berning </p>
+             <p>Anna Berthold </p>
+             <p>Felix S. Bethke </p>
+             <p>Thomas Biegert </p>
+             <p>Katharina Blinzler </p>
+             <p>Johannes N. Blumenberg </p>
+             <p>Licia Bobzien </p>
+             <p>Andrea Bohman </p>
+             <p>Thijs Bol </p>
+             <p>Amie Bostic </p>
+             <p>Zuzanna Brzozowska </p>
+             <p>Katharina Burgdorf </p>
+             <p>Kaspar Burger </p>
+             <p>Kathrin B. Busch </p>
+             <p>Juan Carlos-Castillo </p>
+             <p>Nathan Chan </p>
+             <p>Pablo Christmann </p>
+             <p>Roxanne Connelly </p>
+             <p>Christian S. Czymara </p>
+             <p>Elena Damian </p>
+             <p>Alejandro Ecker </p>
+             <p>Achim Edelmann </p>
+             <p>Maureen A. Eger </p>
+             <p>Simon Ellerbrock </p>
+             <p>Anna Forke </p>
+             <p>Andrea Forster </p>
+             <p>Chris Gaasendam </p>
+             <p>Konstantin Gavras </p>
+             <p>Vernon Gayle </p>
+             <p>Theresa Gessler </p>
+             <p>Timo Gnambs </p>
+             <p>Amelie Godefroidt </p>
+             <p>Max Gromping </p>
+             <p>Martin Gross </p>
+             <p>Stefan Gruber </p>
+             <p>Tobias Gummer </p>
+             <p>Andreas Hadjar </p>
+             <p>Jan Paul Heisig </p>
+             <p>Sebastian Hellmeier </p>
+             <p>Stefanie Heyne </p>
+             <p>Magdalena Hirsch </p>
+             <p>Mikael Hjerm </p>
+             <p>Oshrat Hochman </p>
+             <p>Andreas Hovermann </p>
+             <p>Sophia Hunger </p>
+             <p>Christian Hunkler </p>
+             <p>Nora Huth </p>
+             <p>Zsofia S. Ignacz </p>
+             <p>Laura Jacobs </p>
+             <p>Jannes Jacobsen </p>
+             <p>Bastian Jaeger </p>
+             <p>Sebastian Jungkunz </p>
+             <p>Nils Jungmann </p>
+             <p>Mathias Kauff </p>
+             <p>Manuel Kleinert </p>
+             <p>Julia Klinger </p>
+             <p>Jan-Philipp Kolb </p>
+             <p>Marta Kolczynska </p>
+             <p>John Kuk </p>
+             <p>Katharina Kunissen </p>
+             <p>Dafina {Kurti Sinatra} </p>
+             <p>Alexander Langenkamp </p>
+             <p>Philipp M. Lersch </p>
+             <p>Lea-Maria Lobel </p>
+             <p>Philipp Lutscher </p>
+             <p>Matthias Mader </p>
+             <p>Joan E. Madia </p>
+             <p>Natalia Malancu </p>
+             <p>Luis Maldonado </p>
+             <p>Helge Marahrens </p>
+             <p>Nicole Martin </p>
+             <p>Paul Martinez </p>
+             <p>Jochen Mayerl </p>
+             <p>Oscar J. Mayorga </p>
+             <p>Patricia McManus </p>
+             <p>Kyle McWagner </p>
+             <p>Cecil Meeusen </p>
+             <p>Daniel Meierrieks </p>
+             <p>Jonathan Mellon </p>
+             <p>Friedolin Merhout </p>
+             <p>Samuel Merk </p>
+             <p>Daniel Meyer </p>
+             <p>Leticia Micheli </p>
+             <p>Jonathan Mijs </p>
+             <p>Cristobal Moya </p>
+             <p>Marcel Neunhoeffer </p>
+             <p>Daniel Nust </p>
+             <p>Olav Nygard </p>
+             <p>Fabian Ochsenfeld </p>
+             <p>Gunnar Otte </p>
+             <p>Anna O. Pechenkina </p>
+             <p>Christopher Prosser </p>
+             <p>Louis Raes </p>
+             <p>Kevin Ralston </p>
+             <p>Miguel R. Ramos </p>
+             <p>Arne Roets </p>
+             <p>Jonathan Rogers </p>
+             <p>Guido Ropers </p>
+             <p>Robin Samuel </p>
+             <p>Gregor Sand </p>
+             <p>Ariela Schachter </p>
+             <p>Merlin Schaeffer </p>
+             <p>David Schieferdecker </p>
+             <p>Elmar Schlueter </p>
+             <p>Regine Schmidt </p>
+             <p>Katja M. Schmidt </p>
+             <p>Alexander Schmidt-Catran </p>
+             <p>Claudia Schmiedeberg </p>
+             <p>Jurgen Schneider </p>
+             <p>Martijn Schoonvelde </p>
+             <p>Julia Schulte-Cloos </p>
+             <p>Sandy Schumann </p>
+             <p>Reinhard Schunck </p>
+             <p>Jurgen Schupp </p>
+             <p>Julian Seuring </p>
+             <p>Henning Silber </p>
+             <p>Willem Sleegers </p>
+             <p>Nico Sonntag </p>
+             <p>Alexander Staudt </p>
+             <p>Nadia Steiber </p>
+             <p>Nils Steiner </p>
+             <p>Sebastian Sternberg </p>
+             <p>Dieter Stiers </p>
+             <p>Dragana Stojmenovska </p>
+             <p>Nora Storz </p>
+             <p>Erich Striessnig </p>
+             <p>Anne-Kathrin Stroppe </p>
+             <p>Janna Teltemann </p>
+             <p>Andrey Tibajev </p>
+             <p>Brian Tung </p>
+             <p>Giacomo Vagni </p>
+             <p>Jasper {Van Assche} </p>
+             <p>Meta { oopsortlindenvan der Linden} </p>
+             <p>Jolanda { oopsortnollvan der Noll} </p>
+             <p>Arno {Van Hootegem} </p>
+             <p>Stefan Vogtenhuber </p>
+             <p>Bogdan Voicu </p>
+             <p>Fieke Wagemans </p>
+             <p>Nadja Wehl </p>
+             <p>Hannah Werner </p>
+             <p>Brenton M. Wiernik </p>
+             <p>Fabian Winter </p>
+             <p>Christof Wolf </p>
+             <p>Yuki Yamada </p>
+             <p>Nan Zhang </p>
+             <p>Conrad Ziller </p>
+             <p>Stefan Zins </p>
+             <p>Tomasz Zoltak </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 1, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    This study explores how researchers’ analytical choices affect the reliability of scientific findings. Most discussions of reliability problems in science focus on systematic biases. We broaden the lens to emphasize the idiosyncrasy of conscious and unconscious decisions that researchers make during data analysis. We coordinated 161 researchers in 73 research teams and observed their research decisions as they used the same data to independently test the same prominent social science hypothesis: that greater immigration reduces support for social policies among the public. In this typical case of social science research, research teams reported both widely diverging numerical findings and substantive conclusions despite identical start conditions. Researchers’ expertise, prior beliefs, and expectations barely predict the wide variation in research outcomes. More than 95% of the total variance in numerical results remains unexplained even after qualitative coding of all identifiable decisions in each team’s workflow. This reveals a universe of uncertainty that remains hidden when considering a single study in isolation. The idiosyncratic nature of how researchers’ results and conclusions varied is a previously underappreciated explanation for why many scientific hypotheses remain contested. These results call for greater epistemic humility and clarity in reporting scientific findings.
+  </div>
+</div>
+
+</header>
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

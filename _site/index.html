@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -63,6 +64,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-docencia .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -98,9 +127,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -170,16 +199,20 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#listing-docencia" rel="" target="">
+    <a class="nav-link" href="./index.html#publicationh1" rel="" target="">
+ <span class="menu-text">Publicaciones y Presentaciones</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#docenciah1" rel="" target="">
  <span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#listing-proyectos" rel="" target="">
+    <a class="nav-link" href="./index.html#proyectosh1" rel="" target="">
  <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#listing-blog" rel="" target="">
- <span class="menu-text">Post Recientes</span></a>
+    <a class="nav-link" href="./index.html#blogh1" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./links.html" rel="" target="">
@@ -255,313 +288,43 @@ https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
 
 <!-- ## Recent Posts -->
 <!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
-<div class="background-frame alt-background">
-<div class="content-block">
-<p align="left" style="font-size:36px; font-weight:bold;">
-Docencia
-</p>
-<div id="listing-docencia" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cursos" data-listing-date-sort="1527220800000" data-listing-file-modified-sort="1741284427565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/talleres-seminarios/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/talleres-seminarios/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Talleres y seminarios
-</h5>
-<div class="card-text listing-description">
-Aquí algunos talleres, seminarios y cursos breves en distintos temas
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cursos" data-listing-date-sort="1551409200000" data-listing-file-modified-sort="1741283937270" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/estadistica-multivariada/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/estadistica-multivariada/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Estadística Multivariada
-</h5>
-<div class="card-text listing-description">
-Cada versión del curso centraliza la información en una…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741707989320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/ciencia-social-abierta/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/ciencia-social-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ciencia Social Abierta
-</h5>
-<div class="card-text listing-description">
-Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708498031" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/estrategias-ic/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/estrategias-ic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Estrategias de investigación cuantitativa
-</h5>
-<div class="card-text listing-description">
-Al finalizar el curso los/as estudiantes conocerán distintas estrategias de investigación cuantitativa partir de las cuales serán capaces de identificar y construir…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708505502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/metodologia1/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/metodologia1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metodología 1
-</h5>
-<div class="card-text listing-description">
-Desarrollado junto a Kevin Carrasco y Pablo Pérez.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="cursos" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741283823896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/encuestas-sociales/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/encuestas-sociales/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Encuestas sociales
-</h5>
-<div class="card-text listing-description">
-Este seminario de profundización metodológica está dirigido a quienes tengan interés en adquirir herramientas que les permitan responder de manera adecuada a las demandas…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708492648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/correlacional/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/correlacional/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Estadística correlacional
-</h5>
-<div class="card-text listing-description">
-Este curso se centra en inferencia, asociación y reporte, y se dicta el 2do semestre en el segundo año de la carrera.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708515290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/multinivel/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/multinivel/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modelos Multinivel
-</h5>
-<div class="card-text listing-description">
-Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-date-sort="1724817600000" data-listing-file-modified-sort="1741283507668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<a href="./docencia/posts/desarrollo-tesis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/desarrollo-tesis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Guía de memorias y tesis
-</h5>
-<div class="card-text listing-description">
-La guía de seminarios de grado/memorias/tesis es una actividad de acompañamiento semestral de tesistas que incluye:
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="cursos" data-listing-file-modified-sort="1741284533848" data-listing-reading-time-sort="1">
-<a href="./docencia/posts/coloquio/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="docencia/posts/coloquio/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coloquio de investigación en desigualdad y ciudadanía
-</h5>
-<div class="card-text listing-description">
-El objetivo de este coloquio mensual es presentar…
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</div>
-</div>
 <div class="background-frame">
 <div class="content-block">
+<div id="proyectosh1">
+
+</div>
 <p align="left" style="font-size:36px; font-weight:bold;">
 Proyectos
 </p>
 <div id="listing-proyectos" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Varios" data-listing-date-sort="1270004400000" data-listing-file-modified-sort="1741364858782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./proyectos/posts/otros-proyectos/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="Milenio" data-listing-date-sort="1680231600000" data-listing-file-modified-sort="1741364518963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<a href="./proyectos/posts/nudos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top"><img src="proyectos/posts/nudos/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Otros proyectos
+Núcleo Milenio de Desigualdades y Oportunidades Digitales
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Milenio'); return false;">
+Milenio
+</div>
+</div>
 <div class="card-text listing-description">
-<strong>Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC</strong> (2013 - 2014) CONICYT DRI 130074, principal researcher.
+Concepto: Las tecnologías digitales han reconfigurado estructuras de poder y la vida pública, pero la prometida inclusión con la masificación de herramientas digitales ha…
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Fondecyt" data-listing-date-sort="1364698800000" data-listing-file-modified-sort="1741706267347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<a href="./proyectos/posts/fondecyt-iniciacion/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/fondecyt-iniciacion/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Social justice and citizenship participation: An international comparison with focus on the case of Chile
-</h5>
-<div class="card-text listing-description">
-El proyecto de investigación “Justicia distributiva y participación ciudadana” se desarrolló entre los años 2012 y 2015, y tuvo como principal objetivo analizar el rol que…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="FONDAP" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741708705460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./proyectos/posts/coes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-COES
-</h5>
-<div class="card-text listing-description">
-El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por el programa FONDAP de ANID y desarrolla investigación colaborativa en temas relacionados al conflicto social y la cohesión en Chile, por medio de un…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Fondecyt" data-listing-date-sort="1427770800000" data-listing-file-modified-sort="1741274078181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./proyectos/posts/fondecyt-ciudadania1/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Formación ciudadana I Socialización política y experiencia escolar - Chile en contexto internacional
-</h5>
-<div class="card-text listing-description">
-La hipótesis general de investigación es que el currículo escolar, junto a una serie de factores contextuales, poseen una influencia en la formación cívica y ciudadana. El…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="Fondecyt" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1741365614797" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<a href="./proyectos/posts/fondecyt-economiamoral/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/fondecyt-economiamoral/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Economía moral de la meritocracia y preferencias redistributivas
-</h5>
-<div class="card-text listing-description">
-El objetivo general de nuestra investigación fue <strong>analizar la relación entre creencias en la meritocracia y preferencias redistributivas desde una perspectiva de economía moral</strong>, atendiendo al contexto institucional en Chile y en perspectiva comparativa internacional. El caso de Chile surge como relevante para este estudio dada su historia de…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="Fondecyt" data-listing-date-sort="1522465200000" data-listing-file-modified-sort="1741706184074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./proyectos/posts/fondecyt-ciudadania2/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania2/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Formación Ciudadana II: Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela.
-</h5>
-<div class="card-text listing-description">
-La investigación propuesta hará intenso uso del conocimiento secundario existente sobre educación ciudadana que realiza la escolaridad en Chile, aprovechando las bases de…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="Fondecyt" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741706244114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./proyectos/posts/fondecyt-edumer/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/fondecyt-edumer/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
-</h5>
-<div class="card-text listing-description">
-Una de las características de Chile como caso de estudio a nivel internacional son las desigualdades en logro académico. Estas desigualdades en la etapa escolar han sido…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364329638" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./proyectos/posts/lisa/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/lisa/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Laboratorio de Investigación Social Abierta
-</h5>
-<div class="card-text listing-description">
-El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="COES" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741708724678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./proyectos/posts/ocs-coes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Observatorio de Cohesión Social
-</h5>
-<div class="card-text listing-description">
-El Observatorio de Cohesión Social (OCS) es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES), desde donde se busca contribuir al estudio de la…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364473737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364473737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <a href="./proyectos/posts/minicoes-ciencia-abierta/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/minicoes-ciencia-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -576,7 +339,7 @@ Durante los últimos años, el mundo académico ha experimentado una serie de de
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Fondecyt" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364884738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="Fondecyt" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364884738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./proyectos/posts/price/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/price/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -584,6 +347,11 @@ Durante los últimos años, el mundo académico ha experimentado una serie de de
 <h5 class="no-anchor card-title listing-title">
 PRICE
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a partir de la vinculación de distintos proyectos de…
 </div>
@@ -591,16 +359,176 @@ El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a par
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Milenio" data-listing-date-sort="1680231600000" data-listing-file-modified-sort="1741364518963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<a href="./proyectos/posts/nudos/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="Fondecyt" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741706244114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./proyectos/posts/fondecyt-edumer/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="proyectos/posts/nudos/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-edumer/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Núcleo Milenio de Desigualdades y Oportunidades Digitales
+Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+Fondecyt
+</div>
+</div>
+<div class="card-text listing-description">
+Una de las características de Chile como caso de estudio a nivel internacional son las desigualdades en logro académico. Estas desigualdades en la etapa escolar han sido…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364329638" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/lisa/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/lisa/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Laboratorio de Investigación Social Abierta
 </h5>
 <div class="card-text listing-description">
-Concepto: Las tecnologías digitales han reconfigurado estructuras de poder y la vida pública, pero la prometida inclusión con la masificación de herramientas digitales ha…
+El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="COES" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741708724678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/ocs-coes/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Observatorio de Cohesión Social
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('COES'); return false;">
+COES
+</div>
+</div>
+<div class="card-text listing-description">
+<i class="bi bi-link-45deg"></i>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="Fondecyt" data-listing-date-sort="1522465200000" data-listing-file-modified-sort="1741706184074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./proyectos/posts/fondecyt-ciudadania2/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania2/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Formación Ciudadana II: Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela.
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+Fondecyt
+</div>
+</div>
+<div class="card-text listing-description">
+La investigación propuesta hará intenso uso del conocimiento secundario existente sobre educación ciudadana que realiza la escolaridad en Chile, aprovechando las bases de…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="Fondecyt" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1741365614797" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<a href="./proyectos/posts/fondecyt-economiamoral/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-economiamoral/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Economía moral de la meritocracia y preferencias redistributivas
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+Fondecyt
+</div>
+</div>
+<div class="card-text listing-description">
+El objetivo general de nuestra investigación fue <strong>analizar la relación entre creencias en la meritocracia y preferencias redistributivas desde una perspectiva de economía moral</strong>, atendiendo al contexto institucional en Chile y en perspectiva comparativa internacional. El caso de Chile surge como relevante para este estudio dada su historia de…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="Fondecyt" data-listing-date-sort="1427770800000" data-listing-file-modified-sort="1741274078181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/fondecyt-ciudadania1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Formación ciudadana I Socialización política y experiencia escolar - Chile en contexto internacional
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+Fondecyt
+</div>
+</div>
+<div class="card-text listing-description">
+La hipótesis general de investigación es que el currículo escolar, junto a una serie de factores contextuales, poseen una influencia en la formación cívica y ciudadana. El…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="FONDAP" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741708705460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/coes/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+COES
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('FONDAP'); return false;">
+FONDAP
+</div>
+</div>
+<div class="card-text listing-description">
+<i class="bi bi-link-45deg"></i>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="Fondecyt" data-listing-date-sort="1364698800000" data-listing-file-modified-sort="1741706267347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<a href="./proyectos/posts/fondecyt-iniciacion/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="proyectos/posts/fondecyt-iniciacion/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Social justice and citizenship participation: An international comparison with focus on the case of Chile
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+Fondecyt
+</div>
+</div>
+<div class="card-text listing-description">
+El proyecto de investigación “Justicia distributiva y participación ciudadana” se desarrolló entre los años 2012 y 2015, y tuvo como principal objetivo analizar el rol que…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="Varios" data-listing-date-sort="1270004400000" data-listing-file-modified-sort="1741364858782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./proyectos/posts/otros-proyectos/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Otros proyectos
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Varios'); return false;">
+Varios
+</div>
+</div>
+<div class="card-text listing-description">
+<strong>Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC</strong> (2013 - 2014) CONICYT DRI 130074, principal researcher.
 </div>
 </div>
 </div>
@@ -615,60 +543,362 @@ No matching items
 </div>
 <div class="background-frame alt-background">
 <div class="content-block">
+<div id="publicationh1">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Publicaciones y Presentaciones recientes
+</p>
+<div id="listing-publication" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Presentation" data-listing-date-sort="1719806400000" data-listing-file-modified-sort="1741720365544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="./publication/posts/2024_Measuring_social_coh.html">
+<h3 class="no-anchor listing-title">
+Measuring social cohesion in Chile with longitudinal survey data
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./publication/posts/2024_Measuring_social_coh.html"> </a>
+</div>
+<div class="metadata">
+<a href="./publication/posts/2024_Measuring_social_coh.html">
+<div class="listing-date">
+Jul 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741720365496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="./publication/posts/2024_Barreras_para_la_Cie.html">
+<h3 class="no-anchor listing-title">
+Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile.
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./publication/posts/2024_Barreras_para_la_Cie.html"> </a>
+</div>
+<div class="metadata">
+<a href="./publication/posts/2024_Barreras_para_la_Cie.html">
+<div class="listing-date">
+May 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741720365547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="./publication/posts/2024_Meritocracia_y_justi.html">
+<h3 class="no-anchor listing-title">
+Meritocracia y justificación de desigualdad en la etapa escolar: Un experimento de encuesta.
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./publication/posts/2024_Meritocracia_y_justi.html"> </a>
+</div>
+<div class="metadata">
+<a href="./publication/posts/2024_Meritocracia_y_justi.html">
+<div class="listing-date">
+May 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo, Kevin Carrasco
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741720365514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="./publication/posts/2024_¿Las_estudiantes_sub.html">
+<h3 class="no-anchor listing-title">
+¿Las estudiantes subestiman sus habilidades tecnológicas? Diferencias de género en autoeficacia digital en contextos escolares chilenos
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./publication/posts/2024_¿Las_estudiantes_sub.html"> </a>
+</div>
+<div class="metadata">
+<a href="./publication/posts/2024_¿Las_estudiantes_sub.html">
+<div class="listing-date">
+May 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo, Nicolas Tobar
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Presentation" data-listing-date-sort="1711940400000" data-listing-file-modified-sort="1741720365594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="./publication/posts/2024_Does_information_abo.html">
+<h3 class="no-anchor listing-title">
+Does information about inequality affects opportunity beliefs? Results from a survey experiment
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./publication/posts/2024_Does_information_abo.html"> </a>
+</div>
+<div class="metadata">
+<a href="./publication/posts/2024_Does_information_abo.html">
+<div class="listing-date">
+Apr 1, 2024
+</div>
+<div class="listing-author">
+Luis Maldonado, Juan-Carlos Castillo, Julio Iturra
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div class="button">
+<p><a href="./publication/publication.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las publicaciones</a></p>
+</div>
+</div>
+</div>
+<div class="background-frame alt-background">
+<div class="content-block">
+<div id="docenciah1">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Docencia
+</p>
+<div id="listing-docencia" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cursos" data-listing-file-modified-sort="1741284533848" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/coloquio/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/coloquio/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Coloquio de investigación en desigualdad y ciudadanía
+</h5>
+<div class="card-text listing-description">
+El objetivo de este coloquio mensual es presentar…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1724817600000" data-listing-file-modified-sort="1741283507668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<a href="./docencia/posts/desarrollo-tesis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/desarrollo-tesis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Guía de memorias y tesis
+</h5>
+<div class="card-text listing-description">
+La guía de seminarios de grado/memorias/tesis es una actividad de acompañamiento semestral de tesistas que incluye:
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708492648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/correlacional/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/correlacional/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Estadística correlacional
+</h5>
+<div class="card-text listing-description">
+Este curso se centra en inferencia, asociación y reporte, y se dicta el 2do semestre en el segundo año de la carrera.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708515290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/multinivel/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/multinivel/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Modelos Multinivel
+</h5>
+<div class="card-text listing-description">
+Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="cursos" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741283823896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/encuestas-sociales/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/encuestas-sociales/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Encuestas sociales
+</h5>
+<div class="card-text listing-description">
+Este seminario de profundización metodológica está dirigido a quienes tengan interés en adquirir herramientas que les permitan responder de manera adecuada a las demandas…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741707989320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/ciencia-social-abierta/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/ciencia-social-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ciencia Social Abierta
+</h5>
+<div class="card-text listing-description">
+Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708498031" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/estrategias-ic/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/estrategias-ic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Estrategias de investigación cuantitativa
+</h5>
+<div class="card-text listing-description">
+Al finalizar el curso los/as estudiantes conocerán distintas estrategias de investigación cuantitativa partir de las cuales serán capaces de identificar y construir…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708505502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/metodologia1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/metodologia1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Metodología 1
+</h5>
+<div class="card-text listing-description">
+Desarrollado junto a Kevin Carrasco y Pablo Pérez.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="cursos" data-listing-date-sort="1551409200000" data-listing-file-modified-sort="1741283937270" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/estadistica-multivariada/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/estadistica-multivariada/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Estadística Multivariada
+</h5>
+<div class="card-text listing-description">
+Cada versión del curso centraliza la información en una…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="cursos" data-listing-date-sort="1527220800000" data-listing-file-modified-sort="1741284427565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./docencia/posts/talleres-seminarios/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="docencia/posts/talleres-seminarios/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Talleres y seminarios
+</h5>
+<div class="card-text listing-description">
+Aquí algunos talleres, seminarios y cursos breves en distintos temas
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</div>
+</div>
+<div class="background-frame alt-background">
+<div class="content-block">
+<div id="blogh1">
+
+</div>
 <p align="left" style="font-size:36px; font-weight:bold;">
 Post Recientes
 </p>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="academic" data-listing-date-sort="1621915200000" data-listing-file-modified-sort="1741699381273" data-listing-date-modified-sort="1639364400000" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="0" data-categories="academic" data-listing-date-sort="1665802800000" data-listing-file-modified-sort="1741699382540" data-listing-date-modified-sort="1639364400000" data-listing-reading-time-sort="10">
 <div class="thumbnail">
-<p><a href="./blog/posts/defensas-presentaciones/index.html"> <p class="card-img-top"><img src="blog/posts/defensas-presentaciones/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/escritura-academica/index.html"> <p class="card-img-top"><img src="blog/posts/escritura-academica/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/defensas-presentaciones/index.html">
+<a href="./blog/posts/escritura-academica/index.html">
 <h3 class="no-anchor listing-title">
-Sugerencias para defensas y presentaciones
-</h3>
-<div class="listing-subtitle">
-Para tesis, memorias, conferencias y otros
-</div>
-<div class="listing-description">
-El documento de…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/posts/defensas-presentaciones/index.html">
-<div class="listing-date">
-May 25, 2021
-</div>
-<div class="listing-reading-time">
-4 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="academic" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741700569123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<div class="thumbnail">
-<p><a href="./blog/posts/zotero-academic/index.html"> <p class="card-img-top"><img src="blog/posts/zotero-academic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="./blog/posts/zotero-academic/index.html">
-<h3 class="no-anchor listing-title">
-Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex
+Escritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales
 </h3>
 <div class="listing-subtitle">
 
 </div>
 <div class="listing-description">
-This post explains how to…
+Acá presento una propuesta de estructura y contenidos de escritura académica, con foco en…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/zotero-academic/index.html">
+<a href="./blog/posts/escritura-academica/index.html">
 <div class="listing-date">
-Dec 13, 2021
+Oct 15, 2022
 </div>
 <div class="listing-reading-time">
 10 min
@@ -676,27 +906,27 @@ Dec 13, 2021
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="academic" data-listing-date-sort="1657339200000" data-listing-file-modified-sort="1741700240587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="academic" data-listing-date-sort="1659326400000" data-listing-file-modified-sort="1741700729020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./blog/posts/tesisfacsodown/index.html"> <p class="card-img-top"><img src="blog/posts/tesisfacsodown/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/risc-bremen/index.html"> <p class="card-img-top"><img src="blog/posts/risc-bremen/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/tesisfacsodown/index.html">
+<a href="./blog/posts/risc-bremen/index.html">
 <h3 class="no-anchor listing-title">
-tesisfacsodown
+Research stay at the Institute of Social Cohesion
 </h3>
 <div class="listing-subtitle">
-Plantilla para escritura de tesis en la Facultad de Ciencias Sociales de la Universidad de Chile
+RISC Bremen, July 2022
 </div>
 <div class="listing-description">
-<code>tesisfacsodown</code> es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello, basta con…
+During July 2022, I carried out a research stay at the Institute for Research in Social Cohesion (RISC), composed by and an…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/tesisfacsodown/index.html">
+<a href="./blog/posts/risc-bremen/index.html">
 <div class="listing-date">
-Jul 9, 2022
+Aug 1, 2022
 </div>
 <div class="listing-reading-time">
 2 min
@@ -704,7 +934,7 @@ Jul 9, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="redistributive preferences" data-listing-date-sort="1657771200000" data-listing-file-modified-sort="1741700695523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="redistributive preferences" data-listing-date-sort="1657771200000" data-listing-file-modified-sort="1741700695523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
 <p><a href="./blog/posts/ISA-2023/index.html"> <p class="card-img-top"><img src="blog/posts/ISA-2023/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -732,30 +962,58 @@ Jul 14, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="academic" data-listing-date-sort="1659326400000" data-listing-file-modified-sort="1741700729020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="academic" data-listing-date-sort="1657339200000" data-listing-file-modified-sort="1741700240587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./blog/posts/risc-bremen/index.html"> <p class="card-img-top"><img src="blog/posts/risc-bremen/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/tesisfacsodown/index.html"> <p class="card-img-top"><img src="blog/posts/tesisfacsodown/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/risc-bremen/index.html">
+<a href="./blog/posts/tesisfacsodown/index.html">
 <h3 class="no-anchor listing-title">
-Research stay at the Institute of Social Cohesion
+tesisfacsodown
 </h3>
 <div class="listing-subtitle">
-RISC Bremen, July 2022
+Plantilla para escritura de tesis en la Facultad de Ciencias Sociales de la Universidad de Chile
 </div>
 <div class="listing-description">
-During July 2022, I carried out a research stay at the Institute for Research in Social Cohesion (RISC), composed by and an…
+<code>tesisfacsodown</code> es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello, basta con…
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/risc-bremen/index.html">
+<a href="./blog/posts/tesisfacsodown/index.html">
 <div class="listing-date">
-Aug 1, 2022
+Jul 9, 2022
 </div>
 <div class="listing-reading-time">
 2 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="academic" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741700569123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="thumbnail">
+<p><a href="./blog/posts/zotero-academic/index.html"> <p class="card-img-top"><img src="blog/posts/zotero-academic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/zotero-academic/index.html">
+<h3 class="no-anchor listing-title">
+Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+This post explains how to…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/zotero-academic/index.html">
+<div class="listing-date">
+Dec 13, 2021
+</div>
+<div class="listing-reading-time">
+10 min
 </div>
 </a>
 </div>
