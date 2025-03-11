@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2021-12-13">
+
+<title>jc-castillo - Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">jc-castillo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../docencia/docencia.html#docencia" rel="" target="">
+ <span class="menu-text">Docencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../proyectos/proyectos.html" rel="" target="">
+ <span class="menu-text">Proyectos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog/blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../links.html" rel="" target="">
+ <span class="menu-text">Links</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#getting-and-sync-your-publications-from-a-reference-manager" id="toc-getting-and-sync-your-publications-from-a-reference-manager" class="nav-link" data-scroll-target="#getting-and-sync-your-publications-from-a-reference-manager">1. Getting and sync your publications from a reference manager</a>
+  <ul class="collapse">
+  <li><a href="#save-your-academic-references-in-a-foldersubfolder" id="toc-save-your-academic-references-in-a-foldersubfolder" class="nav-link" data-scroll-target="#save-your-academic-references-in-a-foldersubfolder">Save your academic references in a folder/subfolder</a></li>
+  <li><a href="#export-a-synced-bibtex-file-from-your-zotero-folder." id="toc-export-a-synced-bibtex-file-from-your-zotero-folder." class="nav-link" data-scroll-target="#export-a-synced-bibtex-file-from-your-zotero-folder.">Export a synced <code>bibtex</code> file from your Zotero folder.</a></li>
+  </ul></li>
+  <li><a href="#bibtex_2academic-r-script" id="toc-bibtex_2academic-r-script" class="nav-link" data-scroll-target="#bibtex_2academic-r-script">2. <code>bibtex_2academic</code> R script</a></li>
+  <li><a href="#about-the-overwriting-option" id="toc-about-the-overwriting-option" class="nav-link" data-scroll-target="#about-the-overwriting-option">About the overwriting option</a></li>
+  <li><a href="#update-1-add-conferences-and-presentations" id="toc-update-1-add-conferences-and-presentations" class="nav-link" data-scroll-target="#update-1-add-conferences-and-presentations">Update 1: add conferences and presentations</a></li>
+  <li><a href="#update-2-additional-yaml-options-for-nice-buttons-links" id="toc-update-2-additional-yaml-options-for-nice-buttons-links" class="nav-link" data-scroll-target="#update-2-additional-yaml-options-for-nice-buttons-links">Update 2: additional YAML options for nice buttons links</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<div class="quarto-about-marquee">
+  <div class="about-image-container">
+    <img src="featured.png" class="about-image " style="width: 100%;">
+  </div>
+  <div class="about-contents">
+    <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">academic</div>
+  </div>
+  </div>
+<div class="quarto-title-meta">
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 13, 2021</p>
+    </div>
+  </div>
+  </div>
+</header> <main class="content" id="quarto-document-content">
+
+<p>This post explains how to automatically extract publications stored in Zotero (or in any reference manager exportable to Bibtex) and publish them as a publication record in hugo-academic using blogdown/R</p>
+<section id="overview" class="level2">
+<h2 data-anchor-id="overview">Overview</h2>
+<p>After developing and maintaining a <a href="https://juancarloscastillo.github.io/jc-castillo/">personal website generated vía Rmarkdown/Jekyll</a> for some years, I decided to look for an alternative that allowed me a better organization of my academic work. I wanted to be able to establish links between many things that where connected but in my site appeared as unrelated, and I also wanted a smoother navigation and searching of content, hopefully using some R tools. After looking for a while the best choice I found was the static site generator <a href="https://gohugo.io/">hugo</a> via <a href="https://bookdown.org/yihui/blogdown/">R/blogdown</a>, which I was already using for websites of some of my seminars. After trying a couple of themes I decided to choose the more traditional way for this kind of objective, which is the academic theme.</p>
+<p>Using the <a href="https://academic-demo.netlify.app/">academic-hugo</a> theme for a personal website where to organize and share academic activities has several advantages. Despite some <a href="https://spectrum.chat/academic/general/the-deadly-rabbit-hole-of-the-academic-theme~c9d51eb8-f2af-4ec8-8ee6-cea4f175a572">critics</a> regarding the difficulties in setting up a website which is constantly characterized as “simple” by their actual maintainers and promoters (wowchemy), still has many features that make it the first option for many scientist. One of the reasons for this is its excellent capacity for displaying, tagging and searching <strong>publications</strong>, which is something quite unique and appealing as it can observed in this <a href="https://solomonkurz.netlify.app/publication/">example</a>. So, I wanted that for my own publications …<strong>but</strong> it was very time consuming as it requires to create one separate markdown file for each publication. Too much work.</p>
+<p>The academic-wowchemy people of course are already aware of this limitation and created an engine that generates publication records (as markdown files) from references stored in Bibtex format, which is great as it is an standard format to export references. This engine is called <a href="https://github.com/wowchemy/hugo-academic-cli">hugo-academic-cli</a>, but unfortunately did not worked well for me. I could have tried a bit more but the fact that it is based on python (and I prefer R) and with a limited customization made me look for a different alternative based on R.</p>
+<p>I thought it would be pretty known issue, so I was quite surprised that I could not find any alternative for this except for a very nice script from <a href="https://www.r-bloggers.com/2018/03/automatically-importing-publications-from-bibtex-to-a-hugo-academic-blog-2/">Lorenzo Busetto</a> which is a great job. I tried it and it didn’t work properly from scratch, probably because it was outdated from previous versions of Zotero and R and its dependencies and packages. So I decided to attempt to tweak it a bit and adapt it to my needs, which resulted in a workflow for integrating publications for the academic-wowchemy theme. This workflow is based on tools as blogdown, Zotero and BetterBibTex, and it assumes that you already have a local project folder with the academic theme installed. If not, I recommend to start reading this excellent post by <a href="https://www.andreashandel.com/posts/blogdown-website-1/">Andreas Handel</a> as well as this other one by <a href="https://solomonkurz.netlify.app/post/2021-05-03-blogdown-updates-prompted-a-website-overhaul-these-are-my-notes/">Solomon Kurz</a>.</p>
+</section>
+<section id="getting-and-sync-your-publications-from-a-reference-manager" class="level2">
+<h2 data-anchor-id="getting-and-sync-your-publications-from-a-reference-manager">1. Getting and sync your publications from a reference manager</h2>
+<p>(if you already have a bib file and you do not intend to automatize this process, proceed to step 2)</p>
+<p>One of the things that academics hate is to deliver information from publications in different formats all the time (university forms, project reports, CVs, etc), very annoying and time consuming. If populating a website means to write a different record for any publication AGAIN … no way. Therefore, I believe the best way to do this is to keep your own references saved just once in a reference manager and then link the information from there. I recommend <a href="https://www.zotero.org/">Zotero</a> for its excellent quality, for being open source, and because it allows to keep collections/subcollections files synced in any place in your computer thanks to the plug-in Better BibTex.</p>
+<p>I won’t cover here the use of Zotero or BetterBibTex (BBT) in detail, there are excellent tutorials for this. I will just focus on some recommendations and options of BBT in order to automatize the incorporation of publication records on your academic website. The final goal is that:</p>
+<ul>
+<li>you add a bibliographic reference to Zotero</li>
+<li>you run a simple script (see below)</li>
+<li>you get your publications rendered in your academic website</li>
+</ul>
+<section id="save-your-academic-references-in-a-foldersubfolder" class="level3">
+<h3 data-anchor-id="save-your-academic-references-in-a-foldersubfolder">Save your academic references in a folder/subfolder</h3>
+<p>Zotero allows to organize your references in folders, which then can be exported independently to other formats. I recommend to create a folder called <code>academic-publications</code> where you can save or move bibliographic records where you are one of the authors. You can choose another name for the folder but I recommend this because to keep coherence with the following workflow. This is the folder that contains the information that will be published in your website.</p>
+</section>
+<section id="export-a-synced-bibtex-file-from-your-zotero-folder." class="level3">
+<h3 data-anchor-id="export-a-synced-bibtex-file-from-your-zotero-folder.">Export a synced <code>bibtex</code> file from your Zotero folder.</h3>
+<p>The academic-website requires a bibtex file as an input for generating publication records. In order to keep this file synced with your Zotero collection you can use the Zotero add-in <a href="https://retorque.re/zotero-better-bibtex/">BetterBibTex</a>. Once installed, a bit of customization in Tools &gt; Preferences &gt; BetterBibTex tab</p>
+<ul>
+<li>in Export tab
+<ul>
+<li>Bibtex tab uncheck “Export unicode …”, otherwhise there are problems with special characters</li>
+<li>Add URLs to Bibtex export: select in the URL field</li>
+</ul></li>
+<li>in Miscellaneous tab (within Export, not the other one)
+<ul>
+<li>uncheck “Apply case-protection to capitalized words by enclosing them in braces”</li>
+</ul></li>
+</ul>
+<p>Now we are ready to export the collection:</p>
+<ul>
+<li>right click over your Zotero folder <em>academic-publications</em></li>
+<li>format: Better BibTex</li>
+<li>select “Keep updated”</li>
+<li>ok, and save it under your project folder content/publication</li>
+</ul>
+<p>These steps create an <code>academic-publications.bib</code> file in your website folder. Any reference that you add afterwards, as well as any modification to any of your record, it will updated with the bibtex file available for your website.</p>
+<p>Finally, this assumes that you have a relatively ordered and completed set of references. Please check, in my case sometimes authors’ names appear written differently in different references, which for a bibtex file means two different authors. I also recommend to add an abstract to each reference, as it is the body of the publication record in your website. There is no need to do this at the beginning as further updates on Zotero will be reflected in your website after the following step.</p>
+<p>So far I have tried this with the followig entries: journal, books, chapters and reports, and they are rendered pretty well.</p>
+</section>
+</section>
+<section id="bibtex_2academic-r-script" class="level2">
+<h2 data-anchor-id="bibtex_2academic-r-script">2. <code>bibtex_2academic</code> R script</h2>
+<p>This R script consists of an R function based on the one by <a href="https://www.r-bloggers.com/2018/03/automatically-importing-publications-from-bibtex-to-a-hugo-academic-blog-2/">Busetto</a> which basically extracts information from each Bibtex record stored in a .bib file and generates a markdown file incorporated as publication in the academic theme.</p>
+<p>The first part of the script creates the function <code>bibtex_2academic</code> and the second runs the script specifying a) the bib file, and b) the folder where the publication records (as markdown files) are saved. The script uses the <code>pacman</code> package to install/load libraries, so if it is not installed the script does it and it might take a while just the first time.</p>
+<p>The default way to do this is:</p>
+<ul>
+<li>save the <a href="https://raw.githubusercontent.com/juancarloscastillo/starter-hugo-academic/master/content/publication/bibtex_2academic.R">bibtex_2academic.R</a> file in the content/publication folder (part of the default folders)</li>
+<li>save your bib file in the same folder with the name <code>academic-publications.bib</code> (details in previous step)</li>
+<li>run the script from R. Assuming that your working directory is the root folder of the website project, run: <code>source("content/publication/bibtex_2academic.R")</code></li>
+</ul>
+<p>After running the script, the publication folder should have as many markdown files as the number of references in your Zotero synced folder (and in your generated bib file). After rendering the site with blogdown (<code>blogdown::serve_site()</code> from terminal) you should be able to see the list of publications rendered in the default widget “Recent publications” and in <code>[your website address]/publications/</code></p>
+</section>
+<section id="about-the-overwriting-option" class="level2">
+<h2 data-anchor-id="about-the-overwriting-option">About the overwriting option</h2>
+<p>There are two approaches for this citations-academic workflow: 1) to generate the markdown files and then to add additional details and customization there to each markdown file, or 2) make all the modifications within Zotero and do not touch the markdown files generated by this script. Although the first approach allows to add some more fancy stuff manually, I prefer to use the second one and only add information and modifications within Zotero. But, if you go for the first one you should change the “overwrite” option at the end of the script to <em>false</em>, otherwise any change you make locally in the bib file will be lost when running the script again.</p>
+</section>
+<section id="update-1-add-conferences-and-presentations" class="level2">
+<h2 data-anchor-id="update-1-add-conferences-and-presentations">Update 1: add conferences and presentations</h2>
+<p>I wasn’t sure whether to make a different tab for each type of academic production (papers, presentations, conferences), but at the end I decided to make just one big archive of “academic production” as they can be easily sorted within the same page with the drop-down button. It was more complicated than I thought, as some Zotero types where not well recognized by the script and by Wowchemy. So, this is what I did:</p>
+<ul>
+<li>Conference presentations are registered in Zotero as “conference papers”, other talks as “presentations”</li>
+<li>Conferences papers works fine, but presentations are a Zotero type which is not recognized in bibtex records. I changed the script and passed the “Misc” (miscellaneous category) to “Presentations”. Still, this is not recognized by Wowchemy so I followed the instructions to <a href="https://wowchemy.com/docs/hugo-tutorials/language/">change options in the language pack</a>:
+<ul>
+<li>create a i18n folder in the root</li>
+<li>save here the english language file <strong>en.yaml</strong> from <a href="https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/wowchemy/i18n/en.yaml">here</a></li>
+<li>in <code>id: pub_uncat</code> change translation from “Uncategorized” to “Presentation”</li>
+<li>the details of the presentation (as place, etc) should be added to the “type” field in Zotero</li>
+</ul></li>
+</ul>
+</section>
+<section id="update-2-additional-yaml-options-for-nice-buttons-links" class="level2">
+<h2 data-anchor-id="update-2-additional-yaml-options-for-nice-buttons-links">Update 2: additional YAML options for nice buttons links</h2>
+<p>A nice capacity of the hugo academic publications template is the possibility to add different buttons that declare the availability of additional information, such as github repo, video, pdf, etc., as so far it appear with the “source document” button when adding a url in the Zotero record. This was tricky because these options are in the YAML section, and further customization options in this script go in the Extra field from Zotero. So, this is how it works:</p>
+<ul>
+<li><p>divide the Extra field into a YAML section and additional information section, so it could be possible to use this same field for YAML options. For this to work you have to specify with <code>---</code> in the Zotero Extra field. Above the <code>---</code> you can specify YAML options, and below any additional information.</p></li>
+<li><p>disadvantage: well, you have to write <code>---</code> in every extra field, independently of including YAML info or not. This is such a bore when you have many Zotero entries, but from my perspective it is worthwhile.</p></li>
+<li><p>copy and paste the following in the extra field:</p></li>
+</ul>
+<pre><code>url_pdf : ""
+url_project: ""
+url_slides: ""
+url_video: ""
+url_poster: ""
+# links:
+#- icon: github
+#  icon_pack: fab
+#  name: Github
+#  web:
+---
+</code></pre>
+<ul>
+<li>note: if you do not need all the options you can just delete accordingly <strong>EXCEPT FOR THE PDF at the beginning (url_pdf:““)</strong>, otherwise the code crushes. So leave it although you do not need it. Hope to solve it sometime with my limited programming abilities.</li>
+</ul>
+<p>If you want to add customized buttons just uncomment the lines from <em>links</em> onwards, and you can copy and paste them below in case of any other customized icons, for instance for a pre-registration button with a nice OSF icon:</p>
+<pre><code>links:
+- icon: osf
+  icon_pack: ai
+  name: Pre-registration
+  web: https://osf.io/muv9r/</code></pre>
+<p>In case you want to use these options I created a different code, <code>bibtex_2academic_plus.R</code>, available <a href="https://raw.githubusercontent.com/juancarloscastillo/jc-academic/master/content/publication/bibtex_2academic_plus.R">here</a>. Enjoy!</p>
+
+
+</section>
+</main> 
+  </div>
+</div>
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

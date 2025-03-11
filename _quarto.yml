@@ -4,11 +4,16 @@ project:
 website:
   title: "jc-castillo"
   navbar:
+    pinned: true
     left:
-      - docencia/docencia.qmd
-      - proyectos/proyectos.qmd
-      - blog/blog.qmd
+      - href: index.qmd#listing-docencia
+        text: Docencia
+      - href: index.qmd#listing-proyectos
+        text: Proyectos
+      - href: index.qmd#listing-blog
+        text: Post Recientes
       - links.qmd
+      - contacto.qmd
       
 format:
   html:

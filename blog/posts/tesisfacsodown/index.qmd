@@ -1,0 +1,40 @@
+---
+title: tesisfacsodown
+subtitle: Plantilla para escritura de tesis en la Facultad de Ciencias Sociales de la Universidad de Chile
+categories: [academic]
+# Date published
+date: "2022-07-09"  #year-
+# date-modified: "2021-12-13"
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+
+## tesisfacsodown
+
+`tesisfacsodown` es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello, basta con escribir el trabajo en un lenguaje de estructura simple (markdown), el que luego es transformado a un documento formateado en pdf (vía Latex), y si se desea también en html de manera simultanea. Es decir, se trata de concentrarse en escribir y el trabajo de formateo se lo dejamos a un tercero, que en este caso es la librería [bookdown](https://bookdown.org/) de R (Xie 2017).
+
+El resultado final en html se ve más menos [así](https://juancarloscastillo.github.io/tesisfacsodown/introducci%C3%B3n-tesisfacsodown.html), y en pdf [así](https://juancarloscastillo.github.io/tesisfacsodown/tesis.pdf)
+
+Además de facilitar el trabajo de formato, quienes realizan análisis de datos con `R` tienen la posibilidad de incluir también los resultados (tablas, gráficos) de manera dinámica. Esto quiere decir que los análisis se realizan en el mismo documento, que se actualiza automáticamente en caso de modificaciones evitando así la ineficiencia de estar cortando y pegando cada vez que se realiza un cambio.
+
+Tesisfacsodown está basada en otros proyectos similares como [`tesisdown`](https://github.com/ismayc/thesisdown) y también [`oxforddown`](https://github.com/ulyngs/oxforddown).
+
+## ¿Cómo funciona?
+
+En breve: haciendo una copia de la carpeta tesisfacsodown, completando / reemplazando los contenidos en los archivos separados según secciones del documento (introducción, antecedentes, etc), y luego se utiliza el programa o librería bookdown, que funciona en el entorno R y que produce los documentos formateados en pdf y/o html. No es necesario saber R para poder utilizar tesisfacsodown, pero si estar dispuesto a aprender un par de cosas.
+
+El repositorio Github donde están los archivos se encuentra [aquí](https://github.com/juancarloscastillo/tesisfacsodown).
+
+## Tutorial
+
+**Video taller**
+
+<iframe src="https://www.dropbox.com/s/u3g2x74nj31jsu1/zoom_0.mp4?raw=1" height="450" width=100% allowfullscreen="true"></iframe>
+
+
+**Documento de presentación:**
+
+<iframe src=/docencia/talleres/tesisfacsodown/tesisfacsodown.html height="550" width=100% allowfullscreen="true">
+</iframe>

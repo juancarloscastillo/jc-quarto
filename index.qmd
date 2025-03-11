@@ -15,8 +15,9 @@ about:
       href: https://scholar.google.es/citations?user=CPJ0qfQAAAAJ&hl=es&oi=ao
     - icon: github
       href: https://github.com/juancarloscastillo
-    - icon: file-earmark-person
-      href: docs/short-cv.pdf
+    - icon: envelope
+      href: contacto.html
+
 listing:
 	
 - id: docencia
@@ -95,7 +96,7 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 :::
 :::
 
-::: {.background-frame .alt-background}
+::: {.background-frame}
 ::: {.content-block}
 
 <p align="left" style="font-size:36px; font-weight:bold;">Proyectos</p>

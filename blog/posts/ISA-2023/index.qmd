@@ -1,0 +1,49 @@
+---
+title: Panels at International Sociological Association - ISA conference, Melbourne 2023
+categories: [redistributive preferences]
+# Date published
+date: "2022-07-14"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+
+I am organizing two panels for ISA 2023, call for papers is open until September 2022 (link to apply below each abstract)
+
+
+## Perceptions and Preferences about Inequality, Meritocracy and Redistribution
+
+RC42 Social Psychology (host committee)
+
+Language: English
+
+Session Type: Oral
+
+High levels of economic inequality characterize several societies around the world. Traditional approaches from the social sciences have emphasized institutional and cultural factors at different levels in attempting to understand and explain the stability of inequality despite its negative consequences for the population at large. Along with these approaches, a growing line of research has focused on concepts such as perceptions, beliefs and preferences regarding economic inequality, as well as on how these subjective aspects of social inequality are associated with structural and contextual factors. The present panel is open to theoretical, empirical, and experimental contributions in areas such as redistributive preferences, meritocracy beliefs, inequality perceptions, poverty attributions, and other concepts in the realm of the social psychology of inequality. Comparative research that tackles the link between contextual and subjective factors is particularly welcomed.
+
+Submit your abstract [here](https://isaconf.confex.com/isaconf/wc2023/webprogrampreliminary/Session17479.html)
+
+Session Organizer:
+**Juan Carlos Castillo**, Universidad de Chile, Chile, juancastillov@uchile.cl
+
+---
+
+## Preferences for Redistribution in the Global South
+
+RC18 Political Sociology (host committee)
+
+Language: English
+
+Although social inequality is rising globally, increases in economic inequality and the unequal impact of poverty on diverse populations are most acute in the ‘Global South’ and among populations migrating from the Global South to the Global North. Yet research on this topic is heavily biased toward the 'Global North'. Therefore, social science has far less to offer as a body of knowledge concerning the causes and consequences of attitudes toward inequality and preferences for redistributive social policies in the Global South and about populations from the Global South. We seek presentation proposals that explore any aspect of preferences for redistribution outside the Global North, including but not limited to Africa, Asia, Eastern Europe, and Latin American and the Caribbean.
+
+Submit your abstract [here](https://isaconf.confex.com/isaconf/wc2023/webprogrampreliminary/Session16965.html)
+
+## Session Organizers
+
+**Liza STEELE**, Associate Professor CUNY John Jay College & The Graduate Center, United States
+Email: liza.steele@gmail.com
+
+**Nate BREZNAU**, University of Bremen, Germany
+
+**Juan Carlos CASTILLO**, Universidad de Chile

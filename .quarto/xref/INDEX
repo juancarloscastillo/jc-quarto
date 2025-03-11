@@ -103,5 +103,35 @@
   },
   "proyectos/posts/nudos/index.qmd": {
     "index.html": "b94efde2"
+  },
+  "blog/posts/zotero-academic/index.qmd": {
+    "index.html": "2f2d4ddf"
+  },
+  "blog/posts/ISA-2023/index.qmd": {
+    "index.html": "873d1090"
+  },
+  "blog/posts/labelled-data-R/index.qmd": {
+    "index.html": "25c0bf02"
+  },
+  "blog/posts/IA/index.qmd": {
+    "index.html": "e18b8d2c"
+  },
+  "blog/posts/tesisfacsodown/index.qmd": {
+    "index.html": "5c00997f"
+  },
+  "blog/posts/informe-quarto/index.qmd": {
+    "index.html": "fc40e695"
+  },
+  "blog/posts/vsc-settings/index.qmd": {
+    "index.html": "e0d33b5b"
+  },
+  "blog/posts/risc-bremen/index.qmd": {
+    "index.html": "9a184722"
+  },
+  "blog/posts/revision-bibliografica/index.qmd": {
+    "index.html": "8d8805f9"
+  },
+  "contacto.qmd": {
+    "contacto.html": "173aacbf"
   }
 }

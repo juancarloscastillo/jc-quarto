@@ -1,7 +1,7 @@
 ---
 title: Ciencia Social Abierta
 subtitle: Curso optativo Sociología - Universidad de Chile
-abstract: Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
+description: Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
 categories: [cursos]
 # Date published
 date: "2020-03-01"  #year-
@@ -9,19 +9,17 @@ draft: false # Is this an unpublished draft?
 about:
   template: marquee
   image: "featured.png"  
-  links:
-    - icon: external-link
-      text: Website
-      href: https://correlacional.netlify.app
-      target: _blank
-    - icon: github
-      text: Github
-      href: https://github.com/cursos-metodos-facso/correlacional
-      target: _blank
-
 ---
 
-Este curso es un optativo de la línea metodológica de la carrera de sociología de la Universidad de Chile y se ofrece a estudiantes entre 3er y 5to año de la carrera.
+::: {.button-container style="display: flex; gap: 10px;"}
+::: {.button}
+[<i class="bi bi-link-45deg"></i>](https://cienciasocialabierta.netlify.app"){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+::: {.button}
+[<i class="bi bi-github"></i>](https://github.com/juancarloscastillo/cienciasocialabierta){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+:::
 
 Partiendo desde la concepción de Ciencia Abierta (Open Science) y de investigación reproducible, este curso presenta formas alternativas a la manera tradicional de concebir la generación de conocimiento de manera cerrada y competitiva, y desde ahí se proponen y ejercitan una serie de herramientas técnicas en el análisis de datos que facilitan la reproducibilidad, colaboración y comunicación de procesos de investigación.
 

@@ -1,6 +1,7 @@
 ---
 title: Estadística correlacional
 subtitle: Pregrado Sociología -- Universidad de Chile
+description: Este curso se centra en inferencia, asociación y reporte, y se dicta el 2do semestre en el segundo año de la carrera.
 categories: [cursos]
 # Date published
 date: "2023-08-01"  #year-
@@ -8,17 +9,25 @@ draft: false # Is this an unpublished draft?
 about:
   template: marquee
   image: "featured.png"  
-  links:
-    - icon: external-link
-      text: Website
-      href: https://correlacional.netlify.app
-      target: _blank
-    - icon: github
-      text: Github
-      href: https://github.com/cursos-metodos-facso/correlacional
-      target: _blank
+  # links:
+  #   - icon: link-45deg
+  #     href: https://correlacional.netlify.app
+  #     target: _blank
+  #   - icon: github
+  #     href: https://github.com/cursos-metodos-facso/correlacional
+  #     target: _blank
 
 ---
+
+::: {.button-container style="display: flex; gap: 10px;"}
+::: {.button}
+[<i class="bi bi-link-45deg"></i>](https://correlacional.netlify.app){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+::: {.button}
+[<i class="bi bi-github"></i>](https://github.com/cursos-metodos-facso/correlacional){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+:::
 
 Al finalizar el curso los estudiantes conocerán los fundamentos del análisis estadístico inferencial. Se espera que los estudiantes sean capaces de:
 

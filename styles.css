@@ -2,3 +2,8 @@
 .about-link i {
     font-size: 3em; /* Tamaño del ícono */
 }
+
+
+html {
+  scroll-behavior: smooth;
+} /*Esto para que al hacer click en los links del navbar la página no "salte", sino que se deslice

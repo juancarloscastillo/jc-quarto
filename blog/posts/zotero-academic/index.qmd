@@ -1,0 +1,132 @@
+---
+title: Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex
+categories: [academic]
+# Date published
+date: "2021-12-13"  #year-
+# date-modified: "2021-12-13"
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+This post explains how to automatically extract publications stored in Zotero (or in any reference manager exportable to Bibtex) and publish them as a publication record in hugo-academic using blogdown/R
+
+## Overview
+
+After developing and maintaining a [personal website generated vía Rmarkdown/Jekyll](https://juancarloscastillo.github.io/jc-castillo/) for some years, I decided to look for an alternative that allowed me a better organization of my academic work. I wanted to be able to establish links between many things  that where connected but in my site appeared as unrelated, and I also wanted a smoother navigation and searching of content, hopefully using some R tools. After looking for a while the best choice I found was the static site generator [hugo](https://gohugo.io/) via [R/blogdown](https://bookdown.org/yihui/blogdown/), which I was already using for websites of some of my seminars. After trying a couple of themes I decided to choose the more traditional way for this kind of objective, which is the academic theme.
+
+Using the [academic-hugo](https://academic-demo.netlify.app/) theme for a personal website where to organize and share academic activities has several advantages. Despite some [critics](https://spectrum.chat/academic/general/the-deadly-rabbit-hole-of-the-academic-theme~c9d51eb8-f2af-4ec8-8ee6-cea4f175a572) regarding the difficulties in setting up a website which is constantly characterized as "simple" by their actual maintainers and promoters (wowchemy), still has many features that make it the first option for many scientist. One of the reasons for this is its excellent capacity for displaying, tagging and searching **publications**, which is something quite unique and appealing as it can observed in this [example](https://solomonkurz.netlify.app/publication/). So, I wanted that for my own publications ...**but** it was very time consuming as it requires to create one separate markdown file for each publication. Too much work.
+
+The academic-wowchemy people of course are already aware of this limitation and created an engine that generates publication records (as markdown files) from references stored in Bibtex format, which is great as it is an standard format to export references. This engine is called [hugo-academic-cli](https://github.com/wowchemy/hugo-academic-cli), but unfortunately did not worked well for me. I could have tried a bit more but the fact that it is based on python (and I prefer R) and with a limited customization made me look for a different alternative based on R.
+
+I thought it would be pretty known issue, so I was quite surprised that I could not find any alternative for this except for a very nice script from [Lorenzo Busetto](https://www.r-bloggers.com/2018/03/automatically-importing-publications-from-bibtex-to-a-hugo-academic-blog-2/) which is a great job. I tried it and it didn't work properly from scratch, probably because it was outdated from previous versions of Zotero and R and its dependencies and packages. So I decided to attempt to tweak it a bit and adapt it to my needs, which resulted in a workflow for integrating publications for the academic-wowchemy theme. This workflow is based on tools as blogdown, Zotero and BetterBibTex, and it assumes that you already have a local project folder with the academic theme installed. If not, I recommend to start reading this excellent post by [Andreas Handel](https://www.andreashandel.com/posts/blogdown-website-1/) as well as this other one by [Solomon Kurz](https://solomonkurz.netlify.app/post/2021-05-03-blogdown-updates-prompted-a-website-overhaul-these-are-my-notes/).
+
+## 1. Getting and sync your publications from a reference manager
+
+(if you already have a bib file and you do not intend to automatize this process, proceed to step 2)
+
+One of the things that academics hate is to deliver information from publications in different formats all the time (university forms, project reports, CVs, etc), very annoying and time consuming. If populating a website means to write a different record for any publication AGAIN ... no way. Therefore, I believe the best way to do this is to keep your own references saved just once in a reference manager and then link the information from there. I recommend [Zotero](https://www.zotero.org/) for its excellent quality, for being open source, and because it allows to keep collections/subcollections files synced in any place in your computer thanks to the plug-in Better BibTex.
+
+I won't cover here the use of Zotero or BetterBibTex (BBT) in detail, there are excellent tutorials for this. I will just focus on some recommendations and options of BBT in order to automatize the incorporation of publication records on your academic website. The final goal is that:
+
+- you add a bibliographic reference to Zotero
+- you run a simple script (see below)
+- you get your publications rendered in your academic website
+
+### Save your academic references in a folder/subfolder
+
+Zotero allows to organize your references in folders, which then can be exported independently to other formats. I recommend to create a folder called `academic-publications` where you can save or move bibliographic records where you are one of the authors. You can choose another name for the folder but I recommend this because to keep coherence with the following workflow. This is the folder that contains the information that will be published in your website.
+
+### Export a synced `bibtex` file from your Zotero folder.
+
+The academic-website requires a bibtex file as an input for generating publication records. In order to keep this file synced with your Zotero collection you can use the Zotero add-in [BetterBibTex](https://retorque.re/zotero-better-bibtex/). Once installed, a bit of customization in Tools > Preferences > BetterBibTex tab
+
+- in Export tab
+  - Bibtex tab uncheck "Export unicode ...", otherwhise there are problems with special characters
+  - Add URLs to Bibtex export: select in the URL field
+
+- in Miscellaneous tab (within Export, not the other one)
+  - uncheck "Apply case-protection to capitalized words by enclosing them in braces"
+
+Now we are ready to export the collection:
+
+  - right click over your Zotero folder _academic-publications_
+  - format: Better BibTex
+  - select "Keep updated"
+  - ok, and save it under your project folder content/publication
+
+These steps create an `academic-publications.bib` file in your website folder. Any reference that you add afterwards, as well as any modification to any of your record, it will updated with the bibtex file available for your website.
+
+Finally, this assumes that you have a relatively ordered and completed set of references. Please check, in my case sometimes authors' names appear written differently in different references, which for a bibtex file means two different authors. I also recommend to add an abstract to each reference, as it is the body of the publication record in your website. There is no need to do this at the beginning as further updates on Zotero will be reflected in your website after the following step.
+
+So far I have tried this with the followig entries: journal, books, chapters and reports, and they are rendered pretty well.
+
+## 2. `bibtex_2academic` R script
+
+This R script consists of an R function based on the one by [Busetto](https://www.r-bloggers.com/2018/03/automatically-importing-publications-from-bibtex-to-a-hugo-academic-blog-2/) which basically extracts information from each Bibtex record stored in a .bib file and generates a markdown file incorporated as publication in the academic theme.
+
+The first part of the script creates the function `bibtex_2academic` and the second runs the script specifying a) the bib file, and b) the folder where the publication records (as markdown files) are saved. The script uses the `pacman` package to install/load libraries, so if it is not installed the script does it and it might take a while just the first time.
+
+The default way to do this is:
+
+- save the [bibtex_2academic.R](https://raw.githubusercontent.com/juancarloscastillo/starter-hugo-academic/master/content/publication/bibtex_2academic.R) file in the content/publication folder (part of the default folders)
+- save your bib file in the same folder with the name `academic-publications.bib` (details in previous step)
+- run the script from R. Assuming that your working directory is the root folder of the website project, run: `source("content/publication/bibtex_2academic.R")`
+
+After running the script, the publication folder should have as many markdown files as the number of references in your Zotero synced folder (and in your generated bib file). After rendering the site with blogdown (`blogdown::serve_site()` from terminal) you should be able to see the list of publications rendered in the default widget "Recent publications" and in `[your website address]/publications/`
+
+## About the overwriting option
+
+There are two approaches for this citations-academic workflow: 1) to generate the markdown files and then to add additional details and customization there to each markdown file, or 2) make all the modifications within Zotero and do not touch the markdown files generated by this script. Although the first approach allows to add some more fancy stuff manually, I prefer to use the second one and only add information and modifications within Zotero. But, if you go for the first one you should change the "overwrite" option at the end of the script to _false_, otherwise any change you make locally in the bib file will be lost when running the script again.
+
+## Update 1: add conferences and presentations
+
+I wasn't sure whether to make a different tab for each type of academic production (papers, presentations, conferences), but at the end I decided to make just one big archive of "academic production" as they can be easily sorted within the same page with the drop-down button. It was more complicated than I thought, as some Zotero types where not well recognized by the script and by Wowchemy. So, this is what I did:
+
+- Conference presentations are registered in Zotero as "conference papers", other talks as "presentations"
+- Conferences papers works fine, but presentations are a Zotero type which is not recognized in bibtex records. I changed the script and passed the "Misc" (miscellaneous category) to "Presentations". Still, this is not recognized by Wowchemy so I followed the instructions to [change options in the language pack](https://wowchemy.com/docs/hugo-tutorials/language/):
+  - create a i18n folder in the root
+  - save here the english language file **en.yaml** from [here](https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/wowchemy/i18n/en.yaml)
+  - in `id: pub_uncat` change translation from "Uncategorized" to "Presentation"
+  - the details of the presentation (as place, etc) should be added to the "type" field in Zotero
+
+## Update 2: additional YAML options for nice buttons links
+
+A nice capacity of the hugo academic publications template is the possibility to add different buttons that declare the availability of additional information, such as github repo, video, pdf, etc., as so far it appear with the "source document" button when adding a url in the Zotero record. This was tricky because these options are in the YAML section, and further customization options in this script go in the Extra field from Zotero. So, this is how it works:
+
+- divide the Extra field into a YAML section and additional information section, so it could be possible to use this same field for YAML options. For this to work you have to specify with `---` in the Zotero Extra field. Above the `---` you can specify YAML options, and below any additional information.
+
+- disadvantage: well, you have to write `---` in every extra field, independently of including YAML info or not. This is such a bore when you have many Zotero entries, but from my perspective it is worthwhile.
+
+- copy and paste the following in the extra field:
+
+```
+url_pdf : ""
+url_project: ""
+url_slides: ""
+url_video: ""
+url_poster: ""
+# links:
+#- icon: github
+#  icon_pack: fab
+#  name: Github
+#  web:
+
+---
+
+```
+
+* note: if you do not need all the options you can just delete accordingly **EXCEPT FOR THE PDF at the beginning (url_pdf:"")**, otherwise the code crushes. So leave it although you do not need it. Hope to solve it sometime with my limited programming abilities.
+
+
+If you want to add customized buttons just uncomment the lines from _links_ onwards, and you can copy and paste them below in case of any other customized icons, for instance for a pre-registration button with a nice OSF icon:
+
+```
+links:
+- icon: osf
+  icon_pack: ai
+  name: Pre-registration
+  web: https://osf.io/muv9r/
+```
+
+In case you want to use these options I created a different code, `bibtex_2academic_plus.R`, available [here](https://raw.githubusercontent.com/juancarloscastillo/jc-academic/master/content/publication/bibtex_2academic_plus.R). Enjoy!

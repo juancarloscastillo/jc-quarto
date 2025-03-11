@@ -4,6 +4,7 @@ subtitle: Para tesis, memorias, conferencias y otros
 categories: [academic]
 # Date published
 date: "2021-05-25"  #year-
+date-modified: "2021-12-13"
 draft: false # Is this an unpublished draft?
 about:
   template: marquee

@@ -9,10 +9,6 @@ draft: false # Is this an unpublished draft?
 about:
   template: marquee
   image: "featured.png"  
-  links:
-    - icon: file-earmark-pdf-fill
-      text: Resultados
-      href: formacion-ciudadana2.pdf
 ---
 # Resumen
 
