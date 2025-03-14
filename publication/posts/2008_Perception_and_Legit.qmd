@@ -7,5 +7,15 @@ publication : " . Boston"
 publication_short : " . Boston"
 abstract : "(Abstract not available)"
 abstract_short : ""
-tags : ["legitimacy ideology Chile"]
+about:
+  template: marquee
 ---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+\relax JC Castillo, J. Gerlitz, M. Schrenker (2008). *Perception and Legitimacy of Income Inequality in International Comparison*.  . Boston
+
+:::
+

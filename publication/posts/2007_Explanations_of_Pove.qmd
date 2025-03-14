@@ -7,5 +7,15 @@ publication : " International Social Justice Project  meeting . Budapest, Social
 publication_short : " International Social Justice Project  meeting . Budapest, Social Sciences Faculty, Eötvös Loránd University"
 abstract : "(Abstract not available)"
 abstract_short : ""
-tags : ["legitimacy ideology Chile"]
+about:
+  template: marquee
 ---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+\relax JC Castillo (2007). *Explanations of Poverty: A Comparison of Germany, the Czech Republic and Chile*.  International Social Justice Project  meeting . Budapest, Social Sciences Faculty, Eötvös Loránd University
+
+:::
+

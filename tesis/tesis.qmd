@@ -1,0 +1,15 @@
+---
+title: "Tesis"
+page-layout: full
+listing:
+  contents: posts/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [title, date, author, categories]
+  filter-ui: [categories, date]
+  field-links: 
+    - categories
+    - title
+title-block-banner: true
+---

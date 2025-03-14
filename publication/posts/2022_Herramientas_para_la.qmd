@@ -7,6 +7,16 @@ publication : " Presentación en el seminario: Ciencia abierta, ¿es ciencia acc
 publication_short : " Presentación en el seminario: Ciencia abierta, ¿es ciencia accesible? . Universidad Iberoamericana de México  (Online)"
 abstract : "(Abstract not available)"
 abstract_short : ""
-url_source : "https://lisa-coes.github.io/presentaciones/Ibero-MEX-Jun2022/iberomex2022.html"
+about:
+  template: marquee
+---
 ---
 [Github Repo](https://github.com/lisa-coes/presentaciones)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo (2022). *Herramientas para la apertura del flujo de investigación científica*.  Presentación en el seminario: Ciencia abierta, ¿es ciencia accesible? . Universidad Iberoamericana de México  (Online)
+
+:::
+

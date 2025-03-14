@@ -7,5 +7,15 @@ publication : " . Lima, Universidad Católica"
 publication_short : " . Lima, Universidad Católica"
 abstract : "(Abstract not available)"
 abstract_short : ""
-tags : ["legitimacy ideology Chile"]
+about:
+  template: marquee
 ---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo (2009). *¿Consenso o conflicto acerca de la distribución? La legitimación de la desigualdad económica en Chile en perspectiva comparada*.  . Lima, Universidad Católica
+
+:::
+

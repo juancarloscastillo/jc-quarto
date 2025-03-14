@@ -7,5 +7,15 @@ publication : " . Australia, Flinders University"
 publication_short : " . Australia, Flinders University"
 abstract : "(Abstract not available)"
 abstract_short : ""
-tags : ["social justice research Chile legitimacy reward justice"]
+about:
+  template: marquee
 ---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+\relax JC Castillo (2008). *On the justice of occupational earnings in Chile: A factorial survey analysis*.  . Australia, Flinders University
+
+:::
+

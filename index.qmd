@@ -69,7 +69,19 @@ listing:
   sort-ui: false
   filter-ui: false
   feed: false
-      
+  
+- id: tesis
+  contents:
+    - tesis/posts/*.qmd
+  sort: date desc
+  type: default
+  fields: [title, date, author, categories]
+  max-items: 5
+  categories: false
+  sort-ui: false
+  feed: false
+  page-size: 500
+
 ---
 
 <link rel="me" href="https://mastodon.social/@hegang">
@@ -140,6 +152,24 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 :::{#docencia}
 :::
 
+
+:::
+:::
+
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+::: {#tesish1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Guía y Comité de Tesis</p>
+
+:::{#tesis}
+:::
+
+::: {.button}
+[Todas las tesis](tesis/tesis.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
 
 :::
 :::

@@ -1,0 +1,55 @@
+---
+title : "Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile"
+date : "2019-01-01"
+author : ["Guillermo Beck"]
+publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "La distribución y asignación de recursos y derechos sociales de manera justa ha sido un problema de interés para diferentes ramas de las ciencias sociales, donde la filosofía ha colaborado en el desarrollo de debate teórico en la materia, mientras que ramas con foco más empírico han aportado en la comprensión del impacto a nivel social que existe en torno a la distribución de diferentes recursos y derechos, y que se ha conceptualizado como justicia distributiva ..."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: /tesis/2019_explorando_la_asocia/#documento
+---
+---
+
+# Resumen
+
+La distribución y asignación de recursos y derechos sociales de manera justa ha sido un
+problema de interés para diferentes ramas de las ciencias sociales, donde la filosofía ha colaborado
+en el desarrollo de debate teórico en la materia, mientras que ramas con foco más empírico han
+aportado en la comprensión del impacto a nivel social que existe en torno a la distribución de
+diferentes recursos y derechos, y que se ha conceptualizado como justicia distributiva, concepto
+bajo el cual se ha indagado sobre cuáles son los principios que guían la distribución y asignación
+de recursos y derechos que permiten dar paso a la generación de desigualdades justas en
+diferentes sociedades. La evidencia previa ha identificado en los factores individuales, estructurales
+elementos claves que se asocian con justificación de la desigualdad, sin embargo, existe una
+variación del fenómeno que aún no ha podido ser explicada. Tomando en cuenta que la literatura
+señala que los juicios evaluativos que despliegan las personas pueden ser producto de aspectos
+subjetivos otorgados por experiencia social e interacción grupal a la que están sometidas las
+personas, se torna relevante indagar si la experiencia grupal se relaciona con la justificación de
+la desigualdad social en Chile en materia de pensiones, educación y salud. En función de lo
+expuesto, por medio del enfoque de redes de contacto, se indaga si la diversidad y composición
+de las redes de contacto ocupacionales que poseen los chilenos se relaciona con la justificación de
+la desigualdad. Utilizando los datos de la encuesta ELSOC 2016 (n=2984), los resultados indican
+que la diversidad ocupacional de las redes de contacto y la composición ocupacional de estas se
+asocian negativamente con la justificación de la desigualdad social en Chile. Los hallazgos aquí
+encontrados son de utilidad ya que permiten comprender cómo el contacto interpersonal, así
+como los atributos que poseen las personas con quienes se interactúa colaboran en la justificación
+de la desigualdad social en Chile en materia de pensiones, educación y salud.
+
+# Documento
+
+<iframe src="https://www.dropbox.com/s/r27td53mfexbwpa/Tesis_gbeckv.pdf?raw=1" style="min-height:100vh;width:100%" frameborder="0"></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Guillermo Beck (2019). *Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

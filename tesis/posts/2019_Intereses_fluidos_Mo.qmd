@@ -1,0 +1,56 @@
+---
+title : "Intereses fluidos: Movilidad social y preferencias por la redistribución en 37 países."
+date : "2019-01-01"
+author : ["Alejandro Plaza"]
+publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "La distribución y asignación de recursos y derechos sociales de manera justa ha sido un problema de interés para diferentes ramas de las ciencias sociales, donde la filosofía ha colaborado en el desarrollo de debate teórico en la materia, mientras que ramas con foco más empírico han aportado en la comprensión del impacto a nivel social que existe en torno a la distribución de diferentes recursos y derechos, y que se ha conceptualizado como justicia distributiva ..."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: /tesis/2019_explorando_la_asocia/#documento
+---
+---
+
+# Resumen
+
+La presente investigación examina cómo la movilidad social objetiva y subjetiva influyen en las
+preferencias por la redistribución, dando cuenta además de cómo la desigualdad, el desarrollo
+económico, y el Estado de Bienestar influyen en esta relación. Al respecto, se plantea que a
+mayor movilidad social que experimenta y percibe una persona, menor serán las preferencias por
+la redistribución, aspecto que estaría condicionado por las características del país. Para responder
+a las pregunta de investigación se utilizan datos de 31.266 personas en 37 países del Programa
+de Encuesta Social Internacional (ISSP) del 2009 – módulo de desigualdad- en conjunto con
+datos del Banco Mundial, de la Base de Datos de Desigualdad de Ingreso Estandarizada (SWIID)
+y de Libertad Económica del Instituto Fraser. Se estimaron modelos de regresión multinivel para
+dar cuenta de la presencia de efectos no observados a nivel de país. Los resultados arrojan que
+tanto la movilidad social objetiva como subjetiva tienen un efecto negativo sobre las preferencias
+hacia la redistribución. Además, esta relación estaría siendo moderada por la desigualdad y el
+desarrollo económico del país, de manera que en los países menos desiguales, la movilidad social
+tendría un efecto más acentuado en comparación con los países más iguales. Por otro lado, en
+contextos más desarrollados, las personas que ascienden en la estructura social tendrían menor
+preferencia por la redistribución en comparación a contextos menos desarrollados. Respecto a
+la generosidad de los Estados de Bienestar, los resultados muestran que según cómo se
+conceptualice ésta dimensión –como gasto social o gasto en educación- las conclusiones serían
+diferentes, abriendo nuevas preguntas para futuras investigaciones. El hallazgo central de esta
+investigación reside en que las políticas redistributivas se verían perjudicadas – en términos de
+legitimidad y apoyo ciudadano- producto de los mismos procesos de movilidad social que éstas
+gatillan.
+
+**Palabras Clave**: Movilidad Social, Preferencias Redistributivas, Estado de Bienestar,
+Desigualdad, Desarrollo Económico.# Documento
+
+<iframe src="https://www.dropbox.com/s/1m5sl1c3ikaw2dr/Tesis-Magister_-Alejandro-Plaza_-12012018.pdf?raw=1" style="min-height:100vh;width:100%" frameborder="0"></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Alejandro Plaza (2019). *Intereses fluidos: Movilidad social y preferencias por la redistribución en 37 países.*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

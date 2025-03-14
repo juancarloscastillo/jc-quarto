@@ -1,0 +1,33 @@
+---
+title : "El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza"
+date : "2022-01-01"
+author : ["Sebastian Cortinez"]
+publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: https://sebacr.github.io/tesispregrado/
+    - icon: github
+      href: https://github.com/sebacr/tesispregrado
+---
+---
+# Resumen
+
+Las investigaciones sociológicas que analizan las causas de las atribuciones de pobreza y riqueza -esto es, cómo se explican las causas de la pobreza y la riqueza- suelen hacerlo desde la hipótesis de que existe como motivación de base un interés racional, y se le relaciona con el mérito sin contar con el respaldo de un trabajo empírico. Luego de grandes transformaciones económicas, políticas y socioculturales, hoy se evidencia en Chile un fuerte discurso meritocrático por parte de autoridades como también en la población en general. Por ello, se torna relevante la pregunta de ¿Cómo se relacionan las creencias meritocráticas con las atribuciones de pobreza y riqueza en Chile? La agenda liberal de justicia de mercado afirma que la igualdad de oportunidades a partir de mecanismos meritocráticos combate las desigualdades socioeconómicas. La presente investigación debate con esta lógica, y se posiciona bajo la idea de que las creencias meritocráticas legitiman las desigualdades socioeconómicas. Específicamente, se plantea que, a mayor percepción meritocrática, mayores serán las explicaciones que responsabilizan al individuo por su situación de pobreza o riqueza. Utilizando datos del proyecto Fondecyt N° 1160921, los resultados muestran que, a mayor percepción meritocrática, mayores son las atribuciones internas -individualistas- hacia la pobreza y la riqueza. En este sentido, mantener creencias meritocráticas legitima las desigualdades socioeconómicas mediante la responsabilización de los individuos de su propia posición en la sociedad. Para cerrar se reflexiona en torno los aportes, limitaciones y proyecciones que puede tener la investigación.
+
+# Resumen
+
+
+::: {.callout-note title="How to cite this work"}
+
+Sebastian Cortinez (2022). *El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

@@ -7,28 +7,30 @@ publication : " Congreso Chileno de Sociología - PreAlas . Santiago"
 publication_short : " Congreso Chileno de Sociología - PreAlas . Santiago"
 abstract : "Durante los últimos años, la academia ha experimentado desafíos relacionados con el concepto de apertura, que pueden describirse en dos aspectos principales. Primero, la llamada crisis de replicación (Baker, 2016; Nosek et al., 2015; Peng, 2015) se refiere a las dificultades para replicar los resultados de la investigación debido a la falta de transparencia en el proceso de investigación, donde ha sido posible evidenciar importantes variaciones en los resultados en equipos de investigación con datos idénticos (Breznau et al., 2021). El segundo desafío proviene de la apertura en términos de acceso, mediante el cual varias comunidades académicas han reaccionado contra las altas barreras de pago y el modelo de negocio impuesto por las compañías editoriales para acceder a los productos de la investigación científica. Las barreras en la transparencia y el acceso son síntomas de una cultura académica presionada por la publicación (en la lógica de “publica o perece”) que están sesgados hacia resultados “significativos” en términos estadísticos, lo que lleva a una tendencia a forzar los resultados (p-hacking), llegando incluso a manipular y falsear datos para confirmar las hipótesis propuestas (Head et al., 2015) o también el establecer hipótesis ad-hoc luego de conocer los resultados de un estudio (Hollenbeck & Wright, 2017; Kerr, 1998). En este sentido, la ciencia abierta ha logrado posicionarse como una alternativa de buenas prácticas de investigación, fomentando la apertura y transparencia en todas las etapas de investigación. Sin embargo, actualmente se desconoce el nivel de conocimientos y usos de las distintas herramientas y protocolos de ciencia abierta en Chile, y en especial en el ámbito de las ciencias sociales. Esta investigación utiliza datos de la primera Encuesta de Ciencia Abierta en Investigación Social (CAIS), y tiene por objetivo analizar el conocimiento, prácticas y barreras de la ciencia abierta en académic_s de ciencias sociales en Chile. Esta presentación es un análisis exploratorio inicial de los primeros resultados de esta encuesta, implementada a fines de 2023 y principios de 2024. El foco del análisis serán las principales barreras para la apertura de la investigación científica en ciencias sociales. En los análisis se dará énfasis a diferencias por institución, disciplina, etapa de la carrera académica, y género."
 abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: file-slides-fill
+      href: l
+---
 url_pdf : "" 
 
-url_project: ""
-
-url_slides: "l"
-
-url_poster: ""
-# 
-links:
-
-- icon: github
-
+# - icon: github
   icon_pack: fab
-
   name: Github
+  web: 
 
-  url: 
-
-url_video: ""
 ---
 ![](/images/)
 
 ## Documento de presentación
 
 <iframe width="700"  height="450" src="https://lisa-coes.github.io/presentaciones/congreso-sociologia-stgo-Mayo2024/congreso-sociologia-stgo-Mayo2024.html#1" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz (2024). *Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile.*.  Congreso Chileno de Sociología - PreAlas . Santiago
+
+:::
+

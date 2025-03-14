@@ -1,0 +1,47 @@
+---
+title : "Enfermedades crónicas no transmisibles y el efecto protector de la cohesión social en Chile"
+date : "2021-01-01"
+author : ["Simon Varas"]
+publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "Dentro del mundo de investigación social en salud, el estudio de las enfermedades crónicas no transmisibles (ECNT) representa enormes desafíos"
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+---
+---
+
+# Resumen
+
+Dentro del mundo de investigación social en salud, el estudio de las enfermedades crónicas no
+transmisibles (ECNT) representa enormes desafíos. El aumento en la carga de ECNT supone
+un gran impacto sobre las economías y los sistemas de salud nacionales y un reto para sus
+profesionales, usuarios y para la población en general. En este ámbito, existe un creciente
+campo de investigación y de evidencia que relaciona los procesos de salud y enfermedad con
+la cohesión social y el capital social, donde se ha identificado a la cohesión social como un
+potencial factor protector de la salud. La cohesión social es entendida como la calidad de la
+cooperación social y la unidad de un colectivo, definido en términos geopolíticos, que se
+expresa en las actitudes y comportamientos de sus miembros. Esta investigación tuvo por
+objetivo evaluar la relación entre enfermedades crónicas no transmisibles y cohesión social,
+considerando tres de sus elementos principales: lazos sociales, identificación, y solidaridad y
+cooperación social. Las enfermedades consideradas son principalmente Hipertensión y
+Diabetes, siendo las más prevalentes y además biomarcadores de riesgo en la aparición de otras
+enfermedades. Además se incluyen algunas de las causantes de mayor mortalidad en Chile
+( E nfermedades cardio y cerebrovasculares, Cáncer, Enfermedades respiratorias crónicas,
+Enfermedades hepáticas y Enfermedades renales), las cuales fueron agrupadas en una escala.
+Los datos utilizados corresponden a la Encuesta Calidad de Vida y Salud (ENCAVI) 2015 –
+2016 (N=6.532). Los análisis basados en modelos de regresión logística señalan que los lazos
+sociales son el principal elemento de la cohesión social consistentemente favorable y
+potencialmente protector en la carga de ECNT
+
+
+::: {.callout-note title="How to cite this work"}
+
+Simon Varas (2021). *Enfermedades crónicas no transmisibles y el efecto protector de la cohesión social en Chile*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

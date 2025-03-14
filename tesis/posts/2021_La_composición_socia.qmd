@@ -1,0 +1,56 @@
+---
+title : "La composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos"
+date : "2021-01-01"
+author : ["Carlos Budnevich"]
+publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "La masiva intromisión de agentes privados en la educación a partir de las reformas de 1980 derivó en la configuración de un mercado escolar, teniendo dos grandes consecuencias ..."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+---
+---
+
+# Resumen
+
+La masiva intromisión de agentes privados en la educación a partir de las reformas
+de 1980 derivó en la configuración de un mercado escolar, teniendo dos grandes
+consecuencias: Primero, se exacerban las diferencias de rendimiento según nivel
+socioeconómico; En segundo lugar, en virtud de los mecanismos económicos,
+sociales y culturales altamente selectivos y discriminatorios utilizados por los
+establecimientos, se produce un sistema educacional altamente segregado. Los
+individuos de origen socioeconómico más bajo, los grupos étnicos, y los migrantes,
+tienden a concentrarse en escuelas públicas, mientras los estudiantes de élite se
+concentran en colegios particulares pagados, habiendo una alta segmentación
+cultural, social y económica de la matrícula de los establecimientos. La literatura
+internacional muestra, por un lado, el efecto negativo que tiene el nivel
+socioeconómico promedio bajo de las aulas, una alta proporción étnica, y una alta
+proporción de migrantes, en el rendimiento académico de los alumnos más
+desaventajados. Por otro lado, la composición de género de las aulas también sería
+fundamental pues las mujeres obtendrían peores resultados en matemática en aulas
+mixtas en comparación a los resultados obtenidos cuando están en aulas sólo con
+mujeres. Pese a lo anterior, habría mecanismos mitigadores de los malos resultados
+académicos exhibidos por estos individuos. De este modo, mayores niveles de
+heterogeneidad socioeconómica y cultural podrían favorecer el rendimiento de los
+estudiantes más pobres, y minorías étnicas/migrantes. La presente investigación tiene
+como propósito central evaluar la relación que tiene la composición escolar en
+términos socioeconómicos, étnicos/nacionalidad, y de género con el rendimiento
+académico de las mujeres, indígenas, individuos de bajo nivel socioeconómico y
+migrantes de II medio en las pruebas SIMCE 2017 de matemática y lenguaje. Para
+ello, se estimarán modelos multinivel a partir de los datos que proporciona el Ministerio
+de Educación de la prueba SIMCE.
+
+Palabras clave: desigualdad, educación de mercado, segregación educativa,
+composición escolar, rendimiento académico.
+
+
+::: {.callout-note title="How to cite this work"}
+
+Carlos Budnevich (2021). *La composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

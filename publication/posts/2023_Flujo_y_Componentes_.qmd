@@ -7,25 +7,17 @@ publication : " 9o Congreso de Bibliotecas Universitarias y Especializadas, Univ
 publication_short : " 9o Congreso de Bibliotecas Universitarias y Especializadas, Universidad de Chile . Santiago"
 abstract : "(Abstract not available)"
 abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: github
+      href: https://github.com/lisa-coes/presentaciones 
+    - icon: file-slides-fill
+      href: https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/bibliotecas-Enero2023.html#1
+    - icon: camara-video-fill
+      href: https://www.youtube.com/watch?v=ZG1Gk_iqTTA
+---
 url_pdf : "" 
-
-url_project: ""
-
-url_slides: "https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/bibliotecas-Enero2023.html#1"
-
-url_video: "https://www.youtube.com/watch?v=ZG1Gk_iqTTA"
-
-url_poster: ""
-
-links:
-
-- icon: github
-
-  icon_pack: fab
-
-  name: Github
-
-  url: https://github.com/lisa-coes/presentaciones 
 
 ---
 
@@ -42,3 +34,11 @@ links:
 <br>
 
 <iframe width="700"  height="450" src="https://www.youtube.com/watch?v=ZG1Gk_iqTTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo (2023). *Flujo y Componentes de la Investigación Abierta*.  9o Congreso de Bibliotecas Universitarias y Especializadas, Universidad de Chile . Santiago
+
+:::
+

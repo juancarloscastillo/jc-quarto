@@ -1,0 +1,34 @@
+---
+title : "Ellos contra nosotros: las percepciones del conflicto social"
+date : "2023-01-01"
+author : ["Andreas Lafferte"]
+publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "El aumento de la desigualdad económica y la concentración de la riqueza se han asociado en gran medida al resurgimiento de diferentes formas de conflicto social alrededor del mundo."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: https://andreas-lafferte.github.io/tesis/resumen.html
+    - icon: github
+      href: https://github.com/Andreas-Lafferte/tesis
+---
+---
+
+# Resumen
+
+El aumento de la desigualdad económica y la concentración de la riqueza se han asociado en gran medida al resurgimiento de diferentes formas de conflicto social alrededor del mundo. Diversos estudios se han preguntado por el grado en el que los individuos perciben (o no) los conflictos sociales entre grupos, particularmente entre aquellos organizados verticalmente como los ricos y los pobres o los trabajadores y los empresarios. Aunque algunas investigaciones recientes han mostrado una percepción entre moderada y fuerte del conflicto social en diferentes sociedades, además de una asociación positiva con la desigualdad económica, hasta ahora se ha desestimado considerablemente el papel de la clase social, así como su interacción con la desigualdad contextual y los marcos institucionales de los países. Este estudio pretende cubrir estos vacíos enfocándose en la influencia de la clase social sobre las percepciones de conflicto social y en la manera en que esta relación cambia según los contextos económicos e institucionales entre 1999-2019. A partir de los datos de 33 países de la International Social Survey Programme (ISSP) en sus olas de 1999 (N = 6.175), 2009 (N = 21.932) y 2019 (N = 11.746), además de otras fuentes como OCDE, WIID e ICTWSS, se estiman modelos multinivel. Los resultados revelan que la posición de clase es un determinante relevante de las percepciones de conflicto en la medida que quienes se ubican en la parte inferior de la estructura de clases tienden a percibir mayores conflictos que quienes se ubican en la parte superior, apoyando la hipótesis general. A nivel contextual, el conflicto percibido tiende a ser mayor en países con alta concentración del ingreso y menor en países con instituciones corporativistas. Sin embargo, en contra de la hipótesis de mayor polarización entre clases en contextos de mayor desigualdad, las interacciones entre niveles muestran que, cuando la desigualdad aumenta, las posiciones de clase subordinadas tienden a reducir su percepción de conflicto mientras que las clases privilegiadas la incrementan. Estos hallazgos sitúan a la dimensión subjetiva del conflicto como un eje central en su análisis, en donde la clase social continúa siendo un vehículo de polarización social en un mundo caracterizado por las persistentes desigualdades.
+
+**Palabras clave**: conflicto social, percepciones de conflicto, clase social, desigualdad económica, corporativismo.
+
+
+::: {.callout-note title="How to cite this work"}
+
+Andreas Lafferte (2023). *Ellos contra nosotros: las percepciones del conflicto social*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

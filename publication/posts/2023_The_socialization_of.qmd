@@ -7,26 +7,17 @@ publication : " ISA XX World Congress of Sociology . Melbourne"
 publication_short : " ISA XX World Congress of Sociology . Melbourne"
 abstract : "Growing levels of economic inequality and income concentration have boosted research on redistributive preferences in the recent years (Becker, 2021; Rueda & Stegmueller, 2019), understood as those beliefs about the need for economic transfers and universal access to social services by those with fewer resources, usually by the state. Information about these preferences is relevant for democratic governments as their legitimacy in part responds to their capacity to manage social justice demands. Despite the growing research in this field, until now the focus has been mostly on the adult population, sideling the question about how these preferences are developed and socialized at school age, as well as how they are influenced by social, cultural, and economic factors. Using data from 6,511 8th-grade students in Chile (Chilean Education Quality Agency Survey, 2017), this study aims at analyzing to what extent the social justice experiences at school age (for instance grade allocations), as well as meritocratic perceptions of rewards distribution in society, are related to redistributive preferences of students. As meritocracy is conceived as a system where rewards are justly distributed according to individual effort and talent (Young, 1958), the central hypothesis of this paper is that those students who perceive more meritocracy will exhibit fewer preferences for redistribution (Batruch et al., 2021), moderating the possible socialization impacts of the families. The results of the multilevel (random effects) estimation show that students with a higher perception of meritocracy in society actually display lower preferences for justifying access to social benefits based on individual income, however, perception of meritocracy is also associated with greater preferences for reducing the economic gap between the rich and the poor. The implications of these results for the political socialization of students by the family of origin and the school are discussed."
 abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: github
+      href: https://github.com/educacion-meritocracia/meritocracia-escuela-agencia/
+    - icon: file-slides-fill
+      href: https://educacion-meritocracia.github.io/meritocracia-escuela-agencia/presentations//ISA-Melbourne2023/ISA2023.html
+---
 url_pdf : "" 
 
-url_project: ""
-
-url_slides: "https://educacion-meritocracia.github.io/meritocracia-escuela-agencia/presentations//ISA-Melbourne2023/ISA2023.html"
-
-url_video: ""
-
-url_poster: ""
-# 
-links:
-
-- icon: github
-
-  icon_pack: fab
-
-  name: Github
-
-  url: https://github.com/educacion-meritocracia/meritocracia-escuela-agencia/
----
+# ---
 ![](https://ocscoes.github.io/presentaciones/images/ISA.png)
 
 ## Documento de presentación
@@ -34,3 +25,11 @@ links:
 (F para pantalla completa)
 
 <iframe width="700"  height="450" src="https://educacion-meritocracia.github.io/meritocracia-escuela-agencia/presentations//ISA-Melbourne2023/ISA2023.html" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo, Kevin Carrasco (2023). *The socialization of meritocracy at school and the justification of economic inequality*.  ISA XX World Congress of Sociology . Melbourne
+
+:::
+

@@ -1,0 +1,26 @@
+---
+title : "Prevención en salud mental en la Atención Primaria de Salud"
+date : "2015-01-01"
+author : ["Nassim Ajraz", "Natalia Sanchez"]
+publication : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+categories : ["Miembro comité evaluador"]
+about:
+  template: marquee
+---
+- icon: square-check
+  icon_pack: fa
+  name:  
+  web: 
+
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Nassim Ajraz, Natalia Sanchez (2015). *Prevención en salud mental en la Atención Primaria de Salud*.  Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

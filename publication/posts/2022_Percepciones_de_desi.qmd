@@ -7,7 +7,9 @@ publication : " Comentario en Seminario: ¿Cuánto cambiaron las percepciones de
 publication_short : " Comentario en Seminario: ¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social? . Centro de Estudios Públicos"
 abstract : "(Abstract not available)"
 abstract_short : ""
-url_source : "/presentations/cep-desigualdad-2022/cep-percdes-2022.html"
+about:
+  template: marquee
+---
 ---
 ## Documento de presentación
 
@@ -20,3 +22,11 @@ url_source : "/presentations/cep-desigualdad-2022/cep-percdes-2022.html"
 <iframe width="700" height="450" src="https://www.youtube.com/embed/IWTdvLViFs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Github Repo](https://github.com/juancarloscastillo/jc-academic/static/presentations/cep-desigualdad-2022)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo (2022). *Percepciones de desigualdad en Chile*.  Comentario en Seminario: ¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social? . Centro de Estudios Públicos
+
+:::
+

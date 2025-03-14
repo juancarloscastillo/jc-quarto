@@ -1,0 +1,26 @@
+---
+title : "Chile: Sociodemografía e inser- ción laboral de los inmigrantes re- cientes. El caso de los haitianos y venezolanos."
+date : "2018-01-01"
+author : ["Andres {Gonzalez Ide}", "Daniel Gonzalez"]
+publication : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+categories : ["Miembro comité evaluador"]
+about:
+  template: marquee
+---
+- icon: square-check
+  icon_pack: fa
+  name:  
+  web: 
+
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Andres Gonzalez Ide, Daniel Gonzalez (2018). *Chile: Sociodemografía e inser- ción laboral de los inmigrantes re- cientes. El caso de los haitianos y venezolanos.*.  Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

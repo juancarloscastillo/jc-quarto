@@ -1,0 +1,36 @@
+---
+title : "¿Quién justifica qué? El rol del sentido de injusticia en las justificaciones de violencia en contexto de protesta"
+date : "2022-01-01"
+author : ["Martin Venegas"]
+publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "El estudio de las justificaciones de la violencia distingue si esta se ejerce por el cambio social o por el control social. En el marco de esta distinción, emerge la pregunta sobre qué razones o qué características determinan que los individuos justifiquen ambos tipos de violencia"
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: https://thesis-justification-of-violence.github.io/thesis-report/index.html
+    - icon: github
+      href: https://github.com/thesis-justification-of-violence
+---
+---
+
+# Resumen
+
+El estudio de las justificaciones de la violencia distingue si esta se ejerce por el cambio social o por el control social. En el marco de esta distinción, emerge la pregunta sobre qué razones o qué características determinan que los individuos justifiquen ambos tipos de violencia. En la literatura empírica se ha encontrado que las justificaciones de ambos tipos de violencia se pueden explicar a partir de la pertenencia a grupos desaventajados, la ideología y las percepciones de justicia procesal. Esta última explicación es la que más ha recibido atención en el último tiempo, sin embargo, en el presente estudio se ha partido de la premisa que la justicia no es un concepto unidimensional, sino uno multidimensional. A raíz de ello, se ha propuesto integrar a la justicia distributiva como una dimensión relevante para explicar las dinámicas de la justificación de la violencia. La pregunta que ha guiado el estudio es: ¿Cuál es la relación entre el sentido de injusticia distributiva y las justificaciones de la violencia en contexto de protesta, tanto por el cambio social, como por el control social, en Chile al año 2019?
+
+A partir de una muestra de 711 casos de los datos del Estudio Longitudinal Social de Chile (ELSOC) se pusieron a prueba cuatro hipótesis. Por un lado, que quienes evaluarán la distribución de ingresos como más injusta tenderían a justificar más la violencia por el cambio social y menos por el control social. Por otro lado, que individuos que pertenecen a grupos desaventajados justificarían más la violencia por el cambio social y menos por el control social, en la medida que aumentaran sus evaluaciones de injusticia. Para probar las hipótesis se utilizaron modelos de regresión logística ordinal para tres situaciones de violencia: que estudiantes tiren piedras a carabineros, que carabineros repriman marchas pacificas y que carabineros desalojen tomas a la fuerza. Para cada una de estas situaciones, se indagó en el efecto que tenían tres tipos de evaluaciones de injusticia: las evaluaciones que hacen los entrevistados sobre sus ingresos, las evaluaciones para los ingresos de un obrero hipotético y las evaluaciones para los ingresos de un gerente hipotético.
+
+Los resultados mostraron evidencia para el primer par de hipótesis y evidencia contraria para el segundo par de hipótesis. Para el primer par de hipótesis, se encontró que quienes evalúan más injusticia en los ingresos de los gerentes justifican más la violencia por el cambio social y que quienes evalúan menos injusticia en los ingresos de los obreros justifican más la violencia por el control social. Se discuten las particularidades de cada hallazgo, así como también el rol de los determinantes relevantes según la literatura (e.g. ideología). Para el segundo par de hipótesis, se encontró que las evaluaciones de injusticia tenían un efecto atenuante en que individuos de grupos desaventajados justificarán más la violencia por el cambio social y menos la violencia por el control social. Se abordan estos hallazgos contrarios en las discusiones.
+
+
+::: {.callout-note title="How to cite this work"}
+
+Martin Venegas (2022). *¿Quién justifica qué? El rol del sentido de injusticia en las justificaciones de violencia en contexto de protesta*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

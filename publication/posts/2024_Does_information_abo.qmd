@@ -7,7 +7,17 @@ publication : " Poster presented at the Inequality Conference - Exellence Cluste
 publication_short : " Poster presented at the Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz"
 abstract : "In advanced economies, there has been an increase in socio-economic inequality. However, a significant portion of voters in these societies are misinformed about inequality. What occurs when these misperceptions are corrected? Experimental studies have explored the impact of accurate information on perceptions and preferences for redistribution, but their findings are contradictory. While some studies suggest that accurate information heightens concerns about inequality and can even lead to an increased demand for redistribution, other research indicates that learning about income inequality does not have significant effects. Two factors contribute to the explanation of these findings. Firstly, many of the studies assume that exposing people to accurate information will lead to the correction of misperceptions. However, responses to information can vary widely, as awareness of social structure is often tightly constrained by the social circles in which individuals reside. Secondly, the research conducted to date has been predominantly limited to a handful of advanced industrial countries that have witnessed increasing economic inequality in recent decades. However, what happens in a counterfactual scenario? What can we expect when individuals are exposed to accurate information in contexts where poverty is decreasing? The present study addresses this question by investigating whether exposure to information about decreasing poverty influences perceptions regarding the importance of structural and individual factors in 'getting ahead.' We expect heterogenous citizen’s responses. One of our main hypotheses is that information about poverty reduction in society weakens the belief in individual opportunity factors and strengthens the belief in structural factors among individuals at the lower end of the income distribution. We test our hypotheses through a panel survey experiment using the case of Chile. Chilean society is an excellent case study because this nation has undergone significant changes in recent decades, with a substantial decrease in the level of poverty being one of the most prominent transformations. We leverage this trend in designing our treatments. The experiments were administered to 1,781 Chileans in 2019 and 2020 through a company that provides online convenience and heterogenous samples in Latin America. Findings indicate that information about poverty reduction in society increases the support for the role of social origin in getting ahead in the life. Results regarding causal heterogeneity suggest that treatments have very strong effects on the belief in the structural factor for low-income groups and respondents with attachment to egalitarian beliefs. These effects persist even one month. We discuss implications of these results."
 abstract_short : ""
-url_source : "https://inequality-conference.de/"
+about:
+  template: marquee
+---
 ---
 
 ![](/images/poster-konstanz.png)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Luis Maldonado, Juan-Carlos Castillo, Julio Iturra (2024). *Does information about inequality affects opportunity beliefs? Results from a survey experiment*.  Poster presented at the Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz
+
+:::
+

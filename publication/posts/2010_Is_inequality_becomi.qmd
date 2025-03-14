@@ -2,9 +2,20 @@
 title : "Is inequality becoming just? Changes in public opinion about economic inequality in Chile"
 date : "2010-10-01"
 author : ["J. Castillo"]
-categories : ["InProceedings"]
+categories : ["Conference paper"]
 publication : " Conference of the Latin American Studies Association - LASA. Toronto"
 publication_short : " Conference of the Latin American Studies Association - LASA. Toronto"
 abstract : "(Abstract not available)"
 abstract_short : ""
+about:
+  template: marquee
 ---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+J. Castillo (2010). *Is inequality becoming just? Changes in public opinion about economic inequality in Chile*.  Conference of the Latin American Studies Association - LASA. Toronto
+
+:::
+

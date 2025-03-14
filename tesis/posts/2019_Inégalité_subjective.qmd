@@ -1,0 +1,74 @@
+---
+title : "Inégalité subjective au Chili. Représentation des différences sociales (in)justes à travers le temps"
+date : "2019-01-01"
+author : ["Rodrigo Yanez"]
+publication : " Doctorado en Sociología - EHESS. Paris"
+publication_short : " Doctorado en Sociología - EHESS. Paris"
+abstract : "This thesis examines subjective inequality in Chile over time. With the return of democracy (1990), the country experienced a sustained economic growth which allowed it to reduce poverty levels and increase education rates. At the same time, together with the development of a series of social policies, since 2000 the economic concentration of the country, historically ranked among the highest in the world, has begun to diminish..."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: /tesis/2019_inegalite_subjective/#documento
+---
+---
+
+# Abstract
+
+This thesis examines subjective inequality in Chile over time. With the return
+of democracy (1990), the country experienced a sustained economic growth
+which allowed it to reduce poverty levels and increase education rates. At the
+same time, together with the development of a series of social policies, since
+2000 the economic concentration of the country, historically ranked among
+the highest in the world, has begun to diminish. However, as wellbeing levels
+increased and inequalities diminished, a series of social demonstrations began
+to take place, among them those led by the student movement in 2006 and
+2011, considered the largest that the country has experienced since the end of
+the dictatorship. This diagnosis grouped by all these demonstrations pointed
+to the problem of social inequalities as a brake on the country’s’ development.
+The high citizen support of these demonstrations had an impact on the con-
+figuration of political agendas of all sectors, and led public debate to focus on
+the question of whether the principles of justice, where Chilean society had
+sustained its social pact after the dictatorship, had changed. Were trans-
+formations in wellbeing conditions linked to a criticism of the market logic
+that had legitimized high inequalities since the period of neoliberal reforms
+promoted in the 1980s?
+
+The thesis answers this question from the perspective of individuals, asking
+how stable or fluid representations of inequality, as well as its determinants, are over time. From the analysis of a set of quantitative data (surveys ISSP
+1999, ISSP 2009, SJCP 2013 and COES 2014) and qualitative data (40 semi-
+directed interviews), it is established that representations of inequality can be
+apprehended through three dimensions - perceptions, beliefs and preferences
+- which are influenced by factors that operate at two levels: the social position
+and the personal experience of individuals.
+The results of the study show that representations changed over time, but
+with varying intensity depending on the dimension analyzed. And by consid-
+ering the determinants, on the one hand, results show that the social position
+of individuals, especially with regards to educational level, is a strong pre-
+dictor of representations of inequality. Following the transformations in the
+social structure of Chile, individuals of lower social status present more sig-
+nificant changes in the representations of inequality. On the other hand, in
+terms of personal experience, it is observed that changes in the sociopolit-
+ical context strongly influence representations, as well as the evaluation of
+structural transformations on individuals’ lives. Regardless of social status,
+individuals’ assessments of inequality are strongly anchored in comparing
+different moments of their own biographies, even stronger than when they
+represent inequality through a comparison with other people or social groups.
+
+Keywords. Subjective inequality, social representations, social justice, Chile
+
+# Documento
+
+<iframe src="https://www.dropbox.com/s/1jpggq0ny7ns0e1/These_RYANEZ.pdf?raw=1" style="min-height:100vh;width:100%" frameborder="0"></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Rodrigo Yanez (2019). *Inégalité subjective au Chili. Représentation des différences sociales (in)justes à travers le temps*.  Doctorado en Sociología - EHESS. Paris
+
+:::
+

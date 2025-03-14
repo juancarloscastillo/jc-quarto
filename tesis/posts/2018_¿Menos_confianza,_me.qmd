@@ -1,0 +1,58 @@
+---
+title : "¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas"
+date : "2018-02-01"
+author : ["Francisca Castro"]
+publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "La presente investigación tiene como objetivo evaluar el impacto que posee la corrup- ción del contexto, i.e. a nivel paı́s, sobre las preferencias redistributivas de los individuos."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: /tesis/2019_explorando_la_asocia/#documento
+---
+---
+
+# Resumen
+
+La presente investigación tiene como objetivo evaluar el impacto que posee la corrupción del contexto, i.e. a nivel paı́s, sobre las preferencias redistributivas de los individuos.
+Con esto se pretende conocer no sólo el impacto de la corrupción sobre una determinada
+preferencia social, sino también el impacto del contexto sobre dicha preferencia. El estudio
+de las preferencias redistributivas se ha enfocado mayoritariamente en cómo los determi-
+nantes económicos (ingreso, ocupación, clase subjetiva) y los determinantes psico-sociales
+(tolerancia a la desigualdad, evaluaciones de justicia, creencias sobre las causas de la pobreza) afectan dichas preferencias, mientras que a nivel contextual el enfoque ha estado
+en el impacto de la desigualdad a través del GINI (Kenworthy & McCall, 2008; Alesina
+& Giuliano, 2009; Meltzer & Richard, 1981) y del PIB (Olivera, 2015) o PIB per cápita
+(Dion & Birchfield, 2010). Estas investigaciones apuntan a que las variables contextuales
+pueden tener impacto sobre las preferencias individuales. En el caso del GINI, Alesina &
+Giuliano (2009) argumentan que las preferencias por la redistribución pueden depender del
+nivel de consumo individual: las personas estarán preocupadas por la desigualdad cuando
+ésta afecte su flujo de consumo individual, el cual depende de la distribución de ingresos.
+Asimismo, el PIB da cuenta del tamaño del estado y su capacidad de gasto en polı́ticas
+sociales, lo que podrı́a influir en las preferencias redistributivas (Olivera, 2015; Dion &
+Birchfield, 2010).
+
+Tomando en cuenta el objetivo general de esta investigación mencionado con ante-
+rioridad (evaluar el impacto que posee la corrupción del contexto sobre las preferencias
+redistributivas de los individuos), se desprenden los siguientes objetivos especı́ficos:
+1. Establecer el grado de asociación entre preferencias redistributivas y corrupción contextual.
+2. Establecer el grado de asociación entre preferencias redistributivas y confianza gubernamental.
+3. Evaluar el efecto de la corrupción contextual y de la confianza gubernamental sobre
+las preferencias redistributivas.
+4. Explorar el rol de la confianza gubernamental como variable moderadora de la aso-
+ciación entre preferencias redistributivas y corrupción contextual.
+5. Explorar el efecto de otras variables de nivel contextual sobre las preferencias redistributivas.
+
+<iframe src="https://www.dropbox.com/s/deuxlftbcst5khk/Entrega%20Final%20Francisca%20Castro_backup.pdf?raw=1" style="min-height:100vh;width:100%" frameborder="0"></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Francisca Castro (2018). *¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

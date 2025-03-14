@@ -7,7 +7,17 @@ publication : " Seminario ELSOC Cambio Social en Chile . Santiago ( Online"
 publication_short : " Seminario ELSOC Cambio Social en Chile . Santiago ( Online"
 abstract : "(Abstract not available)"
 abstract_short : ""
-url_source : "https://jciturras.github.io/dinamic-legit/slides/dinamic-legit_elsoc.html#1"
+about:
+  template: marquee
+---
 ---
 [
 Github Repo](https://github.com/jciturras/dinamic-legit)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Julio Iturra, Juan-Carlos Castillo (2020). *Dinámicas de legitimación: Percepción de desigualdad actual y justificación de desigualdad futura*.  Seminario ELSOC Cambio Social en Chile . Santiago ( Online
+
+:::
+

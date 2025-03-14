@@ -2,14 +2,23 @@
 title : "Impuestos, redistribución y meritocracia: Cambios en Chile entre 1999 y 2019"
 date : "2021-01-01"
 author : ["Juan-Carlos Castillo", "Julio Iturra", "Francisco Meneses", "Valentina Andrade"]
-categories : ["InCollection"]
+categories : ["Book Section"]
 publication : "  In Jorge Atria & Cristóbal Otero: Impuestos justos para el Chile que viene 100--126 . México: Fondo de Cultura Económica. ISBN: 978-956-289-241-4"
 publication_short : "  In Jorge Atria & Cristóbal Otero: Impuestos justos para el Chile que viene 100--126 . México: Fondo de Cultura Económica. ISBN: 978-956-289-241-4"
 abstract : "El presente capítulo busca aportar los estudios de opinión pública sobre los impuestos, exponiendo el cambio de las preferencias y percepciones de los chilenos frente a la tributación progresiva. Desde el marco interpretativo de la economía moral, centrada en las normas culturales, se puede esperar que las opiniones de los ciudadanos frente a los impuestos progresivos se vean asociadas a sus creencias sobre el rol del estado, sus preferencias sobre el acceso igualitario a servicios sociales y sus creencias meritocráticas. Los resultados indican que, si bien las preferencias por impuestos progresivos son mayoritarias, han disminuido desde el año 1999 hasta la fecha, contrastando con un aumento en la crítica a la desigualdad. Se concluye que las diferencias esperables en opiniones sobre los impuestos según nivel socioeconómico, posición política y creencias meritocráticas no poseen asidero en el caso chileno. Más aún, se observa una tendencia al consenso entre distintas posiciones sobre la necesidad de una política tributaria más progresiva."
 abstract_short : ""
-url_source : "https://www.impuestosjustos.io/"
-tags : ["meritocracy","redistributive preferences"]
+about:
+  template: marquee
+---
 ---
 ![](/images/impuestos-justos.jpg)
 
 [Website](https://www.impuestosjustos.io/)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo, Julio Iturra, Francisco Meneses, Valentina Andrade (2021). *Impuestos, redistribución y meritocracia: Cambios en Chile entre 1999 y 2019*.   In Jorge Atria & Cristóbal Otero: Impuestos justos para el Chile que viene 100--126 . México: Fondo de Cultura Económica. ISBN: 978-956-289-241-4
+
+:::
+

@@ -173,6 +173,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-tesis .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-tesis'] = new List('listing-tesis', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -213,6 +241,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./index.html#blogh1" rel="" target="">
  <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#tesish1" rel="" target="">
+ <span class="menu-text">Tesis</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./links.html" rel="" target="">
@@ -394,7 +426,7 @@ El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudio
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="COES" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741708724678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="5" data-categories="COES" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741784698955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./proyectos/posts/ocs-coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -408,7 +440,7 @@ COES
 </div>
 </div>
 <div class="card-text listing-description">
-<i class="bi bi-link-45deg"></i>
+El Observatorio de Cohesión Social (OCS) es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES), desde donde se busca contribuir al estudio de la…
 </div>
 </div>
 </div>
@@ -474,7 +506,7 @@ La hipótesis general de investigación es que el currículo escolar, junto a un
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="FONDAP" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741708705460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="9" data-categories="FONDAP" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741784778480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./proyectos/posts/coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -488,7 +520,7 @@ FONDAP
 </div>
 </div>
 <div class="card-text listing-description">
-<i class="bi bi-link-45deg"></i>
+El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por el programa FONDAP de ANID y desarrolla investigación colaborativa en temas relacionados al…
 </div>
 </div>
 </div>
@@ -551,7 +583,7 @@ Publicaciones y Presentaciones recientes
 </p>
 <div id="listing-publication" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Presentation" data-listing-date-sort="1719806400000" data-listing-file-modified-sort="1741720365544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="Presentation" data-listing-date-sort="1719806400000" data-listing-file-modified-sort="1741957762095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="./publication/posts/2024_Measuring_social_coh.html">
 <h3 class="no-anchor listing-title">
@@ -579,7 +611,7 @@ Juan-Carlos Castillo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741720365496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741957762044" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="./publication/posts/2024_Barreras_para_la_Cie.html">
 <h3 class="no-anchor listing-title">
@@ -607,7 +639,7 @@ Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741720365547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741957762097" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="./publication/posts/2024_Meritocracia_y_justi.html">
 <h3 class="no-anchor listing-title">
@@ -635,7 +667,7 @@ Juan-Carlos Castillo, Kevin Carrasco
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741720365514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741957762065" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="./publication/posts/2024_¿Las_estudiantes_sub.html">
 <h3 class="no-anchor listing-title">
@@ -663,7 +695,7 @@ Juan-Carlos Castillo, Nicolas Tobar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Presentation" data-listing-date-sort="1711940400000" data-listing-file-modified-sort="1741720365594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="4" data-categories="Presentation" data-listing-date-sort="1711940400000" data-listing-file-modified-sort="1741957762146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="./publication/posts/2024_Does_information_abo.html">
 <h3 class="no-anchor listing-title">
@@ -865,6 +897,166 @@ Aquí algunos talleres, seminarios y cursos breves en distintos temas
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+</div>
+</div>
+</div>
+<div class="background-frame alt-background">
+<div class="content-block">
+<div id="tesish1">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Guía y Comité de Tesis
+</p>
+<div id="listing-tesis" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Guía o cotutor" data-listing-date-sort="1709262000000" data-listing-file-modified-sort="1741956838452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="body">
+<a href="./tesis/posts/2024_El_rol_de_la_sociali.html">
+<h3 class="no-anchor listing-title">
+El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+Guía o cotutor
+</div>
+</div>
+<a href="./tesis/posts/2024_El_rol_de_la_sociali.html"> </a>
+</div>
+<div class="metadata">
+<a href="./tesis/posts/2024_El_rol_de_la_sociali.html">
+<div class="listing-date">
+Mar 1, 2024
+</div>
+<div class="listing-author">
+Matias Retamales
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Guía o cotutor" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1741956838419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="body">
+<a href="./tesis/posts/2024_El_conflicto_intercu.html">
+<h3 class="no-anchor listing-title">
+El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+Guía o cotutor
+</div>
+</div>
+<a href="./tesis/posts/2024_El_conflicto_intercu.html"> </a>
+</div>
+<div class="metadata">
+<a href="./tesis/posts/2024_El_conflicto_intercu.html">
+<div class="listing-date">
+Jan 1, 2024
+</div>
+<div class="listing-author">
+Paula Larenas
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="body">
+<a href="./tesis/posts/2023_Aceptar_la_diversida.html">
+<h3 class="no-anchor listing-title">
+Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+Guía o cotutor
+</div>
+</div>
+<a href="./tesis/posts/2023_Aceptar_la_diversida.html"> </a>
+</div>
+<div class="metadata">
+<a href="./tesis/posts/2023_Aceptar_la_diversida.html">
+<div class="listing-date">
+Mar 1, 2023
+</div>
+<div class="listing-author">
+Kevin Carrasco
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="body">
+<a href="./tesis/posts/2023_El_lenguaje_como_bre.html">
+<h3 class="no-anchor listing-title">
+El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+Guía o cotutor
+</div>
+</div>
+<a href="./tesis/posts/2023_El_lenguaje_como_bre.html"> </a>
+</div>
+<div class="metadata">
+<a href="./tesis/posts/2023_El_lenguaje_como_bre.html">
+<div class="listing-date">
+Mar 1, 2023
+</div>
+<div class="listing-author">
+Francisco Meneses
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="body">
+<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html">
+<h3 class="no-anchor listing-title">
+¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+Guía o cotutor
+</div>
+</div>
+<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html"> </a>
+</div>
+<div class="metadata">
+<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html">
+<div class="listing-date">
+Mar 1, 2023
+</div>
+<div class="listing-author">
+Anais Herrera
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div class="button">
+<p><a href="./tesis/tesis.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las tesis</a></p>
 </div>
 </div>
 </div>

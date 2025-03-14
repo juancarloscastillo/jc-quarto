@@ -2,10 +2,20 @@
 title : "The two faces of support for redistribution in Colombia: Taxing the wealthy or assisting people in poverty"
 date : "2022-01-01"
 author : ["Efrain Garcia-Sanchez", "Juan-Carlos Castillo", "Rosa Rodriguez-Bailon", "Guillermo B. Willis"]
-categories : ["Article"]
-publication : "Accepted -  Frontiers in Sociology https://doi.org/10.3389/fsoc.2022.773378"
-publication_short : "Accepted -  Frontiers in Sociology https://doi.org/10.3389/fsoc.2022.773378"
+categories : ["Journal Article"]
+publication : "Accepted -  Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.773378](https://doi.org/10.3389/fsoc.2022.773378)"
+publication_short : "Accepted -  Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.773378](https://doi.org/10.3389/fsoc.2022.773378)"
 abstract : "Support for redistribution is crucial for reducing economic inequality. Despite people&#39;s desire for reducing extreme inequalities, they still have mixed opinions regarding how to do so. The aim of the article is to examine the underlying latent dimensions of support for redistribution and test its correlates to perceptions of and attitudes toward inequality. In two studies with independent samples from Colombia, we found that support for redistribution can be modelled as a latent construct depicting two different dimensions: one focus on taxing the wealthy and changing the income distribution schema, and other focused on assisting people in need and providing opportunities. We also found that the dimension related to taxing the wealthy (vs. assisting people in need) displayed higher internal reliability and correlated consistently with perceptions and attitudes toward attitudes: the higher the support for taxing the wealthy, the higher the perceptions and concerns of inequality, and the lower the inequality-justifying ideologies. This research unveils an underlying dimension of support for redistribution that shed light on what drives people’s redistributive preferences."
 abstract_short : ""
-url_source : "https://doi.org/10.3389/fsoc.2022.773378"
+about:
+  template: marquee
 ---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Efrain Garcia-Sanchez, Juan-Carlos Castillo, Rosa Rodriguez-Bailon, Guillermo B. Willis (2022). *The two faces of support for redistribution in Colombia: Taxing the wealthy or assisting people in poverty*. Accepted -  Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.773378](https://doi.org/10.3389/fsoc.2022.773378)
+
+:::
+

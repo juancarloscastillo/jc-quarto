@@ -101,18 +101,41 @@ bibtex_2academic <- function(bibfile,
 
     # Further customization of annotation for including yaml information in Zotero Extra field
 #    mypubs$annotation <-gsub("url_pdf", "\nurl_pdf",mypubs$annotation )
-    mypubs$annotation <-gsub("url_preprint", "\nurl_preprint",mypubs$annotation )
-    mypubs$annotation <-gsub("url_dataset", "\nurl_dataset",mypubs$annotation )
-    mypubs$annotation <-gsub("url_project", "\nurl_project",mypubs$annotation )
-    mypubs$annotation <-gsub("url_slides", "\nurl_slides",mypubs$annotation )
-    mypubs$annotation <-gsub("url_video", "\nurl_video",mypubs$annotation )
-    mypubs$annotation <-gsub("url_poster", "\nurl_poster",mypubs$annotation )
-    mypubs$annotation <-gsub("links", "\nlinks",mypubs$annotation )
-    mypubs$annotation <-gsub("- icon", "\n- icon",mypubs$annotation )
-    mypubs$annotation <-gsub("  icon_pack", "\n  icon_pack",mypubs$annotation )
-    mypubs$annotation <-gsub("  name:", "\n  name:",mypubs$annotation )
-    mypubs$annotation <-gsub("  web:", "\n  url:",mypubs$annotation ) # something does not work when trying to replace "url:" from Zotero, that's why in the extra field use web for this function, which then is replaced with the url field and it works.
+    # mypubs$annotation <-gsub("url_preprint", "\nurl_preprint",mypubs$annotation )
+    # mypubs$annotation <-gsub("url_dataset", "\nurl_dataset",mypubs$annotation )
+    # mypubs$annotation <-gsub("url_project", "\nurl_project",mypubs$annotation )
+    # mypubs$annotation <-gsub("url_slides", "\nurl_slides",mypubs$annotation )
+    # mypubs$annotation <-gsub("url_video", "\nurl_video",mypubs$annotation )
+    # mypubs$annotation <-gsub("url_poster", "\nurl_poster",mypubs$annotation )
+    # mypubs$annotation <-gsub("links", "\nlinks",mypubs$annotation )
+    # mypubs$annotation <-gsub("- icon", "\n- icon",mypubs$annotation )
+    # mypubs$annotation <-gsub("  icon_pack", "\n  icon_pack",mypubs$annotation )
+    # mypubs$annotation <-gsub("  name:", "\n  name:",mypubs$annotation )
+    # mypubs$annotation <-gsub("  web:", "\n  url:",mypubs$annotation ) # something does not work when trying to replace "url:" from Zotero, that's why in the extra field use web for this function, which then is replaced with the url field and it works.
 
+    url_fields <- c("url_pdf", "url_preprint", "url_dataset", 
+    								"url_project", "url_slides", "url_video", "url_poster")
+    
+    
+    # Extraer cada campo de `annotation` usando str_extract() y limpiarlo
+    for (field in url_fields) {
+    	mypubs[[field]] <- str_extract(mypubs$annotation, paste0(field, ':\\s*"([^"]+)"'))
+    	mypubs[[field]] <- str_replace_all(mypubs[[field]], paste0(field, ':\\s*"'), '')  # Elimina el prefijo
+    	mypubs[[field]] <- str_replace_all(mypubs[[field]], '"$', '')  # Elimina comillas finales
+    }
+    
+    # Construir la expresión regular para los campos de url_fields
+    url_pattern <- paste0("\\b(", paste(url_fields, collapse = "|"), "):\\s*\"\"")
+    
+    # Eliminar cualquier cadena que contenga el patrón
+    mypubs$annotation <- str_remove_all(mypubs$annotation, url_pattern)
+    
+    # Construir la expresión regular para los campos de url_fields con texto entre comillas
+    url_pattern <- paste0("\\b(", paste(url_fields, collapse = "|"), "):\\s*\"[^\"]*\"")
+    
+    # Eliminar cualquier cadena que contenga el patrón
+    mypubs$annotation <- str_remove_all(mypubs$annotation, url_pattern)
+    
 # Customize for more than one editor
 
     mypubs$editor<- gsub(
@@ -136,25 +159,23 @@ bibtex_2academic <- function(bibfile,
 
   # assign "categories" to the different types of publications
   mypubs   <- mypubs %>%
-    # dplyr::mutate(
-      # pubtype = dplyr::case_when(bibtype == "Article" ~ "2",
-      #                            bibtype == "Article in Press" ~ "2",
-      #                            bibtype == "InProceedings" ~ "1",
-      #                            bibtype == "Proceedings" ~ "1",
-      #                            bibtype == "Conference" ~ "1",
-      #                            bibtype == "Conference Paper" ~ "1",
-      #                            bibtype == "Thesis" ~ "3",
-      #                            bibtype == "MastersThesis" ~ "3",
-      #                            bibtype == "PhdThesis" ~ "3",
-      #                            bibtype == "Manual" ~ "4",
-      #                            bibtype == "TechReport" ~ "4",
-      #                            bibtype == "Book" ~ "5",
-      #                            bibtype == "InCollection" ~ "6",
-      #                            bibtype == "InBook" ~ "6",
-      #                            bibtype == "Presentation" ~ "8",
-      #                            TRUE ~ "0") This won't work at quarto
-    	# Instead you need to rename the column as "categories" at leave it as text
-  rename(categories=bibtype)
+    dplyr::mutate(
+    categories = dplyr::case_when(bibtype == "Article" ~ "Journal Article",
+                               bibtype == "Article in Press" ~ "Journal Article",
+                               bibtype == "InProceedings" ~ "Conference paper",
+                               bibtype == "Proceedings" ~ "Conference paper",
+                               bibtype == "Conference" ~ "Conference paper",
+                               bibtype == "Conference Paper" ~ "Conference paper",
+                               bibtype == "Thesis" ~ "Manuscript",
+                               bibtype == "MastersThesis" ~ "Manuscript",
+                               bibtype == "PhdThesis" ~ "Manuscript",
+                               bibtype == "Manual" ~ "Report",
+                               bibtype == "TechReport" ~ "Report",
+                               bibtype == "Book" ~ "Book",
+                               bibtype == "InCollection" ~ "Book Section",
+                               bibtype == "InBook" ~ "Book Section",
+                               bibtype == "Presentation" ~ "Presentation",
+                               TRUE ~ "0"))
 
   # create a function which populates the md template based on the info
   # about a publication
@@ -222,9 +243,8 @@ bibtex_2academic <- function(bibfile,
                                                             " ", x[["institution"]])
       if (!is.na(x[["publisher"]])) publication <- paste0(publication,
                                                           ": ", x[["publisher"]])
-      if (!is.na(x[["doi"]])) publication <- paste0(publication,
-                                                     " ", paste0("https://doi.org/",
-                                                                 x[["doi"]]))
+      if (!is.na(x[["doi"]])) publication <- paste0(publication, " [https://doi.org/", x[["doi"]], "](https://doi.org/", x[["doi"]], ")")
+      
       if (!is.na(x[["isbn"]])) publication <- paste0(publication,
                                                     ". ISBN: ", paste0(x[["isbn"]]))
 
@@ -240,42 +260,143 @@ bibtex_2academic <- function(bibfile,
 #      }
       write(paste0("abstract_short : \"","\""), fileConn, append = T)
 
-      # Source document from Zotero URL field
-
-      if (!is.na(x[["url"]])) write(paste0("url_source : \"", x[["url"]], "\""), fileConn, append = T)
-      if (!is.na(x[["keywords"]])) write(paste0("tags : [\"", x[["keywords"]], "\"]"), fileConn, append = T)
-
-
-      # other possible fields are kept empty. They can be customized later by
-      # editing the created md
-
-#      write("url_code = \"\"", fileConn, append = T)
-#      write("image_preview = \"\"", fileConn, append = T)
-#      write("selected = false", fileConn, append = T)
-#      write("projects = []", fileConn, append = T)
-
-      #links
-#      write("url_pdf = \"\"", fileConn, append = T)
-#      write("url_preprint = \"\"", fileConn, append = T)
-#      write("url_dataset = \"\"", fileConn, append = T)
-#      write("url_project = \"\"", fileConn, append = T)
-#      write("url_slides = \"\"", fileConn, append = T)
-#      write("url_video = \"\"", fileConn, append = T)
-#      write("url_poster = \"\"", fileConn, append = T)
-
-      #other stuff
-#      write("math = true", fileConn, append = T)
-#      write("highlight = true", fileConn, append = T)
-      # Featured image
-#      write("[header]", fileConn, append = T)
-#      write("image = \"\"", fileConn, append = T)
-#      write("caption = \"\"", fileConn, append = T)
-
-#      write("---", fileConn, append = T)
-
-
-      # Any other relevant information from Zotero: write in the "Extra" field
-      if (!is.na(x[["annotation"]])) write(paste0(x[["annotation"]]), fileConn, append = T)
+      # ----------------- LIMPIEZA Y EXTRACCIÓN DE LINKS -----------------
+      
+      # Crear lista vacía para los links extraídos de annotation
+      annotation_links <- list()
+      
+      # 1. Eliminar el bloque de "Prof. Guía"
+      x[["annotation"]] <- gsub(
+      	"- icon: graduation-cap.*?(?=- icon|$)",  # patrón multilinea hasta el siguiente icon o fin
+      	"",
+      	x[["annotation"]],
+      	perl = TRUE
+      )
+      
+      # 2. Extraer íconos y enlaces del annotation (todos los "- icon: ... href: ..." o "- icon: ... web: ...")
+      matches <- str_match_all(
+      	x[["annotation"]],
+      	"- icon: ([^\\n]+)\\s*\\n\\s*(icon_pack: [^\\n]+\\s*\\n)?\\s*(name: [^\\n]+\\s*\\n)?\\s*(web:|href:) ([^\\n]+)"
+      )[[1]]
+      
+      # Crear lista con los links extraídos y transformados
+      if (nrow(matches) > 0) {
+      	annotation_links <- apply(matches, 1, function(row) {
+      		icon_name <- row[2]
+      		url <- row[6]
+      		
+      		# Detectar si es github y renombrar ícono
+      		if (grepl("github\\.com", url)) {
+      			icon_name <- "github"
+      		} else if (icon_name == "file") {
+      			icon_name <- "file-pdf-fill"  # cambiar file a file-pdf-fill
+      		}
+      		
+      		list(icon = icon_name, href = url)
+      	})
+      }
+      
+      # 3. Eliminar esos bloques de iconos + enlaces de annotation (limpiarlo completamente)
+      x[["annotation"]] <- gsub(
+      	"- icon: [^\\n]+\\s*\\n\\s*(icon_pack: [^\\n]+\\s*\\n)?\\s*(name: [^\\n]+\\s*\\n)?\\s*(web:|href:) [^\\n]+\\n?",
+      	"",
+      	x[["annotation"]],
+      	perl = TRUE
+      )
+      
+      # 4. Eliminar cualquier bloque "links:" vacío o mal formado que venga de Zotero
+      x[["annotation"]] <- gsub(
+      	"\\n?links:\\s*(\\n\\s*-.*)?",
+      	"",
+      	x[["annotation"]],
+      	perl = TRUE
+      )
+      
+      # 5. Limpiar líneas en blanco adicionales
+      x[["annotation"]] <- gsub("\n{2,}", "\n\n", x[["annotation"]])  # máximo 1 salto doble
+      x[["annotation"]] <- trimws(x[["annotation"]])  # eliminar espacios al inicio y final
+      
+      # ----------------- LINKS DESDE CAMPOS ESPECIALES -----------------
+      
+      # Mapa de íconos para campos especiales (url_pdf, url_project, etc.)
+      icon_map <- list(
+      	"url_slides"   = list(icon = "file-slides-fill"),
+      	"url_video"    = list(icon = "camara-video-fill"),
+      	"url_poster"   = list(icon = "image-fill"),
+      	"url_pdf"      = list(icon = "file-pdf-fill"),
+      	"url_preprint" = list(icon = "files-alt"),
+      	"url_dataset"  = list(icon = "database"),
+      	"url_project"  = list(icon = "archive")
+      )
+      
+      # Recolectar los links especiales
+      links <- list()
+      for (field in names(icon_map)) {
+      	if (!is.null(x[[field]]) && !is.na(x[[field]]) && x[[field]] != "") {
+      		links <- append(links, list(list(
+      			icon = icon_map[[field]]$icon,
+      			href = x[[field]]
+      		)))
+      	}
+      }
+      
+      # ----------------- COMBINAR Y ESCRIBIR LINKS EN 'ABOUT' -----------------
+      
+      # Juntar annotation_links + links especiales
+      all_links <- c(annotation_links, links)
+      
+      # Escribir el bloque 'about' y 'links'
+      write("about:", fileConn, append = T)
+      write("  template: marquee", fileConn, append = T)
+      
+      if (length(all_links) > 0) {
+      	write("  links:", fileConn, append = T)
+      	for (link in all_links) {
+      		write(paste0("    - icon: ", link[["icon"]]), fileConn, append = T)
+      		write(paste0("      href: ", link[["href"]]), fileConn, append = T)
+      	}
+      }
+      
+      # ----------------- CERRAR YAML Y ESCRIBIR CONTENIDO LIBRE -----------------
+      
+      # Cerrar el bloque YAML
+      write("---", fileConn, append = T)
+      
+      # Escribir annotation limpio como texto libre (solo si no está vacío)
+      if (!is.na(x[["annotation"]]) && x[["annotation"]] != "") {
+      	write(x[["annotation"]], fileConn, append = T)
+      	}
+      	
+      	# ----------------- GENERACIÓN DE CALL OUT "HOW TO CITE" -----------------
+      	
+      	# Preparar autores
+      	authors <- x[["author"]]
+      	authors <- str_replace_all(authors, " and ", ", ")  # Cambiar 'and' por ', ' para lista de autores
+      	authors <- stringi::stri_trans_general(authors, "latin-ascii")  # Eliminar tildes
+      	authors <- gsub("\\{", "", authors)  # Limpiar llaves
+      	authors <- gsub("\\}", "", authors)
+      	
+      	# Año
+      	year <- ifelse(!is.na(x[["year"]]), x[["year"]], "s.f.")  # "s.f." si falta el año
+      	
+      	# Título
+      	title <- x[["title"]]
+      	
+      	source <- publication  # Usar directamente la variable que ya creaste
+      	
+      	# Construir cita formateada (HTML-safe)
+      	citation_text <- paste0(authors, " (", year, "). *", title, "*")
+      	if (source != "") {
+      		citation_text <- paste0(citation_text, ". ", source)
+      	}
+      	
+      	# ----------------- ESCRIBIR COMO CALLOUT -----------------
+      	
+      	# Escribir el callout al final del archivo
+      	write("\n\n::: {.callout-note title=\"How to cite this work\"}\n", fileConn, append = T)
+      	write(citation_text, fileConn, append = T)
+      	write("\n:::\n", fileConn, append = T)
+      	
     }
   }
   # apply the "create_md" function over the publications list to generate
@@ -296,6 +417,7 @@ bibtex_2academic(bibfile  = my_bibfile,
 
 #this is for including my presentations collection together with my publications in the same page for the sake of simplicity
 
+
 my_bibfile <- "publication/posts/academic-presentations.bib"
 out_fold   <- "publication/posts"
 bibtex_2academic(bibfile  = my_bibfile,
@@ -304,10 +426,10 @@ bibtex_2academic(bibfile  = my_bibfile,
                  overwrite = TRUE)
 
 
-#  # and this is for including my theses, which actually are in another page (tesis), but I let the script here in order to run it just once for the sake of simplicity
-# 
-# my_bibfile <- "content/tesis/tesis.bib"
-# out_fold   <- "content/tesis"
+# #  # and this is for including my theses, which actually are in another page (tesis), but I let the script here in order to run it just once for the sake of simplicity
+# # 
+# my_bibfile <- "tesis/posts/tesis.bib"
+# out_fold   <- "tesis/posts"
 # bibtex_2academic(bibfile  = my_bibfile,
 #                   outfold   = out_fold,
 #                   abstract  = TRUE,

@@ -1,0 +1,67 @@
+---
+title : "Desigualdad y ciudadanía: Una aproximación intergeneracional"
+date : "2018-04-01"
+author : ["Daniel Miranda"]
+publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "A partir de la literatura especializada, existe bastante consenso respecto de que la principal fuente de socialización de aquellos aspectos referidos a la ciudadanía es la familia (Abendschön, 2013; Hess & Torney-Purta, 2005; Hyman, 1969; Langton, 1965; Niemi & Sobieszek, 1977; S Verba, Schlozman, & Burns, 2005; Wasburn & Covert, 2017). Es en el entorno familiar donde se transmiten de una generación a otra las disposiciones y comportamientos relevantes para el ejercicio de la ciudadanía, así como también traduciendo las ventajas o desventajas socioeconómicas en desigualdad de las expresiones de ciudadanía hacia la siguiente generación. Esta situación implica que durante el proceso de socialización se produciría un fenómeno que ha sido denominado"
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: /tesis/2018_estatus_social_subje/#documento
+---
+---
+
+# Resumen
+
+A partir de la literatura especializada, existe bastante consenso respecto de que la
+principal fuente de socialización de aquellos aspectos referidos a la ciudadanía es la familia
+(Abendschön, 2013; Hess & Torney-Purta, 2005; Hyman, 1969; Langton, 1965; Niemi &
+Sobieszek, 1977; S Verba, Schlozman, & Burns, 2005; Wasburn & Covert, 2017). Es en el
+entorno familiar donde se transmiten de una generación a otra las disposiciones y
+comportamientos relevantes para el ejercicio de la ciudadanía, así como también
+traduciendo las ventajas o desventajas socioeconómicas en desigualdad de las
+expresiones de ciudadanía hacia la siguiente generación. Esta situación implica que
+durante el proceso de socialización se produciría un fenómeno que ha sido denominado la transmisión intergeneracional de la desigualdad política (Brady, Schlozman, & Verba, 2015;
+Sidney Verba, Burns, & Schlozman, 2003). Si bien la transmisión de ventajas comparativas
+ha sido abordada ampliamente desde la sociología, expresado por ejemplo en el estudio
+de la transmisión del logro educacional o el estudio de la reproducción social, existe
+limitada evidencia acerca de cuáles son mecanismos cómo operan en el ámbito político
+(Amnå, Ekström, Kerr, & Stattin, 2009; Ellen Quintelier, 2015; Paulsen, 1991).
+En ese marco, esta tesis doctoral trata acerca de la siguiente pregunta de investigación:
+¿En qué medida las desigualdades en las fuentes de socialización se relacionan con las
+diferentes expresiones de ciudadanía en los jóvenes? Específicamente, ¿en qué medida las
+características socioeconómicas de la familia se traducen en actitudes y participación
+ciudadana de la siguiente generación? Adicionalmente, se propone avanzar en la
+comprensión sobre ¿qué mecanismos permiten explicar el proceso de transmisión
+intergeneracional de la desigualdad política?
+
+Para poder dar respuesta a estas preguntas de investigación se requiere en primer lugar
+información acerca de las condiciones socioeconómicas familiares, prácticas de
+socialización familiar, así como también actitudes y comportamiento ciudadano de los
+jóvenes. En esa línea las investigaciones disponibles orientadas a indagar en los procesos
+socialización política han sido desarrollados a través de una serie de estudios
+internacionales de gran escala que consideran aspectos como caracterización socioeconómica, conocimiento cívico, actitudes políticas y comportamiento ciudadano a
+nivel escolar. Entre estos se encuentra el Estudio de Educación Cívica el año 1999 (Civic
+Education Study-CIVED) y el Estudio Internacional de Educación Cívica y Ciudadana el
+año 2009 (International Civic and Citizenship Study- ICCS), que consideran estudiantes
+de 15 años provenientes de un set de 28 y 38 países respectivamente. Los datos provistos
+por estos representan una oportunidad única para el estudio de fuentes de socialización
+políticas en diversos contextos y el abordaje de estas preguntas de investigación.
+
+# Documento
+
+<iframe src="https://www.dropbox.com/s/846kyf57u4nk0mi/20180305%20Versi%C3%B3n%20Completa.pdf?raw=1" style="min-height:100vh;width:100%" frameborder="0"></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Daniel Miranda (2018). *Desigualdad y ciudadanía: Una aproximación intergeneracional*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

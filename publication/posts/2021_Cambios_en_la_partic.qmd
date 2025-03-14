@@ -2,12 +2,22 @@
 title : "Cambios en la participación política de los escolares"
 date : "2021-01-01"
 author : ["Daniel Miranda", "Juan-Carlos Castillo"]
-categories : ["InCollection"]
+categories : ["Book Section"]
 publication : "  In Sol Alé, Klaudio Duarte & Daniel Miranda: Saltar el Torniquete: Reflexiones desde las juventudes de octubre 51--60 . Ciudad de México: Fondo de Cultura Económica. ISBN: 978-956-289-220-9"
 publication_short : "  In Sol Alé, Klaudio Duarte & Daniel Miranda: Saltar el Torniquete: Reflexiones desde las juventudes de octubre 51--60 . Ciudad de México: Fondo de Cultura Económica. ISBN: 978-956-289-220-9"
 abstract : "(Abstract not available)"
 abstract_short : ""
-url_source : "/docs/torniquete-capitulo.pdf"
+about:
+  template: marquee
+---
 ---
 [Link to pdf](/docs/torniquete-capitulo.pdf)
 ![](/images/torniquete.png)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Daniel Miranda, Juan-Carlos Castillo (2021). *Cambios en la participación política de los escolares*.   In Sol Alé, Klaudio Duarte & Daniel Miranda: Saltar el Torniquete: Reflexiones desde las juventudes de octubre 51--60 . Ciudad de México: Fondo de Cultura Económica. ISBN: 978-956-289-220-9
+
+:::
+

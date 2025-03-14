@@ -1,0 +1,26 @@
+---
+title : "Evaluación de la implementación, gestión y utilización de la Ley 20.500"
+date : "2014-01-01"
+author : ["Veronica Acevedo", "Candela Arellano"]
+publication : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+categories : ["Miembro comité evaluador"]
+about:
+  template: marquee
+---
+- icon: square-check
+  icon_pack: fa
+  name:  
+  web: 
+
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Veronica Acevedo, Candela Arellano (2014). *Evaluación de la implementación, gestión y utilización de la Ley 20.500*.  Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

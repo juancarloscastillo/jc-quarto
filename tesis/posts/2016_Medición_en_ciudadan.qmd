@@ -1,0 +1,43 @@
+---
+title : "Medición en ciudadanía: Equivalencia y propiedades psicométricas de una escala de percepción en estudiantes"
+date : "2016-01-01"
+author : ["Federico Viertel"]
+publication : " Magister en Medición - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Medición - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "En las últimas décadas se ha renovado la investigación relativa al rol que puede asumir la educación cívica en el fortalecimiento de las democracias latinoamericanas. Las mediciones realizadas a gran escala, como ICCS 2009, aportan datos importantes sobre conocimiento cívico y ciudadanía de estudiantes y escuelas, incluyendo el modo cómo implementan la educación cívica, acorde con el currículo definido por cada sistema educativo. Las particularidades de los currículos, así como diferencias culturales entre los países, imponen que las comparaciones a partir de mediciones, requieran instrumentos probados en distintos niveles de equivalencia de medida para evitar sesgo. El presente estudio evalúa la invarianza de medición de una escala de ciudadanía entre países de latinoamérica participantes del ICCS 2009, y entre escuelas de la región que implementan la asignatura de educación cívica o no. Los resultados indican que las comparaciones entre países no pueden realizarse sin asumir un importante nivel de sesgo, mientras que la evaluación de invarianza entre escuelas que implementan educacion civica o no, se logra en su nivel más estricto. Se discuten aspectos metodológicos de las posibles fuentes de sesgo."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+  links:
+    - icon: graduation-cap
+      href: /tag/guia-o-cotutor/
+    - icon: file-pdf-fill
+      href: https://jc-castillo.com/docs/trabajo de grado II_viertel_corregido.pdf
+---
+---
+
+# Resumen
+En las últimas décadas se ha renovado la investigación relativa al rol que puede asumir
+la educación cívica en el fortalecimiento de las democracias latinoamericanas. Las
+mediciones realizadas a gran escala, como ICCS 2009, aportan datos importantes sobre
+conocimiento cívico y ciudadanía de estudiantes y escuelas, incluyendo el modo cómo
+implementan la educación cívica, acorde con el currículo definido por cada sistema
+educativo. Las particularidades de los currículos, así como diferencias culturales entre
+los países, imponen que las comparaciones a partir de mediciones, requieran
+instrumentos probados en distintos niveles de equivalencia de medida para evitar sesgo.
+El presente estudio evalúa la invarianza de medición de una escala de ciudadanía entre
+países de latinoamérica participantes del ICCS 2009, y entre escuelas de la región que
+implementan la asignatura de educación cívica o no. Los resultados indican que las
+comparaciones entre países no pueden realizarse sin asumir un importante nivel de
+sesgo, mientras que la evaluación de invarianza entre escuelas que implementan
+educacion civica o no, se logra en su nivel más estricto. Se discuten aspectos
+metodológicos de las posibles fuentes de sesgo.
+
+
+::: {.callout-note title="How to cite this work"}
+
+Federico Viertel (2016). *Medición en ciudadanía: Equivalencia y propiedades psicométricas de una escala de percepción en estudiantes*.  Magister en Medición - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

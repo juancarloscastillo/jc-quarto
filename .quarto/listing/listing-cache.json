@@ -1,5 +1,8 @@
 {
   "listingMap": {
+    "publication/publication.qmd": [
+      "posts/*.qmd"
+    ],
     "docencia/docencia.qmd": [
       "posts"
     ],
@@ -7,15 +10,16 @@
       "posts"
     ],
     "index.qmd": [
+      "publication/posts/*.qmd",
       "docencia/posts/*/*.qmd",
       "proyectos/posts/*/*.qmd",
       "blog/posts/*/*.qmd",
-      "publication/posts/*.qmd"
+      "tesis/posts/*.qmd"
     ],
     "blog/blog.qmd": [
       "posts"
     ],
-    "publication/publication.qmd": [
+    "tesis/tesis.qmd": [
       "posts/*.qmd"
     ]
   }

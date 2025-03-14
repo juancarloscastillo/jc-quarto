@@ -1,5 +1,7 @@
 project:
   type: website
+  render: 
+        - "*.qmd"
 
 website:
   title: "jc-castillo"
@@ -14,6 +16,8 @@ website:
         text: Proyectos
       - href: index.qmd#blogh1
         text: Blog
+      - href: index.qmd#tesish1
+        text: Tesis
       - links.qmd
       - contacto.qmd
       

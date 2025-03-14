@@ -7,27 +7,17 @@ publication : " ESRA . Milán"
 publication_short : " ESRA . Milán"
 abstract : "Concerns about increasing economic inequality have boosted the research on public perceptions and preferences related to salaries, social welfare, meritocracy, subjective status, and taxes. Traditional survey questions addressing this last topic generally rely on single-item Likert scales that ask to what extent respondents agree with the amount of taxes that are/should be paid by, for example, themselves, the poor, or the rich. Nevertheless, what respondents take into account when making judgments about just taxes remains largely unclear. The present study aims to shed light on how perceptions and preferences about taxes are related to specific characteristics of the presented (stimulus) case. Based on a two-wave factorial survey design in Chile in 2019 (N=1,470) we evaluated the role of characteristics such as gender, age, childcare, education, income, and family background on the perception and evaluation of a just income tax. The models were estimated in a multilevel framework, in which vignettes are nested within respondents in order to assess the influence of the vignette’s attributes on perceived and preferred income tax. Preliminary results show that respondents tend to be well-informed and accurate about Chile's income tax levels. The vignette's household income is the most relevant attribute in explaining the perceived and preferred income tax, showing a robust positive effect. On the other hand, neither the respondent's educational level nor household income influences perceived and preferred income tax. The study was pre-registered in the Open Science Framework: https://osf.io/vpz86"
 abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: github
+      href: https://github.com/justicia-distributiva/factorial-impuestos
+    - icon: file-slides-fill
+      href: https://justicia-distributiva.github.io/factorial-impuestos/presentations/ESRA-milan-2023/presentation-esra-2023.html#1
+---
 url_pdf : "" 
 
-url_project: ""
-
-url_slides: "https://justicia-distributiva.github.io/factorial-impuestos/presentations/ESRA-milan-2023/presentation-esra-2023.html#1"
-
-url_video: ""
-
-url_poster: ""
-# 
-links:
-
-- icon: github
-
-  icon_pack: fab
-
-  name: Github
-
-  url: https://github.com/justicia-distributiva/factorial-impuestos
-
----
+# ---
 
 ![](https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/images/ESRA.png)
 
@@ -36,3 +26,11 @@ links:
 (F para pantalla completa)
 
 <iframe width="700"  height="450" src="https://justicia-distributiva.github.io/factorial-impuestos/presentations/ESRA-milan-2023/presentation-esra-2023.html#1" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Julio Iturra, Juan-Carlos Castillo, Luis Maldonado (2023). *Perceptions and preferences about income taxes: A factorial survey approach*.  ESRA . Milán
+
+:::
+
