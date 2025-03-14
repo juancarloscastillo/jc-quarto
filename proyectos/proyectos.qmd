@@ -9,5 +9,6 @@ listing:
   fields: [image, title, description, date]
   image-align: left
   filter-ui: [title, date]
+  page-size: 1000
 title-block-banner: true
 ---

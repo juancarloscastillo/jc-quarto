@@ -8,5 +8,6 @@ listing:
   categories: true
   fields: [title, date, author, categories]
   filter-ui: [categories, date]
+  page-size: 1000
 title-block-banner: true
 ---

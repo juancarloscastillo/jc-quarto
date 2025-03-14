@@ -11,5 +11,6 @@ listing:
   field-links: 
     - categories
     - title
+  page-size: 500
 title-block-banner: true
 ---

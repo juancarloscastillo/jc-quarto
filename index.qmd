@@ -107,8 +107,10 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 <!-- ## Recent Posts -->
 <!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
 
-::: {.background-frame}
-::: {.content-block}
+::: {.section-text}
+::: {.section-container .alt-background}
+::: {.section-block}
+::: {style="text-align: center;"}
 
 
 ::: {#proyectosh1}
@@ -122,8 +124,10 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 :::
 :::
+:::
+:::
 
-::: {.background-frame .alt-background}
+::: {.background-frame}
 ::: {.content-block}
 
 ::: {#publicationh1}
@@ -156,7 +160,7 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 :::
 :::
 
-::: {.background-frame .alt-background}
+::: {.background-frame}
 ::: {.content-block}
 
 ::: {#tesish1}
