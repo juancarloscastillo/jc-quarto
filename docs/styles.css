@@ -1,0 +1,67 @@
+/* css styles */
+.about-link i {
+    font-size: 3em; /* Tamaño del ícono */
+}
+
+
+html {
+  scroll-behavior: smooth;
+} /*Esto para que al hacer click en los links del navbar la página no "salte", sino que se deslice */
+
+.btn{
+	background-color: #6C8EBF;
+	border-color: #6C8EBF;
+} /* Color de los botones */
+
+.btn:hover{
+	background-color: #00BFFF;
+	border-color: #00BFFF ;
+} /* Resaltado */
+
+/* Cambia el color de los enlaces en estado hover */
+a:hover {
+    color: #00BFFF;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #6C8EBF;
+}
+
+/*-- sidebar --*/
+
+
+.sidebar nav[role=doc-toc] ul>li>a.active {
+  border-left: 1px solid #6c8ebf;
+  font-weight: 500;
+  color: #6C8EBF !important;
+}
+
+.sidebar nav[role=doc-toc]>ul a {
+  border-left: none;
+  padding-left: 0.6rem;
+}
+
+.sidebar nav[role=doc-toc]>ul li a {
+  font-weight: 500;
+  line-height: 1.1rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  color: white;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  border-left: 1px solid #6c8ebf;
+  color: #6C8EBF !important;
+}
+
+.toc-actions a {
+  font-weight: 500;
+  color: white;
+}
+
+.toc-actions a:hover {
+  color: inherit !important; /* Mantiene el color original en lugar de cambiarlo */
+  text-decoration: none; /* Opcional: elimina el subrayado al hacer hover */
+}

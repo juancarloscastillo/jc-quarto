@@ -1,12 +1,9 @@
 {
   "listingMap": {
-    "publication/publication.qmd": [
-      "posts/*.qmd"
-    ],
-    "docencia/docencia.qmd": [
+    "blog/blog.qmd": [
       "posts"
     ],
-    "proyectos/proyectos.qmd": [
+    "docencia/docencia.qmd": [
       "posts"
     ],
     "index.qmd": [
@@ -16,8 +13,11 @@
       "blog/posts/*/*.qmd",
       "tesis/posts/*.qmd"
     ],
-    "blog/blog.qmd": [
+    "proyectos/proyectos.qmd": [
       "posts"
+    ],
+    "publication/publication.qmd": [
+      "posts/*.qmd"
     ],
     "tesis/tesis.qmd": [
       "posts/*.qmd"
