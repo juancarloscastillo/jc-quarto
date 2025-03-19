@@ -1,0 +1,34 @@
+---
+title: Metodología 1
+subtitle: Magister en Ciencias Sociales - Universidad de Chile
+description: Desarrollado junto a Kevin Carrasco y Pablo Pérez.
+categories: [cursos]
+# Date published
+date: "2020-03-01"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+  # links:
+  #   - icon: link-45deg
+  #     href: https://metod1-mcs.netlify.app
+  #     target: _blank
+  #   - icon: github
+  #     href: https://github.com/cursos-metodos-facso/metod1-MCS
+  #     target: _blank
+---
+
+::: {.button-container style="display: flex; gap: 10px;"}
+::: {.button}
+[<i class="bi bi-link-45deg"></i>](https://metod1-mcs.netlify.app){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+::: {.button}
+[<i class="bi bi-github"></i>](https://github.com/cursos-metodos-facso/metod1-MCS){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+:::
+
+Al finalizar el curso, el/la estudiante podrá elaborar y analizar diseños de investigación social de carácter cuantitativo, así como describir cuantitativamente un conjunto de datos utilizando el lenguaje R.
+
+Cubre estadística descriptiva, inferencia, correlación, regresión lineal y logística.
+

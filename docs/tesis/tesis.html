@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>jc-castillo - Tesis</title>
+<title>Tesis – jc-castillo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,19 +37,25 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a3139cc030be67e784d8a47d3573d894.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8fe11bae07ad385f1bf1c7843800cb70.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -58,8 +64,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -92,8 +100,35 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -101,53 +136,58 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">jc-castillo</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#publicationh1" rel="" target="">
- <span class="menu-text">Publicaciones y Presentaciones</span></a>
+    <a class="nav-link" href="../index.html#publicationh1"> 
+<span class="menu-text">Publicaciones y Presentaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#docenciah1" rel="" target="">
- <span class="menu-text">Docencia</span></a>
+    <a class="nav-link" href="../index.html#docenciah1"> 
+<span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#proyectosh1" rel="" target="">
- <span class="menu-text">Proyectos</span></a>
+    <a class="nav-link" href="../index.html#proyectosh1"> 
+<span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#blogh1" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../index.html#blogh1"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html#tesish1" rel="" target="">
- <span class="menu-text">Tesis</span></a>
+    <a class="nav-link" href="../index.html#tesish1"> 
+<span class="menu-text">Tesis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../links.html" rel="" target="">
- <span class="menu-text">Links</span></a>
+    <a class="nav-link" href="../index.html#galeriah1"> 
+<span class="menu-text">Galería</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contacto.html" rel="" target="">
- <span class="menu-text">Contacto</span></a>
+    <a class="nav-link" href="../links.html"> 
+<span class="menu-text">Links</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contacto.html"> 
+<span class="menu-text">Contacto</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/juancarloscastillo" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -160,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -173,9 +213,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(41)</span></div><div class="category" data-category="Guía o cotutor">Guía o cotutor <span class="quarto-category-count">(29)</span></div><div class="category" data-category="Miembro comité evaluador">Miembro comité evaluador <span class="quarto-category-count">(12)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(41)</span></div><div class="category" data-category="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=">Guía o cotutor <span class="quarto-category-count">(29)</span></div><div class="category" data-category="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y">Miembro comité evaluador <span class="quarto-category-count">(12)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
 
 
 
@@ -192,25 +233,22 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Guía o cotutor" data-listing-date-sort="1709262000000" data-listing-file-modified-sort="1741956838452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile">
+<div class="quarto-post image-right" data-index="0" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1709262000000" data-listing-file-modified-sort="1741956838452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile">
 <div class="body">
-<a href="../tesis/posts/2024_El_rol_de_la_sociali.html">
 <h3 class="no-anchor listing-title">
-El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile
+<a href="../tesis/posts/2024_El_rol_de_la_sociali.html" class="no-external">El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2024_El_rol_de_la_sociali.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2024_El_rol_de_la_sociali.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2024_El_rol_de_la_sociali.html">
+<a href="../tesis/posts/2024_El_rol_de_la_sociali.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2024
 </div>
@@ -220,25 +258,22 @@ Matias Retamales
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Guía o cotutor" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1741956838419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación">
+<div class="quarto-post image-right" data-index="1" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1741956838419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación">
 <div class="body">
-<a href="../tesis/posts/2024_El_conflicto_intercu.html">
 <h3 class="no-anchor listing-title">
-El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación
+<a href="../tesis/posts/2024_El_conflicto_intercu.html" class="no-external">El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2024_El_conflicto_intercu.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2024_El_conflicto_intercu.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2024_El_conflicto_intercu.html">
+<a href="../tesis/posts/2024_El_conflicto_intercu.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2024
 </div>
@@ -248,25 +283,22 @@ Paula Larenas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos">
+<div class="quarto-post image-right" data-index="2" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="527" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos">
 <div class="body">
-<a href="../tesis/posts/2023_Aceptar_la_diversida.html">
 <h3 class="no-anchor listing-title">
-Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos
+<a href="../tesis/posts/2023_Aceptar_la_diversida.html" class="no-external">Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2023_Aceptar_la_diversida.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2023_Aceptar_la_diversida.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2023_Aceptar_la_diversida.html">
+<a href="../tesis/posts/2023_Aceptar_la_diversida.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2023
 </div>
@@ -276,25 +308,22 @@ Kevin Carrasco
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.">
+<div class="quarto-post image-right" data-index="3" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.">
 <div class="body">
-<a href="../tesis/posts/2023_El_lenguaje_como_bre.html">
 <h3 class="no-anchor listing-title">
-El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.
+<a href="../tesis/posts/2023_El_lenguaje_como_bre.html" class="no-external">El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2023_El_lenguaje_como_bre.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2023_El_lenguaje_como_bre.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2023_El_lenguaje_como_bre.html">
+<a href="../tesis/posts/2023_El_lenguaje_como_bre.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2023
 </div>
@@ -304,25 +333,22 @@ Francisco Meneses
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?">
+<div class="quarto-post image-right" data-index="4" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?">
 <div class="body">
-<a href="../tesis/posts/2023_¿Qué_pueden_hacer_la.html">
 <h3 class="no-anchor listing-title">
-¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?
+<a href="../tesis/posts/2023_¿Qué_pueden_hacer_la.html" class="no-external">¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2023_¿Qué_pueden_hacer_la.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2023_¿Qué_pueden_hacer_la.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2023_¿Qué_pueden_hacer_la.html">
+<a href="../tesis/posts/2023_¿Qué_pueden_hacer_la.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2023
 </div>
@@ -332,25 +358,22 @@ Anais Herrera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Guía o cotutor" data-listing-date-sort="1672542000000" data-listing-file-modified-sort="1741956838416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Ellos contra nosotros: las percepciones del conflicto social">
+<div class="quarto-post image-right" data-index="5" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1672542000000" data-listing-file-modified-sort="1741956838416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="404" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Ellos contra nosotros: las percepciones del conflicto social">
 <div class="body">
-<a href="../tesis/posts/2023_Ellos_contra_nosotro.html">
 <h3 class="no-anchor listing-title">
-Ellos contra nosotros: las percepciones del conflicto social
+<a href="../tesis/posts/2023_Ellos_contra_nosotro.html" class="no-external">Ellos contra nosotros: las percepciones del conflicto social</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2023_Ellos_contra_nosotro.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2023_Ellos_contra_nosotro.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2023_Ellos_contra_nosotro.html">
+<a href="../tesis/posts/2023_Ellos_contra_nosotro.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2023
 </div>
@@ -360,25 +383,22 @@ Andreas Lafferte
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Guía o cotutor" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Bienestar, trabajo doméstico y uso del tiempo: un análisis cuantitativo del bienestar de las mujeres en Chile">
+<div class="quarto-post image-right" data-index="6" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Bienestar, trabajo doméstico y uso del tiempo: un análisis cuantitativo del bienestar de las mujeres en Chile">
 <div class="body">
-<a href="../tesis/posts/2022_Bienestar,_trabajo_d.html">
 <h3 class="no-anchor listing-title">
-Bienestar, trabajo doméstico y uso del tiempo: un análisis cuantitativo del bienestar de las mujeres en Chile
+<a href="../tesis/posts/2022_Bienestar,_trabajo_d.html" class="no-external">Bienestar, trabajo doméstico y uso del tiempo: un análisis cuantitativo del bienestar de las mujeres en Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2022_Bienestar,_trabajo_d.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2022_Bienestar,_trabajo_d.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2022_Bienestar,_trabajo_d.html">
+<a href="../tesis/posts/2022_Bienestar,_trabajo_d.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2022
 </div>
@@ -388,25 +408,22 @@ Karen Tapia
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Guía o cotutor" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838469" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Determinantes de la percepción de seguridad frente al delito en la Región Metropolitana">
+<div class="quarto-post image-right" data-index="7" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838469" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Determinantes de la percepción de seguridad frente al delito en la Región Metropolitana">
 <div class="body">
-<a href="../tesis/posts/2022_Determinantes_de_la_.html">
 <h3 class="no-anchor listing-title">
-Determinantes de la percepción de seguridad frente al delito en la Región Metropolitana
+<a href="../tesis/posts/2022_Determinantes_de_la_.html" class="no-external">Determinantes de la percepción de seguridad frente al delito en la Región Metropolitana</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2022_Determinantes_de_la_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2022_Determinantes_de_la_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2022_Determinantes_de_la_.html">
+<a href="../tesis/posts/2022_Determinantes_de_la_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2022
 </div>
@@ -416,25 +433,22 @@ Javiera Urrutia
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Guía o cotutor" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza">
+<div class="quarto-post image-right" data-index="8" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="282" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza">
 <div class="body">
-<a href="../tesis/posts/2022_El_efecto_de_las_cre.html">
 <h3 class="no-anchor listing-title">
-El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza
+<a href="../tesis/posts/2022_El_efecto_de_las_cre.html" class="no-external">El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2022_El_efecto_de_las_cre.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2022_El_efecto_de_las_cre.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2022_El_efecto_de_las_cre.html">
+<a href="../tesis/posts/2022_El_efecto_de_las_cre.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2022
 </div>
@@ -444,25 +458,22 @@ Sebastian Cortinez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Guía o cotutor" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838429" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Factores determinantes de las trayectorias de deserción permanente en educación superior: El efecto de las ayudas financieras estatales y la política de gratuidad">
+<div class="quarto-post image-right" data-index="9" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838429" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Factores determinantes de las trayectorias de deserción permanente en educación superior: El efecto de las ayudas financieras estatales y la política de gratuidad">
 <div class="body">
-<a href="../tesis/posts/2022_Factores_determinant.html">
 <h3 class="no-anchor listing-title">
-Factores determinantes de las trayectorias de deserción permanente en educación superior: El efecto de las ayudas financieras estatales y la política de gratuidad
+<a href="../tesis/posts/2022_Factores_determinant.html" class="no-external">Factores determinantes de las trayectorias de deserción permanente en educación superior: El efecto de las ayudas financieras estatales y la política de gratuidad</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2022_Factores_determinant.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2022_Factores_determinant.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2022_Factores_determinant.html">
+<a href="../tesis/posts/2022_Factores_determinant.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2022
 </div>
@@ -472,25 +483,22 @@ Catalina Miranda
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Guía o cotutor" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838475" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Quién justifica qué? El rol del sentido de injusticia en las justificaciones de violencia en contexto de protesta">
+<div class="quarto-post image-right" data-index="10" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1741956838475" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="530" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Quién justifica qué? El rol del sentido de injusticia en las justificaciones de violencia en contexto de protesta">
 <div class="body">
-<a href="../tesis/posts/2022_¿Quién_justifica_qué.html">
 <h3 class="no-anchor listing-title">
-¿Quién justifica qué? El rol del sentido de injusticia en las justificaciones de violencia en contexto de protesta
+<a href="../tesis/posts/2022_¿Quién_justifica_qué.html" class="no-external">¿Quién justifica qué? El rol del sentido de injusticia en las justificaciones de violencia en contexto de protesta</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2022_¿Quién_justifica_qué.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2022_¿Quién_justifica_qué.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2022_¿Quién_justifica_qué.html">
+<a href="../tesis/posts/2022_¿Quién_justifica_qué.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2022
 </div>
@@ -500,25 +508,22 @@ Martin Venegas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="Guía o cotutor" data-listing-date-sort="1609470000000" data-listing-file-modified-sort="1741956838472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Enfermedades crónicas no transmisibles y el efecto protector de la cohesión social en Chile">
+<div class="quarto-post image-right" data-index="11" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1609470000000" data-listing-file-modified-sort="1741956838472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Enfermedades crónicas no transmisibles y el efecto protector de la cohesión social en Chile">
 <div class="body">
-<a href="../tesis/posts/2021_Enfermedades_crónica.html">
 <h3 class="no-anchor listing-title">
-Enfermedades crónicas no transmisibles y el efecto protector de la cohesión social en Chile
+<a href="../tesis/posts/2021_Enfermedades_crónica.html" class="no-external">Enfermedades crónicas no transmisibles y el efecto protector de la cohesión social en Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2021_Enfermedades_crónica.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2021_Enfermedades_crónica.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2021_Enfermedades_crónica.html">
+<a href="../tesis/posts/2021_Enfermedades_crónica.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2021
 </div>
@@ -528,25 +533,22 @@ Simon Varas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="Guía o cotutor" data-listing-date-sort="1609470000000" data-listing-file-modified-sort="1741956838385" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos">
+<div class="quarto-post image-right" data-index="12" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1609470000000" data-listing-file-modified-sort="1741956838385" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos">
 <div class="body">
-<a href="../tesis/posts/2021_La_composición_socia.html">
 <h3 class="no-anchor listing-title">
-La composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos
+<a href="../tesis/posts/2021_La_composición_socia.html" class="no-external">La composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2021_La_composición_socia.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2021_La_composición_socia.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2021_La_composición_socia.html">
+<a href="../tesis/posts/2021_La_composición_socia.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2021
 </div>
@@ -556,25 +558,22 @@ Carlos Budnevich
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="Guía o cotutor" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1741956838383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile">
+<div class="quarto-post image-right" data-index="13" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1741956838383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile">
 <div class="body">
-<a href="../tesis/posts/2019_Explorando_la_asocia.html">
 <h3 class="no-anchor listing-title">
-Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile
+<a href="../tesis/posts/2019_Explorando_la_asocia.html" class="no-external">Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2019_Explorando_la_asocia.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2019_Explorando_la_asocia.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2019_Explorando_la_asocia.html">
+<a href="../tesis/posts/2019_Explorando_la_asocia.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2019
 </div>
@@ -584,25 +583,22 @@ Guillermo Beck
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="Guía o cotutor" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1741956838449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Intereses fluidos: Movilidad social y preferencias por la redistribución en 37 países.">
+<div class="quarto-post image-right" data-index="14" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1741956838449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="324" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Intereses fluidos: Movilidad social y preferencias por la redistribución en 37 países.">
 <div class="body">
-<a href="../tesis/posts/2019_Intereses_fluidos_Mo.html">
 <h3 class="no-anchor listing-title">
-Intereses fluidos: Movilidad social y preferencias por la redistribución en 37 países.
+<a href="../tesis/posts/2019_Intereses_fluidos_Mo.html" class="no-external">Intereses fluidos: Movilidad social y preferencias por la redistribución en 37 países.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2019_Intereses_fluidos_Mo.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2019_Intereses_fluidos_Mo.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2019_Intereses_fluidos_Mo.html">
+<a href="../tesis/posts/2019_Intereses_fluidos_Mo.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2019
 </div>
@@ -612,25 +608,22 @@ Alejandro Plaza
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="Guía o cotutor" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1741956838483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Inégalité subjective au Chili. Représentation des différences sociales (in)justes à travers le temps">
+<div class="quarto-post image-right" data-index="15" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1741956838483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="445" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Inégalité subjective au Chili. Représentation des différences sociales (in)justes à travers le temps">
 <div class="body">
-<a href="../tesis/posts/2019_Inégalité_subjective.html">
 <h3 class="no-anchor listing-title">
-Inégalité subjective au Chili. Représentation des différences sociales (in)justes à travers le temps
+<a href="../tesis/posts/2019_Inégalité_subjective.html" class="no-external">Inégalité subjective au Chili. Représentation des différences sociales (in)justes à travers le temps</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2019_Inégalité_subjective.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2019_Inégalité_subjective.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2019_Inégalité_subjective.html">
+<a href="../tesis/posts/2019_Inégalité_subjective.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2019
 </div>
@@ -640,25 +633,22 @@ Rodrigo Yanez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="Guía o cotutor" data-listing-date-sort="1522551600000" data-listing-file-modified-sort="1741956838426" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y ciudadanía: Una aproximación intergeneracional">
+<div class="quarto-post image-right" data-index="16" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1522551600000" data-listing-file-modified-sort="1741956838426" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="420" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y ciudadanía: Una aproximación intergeneracional">
 <div class="body">
-<a href="../tesis/posts/2018_Desigualdad_y_ciudad.html">
 <h3 class="no-anchor listing-title">
-Desigualdad y ciudadanía: Una aproximación intergeneracional
+<a href="../tesis/posts/2018_Desigualdad_y_ciudad.html" class="no-external">Desigualdad y ciudadanía: Una aproximación intergeneracional</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Desigualdad_y_ciudad.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2018_Desigualdad_y_ciudad.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Desigualdad_y_ciudad.html">
+<a href="../tesis/posts/2018_Desigualdad_y_ciudad.html" class="no-external">
 <div class="listing-date">
 Apr 1, 2018
 </div>
@@ -668,25 +658,22 @@ Daniel Miranda
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="Guía o cotutor" data-listing-date-sort="1517454000000" data-listing-file-modified-sort="1741956838391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas">
+<div class="quarto-post image-right" data-index="17" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1517454000000" data-listing-file-modified-sort="1741956838391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="352" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas">
 <div class="body">
-<a href="../tesis/posts/2018_¿Menos_confianza,_me.html">
 <h3 class="no-anchor listing-title">
-¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas
+<a href="../tesis/posts/2018_¿Menos_confianza,_me.html" class="no-external">¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_¿Menos_confianza,_me.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2018_¿Menos_confianza,_me.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_¿Menos_confianza,_me.html">
+<a href="../tesis/posts/2018_¿Menos_confianza,_me.html" class="no-external">
 <div class="listing-date">
 Feb 1, 2018
 </div>
@@ -696,25 +683,22 @@ Francisca Castro
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="Guía o cotutor" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838434" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Balance legistlativo, adhesión al sistema político y preferencias redistributivas en américa latina">
+<div class="quarto-post image-right" data-index="18" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838434" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="258" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Balance legistlativo, adhesión al sistema político y preferencias redistributivas en américa latina">
 <div class="body">
-<a href="../tesis/posts/2018_Balance_legistlativo.html">
 <h3 class="no-anchor listing-title">
-Balance legistlativo, adhesión al sistema político y preferencias redistributivas en américa latina
+<a href="../tesis/posts/2018_Balance_legistlativo.html" class="no-external">Balance legistlativo, adhesión al sistema político y preferencias redistributivas en américa latina</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Balance_legistlativo.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2018_Balance_legistlativo.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Balance_legistlativo.html">
+<a href="../tesis/posts/2018_Balance_legistlativo.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -724,25 +708,22 @@ Sofia Montedonico
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="Miembro comité evaluador" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Chile: Sociodemografía e inser- ción laboral de los inmigrantes re- cientes. El caso de los haitianos y venezolanos.">
+<div class="quarto-post image-right" data-index="19" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Chile: Sociodemografía e inser- ción laboral de los inmigrantes re- cientes. El caso de los haitianos y venezolanos.">
 <div class="body">
-<a href="../tesis/posts/2018_Chile_Sociodemografí.html">
 <h3 class="no-anchor listing-title">
-Chile: Sociodemografía e inser- ción laboral de los inmigrantes re- cientes. El caso de los haitianos y venezolanos.
+<a href="../tesis/posts/2018_Chile_Sociodemografí.html" class="no-external">Chile: Sociodemografía e inser- ción laboral de los inmigrantes re- cientes. El caso de los haitianos y venezolanos.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Chile_Sociodemografí.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2018_Chile_Sociodemografí.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Chile_Sociodemografí.html">
+<a href="../tesis/posts/2018_Chile_Sociodemografí.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -752,25 +733,22 @@ Andres {Gonzalez Ide}, Daniel Gonzalez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="Guía o cotutor" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad, desarrollo económico y preferencias redistributivas en América Latina">
+<div class="quarto-post image-right" data-index="20" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="292" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad, desarrollo económico y preferencias redistributivas en América Latina">
 <div class="body">
-<a href="../tesis/posts/2018_Desigualdad,_desarro.html">
 <h3 class="no-anchor listing-title">
-Desigualdad, desarrollo económico y preferencias redistributivas en América Latina
+<a href="../tesis/posts/2018_Desigualdad,_desarro.html" class="no-external">Desigualdad, desarrollo económico y preferencias redistributivas en América Latina</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Desigualdad,_desarro.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2018_Desigualdad,_desarro.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Desigualdad,_desarro.html">
+<a href="../tesis/posts/2018_Desigualdad,_desarro.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -780,25 +758,22 @@ Gonzalo Franetovic
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="Guía o cotutor" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Estatus social subjetivo y Percepción de meritocracia: El caso de Chile">
+<div class="quarto-post image-right" data-index="21" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="418" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Estatus social subjetivo y Percepción de meritocracia: El caso de Chile">
 <div class="body">
-<a href="../tesis/posts/2018_Estatus_social_subje.html">
 <h3 class="no-anchor listing-title">
-Estatus social subjetivo y Percepción de meritocracia: El caso de Chile
+<a href="../tesis/posts/2018_Estatus_social_subje.html" class="no-external">Estatus social subjetivo y Percepción de meritocracia: El caso de Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Estatus_social_subje.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2018_Estatus_social_subje.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Estatus_social_subje.html">
+<a href="../tesis/posts/2018_Estatus_social_subje.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -808,25 +783,22 @@ Julio Iturra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="Miembro comité evaluador" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Facilitadores y limitantes en la contratación de migrantes desde el empleador del sector terciario de producción">
+<div class="quarto-post image-right" data-index="22" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Facilitadores y limitantes en la contratación de migrantes desde el empleador del sector terciario de producción">
 <div class="body">
-<a href="../tesis/posts/2018_Facilitadores_y_limi.html">
 <h3 class="no-anchor listing-title">
-Facilitadores y limitantes en la contratación de migrantes desde el empleador del sector terciario de producción
+<a href="../tesis/posts/2018_Facilitadores_y_limi.html" class="no-external">Facilitadores y limitantes en la contratación de migrantes desde el empleador del sector terciario de producción</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Facilitadores_y_limi.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2018_Facilitadores_y_limi.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Facilitadores_y_limi.html">
+<a href="../tesis/posts/2018_Facilitadores_y_limi.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -836,25 +808,22 @@ Juan Francisco Concha, Maria Belen Saavedra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="Guía o cotutor" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La dimensión subjetiva de la desigualdad de género en ingresos: Factores individuales asociados a evaluación de lo percibido y lo justo">
+<div class="quarto-post image-right" data-index="23" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La dimensión subjetiva de la desigualdad de género en ingresos: Factores individuales asociados a evaluación de lo percibido y lo justo">
 <div class="body">
-<a href="../tesis/posts/2018_La_dimensión_subjeti.html">
 <h3 class="no-anchor listing-title">
-La dimensión subjetiva de la desigualdad de género en ingresos: Factores individuales asociados a evaluación de lo percibido y lo justo
+<a href="../tesis/posts/2018_La_dimensión_subjeti.html" class="no-external">La dimensión subjetiva de la desigualdad de género en ingresos: Factores individuales asociados a evaluación de lo percibido y lo justo</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_La_dimensión_subjeti.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2018_La_dimensión_subjeti.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_La_dimensión_subjeti.html">
+<a href="../tesis/posts/2018_La_dimensión_subjeti.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -864,25 +833,22 @@ Sebastian Rojas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="Miembro comité evaluador" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prácticas de inclusión y exclusión de estudiantes en situación de migración: Un estudio de caso en dos escuelas municipales de la comuna de renca en santiago">
+<div class="quarto-post image-right" data-index="24" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1741956838443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prácticas de inclusión y exclusión de estudiantes en situación de migración: Un estudio de caso en dos escuelas municipales de la comuna de renca en santiago">
 <div class="body">
-<a href="../tesis/posts/2018_Prácticas_de_inclusi.html">
 <h3 class="no-anchor listing-title">
-Prácticas de inclusión y exclusión de estudiantes en situación de migración: Un estudio de caso en dos escuelas municipales de la comuna de renca en santiago
+<a href="../tesis/posts/2018_Prácticas_de_inclusi.html" class="no-external">Prácticas de inclusión y exclusión de estudiantes en situación de migración: Un estudio de caso en dos escuelas municipales de la comuna de renca en santiago</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2018_Prácticas_de_inclusi.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2018_Prácticas_de_inclusi.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2018_Prácticas_de_inclusi.html">
+<a href="../tesis/posts/2018_Prácticas_de_inclusi.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2018
 </div>
@@ -892,25 +858,22 @@ Amanda Nogueira, Teresa Lihn
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="Guía o cotutor" data-listing-date-sort="1512097200000" data-listing-file-modified-sort="1741956838440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Justicia de las pensiones en Chile: una evaluación desde las características individuales y las preferencias distributivas de la población en la Región Metropolitana">
+<div class="quarto-post image-right" data-index="25" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1512097200000" data-listing-file-modified-sort="1741956838440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Justicia de las pensiones en Chile: una evaluación desde las características individuales y las preferencias distributivas de la población en la Región Metropolitana">
 <div class="body">
-<a href="../tesis/posts/2017_Justicia_de_las_pens.html">
 <h3 class="no-anchor listing-title">
-Justicia de las pensiones en Chile: una evaluación desde las características individuales y las preferencias distributivas de la población en la Región Metropolitana
+<a href="../tesis/posts/2017_Justicia_de_las_pens.html" class="no-external">Justicia de las pensiones en Chile: una evaluación desde las características individuales y las preferencias distributivas de la población en la Región Metropolitana</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2017_Justicia_de_las_pens.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2017_Justicia_de_las_pens.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2017_Justicia_de_las_pens.html">
+<a href="../tesis/posts/2017_Justicia_de_las_pens.html" class="no-external">
 <div class="listing-date">
 Dec 1, 2017
 </div>
@@ -920,25 +883,22 @@ Esteban Munoz
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="Miembro comité evaluador" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838396" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Construyendo Involucramiento Comunitario: casos de Parque Metropolitano Cerro Chena y Mapocho Limpio">
+<div class="quarto-post image-right" data-index="26" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838396" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Construyendo Involucramiento Comunitario: casos de Parque Metropolitano Cerro Chena y Mapocho Limpio">
 <div class="body">
-<a href="../tesis/posts/2017_Construyendo_Involuc.html">
 <h3 class="no-anchor listing-title">
-Construyendo Involucramiento Comunitario: casos de Parque Metropolitano Cerro Chena y Mapocho Limpio
+<a href="../tesis/posts/2017_Construyendo_Involuc.html" class="no-external">Construyendo Involucramiento Comunitario: casos de Parque Metropolitano Cerro Chena y Mapocho Limpio</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2017_Construyendo_Involuc.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2017_Construyendo_Involuc.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2017_Construyendo_Involuc.html">
+<a href="../tesis/posts/2017_Construyendo_Involuc.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2017
 </div>
@@ -948,25 +908,22 @@ Pablo Contreras, Valentina Terra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="Miembro comité evaluador" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="La Formación Continua en Docencia del Profesorado Universitario Efectos sobre la práctica y autopercepción docente">
+<div class="quarto-post image-right" data-index="27" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="La Formación Continua en Docencia del Profesorado Universitario Efectos sobre la práctica y autopercepción docente">
 <div class="body">
-<a href="../tesis/posts/2017_La_Formación_Continu.html">
 <h3 class="no-anchor listing-title">
-La Formación Continua en Docencia del Profesorado Universitario Efectos sobre la práctica y autopercepción docente
+<a href="../tesis/posts/2017_La_Formación_Continu.html" class="no-external">La Formación Continua en Docencia del Profesorado Universitario Efectos sobre la práctica y autopercepción docente</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2017_La_Formación_Continu.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2017_La_Formación_Continu.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2017_La_Formación_Continu.html">
+<a href="../tesis/posts/2017_La_Formación_Continu.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2017
 </div>
@@ -976,25 +933,22 @@ Cristian Munoz, Raul Cofre
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="Miembro comité evaluador" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Mecanismos de participación ciudadana">
+<div class="quarto-post image-right" data-index="28" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Mecanismos de participación ciudadana">
 <div class="body">
-<a href="../tesis/posts/2017_Mecanismos_de_partic.html">
 <h3 class="no-anchor listing-title">
-Mecanismos de participación ciudadana
+<a href="../tesis/posts/2017_Mecanismos_de_partic.html" class="no-external">Mecanismos de participación ciudadana</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2017_Mecanismos_de_partic.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2017_Mecanismos_de_partic.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2017_Mecanismos_de_partic.html">
+<a href="../tesis/posts/2017_Mecanismos_de_partic.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2017
 </div>
@@ -1004,25 +958,22 @@ Alonso Moller, Gabriela Zuniga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-categories="Guía o cotutor" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Merezco estar aquı́: Un estudio multinivel sobre la relación entre meritocracia y educación">
+<div class="quarto-post image-right" data-index="29" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Merezco estar aquı́: Un estudio multinivel sobre la relación entre meritocracia y educación">
 <div class="body">
-<a href="../tesis/posts/2017_Merezco_estar_aquı́_.html">
 <h3 class="no-anchor listing-title">
-Merezco estar aquı́: Un estudio multinivel sobre la relación entre meritocracia y educación
+<a href="../tesis/posts/2017_Merezco_estar_aquı́_.html" class="no-external">Merezco estar aquı́: Un estudio multinivel sobre la relación entre meritocracia y educación</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2017_Merezco_estar_aquı́_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2017_Merezco_estar_aquı́_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2017_Merezco_estar_aquı́_.html">
+<a href="../tesis/posts/2017_Merezco_estar_aquı́_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2017
 </div>
@@ -1032,25 +983,22 @@ Diego Sandoval
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-categories="Miembro comité evaluador" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838404" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Relevancia de la Convocatoria de Investigación en Educación del Consejo Nacional de Educación en la trayectoria académica de los finalistas adjudicados y no adjudicados de los años 2014. 2015 y 2016.">
+<div class="quarto-post image-right" data-index="30" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1741956838404" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Relevancia de la Convocatoria de Investigación en Educación del Consejo Nacional de Educación en la trayectoria académica de los finalistas adjudicados y no adjudicados de los años 2014. 2015 y 2016.">
 <div class="body">
-<a href="../tesis/posts/2017_Relevancia_de_la_Con.html">
 <h3 class="no-anchor listing-title">
-Relevancia de la Convocatoria de Investigación en Educación del Consejo Nacional de Educación en la trayectoria académica de los finalistas adjudicados y no adjudicados de los años 2014. 2015 y 2016.
+<a href="../tesis/posts/2017_Relevancia_de_la_Con.html" class="no-external">Relevancia de la Convocatoria de Investigación en Educación del Consejo Nacional de Educación en la trayectoria académica de los finalistas adjudicados y no adjudicados de los años 2014. 2015 y 2016.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2017_Relevancia_de_la_Con.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2017_Relevancia_de_la_Con.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2017_Relevancia_de_la_Con.html">
+<a href="../tesis/posts/2017_Relevancia_de_la_Con.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2017
 </div>
@@ -1060,25 +1008,22 @@ Javier Garcia, Valentina Riquelme
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-categories="Guía o cotutor" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1741956838369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y Compromiso Cı́vico de los jóvenes chilenos: Una mirada al perı́odo (2009-2014)">
+<div class="quarto-post image-right" data-index="31" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1741956838369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="249" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y Compromiso Cı́vico de los jóvenes chilenos: Una mirada al perı́odo (2009-2014)">
 <div class="body">
-<a href="../tesis/posts/2016_Desigualdad_y_Compro.html">
 <h3 class="no-anchor listing-title">
-Desigualdad y Compromiso Cı́vico de los jóvenes chilenos: Una mirada al perı́odo (2009-2014)
+<a href="../tesis/posts/2016_Desigualdad_y_Compro.html" class="no-external">Desigualdad y Compromiso Cı́vico de los jóvenes chilenos: Una mirada al perı́odo (2009-2014)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2016_Desigualdad_y_Compro.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2016_Desigualdad_y_Compro.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2016_Desigualdad_y_Compro.html">
+<a href="../tesis/posts/2016_Desigualdad_y_Compro.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2016
 </div>
@@ -1088,25 +1033,22 @@ Francisca Acevedo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="Guía o cotutor" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1741956838446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Legitimidad del sistema económico y participación ciudadana: Una aproximación a la relación entre percepciones individuales y actividad política en chile">
+<div class="quarto-post image-right" data-index="32" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1741956838446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="297" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Legitimidad del sistema económico y participación ciudadana: Una aproximación a la relación entre percepciones individuales y actividad política en chile">
 <div class="body">
-<a href="../tesis/posts/2016_Legitimidad_del_sist.html">
 <h3 class="no-anchor listing-title">
-Legitimidad del sistema económico y participación ciudadana: Una aproximación a la relación entre percepciones individuales y actividad política en chile
+<a href="../tesis/posts/2016_Legitimidad_del_sist.html" class="no-external">Legitimidad del sistema económico y participación ciudadana: Una aproximación a la relación entre percepciones individuales y actividad política en chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2016_Legitimidad_del_sist.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2016_Legitimidad_del_sist.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2016_Legitimidad_del_sist.html">
+<a href="../tesis/posts/2016_Legitimidad_del_sist.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2016
 </div>
@@ -1116,25 +1058,22 @@ Matias Placencio-Castro
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-categories="Guía o cotutor" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1741956838477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Medición en ciudadanía: Equivalencia y propiedades psicométricas de una escala de percepción en estudiantes">
+<div class="quarto-post image-right" data-index="33" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1741956838477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Medición en ciudadanía: Equivalencia y propiedades psicométricas de una escala de percepción en estudiantes">
 <div class="body">
-<a href="../tesis/posts/2016_Medición_en_ciudadan.html">
 <h3 class="no-anchor listing-title">
-Medición en ciudadanía: Equivalencia y propiedades psicométricas de una escala de percepción en estudiantes
+<a href="../tesis/posts/2016_Medición_en_ciudadan.html" class="no-external">Medición en ciudadanía: Equivalencia y propiedades psicométricas de una escala de percepción en estudiantes</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2016_Medición_en_ciudadan.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2016_Medición_en_ciudadan.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2016_Medición_en_ciudadan.html">
+<a href="../tesis/posts/2016_Medición_en_ciudadan.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2016
 </div>
@@ -1144,25 +1083,22 @@ Federico Viertel
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-categories="Guía o cotutor" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aspectos subjetivos de la meritocracia y su relación con la percepción de la desigualdad en Chile">
+<div class="quarto-post image-right" data-index="34" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aspectos subjetivos de la meritocracia y su relación con la percepción de la desigualdad en Chile">
 <div class="body">
-<a href="../tesis/posts/2015_Aspectos_subjetivos_.html">
 <h3 class="no-anchor listing-title">
-Aspectos subjetivos de la meritocracia y su relación con la percepción de la desigualdad en Chile
+<a href="../tesis/posts/2015_Aspectos_subjetivos_.html" class="no-external">Aspectos subjetivos de la meritocracia y su relación con la percepción de la desigualdad en Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2015_Aspectos_subjetivos_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2015_Aspectos_subjetivos_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2015_Aspectos_subjetivos_.html">
+<a href="../tesis/posts/2015_Aspectos_subjetivos_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2015
 </div>
@@ -1172,25 +1108,22 @@ Alex Torres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="35" data-categories="Miembro comité evaluador" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838377" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Discusión teórica y empírica sobre la élite económica chilena">
+<div class="quarto-post image-right" data-index="35" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838377" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Discusión teórica y empírica sobre la élite económica chilena">
 <div class="body">
-<a href="../tesis/posts/2015_Discusión_teórica_y_.html">
 <h3 class="no-anchor listing-title">
-Discusión teórica y empírica sobre la élite económica chilena
+<a href="../tesis/posts/2015_Discusión_teórica_y_.html" class="no-external">Discusión teórica y empírica sobre la élite económica chilena</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2015_Discusión_teórica_y_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2015_Discusión_teórica_y_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2015_Discusión_teórica_y_.html">
+<a href="../tesis/posts/2015_Discusión_teórica_y_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2015
 </div>
@@ -1200,25 +1133,22 @@ Josefina Amenabar, Javiera Sanchez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="Miembro comité evaluador" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prevención en salud mental en la Atención Primaria de Salud">
+<div class="quarto-post image-right" data-index="36" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prevención en salud mental en la Atención Primaria de Salud">
 <div class="body">
-<a href="../tesis/posts/2015_Prevención_en_salud_.html">
 <h3 class="no-anchor listing-title">
-Prevención en salud mental en la Atención Primaria de Salud
+<a href="../tesis/posts/2015_Prevención_en_salud_.html" class="no-external">Prevención en salud mental en la Atención Primaria de Salud</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2015_Prevención_en_salud_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2015_Prevención_en_salud_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2015_Prevención_en_salud_.html">
+<a href="../tesis/posts/2015_Prevención_en_salud_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2015
 </div>
@@ -1228,25 +1158,22 @@ Nassim Ajraz, Natalia Sanchez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="Miembro comité evaluador" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Todos somos amigos, pero unos más que otros      ~ Estudio   ~exploratorio   ~sobre      ~segregación    ~en     ~la     ~ sala      ~de     ~clases">
+<div class="quarto-post image-right" data-index="37" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838380" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="67" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Todos somos amigos, pero unos más que otros    ~ Estudio   ~exploratorio   ~sobre      ~segregación    ~en     ~la     ~ sala      ~de     ~clases">
 <div class="body">
-<a href="../tesis/posts/2015_Todos_somos_amigos,_.html">
 <h3 class="no-anchor listing-title">
-Todos somos amigos, pero unos más que otros ~ Estudio ~exploratorio ~sobre ~segregación ~en ~la ~ sala ~de ~clases
+<a href="../tesis/posts/2015_Todos_somos_amigos,_.html" class="no-external">Todos somos amigos, pero unos más que otros ~ Estudio ~exploratorio ~sobre ~segregación ~en ~la ~ sala ~de ~clases</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2015_Todos_somos_amigos,_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2015_Todos_somos_amigos,_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2015_Todos_somos_amigos,_.html">
+<a href="../tesis/posts/2015_Todos_somos_amigos,_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2015
 </div>
@@ -1256,25 +1183,22 @@ Maria Jose Barros, Pablo Torres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-categories="Guía o cotutor" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838461" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué puede hacer la cultura de la escuela para aumentar la participación política de sus estudiantes? Un estudio exploratorio sobre el rol del liderazgo distribuido y el compromiso organizacional docente en escuelas chilenas">
+<div class="quarto-post image-right" data-index="38" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1741956838461" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="537" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué puede hacer la cultura de la escuela para aumentar la participación política de sus estudiantes? Un estudio exploratorio sobre el rol del liderazgo distribuido y el compromiso organizacional docente en escuelas chilenas">
 <div class="body">
-<a href="../tesis/posts/2015_¿Qué_puede_hacer_la_.html">
 <h3 class="no-anchor listing-title">
-¿Qué puede hacer la cultura de la escuela para aumentar la participación política de sus estudiantes? Un estudio exploratorio sobre el rol del liderazgo distribuido y el compromiso organizacional docente en escuelas chilenas
+<a href="../tesis/posts/2015_¿Qué_puede_hacer_la_.html" class="no-external">¿Qué puede hacer la cultura de la escuela para aumentar la participación política de sus estudiantes? Un estudio exploratorio sobre el rol del liderazgo distribuido y el compromiso organizacional docente en escuelas chilenas</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2015_¿Qué_puede_hacer_la_.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="../tesis/posts/2015_¿Qué_puede_hacer_la_.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2015_¿Qué_puede_hacer_la_.html">
+<a href="../tesis/posts/2015_¿Qué_puede_hacer_la_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2015
 </div>
@@ -1284,25 +1208,22 @@ Eduardo Santander
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-categories="Miembro comité evaluador" data-listing-date-sort="1388545200000" data-listing-file-modified-sort="1741956838372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Evaluación de la implementación, gestión y utilización de la Ley 20.500">
+<div class="quarto-post image-right" data-index="39" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1388545200000" data-listing-file-modified-sort="1741956838372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Evaluación de la implementación, gestión y utilización de la Ley 20.500">
 <div class="body">
-<a href="../tesis/posts/2014_Evaluación_de_la_imp.html">
 <h3 class="no-anchor listing-title">
-Evaluación de la implementación, gestión y utilización de la Ley 20.500
+<a href="../tesis/posts/2014_Evaluación_de_la_imp.html" class="no-external">Evaluación de la implementación, gestión y utilización de la Ley 20.500</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2014_Evaluación_de_la_imp.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2014_Evaluación_de_la_imp.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2014_Evaluación_de_la_imp.html">
+<a href="../tesis/posts/2014_Evaluación_de_la_imp.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2014
 </div>
@@ -1312,25 +1233,22 @@ Veronica Acevedo, Candela Arellano
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="Miembro comité evaluador" data-listing-date-sort="1388545200000" data-listing-file-modified-sort="1741956838480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Stability and change in political right-wing groups in Chile: understanding the shift among right wingers to the center">
+<div class="quarto-post image-right" data-index="40" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1388545200000" data-listing-file-modified-sort="1741956838480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Stability and change in political right-wing groups in Chile: understanding the shift among right wingers to the center">
 <div class="body">
-<a href="../tesis/posts/2014_Stability_and_change.html">
 <h3 class="no-anchor listing-title">
-Stability and change in political right-wing groups in Chile: understanding the shift among right wingers to the center
+<a href="../tesis/posts/2014_Stability_and_change.html" class="no-external">Stability and change in political right-wing groups in Chile: understanding the shift among right wingers to the center</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../tesis/posts/2014_Stability_and_change.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Miembro comité evaluador'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y'); return false;">
 Miembro comité evaluador
 </div>
 </div>
-<a href="../tesis/posts/2014_Stability_and_change.html"> </a>
 </div>
 <div class="metadata">
-<a href="../tesis/posts/2014_Stability_and_change.html">
+<a href="../tesis/posts/2014_Stability_and_change.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2014
 </div>
@@ -1386,6 +1304,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1454,13 +1399,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1495,18 +1442,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1538,11 +1474,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1552,8 +1525,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1565,7 +1547,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1609,6 +1713,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1634,6 +1739,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1694,6 +1825,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="">2025</a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/juancarloscastillo/jc-quarto">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Last Update: 2025-03-14</p>
+</div>
+  </div>
+</footer>
+
 
 
 

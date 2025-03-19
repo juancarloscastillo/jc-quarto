@@ -65,3 +65,59 @@ a:hover {
   color: inherit !important; /* Mantiene el color original en lugar de cambiarlo */
   text-decoration: none; /* Opcional: elimina el subrayado al hacer hover */
 }
+
+
+/*-- parallax --*/
+
+.parallax-container {
+  position: relative;
+  padding-left: 0em;
+  padding-right: 0;
+  padding-top: 1em;
+  margin-top: 0em;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.parallax-image-container {
+  background-image: url(images/background-about.png);
+  background-attachment: fixed;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.8em;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100vw;
+}
+
+
+/*-- section style --*/
+
+.section-container {
+  padding-left: 0em;
+  padding-right:  0em;
+  padding-top: 1em;
+  margin-top: 0em;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.section-block {
+  margin: 1em auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.8em;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.post-contents {
+	padding-left: 1.5em
+	padding-right: 1.5em;
+	margin: 1rem;
+}
+

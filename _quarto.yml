@@ -6,7 +6,20 @@ project:
 
 website:
   title: "jc-castillo"
+  page-footer:
+    background: "#000000"
+    left: |
+      [2025]()
+    center:
+      - href: https://github.com/juancarloscastillo/jc-quarto
+        icon: github
+        aria-label: GitHub
+    right: |
+       Last Update: {{< modified isodate>}} 
   navbar:
+    tools: 
+       - icon: github
+         href: https://github.com/juancarloscastillo
     # pinned: true
     left:
       - href: index.qmd#publicationh1
@@ -19,6 +32,8 @@ website:
         text: Blog
       - href: index.qmd#tesish1
         text: Tesis
+      - href: index.qmd#galeriah1
+        text: Galería
       - links.qmd
       - contacto.qmd
       
@@ -31,10 +46,6 @@ format:
       - styles.css
     toc: true
     linkcolor: "#6C8EBF"
-    grid:
-      sidebar-width: 0px
-      body-width: 1728px
-      margin-width: 192px
 
 
 

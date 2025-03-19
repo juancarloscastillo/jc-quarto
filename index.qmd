@@ -2,6 +2,10 @@
 title: "Juan Carlos Castillo"
 pagetitle: "JC Castillo Website"
 page-layout: full
+format:
+  html:
+    grid:
+      body-width: 1440px
 page-navigation: false
 toc: false
 image: "images/avatar.jpeg"
@@ -81,7 +85,14 @@ listing:
   sort-ui: false
   feed: false
   page-size: 500
-
+  
+- id: listing-gallery
+  template: gallery.ejs
+  contents:
+    - images/albums/gallery/*
+  sort-ui: false
+  filter-ui: false
+  categories: false
 ---
 
 <link rel="me" href="https://mastodon.social/@hegang">
@@ -89,8 +100,8 @@ listing:
 <!--This is my personal clarity, please delete or replace with your own clarity-->
 {{< include /includes/_msclarity.qmd >}}
 
-
 :::{#hero-heading}
+
 
 
 ¡Bienvenid_ a mi sitio! Acá busco poner a disposición mi trabajo académico de investigación, docencia y extensión de la manera más abierta posible.
@@ -104,14 +115,14 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 :::
 
+
 <!-- ## Recent Posts -->
 <!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
 
-::: {.section-text}
-::: {.section-container .alt-background}
+::: {.parallax-container}
+::: {.parallax-image-container}
 ::: {.section-block}
 ::: {style="text-align: center;"}
-
 
 ::: {#proyectosh1}
 :::
@@ -127,8 +138,11 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 :::
 :::
 
-::: {.background-frame}
-::: {.content-block}
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
 
 ::: {#publicationh1}
 :::
@@ -144,9 +158,14 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 :::
 :::
+:::
+:::
 
-::: {.background-frame .alt-background}
-::: {.content-block}
+::: {.parallax-container}
+::: {.parallax-image-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
 
 ::: {#docenciah1}
 :::
@@ -159,9 +178,14 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 :::
 :::
+:::
+:::
 
-::: {.background-frame}
-::: {.content-block}
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
 
 ::: {#tesish1}
 :::
@@ -177,9 +201,13 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 
 :::
 :::
+:::
+:::
 
-::: {.background-frame .alt-background}
-::: {.content-block}
+::: {.parallax-container}
+::: {.parallax-image-container}
+::: {.section-block}
+::: {style="text-align: left;"}
 
 ::: {#blogh1}
 :::
@@ -190,8 +218,28 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 :::
 
 ::: {.button}
-[Descubre más](blog/blog.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+[Más...](blog/blog.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
 :::
 
+:::
+:::
+:::
+:::
+
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
+::: {#galeriah1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Galería</p>
+
+:::{listing-gallery}
+:::
+
+:::
+:::
 :::
 :::

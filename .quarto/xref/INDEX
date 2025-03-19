@@ -958,5 +958,146 @@
   },
   "tesis/tesis.qmd": {
     "tesis.html": "cf0203bb"
+  },
+  "parallax.qmd": {
+    "parallax.html": "df9af058"
+  },
+  "galeria.qmd": {
+    "galeria.html": "c884152e"
+  },
+  "galeria/galeria.qmd": {
+    "galeria.html": "1b3360f3"
+  },
+  "galeria/posts/1645311601457.qmd": {
+    "1645311601457.html": "23c0a44a"
+  },
+  "galeria/posts/1648109481299.qmd": {
+    "1648109481299.html": "b5d0ef6f"
+  },
+  "galeria/posts/1659416903799.qmd": {
+    "1659416903799.html": "f58800c1"
+  },
+  "galeria/posts/E0izoA8WUA8YJbl.qmd": {
+    "E0izoA8WUA8YJbl.html": "f033e7c6"
+  },
+  "galeria/posts/E5y_fAGWQAQFMVH (1).qmd": {
+    "E5y_fAGWQAQFMVH (1).html": "857aca85"
+  },
+  "galeria/posts/FEh9d6GUUAMUOqX.qmd": {
+    "FEh9d6GUUAMUOqX.html": "964f6aa2"
+  },
+  "galeria/posts/FGA3uzSXsAIu9G8.qmd": {
+    "FGA3uzSXsAIu9G8.html": "d58c9959"
+  },
+  "galeria/posts/FZEwn_mWQAE5D7D.qmd": {
+    "FZEwn_mWQAE5D7D.html": "4c1e11aa"
+  },
+  "galeria/posts/IMG-20211231-WA0003.qmd": {
+    "IMG-20211231-WA0003.html": "3278275a"
+  },
+  "galeria/posts/IMG-20220312-WA0007.qmd": {
+    "IMG-20220312-WA0007.html": "ed7b942c"
+  },
+  "galeria/posts/IMG_20220103_231529.qmd": {
+    "IMG_20220103_231529.html": "f7a3a2d7"
+  },
+  "galeria/posts/IMG_20220103_231629.qmd": {
+    "IMG_20220103_231629.html": "5d7f0377"
+  },
+  "galeria/posts/IMG_20220103_231750.qmd": {
+    "IMG_20220103_231750.html": "0240e4ca"
+  },
+  "galeria/posts/IMG_20220103_231906.qmd": {
+    "IMG_20220103_231906.html": "cefc41a2"
+  },
+  "galeria/posts/IMG_20220103_232127.qmd": {
+    "IMG_20220103_232127.html": "ba3ea3d2"
+  },
+  "galeria/posts/IMG_20220103_233241.qmd": {
+    "IMG_20220103_233241.html": "37a03a34"
+  },
+  "galeria/posts/IMG_20220113_222626.qmd": {
+    "IMG_20220113_222626.html": "5c1dbec0"
+  },
+  "galeria/posts/IMG_20220125_163011.qmd": {
+    "IMG_20220125_163011.html": "8c55ec8a"
+  },
+  "galeria/posts/IMG_20220309_193322.qmd": {
+    "IMG_20220309_193322.html": "29b8ef88"
+  },
+  "galeria/posts/IMG_20220324_051944.qmd": {
+    "IMG_20220324_051944.html": "ce421a20"
+  },
+  "galeria/posts/IMG_20220325_161500.qmd": {
+    "IMG_20220325_161500.html": "daa35a81"
+  },
+  "galeria/posts/IMG_20220325_161750.qmd": {
+    "IMG_20220325_161750.html": "0923e8d1"
+  },
+  "galeria/posts/IMG_20220326_205000.qmd": {
+    "IMG_20220326_205000.html": "31ad8d8c"
+  },
+  "galeria/posts/IMG_20220326_205444.qmd": {
+    "IMG_20220326_205444.html": "c015462f"
+  },
+  "galeria/posts/IMG_20220327_164749.qmd": {
+    "IMG_20220327_164749.html": "8ee769a2"
+  },
+  "galeria/posts/IMG_20220610_185802.qmd": {
+    "IMG_20220610_185802.html": "d7d9e3e4"
+  },
+  "galeria/posts/IMG_20220813_054936.qmd": {
+    "IMG_20220813_054936.html": "59330f71"
+  },
+  "galeria/posts/IMG_20220814_225842.qmd": {
+    "IMG_20220814_225842.html": "7671b25a"
+  },
+  "galeria/posts/IMG_20220821_170624.qmd": {
+    "IMG_20220821_170624.html": "f2a61382"
+  },
+  "galeria/posts/IMG_20221003_185226.qmd": {
+    "IMG_20221003_185226.html": "d065e1da"
+  },
+  "galeria/posts/IMG_20221229_164358.qmd": {
+    "IMG_20221229_164358.html": "3f94372f"
+  },
+  "galeria/posts/IMG_20221230_084509.qmd": {
+    "IMG_20221230_084509.html": "c8e82cc4"
+  },
+  "galeria/posts/IMG_20230124_175747.qmd": {
+    "IMG_20230124_175747.html": "3089616d"
+  },
+  "galeria/posts/bedcb056bde21dfe98bb49811ab4cf41.qmd": {
+    "bedcb056bde21dfe98bb49811ab4cf41.html": "0d75cf21"
+  },
+  "galeria/posts/chile_europa.qmd": {
+    "chile_europa.html": "cc21a992"
+  },
+  "galeria/posts/dino3.qmd": {
+    "dino3.html": "b9c2c8d8"
+  },
+  "galeria/posts/dragon.qmd": {
+    "dragon.html": "b82efe5f"
+  },
+  "galeria/posts/dunning-gruger.qmd": {
+    "dunning-gruger.html": "0a97e7ff"
+  },
+  "galeria/posts/galeria.qmd": {
+    "galeria.html": "c4bf3a4f"
+  },
+  "galeria/posts/not-normal.qmd": {
+    "not-normal.html": "4c609d13"
+  },
+  "galeria/posts/sampling-bias.qmd": {
+    "sampling-bias.html": "339941f3"
+  },
+  "galeria/posts/standards.qmd": {
+    "standards.html": "c3f91345"
+  },
+  "galeria/posts/stormtroopocat.qmd": {
+    "stormtroopocat.html": "28e4fc3c"
+  },
+  "galeria/posts/understanding.qmd": {
+    "understanding.html": "d4656d64"
   }
 }

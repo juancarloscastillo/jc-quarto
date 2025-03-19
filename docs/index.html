@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JC Castillo Website</title>
+<title>JC Castillo Website – jc-castillo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,19 +36,28 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ee542b73086860247b7e74b96fffe8d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b5147cafa960074ea1cbcd4a83d7dea0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,8 +66,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -201,10 +212,66 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-gallery .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-filename','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-filename","listing-file-modified"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-gallery'] = new List('listing-listing-gallery', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -213,52 +280,57 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">jc-castillo</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#publicationh1" rel="" target="">
- <span class="menu-text">Publicaciones y Presentaciones</span></a>
+    <a class="nav-link" href="./index.html#publicationh1"> 
+<span class="menu-text">Publicaciones y Presentaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#docenciah1" rel="" target="">
- <span class="menu-text">Docencia</span></a>
+    <a class="nav-link" href="./index.html#docenciah1"> 
+<span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#proyectosh1" rel="" target="">
- <span class="menu-text">Proyectos</span></a>
+    <a class="nav-link" href="./index.html#proyectosh1"> 
+<span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#blogh1" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="./index.html#blogh1"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#tesish1" rel="" target="">
- <span class="menu-text">Tesis</span></a>
+    <a class="nav-link" href="./index.html#tesish1"> 
+<span class="menu-text">Tesis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./links.html" rel="" target="">
- <span class="menu-text">Links</span></a>
+    <a class="nav-link" href="./index.html#galeriah1"> 
+<span class="menu-text">Galería</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contacto.html" rel="" target="">
- <span class="menu-text">Contacto</span></a>
+    <a class="nav-link" href="./links.html"> 
+<span class="menu-text">Links</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contacto.html"> 
+<span class="menu-text">Contacto</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/juancarloscastillo" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -269,6 +341,7 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
+
 
 
 
@@ -292,7 +365,7 @@ https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
 <div class="quarto-title">
 <h1 class="title">Juan Carlos Castillo</h1>
 </div>
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
   </div>
 </header>
     <div class="about-links">
@@ -320,8 +393,8 @@ https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-setup
 
 <!-- ## Recent Posts -->
 <!-- Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd) -->
-<div class="section-text">
-<div class="section-container alt-background">
+<div class="parallax-container">
+<div class="parallax-image-container">
 <div class="section-block">
 <div style="text-align: center;">
 <div id="proyectosh1">
@@ -338,7 +411,7 @@ Proyectos
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Milenio" data-listing-date-sort="1680231600000" data-listing-file-modified-sort="1741364518963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="g-col-1" data-index="0" data-categories="TWlsZW5pbw==" data-listing-date-sort="1680231600000" data-listing-file-modified-sort="1741364518963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
 <a href="./proyectos/posts/nudos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/nudos/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -347,7 +420,7 @@ Proyectos
 Núcleo Milenio de Desigualdades y Oportunidades Digitales
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Milenio'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('TWlsZW5pbw=='); return false;">
 Milenio
 </div>
 </div>
@@ -358,7 +431,7 @@ Concepto: Las tecnologías digitales han reconfigurado estructuras de poder y la
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364473737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364473737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1252">
 <a href="./proyectos/posts/minicoes-ciencia-abierta/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/minicoes-ciencia-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -373,7 +446,7 @@ Durante los últimos años, el mundo académico ha experimentado una serie de de
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Fondecyt" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364884738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1741364884738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
 <a href="./proyectos/posts/price/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/price/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -382,18 +455,18 @@ Durante los últimos años, el mundo académico ha experimentado una serie de de
 PRICE
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
 Fondecyt
 </div>
 </div>
 <div class="card-text listing-description">
-El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a partir de la vinculación de distintos proyectos de…
+El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a partir de la vinculación de distintos proyectos de investigación que desde el año 2011 se han…
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Fondecyt" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741706244114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="3" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741706244114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
 <a href="./proyectos/posts/fondecyt-edumer/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/fondecyt-edumer/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -402,7 +475,7 @@ El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a par
 Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
 Fondecyt
 </div>
 </div>
@@ -413,7 +486,7 @@ Una de las características de Chile como caso de estudio a nivel internacional 
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364329638" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="4" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741364329638" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
 <a href="./proyectos/posts/lisa/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/lisa/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -428,7 +501,7 @@ El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudio
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="COES" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741784698955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="5" data-categories="Q09FUw==" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1741784698955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
 <a href="./proyectos/posts/ocs-coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -437,7 +510,7 @@ El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudio
 Observatorio de Cohesión Social
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('COES'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Q09FUw=='); return false;">
 COES
 </div>
 </div>
@@ -448,7 +521,7 @@ El Observatorio de Cohesión Social (OCS) es una iniciativa del Centro de Estudi
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Fondecyt" data-listing-date-sort="1522465200000" data-listing-file-modified-sort="1741706184074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="6" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1522465200000" data-listing-file-modified-sort="1741706184074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
 <a href="./proyectos/posts/fondecyt-ciudadania2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania2/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -457,7 +530,7 @@ El Observatorio de Cohesión Social (OCS) es una iniciativa del Centro de Estudi
 Formación Ciudadana II: Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela.
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
 Fondecyt
 </div>
 </div>
@@ -468,7 +541,7 @@ La investigación propuesta hará intenso uso del conocimiento secundario existe
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Fondecyt" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1741365614797" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="g-col-1" data-index="7" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1741365614797" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1906">
 <a href="./proyectos/posts/fondecyt-economiamoral/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/fondecyt-economiamoral/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -477,18 +550,18 @@ La investigación propuesta hará intenso uso del conocimiento secundario existe
 Economía moral de la meritocracia y preferencias redistributivas
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
 Fondecyt
 </div>
 </div>
 <div class="card-text listing-description">
-El objetivo general de nuestra investigación fue <strong>analizar la relación entre creencias en la meritocracia y preferencias redistributivas desde una perspectiva de economía moral</strong>, atendiendo al contexto institucional en Chile y en perspectiva comparativa internacional. El caso de Chile surge como relevante para este estudio dada su historia de…
+El objetivo general de nuestra investigación fue <strong>analizar la relación entre creencias en la meritocracia y preferencias redistributivas desde una perspectiva de economía moral</strong>…
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Fondecyt" data-listing-date-sort="1427770800000" data-listing-file-modified-sort="1741274078181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="8" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1427770800000" data-listing-file-modified-sort="1741274078181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
 <a href="./proyectos/posts/fondecyt-ciudadania1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/fondecyt-ciudadania1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -497,7 +570,7 @@ El objetivo general de nuestra investigación fue <strong>analizar la relación 
 Formación ciudadana I Socialización política y experiencia escolar - Chile en contexto internacional
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
 Fondecyt
 </div>
 </div>
@@ -508,7 +581,7 @@ La hipótesis general de investigación es que el currículo escolar, junto a un
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="FONDAP" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741784778480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="9" data-categories="Rk9OREFQ" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1741784778480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
 <a href="./proyectos/posts/coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -517,7 +590,7 @@ La hipótesis general de investigación es que el currículo escolar, junto a un
 COES
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('FONDAP'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rk9OREFQ'); return false;">
 FONDAP
 </div>
 </div>
@@ -528,7 +601,7 @@ El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por e
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Fondecyt" data-listing-date-sort="1364698800000" data-listing-file-modified-sort="1741706267347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="g-col-1" data-index="10" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1364698800000" data-listing-file-modified-sort="1741706267347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="639">
 <a href="./proyectos/posts/fondecyt-iniciacion/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="proyectos/posts/fondecyt-iniciacion/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -537,7 +610,7 @@ El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por e
 Social justice and citizenship participation: An international comparison with focus on the case of Chile
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Fondecyt'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
 Fondecyt
 </div>
 </div>
@@ -548,7 +621,7 @@ El proyecto de investigación “Justicia distributiva y participación ciudadan
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Varios" data-listing-date-sort="1270004400000" data-listing-file-modified-sort="1741364858782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="11" data-categories="VmFyaW9z" data-listing-date-sort="1270004400000" data-listing-file-modified-sort="1741364858782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <a href="./proyectos/posts/otros-proyectos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -557,7 +630,7 @@ El proyecto de investigación “Justicia distributiva y participación ciudadan
 Otros proyectos
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Varios'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('VmFyaW9z'); return false;">
 Varios
 </div>
 </div>
@@ -577,8 +650,10 @@ No matching items
 </div>
 </div>
 </div>
-<div class="background-frame">
-<div class="content-block">
+<div class="section-text">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
 <div id="publicationh1">
 
 </div>
@@ -587,25 +662,22 @@ Publicaciones y Presentaciones recientes
 </p>
 <div id="listing-publication" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Presentation" data-listing-date-sort="1719806400000" data-listing-file-modified-sort="1741958392008" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1719806400000" data-listing-file-modified-sort="1741958392008" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
 <div class="body">
-<a href="./publication/posts/2024_Measuring_social_coh.html">
 <h3 class="no-anchor listing-title">
-Measuring social cohesion in Chile with longitudinal survey data
+<a href="./publication/posts/2024_Measuring_social_coh.html" class="no-external">Measuring social cohesion in Chile with longitudinal survey data</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./publication/posts/2024_Measuring_social_coh.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./publication/posts/2024_Measuring_social_coh.html"> </a>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2024_Measuring_social_coh.html">
+<a href="./publication/posts/2024_Measuring_social_coh.html" class="no-external">
 <div class="listing-date">
 Jul 1, 2024
 </div>
@@ -615,25 +687,22 @@ Juan-Carlos Castillo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741958391845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741958391845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <div class="body">
-<a href="./publication/posts/2024_Barreras_para_la_Cie.html">
 <h3 class="no-anchor listing-title">
-Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile.
+<a href="./publication/posts/2024_Barreras_para_la_Cie.html" class="no-external">Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./publication/posts/2024_Barreras_para_la_Cie.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./publication/posts/2024_Barreras_para_la_Cie.html"> </a>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2024_Barreras_para_la_Cie.html">
+<a href="./publication/posts/2024_Barreras_para_la_Cie.html" class="no-external">
 <div class="listing-date">
 May 1, 2024
 </div>
@@ -643,25 +712,22 @@ Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741958392011" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741958392011" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
 <div class="body">
-<a href="./publication/posts/2024_Meritocracia_y_justi.html">
 <h3 class="no-anchor listing-title">
-Meritocracia y justificación de desigualdad en la etapa escolar: Un experimento de encuesta.
+<a href="./publication/posts/2024_Meritocracia_y_justi.html" class="no-external">Meritocracia y justificación de desigualdad en la etapa escolar: Un experimento de encuesta.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./publication/posts/2024_Meritocracia_y_justi.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./publication/posts/2024_Meritocracia_y_justi.html"> </a>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2024_Meritocracia_y_justi.html">
+<a href="./publication/posts/2024_Meritocracia_y_justi.html" class="no-external">
 <div class="listing-date">
 May 1, 2024
 </div>
@@ -671,25 +737,22 @@ Juan-Carlos Castillo, Kevin Carrasco
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Presentation" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741958391977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1741958391977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
 <div class="body">
-<a href="./publication/posts/2024_¿Las_estudiantes_sub.html">
 <h3 class="no-anchor listing-title">
-¿Las estudiantes subestiman sus habilidades tecnológicas? Diferencias de género en autoeficacia digital en contextos escolares chilenos
+<a href="./publication/posts/2024_¿Las_estudiantes_sub.html" class="no-external">¿Las estudiantes subestiman sus habilidades tecnológicas? Diferencias de género en autoeficacia digital en contextos escolares chilenos</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./publication/posts/2024_¿Las_estudiantes_sub.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./publication/posts/2024_¿Las_estudiantes_sub.html"> </a>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2024_¿Las_estudiantes_sub.html">
+<a href="./publication/posts/2024_¿Las_estudiantes_sub.html" class="no-external">
 <div class="listing-date">
 May 1, 2024
 </div>
@@ -699,25 +762,22 @@ Juan-Carlos Castillo, Nicolas Tobar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Presentation" data-listing-date-sort="1711940400000" data-listing-file-modified-sort="1741958392070" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="4" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1711940400000" data-listing-file-modified-sort="1741958392070" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <div class="body">
-<a href="./publication/posts/2024_Does_information_abo.html">
 <h3 class="no-anchor listing-title">
-Does information about inequality affects opportunity beliefs? Results from a survey experiment
+<a href="./publication/posts/2024_Does_information_abo.html" class="no-external">Does information about inequality affects opportunity beliefs? Results from a survey experiment</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./publication/posts/2024_Does_information_abo.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./publication/posts/2024_Does_information_abo.html"> </a>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2024_Does_information_abo.html">
+<a href="./publication/posts/2024_Does_information_abo.html" class="no-external">
 <div class="listing-date">
 Apr 1, 2024
 </div>
@@ -737,8 +797,12 @@ No matching items
 </div>
 </div>
 </div>
-<div class="background-frame alt-background">
-<div class="content-block">
+</div>
+</div>
+<div class="parallax-container">
+<div class="parallax-image-container">
+<div class="section-block">
+<div style="text-align: left;">
 <div id="docenciah1">
 
 </div>
@@ -747,7 +811,7 @@ Docencia
 </p>
 <div id="listing-docencia" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cursos" data-listing-file-modified-sort="1741284533848" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="0" data-categories="Y3Vyc29z" data-listing-file-modified-sort="1741284533848" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
 <a href="./docencia/posts/coloquio/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/coloquio/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -756,13 +820,13 @@ Docencia
 Coloquio de investigación en desigualdad y ciudadanía
 </h5>
 <div class="card-text listing-description">
-El objetivo de este coloquio mensual es presentar…
+El objetivo de este coloquio mensual es presentar trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de desigualdad y/o ciudadanía, y que utilizan…
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1724817600000" data-listing-file-modified-sort="1741283507668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1724817600000" data-listing-file-modified-sort="1741283507668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="529">
 <a href="./docencia/posts/desarrollo-tesis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/desarrollo-tesis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -777,7 +841,7 @@ La guía de seminarios de grado/memorias/tesis es una actividad de acompañamien
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708492648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="Y3Vyc29z" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708492648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
 <a href="./docencia/posts/correlacional/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/correlacional/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -792,7 +856,7 @@ Este curso se centra en inferencia, asociación y reporte, y se dicta el 2do sem
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cursos" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708515290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="3" data-categories="Y3Vyc29z" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1741708515290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
 <a href="./docencia/posts/multinivel/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/multinivel/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -807,7 +871,7 @@ Este curso es un optativo de la línea metodológica de la carrera de sociologí
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="cursos" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741283823896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="4" data-categories="Y3Vyc29z" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741283823896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
 <a href="./docencia/posts/encuestas-sociales/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/encuestas-sociales/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -822,7 +886,7 @@ Este seminario de profundización metodológica está dirigido a quienes tengan 
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741707989320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="5" data-categories="Y3Vyc29z" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741707989320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
 <a href="./docencia/posts/ciencia-social-abierta/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/ciencia-social-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -837,7 +901,7 @@ Este curso es un optativo de la línea metodológica de la carrera de sociologí
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708498031" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="6" data-categories="Y3Vyc29z" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708498031" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <a href="./docencia/posts/estrategias-ic/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/estrategias-ic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -852,7 +916,7 @@ Al finalizar el curso los/as estudiantes conocerán distintas estrategias de inv
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="cursos" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708505502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="7" data-categories="Y3Vyc29z" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1741708505502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
 <a href="./docencia/posts/metodologia1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/metodologia1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -867,7 +931,7 @@ Desarrollado junto a Kevin Carrasco y Pablo Pérez.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="cursos" data-listing-date-sort="1551409200000" data-listing-file-modified-sort="1741283937270" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="8" data-categories="Y3Vyc29z" data-listing-date-sort="1551409200000" data-listing-file-modified-sort="1741283937270" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <a href="./docencia/posts/estadistica-multivariada/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/estadistica-multivariada/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -876,13 +940,13 @@ Desarrollado junto a Kevin Carrasco y Pablo Pérez.
 Estadística Multivariada
 </h5>
 <div class="card-text listing-description">
-Cada versión del curso centraliza la información en una…
+Cada versión del curso centraliza la información en una página web desde su primera versión en el año 2019. Las versiones se encuentran alojadas en Github, se desarrollan…
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="cursos" data-listing-date-sort="1527220800000" data-listing-file-modified-sort="1741284427565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="9" data-categories="Y3Vyc29z" data-listing-date-sort="1527220800000" data-listing-file-modified-sort="1741284427565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <a href="./docencia/posts/talleres-seminarios/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="docencia/posts/talleres-seminarios/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -904,8 +968,12 @@ No matching items
 </div>
 </div>
 </div>
-<div class="background-frame">
-<div class="content-block">
+</div>
+</div>
+<div class="section-text">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
 <div id="tesish1">
 
 </div>
@@ -914,25 +982,22 @@ Guía y Comité de Tesis
 </p>
 <div id="listing-tesis" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Guía o cotutor" data-listing-date-sort="1709262000000" data-listing-file-modified-sort="1741956838452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1709262000000" data-listing-file-modified-sort="1741956838452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
 <div class="body">
-<a href="./tesis/posts/2024_El_rol_de_la_sociali.html">
 <h3 class="no-anchor listing-title">
-El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile
+<a href="./tesis/posts/2024_El_rol_de_la_sociali.html" class="no-external">El rol de la socialización familiar y escolar en la percepción de meritocracia en las notas: Un estudio multinivel de estudiantes en Chile</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./tesis/posts/2024_El_rol_de_la_sociali.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="./tesis/posts/2024_El_rol_de_la_sociali.html"> </a>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2024_El_rol_de_la_sociali.html">
+<a href="./tesis/posts/2024_El_rol_de_la_sociali.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2024
 </div>
@@ -942,25 +1007,22 @@ Matias Retamales
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Guía o cotutor" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1741956838419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1741956838419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
 <div class="body">
-<a href="./tesis/posts/2024_El_conflicto_intercu.html">
 <h3 class="no-anchor listing-title">
-El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación
+<a href="./tesis/posts/2024_El_conflicto_intercu.html" class="no-external">El conflicto intercultural entre el estado chileno y la causa mapuche por autodeterminación</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./tesis/posts/2024_El_conflicto_intercu.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="./tesis/posts/2024_El_conflicto_intercu.html"> </a>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2024_El_conflicto_intercu.html">
+<a href="./tesis/posts/2024_El_conflicto_intercu.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2024
 </div>
@@ -970,25 +1032,22 @@ Paula Larenas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="2" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="527">
 <div class="body">
-<a href="./tesis/posts/2023_Aceptar_la_diversida.html">
 <h3 class="no-anchor listing-title">
-Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos
+<a href="./tesis/posts/2023_Aceptar_la_diversida.html" class="no-external">Aceptar la diversidad en el vecindario: Procesos de socialización política de actitudes hacia la diversidad social en estudiantes chilenos</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./tesis/posts/2023_Aceptar_la_diversida.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="./tesis/posts/2023_Aceptar_la_diversida.html"> </a>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2023_Aceptar_la_diversida.html">
+<a href="./tesis/posts/2023_Aceptar_la_diversida.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2023
 </div>
@@ -998,25 +1057,22 @@ Kevin Carrasco
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
 <div class="body">
-<a href="./tesis/posts/2023_El_lenguaje_como_bre.html">
 <h3 class="no-anchor listing-title">
-El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.
+<a href="./tesis/posts/2023_El_lenguaje_como_bre.html" class="no-external">El lenguaje como brecha de la formación ciudadana: El rol de la comprensión lectora sobre las habilidades para la ciudadanía y el conocimiento cívico.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./tesis/posts/2023_El_lenguaje_como_bre.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="./tesis/posts/2023_El_lenguaje_como_bre.html"> </a>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2023_El_lenguaje_como_bre.html">
+<a href="./tesis/posts/2023_El_lenguaje_como_bre.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2023
 </div>
@@ -1026,25 +1082,22 @@ Francisco Meneses
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Guía o cotutor" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="4" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1741956838410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
 <div class="body">
-<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html">
 <h3 class="no-anchor listing-title">
-¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?
+<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html" class="no-external">¿Qué pueden hacer las escuelas para promover actitudes positivas hacia la igualdad de derechos?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Guía o cotutor'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I='); return false;">
 Guía o cotutor
 </div>
 </div>
-<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html"> </a>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html">
+<a href="./tesis/posts/2023_¿Qué_pueden_hacer_la.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2023
 </div>
@@ -1064,8 +1117,12 @@ No matching items
 </div>
 </div>
 </div>
-<div class="background-frame alt-background">
-<div class="content-block">
+</div>
+</div>
+<div class="parallax-container">
+<div class="parallax-image-container">
+<div class="section-block">
+<div style="text-align: left;">
 <div id="blogh1">
 
 </div>
@@ -1074,25 +1131,25 @@ Post Recientes
 </p>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="academic" data-listing-date-sort="1665802800000" data-listing-file-modified-sort="1741699382540" data-listing-date-modified-sort="1639364400000" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="0" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1665802800000" data-listing-file-modified-sort="1741699382540" data-listing-date-modified-sort="1639364400000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1994">
 <div class="thumbnail">
-<p><a href="./blog/posts/escritura-academica/index.html"> <p class="card-img-top"><img src="blog/posts/escritura-academica/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/escritura-academica/index.html" class="no-external"></a></p><a href="./blog/posts/escritura-academica/index.html" class="no-external">
+<p class="card-img-top"><img src="blog/posts/escritura-academica/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./blog/posts/escritura-academica/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/escritura-academica/index.html">
 <h3 class="no-anchor listing-title">
-Escritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales
+<a href="./blog/posts/escritura-academica/index.html" class="no-external">Escritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./blog/posts/escritura-academica/index.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-Acá presento una propuesta de estructura y contenidos de escritura académica, con foco en…
+<a href="./blog/posts/escritura-academica/index.html" class="no-external">Acá presento una propuesta de estructura y contenidos de escritura académica, con foco en estudios empíricos en ciencias sociales. La propuesta de estructura no es un…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/escritura-academica/index.html">
+<a href="./blog/posts/escritura-academica/index.html" class="no-external">
 <div class="listing-date">
 Oct 15, 2022
 </div>
@@ -1102,25 +1159,25 @@ Oct 15, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="academic" data-listing-date-sort="1659326400000" data-listing-file-modified-sort="1741700729020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1659326400000" data-listing-file-modified-sort="1741700729020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
 <div class="thumbnail">
-<p><a href="./blog/posts/risc-bremen/index.html"> <p class="card-img-top"><img src="blog/posts/risc-bremen/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/risc-bremen/index.html" class="no-external"></a></p><a href="./blog/posts/risc-bremen/index.html" class="no-external">
+<p class="card-img-top"><img src="blog/posts/risc-bremen/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./blog/posts/risc-bremen/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/risc-bremen/index.html">
 <h3 class="no-anchor listing-title">
-Research stay at the Institute of Social Cohesion
+<a href="./blog/posts/risc-bremen/index.html" class="no-external">Research stay at the Institute of Social Cohesion</a>
 </h3>
 <div class="listing-subtitle">
-RISC Bremen, July 2022
+<a href="./blog/posts/risc-bremen/index.html" class="no-external">RISC Bremen, July 2022</a>
 </div>
 <div class="listing-description">
-During July 2022, I carried out a research stay at the Institute for Research in Social Cohesion (RISC), composed by and an…
+<a href="./blog/posts/risc-bremen/index.html" class="no-external">During July 2022, I carried out a research stay at the Institute for Research in Social Cohesion (RISC), composed by and an alliance of 11 academic institutions in Germany.…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/risc-bremen/index.html">
+<a href="./blog/posts/risc-bremen/index.html" class="no-external">
 <div class="listing-date">
 Aug 1, 2022
 </div>
@@ -1130,25 +1187,25 @@ Aug 1, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="redistributive preferences" data-listing-date-sort="1657771200000" data-listing-file-modified-sort="1741700695523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="cmVkaXN0cmlidXRpdmUlMjBwcmVmZXJlbmNlcw==" data-listing-date-sort="1657771200000" data-listing-file-modified-sort="1741700695523" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="333">
 <div class="thumbnail">
-<p><a href="./blog/posts/ISA-2023/index.html"> <p class="card-img-top"><img src="blog/posts/ISA-2023/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/ISA-2023/index.html" class="no-external"></a></p><a href="./blog/posts/ISA-2023/index.html" class="no-external">
+<p class="card-img-top"><img src="blog/posts/ISA-2023/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./blog/posts/ISA-2023/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/ISA-2023/index.html">
 <h3 class="no-anchor listing-title">
-Panels at International Sociological Association - ISA conference, Melbourne 2023
+<a href="./blog/posts/ISA-2023/index.html" class="no-external">Panels at International Sociological Association - ISA conference, Melbourne 2023</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./blog/posts/ISA-2023/index.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-I am organizing two panels for ISA 2023, call for papers is open until September 2022 (link to apply below each abstract)
+<a href="./blog/posts/ISA-2023/index.html" class="no-external">I am organizing two panels for ISA 2023, call for papers is open until September 2022 (link to apply below each abstract)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/ISA-2023/index.html">
+<a href="./blog/posts/ISA-2023/index.html" class="no-external">
 <div class="listing-date">
 Jul 14, 2022
 </div>
@@ -1158,25 +1215,25 @@ Jul 14, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="academic" data-listing-date-sort="1657339200000" data-listing-file-modified-sort="1741700240587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1657339200000" data-listing-file-modified-sort="1741700240587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
 <div class="thumbnail">
-<p><a href="./blog/posts/tesisfacsodown/index.html"> <p class="card-img-top"><img src="blog/posts/tesisfacsodown/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/tesisfacsodown/index.html" class="no-external"></a></p><a href="./blog/posts/tesisfacsodown/index.html" class="no-external">
+<p class="card-img-top"><img src="blog/posts/tesisfacsodown/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./blog/posts/tesisfacsodown/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/tesisfacsodown/index.html">
 <h3 class="no-anchor listing-title">
-tesisfacsodown
+<a href="./blog/posts/tesisfacsodown/index.html" class="no-external">tesisfacsodown</a>
 </h3>
 <div class="listing-subtitle">
-Plantilla para escritura de tesis en la Facultad de Ciencias Sociales de la Universidad de Chile
+<a href="./blog/posts/tesisfacsodown/index.html" class="no-external">Plantilla para escritura de tesis en la Facultad de Ciencias Sociales de la Universidad de Chile</a>
 </div>
 <div class="listing-description">
-<code>tesisfacsodown</code> es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello, basta con…
+<a href="./blog/posts/tesisfacsodown/index.html" class="no-external"><code>tesisfacsodown</code> es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/tesisfacsodown/index.html">
+<a href="./blog/posts/tesisfacsodown/index.html" class="no-external">
 <div class="listing-date">
 Jul 9, 2022
 </div>
@@ -1186,25 +1243,25 @@ Jul 9, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="academic" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741700569123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="4" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1741700569123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1894">
 <div class="thumbnail">
-<p><a href="./blog/posts/zotero-academic/index.html"> <p class="card-img-top"><img src="blog/posts/zotero-academic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./blog/posts/zotero-academic/index.html" class="no-external"></a></p><a href="./blog/posts/zotero-academic/index.html" class="no-external">
+<p class="card-img-top"><img src="blog/posts/zotero-academic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./blog/posts/zotero-academic/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./blog/posts/zotero-academic/index.html">
 <h3 class="no-anchor listing-title">
-Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex
+<a href="./blog/posts/zotero-academic/index.html" class="no-external">Extract publications to hugo-academic / wowchemy from Zotero-BetterBibTex</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./blog/posts/zotero-academic/index.html" class="no-external"></a>
 </div>
 <div class="listing-description">
-This post explains how to…
+<a href="./blog/posts/zotero-academic/index.html" class="no-external">This post explains how to automatically extract publications stored in Zotero (or in any reference manager exportable to Bibtex) and publish them as a publication record in…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./blog/posts/zotero-academic/index.html">
+<a href="./blog/posts/zotero-academic/index.html" class="no-external">
 <div class="listing-date">
 Dec 13, 2021
 </div>
@@ -1220,16 +1277,195 @@ No matching items
 </div>
 </div>
 <div class="button">
-<p><a href="./blog/blog.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Descubre más</a></p>
+<p><a href="./blog/blog.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Más…</a></p>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="section-text">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
+<div id="galeriah1">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Galería
+</p>
+<div class="{listing-gallery}">
+
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 
 
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing-gallery">
+<style type="text/css">
+.grid-gallery {
+  columns: 5 200px;
+  column-gap: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-item {
+  width: 150px;
+  margin: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+}
+img.grid-item {
+  width: 100%;
+  transition: all .25s ease-in-out;
+}
+img.grid-item:hover {
+  transform: scale(1.025);
+}
+</style>
+<div class="grid-gallery">
+<div>
+<p><a href="./images/albums/gallery/1645311601457.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/1645311601457.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/1648109481299.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/1648109481299.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/1659416903799.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/1659416903799.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/E0izoA8WUA8YJbl.jpeg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/E0izoA8WUA8YJbl.jpeg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/E5y_fAGWQAQFMVH (1).jpeg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/E5y_fAGWQAQFMVH (1).jpeg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/FEh9d6GUUAMUOqX.jpeg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/FEh9d6GUUAMUOqX.jpeg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/FGA3uzSXsAIu9G8.jpeg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/FGA3uzSXsAIu9G8.jpeg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/FZEwn_mWQAE5D7D.jpeg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/FZEwn_mWQAE5D7D.jpeg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG-20211231-WA0003.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG-20211231-WA0003.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG-20220312-WA0007.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG-20220312-WA0007.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220103_231529.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220103_231529.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220103_231629.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220103_231629.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220103_231750.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220103_231750.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220103_231906.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220103_231906.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220103_232127.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220103_232127.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220103_233241.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220103_233241.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220113_222626.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220113_222626.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220125_163011.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220125_163011.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220309_193322.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220309_193322.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220324_051944.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220324_051944.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220325_161500.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220325_161500.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220325_161750.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220325_161750.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220326_205000.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220326_205000.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220326_205444.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220326_205444.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220327_164749.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220327_164749.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220610_185802.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220610_185802.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220813_054936.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220813_054936.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220814_225842.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220814_225842.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20220821_170624.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20220821_170624.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20221003_185226.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20221003_185226.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20221229_164358.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20221229_164358.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20221230_084509.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20221230_084509.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/IMG_20230124_175747.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/IMG_20230124_175747.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/bedcb056bde21dfe98bb49811ab4cf41.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/bedcb056bde21dfe98bb49811ab4cf41.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/chile_europa.jpeg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/chile_europa.jpeg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/dino3.png" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/dino3.png" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/dragon.png" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/dragon.png" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/dunning-gruger.png" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/dunning-gruger.png" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/not-normal.png" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/not-normal.png" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/sampling-bias.png" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/sampling-bias.png" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/standards.png" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/standards.png" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/stormtroopocat.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/stormtroopocat.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+<div>
+<p><a href="./images/albums/gallery/understanding.jpg" class="lightbox" data-gallery="quarto-grid-gallery"><img src="./images/albums/gallery/understanding.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-gallery-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1271,6 +1507,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1339,13 +1602,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'alternate';
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1373,18 +1638,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1416,11 +1670,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1430,8 +1721,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1443,7 +1743,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1487,6 +1909,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1512,6 +1935,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1572,6 +2021,59 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="">2025</a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/juancarloscastillo/jc-quarto">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Last Update: 2025-03-19</p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
 
 
 
