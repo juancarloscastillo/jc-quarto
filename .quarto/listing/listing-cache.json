@@ -12,7 +12,6 @@
       "proyectos/posts/*/*.qmd",
       "blog/posts/*/*.qmd",
       "tesis/posts/*.qmd",
-      "images/albums/*",
       "images/albums/gallery/*"
     ],
     "proyectos/proyectos.qmd": [
@@ -23,20 +22,6 @@
     ],
     "tesis/tesis.qmd": [
       "posts/*.qmd"
-    ],
-    "parallax.qmd": [
-      "publication/posts/*.qmd",
-      "docencia/posts/*/*.qmd",
-      "proyectos/posts/*/*.qmd",
-      "blog/posts/*/*.qmd",
-      "tesis/posts/*.qmd"
-    ],
-    "galeria/galeria.qmd": [
-      "posts",
-      "albums/gallery/*.jpg",
-      "albums/gallery/*.png",
-      "albums/gallery/*.jpeg",
-      "albums/gallery/*"
     ]
   }
 }

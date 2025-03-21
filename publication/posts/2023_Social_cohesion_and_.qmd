@@ -15,7 +15,10 @@ about:
     - icon: github
       href: https://github.com/jciturras/frontiers-cohesion
 ---
-url_pdf : "" 
+- icon: github
+  icon_pack: fab
+  name: Github
+  web: https://github.com/jciturras/frontiers-cohesion
 
 ---
 

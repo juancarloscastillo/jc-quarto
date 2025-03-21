@@ -10,15 +10,11 @@ categories : ["Guía o cotutor"]
 about:
   template: marquee
   links:
-    - icon: graduation-cap
-      href: /tag/guia-o-cotutor/
     - icon: file-pdf-fill
       href: https://franciscomeneses.github.io/Tesis/
     - icon: github
       href: https://github.com/franciscomeneses/Tesis
 ---
----
-
 ![](/images/tesis-francisco.png)
 # Resumen
 

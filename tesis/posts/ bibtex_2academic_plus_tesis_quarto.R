@@ -290,7 +290,7 @@ bibtex_2academic <- function(bibfile,
       # Crear lista vacía para los links extraídos de annotation
       annotation_links <- list()
       
-      # 1. Eliminar el bloque de "Prof. Guía"
+      # 1. Eliminar el bloque de "Prof. Guía" (incluyendo el ícono graduation-cap)
       x[["annotation"]] <- gsub(
       	"- icon: graduation-cap.*?(?=- icon|$)",  # patrón multilinea hasta el siguiente icon o fin
       	"",
@@ -319,11 +319,14 @@ bibtex_2academic <- function(bibfile,
       		
       		list(icon = icon_name, href = url)
       	})
+      	
+      	# Filtrar el enlace "graduation-cap" para excluirlo de la lista
+      	annotation_links <- Filter(function(link) link$icon != "graduation-cap", annotation_links)
       }
       
-      # 3. Eliminar esos bloques de iconos + enlaces de annotation (limpiarlo completamente)
+      # 3. Eliminar bloques de iconos + enlaces de annotation (incluyendo los que comienzan con - icon: y los comentarios)
       x[["annotation"]] <- gsub(
-      	"- icon: [^\\n]+\\s*\\n\\s*(icon_pack: [^\\n]+\\s*\\n)?\\s*(name: [^\\n]+\\s*\\n)?\\s*(web:|href:) [^\\n]+\\n?",
+      	"(\\n|^)\\s*-\\s*icon:\\s*[^\\n]+\\s*\\n\\s*(icon_pack:\\s*[^\\n]+\\s*\\n)?\\s*(name:\\s*[^\\n]+\\s*\\n)?\\s*(web:|href:)\\s*[^\\n]+\\s*(#.*)?\\n?",
       	"",
       	x[["annotation"]],
       	perl = TRUE
@@ -337,9 +340,27 @@ bibtex_2academic <- function(bibfile,
       	perl = TRUE
       )
       
-      # 5. Limpiar líneas en blanco adicionales
+      # 5. Eliminar cualquier campo de URL residual (como "url_pdf : \"\"")
+      x[["annotation"]] <- gsub(
+      	"url_[^:]+:\\s*\"[^\"]*\"\\s*",
+      	"",
+      	x[["annotation"]]
+      )
+      
+      # 6. Eliminar cualquier bloque de íconos residual (como "- icon: file ...")
+      x[["annotation"]] <- gsub(
+      	"(\\n|^)\\s*-\\s*icon:\\s*[^\\n]+\\s*\\n\\s*(icon_pack:\\s*[^\\n]+\\s*\\n)?\\s*(name:\\s*[^\\n]+\\s*\\n)?\\s*(web:|href:)\\s*[^\\n]+\\s*(#.*)?\\n?",
+      	"",
+      	x[["annotation"]],
+      	perl = TRUE
+      )
+      
+      # 7. Limpiar líneas en blanco adicionales
       x[["annotation"]] <- gsub("\n{2,}", "\n\n", x[["annotation"]])  # máximo 1 salto doble
       x[["annotation"]] <- trimws(x[["annotation"]])  # eliminar espacios al inicio y final
+     
+      
+ 
       
       # ----------------- LINKS DESDE CAMPOS ESPECIALES -----------------
       

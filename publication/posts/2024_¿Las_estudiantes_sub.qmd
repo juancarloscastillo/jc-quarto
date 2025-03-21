@@ -13,15 +13,7 @@ about:
     - icon: file-slides-fill
       href: l
 ---
-url_pdf : "" 
-
-# - icon: github
-  icon_pack: fab
-  name: Github
-  web: 
-
----
-![](/images/congsocio2024nudos.png)
+# ![](/images/congsocio2024nudos.png)
 
 ## Documento de presentación
 

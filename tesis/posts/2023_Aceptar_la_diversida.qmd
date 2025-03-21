@@ -10,15 +10,12 @@ categories : ["Guía o cotutor"]
 about:
   template: marquee
   links:
-    - icon: graduation-cap
-      href: /tag/guia-o-cotutor/
     - icon: file-pdf-fill
       href: https://kevin-carrasco.github.io/aceptar-diversidad/
     - icon: github
       href: https://github.com/Kevin-carrasco/aceptar-diversidad
     - icon: file-slides-fill
       href: https://kevin-carrasco.github.io/presentacion-tesis/examen-titulo/presentacion.html#1
----
 ---
 ![](/images/tesis-kevin.png)
 

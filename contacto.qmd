@@ -6,7 +6,7 @@ title: "Contacto"
 
 - Inscribirse abajo; realizada la inscripción no es necesario enviar correo ni confirmar.
 - Las reuniones pueden ser presenciales u online, en este último caso en [Meet, link: bit.ly/reuniones-jc](https://bit.ly/reuniones-jc). 
-- Si no hay horarios disponibles y se requiere una reunión pronto, escribir a [juancastillov@uchile.cl](juancastillov@uchile.cl)
+- Si no hay horarios disponibles y se requiere una reunión pronto, escribir a [juancastillov@uchile.cl](mailto:juancastillov@uchile.cl)
 
 
 <!-- Calendly inline widget begin -->

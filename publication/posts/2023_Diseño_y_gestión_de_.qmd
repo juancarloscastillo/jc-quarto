@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://lisa-coes.github.io/presentaciones/flujo-UCEN-Ene2023/UCEN-Ene2023.html#1
 ---
-url_pdf : "" 
-
 ---
 
 ## Documento de presentación

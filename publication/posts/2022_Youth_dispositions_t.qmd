@@ -15,8 +15,6 @@ about:
     - icon: camara-video-fill
       href: https://www.youtube.com/watch?v=8kpOp__ZyVU
 ---
-url_pdf : "" 
-
 # #- icon: github
 #  icon_pack: fab
 #  name: Github

@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://ocscoes.github.io/presentaciones/ISA-Melbourne-2023.html
 ---
-url_pdf : "" 
-
 # ---
 
 ![](https://ocscoes.github.io/presentaciones/images/ISA.png)textbackslashtextbackslash 

@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/ESRA2023.html#1
 ---
-url_pdf : "" 
-
 # ---
 ![](https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/images/ESRA.png)
 

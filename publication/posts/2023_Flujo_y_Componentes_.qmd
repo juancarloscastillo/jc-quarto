@@ -17,8 +17,6 @@ about:
     - icon: camara-video-fill
       href: https://www.youtube.com/watch?v=ZG1Gk_iqTTA
 ---
-url_pdf : "" 
-
 ---
 
 ![](https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/logo-congreso.png)

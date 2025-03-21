@@ -13,7 +13,7 @@ about:
 
 ::: {.button-container style="display: flex; gap: 10px;"}
 ::: {.button}
-[<i class="bi bi-link-45deg"></i>](https://cienciasocialabierta.netlify.app"){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+[<i class="bi bi-link-45deg"></i>](https://cienciasocialabierta.netlify.app){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
 :::
 
 ::: {.button}

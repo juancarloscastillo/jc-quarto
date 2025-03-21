@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://ocscoes.github.io/presentaciones/FGZ-Bremen-2024.html
 ---
-url_pdf : "" 
-
 # ---
 
 ![](https://fgz-risc-data.de/f/e/source/workshop20240625.jpg)

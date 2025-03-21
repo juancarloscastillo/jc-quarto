@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://ocscoes.github.io/presentaciones/global-solidarities-Jan2024/bremen_global_sol2024.html
 ---
-url_pdf : "" 
-
 # ---
 ![](https://www.hilfswerft.de/wp-content/uploads/2016/03/universitat-bremen_f.png)
 

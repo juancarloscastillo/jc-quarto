@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: l
 ---
-url_pdf : "" 
-
 # ---
 ![](/images/congsoc2024-edumer.png)
 

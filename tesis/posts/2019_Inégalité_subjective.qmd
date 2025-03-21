@@ -10,8 +10,6 @@ categories : ["Guía o cotutor"]
 about:
   template: marquee
   links:
-    - icon: graduation-cap
-      href: /tag/guia-o-cotutor/
     - icon: file-pdf-fill
       href: /tesis/2019_inegalite_subjective/#documento
 ---

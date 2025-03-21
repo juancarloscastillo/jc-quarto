@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://educacion-meritocracia.github.io/meritocracia-escuela-agencia/presentations//demosal2023/demosal2023.html
 ---
-url_pdf : "" 
-
 # ---
 ## Documento de presentación
 

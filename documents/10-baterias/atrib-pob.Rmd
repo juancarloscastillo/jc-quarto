@@ -1,0 +1,89 @@
+---
+title: "Preparación datos atribuciones pobreza"
+author: "jc"
+date: '2022-11-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# libraries
+```{r}
+pacman::p_load(sjmisc,lavaan,haven,dplyr,sjPlot, sjlabelled)
+```
+
+
+# Datos 
+
+Los datos provienen de la encuesta "Desigualdad, Justicia y Participación Política" - FONDECYT Iniciación 11121203 (2013-2015) [Social justice and citizenship participation: An international comparison with focus on the case of Chile](https://jc-castillo.com/project/fondecyt-iniciacion/)
+
+
+
+```{r eval=FALSE}
+data=read_spss("files/data/external_data/Base JDIntegrada131105_rec2.sav")
+dim(data)
+names(data) # mayusculas, cambiar
+names(data)=tolower(names(data)) # change variable case
+
+```
+
+
+# Seleccionar variables
+```{r}
+find_var(data = data,"pobreza")
+
+data<-data %>% select(p1a:p1e) # select variables
+names(data)
+```
+
+# Procesamiento
+
+## Variables atribuciones pobreza
+
+```{r}
+frq(data$p1a) # falta habilidad
+frq(data$p1b) # malasuerte
+frq(data$p1c) # faltaesfuerzo
+frq(data$p1d) # sistema económico
+frq(data$p1e) # sistema educativo
+```
+
+## Recodificar 8 y 9 a NA
+
+```{r}
+data <- data %>% select(p1a:p1e) %>% sjlabelled::set_na(., na = c(8,9), drop.levels = TRUE) 
+```
+
+* Nota: se usa set_na (de sjlabelled) porque de otra manera (ej: recode de car) quedan las etiquenas de los NA presentes aunque tengan valor 0; mejor eliminarlas con la opción de drop.levels de esta función.
+
+## Nombre variables
+
+```{r}
+data <- data %>% rename("falthab"=p1a,  # meritocracia esfuerzo
+                        "malasue"=p1b,
+                        "faltesf"=p1c,
+                        "sisecon"=p1d,
+                        "siseduc"=p1e
+                        ) 
+names(data)
+```
+
+## Chequeo
+
+```{r}
+sjmisc::descr(data,
+      show = c("label","range", "mean", "sd", "NA.prc", "n"))%>%
+      kable(.,"markdown")
+```
+
+
+## Guardar para análisis
+
+```{r}
+save(data,file = "files/data/generated_data/atribpob.RData")
+```
+
+

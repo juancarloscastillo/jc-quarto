@@ -15,8 +15,6 @@ about:
     - icon: file-slides-fill
       href: https://justicia-distributiva.github.io/factorial-impuestos/presentations/ESRA-milan-2023/presentation-esra-2023.html#1
 ---
-url_pdf : "" 
-
 # ---
 
 ![](https://justicia-distributiva.github.io/brechas-genero/presentations/ESRA2023/images/ESRA.png)

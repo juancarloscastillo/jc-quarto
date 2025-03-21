@@ -20,7 +20,7 @@ about:
     - icon: github
       href: https://github.com/juancarloscastillo
     - icon: envelope
-      href: contacto.html
+      href: contacto.qmd
 
 listing:
 - id: publication

@@ -13,8 +13,6 @@ about:
     - icon: osf
       href: https://osf.io/muv9r/
 ---
-url_pdf : ""
-
 ---
 
 

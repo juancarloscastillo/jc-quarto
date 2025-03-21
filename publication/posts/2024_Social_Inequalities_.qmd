@@ -13,15 +13,7 @@ about:
     - icon: file-slides-fill
       href: l
 ---
-url_pdf : "" 
-
-# - icon: github
-  icon_pack: fab
-  name: Github
-  web: 
-
----
-![](/images/konstanz.png)
+# ![](/images/konstanz.png)
 ![](https://inequality-conference.de/wp-content/uploads/2021/12/Bodenseeforum_Aussenansicht-1024x517.jpg)
 
 Chair: Gabriele Spilker, University of Konstanz

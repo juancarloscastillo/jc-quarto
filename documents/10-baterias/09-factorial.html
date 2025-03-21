@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Encuestas Sociales</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".small[Juan Carlos Castillo    Departamento de Sociología - UCH / COES   ]" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="../../files/css/custom_2020.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: front
+ 
+
+
+
+
+
+
+
+
+&lt;!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- rmarkdown::render('static/docpres/07_interacciones/7interacciones.Rmd', 'xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+---&gt;
+
+
+.pull-left[
+# Encuestas Sociales
+## Juan Carlos Castillo
+## Sociología FACSO - UChile
+## 2do Sem 2022
+## [.green[encuestas-sociales.netlify.com]](https://encuestas-sociales.netlify.com)
+]
+
+
+.pull-right[
+.right[
+&lt;br&gt;
+## .yellow[Sesión 10: Baterías de indicadores múltiples: Indices y análisis factorial]
+![:scale 70%](../../files/img/eval-hires.png)
+
+]
+]
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+class: middle center
+
+# ¿Por qué usar baterías?
+
+---
+class: middle center
+
+.center[
+![:scale 100%](../../files/img/slides/bateria-atrib-pob.png)
+]
+
+
+---
+class: middle
+
+.pull-left-narrow[
+# Preguntas y error de medición
+]
+.pull-right-wide[
+.content-box-yellow[
+-   Para medir hechos observables simples usualmente se utiliza **una
+    pregunta** (ej: edad)
+
+-   Fenómenos complejos se miden en general con más de una pregunta, con
+    el objetivo de dar mejor cuenta del atributo (i.e. minimizar error
+    de medición)
+]]
+
+
+---
+# Baterías de indicadores múltiples
+
+- en general las encuestas suelen incluir varias preguntas respecto de un mismo tema -&gt; .red[baterías de indicadores múltiples]
+
+--
+
+- cubren distintos aspectos de un mismo fenómeno complejo que no se agota en solo un indicador -&gt; minimiza .red[error de medición]
+
+--
+
+- .red[problema]: ¿cómo se analizan indicadores que están relacionados?¿cómo se muestran los resultados?
+
+---
+# Análisis de indicadores en baterías
+
+.pull-left-narrow[
+1. .red[Univariado]: se sugiere presentar análisis descriptivos que contengan todos los indicadores para poder comparar frecuencias
+]
+
+.pull-right-wide[
+.center[
+![:scale 100%](../../files/img/slides/likert-plot.png)
+.small[(likert plot, `sjPlot`)]
+]
+]
+
+---
+# Análisis de indicadores en baterías
+
+.pull-left-narrow[
+
+2\. .red[Bivariado]: tablas/gráficos de correlaciones
+
+(`corrplot`)
+]
+
+.pull-right-wide[
+.center[
+![:scale 85%](../../files/img/slides/corrplot.png)
+
+]
+]
+
+---
+# Análisis de indicadores en baterías
+
+- Se podría asumir un concepto o .red[dimensión subyacente] a la batería de items
+
+- Para facilitar el avance en el análisis (por ejemplo, relacionar ese concepto subyacente con otras variables), muchas veces se reduce la batería a algún .red[tipo de índice (sumativo/promedio)]
+
+- ¿Podemos asegurar que los items están realmente .red[midiendo lo mismo]?
+
+---
+## ¿Miden lo mismo?
+
+.center[
+![:scale 100%](../../files/img/slides/bateria-atrib-pob.png)
+]
+
+---
+# Recordando: Error total de encuesta
+.center[
+![:scale 60%](../../files/img/slides/ratswd-errors.png)
+]
+
+(Groves et al, 2010, en RATSWD WP 245, 2015)
+
+---
+class: middle
+
+.pull-left-narrow[
+# Preguntas y error de medición
+]
+
+.pull-right-wide[
+.content-box-red[
+-   En este marco se asume que el **indicador es distinto del atributo**, y que la medición del atributo o variable latente conlleva error
+
+-   Cuando la el atributo se mide con más de una pregunta, se puede
+    intentar estimar la **variable latente** mediante índices o           técnicas de **análisis factorial**
+]]
+
+---
+# Medición y error
+.pull-left[
+
+.center[
+![:scale 80%](../../files/img/slides/peras-manzanas.png)
+]
+]
+
+.pull-right[
+- antes de agrupar indicadores en un índice hay que evaluar si los indicadores se encuentran relacionados
+
+  - -&gt; si miden constructos similares
+  - -&gt; si la medición es .red[confiable]
+]
+
+---
+class: inverse center
+
+&lt;br&gt;
+.content-box-red[
+## .red[¿Cómo estimar el nivel de relación entre indicadores que miden un mismo constructo?]
+]
+--
+
+### Distintas maneras, pero todas se basan en la técnica de la .red[correlación]
+
+---
+# Bases correlación
+
+-   varianza 
+`$$\sigma^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2} {n-1}=\frac{\sum_{i=1}^{n}(x_i - \bar{x})(x_i - \bar{x})} {n-1}$$`
+
+-   covarianza 
+`$$cov(x,y) = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {n-1}$$`
+---
+# Correlación
+
+`$$r= \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {(n-1)\sigma_x \sigma_y }$$`
+
+
+- medida estandarizada de asociación entre variables continuas
+
+- varía entre -1 y 1
+
+- mientras más cercana a |1|, mayor es la correlación entre dos variables
+
+
+---
+.pull-left-narrow[
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+# Correlación
+]
+
+.pull-right-wide[
+
+.center[
+![](../../files/img/slides/corr.png)
+]]
+
+
+---
+class: inverse bottom right
+
+## .red[Correlaciones, baterías y dimensiones subyacentes]
+
+---
+# Matriz de correlaciones (1)
+
+.center[
+  ![:scale 60%](../../files/img/slides/cormat1.png)
+
+Matriz hipotética de indicadores que miden un mismo constructo
+
+]
+
+---
+# Ej. Matriz de correlaciones (2)
+
+.center[
+  ![:scale 60%](../../files/img/slides/cormat2.png)
+
+Matriz hipotética de indicadores que miden constructos independientes
+] 
+
+---
+# Ej. Matriz de correlaciones (3)
+
+.center[
+  ![:scale 60%](../../files/img/slides/cormat3.png)
+
+Matriz hipotética de variables que miden dos constructos independientes] 
+
+---
+class: inverse
+
+## .yellow[Entonces:] 
+
+### 1. analizar la .red[matriz de correlaciones] antes de generar cualquiér técnica de reducción de información (ej: crear índice)
+
+### 2. evaluar la posibilidad de generación algún tipo de .red[índice] que resuma la información
+---
+# Datos ejemplo
+
+- batería atribuciones de pobreza, encuesta "Desigualdad, Justicia y Participación Política" - FONDECYT Iniciación 11121203 (2013-2015) [Social justice and citizenship participation](https://jc-castillo.com/project/fondecyt-iniciacion/)
+
+.center[
+![:scale 100%](../../files/img/slides/bateria-atrib-pob.png)
+]
+
+---
+
+
+
+
+```r
+load("input/data/data-proc.Rdata")
+descr(data)
+```
+
+.small[
+
+|   |var     |label                              |    n|   NA.prc|     mean|       sd|range   |
+|:--|:-------|:----------------------------------|----:|--------:|--------:|--------:|:-------|
+|2  |falthab |Razones pobreza falta de habilidad | 1228| 1.365462| 2.630293| 1.254220|4 (1-5) |
+|3  |malasue |Razones pobreza mala suerte        | 1227| 1.445783| 2.019560| 1.140079|4 (1-5) |
+|1  |faltesf |Razones pobreza falta de esfuerzo  | 1238| 0.562249| 3.155897| 1.290758|4 (1-5) |
+|4  |sisecon |Razones pobreza sistema económico  | 1218| 2.168675| 4.036946| 1.095047|4 (1-5) |
+|5  |siseduc |Razones pobreza sistema educativo  | 1227| 1.445783| 4.088835| 1.088767|4 (1-5) |
+]
+
+---
+## Gráfico barras frecuencia porcentual
+
+
+```r
+plot_stackfrq(data)
+```
+
+![](09-factorial_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+
+
+---
+## Ajustando dimensiones
+
+````
+```{r echo=TRUE, fig.height=5, fig.width=12}
+plot_stackfrq(data)
+```
+````
+
+.center[
+![](09-factorial_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+]
+
+---
+## Ajustes adicionales
+
+.medium[
+````
+```{r echo=TRUE, fig.height=5, fig.width=12}
+plot_stackfrq(data, sort.frq = "last.desc", geom.colors = "OrRd") +
+theme(legend.position="bottom")
+```
+````
+]
+
+.center[
+![](09-factorial_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+]
+
+---
+## Matriz de correlaciones
+
+
+
+```r
+cormat &lt;- cor(data)
+cormat
+```
+
+```
+##         falthab malasue faltesf sisecon siseduc
+## falthab       1      NA      NA      NA      NA
+## malasue      NA       1      NA      NA      NA
+## faltesf      NA      NA       1      NA      NA
+## sisecon      NA      NA      NA       1      NA
+## siseduc      NA      NA      NA      NA       1
+```
+
+Esta función no resulta ya que requiere que no existan casos perdidos 
+---
+## Matriz de correlaciones
+
+Entonces:
+
+
+```r
+cormat &lt;- cor(na.omit(data))
+cormat
+```
+
+```
+##              falthab    malasue     faltesf     sisecon      siseduc
+## falthab  1.000000000 0.31793357  0.36246039 -0.02787884 -0.005893529
+## malasue  0.317933565 1.00000000  0.16936872  0.02755708  0.013865045
+## faltesf  0.362460395 0.16936872  1.00000000 -0.06579454 -0.020114542
+## sisecon -0.027878843 0.02755708 -0.06579454  1.00000000  0.593625639
+## siseduc -0.005893529 0.01386504 -0.02011454  0.59362564  1.000000000
+```
+
+---
+## Matriz de correlaciones (Formato publicable)
+
+.tiny[
+
+```r
+tab_corr(data)
+```
+
+&lt;table style="border-collapse:collapse; border:none;"&gt;
+&lt;tr&gt;
+&lt;th style="font-style:italic; font-weight:normal; border-top:double black; border-bottom:1px solid black; padding:0.2cm;"&gt;&amp;nbsp;&lt;/th&gt;
+&lt;th style="font-style:italic; font-weight:normal; border-top:double black; border-bottom:1px solid black; padding:0.2cm;"&gt;Razones pobreza falta de habilidad&lt;/th&gt;
+&lt;th style="font-style:italic; font-weight:normal; border-top:double black; border-bottom:1px solid black; padding:0.2cm;"&gt;Razones pobreza mala suerte&lt;/th&gt;
+&lt;th style="font-style:italic; font-weight:normal; border-top:double black; border-bottom:1px solid black; padding:0.2cm;"&gt;Razones pobreza falta de esfuerzo&lt;/th&gt;
+&lt;th style="font-style:italic; font-weight:normal; border-top:double black; border-bottom:1px solid black; padding:0.2cm;"&gt;Razones pobreza sistema económico&lt;/th&gt;
+&lt;th style="font-style:italic; font-weight:normal; border-top:double black; border-bottom:1px solid black; padding:0.2cm;"&gt;Razones pobreza sistema educativo&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="font-style:italic;"&gt;Razones pobreza falta de habilidad&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.318&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.362&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;-0.028&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;-0.006&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="font-style:italic;"&gt;Razones pobreza mala suerte&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.318&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.169&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;0.028&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;0.014&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="font-style:italic;"&gt;Razones pobreza falta de esfuerzo&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.362&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.169&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;-0.066&lt;span style="vertical-align:super;font-size:0.8em;"&gt;*&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;-0.020&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="font-style:italic;"&gt;Razones pobreza sistema económico&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;-0.028&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;0.028&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;-0.066&lt;span style="vertical-align:super;font-size:0.8em;"&gt;*&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.594&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="font-style:italic;"&gt;Razones pobreza sistema educativo&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;-0.006&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;0.014&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center; color:#999999;"&gt;-0.020&lt;span style="vertical-align:super;font-size:0.8em;"&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;0.594&lt;span style="vertical-align:super;font-size:0.8em;"&gt;***&lt;/span&gt;&lt;/td&gt;
+&lt;td style="padding:0.2cm; text-align:center;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="6" style="border-bottom:double black; border-top:1px solid black; font-style:italic; font-size:0.9em; text-align:right;"&gt;Computed correlation used pearson-method with listwise-deletion.&lt;/td&gt;
+&lt;/tr&gt;
+ 
+&lt;/table&gt;
+]
+
+---
+## Matriz de correlaciones - gráfico
+
+
+```r
+corrplot::corrplot(cormat)
+```
+
+![](09-factorial_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+
+---
+## Matriz de correlaciones - gráfico ajustado
+
+
+.pull-left-narrow[
+.small[
+
+```r
+  corrplot::corrplot(cormat,
+    method = "color",
+    addCoef.col = "#000390",
+    type = "upper",
+    tl.col = "black",
+    col=colorRampPalette(c("white","#0068DC"))(8),
+    bg = "white",
+    na.label = "-")
+```
+]]
+
+.pull-right-wide[
+.center[
+![](09-factorial_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+]
+]
+
+---
+## Hacia la construcción de un índice
+
+---
+# Alpha de Cronbach
+
+- índice de consistencia interna de una batería
+
+- varía entre 0 y 1; valores más cercanos a 1 indican mayor consistencia
+
+- en general valores sobre 0.6 se consideran aceptables
+
+- más información [aquí](https://rpubs.com/jboscomendoza/alfa_cronbach_r#:~:text=El%20Alfa%20de%20Cronbach%20nos,apuntando%E2%80%9D%20en%20la%20misma%20direcci%C3%B3n.))
+
+---
+# Alpha de Cronbach
+
+.pull-left[
+- funcion alpha de la librería `psych`
+
+- se genera un objeto (lo llamaremos alpha). Contiene bastante información, por ahora nos enfocaremos solo en el valor de alpha (`raw_alpha`)
+]
+.pull-right[
+.small[
+
+```r
+alpha &lt;-psych::alpha(data)
+```
+
+```
+## Some items ( falthab malasue faltesf ) were negatively correlated with the total scale and 
+## probably should be reversed.  
+## To do this, run the function again with the 'check.keys=TRUE' option
+```
+
+```r
+alpha$total$raw_alpha
+```
+
+```
+## [1] 0.4363206
+```
+]
+]
+---
+# Alpha de Cronbach
+
+- puntaje 0.43, por lo tanto bajo los valores aceptables de consistencia interna
+
+- esto ya se podía anticipar desde la matriz de correlaciones, que aparentemente mostraba dos dimensiones subyacentes a la batería
+
+- además, se genera un mensaje de advertencia sobre posibles items codificados a la inversa (dada la correlación entre items de dimensiones distintas)
+
+---
+# Opciones
+
+- construcción de índices basados en la información de la matriz de correlaciones
+
+- análisis factorial
+
+
+---
+# Construcción de índices
+
+---
+# Índice promedio
+
+- vamos a generar 2 índices a partir de esta batería: uno para atribución interna (falthab,faltesf,malasue) y otro para externa (sisecon,siseduc)
+
+- tema valores perdidos:
+  - para perder el mínimo de casos se recomienda realizar índice aún con casos que no hayan respondido algún item
+  - ya que esto distorsionaría el puntaje si fuera sumado, se hace un índice promedio, especificando que se calcule aún con valores perdidos
+  
+---
+Indice de atribución interna (Promedio)
+
+
+```r
+data &lt;- cbind(data, "interna_prom"=rowMeans(data %&gt;% select(falthab,faltesf,malasue), na.rm=TRUE))
+
+data &lt;- cbind(data, "externa_prom"=rowMeans(data %&gt;% select(sisecon,siseduc), na.rm=TRUE))
+
+names(data)
+```
+
+```
+## [1] "falthab"      "malasue"      "faltesf"      "sisecon"     
+## [5] "siseduc"      "interna_prom" "externa_prom"
+```
+
+---
+
+
+---
+class: middle
+
+.pull-left-narrow[
+#  Variables latentes (1)
+]
+.pull-right-wide[
+
+-   La mayor parte de las variables en el mundo social no son
+    directamente observables. Esto las hace constructos hipotéticos
+    "latentes"
+
+-   La medición de variables latentes se realiza a partir de indicadores
+    observables, tales como ítems de un cuestionario
+]
+
+---
+class: middle
+
+.pull-left-narrow[
+#  Variables latentes (2)
+]
+.pull-right-wide[
+-   Lo latente puede ser entendido como la varianza compartida por
+    diferentes indicadores observados
+
+-   La medición de variables latentes se encuentra asociada al modelo de
+    factor común (Thurstone) y al análisis factorial
+]
+
+---
+# Factor común
+
+.pull-left[
+-   Cada indicador en un set de medidas observadas es una función lineal
+    de uno o más factores comunes y un factor único
+
+-   Como referencia podemos usar la teoría clásica de test (CTT), que
+    divide el puntaje de los indicadores entre puntaje verdadero y error
+    ]
+
+--
+
+.pull-right[
+&lt;br&gt;
+`$$X=T+E$$`
+
+`$$\sigma^{2}_{x}=\sigma^{2}_{t} + \sigma^{2}_{e}$$`
+
+Donde 
+- X= puntaje observado, 
+- T= puntaje verdadero, y 
+- E= error
+
+]
+---
+# Modelo de factor común
+
+.pull-left[
+-   La existencia de un solo ítem por constructo no permite aislar puntaje verdadero del error
+
+-   Si existen más ítems, el **análisis factorial** y
+    distinguir entre **varianza común** (compartida con otros indicadores) y **varianza única** (o error)
+]
+
+.pull-right[
+.center[
+  ![](../../files/img/slides/figure1efa.jpg)
+]
+]
+---
+# Análisis factorial
+
+-   El análisis factorial es un conjunto de métodos para explicar las
+    correlaciones entre variables en términos de entidades más generales
+    llamadas variables latentes o factores
+
+-   El o los factores darían cuenta (i.e. causarían) de la covariación
+    entre una serie de medidas observadas (indicadores)
+
+---
+# Análisis factorial
+
+-   Un factor es una variable no observada que da cuenta de las
+    correlaciones entre indicadores = los indicadores están
+    correlacionados porque comparten una causa común (*independencia
+    condicional*)
+
+
+-   Es un intento de comprensión más parsimonioso que la correlación
+    entre una serie de indicadores ya que el número de factores es menor
+    que el de indicadores
+
+
+---
+# Objetivos del análisis factorial
+
+-   Teórico: relacionar datos con dimensiones latentes basadas en
+    conceptos (validez de constructo)
+
+-   Pragmático: hacer sentido de un conjunto de datos, reducción de
+    dimensiones y obtención de puntajes
+
+-   Metodológico: aislar el error (varianza única) de la varianza común
+
+
+---
+# Alternativas en análisis factorial
+
+-   exploratorio (EFA): Permite explorar las dimensiones que subyacen a
+    una escala
+
+-   confirmatorio (CFA): Permite confirmar las dimensiones que subyacen
+    a una escala, aislando el error de medición en la estimación
+
+---
+# Análisis factorial exploratorio (EFA)
+
+-   Forma de análisis factorial donde se estiman la o las variables
+    latentes a un conjunto de indicadores, sin una especificación previa
+    de la estructura factorial.
+
+-   Preguntas a responder:
+
+    -   ¿Cuántos factores subyacen a un conjunto de indicadores?
+
+    -   ¿Cómo se relacionan los indicadores con los factores?
+
+    -   ¿Cómo es la calidad del modelo estimado?
+
+
+---
+### Características EFA
+
+-   Basado en la matriz de correlaciones
+
+-   Diferentes métodos de extracción de factores
+
+-   Determinación del número y "calidad" de las dimensiones (continuas)
+    subyacentes a una escala
+
+-   Dimensiones continuas latentes: factores
+
+-   Variables observadas: indicadores
+
+
+
+
+---
+### Ejemplo Brown 2006 (Chap.2)
+
+.center[
+
+![:scale 50%](../../files/img/slides/brown_cormat.png)
+
+]
+
+---
+## Ejemplo Brown 2006 (Chap.2)
+
+.center[
+
+![:scale 50%](../../files/img/slides/brown_cormat.png)
+
+]
+
+---
+## Ejemplo Brown 2006 (Chap.2)
+
+.center[
+
+![](../../files/img/slides/brown_diag.png)
+
+]
+
+
+---
+### Ecuaciones fundamentales
+
+`$$y_{j}= \lambda_{j1} \eta_{1} + \lambda_{j2} \eta_{2} + ... + \lambda_{jm} \eta_{m} + \varepsilon_{j}$$`
+
+Donde
+
+-   `\(\eta\)`: factor
+
+-   `\(\lambda_{jm}\)` representa la carga factorial que relaciona al
+    indicador *j* con el factor `\(\eta\)`
+
+-   `\(\varepsilon_{j}\)` representa la varianza que es única al indicador
+    `\(y_{j}\)`
+
+
+---
+
+... aplicado al ejemplo de Brown 2006:
+
+- `\(D1=\lambda_{11}\eta_{1} + \varepsilon_{1}\)`
+- `\(D2=\lambda_{21}\eta_{1} + \varepsilon_{2}\)`
+- `\(D3=\lambda_{31}\eta_{1} + \varepsilon_{3}\)`
+- `\(D4=\lambda_{41}\eta_{1} + \varepsilon_{4}\)`
+
+
+
+---
+# Aplicado al ejemplo de Brown 2006:
+
+Reproduccion de matriz de correlaciones a patir de los parámetros del
+modelo. Ejemplo Brown 2006 cap. 2:
+
+-   VAR(D1)= `\(\sigma_{11}=\lambda_{11}\psi_{11} + \varepsilon_{1}=.83^{2}(1) + .31 = 1.00\)`
+
+-   COV(D1,D2)= `\(\sigma_{21}=\lambda_{11}\psi_{11}\lambda_{21}=(.83)(1)(.84) =.70\)`
+
+---
+# Conceptos y parámetros
+
+-   **Factores**: variables latentes que están a la base de las
+    correlaciones entre los indicadores
+
+-   **Cargas factoriales**: medida estandarizada de asociación (correlación) entre el indicador y la variable latente
+
+-   **Comunalidad**: proporción del indicador que se asocia a factor(es)
+    comun(es)
+
+---
+# Conceptos y parámetros (2)
+
+-   **Varianza única** (uniqueness): 1-comunalidad
+
+-   **Eigenvalues**: medida de proporción de la varianza total
+    correspondiente a cada uno de los factor (SS loadings)
+
+-   **Proporción de varianza** explicada por el factor = eigenvalue /
+    número de indicadores
+
+---
+# Pasos en el análisis
+
+-   Estimación de matriz de correlaciones
+
+-   Extraccion de factores
+
+-   Decisión sobre número de factores
+
+-   Rotación
+
+-   Interpretación y reporte
+
+-   Obtención de puntajes factoriales
+
+---
+
+.center[
+  ![:scale 45%](../../files/img/slides/process.png)
+]
+
+---
+## Supuestos a evaluar
+
+-   Nivel de medición de variables, normalidad
+
+-   Normalidad multivariada (test de normalidad multivariado, ej: Shapiro
+    Wilk multivariado)
+
+-   Adecuación muestal (KMO)
+.medium[
+      - varía entre 0 y 1, contrasta si las correlaciones parciales entre las variables son pequeñas.
+      
+- valores pequeños (menores a 0.5) indican que los datos no serían adecuados para EFA, ya que las correlaciones entre pares de variables no pueden ser explicadas por otras variables
+]
+
+---
+## Supuestos a evaluar (2)
+
+-   Nivel de correlaciones de la matriz: test de esfericidad de Bartlett
+
+    -   se utiliza para evaluar la hipótesis que la matriz de
+        correlaciones es una matriz identidad (diagonal 1 y bajo la
+        diagonal 0)
+
+    -   se busca significación (p `\(&lt;\)` 0.05)ya que se espera que las
+        variables estén correlacionadas
+
+
+---
+### Metodos de extracción
+
+-   Factores principales
+
+-   Factores principales iterados: estima comunalidades iterativamente,
+    reemplazandolas en la matriz de correlaciones a partir de las
+    comunalidades estimadas desde los factor loadings
+
+-   Maximum likelihood: maximiza la posibilidad de que los parametros reproduzcan los datos observados
+---
+# Instrumentos y criterios de selección del número de factores
+
+-   Criterio de Kaiser: eigenvalues mayores a 1
+
+-   Scree plot (gráfico de sedimentación)
+
+-   Análisis paralelo: comparación de eigenvalues de la muestra con
+    eigenvalues de datos aleatorios. Nº apropiado de factores: numero de
+    eigenvalues de los datos reales que son mayores que sus
+    correspondientes eigenvalues de datos aleatorios
+
+---
+## Screeplot y análisis paralelo
+
+.center[
+  ![:scale 60%](../../files/img/slides/parallel.PNG)
+]
+
+---
+## Tipos de rotación
+
+-   Ortogonal: asume que los factores no se encuentran correlacionados
+
+-   Oblicua: permite correlación entre factores
+
+.center[
+  ![:scale 60%](../../files/img/slides/rotate.PNG)
+]
+
+
+---
+### Reporte
+
+ {.scriptsize}
+ {.center}
+ {.tabular}
+l r r r r r Variable &amp; ML2 &amp; ML1 &amp; h2 &amp; u2 &amp; com BIO &amp; ** 0.86 &amp; 0.01 &amp;
+0.75 &amp; 0.25 &amp; 1.00 GEO &amp; ** 0.78 &amp; 0.02 &amp; 0.63 &amp; 0.37 &amp; 1.00 CHEM &amp; **
+0.88 &amp; -0.07 &amp; 0.75 &amp; 0.25 &amp; 1.01 ALG &amp; -0.06 &amp; ** 0.80 &amp; 0.63 &amp; 0.37 &amp;
+1.01 CALC &amp; -0.02 &amp; ** 0.98 &amp; 0.95 &amp; 0.05 &amp; 1.00 STAT &amp; 0.11 &amp; ** 0.49 &amp;
+0.29 &amp; 0.71 &amp; 1.11 SS loadings &amp; 2.14 &amp; 1.84 &amp; ML2 &amp; 1.00 &amp; 0.26 ML1 &amp;
+0.26 &amp; 1.00************
+
+
+
+[\[default\]]{#default label="default"}
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url("../hex_multiva_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 16.3em;
+  right: 31em;
+  width: 110px;
+  height: 70px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

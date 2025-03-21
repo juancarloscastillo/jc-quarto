@@ -10,17 +10,11 @@ categories : ["Guía o cotutor"]
 about:
   template: marquee
   links:
-    - icon: graduation-cap
-      href: /tag/guia-o-cotutor/
     - icon: file-pdf-fill
       href: https://anaisherrera.github.io/tesis/
     - icon: github
       href: https://github.com/anaisherrera/tesis/
 ---
----
-
-# Resumen
-
 En un mundo con altos niveles de desigualdad y crecientes expresiones de intoleran-
 cia, se hace fundamental la aprobación de políticas públicas que avancen a garantizar
 la igualdad de derechos. En sociedades democráticas la promoción de estas políticas
