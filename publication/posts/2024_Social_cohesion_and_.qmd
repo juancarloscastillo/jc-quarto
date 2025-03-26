@@ -1,5 +1,5 @@
 ---
-title : "Social cohesion and attitudinal changes toward migration"
+title : "Social Cohesion and Attitudinal Changes toward Migration"
 date : "2024-01-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
@@ -27,7 +27,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2024). *Social cohesion and attitudinal changes toward migration*.  GlobaLab Bremen Conversations on Global Solidarity . Bremen  (Online)
+Juan-Carlos Castillo (2024). *Social Cohesion and Attitudinal Changes toward Migration*.  GlobaLab Bremen Conversations on Global Solidarity . Bremen  (Online)
 
 :::
 

@@ -1,5 +1,5 @@
 ---
-title : "Conceptos y medición de cohesión social en proyectos internacionales"
+title : "Conceptos y Medición de Cohesión Social En Proyectos Internacionales"
 date : "2021-01-01"
 author : ["Juan-Carlos Castillo", "Francisco Olivos", "Julio Iturra"]
 categories : ["Report"]
@@ -18,7 +18,7 @@ ISSN 0719-6660
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Francisco Olivos, Julio Iturra (2021). *Conceptos y medición de cohesión social en proyectos internacionales*.  Documentos de Trabajo COES (47) 1--37 . Santiago COES
+Juan-Carlos Castillo, Francisco Olivos, Julio Iturra (2021). *Conceptos y Medición de Cohesión Social En Proyectos Internacionales*.  Documentos de Trabajo COES (47) 1--37 . Santiago COES
 
 :::
 

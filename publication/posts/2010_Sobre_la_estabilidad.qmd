@@ -1,5 +1,5 @@
 ---
-title : "Sobre la estabilidad del autoritarismo: Un caso de medición de invarianza longitudinal"
+title : "Sobre La Estabilidad Del Autoritarismo: Un Caso de Medición de Invarianza Longitudinal"
 date : "2010-01-01"
 author : ["Juan-Carlos Castillo", "Diego Carrasco"]
 categories : ["Report"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Diego Carrasco (2010). *Sobre la estabilidad del autoritarismo: Un caso de medición de invarianza longitudinal*.  Infórmes Técnicos MIDE UC (IT1008) 1--17 . Santiago Pontificia Universidad Católica de Chile
+Juan-Carlos Castillo, Diego Carrasco (2010). *Sobre La Estabilidad Del Autoritarismo: Un Caso de Medición de Invarianza Longitudinal*.  Infórmes Técnicos MIDE UC (IT1008) 1--17 . Santiago Pontificia Universidad Católica de Chile
 
 :::
 

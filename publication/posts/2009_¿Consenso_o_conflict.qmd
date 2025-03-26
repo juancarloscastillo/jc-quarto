@@ -1,5 +1,5 @@
 ---
-title : "¿Consenso o conflicto acerca de la distribución? La legitimación de la desigualdad económica en Chile en perspectiva comparada"
+title : "¿Consenso o Conflicto Acerca de La Distribución? La Legitimación de La Desigualdad Económica En Chile En Perspectiva Comparada"
 date : "2009-04-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2009). *¿Consenso o conflicto acerca de la distribución? La legitimación de la desigualdad económica en Chile en perspectiva comparada*.  . Lima, Universidad Católica
+Juan-Carlos Castillo (2009). *¿Consenso o Conflicto Acerca de La Distribución? La Legitimación de La Desigualdad Económica En Chile En Perspectiva Comparada*.  . Lima, Universidad Católica
 
 :::
 

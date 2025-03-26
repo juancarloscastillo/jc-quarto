@@ -1,5 +1,5 @@
 ---
-title : "Aprendizaje de la ciudadanía: Contextos, experiencias y resultados"
+title : "Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados"
 date : "2015-01-01"
 author : ["Cristian Cox", "Juan-Carlos Castillo"]
 categories : ["Book"]
@@ -18,7 +18,7 @@ Proyecto Fondecyt Formación Ciudadana I
 
 ::: {.callout-note title="How to cite this work"}
 
-Cristian Cox, Juan-Carlos Castillo (2015). *Aprendizaje de la ciudadanía: Contextos, experiencias y resultados*.  . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3
+Cristian Cox, Juan-Carlos Castillo (2015). *Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados*.  . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3
 
 :::
 

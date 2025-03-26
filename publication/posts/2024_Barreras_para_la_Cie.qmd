@@ -1,5 +1,5 @@
 ---
-title : "Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile."
+title : "Barreras Para La Ciencia Abierta En La Investigación En Ciencias Sociales En Chile."
 date : "2024-05-01"
 author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Cristobal Ortiz"]
 categories : ["Presentation"]
@@ -11,18 +11,16 @@ about:
   template: marquee
   links:
     - icon: file-slides-fill
-      href: l
+      href: https://lisa-coes.github.io/presentaciones/congreso-sociologia-stgo-Mayo2024/congreso-sociologia-stgo-Mayo2024.html#1
 ---
-# ![](/images/)
-
-## Documento de presentación
+# ## Documento de presentación
 
 <iframe width="700"  height="450" src="https://lisa-coes.github.io/presentaciones/congreso-sociologia-stgo-Mayo2024/congreso-sociologia-stgo-Mayo2024.html#1" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz (2024). *Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile.*.  Congreso Chileno de Sociología - PreAlas . Santiago
+Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz (2024). *Barreras Para La Ciencia Abierta En La Investigación En Ciencias Sociales En Chile.*.  Congreso Chileno de Sociología - PreAlas . Santiago
 
 :::
 

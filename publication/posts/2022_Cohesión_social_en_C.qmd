@@ -1,5 +1,5 @@
 ---
-title : "Cohesión social en Chile en tiempos de cambio: Indicadores, perfiles y factores asociados"
+title : "Cohesión Social En Chile En Tiempos de Cambio: Indicadores, Perfiles y Factores Asociados"
 date : "2022-03-01"
 author : ["Juan-Carlos Castillo", "Vicente Espinoza", "Emmanuelle Barozet"]
 categories : ["Report"]
@@ -24,7 +24,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Vicente Espinoza, Emmanuelle Barozet (2022). *Cohesión social en Chile en tiempos de cambio: Indicadores, perfiles y factores asociados*.  Documentos de Proyecto (LC/TS.2022/3) . Santiago CEPAL
+Juan-Carlos Castillo, Vicente Espinoza, Emmanuelle Barozet (2022). *Cohesión Social En Chile En Tiempos de Cambio: Indicadores, Perfiles y Factores Asociados*.  Documentos de Proyecto (LC/TS.2022/3) . Santiago CEPAL
 
 :::
 

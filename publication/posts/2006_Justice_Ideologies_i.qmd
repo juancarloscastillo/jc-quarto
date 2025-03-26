@@ -3,8 +3,8 @@ title : "Justice Ideologies in Highly Unequal Contexts. The Case of Chile in Com
 date : "2006-08-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Conference paper"]
-publication : " Poster presented at the 11th conference of the International Society for Justice Research. Berlin: Humboldt University"
-publication_short : " Poster presented at the 11th conference of the International Society for Justice Research. Berlin: Humboldt University"
+publication : " Poster Presented at the 11th Conference of the International Society for Justice Research. Berlin: Humboldt University"
+publication_short : " Poster Presented at the 11th Conference of the International Society for Justice Research. Berlin: Humboldt University"
 abstract : "(Abstract not available)"
 abstract_short : ""
 about:
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2006). *Justice Ideologies in Highly Unequal Contexts. The Case of Chile in Comparative Perspective*.  Poster presented at the 11th conference of the International Society for Justice Research. Berlin: Humboldt University
+Juan-Carlos Castillo (2006). *Justice Ideologies in Highly Unequal Contexts. The Case of Chile in Comparative Perspective*.  Poster Presented at the 11th Conference of the International Society for Justice Research. Berlin: Humboldt University
 
 :::
 

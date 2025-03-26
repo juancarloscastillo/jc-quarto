@@ -1,5 +1,5 @@
 ---
-title : "Internal and external attributions of poverty - Germany 1991/ 2006"
+title : "Internal and External Attributions of Poverty - Germany 1991/ 2006"
 date : "2007-01-01"
 author : ["S. Schneider", "Juan-Carlos Castillo"]
 categories : ["Report"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-S. Schneider, Juan-Carlos Castillo (2007). *Internal and external attributions of poverty - Germany 1991/ 2006*.  Working Paper (132). Berlin Humboldt University
+S. Schneider, Juan-Carlos Castillo (2007). *Internal and External Attributions of Poverty - Germany 1991/ 2006*.  Working Paper (132). Berlin Humboldt University
 
 :::
 

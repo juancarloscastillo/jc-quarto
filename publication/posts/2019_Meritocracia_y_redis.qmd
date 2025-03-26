@@ -1,5 +1,5 @@
 ---
-title : "Meritocracia y redistribución en Chile: señales de la opinión pública"
+title : "Meritocracia y Redistribución En Chile: Señales de La Opinión Pública"
 date : "2019-01-01"
 author : ["Luis Maldonado", "Juan-Carlos Castillo", "Julio Iturra", "Jorge Atria", "Francisco Meneses"]
 categories : ["Journal Article"]
@@ -19,7 +19,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Luis Maldonado, Juan-Carlos Castillo, Julio Iturra, Jorge Atria, Francisco Meneses (2019). *Meritocracia y redistribución en Chile: señales de la opinión pública*. Preprint SocArxiv - OSF 1--10  [https://doi.org/10.31235/osf.io/7qgyv](https://doi.org/10.31235/osf.io/7qgyv)
+Luis Maldonado, Juan-Carlos Castillo, Julio Iturra, Jorge Atria, Francisco Meneses (2019). *Meritocracia y Redistribución En Chile: Señales de La Opinión Pública*. Preprint SocArxiv - OSF 1--10  [https://doi.org/10.31235/osf.io/7qgyv](https://doi.org/10.31235/osf.io/7qgyv)
 
 :::
 

@@ -1,5 +1,5 @@
 ---
-title : "Redes de contacto y justificación de la desigualdad social: Una exploración desde el caso chileno."
+title : "Redes de Contacto y Justificación de La Desigualdad Social: Una Exploración Desde El Caso Chileno."
 date : "2022-01-01"
 author : ["Guillermo Beck", "Matias Bargsted", "Juan-Carlos Castillo"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Guillermo Beck, Matias Bargsted, Juan-Carlos Castillo (2022). *Redes de contacto y justificación de la desigualdad social: Una exploración desde el caso chileno.*. Enviado a revista
+Guillermo Beck, Matias Bargsted, Juan-Carlos Castillo (2022). *Redes de Contacto y Justificación de La Desigualdad Social: Una Exploración Desde El Caso Chileno.*. Enviado a revista
 
 :::
 

@@ -1,5 +1,5 @@
 ---
-title : "The ideological underpinnings of distributive unfairness evaluations: Evidence from Latin America between 1997 and 2020"
+title : "The Ideological Underpinnings of Distributive Unfairness Evaluations: Evidence from Latin America between 1997 and 2020"
 date : "2022-01-01"
 author : ["Efrain Garcia-Sanchez", "Juan Diego Garcia-Castro", "Martin Venegas", "Juan-Carlos Castillo"]
 categories : ["Book Section"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Efrain Garcia-Sanchez, Juan Diego Garcia-Castro, Martin Venegas, Juan-Carlos Castillo (2022). *The ideological underpinnings of distributive unfairness evaluations: Evidence from Latin America between 1997 and 2020*.   In Huseyin Cakal, Vanessa Smith & David Sirlopu: Social Unrest in Latin America: Social Psychological Perspectives. -: Work in progress
+Efrain Garcia-Sanchez, Juan Diego Garcia-Castro, Martin Venegas, Juan-Carlos Castillo (2022). *The Ideological Underpinnings of Distributive Unfairness Evaluations: Evidence from Latin America between 1997 and 2020*.   In Huseyin Cakal, Vanessa Smith & David Sirlopu: Social Unrest in Latin America: Social Psychological Perspectives. -: Work in progress
 
 :::
 

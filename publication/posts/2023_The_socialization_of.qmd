@@ -1,5 +1,5 @@
 ---
-title : "The socialization of meritocracy at school and the justification of economic inequality"
+title : "The Socialization of Meritocracy at School and the Justification of Economic Inequality"
 date : "2023-06-01"
 author : ["Juan-Carlos Castillo", "Kevin Carrasco"]
 categories : ["Presentation"]
@@ -27,7 +27,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco (2023). *The socialization of meritocracy at school and the justification of economic inequality*.  ISA XX World Congress of Sociology . Melbourne
+Juan-Carlos Castillo, Kevin Carrasco (2023). *The Socialization of Meritocracy at School and the Justification of Economic Inequality*.  ISA XX World Congress of Sociology . Melbourne
 
 :::
 

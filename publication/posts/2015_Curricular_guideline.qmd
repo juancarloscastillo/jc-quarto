@@ -1,5 +1,5 @@
 ---
-title : "Curricular guidelines and citizenship attitudes in Latin American students: a comparative analysis"
+title : "Curricular Guidelines and Citizenship Attitudes in Latin American Students: A Comparative Analysis"
 date : "2015-07-01"
 author : ["Martin Bascope", "Macarena Bonhomme", "Cristian Cox", "Juan-Carlos Castillo", "Daniel Miranda"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Martin Bascope, Macarena Bonhomme, Cristian Cox, Juan-Carlos Castillo, Daniel Miranda (2015). *Curricular guidelines and citizenship attitudes in Latin American students: a comparative analysis*. Revista Latinoamericana de Ciencias Sociales, Niñez y Juventud, 13(2) 1169--1190  [https://doi.org/10.11600/1692715x.13243280814](https://doi.org/10.11600/1692715x.13243280814)
+Martin Bascope, Macarena Bonhomme, Cristian Cox, Juan-Carlos Castillo, Daniel Miranda (2015). *Curricular Guidelines and Citizenship Attitudes in Latin American Students: A Comparative Analysis*. Revista Latinoamericana de Ciencias Sociales, Niñez y Juventud, 13(2) 1169--1190  [https://doi.org/10.11600/1692715x.13243280814](https://doi.org/10.11600/1692715x.13243280814)
 
 :::
 

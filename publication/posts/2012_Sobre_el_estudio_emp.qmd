@@ -1,5 +1,5 @@
 ---
-title : "Sobre el estudio empírico de la solidaridad: aproximaciones conceptuales y metodológicas"
+title : "Sobre El Estudio Empírico de La Solidaridad: Aproximaciones Conceptuales y Metodológicas"
 date : "2012-04-01"
 author : ["Ignacio {Madero Cabib}", "Juan-Carlos Castillo"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Ignacio Madero Cabib, Juan-Carlos Castillo (2012). *Sobre el estudio empírico de la solidaridad: aproximaciones conceptuales y metodológicas*. Polis (Santiago), 11(31) 391--409 : Universidad de Los Lagos. Centro de Estudios del Desarrollo Regional y Políticas Públicas - CEDER [https://doi.org/10.4067/S0718-65682012000100021](https://doi.org/10.4067/S0718-65682012000100021)
+Ignacio Madero Cabib, Juan-Carlos Castillo (2012). *Sobre El Estudio Empírico de La Solidaridad: Aproximaciones Conceptuales y Metodológicas*. Polis (Santiago), 11(31) 391--409 : Universidad de Los Lagos. Centro de Estudios del Desarrollo Regional y Políticas Públicas - CEDER [https://doi.org/10.4067/S0718-65682012000100021](https://doi.org/10.4067/S0718-65682012000100021)
 
 :::
 

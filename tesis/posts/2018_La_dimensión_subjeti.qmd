@@ -1,9 +1,9 @@
 ---
-title : "La dimensión subjetiva de la desigualdad de género en ingresos: Factores individuales asociados a evaluación de lo percibido y lo justo"
+title : "La Dimensión Subjetiva de La Desigualdad de Género En Ingresos: Factores Individuales Asociados a Evaluación de Lo Percibido y Lo Justo"
 date : "2018-01-01"
 author : ["Sebastian Rojas"]
-publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "El presente trabajo de tesis tiene como objetivo analizar los factores individuales y contextuales que se asocian a la evaluación de justicia, con la particularidad de analizar ocupaciones y género. Este concepto refiere a la evaluación que hacen las personas en relación al salario percibido y justo para otras ocupaciones ..."
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -39,7 +39,7 @@ el periodo de tesis.
 
 ::: {.callout-note title="How to cite this work"}
 
-Sebastian Rojas (2018). *La dimensión subjetiva de la desigualdad de género en ingresos: Factores individuales asociados a evaluación de lo percibido y lo justo*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Sebastian Rojas (2018). *La Dimensión Subjetiva de La Desigualdad de Género En Ingresos: Factores Individuales Asociados a Evaluación de Lo Percibido y Lo Justo*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 
