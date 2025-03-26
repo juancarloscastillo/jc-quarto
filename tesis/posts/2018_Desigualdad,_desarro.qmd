@@ -11,7 +11,7 @@ about:
   template: marquee
   links:
     - icon: file-pdf-fill
-      href: https://jc-castillo.com/docs/Tesis_InformeFinal_FRANETOVIC_CORREGIDO.pdf
+      href: /documents/pdf/Tesis_InformeFinal_FRANETOVIC_CORREGIDO.pdf
 ---
 ---
 

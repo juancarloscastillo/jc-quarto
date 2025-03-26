@@ -11,7 +11,7 @@ about:
   template: marquee
   links:
     - icon: file-pdf-fill
-      href: /tesis/2024_el_rol_de_la_sociali/#documento
+      href: /documents/pdf/retamales.pdf
 ---
 ---
 
@@ -38,7 +38,7 @@ percepciones de meritocracia en las notas. Estos resultados sugieren que tanto l
 como la escuela cumplen un rol de socialización, aunque de forma distinta entre la
 importancia del esfuerzo y la importancia del talento para obtener buenas notas.
 
-<iframe src="/docs/retamales.pdf" style="min-height:100vh;width:100%" frameborder="0"></iframe>
+<iframe src="/documents/pdf/retamales.pdf" style="min-height:100vh;width:100%" frameborder="0"></iframe>
 
 
 ::: {.callout-note title="How to cite this work"}
