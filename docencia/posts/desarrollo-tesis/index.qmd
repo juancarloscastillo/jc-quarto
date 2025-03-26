@@ -45,7 +45,7 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final. Cada i
 
 - seminaristas/tesistas se incorporan a [canal de Slack](https://join.slack.com/t/seminarios-facso/shared_invite/zt-2pz3yo72o-tz4yi7zRGTEFZLZQbkBx1Q), donde se comparte información relativa a las investigaciones y se hace entrega de los informes
 
-- la entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/) (video taller [aquí](https://www.dropbox.com/s/u3g2x74nj31jsu1/zoom_0.mp4?raw=1)), que permite ambas salidas. Documento de presentación [aquí](documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html)
+- la entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/) (video taller [aquí](https://www.dropbox.com/s/u3g2x74nj31jsu1/zoom_0.mp4?raw=1)), que permite ambas salidas. Documento de presentación [aquí](/documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html)
 
 - los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/) en el caso de informes en html, o se enviarán comentarios por Slack
 
@@ -90,7 +90,7 @@ Además de estas actividades, luego de la entrega de cada informe se realizará 
 
 - [Criteria of Research Quality in Sociology: An Analytical-Empirical Perspective](https://osf.io/preprints/socarxiv/69wrq/)
 
-- Taller escritura académica 2021, link [documento presentación](../../seminarios-talleres/escritura-academica/escritura-academica.html)
+- Taller escritura académica 2021, link [documento presentación](/documents/talleres-cursos/escritura-academica/escritura-academica.html#1)
 
 - [Presentación tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/)
 

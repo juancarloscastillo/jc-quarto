@@ -1,10 +1,10 @@
 ---
-title : "Percepciones de desigualdad en Chile"
+title : "Percepciones de Desigualdad En Chile"
 date : "2022-09-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
-publication : " Comentario en Seminario: ¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social? . Centro de Estudios Públicos"
-publication_short : " Comentario en Seminario: ¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social? . Centro de Estudios Públicos"
+publication : " Comentario En Seminario: ¿Cuánto Cambiaron Las Percepciones de Desigualdad Tras El Estallido Social? . Centro de Estudios Públicos"
+publication_short : " Comentario En Seminario: ¿Cuánto Cambiaron Las Percepciones de Desigualdad Tras El Estallido Social? . Centro de Estudios Públicos"
 abstract : "(Abstract not available)"
 abstract_short : ""
 about:
@@ -26,7 +26,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2022). *Percepciones de desigualdad en Chile*.  Comentario en Seminario: ¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social? . Centro de Estudios Públicos
+Juan-Carlos Castillo (2022). *Percepciones de Desigualdad En Chile*.  Comentario En Seminario: ¿Cuánto Cambiaron Las Percepciones de Desigualdad Tras El Estallido Social? . Centro de Estudios Públicos
 
 :::
 

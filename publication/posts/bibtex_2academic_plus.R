@@ -197,6 +197,7 @@ bibtex_2academic <- function(bibfile,
     filename <- paste(x[["date"]], x[["title"]] %>%
                         str_replace_all(fixed(" "), "_") %>%
                         str_remove_all(fixed(":")) %>%
+    										str_remove_all(fixed("?")) %>% 
                         str_sub(1, 20) %>%
                         paste0(".qmd"), sep = "_")
     # start writing
@@ -286,12 +287,12 @@ bibtex_2academic <- function(bibfile,
       		icon_name <- row[2]
       		url <- row[6]
       		
-      		# Detectar si es github y renombrar ícono
       		if (grepl("github\\.com", url)) {
       			icon_name <- "github"
-      		} else if (icon_name == "file") {
+      		} else if (!is.na(icon_name) && icon_name == "file") {
       			icon_name <- "file-pdf-fill"  # cambiar file a file-pdf-fill
       		}
+      		
       		
       		list(icon = icon_name, href = url)
       	})

@@ -36,5 +36,5 @@ El repositorio Github donde están los archivos se encuentra [aquí](https://git
 
 **Documento de presentación:**
 
-<iframe src=/docencia/talleres/tesisfacsodown/tesisfacsodown.html height="550" width=100% allowfullscreen="true">
+<iframe src=/documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html height="550" width=100% allowfullscreen="true">
 </iframe>

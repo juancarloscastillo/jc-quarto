@@ -1,10 +1,10 @@
 ---
-title : "Measuring social cohesion in Chile  with longitudinal survey data"
+title : "Measuring Social Cohesion in Chile  with Longitudinal Survey Data"
 date : "2024-07-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
-publication : " Presentation at the workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen"
-publication_short : " Presentation at the workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen"
+publication : " Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen"
+publication_short : " Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen"
 abstract : "The workshop highlighted different perspectives on the measurement of social cohesion in three countries - Australia, Chile and Germany. After a welcome and introduction by Olaf Groh-Samberg, our guests Juan-Carlos Castillo (COES, Center for the Study of Conflict and Social Cohesion, Chile) and James O'Donnell (Scanlon Foundation's Mapping Social Cohesion study, Australia) reported on the respective theoretical approaches, methodologies and results of their research on social cohesion. Jean-Yves Gerlitz and Nils Teichler (RDC-RISC, Germany) reported on the work at the research data center, the survey of the central longitudinal study German Social Cohesion Panel (SCP), the study approach for measuring social cohesion, as well as selected results of the monitoring based on the first cohesion report. The inspiring presentations and different methodologies of cohesion research in Australia, Chile and Germany led to a lively discussion with the speakers and around 20 workshop participants about the challenges of analysing social cohesion, conflict and polarization in an international comparison. Among other things, the difficulties and potentials of standardized indices for measuring cohesion were discussed, as well as the question of how social conflicts between large societal groups can actually be integrated into measurement concepts of cohesion."
 abstract_short : ""
 about:
@@ -30,7 +30,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2024). *Measuring social cohesion in Chile  with longitudinal survey data*.  Presentation at the workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen
+Juan-Carlos Castillo (2024). *Measuring Social Cohesion in Chile  with Longitudinal Survey Data*.  Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen
 
 :::
 

@@ -1,0 +1,178 @@
+---
+  title: "Análisis datos atribuciones pobreza"
+author: "jc"
+date: '2022-11-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# libraries
+```{r}
+pacman::p_load(sjmisc,lavaan,haven,dplyr,sjPlot, sjlabelled, summarytools, psych)
+```
+
+
+# Datos
+
+Los datos son un subset de los items de atribuciones de pobreza de la encuesta "Desigualdad, Justicia y Participación Política" - FONDECYT Iniciación 11121203 (2013-2015) [Social justice and citizenship participation: An international comparison with focus on the case of Chile](https://jc-castillo.com/project/fondecyt-iniciacion/)
+
+La generación de los datos se realizó con el script prep-atrib-pob.Rmd, en la carpeta proc.
+
+
+```{r}
+load("files/data/generated_data/atribpob.RData")
+names(data)
+```
+
+## Descriptivos univariados 
+
+```{r}
+print(dfSummary(data, headings = FALSE), method = "render", display.labels=TRUE)
+```
+
+
+## Gráfico barras frecuencia porcentual
+
+```{r}
+plot_stackfrq(data)
+```
+
+
+Ajustando dimensiones
+
+```{r fig.height=5, fig.width=12}
+plot_stackfrq(data)
+```
+
+
+Ordenando
+
+```{r fig.height=5, fig.width=12}
+plot_stackfrq(data, sort.frq = "last.desc") 
+```
+
+
+Colores
+
+Se pueden elegir distintas paletas de colores (ver [https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/](https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/)): 
+
+```{r fig.height=5, fig.width=12}
+plot_stackfrq(data, sort.frq = "last.desc", geom.colors = "OrRd") 
+```
+
+
+
+
+```{r fig.height=5, fig.width=12}
+plot_stackfrq(data, sort.frq = "last.desc", geom.colors = "OrRd") + theme(legend.position="bottom")
+```
+
+
+## Matriz de correlaciones
+
+
+```{r}
+cormat <- cor(data)
+cormat
+
+```
+
+Esta función no resulta ya que requiere que no existan casos perdidos en la base. Entonces:
+
+```{r}
+cormat <- cor(na.omit(data))
+cormat
+
+```
+
+Formato publicable
+
+```{r}
+tab_corr(data)
+```
+
+
+Y más gráfico con `corrplot`
+
+
+```{r}
+corrplot::corrplot(cormat)
+```
+
+
+Presentación con opciones adicionales:
+
+```{r}
+  corrplot::corrplot(cormat,
+    method = "color",
+    addCoef.col = "#000390",
+    type = "upper",
+    tl.col = "black",
+    col=colorRampPalette(c("white","#0068DC"))(8),
+    bg = "white",
+    na.label = "-")
+```
+
+De la matriz podemos decir que hay correlaciones moderadas entre falta de habilidad, falta de esfuerzo y mala suerte, y en otro grupo (dimensión) correlación alta entre sistema económico y sistema educativo. A su vez, los indicadores de estas dos dimensiones correlacionan muy bajo entre sí (tendiendo a cero). Por lo tanto, podríamos hipotetizar que en esta matriz subyace una estructura bidimensional, que según la teoría podriamos denominar como "atribuciones internas" (dimensión 1) y atribuciones externas (dimensión 2).   
+
+
+## Hacia la construcción de un índice
+
+Evaluación de consistencia interna con alpha de cronbach (más información [aquí](https://rpubs.com/jboscomendoza/alfa_cronbach_r#:~:text=El%20Alfa%20de%20Cronbach%20nos,apuntando%E2%80%9D%20en%20la%20misma%20direcci%C3%B3n.))
+
+
+```{r}
+alpha <-psych::alpha(data)
+alpha$total$raw_alpha
+```
+
+En general se considera que valores > 0.7 son aceptables, en este caso es 0.44, por lo que la escala como tal no sería consistente internamente. Ahora, eso ya lo sabíamos al analizar correlaciones entre items, ya que aparentemente hay dos conceptos subyacentes a la matriz de correlaciones.
+
+## Opciones: construcción de índices (brutos)
+
+Ya que según la matriz de correlaciones tenemos información que estaría evidenciando la existencia de dos dimensiones, podríamos construir dos índices promedio con los indicadores correspondientes.
+
+Indice de atribución interna (Promedio)
+
+```{r}
+
+names(data)
+
+data <- cbind(data, "interna_prom"=rowMeans(data %>% select(falthab,faltesf,malasue), na.rm=TRUE))
+
+data <- cbind(data, "externa_prom"=rowMeans(data %>% select(sisecon,siseduc), na.rm=TRUE))
+
+```
+
+
+* nota: con esta función se realiza el promedio con la información disponible, es decir, aunque existan casos perdidos en alguno de los indicadores, permitiendo minimizar casos perdidos.
+
+
+
+
+
+
+```{r}
+df <- data.frame(A=c(3,4,5),B=c(0,6,8),C=c(9,NA,1))
+  A B  C
+1 3 0  9
+2 4 6 NA
+3 5 8  1
+
+df %>% 
+  mutate(means=rowMeans(., na.rm=TRUE))
+
+
+```
+
+
+
+
+
+
+
+

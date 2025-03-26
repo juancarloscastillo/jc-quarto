@@ -1,5 +1,5 @@
 ---
-title : "On the justice of occupational earnings in Chile: A factorial survey analysis"
+title : "On the Justice of Occupational Earnings in Chile: A Factorial Survey Analysis"
 date : "2008-08-01"
 author : ["\relax JC Castillo"]
 categories : ["Presentation"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-\relax JC Castillo (2008). *On the justice of occupational earnings in Chile: A factorial survey analysis*.  . Australia, Flinders University
+\relax JC Castillo (2008). *On the Justice of Occupational Earnings in Chile: A Factorial Survey Analysis*.  . Australia, Flinders University
 
 :::
 

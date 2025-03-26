@@ -1,5 +1,5 @@
 ---
-title : "Taller Introducción a la Ciencia Abierta: Pre-registros y Pre-prints"
+title : "Taller Introducción a La Ciencia Abierta: Pre-Registros y Pre-Prints"
 date : "2022-01-01"
 author : ["Juan-Carlos Castillo", "Julio Iturra"]
 categories : ["Presentation"]
@@ -20,7 +20,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Julio Iturra (2022). *Taller Introducción a la Ciencia Abierta: Pre-registros y Pre-prints*.  Laboratorio de Investigación Social Abierta (LISA) - COES . Santiago, Facultad de Economía, Universidad de Chile.
+Juan-Carlos Castillo, Julio Iturra (2022). *Taller Introducción a La Ciencia Abierta: Pre-Registros y Pre-Prints*.  Laboratorio de Investigación Social Abierta (LISA) - COES . Santiago, Facultad de Economía, Universidad de Chile.
 
 :::
 

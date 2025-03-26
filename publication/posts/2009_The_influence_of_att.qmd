@@ -1,5 +1,5 @@
 ---
-title : "The influence of attribution patterns on political participation in comparative perspective"
+title : "The Influence of Attribution Patterns on Political Participation in Comparative Perspective"
 date : "2009-01-01"
 author : ["S. Schneider", "J. Castillo"]
 categories : ["Report"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-S. Schneider, J. Castillo (2009). *The influence of attribution patterns on political participation in comparative perspective*.  . Dublin Trinity College
+S. Schneider, J. Castillo (2009). *The Influence of Attribution Patterns on Political Participation in Comparative Perspective*.  . Dublin Trinity College
 
 :::
 

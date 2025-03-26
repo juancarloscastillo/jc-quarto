@@ -1,9 +1,15 @@
 project:
   type: website
-  render: 
+  resources:
+          - documents/*/*
+          - documents/talleres-cursos/multinivel_taller/*
+          - documents/talleres-cursos/multinivel_taller/libs/*/*
+          - documents/talleres-cursos/multinivel_taller/taller-multinivel-files/*/*
+          - documents/talleres-cursos/tallerATOM/*/*/*/*
+          - documents/doctorado-psicologia/*/*/*/*/*
+  render:
         - "*.qmd"
   output-dir: "docs"
-
 website:
   title: "jc-castillo"
   page-footer:
@@ -36,7 +42,6 @@ website:
         text: Galería
       - links.qmd
       - contacto.qmd
-      
 format:
   html:
     theme: 

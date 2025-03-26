@@ -15,4 +15,6 @@ El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a par
 
 En estos proyectos participan académicas y académicos de ciencias sociales y de educación de la Universidad Diego Portales, la Pontificia Universidad Católica de Chile, y la Universidad de Chile.
 
-Toda la información está en el sitio del proyecto: [https://ciudadania-escolar.cl/](https://ciudadania-escolar.cl/)
+<!-- Toda la información está en el sitio del proyecto: [https://ciudadania-escolar.cl/](https://ciudadania-escolar.cl/) 
+Link muerto
+--> 

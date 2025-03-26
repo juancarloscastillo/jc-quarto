@@ -1,10 +1,10 @@
 ---
-title : "Herramientas de Ciencia Abierta: Apertura y reproducibilidad de proyectos de investigación"
+title : "Herramientas de Ciencia Abierta: Apertura y Reproducibilidad de Proyectos de Investigación"
 date : "2024-01-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
-publication : " Proyecto Ingeniería 2030 de la Facultad de Ingeniería de la Universidad de Valparaíso . Valparaíso"
-publication_short : " Proyecto Ingeniería 2030 de la Facultad de Ingeniería de la Universidad de Valparaíso . Valparaíso"
+publication : " Proyecto Ingeniería 2030 de La Facultad de Ingeniería de La Universidad de Valparaíso . Valparaíso"
+publication_short : " Proyecto Ingeniería 2030 de La Facultad de Ingeniería de La Universidad de Valparaíso . Valparaíso"
 abstract : "(Abstract not available)"
 abstract_short : ""
 about:
@@ -25,7 +25,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2024). *Herramientas de Ciencia Abierta: Apertura y reproducibilidad de proyectos de investigación*.  Proyecto Ingeniería 2030 de la Facultad de Ingeniería de la Universidad de Valparaíso . Valparaíso
+Juan-Carlos Castillo (2024). *Herramientas de Ciencia Abierta: Apertura y Reproducibilidad de Proyectos de Investigación*.  Proyecto Ingeniería 2030 de La Facultad de Ingeniería de La Universidad de Valparaíso . Valparaíso
 
 :::
 

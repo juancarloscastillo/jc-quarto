@@ -1,5 +1,5 @@
 ---
-title : "Social inequality and changes in students’ expected political participation in Chile"
+title : "Social Inequality and Changes in Students’ Expected Political Participation in Chile"
 date : "2014-07-01"
 author : ["Juan-Carlos Castillo", "Daniel Miranda", "Macarena Bonhomme", "Cristian Cox", "Martin Bascope"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Daniel Miranda, Macarena Bonhomme, Cristian Cox, Martin Bascope (2014). *Social inequality and changes in students’ expected political participation in Chile*. Education, Citizenship and Social Justice, 9(2) 140--156  [https://doi.org/10.1177/1746197914520650](https://doi.org/10.1177/1746197914520650)
+Juan-Carlos Castillo, Daniel Miranda, Macarena Bonhomme, Cristian Cox, Martin Bascope (2014). *Social Inequality and Changes in Students’ Expected Political Participation in Chile*. Education, Citizenship and Social Justice, 9(2) 140--156  [https://doi.org/10.1177/1746197914520650](https://doi.org/10.1177/1746197914520650)
 
 :::
 

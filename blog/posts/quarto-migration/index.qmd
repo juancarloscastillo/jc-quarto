@@ -1,0 +1,248 @@
+---
+title: Migrating my website to Quarto
+author: ["Juan-Carlos Castillo", "Gabriel Cortés"]
+date: "2025-03-25"  #year-
+# date-modified: "2021-12-13"
+draft: true # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.jpeg"  
+editor: visual
+---
+
+<!-- Creo que el comienzo de esta entrada debería escribirla JC, explicando sus motivaciones para hacer la migración. -->
+
+Altough you can take this as a guide for building a quarto website from scratch, the true is most of this post is dedicated to explain how to migrate a website already built on Hugo Academic to Quarto. For building a brand-new website, the [Quarto original documentation](https://quarto.org/docs/websites/) is a good starting point. Also, even if this a new-ish tool, there is already a bunch of [academic sites built on Quarto](https://quarto.org/docs/gallery/#websites), including [Quarto official website itself](https://github.com/quarto-dev/quarto-web), that you can check for ideas.
+
+## Project Structure
+
+One of the advantages of building a website in Quarto it is that its project structure is way simpler comparing with Hugo. In fact, it is very much the same as any Quarto project. This is a basic Quarto Website project.
+
+``` plaintext
+.
+├── _quarto.yml
+├── docs
+│   ├── content
+│      └── content.html
+│   ├── more_content.html
+├── index.qmd
+├── content
+│   ├── posts
+│   └── content.qmd
+├── resources
+│   ├── documents
+│   └── images
+├── styles.css
+├── _extensions
+├── README.md
+├── project.Rproj
+```
+
+## Website basic configuration
+
+First, you will have a `_quarto.yml` which contains the basic configuration of the website. Here you can define the website title, the navbar configuration and some style settings. If you have an external `.css` file and you want to apply it for the whole site, you need to specify it here.
+
+## Output directory
+
+By default, the website is rendered into a `_site` folder. However, we recommend create a `docs` folder as output directory, since it makes it easier to deploy the website in Github Pages or Netlify.
+
+To change your output directory you need to specify it with `output-dir` in your `_quarto.yml`:
+
+``` yaml
+project:
+  type: website
+  output-dir: "docs"
+```
+
+## Content
+
+If migrating creating a new website would mean starting over and lost all your previous content, you would probably not very exiting to try nothing new. Luckily, the migration of content from Hugo to Quarto is quite straightforward. 
+
+First of all, you need to change all your old `.rmd` and `.md` to `.qmd` files. We managed to work this out manually, but if you have tons of entries you might want to explore some automatization. In that case, you should thanks [Nick Tierney](https://www.njtierney.com/about/) for tweaking [this very simple function](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) to transform `.rmd` to `.qmd`. 
+
+Next, you need to adapt your brand new `.qmd`'s YAMLs. This not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are way more simpler than Markdown's. For example, this is my old *Docencia* Markdown's YAML.
+
+```yaml
+# An instance of the Pages widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: portfolio
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 45
+
+title: Docencia
+subtitle:
+
+content:
+  # Page type to display. E.g. post, talk, publication...
+  page_type: docencia
+  # Choose how many pages you would like to display (0 = all pages)
+  count: 5
+  # Filter on criteria
+  filters:
+    author: ""
+    category: ""
+    tag: ""
+    exclude_featured: false
+    exclude_future: false
+    exclude_past: false
+    publication_type: ""
+  # Choose how many pages you would like to offset by
+  offset: 2
+  # Page order: descending (desc) or ascending (asc) date.
+  order: desc
+
+design:
+  columns: '3'
+
+  # Choose a view for the listings:
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   4 = Citation (publication only)
+  view: 3
+```
+
+Compared to my new [*Docencia*](/docencia/docencia.html) Quarto's YAML:
+
+```yaml
+title: "Docencia"
+page-layout: full
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: false
+  fields: [image, title, description, date]
+  image-align: left
+  filter-ui: [title, date]
+title-block-banner: true
+```
+
+So you only need to write this very concise chunk of YAML once, and then just copy-paste it and adapt it to every page you need. 
+
+## Homepage
+
+Your new homepage will be set up by `index.qmd`.
+
+In the YAML you can define your *About page*. In this case, we use *trestle*, but you can explore [another templates](https://quarto.org/docs/websites/website-about.html#templates) as well. Here you can set up your profile picture and some contact or personal links:
+
+``` yaml
+title: "Juan Carlos Castillo"
+pagetitle: "JC Castillo Website"
+page-layout: full
+format:
+  html:
+    grid:
+      body-width: 1440px
+page-navigation: false
+toc: false
+image: "images/avatar.jpeg"
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 70%
+  image-shape: round
+  links:
+    - icon: mortarboard-fill
+      href: https://scholar.google.es/citations?user=CPJ0qfQAAAAJ&hl=es&oi=ao
+    - icon: github
+      href: https://github.com/juancarloscastillo
+    - icon: envelope
+      href: contacto.html
+```
+
+::: callout-note
+## Important
+Currently, Quarto only supports Bootstrap Icons. So if you were using any other icon packages in Hugo, you will need to replace it for bootstrap icons. [More information](https://icons.getbootstrap.com)
+:::
+
+You can then write what you want in the body of this document. As an example, here is how a section of this site homepage is build. 
+
+``` html
+::: {.parallax-container}
+::: {.parallax-image-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+::: {#proyectosh1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Proyectos</p>
+
+:::{#proyectos}
+:::
+
+
+:::
+:::
+:::
+:::
+```
+
+A couple of very interesting tricks can be taken from this example: 
+
+**Parallax**
+
+Thanks to [Yan Holtz](https://www.yan-holtz.com), who create this feature to apply a very nice parallax effect in a Quarto Website. To make it work, you have to write some code in your `.css` file, as [he explain in this website](https://www.productive-r-workflow.com/quarto-tricks#parallax), where you could find a lot of other very cool tricks for your own. 
+
+```css
+.parallax-container {
+  position: relative;
+  padding-left: 0em;
+  padding-right: 0;
+  padding-top: 1em;
+  margin-top: 0em;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.parallax-image-container {
+  background-image: url(images/background-about.png);
+  background-attachment: fixed;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.8em;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100vw;
+}
+```
+
+**Section Scrolling Navigation**
+
+I wanted to maintain this feature from my old webpage, where when you click on the navbar it does not redirects you to another page, but scroll the page to a section within the home page. 
+
+We accomplished this by **anchor** the section with an `#` (as in `{#proyectosh1}`). This create a "tag" that allows to identify a section within a page. You can then replace the reference in the navbar options in your `_quarto.yml` as it follows. 
+
+```yaml
+website:
+  title: "jc-castillo"
+  navbar:
+    left:
+      - href: index.qmd#proyectosh1
+        text: Proyectos
+```
+
+You could also use the listing-ID as an anchor. However, this might feel a bit odd since scrolling would take you directly to the listing content rather than the section title -- creating a slight *overshoot* effect.
+
+By default, you are going to *jump* from a section to other. If your prefer a more *smooth* effect, as the one I used in my page, you can specify it in your `.css` file.
+
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
+
+## How to manage your publications
+
+## Resources
+
+## Extensions

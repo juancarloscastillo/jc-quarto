@@ -1,9 +1,9 @@
 ---
-title : "El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza"
+title : "El Efecto de Las Creencias Meritocráticas Sobre Las Atribuciones de Pobreza y Riqueza"
 date : "2022-01-01"
 author : ["Sebastian Cortinez"]
-publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
-publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 abstract : "(Abstract not available)"
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -22,7 +22,7 @@ Las investigaciones sociológicas que analizan las causas de las atribuciones de
 
 ::: {.callout-note title="How to cite this work"}
 
-Sebastian Cortinez (2022). *El efecto de las creencias meritocráticas sobre las atribuciones de pobreza y riqueza*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Sebastian Cortinez (2022). *El Efecto de Las Creencias Meritocráticas Sobre Las Atribuciones de Pobreza y Riqueza*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

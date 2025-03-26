@@ -16,7 +16,7 @@ title: "Links"
 
 - “CASEN y Cohesión: oportunidades y precauciones”, con Mauro Basaure en [El Mostrador](http://www.elmostrador.cl/noticias/opinion/2016/09/29/casen-y-cohesion-oportunidades-y-precauciones/) (Septiembre 2016).
 
-- “La nueva Casen y las exigencias a la política social en Chile”, con Mauro Basaure en [El Dínamo](https://www.eldinamo.cl/blog/la-nueva-casen-y-las-exigencias-a-la-politica-social-en-chile/) (Octubre 2016).
+<!-- - “La nueva Casen y las exigencias a la política social en Chile”, con Mauro Basaure en [El Dínamo](https://www.eldinamo.cl/blog/la-nueva-casen-y-las-exigencias-a-la-politica-social-en-chile/) (Octubre 2016). -->
 
 - “Selección en particulares y la complicidad de los psicólogos” en [El Mostrador](http://www.elmostrador.cl/noticias/opinion/2015/01/29/seleccion-en-particulares-y-la-complicidad-de-los-psicologs/) (Enero 2015).
 
@@ -64,7 +64,7 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Internal replication of computational workflows in scientific research](https://gatesopenresearch.org/articles/4-17/v2)
 
-- [Karl Broman Tutorias reproducibility, knitr, Git & more](https://kbroman.org/pages/tutorials.html)
+<!-- - [Karl Broman Tutorias reproducibility, knitr, Git & more](https://kbroman.org/pages/tutorials.html) -->
 
 - [Open Science Framework](https://osf.io/)
 
@@ -129,7 +129,7 @@ I use software compatible with the principles of open science, this is, free and
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Estimating a Parameter from a Random Sample <a href="https://t.co/H2KxnLzDyH">pic.twitter.com/H2KxnLzDyH</a></p>&mdash; Chelsea Parlett-Pelleriti (@ChelseaParlett) <a href="https://twitter.com/ChelseaParlett/status/1338662205894508545?ref_src=twsrc%5Etfw">December 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-- [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+<!-- - [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/) -->
 
 - [Group comparisons](https://indrajeetpatil.github.io/ggstatsplot/articles/web_only/ggbetweenstats.html)
 
@@ -201,7 +201,7 @@ I use software compatible with the principles of open science, this is, free and
 
 - [ThinkR, data visualization with R](https://thinkr.biz/)
 
-- [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer).
+<!-- - [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer). -->
 
 - [Graphics principles cheatsheet](https://graphicsprinciples.github.io/)
 
@@ -237,11 +237,11 @@ I use software compatible with the principles of open science, this is, free and
 
 - [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr)
 
-- [Making R & Python work in Atom](https://jstaf.github.io/2018/03/25/atom-ide.html)
+<!-- - [Making R & Python work in Atom](https://jstaf.github.io/2018/03/25/atom-ide.html) -->
 
-- [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)
+<!-- - [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html) -->
 
-- [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)
+<!-- - [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html) -->
 
 
 ## Writing, literature reviews, publication & others
@@ -270,7 +270,7 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Yihui Xie](https://github.com/yihui)
 
-- [Leslie McCall](https://www.gc.cuny.edu/stonecenter/Leslie-McCall)
+<!-- - [Leslie McCall](https://www.gc.cuny.edu/stonecenter/Leslie-McCall) -->
 
 
 ## Procrastinación

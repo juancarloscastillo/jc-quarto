@@ -1,5 +1,5 @@
 ---
-title : "Creencias en la justicia en el mundo: Un estudio preliminar en relación a actitudes de intolerancia y discriminación"
+title : "Creencias En La Justicia En El Mundo: Un Estudio Preliminar En Relación a Actitudes de Intolerancia y Discriminación"
 date : "2002-01-01"
 author : ["Juan-Carlos Castillo", "Domingo Asun"]
 categories : ["Book Section"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Domingo Asun (2002). *Creencias en la justicia en el mundo: Un estudio preliminar en relación a actitudes de intolerancia y discriminación*.   In D. Paez: Psicología Social. Buenos Aires: Prentice Hall
+Juan-Carlos Castillo, Domingo Asun (2002). *Creencias En La Justicia En El Mundo: Un Estudio Preliminar En Relación a Actitudes de Intolerancia y Discriminación*.   In D. Paez: Psicología Social. Buenos Aires: Prentice Hall
 
 :::
 

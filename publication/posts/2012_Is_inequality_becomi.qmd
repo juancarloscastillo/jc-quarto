@@ -1,5 +1,5 @@
 ---
-title : "Is inequality becoming just? Changes in public opinion about economic inequality in Chile"
+title : "Is Inequality Becoming Just? Changes in Public Opinion about Economic Inequality in Chile"
 date : "2012-01-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2012). *Is inequality becoming just? Changes in public opinion about economic inequality in Chile*. Bulletin of Latin American Research, 31(1) 1--18  [https://doi.org/10.1111/j.1470-9856.2011.00605.x](https://doi.org/10.1111/j.1470-9856.2011.00605.x)
+Juan-Carlos Castillo (2012). *Is Inequality Becoming Just? Changes in Public Opinion about Economic Inequality in Chile*. Bulletin of Latin American Research, 31(1) 1--18  [https://doi.org/10.1111/j.1470-9856.2011.00605.x](https://doi.org/10.1111/j.1470-9856.2011.00605.x)
 
 :::
 

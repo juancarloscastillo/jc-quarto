@@ -1,0 +1,548 @@
+---
+title: "Encuestas Sociales"
+author: ".small[Juan Carlos Castillo <br><br> Departamento de Sociología - UCH / COES <br><br>]"
+date: "1er Sem 2022"
+output:
+   xaringan::moon_reader:
+    css: "../../files/css/custom_2020.css"
+    includes:
+      after_body: "../insert-logo.html"
+    lib_dir: libs
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"
+    seal: false # esto omite title slide automática
+---
+class: front
+
+```{r eval=FALSE, include=FALSE}
+# Correr esto para que funcione el infinite moonreader, el root folder debe ser static para si dirigir solo "bajndo" en directorios hacia el bib y otros
+
+xaringan::inf_mr('/static/docpres/02_bases/2mlmbases.Rmd')
+
+o en RStudio:
+  - abrir desde carpeta root del proyecto
+  - Addins-> infinite moon reader
+```
+
+
+```{r setup, include=FALSE, cache = FALSE}
+require("knitr")
+options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+# bib <- ReadBib("../../bib/electivomultinivel.bib", check = FALSE)
+opts_chunk$set(warning=FALSE,
+             message=FALSE,
+             echo=TRUE,
+             cache = FALSE, fig.width=7, fig.height=5.2)
+pacman::p_load(flipbookr, tidyverse)
+
+
+```
+
+
+```{r xaringanExtra, include=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css"))
+xaringanExtra::use_scribble()
+#xaringanExtra::use_share_again()
+#xaringanExtra::style_share_again(
+#  share_buttons = "none",
+#  )
+```
+
+<!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- rmarkdown::render('static/docpres/07_interacciones/7interacciones.Rmd', 'xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+
+.pull-left[
+# Encuestas Sociales
+## Juan Carlos Castillo
+## Sociología FACSO - UChile
+## 2do Sem 2022
+## [.green[encuestas-sociales.netlify.com]](https://encuestas-sociales.netlify.com)
+]
+
+
+.pull-right[
+.right[
+<br>
+## .yellow[Sesión 10: Baterías de indicadores múltiples: Indices y análisis factorial]
+![:scale 70%](../../files/img/eval-hires.png)
+
+]
+]
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+class: middle center
+
+# ¿Por qué usar baterías?
+
+---
+class: middle center
+
+.center[
+![:scale 100%](../../files/img/slides/bateria-atrib-pob.png)
+]
+
+
+---
+class: middle
+
+.pull-left-narrow[
+# Preguntas y error de medición
+]
+.pull-right-wide[
+.content-box-yellow[
+-   Para medir hechos observables simples usualmente se utiliza **una
+    pregunta** (ej: edad)
+
+-   Fenómenos complejos se miden en general con más de una pregunta, con
+    el objetivo de dar mejor cuenta del atributo (i.e. minimizar error
+    de medición)
+]]
+
+
+---
+# Baterías de indicadores múltiples
+
+- en general las encuestas suelen incluir varias preguntas respecto de un mismo tema -> .red[baterías de indicadores múltiples]
+
+--
+
+- cubren distintos aspectos de un mismo fenómeno complejo que no se agota en solo un indicador -> minimiza .red[error de medición]
+
+--
+
+- .red[problema]: ¿cómo se analizan indicadores que están relacionados?¿cómo se muestran los resultados?
+
+---
+# Análisis de indicadores en baterías
+
+.pull-left-narrow[
+1. .red[Univariado]: se sugiere presentar análisis descriptivos que contengan todos los indicadores para poder comparar frecuencias
+]
+
+.pull-right-wide[
+.center[
+![:scale 100%](../../files/img/slides/likert-plot.png)
+.small[(likert plot, `sjPlot`)]
+]
+]
+
+---
+# Análisis de indicadores en baterías
+
+.pull-left-narrow[
+
+2\. .red[Bivariado]: tablas/gráficos de correlaciones
+
+(`corrplot`)
+]
+
+.pull-right-wide[
+.center[
+![:scale 85%](../../files/img/slides/corrplot.png)
+
+]
+]
+
+---
+# Análisis de indicadores en baterías
+
+- Se podría asumir un concepto o .red[dimensión subyacente] a la batería de items
+
+- Para facilitar el avance en el análisis (por ejemplo, relacionar ese concepto subyacente con otras variables), muchas veces se reduce la batería a algún .red[tipo de índice (sumativo/promedio)]
+
+- ¿Podemos asegurar que los items están realmente .red[midiendo lo mismo]?
+
+---
+## ¿Miden lo mismo?
+
+.center[
+![:scale 100%](../../files/img/slides/bateria-atrib-pob.png)
+]
+
+---
+# Recordando: Error total de encuesta
+.center[
+![:scale 60%](../../files/img/slides/ratswd-errors.png)
+]
+
+(Groves et al, 2010, en RATSWD WP 245, 2015)
+
+---
+class: middle
+
+.pull-left-narrow[
+# Preguntas y error de medición
+]
+
+.pull-right-wide[
+.content-box-red[
+-   En este marco se asume que el **indicador es distinto del atributo**, y que la medición del atributo o variable latente conlleva error
+
+-   Cuando la el atributo se mide con más de una pregunta, se puede
+    intentar estimar la **variable latente** mediante índices o           técnicas de **análisis factorial**
+]]
+
+---
+# Medición y error
+.pull-left[
+
+.center[
+![:scale 80%](../../files/img/slides/peras-manzanas.png)
+]
+]
+
+.pull-right[
+- antes de agrupar indicadores en un índice hay que evaluar si los indicadores se encuentran relacionados
+
+  - -> si miden constructos similares
+  - -> si la medición es .red[confiable]
+]
+
+---
+class: inverse center
+
+<br>
+.content-box-red[
+## .red[¿Cómo estimar el nivel de relación entre indicadores que miden un mismo constructo?]
+]
+--
+
+### Distintas maneras, pero todas se basan en la técnica de la .red[correlación]
+
+---
+# Bases correlación
+
+-   varianza
+$$\sigma^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2} {n-1}=\frac{\sum_{i=1}^{n}(x_i - \bar{x})(x_i - \bar{x})} {n-1}$$
+
+-   covarianza
+$$cov(x,y) = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {n-1}$$
+---
+# Correlación
+
+$$r= \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {(n-1)\sigma_x \sigma_y }$$
+
+
+- medida estandarizada de asociación entre variables continuas
+
+- varía entre -1 y 1
+
+- mientras más cercana a |1|, mayor es la correlación entre dos variables
+
+
+---
+.pull-left-narrow[
+
+<br>
+<br>
+<br>
+# Correlación
+]
+
+.pull-right-wide[
+
+.center[
+![](../../files/img/slides/corr.png)
+]]
+
+
+---
+class: inverse bottom right
+
+## .red[Correlaciones, baterías y dimensiones subyacentes]
+
+---
+# Matriz de correlaciones (1)
+
+.center[
+  ![:scale 60%](../../files/img/slides/cormat1.png)
+
+Matriz hipotética de indicadores que miden un mismo constructo
+
+]
+
+---
+# Ej. Matriz de correlaciones (2)
+
+.center[
+  ![:scale 60%](../../files/img/slides/cormat2.png)
+
+Matriz hipotética de indicadores que miden constructos independientes
+]
+
+---
+# Ej. Matriz de correlaciones (3)
+
+.center[
+  ![:scale 60%](../../files/img/slides/cormat3.png)
+
+Matriz hipotética de variables que miden dos constructos independientes]
+
+---
+class: inverse
+
+## .yellow[Entonces:]
+
+### 1. analizar la .red[matriz de correlaciones] antes de generar cualquiér técnica de reducción de información (ej: crear índice)
+
+### 2. evaluar la posibilidad de generación algún tipo de .red[índice] que resuma la información
+---
+# Datos ejemplo
+
+- batería atribuciones de pobreza, encuesta "Desigualdad, Justicia y Participación Política" - FONDECYT Iniciación 11121203 (2013-2015) [Social justice and citizenship participation](https://jc-castillo.com/project/fondecyt-iniciacion/)
+
+.center[
+![:scale 100%](../../files/img/slides/bateria-atrib-pob.png)
+]
+
+---
+
+```{r echo=FALSE}
+pacman::p_load(sjmisc,lavaan,haven,dplyr,sjPlot, sjlabelled, summarytools, psych)
+```
+
+```{r eval=FALSE, echo=TRUE }
+load("input/data/data-proc.Rdata")
+descr(data)
+```
+
+.small[
+```{r echo=FALSE, results='asis'}
+load("../../files/data/generated_data/atribpob.RData")
+sjmisc::descr(data,
+      show = c("label","range", "mean", "sd", "NA.prc", "n"))%>%
+      kable(.,"markdown")
+```
+]
+
+---
+## Gráfico barras frecuencia porcentual
+
+```{r echo=TRUE}
+plot_stackfrq(data)
+```
+---
+## Ajustando dimensiones
+
+````
+```{r echo=TRUE, fig.height=5, fig.width=12}`r ''`
+plot_stackfrq(data)
+```
+````
+
+.center[
+```{r echo=FALSE, fig.height=5, fig.width=12}
+plot_stackfrq(data)
+```
+]
+
+---
+## Ajustes adicionales
+
+.medium[
+````
+```{r echo=TRUE, fig.height=5, fig.width=12}`r ''`
+plot_stackfrq(data, sort.frq = "last.desc", geom.colors = "OrRd") +
+theme(legend.position="bottom")
+```
+````
+]
+
+.center[
+```{r echo=FALSE, fig.height=5, fig.width=12}
+plot_stackfrq(data, sort.frq = "last.desc", geom.colors = "OrRd") + theme(legend.position="bottom")
+```
+]
+
+---
+## Matriz de correlaciones
+
+
+```{r}
+cormat <- cor(data)
+cormat
+
+```
+
+Esta función no resulta ya que requiere que no existan casos perdidos
+---
+## Matriz de correlaciones
+
+Entonces:
+
+```{r}
+cormat <- cor(na.omit(data))
+cormat
+
+```
+
+---
+## Matriz de correlaciones (Formato publicable)
+
+.tiny[
+```{r}
+tab_corr(data)
+```
+]
+
+---
+## Matriz de correlaciones - gráfico
+
+```{r}
+corrplot::corrplot(cormat)
+```
+
+---
+## Matriz de correlaciones - gráfico ajustado
+
+
+.pull-left-narrow[
+.small[
+```{r eval=FALSE}
+  corrplot::corrplot(cormat,
+    method = "color",
+    addCoef.col = "#000390",
+    type = "upper",
+    tl.col = "black",
+    col=colorRampPalette(c("white","#0068DC"))(8),
+    bg = "white",
+    na.label = "-")
+```
+]]
+
+.pull-right-wide[
+.center[
+```{r echo=FALSE, fig.height=8}
+  corrplot::corrplot(cormat,
+    method = "color",
+    addCoef.col = "#000390",
+    type = "upper",
+    tl.col = "black",
+    col=colorRampPalette(c("white","#0068DC"))(8),
+    bg = "white",
+    na.label = "-")
+```
+]
+]
+
+---
+class: inverse bottom right
+
+## .red[Hacia la construcción de un índice]
+
+---
+# Alpha de Cronbach
+
+- índice de consistencia interna de una batería
+
+- varía entre 0 y 1; valores más cercanos a 1 indican mayor consistencia
+
+- en general valores sobre 0.6 se consideran aceptables
+
+- más información [aquí](https://rpubs.com/jboscomendoza/alfa_cronbach_r#:~:text=El%20Alfa%20de%20Cronbach%20nos,apuntando%E2%80%9D%20en%20la%20misma%20direcci%C3%B3n.))
+
+---
+# Alpha de Cronbach
+
+.pull-left[
+- funcion alpha de la librería `psych`
+
+- se genera un objeto (lo llamaremos alpha). Contiene bastante información, por ahora nos enfocaremos solo en el valor de alpha (`raw_alpha`)
+]
+.pull-right[
+.small[
+```{r warning=FALSE}
+alpha <-psych::alpha(data)
+alpha$total$raw_alpha
+```
+]
+]
+---
+# Alpha de Cronbach
+
+- puntaje 0.43, por lo tanto bajo los valores aceptables de consistencia interna
+
+- esto ya se podía anticipar desde la matriz de correlaciones, que aparentemente mostraba dos dimensiones subyacentes a la batería
+
+- además, se genera un mensaje de advertencia sobre posibles items codificados a la inversa (dada la correlación entre items de dimensiones distintas)
+
+---
+# Opciones
+
+- construcción de índices basados en la información de la matriz de correlaciones
+
+- análisis factorial
+
+
+---
+class: inverse bottom right
+# .red[Construcción de índices]
+
+---
+# Índice promedio
+
+- vamos a generar 2 índices a partir de esta batería: uno para atribución interna (falthab,faltesf,malasue) y otro para externa (sisecon,siseduc)
+
+- tema valores perdidos:
+  - para perder el mínimo de casos se recomienda realizar índice aún con casos que no hayan respondido algún item
+  - ya que esto distorsionaría el puntaje si fuera sumado, se hace un índice promedio, especificando que se calcule aún con valores perdidos
+
+---
+Indice de atribución interna (Promedio)
+
+```{r}
+data <- cbind(data, "interna_prom"=rowMeans(data %>% select(falthab,faltesf,malasue), na.rm=TRUE))
+
+data <- cbind(data, "externa_prom"=rowMeans(data %>% select(sisecon,siseduc), na.rm=TRUE))
+
+names(data)
+
+```
+
+---
+class: inverse
+
+# Resumen
+
+- baterías y dimensiones subyacentes
+
+- evaluación de consistencia interna (previo a construcción de índices)
+
+- índices y .red[factores] (prox sesión)
+
+---
+class: front
+
+.pull-left[
+# Encuestas Sociales
+## Juan Carlos Castillo
+## Sociología FACSO - UChile
+## 2do Sem 2022
+## [.green[encuestas-sociales.netlify.com]](https://encuestas-sociales.netlify.com)
+]
+
+
+.pull-right[
+.right[
+<br>
+## .yellow[Sesión 10: Baterías de indicadores múltiples: Indices y análisis factorial]
+![:scale 70%](../../files/img/eval-hires.png)
+
+]
+]

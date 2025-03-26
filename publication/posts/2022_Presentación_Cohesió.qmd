@@ -1,5 +1,5 @@
 ---
-title : "Presentación Cohesión social en Chile en tiempos de cambio: Indicadores, perfiles y factores asociados"
+title : "Presentación Cohesión Social En Chile En Tiempos de Cambio: Indicadores, Perfiles y Factores Asociados"
 date : "2022-03-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
@@ -32,7 +32,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2022). *Presentación Cohesión social en Chile en tiempos de cambio: Indicadores, perfiles y factores asociados*.  Presentación Seminario CEPAL-COES . Santiago  (Online)
+Juan-Carlos Castillo (2022). *Presentación Cohesión Social En Chile En Tiempos de Cambio: Indicadores, Perfiles y Factores Asociados*.  Presentación Seminario CEPAL-COES . Santiago  (Online)
 
 :::
 
