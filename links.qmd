@@ -275,6 +275,6 @@ I use software compatible with the principles of open science, this is, free and
 
 ## Procrastinación
 
-- [Circles](https://www.circles.gallery/create)
+<!-- - [Circles](https://www.circles.gallery/create) -->
 
 - [Sombras](https://sombras.app/)

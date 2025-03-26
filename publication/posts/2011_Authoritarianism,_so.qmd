@@ -9,9 +9,6 @@ abstract : "(Abstract not available)"
 abstract_short : ""
 about:
   template: marquee
-  links:
-    - icon: file-slides-fill
-      href: lisa-coes.github.io/
 ---
 ---
 This is a presentation funded by ANID
