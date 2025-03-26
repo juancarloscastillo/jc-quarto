@@ -1,5 +1,5 @@
 ---
-title : "¿Cuál Es La Brecha Salarial Justa? Opinión Pública y Legitimación de La Desigualdad Económica En Chile"
+title : "¿Cuál es la Brecha Salarial Justa? Opinión Pública y Legitimación de la Desigualdad Económica en Chile"
 date : "2009-01-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2009). *¿Cuál Es La Brecha Salarial Justa? Opinión Pública y Legitimación de La Desigualdad Económica En Chile*. Estudios Públicos(113) 237--266 
+Juan-Carlos Castillo (2009). *¿Cuál es la Brecha Salarial Justa? Opinión Pública y Legitimación de la Desigualdad Económica en Chile*. Estudios Públicos(113) 237--266 
 
 :::
 

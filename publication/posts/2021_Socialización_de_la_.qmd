@@ -1,10 +1,10 @@
 ---
-title : "Socialización de La Meritocracia: El Rol de La Familia y La Escuela"
+title : "Socialización de la meritocracia: El rol de la familia y la escuela"
 date : "2021-11-01"
 author : ["Juan-Carlos Castillo", "Julio Iturra", "Francisco Meneses", "Martin Venegas"]
 categories : ["Conference paper"]
-publication : " VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES"
-publication_short : " VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES"
+publication : " VIII Conferencia Internacional COES: Cohesión Social en tiempos turbulentos. Santiago: COES"
+publication_short : " VIII Conferencia Internacional COES: Cohesión Social en tiempos turbulentos. Santiago: COES"
 abstract : "La meritocracia es un ideal que aspira a que los recursos se distribuyan según el esfuerzo y talento personal (Young 2006). No obstante, se ha evidenciado que este ideal tiene ciertas consecuencias negativas. En jóvenes, tiende a fomentar la frustración (Nadler et al. 2020; Du et al. 2021; Kim 2020) y corroe los principios democráticos, especialmente en contextos desiguales (Allen, 2016; Guzmán, Barozet & Méndez, 2016). En población adulta, y especialmente desde la sociología, se ha desarrollado una agenda de investigación en torno a aspectos subjetivos de la desigualdad (Jasso 1980; Kluegel & Smith 1981; Janmaat 2013), siendo uno de ellos la percepción de meritocracia. Estas se entienden cómo la convicción de los sujetos sobre que su sociedad realmente distribuye recursos según el mérito individual (Castillo et al. 2019). Pese a recientes avances en el estudio de la meritocracia, se ha puesto poca atención al origen de estas percepciones en etapas previas a la vida adulta, y en cómo la meritocracia podría ser transmitida intergeneracionalmente. En el presente trabajo, el objetivo es estudiar en qué medida las ideas parentales y las experiencias escolares influyen en las percepciones meritocráticas de estudiantes secundarios. Las preguntas principales son: ¿Cómo las percepciones meritocráticas de los padres pueden fomentar o disminuir las percepciones meritocráticas de sus hijos? y ¿Cómo se asocia el sentido de justicia en las notas con la percepción de meritocracia de los jóvenes?."
 abstract_short : ""
 about:
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Julio Iturra, Francisco Meneses, Martin Venegas (2021). *Socialización de La Meritocracia: El Rol de La Familia y La Escuela*.  VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES
+Juan-Carlos Castillo, Julio Iturra, Francisco Meneses, Martin Venegas (2021). *Socialización de la meritocracia: El rol de la familia y la escuela*.  VIII Conferencia Internacional COES: Cohesión Social en tiempos turbulentos. Santiago: COES
 
 :::
 

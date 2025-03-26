@@ -1,9 +1,9 @@
 ---
-title : "¿Menos Confianza, Menos Estado? El Impacto de La Corrupción Sobre Las Preferencias Redistributivas"
+title : "¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas"
 date : "2018-02-01"
 author : ["Francisca Castro"]
-publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "La presente investigación tiene como objetivo evaluar el impacto que posee la corrup- ción del contexto, i.e. a nivel paı́s, sobre las preferencias redistributivas de los individuos."
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -50,7 +50,7 @@ ciación entre preferencias redistributivas y corrupción contextual.
 
 ::: {.callout-note title="How to cite this work"}
 
-Francisca Castro (2018). *¿Menos Confianza, Menos Estado? El Impacto de La Corrupción Sobre Las Preferencias Redistributivas*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Francisca Castro (2018). *¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

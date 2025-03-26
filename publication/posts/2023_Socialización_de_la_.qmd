@@ -1,5 +1,5 @@
 ---
-title : "Socialización de La Meritocracia En La Escuela y Justificación de La Desigualdad Económica"
+title : "Socialización de la meritocracia en la escuela y justificación de la desigualdad económica"
 date : "2023-08-01"
 author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Mauricio Salgado", "Camila Moyano", "Nicolas Angelcos"]
 categories : ["Presentation"]
@@ -25,7 +25,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco, Mauricio Salgado, Camila Moyano, Nicolas Angelcos (2023). *Socialización de La Meritocracia En La Escuela y Justificación de La Desigualdad Económica*.  Conferencia DEMOSAL . Buenos Aires
+Juan-Carlos Castillo, Kevin Carrasco, Mauricio Salgado, Camila Moyano, Nicolas Angelcos (2023). *Socialización de la meritocracia en la escuela y justificación de la desigualdad económica*.  Conferencia DEMOSAL . Buenos Aires
 
 :::
 

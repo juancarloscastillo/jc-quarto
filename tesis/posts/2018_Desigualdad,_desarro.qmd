@@ -1,9 +1,9 @@
 ---
-title : "Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina"
+title : "Desigualdad, desarrollo económico y preferencias redistributivas en América Latina"
 date : "2018-01-01"
 author : ["Gonzalo Franetovic"]
-publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "En una región en vı́as de desarrollo y altamente desigual como América Latina, resulta trascendental la comprensión de los determinantes que afectan en el acuerdo de las personas con la redistribución de recursos. La popular hipótesis del votante mediano y las teorı́as centradas en el autointerés continuamente han establecido un vı́nculo negativo entre el ingreso de las personas y su apoyo hacia la disminución de desigualdades. A pesar de ello, la evidencia es escasa y a veces contradictoria, mientras que su testeo en Latinoamérica resulta casi inexistente. Utilizando infor- mación de la Encuesta LAPOP entre los años 2008 y 2014, junto a datos para paı́ses, esta investigación evalúa la aplicabilidad que tiene para América Latina la supuesta asociación inversa entre estrato de ingreso y acuerdo con la reducción de brechas por medio del Estado, analizando el efecto de la desigualdad y el desarrollo económico de los paı́ses en esta relación. Para ello, se emplean modelos hı́bridos de regresión multinivel, para 4 perı́odos de tiempo y 18 naciones, controlando por caracterı́sticas relevantes tanto de los paı́ses como de las personas. Los resultados dan cuenta de las escasas diferencias entre estratos económicos, demostrándose que, al contrario de como se ha evidenciado en otras regiones del planeta, el ingreso no logra con- stituirse como un determinante esencial sobre las preferencias redistributivas para la población latinoamericana. Más que aplicar en una variedad de contextos, el autointerés sólo emerge al interior de la región en sociedades económicamente más ricas. A la luz de los resultados, se establecen comparaciones con los hallazgos de investigaciones previas en paı́ses desarrollados, discutiéndose la aplicación de teorı́as racionalistas en materia de justicia y solidaridad social al interior de las sociedades que conforman nuestra región."
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -43,7 +43,7 @@ que conforman nuestra región.
 
 ::: {.callout-note title="How to cite this work"}
 
-Gonzalo Franetovic (2018). *Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Gonzalo Franetovic (2018). *Desigualdad, desarrollo económico y preferencias redistributivas en América Latina*.  Magister en Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

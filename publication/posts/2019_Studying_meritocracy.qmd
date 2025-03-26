@@ -1,5 +1,5 @@
 ---
-title : "Studying Meritocracy in an Unequal Context: Perspectives from Chilean Scholars"
+title : "Studying meritocracy in an unequal context: Perspectives from chilean scholars"
 date : "2019-12-01"
 author : ["Jorge Atria", "Juan-Carlos Castillo", "Luis Maldonado", "Simon Ramirez", "Jorge Atria", "Juan Carlos Castillo", "Luis Maldonado", "Simon Ramirez"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Jorge Atria, Juan-Carlos Castillo, Luis Maldonado, Simon Ramirez, Jorge Atria, Juan Carlos Castillo, Luis Maldonado, Simon Ramirez (2019). *Studying Meritocracy in an Unequal Context: Perspectives from Chilean Scholars*. Universum, 34(2) 127--145  [https://doi.org/10.4067/S0718-23762019000200127](https://doi.org/10.4067/S0718-23762019000200127)
+Jorge Atria, Juan-Carlos Castillo, Luis Maldonado, Simon Ramirez, Jorge Atria, Juan Carlos Castillo, Luis Maldonado, Simon Ramirez (2019). *Studying meritocracy in an unequal context: Perspectives from chilean scholars*. Universum, 34(2) 127--145  [https://doi.org/10.4067/S0718-23762019000200127](https://doi.org/10.4067/S0718-23762019000200127)
 
 :::
 

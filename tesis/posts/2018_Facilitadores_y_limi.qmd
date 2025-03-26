@@ -1,9 +1,9 @@
 ---
-title : "Facilitadores y Limitantes En La Contratación de Migrantes Desde El Empleador Del Sector Terciario de Producción"
+title : "Facilitadores y limitantes en la contratación de migrantes desde el empleador del sector terciario de producción"
 date : "2018-01-01"
 author : ["Juan Francisco Concha", "Maria Belen Saavedra"]
-publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "(Abstract not available)"
 abstract_short : ""
 categories : ["Miembro comité evaluador"]
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Francisco Concha, Maria Belen Saavedra (2018). *Facilitadores y Limitantes En La Contratación de Migrantes Desde El Empleador Del Sector Terciario de Producción*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Juan Francisco Concha, Maria Belen Saavedra (2018). *Facilitadores y limitantes en la contratación de migrantes desde el empleador del sector terciario de producción*.  Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

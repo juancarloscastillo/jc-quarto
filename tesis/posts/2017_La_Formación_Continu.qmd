@@ -1,9 +1,9 @@
 ---
-title : "La Formación Continua En Docencia Del Profesorado Universitario Efectos Sobre La Práctica y Autopercepción Docente"
+title : "La Formación Continua en Docencia del Profesorado Universitario Efectos sobre la práctica y autopercepción docente"
 date : "2017-01-01"
 author : ["Cristian Munoz", "Raul Cofre"]
-publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "(Abstract not available)"
 abstract_short : ""
 categories : ["Miembro comité evaluador"]
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Cristian Munoz, Raul Cofre (2017). *La Formación Continua En Docencia Del Profesorado Universitario Efectos Sobre La Práctica y Autopercepción Docente*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Cristian Munoz, Raul Cofre (2017). *La Formación Continua en Docencia del Profesorado Universitario Efectos sobre la práctica y autopercepción docente*.  Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

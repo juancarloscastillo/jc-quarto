@@ -1,5 +1,5 @@
 ---
-title : "Meritocracia y Desigualdad Económica: Percepciones, Preferencias e Implicancias"
+title : "Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias"
 date : "2019-03-01"
 author : ["Juan C. Castillo", "Alex Torres", "Jorge Atria", "Luis Maldonado"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan C. Castillo, Alex Torres, Jorge Atria, Luis Maldonado (2019). *Meritocracia y Desigualdad Económica: Percepciones, Preferencias e Implicancias*. Revista Internacional de Sociología, 77(1) 117  [https://doi.org/10.3989/ris.2019.77.1.17.114](https://doi.org/10.3989/ris.2019.77.1.17.114)
+Juan C. Castillo, Alex Torres, Jorge Atria, Luis Maldonado (2019). *Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias*. Revista Internacional de Sociología, 77(1) 117  [https://doi.org/10.3989/ris.2019.77.1.17.114](https://doi.org/10.3989/ris.2019.77.1.17.114)
 
 :::
 

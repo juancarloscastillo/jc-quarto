@@ -1,5 +1,5 @@
 ---
-title : "¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos"
+title : "¿Las estudiantes subestiman sus habilidades tecnológicas? Diferencias de género en autoeficacia digital en contextos escolares chilenos"
 date : "2024-05-01"
 author : ["Juan-Carlos Castillo", "Nicolas Tobar"]
 categories : ["Presentation"]
@@ -22,7 +22,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Nicolas Tobar (2024). *¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos*.  Congreso Chileno de Sociología - PreAlas . Santiago
+Juan-Carlos Castillo, Nicolas Tobar (2024). *¿Las estudiantes subestiman sus habilidades tecnológicas? Diferencias de género en autoeficacia digital en contextos escolares chilenos*.  Congreso Chileno de Sociología - PreAlas . Santiago
 
 :::
 

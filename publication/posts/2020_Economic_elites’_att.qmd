@@ -1,5 +1,5 @@
 ---
-title : "Economic Elites’ Attitudes toward Meritocracy in Chile: A Moral Economy Perspective"
+title : "Economic elites’ attitudes toward meritocracy in chile: a moral economy perspective"
 date : "2020-08-01"
 author : ["Jorge Atria", "Juan-Carlos Castillo", "Luis Maldonado", "Simon Ramirez"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Jorge Atria, Juan-Carlos Castillo, Luis Maldonado, Simon Ramirez (2020). *Economic Elites’ Attitudes toward Meritocracy in Chile: A Moral Economy Perspective*. American Behavioral Scientist, 64(9) 1219--1241 : SAGE Publications Inc [https://doi.org/10.1177/0002764220941214](https://doi.org/10.1177/0002764220941214)
+Jorge Atria, Juan-Carlos Castillo, Luis Maldonado, Simon Ramirez (2020). *Economic elites’ attitudes toward meritocracy in chile: a moral economy perspective*. American Behavioral Scientist, 64(9) 1219--1241 : SAGE Publications Inc [https://doi.org/10.1177/0002764220941214](https://doi.org/10.1177/0002764220941214)
 
 :::
 

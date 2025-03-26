@@ -1,5 +1,5 @@
 ---
-title : "Flujo y Componentes de La Investigación Abierta"
+title : "Flujo y Componentes de la Investigación Abierta"
 date : "2023-01-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Presentation"]
@@ -36,7 +36,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2023). *Flujo y Componentes de La Investigación Abierta*.  9o Congreso de Bibliotecas Universitarias y Especializadas, Universidad de Chile . Santiago
+Juan-Carlos Castillo (2023). *Flujo y Componentes de la Investigación Abierta*.  9o Congreso de Bibliotecas Universitarias y Especializadas, Universidad de Chile . Santiago
 
 :::
 

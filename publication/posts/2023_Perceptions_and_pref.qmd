@@ -1,5 +1,5 @@
 ---
-title : "Perceptions and Preferences about Income Taxes: A Factorial Survey Approach"
+title : "Perceptions and preferences about income taxes: A factorial survey approach"
 date : "2023-07-01"
 author : ["Julio Iturra", "Juan-Carlos Castillo", "Luis Maldonado"]
 categories : ["Presentation"]
@@ -28,7 +28,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Julio Iturra, Juan-Carlos Castillo, Luis Maldonado (2023). *Perceptions and Preferences about Income Taxes: A Factorial Survey Approach*.  ESRA . Milán
+Julio Iturra, Juan-Carlos Castillo, Luis Maldonado (2023). *Perceptions and preferences about income taxes: A factorial survey approach*.  ESRA . Milán
 
 :::
 

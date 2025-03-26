@@ -1,5 +1,5 @@
 ---
-title : "The Two Faces of Support for Redistribution in Colombia: Taxing the Wealthy or Assisting People in Poverty"
+title : "The two faces of support for redistribution in Colombia: Taxing the wealthy or assisting people in poverty"
 date : "2022-01-01"
 author : ["Efrain Garcia-Sanchez", "Juan-Carlos Castillo", "Rosa Rodriguez-Bailon", "Guillermo B. Willis"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Efrain Garcia-Sanchez, Juan-Carlos Castillo, Rosa Rodriguez-Bailon, Guillermo B. Willis (2022). *The Two Faces of Support for Redistribution in Colombia: Taxing the Wealthy or Assisting People in Poverty*. Accepted -  Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.773378](https://doi.org/10.3389/fsoc.2022.773378)
+Efrain Garcia-Sanchez, Juan-Carlos Castillo, Rosa Rodriguez-Bailon, Guillermo B. Willis (2022). *The two faces of support for redistribution in Colombia: Taxing the wealthy or assisting people in poverty*. Accepted -  Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.773378](https://doi.org/10.3389/fsoc.2022.773378)
 
 :::
 

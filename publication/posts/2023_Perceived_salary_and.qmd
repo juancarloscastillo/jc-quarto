@@ -1,5 +1,5 @@
 ---
-title : "Perceived Salary and Gender Gaps in Survey Research"
+title : "Perceived salary and gender gaps in survey research"
 date : "2023-07-01"
 author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Julio Iturra"]
 categories : ["Presentation"]
@@ -27,7 +27,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco, Julio Iturra (2023). *Perceived Salary and Gender Gaps in Survey Research*.  ESRA . Milán
+Juan-Carlos Castillo, Kevin Carrasco, Julio Iturra (2023). *Perceived salary and gender gaps in survey research*.  ESRA . Milán
 
 :::
 

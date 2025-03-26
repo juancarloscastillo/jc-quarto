@@ -1,5 +1,5 @@
 ---
-title : "Brechas de Género En La Percepción y Justificación de Desigualdad Salarial En Chile 1999-2019."
+title : "Brechas de género en la percepción y justificación de desigualdad salarial en Chile 1999-2019."
 date : "2023-08-01"
 author : ["Juan-Carlos Castillo", "Kevin Carrasco"]
 categories : ["Presentation"]
@@ -27,7 +27,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco (2023). *Brechas de Género En La Percepción y Justificación de Desigualdad Salarial En Chile 1999-2019.*.  Conferencia DEMOSAL . Buenos Aires
+Juan-Carlos Castillo, Kevin Carrasco (2023). *Brechas de género en la percepción y justificación de desigualdad salarial en Chile 1999-2019.*.  Conferencia DEMOSAL . Buenos Aires
 
 :::
 

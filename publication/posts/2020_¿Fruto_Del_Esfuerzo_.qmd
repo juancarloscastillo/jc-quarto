@@ -1,5 +1,5 @@
 ---
-title : "¿Fruto Del Esfuerzo? Los Cambios En Las Atribuciones Sobre Pobreza y Riqueza En Chile Entre 1996 y 2015"
+title : "¿Fruto del esfuerzo? Los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015"
 date : "2020-06-01"
 author : ["Raimundo Frei", "Juan-Carlos Castillo", "Rodrigo Herrera", "Jose Ignacio Suarez"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Raimundo Frei, Juan-Carlos Castillo, Rodrigo Herrera, Jose Ignacio Suarez (2020). *¿Fruto Del Esfuerzo? Los Cambios En Las Atribuciones Sobre Pobreza y Riqueza En Chile Entre 1996 y 2015*. Latin American Research Review, 55(3) 477--496 
+Raimundo Frei, Juan-Carlos Castillo, Rodrigo Herrera, Jose Ignacio Suarez (2020). *¿Fruto del esfuerzo? Los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015*. Latin American Research Review, 55(3) 477--496 
 
 :::
 

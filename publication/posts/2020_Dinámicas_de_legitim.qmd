@@ -1,10 +1,10 @@
 ---
-title : "Dinámicas de Legitimación: Percepción de Desigualdad Actual y Justificación de Desigualdad Futura"
+title : "Dinámicas de legitimación: Percepción de desigualdad actual y justificación de desigualdad futura"
 date : "2020-06-01"
 author : ["Julio Iturra", "Juan-Carlos Castillo"]
 categories : ["Presentation"]
-publication : " Seminario ELSOC Cambio Social En Chile . Santiago ( Online"
-publication_short : " Seminario ELSOC Cambio Social En Chile . Santiago ( Online"
+publication : " Seminario ELSOC Cambio Social en Chile . Santiago ( Online"
+publication_short : " Seminario ELSOC Cambio Social en Chile . Santiago ( Online"
 abstract : "(Abstract not available)"
 abstract_short : ""
 about:
@@ -17,7 +17,7 @@ Github Repo](https://github.com/jciturras/dinamic-legit)
 
 ::: {.callout-note title="How to cite this work"}
 
-Julio Iturra, Juan-Carlos Castillo (2020). *Dinámicas de Legitimación: Percepción de Desigualdad Actual y Justificación de Desigualdad Futura*.  Seminario ELSOC Cambio Social En Chile . Santiago ( Online
+Julio Iturra, Juan-Carlos Castillo (2020). *Dinámicas de legitimación: Percepción de desigualdad actual y justificación de desigualdad futura*.  Seminario ELSOC Cambio Social en Chile . Santiago ( Online
 
 :::
 

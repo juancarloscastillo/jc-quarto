@@ -1,5 +1,5 @@
 ---
-title : "Procedural Justice, Minorities, and Religiosity"
+title : "Procedural justice, minorities, and religiosity"
 date : "2014-03-01"
 author : ["Roni Factor", "Juan-Carlos Castillo", "Arye Rattner"]
 categories : ["Journal Article"]
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Roni Factor, Juan-Carlos Castillo, Arye Rattner (2014). *Procedural Justice, Minorities, and Religiosity*. Police Practice and Research, 15(2) 130--142  [https://doi.org/10.1080/15614263.2013.874171](https://doi.org/10.1080/15614263.2013.874171)
+Roni Factor, Juan-Carlos Castillo, Arye Rattner (2014). *Procedural justice, minorities, and religiosity*. Police Practice and Research, 15(2) 130--142  [https://doi.org/10.1080/15614263.2013.874171](https://doi.org/10.1080/15614263.2013.874171)
 
 :::
 

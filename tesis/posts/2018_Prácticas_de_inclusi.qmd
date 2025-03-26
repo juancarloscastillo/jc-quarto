@@ -1,9 +1,9 @@
 ---
-title : "Prácticas de Inclusión y Exclusión de Estudiantes En Situación de Migración: Un Estudio de Caso En Dos Escuelas Municipales de La Comuna de Renca En Santiago"
+title : "Prácticas de inclusión y exclusión de estudiantes en situación de migración: Un estudio de caso en dos escuelas municipales de la comuna de renca en santiago"
 date : "2018-01-01"
 author : ["Amanda Nogueira", "Teresa Lihn"]
-publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "(Abstract not available)"
 abstract_short : ""
 categories : ["Miembro comité evaluador"]
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Amanda Nogueira, Teresa Lihn (2018). *Prácticas de Inclusión y Exclusión de Estudiantes En Situación de Migración: Un Estudio de Caso En Dos Escuelas Municipales de La Comuna de Renca En Santiago*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Amanda Nogueira, Teresa Lihn (2018). *Prácticas de inclusión y exclusión de estudiantes en situación de migración: Un estudio de caso en dos escuelas municipales de la comuna de renca en santiago*.  Taller titulación - pregrado sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

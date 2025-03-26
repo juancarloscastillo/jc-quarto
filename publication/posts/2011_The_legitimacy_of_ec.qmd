@@ -1,5 +1,5 @@
 ---
-title : "The Legitimacy of Economic Inequality: An Empirical Approach to the Case of Chile"
+title : "The legitimacy of economic inequality: An empirical approach to the case of Chile"
 date : "2011-01-01"
 author : ["Juan-Carlos Castillo"]
 categories : ["Book"]
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2011). *The Legitimacy of Economic Inequality: An Empirical Approach to the Case of Chile*.  . Boca R.,FL: Universal Publishers. ISBN: 978-1-59942-376-0
+Juan-Carlos Castillo (2011). *The legitimacy of economic inequality: An empirical approach to the case of Chile*.  . Boca R.,FL: Universal Publishers. ISBN: 978-1-59942-376-0
 
 :::
 

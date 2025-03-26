@@ -1,9 +1,9 @@
 ---
-title : "Factores Determinantes de Las Trayectorias de Deserción Permanente En Educación Superior: El Efecto de Las Ayudas Financieras Estatales y La Política de Gratuidad"
+title : "Factores determinantes de las trayectorias de deserción permanente en educación superior: El efecto de las ayudas financieras estatales y la política de gratuidad"
 date : "2022-01-01"
 author : ["Catalina Miranda"]
-publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
-publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 abstract : "(Abstract not available)"
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -47,7 +47,7 @@ probabilidad de abandono.
 
 ::: {.callout-note title="How to cite this work"}
 
-Catalina Miranda (2022). *Factores Determinantes de Las Trayectorias de Deserción Permanente En Educación Superior: El Efecto de Las Ayudas Financieras Estatales y La Política de Gratuidad*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Catalina Miranda (2022). *Factores determinantes de las trayectorias de deserción permanente en educación superior: El efecto de las ayudas financieras estatales y la política de gratuidad*.  Licenciatura en Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

@@ -1,5 +1,5 @@
 ---
-title : "Perceived Economic Inequality Measures: Their Reflection on Objective Inequalities and Their Effects on Support for Redistribution"
+title : "Perceived economic inequality measures: Their reflection on objective inequalities and their effects on support for redistribution"
 date : "2022-12-01"
 author : ["Juan Diego Garcia-Castro", "Efrain Garcia-Sanchez", "Guillermo B. Willis", "Juan-Carlos Castillo", "Rosa Rodriguez-Bailon"]
 categories : ["Journal Article"]
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Diego Garcia-Castro, Efrain Garcia-Sanchez, Guillermo B. Willis, Juan-Carlos Castillo, Rosa Rodriguez-Bailon (2022). *Perceived Economic Inequality Measures: Their Reflection on Objective Inequalities and Their Effects on Support for Redistribution*. Social Psychology, 53 [https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498](https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498)
+Juan Diego Garcia-Castro, Efrain Garcia-Sanchez, Guillermo B. Willis, Juan-Carlos Castillo, Rosa Rodriguez-Bailon (2022). *Perceived economic inequality measures: Their reflection on objective inequalities and their effects on support for redistribution*. Social Psychology, 53 [https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498](https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498)
 
 :::
 
