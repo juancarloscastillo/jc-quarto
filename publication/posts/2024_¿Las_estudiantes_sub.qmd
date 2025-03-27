@@ -9,9 +9,6 @@ abstract : "Los estudios educativos revelan que, en la mayoría de los sistemas 
 abstract_short : ""
 about:
   template: marquee
-  links:
-    - icon: file-slides-fill
-      href: l
 ---
 # ![](/images/congsocio2024nudos.png)
 

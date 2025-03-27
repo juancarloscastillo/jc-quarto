@@ -64,6 +64,7 @@ listing:
 - id: blog
   contents: 
     - blog/posts/*/*.qmd
+    - "!blog/posts/drafts/*.qmd"
   sort: date desc
   type: default
   max-items: 5

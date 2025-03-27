@@ -12,7 +12,9 @@
       "proyectos/posts/*/*.qmd",
       "blog/posts/*/*.qmd",
       "tesis/posts/*.qmd",
-      "images/albums/gallery/*"
+      "images/albums/gallery/*",
+      "!blog/posts/labelled-data-R/index.qmd",
+      "!blog/posts/drafts/*.qmd"
     ],
     "proyectos/proyectos.qmd": [
       "posts"

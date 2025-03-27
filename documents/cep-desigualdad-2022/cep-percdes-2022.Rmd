@@ -1,0 +1,190 @@
+---
+title: "CEP-Percepción Desigualdad 2022"
+author: ".small[Juan Carlos Castillo]"
+date: "Septiembre 2022"
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
+    lib_dir: libs
+    css: ["custom_2020.css"]
+    seal: false # esto omite title slide automática
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "macros.js"
+      slideNumberFormat: "%current%/%total%"
+---
+class: middle hide-logo title
+
+```{r xaringanExtra, echo = FALSE}
+  xaringanExtra::use_progress_bar(color = "red", location = c("top"))
+```
+
+.pull-left-narrow[
+.espaciosimple[
+.tiny[]
+]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+![:scale 50%](images/logofacso.png)
+<br>
+
+![:scale 50%](images/COES_ENG_Logo_azul.png)
+]
+
+
+
+.pull-right-wide[
+.right[
+
+.content-box-gray[
+### Seminario: 
+##¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social?
+]
+
+----
+.espaciosimplelineas[
+.medium[
+Juan C. Castillo - Universidad de Chile 
+
+[jc-castillo.com](https://jc-castillo.com/)
+
+] 
+]
+
+
+
+
+
+.small[Septiembre 22, 2022 - Santiago, Centro de Estudios Públicos]
+
+]
+]
+
+---
+class: middle center
+<br>
+![:scale 120%](images/des-sub.png)
+.left[.tiny[Castillo, 2012]]
+---
+class: middle center
+
+![:scale 65%](images/perdes-2009-int.png)
+.left[.tiny[Castillo, 2012]]
+
+---
+class: middle center
+![:scale 70%](images/perdes-gini-2009.png)
+.left[.tiny[Castillo, 2012]]
+
+
+---
+class: middle center
+![:scale 65%](images/chile-perdes-anhos.png)
+.left[.tiny[Castillo, Meneses, Iturra & Maldonado (2019)]]
+
+
+
+---
+class: middle center 
+![:scale 65%](images/comp-brechas.png)
+.left[.tiny[Castillo, Meneses, Iturra & Maldonado 2019]]
+
+
+---
+class: middle center
+
+## Código & datos análisis 1999-2019:
+
+# [https://github.com/justicia-distributiva/chile-ISSP-gaps-1999-2019](https://github.com/justicia-distributiva/chile-ISSP-gaps-1999-2019)
+
+
+---
+class: middle center
+<br>
+![:scale 60%](images/cep2009.png)
+.left[.tiny[Castillo, 2009]]
+
+
+---
+class: inverse
+
+## .red[Ideas finales]
+
+- relevancia de percepción de desigualdad en relación a justificación y preferencias redistributivas
+
+- otras medidas de percepción de desigualdad (ej, vida cotidiana García-Castro, 2020, 2021)
+
+- corrección de sesgos vía presentación de información objetiva (Iturra et al, 2022)
+
+- desigualdad vs concentración de ingresos
+
+---
+class: center middle
+## Más información
+
+.center[
+![:scale 70%](images/IJSP.png)
+]
+
+[doi.org/10.1080/02134748.2021.2009275](https://doi.org/10.1080/02134748.2021.2009275
+)
+
+---
+class: middle hide-logo title
+
+.pull-left-narrow[
+.espaciosimple[
+.tiny[]
+]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+![:scale 50%](images/logofacso.png)
+<br>
+
+![:scale 50%](images/COES_ENG_Logo_azul.png)
+]
+
+
+
+.pull-right-wide[
+.right[
+
+.content-box-gray[
+### Seminario: 
+##¿Cuánto cambiaron las percepciones de desigualdad tras el estallido social?
+]
+
+----
+.espaciosimplelineas[
+.medium[
+Juan C. Castillo - Universidad de Chile 
+
+[jc-castillo.com](https://jc-castillo.com/)
+
+] 
+]
+
+
+
+
+
+.small[Septiembre 22, 2022 - Santiago, Centro de Estudios Públicos]
+
+]
+]

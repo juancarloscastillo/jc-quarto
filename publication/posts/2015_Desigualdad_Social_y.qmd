@@ -13,7 +13,7 @@ about:
 ---
 Proyecto Fondecyt Formación Ciudadana I
 
-[Documento](/documents/pdf/2015_desigualdad)
+[Documento](/documents/pdf/2015_desigualdad.pdf)
 
 
 ::: {.callout-note title="How to cite this work"}

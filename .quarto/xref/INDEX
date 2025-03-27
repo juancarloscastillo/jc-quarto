@@ -1444,5 +1444,23 @@
   },
   "publication/posts/2020_¿Fruto_del_esfuerzo_.qmd": {
     "2020_¿Fruto_del_esfuerzo_.html": "98c59967"
+  },
+  "blog/posts/drafts/quarto-migration/index.qmd": {
+    "index.html": "4494d0e1"
+  },
+  "blog/posts/drafts/IA/index.qmd": {
+    "index.html": "99939253"
+  },
+  "blog/posts/drafts/informe-quarto/index.qmd": {
+    "index.html": "c3e6f70d"
+  },
+  "blog/posts/drafts/labelled-data-R/index.qmd": {
+    "index.html": "dd4228f1"
+  },
+  "blog/posts/drafts/revision-bibliografica/index.qmd": {
+    "index.html": "1aa01c02"
+  },
+  "blog/posts/drafts/vsc-settings/index.qmd": {
+    "index.html": "b6cac2ad"
   }
 }

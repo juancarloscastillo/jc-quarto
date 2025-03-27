@@ -11,7 +11,7 @@ about:
   template: marquee
 ---
 ---
-[Link to pdf](/docs/torniquete-capitulo.pdf)
+[Link to pdf](/documents/pdf/torniquete-capitulo.pdf)
 ![](/images/torniquete.png)
 
 

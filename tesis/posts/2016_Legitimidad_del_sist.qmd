@@ -11,7 +11,7 @@ about:
   template: marquee
   links:
     - icon: file-pdf-fill
-      href: /documents/pdf/FinalCorregidaAgosto2016.pdf
+      href: documents/pdf/FinalCorregidaAgosto2016.pdf
 ---
 ---
 

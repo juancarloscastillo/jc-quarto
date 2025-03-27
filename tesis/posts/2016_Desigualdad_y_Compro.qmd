@@ -11,7 +11,7 @@ about:
   template: marquee
   links:
     - icon: file-pdf-fill
-      href:  /documents/pdf/acevedoversionfinal.pdf
+      href:  documents/pdf/acevedoversionfinal.pdf
 ---
 ---
 

@@ -11,7 +11,7 @@ about:
   template: marquee
 ---
 ---
-[Link to pdf](/docs/carrasco-socializacion-meritocracia.pdf)
+[Link to pdf](/documents/pdf/carrasco-socializacion-meritocracia.pdf)
 ![](https://m.media-amazon.com/images/I/41JN8DUE-RL.jpg)
 
 
