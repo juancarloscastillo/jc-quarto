@@ -221,10 +221,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header> <main class="content" id="quarto-document-content">
 
 <!-- Creo que el comienzo de esta entrada debería escribirla JC, explicando sus motivaciones para hacer la migración. -->
-<p>Altough you can take this as a guide for building a quarto website from scratch, the true is most of this post is dedicated to explain how to migrate a website already built on Hugo Academic to Quarto. For building a brand-new website, the <a href="https://quarto.org/docs/websites/">Quarto original documentation</a> is a good starting point. Also, even if this a new-ish tool, there is already a bunch of <a href="https://quarto.org/docs/gallery/#websites">academic sites built on Quarto</a>, including <a href="https://github.com/quarto-dev/quarto-web">Quarto official website itself</a>, that you can check for ideas.</p>
+<p>Although you can use this as a guide to building a Quarto site from scratch, most of this article is actually devoted to explaining how to migrate a site already built on Hugo Academic to Quarto. If you are building a site from scratch, the <a href="https://quarto.org/docs/websites/">Quarto original documentation</a> is a good place to start. Even though this is a newer tool, there are already a number of <a href="https://quarto.org/docs/gallery/#websites">Academic sites built on Quarto</a>, including the <a href="https://github.com/quarto-dev/quarto-web">Quarto official website itself</a>, that you can check out for ideas.</p>
 <section id="project-structure" class="level2">
 <h2 data-anchor-id="project-structure">Project Structure</h2>
-<p>One of the advantages of building a website in Quarto it is that its project structure is way simpler comparing with Hugo. In fact, it is very much the same as any Quarto project. This is a basic Quarto Website project.</p>
+<p>One of the advantages of building a website in Quarto is that the project structure is much simpler than in Hugo. In fact, it is very similar to any other Quarto project. This is a basic Quarto website project.</p>
 <pre class="plaintext"><code>.
 ├── _quarto.yml
 ├── docs
@@ -245,11 +245,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="website-basic-configuration" class="level2">
 <h2 data-anchor-id="website-basic-configuration">Website basic configuration</h2>
-<p>First, you will have a <code>_quarto.yml</code> which contains the basic configuration of the website. Here you can define the website title, the navbar configuration and some style settings. If you have an external <code>.css</code> file and you want to apply it for the whole site, you need to specify it here.</p>
+<p>First, you will have a <code>_quarto.yml</code> file, which contains the basic configuration of the website. Here you can define the site title, the navbar configuration and some style settings. If you have an external <code>.css</code> file and want to apply it to the whole site, you need to specify it here.</p>
 </section>
 <section id="output-directory" class="level2">
 <h2 data-anchor-id="output-directory">Output directory</h2>
-<p>By default, the website is rendered into a <code>_site</code> folder. However, we recommend create a <code>docs</code> folder as output directory, since it makes it easier to deploy the website in Github Pages or Netlify.</p>
+<p>By default the website will be rendered into a <code>_site</code> folder. However, we recommend that you create a <code>docs</code> folder as the output directory, as this makes it easier to deploy the website in Github Pages or Netlify.</p>
 <p>To change your output directory you need to specify it with <code>output-dir</code> in your <code>_quarto.yml</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
@@ -257,9 +257,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="content" class="level2">
 <h2 data-anchor-id="content">Content</h2>
-<p>If migrating creating a new website would mean starting over and lost all your previous content, you would probably not very exiting to try nothing new. Luckily, the migration of content from Hugo to Quarto is quite straightforward.</p>
-<p>First of all, you need to change all your old <code>.rmd</code> and <code>.md</code> to <code>.qmd</code> files. We managed to work this out manually, but if you have tons of entries you might want to explore some automatization. In that case, you should thanks <a href="https://www.njtierney.com/about/">Nick Tierney</a> for tweaking <a href="https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/">this very simple function</a> to transform <code>.rmd</code> to <code>.qmd</code>.</p>
-<p>Next, you need to adapt your brand new <code>.qmd</code>’s YAMLs. This not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are way more simpler than Markdown’s. For example, this is my old <em>Docencia</em> Markdown’s YAML.</p>
+<p>If migrating to a new site meant starting from scratch and losing all your previous content, you might not be too excited about trying something new. Fortunately, migrating content from Hugo to Quarto is fairly straightforward.</p>
+<p>The first thing you need to do is change all your old <code>.rmd' and</code>.md’ files to <code>.qmd</code>. We managed to do this manually, but if you have tons of entries you may want to explore some automation. In that case, you should thank <a href="https://www.njtierney.com/about/">Nick Tierney</a> for tweaking <a href="https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/">this very simple function</a> to convert <code>.rmd</code> to <code>.qmd</code>.</p>
+<p>Next, you need to adapt your brand new `.qmd’ YAMLs. This is not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are much simpler than Markdown’s. For example, this is my old <em>Docencia</em> Markdown’s YAML.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># An instance of the Pages widget.</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Documentation: https://wowchemy.com/docs/page-builder/</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">widget</span><span class="kw">:</span><span class="at"> portfolio</span></span>
@@ -313,17 +313,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">image-align</span><span class="kw">:</span><span class="at"> left</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">title</span><span class="kw">,</span><span class="at"> date</span><span class="kw">]</span></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>So you only need to write this very concise chunk of YAML once, and then just copy-paste it and adapt it to every page you need.</p>
-<p>If you have any page that it does not have any other subdirectory, you can just leave that <code>.qmd</code> in your root directory and you are done! Just like the <a href="https://github.com/juancarloscastillo/jc-quarto/blob/main/links.qmd">links</a> page in this site.</p>
-<p>However, if you have many entries, you might need to follow another structure. Here is the following by us:</p>
+<p>So you only need to write this very concise chunk of YAML once, and then just copy and paste it to every page you need.</p>
+<p>If you have a page that has no other subdirectory, you can just leave this `.qmd’ in your root directory and be done with it! Just like the <a href="https://github.com/juancarloscastillo/jc-quarto/blob/main/links.qmd">links</a> page in this site.</p>
+<p>However, if you have many entries, you may need to follow a different structure. Here is the one we use:</p>
 <pre class="plaintext"><code>.
 ├── docencia
 │   ├── docencia.qmd
 │   ├── posts
 │      └── post1
 │         └── index.qmd</code></pre>
-<p>Now, you can just copy and paste your old content inside the <code>posts</code> folder. As you could see in <code>docencia yaml</code> before, this <code>post</code> folder is indicated in the listing’s <code>content</code> option. <a href="https://quarto.org/docs/websites/website-listings.html">Listings</a> are the most essential tool in constructing a blog on Quarto, since allows you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents.</p>
-<p>Then, you are going to need to transform the <code>.rmd</code> and <code>.md</code> files to <code>.qmd</code> files, and adapt your YAML’s, just like before. Again, the YAML structure in Quarto is significantly simpler, as in this example.</p>
+<p>Now you can just copy and paste your old content into the <code>posts</code> folder. As you could see in the <code>docencia yaml</code> before, this <code>post</code> folder is indicated in the <code>content</code> option of the listing. <a href="https://quarto.org/docs/websites/website-listings.html">Listings</a> are the main tool for creating a blog on Quarto, as they allow you to automatically generate the content of a page (or a section of a page) from a list of Quarto documents.</p>
+<p>Then you have to convert the <code>.rmd</code> and <code>.md</code> files into <code>.qmd</code> files and adapt your YAML’s as before. Again, the YAML structure in Quarto is much simpler, as in this example.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Talleres y seminarios</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cursos</span><span class="kw">]</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Date published</span></span>
@@ -332,14 +332,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> marquee</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"featured.png"</span><span class="at">  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This is minimum example, of course. You can explore other options and templates in the <a href="https://quarto.org/docs/websites/website-blog.html">quarto documentation</a></p>
+<p>This is a minimal example, of course. You can explore other options and templates in the <a href="https://quarto.org/docs/websites/website-blog.html">quarto documentation</a></p>
 </section>
 <section id="homepage" class="level2">
 <h2 data-anchor-id="homepage">Homepage</h2>
 <p>Your new homepage will be set up by <code>index.qmd</code>.</p>
 <section id="about-page" class="level3">
 <h3 data-anchor-id="about-page">About Page</h3>
-<p>In this case, we use <em>trestle</em>, but you can explore <a href="https://quarto.org/docs/websites/website-about.html#templates">another templates</a> as well. Here you can set up your profile picture and some contact or personal links:</p>
+<p>In this case we use <em>trestle</em>, but you can also explore <a href="https://quarto.org/docs/websites/website-about.html#templates">other templates</a>. Here you can set up your profile picture and some contact or personal links:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Juan Carlos Castillo"</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pagetitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"JC Castillo Website"</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
@@ -372,20 +372,20 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Currently, Quarto only supports Bootstrap Icons. So if you were using any other icon packages in Hugo, you will need to replace it for bootstrap icons. <a href="https://icons.getbootstrap.com">More information</a></p>
+<p>Currently, Quarto only supports Bootstrap Icons. So if you were using any other icon packages in Hugo, you will need to replace them for bootstrap icons. <a href="https://icons.getbootstrap.com">More information</a></p>
 </div>
 </div>
 </section>
 <section id="homepage-listings" class="level3">
 <h3 data-anchor-id="homepage-listings">Homepage listings</h3>
-<p>While before listing were used to built individual pages, the homepage was built as a collection of listings. We accomplished this by indicating all the wanted listings in <a href="https://github.com/juancarloscastillo/jc-quarto/blob/main/index.qmd"><code>index.qmd</code> YAML</a>. Then, you can place the listing content on the document by anchoring it using its <code>id</code>. For example, this listing:</p>
+<p>While before listing were used to build individual pages, the homepage was created as a collection of listings. We achieved this by specifying all the listings we wanted in <a href="https://github.com/juancarloscastillo/jc-quarto/blob/main/index.qmd"><code>index.qmd</code> YAML</a>. Then you can place the content of the listing in the document by anchoring it with its <code>id</code>. For example, this listing:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> docencia</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> docencia/posts/*/*.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Will be called like this:</p>
+<p>Will be called like this on the document body:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>#docencia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>By default, Quarto proportionate three listing templates: <strong>default</strong>, <strong>table</strong> and <strong>grid</strong>. Here, we used <strong>grid</strong> for <em>docencia</em> and <em>proyectos</em> listings, and <strong>default</strong> for <em>publication</em>, <em>tesis</em> and <em>blog</em> listing.</p>
-<p>However, you can also create <a href="https://quarto.org/docs/websites/website-listings-custom.html">custom listings</a> by using EJS templates. We take Quarto’s developer <a href="https://mickael.canouil.fr">Mickaël Canouil</a> code for creating a <a href="https://github.com/quarto-dev/quarto-cli/discussions/5972#discussioncomment-10303996">gallery listing</a>. The EJS template for look like this:</p>
+<p>By default, Quarto proportionates three listing templates: <strong>default</strong>, <strong>table</strong> and <strong>grid</strong>. Here we have used <strong>grid</strong> for <em>docencia</em> and <em>proyectos</em> listings, and <strong>default</strong> for <em>publication</em>, <em>tesis</em> and <em>blog</em> listings.</p>
+<p>However, you can also create <a href="https://quarto.org/docs/websites/website-listings-custom.html">Custom Listings</a> using EJS templates. We take the code for creating a <a href="https://github.com/quarto-dev/quarto-cli/discussions/5972#discussioncomment-10303996">gallery listing</a> from Quarto developer <a href="https://mickael.canouil.fr">Mickaël Canouil</a>. The EJS template used looks like this:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">style</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text/css"</span><span class="dt">&gt;</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.grid-gallery</span> {</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">columns</span><span class="ch">:</span> <span class="dv">5</span> <span class="dv">200</span><span class="dt">px</span><span class="op">;</span></span>
@@ -417,12 +417,12 @@ Important
 <span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span>% } %&gt;</span>
 <span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>As you can see, is nothing too fancy, and with basic CSS knowledge you might be able to figure this out. The <a href="https://juancarloscastillo.github.io/jc-quarto/#galeriah1">results</a>, however, are great.</p>
-<p>Sadly, I believe this feature is very underused at the moment. I would bet that in a couple of years there will be plenty of awesome EJS templates available for everyone to choose. For now, however, given its tremendous potential to customize your site, it might be worth the trouble to explore it by yourself.</p>
+<p>As you can see, nothing too fancy, and with basic CSS knowledge you might be able to figure it out. The <a href="https://juancarloscastillo.github.io/jc-quarto/#galeriah1">results</a> are great though.</p>
+<p>Unfortunately, I think this feature is very underused at the moment. I would bet that in a few years there will be plenty of great EJS templates for everyone to choose from. For now, though, given its enormous potential to customise your site, it might be worth exploring for yourself.</p>
 </section>
 <section id="body" class="level3">
 <h3 data-anchor-id="body">Body</h3>
-<p>Here is how a section of this site homepage is build. As you can see, here listing is being called inside a <code>section-block</code>.</p>
+<p>Here is how a section of this site’s homepage is built. As you can see, the listing here is called inside a <code>section block</code>.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>::: {.parallax-container}</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>::: {.parallax-image-container}</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>::: {.section-block}</span>
@@ -443,7 +443,7 @@ Important
 <span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Also, a couple of very interesting tricks can be taken from this example:</p>
 <p><strong>Parallax</strong></p>
-<p>Thanks to <a href="https://www.yan-holtz.com">Yan Holtz</a>, who create this feature to apply a very nice parallax effect in a Quarto Website. To make it work, you have to write some code in your <code>.css</code> file, as <a href="https://www.productive-r-workflow.com/quarto-tricks#parallax">he explain in this website</a>, where you could find a lot of other very cool tricks for your own.</p>
+<p>Thanks to <a href="https://www.yan-holtz.com">Yan Holtz</a> for creating this feature to add a very nice parallax effect to a Quarto website. To make it work, you need to write some code in your <code>.css</code> file, as <a href="https://www.productive-r-workflow.com/quarto-tricks#parallax">he explains on this website</a>, where you can find lots of other very cool tricks to do on your own.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.parallax-container</span> {</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">position</span><span class="ch">:</span> <span class="dv">relative</span><span class="op">;</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding-left</span><span class="ch">:</span> <span class="dv">0</span><span class="dt">em</span><span class="op">;</span></span>
@@ -469,16 +469,16 @@ Important
 <span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">vw</span><span class="op">;</span></span>
 <span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Section Scrolling Navigation</strong></p>
-<p>I wanted to maintain this feature from my old webpage, where when you click on the navbar it does not redirects you to another page, but scroll the page to a section within the home page.</p>
-<p>We accomplished this by <strong>anchor</strong> the section with an <code>#</code> (as in <code>{#proyectosh1}</code>). This create a “tag” that allows to identify a section within a page. You can then replace the reference in the navbar options in your <code>_quarto.yml</code> as it follows.</p>
+<p>I wanted to keep this feature from my old site, where when you clicked on the navbar, it did not take you to another page, but scrolled to a section within the home page.</p>
+<p>We achieved this by <strong>anchoring</strong> the section with a <code>#</code> (as in <code>{#proyectosh1}</code>). This creates a “tag” that allows you to identify a section within a page. You can then replace the reference in the navbar options in your <code>_quarto.yml</code> like this</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"jc-castillo"</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span><span class="co">#proyectosh1</span></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Proyectos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You could also use the listing-ID as an anchor. However, this might feel a bit odd since scrolling would take you directly to the listing content rather than the section title – creating a slight <em>overshoot</em> effect.</p>
-<p>By default, you are going to <em>jump</em> from a section to other. If your prefer a more <em>smooth</em> effect, as the one I used in my page, you can specify it in your <code>.css</code> file.</p>
+<p>You could also use the listing ID as an anchor. However, this might feel a bit odd, as scrolling would take you directly to the listing content, rather than the section title – creating a slight <em>overshoot</em> effect.</p>
+<p>By default, you will <em>jump</em> from one section to another. If you prefer a more <em>smooth</em> effect, like the one I used in my page, you can specify this in your <code>.css</code> file.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>html {</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">scroll-behavior</span><span class="ch">:</span> <span class="dv">smooth</span><span class="op">;</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -486,8 +486,8 @@ Important
 </section>
 <section id="how-to-manage-your-publications" class="level2">
 <h2 data-anchor-id="how-to-manage-your-publications">How to manage your publications</h2>
-<p>For my old page, I wrote this function for automatically extract publications stored in Zotero and publish them as a publication record in hugo-academic using blogdown/R. The challenge now was migrating all my publications and presentations to my new website, losing as little information as possible.</p>
-<p>The basic workflow its pretty much the same as before, and you can see it <a href="https://juancarloscastillo.github.io/jc-quarto/blog/posts/zotero-academic/">here</a>. Here I will explain the main changes we need to do for adapting the function to Quarto.</p>
+<p>For my old site I wrote this function to automatically extract publications stored in Zotero and publish them as a publication record in hugo-academic using blogdown/R. The challenge now was to migrate all my publications and presentations to my new site while losing as little information as possible.</p>
+<p>The basic workflow is pretty much the same as before, and you can see it <a href="https://juancarloscastillo.github.io/jc-quarto/blog/posts/zotero-academic/">here</a>. Here I will explain the main changes we need to make to adapt the function to Quarto.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -501,7 +501,7 @@ Function
 <p>You can access to the full code <a href="https://raw.githubusercontent.com/juancarloscastillo/jc-quarto/refs/heads/main/publication/posts/bibtex_2academic_plus.R">here</a></p>
 </div>
 </div>
-<p>First of all, of course, you need to change the file extension, so you have <code>.qmd</code> files now. So you need to pass from this:</p>
+<p>First of all, of course, you need to change the file extension, so that you now have `.qmd’ files. So you need to pass from this:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>    filename <span class="ot">&lt;-</span> <span class="fu">paste</span>(x[[<span class="st">"date"</span>]], x[[<span class="st">"title"</span>]] <span class="sc">%&gt;%</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">str_replace_all</span>(<span class="fu">fixed</span>(<span class="st">" "</span>), <span class="st">"_"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">str_remove_all</span>(<span class="fu">fixed</span>(<span class="st">":"</span>)) <span class="sc">%&gt;%</span></span>
@@ -515,7 +515,7 @@ Function
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">str_sub</span>(<span class="dv">1</span>, <span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">paste0</span>(<span class="st">".qmd"</span>), <span class="at">sep =</span> <span class="st">"_"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>I also added <code>str_remove_all(fixed("?"))</code> since Quarto seemed not to render files that ended <code>?.qmd</code></p>
-<p>Actually, if you run the function after changing that you will already have a <code>.qmd</code> for all your publications. Then, all you need to do is list this files in your <code>publication.qmd</code>, like this:</p>
+<p>In fact, if you run the function after changing this, you will already have a <code>.qmd</code> for all your publications. Then all you need to do is list these files in your <code>publication.qmd</code> like this:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Publicaciones y Presentaciones"</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
@@ -527,8 +527,8 @@ Function
 <span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">categories</span><span class="kw">,</span><span class="at"> date</span><span class="kw">]</span></span>
 <span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">page-size</span><span class="kw">:</span><span class="at"> </span><span class="dv">1000</span></span>
 <span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>It might not be as stylized as Hugo (for now), but it is pretty functional, as it list all your publications and create an individually entry for each one.</p>
-<p>Of course, you might want further customization, since the YAML might be off yet. Specially, you need to change the way links and icons are treated, so you can add documents, slides or repositories of your work. This is how we accomplished that:</p>
+<p>It may not be as stylised as Hugo (for now), but it is quite functional, listing all your publications and creating an individual entry for each one.</p>
+<p>Of course, you may want to customise it further, as YAML may not be ready yet. In particular, you need to change the way links and icons are handled so that you can add documents, slides or repositories of your work. This is how we did it:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="at">    url_fields &lt;- c("url_pdf", "url_preprint", "url_dataset", </span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="at">                                    </span><span class="st">"url_project"</span><span class="at">, "url_slides", "url_video", "url_poster")</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -658,10 +658,10 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This code only make sense if you worked on your Zotero’s annotations before. If you are building a Quarto site from the scratch, it might be better if you just copy the YAML’s about sections and paste it in your Zotero’s annotations, and work the function from there</p>
+<p>This code only makes sense if you have previously worked on your Zotero annotations. If you are building a Quarto site from scratch, it might be better to just copy YAML’s about section and paste it into your Zotero annotations, and work on the function from there.</p>
 </div>
 </div>
-<p>You can customize the body as you want. Here, for example, we write some code for include <em>how-to-cite</em> box at the end of the document.</p>
+<p>You can customise the body to suit your needs. Here, for example, we write some code to include a <em>how-to-cite</em> box at the end of the document.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ----------------- GENERACIÓN DE CALL OUT "HOW TO CITE" -----------------</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co">        # Preparar autores</span></span>
@@ -694,8 +694,8 @@ Important
 </section>
 <section id="resources" class="level2">
 <h2 data-anchor-id="resources">Resources</h2>
-<p>Normally, Quarto will be able to render any local file as you proportionate a correct path inside your project. However, some files – specially, presentations – might need other auxiliary files –tipically, custom CSS files – for its correct visualization. By default, Quarto will not include any of this auxiliary files in your output directory. You probably will notice this is happening because the file will load, due the path is correct, but it will stay blank.</p>
-<p>The solution from this is the <code>resource</code> option in your <code>_quarto.yml</code>. Like this:</p>
+<p>Normally, Quarto will be able to render any local file if you give it the correct path within your project. However, some files - particularly presentations - may require other auxiliary files - notably custom CSS files - to render them correctly. By default, Quarto will not include any of these auxiliary files in your output directory. You will probably notice this because the file will load, as the path is correct, but it will remain blank.</p>
+<p>The solution for this is the <code>resource</code> option in your <code>_quarto.yml</code>. Like this:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">resources</span><span class="kw">:</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> documents/*/*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -703,12 +703,12 @@ Important
 </section>
 <section id="extensions" class="level2">
 <h2 data-anchor-id="extensions">Extensions</h2>
-<p>You can use <strong>extensions</strong> for further customization of your site. After installing, they will be hosted on a <code>_extensions</code> folder in your root directory.</p>
-<p>Here, we used <a href="https://www.garrickadenbuie.com/about/">Garrick Aden-Buie’s</a> <a href="https://pkg.garrickadenbuie.com/quarto-now/">Now</a> extension for set the last-updated field in the page-footer.</p>
+<p>You can use <strong>extensions</strong> to further customise your site. Once installed, they are hosted in an <code>_extensions</code> folder in your root directory.</p>
+<p>Here we used <a href="https://www.garrickadenbuie.com/about/">Garrick Aden-Buie’s</a> <a href="https://pkg.garrickadenbuie.com/quarto-now/">Now</a> extension to set the last updated field in the page footer.</p>
 </section>
 <section id="another-stuff" class="level2">
 <h2 data-anchor-id="another-stuff">Another Stuff</h2>
-<p>Migrating your old content to a new website might be the right time to check all your links are working well. There is tools that allows you to scan your whole website and detect dead links, but many of them are either paid or freemium. There is some <a href="https://www.deadlinkchecker.com/">free alternatives</a>, but you need to be wary, since the information might not be totally correct, altought it might be a good starting point.</p>
+<p>Migrating your old content to a new website may be the right time to check that all your links are working properly. There are tools that allow you to scan your entire website and detect dead links, but many of them are either paid or freemium. There are some [free alternatives] (https://www.deadlinkchecker.com/), but you need to be careful as the information may not be entirely accurate, although it might be a good place to start.</p>
 
 
 </section>

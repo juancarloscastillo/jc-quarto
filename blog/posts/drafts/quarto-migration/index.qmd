@@ -12,11 +12,11 @@ editor: visual
 
 <!-- Creo que el comienzo de esta entrada debería escribirla JC, explicando sus motivaciones para hacer la migración. -->
 
-Altough you can take this as a guide for building a quarto website from scratch, the true is most of this post is dedicated to explain how to migrate a website already built on Hugo Academic to Quarto. For building a brand-new website, the [Quarto original documentation](https://quarto.org/docs/websites/) is a good starting point. Also, even if this a new-ish tool, there is already a bunch of [academic sites built on Quarto](https://quarto.org/docs/gallery/#websites), including [Quarto official website itself](https://github.com/quarto-dev/quarto-web), that you can check for ideas.
+Although you can use this as a guide to building a Quarto site from scratch, most of this article is actually devoted to explaining how to migrate a site already built on Hugo Academic to Quarto. If you are building a site from scratch, the [Quarto original documentation](https://quarto.org/docs/websites/) is a good place to start. Even though this is a newer tool, there are already a number of [Academic sites built on Quarto](https://quarto.org/docs/gallery/#websites), including the [Quarto official website itself](https://github.com/quarto-dev/quarto-web), that you can check out for ideas.
 
 ## Project Structure
 
-One of the advantages of building a website in Quarto it is that its project structure is way simpler comparing with Hugo. In fact, it is very much the same as any Quarto project. This is a basic Quarto Website project.
+One of the advantages of building a website in Quarto is that the project structure is much simpler than in Hugo. In fact, it is very similar to any other Quarto project. This is a basic Quarto website project.
 
 ``` plaintext
 .
@@ -40,11 +40,11 @@ One of the advantages of building a website in Quarto it is that its project str
 
 ## Website basic configuration
 
-First, you will have a `_quarto.yml` which contains the basic configuration of the website. Here you can define the website title, the navbar configuration and some style settings. If you have an external `.css` file and you want to apply it for the whole site, you need to specify it here.
+First, you will have a `_quarto.yml` file, which contains the basic configuration of the website. Here you can define the site title, the navbar configuration and some style settings. If you have an external `.css` file and want to apply it to the whole site, you need to specify it here.
 
 ## Output directory
 
-By default, the website is rendered into a `_site` folder. However, we recommend create a `docs` folder as output directory, since it makes it easier to deploy the website in Github Pages or Netlify.
+By default the website will be rendered into a `_site` folder. However, we recommend that you create a `docs` folder as the output directory, as this makes it easier to deploy the website in Github Pages or Netlify.
 
 To change your output directory you need to specify it with `output-dir` in your `_quarto.yml`:
 
@@ -56,11 +56,11 @@ project:
 
 ## Content
 
-If migrating creating a new website would mean starting over and lost all your previous content, you would probably not very exiting to try nothing new. Luckily, the migration of content from Hugo to Quarto is quite straightforward.
+If migrating to a new site meant starting from scratch and losing all your previous content, you might not be too excited about trying something new. Fortunately, migrating content from Hugo to Quarto is fairly straightforward.
 
-First of all, you need to change all your old `.rmd` and `.md` to `.qmd` files. We managed to work this out manually, but if you have tons of entries you might want to explore some automatization. In that case, you should thanks [Nick Tierney](https://www.njtierney.com/about/) for tweaking [this very simple function](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) to transform `.rmd` to `.qmd`.
+The first thing you need to do is change all your old `.rmd' and `.md' files to `.qmd`. We managed to do this manually, but if you have tons of entries you may want to explore some automation. In that case, you should thank [Nick Tierney](https://www.njtierney.com/about/) for tweaking [this very simple function](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) to convert `.rmd` to `.qmd`.
 
-Next, you need to adapt your brand new `.qmd`'s YAMLs. This not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are way more simpler than Markdown's. For example, this is my old *Docencia* Markdown's YAML.
+Next, you need to adapt your brand new `.qmd' YAMLs. This is not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are much simpler than Markdown's. For example, this is my old *Docencia* Markdown's YAML.
 
 ``` yaml
 # An instance of the Pages widget.
@@ -122,11 +122,11 @@ listing:
 title-block-banner: true
 ```
 
-So you only need to write this very concise chunk of YAML once, and then just copy-paste it and adapt it to every page you need.
+So you only need to write this very concise chunk of YAML once, and then just copy and paste it to every page you need.
 
-If you have any page that it does not have any other subdirectory, you can just leave that `.qmd` in your root directory and you are done! Just like the [links](https://github.com/juancarloscastillo/jc-quarto/blob/main/links.qmd) page in this site.
+If you have a page that has no other subdirectory, you can just leave this `.qmd' in your root directory and be done with it! Just like the [links](https://github.com/juancarloscastillo/jc-quarto/blob/main/links.qmd) page in this site.
 
-However, if you have many entries, you might need to follow another structure. Here is the following by us:
+However, if you have many entries, you may need to follow a different structure. Here is the one we use:
 
 ``` plaintext
 .
@@ -137,9 +137,9 @@ However, if you have many entries, you might need to follow another structure. H
 │         └── index.qmd
 ```
 
-Now, you can just copy and paste your old content inside the `posts` folder. As you could see in `docencia yaml` before, this `post` folder is indicated in the listing's `content` option. [Listings](https://quarto.org/docs/websites/website-listings.html) are the most essential tool in constructing a blog on Quarto, since allows you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents.
+Now you can just copy and paste your old content into the `posts` folder. As you could see in the `docencia yaml` before, this `post` folder is indicated in the `content` option of the listing. [Listings](https://quarto.org/docs/websites/website-listings.html) are the main tool for creating a blog on Quarto, as they allow you to automatically generate the content of a page (or a section of a page) from a list of Quarto documents.
 
-Then, you are going to need to transform the `.rmd` and `.md` files to `.qmd` files, and adapt your YAML's, just like before. Again, the YAML structure in Quarto is significantly simpler, as in this example.
+Then you have to convert the `.rmd` and `.md` files into `.qmd` files and adapt your YAML's as before. Again, the YAML structure in Quarto is much simpler, as in this example.
 
 ``` yaml
 title: Talleres y seminarios
@@ -152,7 +152,7 @@ about:
   image: "featured.png"  
 ```
 
-This is minimum example, of course. You can explore other options and templates in the [quarto documentation](https://quarto.org/docs/websites/website-blog.html)
+This is a minimal example, of course. You can explore other options and templates in the [quarto documentation](https://quarto.org/docs/websites/website-blog.html)
 
 ## Homepage
 
@@ -160,7 +160,7 @@ Your new homepage will be set up by `index.qmd`.
 
 ### About Page
 
-In this case, we use *trestle*, but you can explore [another templates](https://quarto.org/docs/websites/website-about.html#templates) as well. Here you can set up your profile picture and some contact or personal links:
+In this case we use *trestle*, but you can also explore [other templates](https://quarto.org/docs/websites/website-about.html#templates). Here you can set up your profile picture and some contact or personal links:
 
 ``` yaml
 title: "Juan Carlos Castillo"
@@ -189,13 +189,12 @@ about:
 
 ::: callout-note
 ## Important
-
-Currently, Quarto only supports Bootstrap Icons. So if you were using any other icon packages in Hugo, you will need to replace it for bootstrap icons. [More information](https://icons.getbootstrap.com)
+Currently, Quarto only supports Bootstrap Icons. So if you were using any other icon packages in Hugo, you will need to replace them for bootstrap icons. [More information](https://icons.getbootstrap.com)
 :::
 
 ### Homepage listings
 
-While before listing were used to built individual pages, the homepage was built as a collection of listings. We accomplished this by indicating all the wanted listings in [`index.qmd` YAML](https://github.com/juancarloscastillo/jc-quarto/blob/main/index.qmd). Then, you can place the listing content on the document by anchoring it using its `id`. For example, this listing:
+While before listing were used to build individual pages, the homepage was created as a collection of listings. We achieved this by specifying all the listings we wanted in [`index.qmd` YAML](https://github.com/juancarloscastillo/jc-quarto/blob/main/index.qmd). Then you can place the content of the listing in the document by anchoring it with its `id`. For example, this listing:
 
 ``` yaml
 - id: docencia
@@ -203,15 +202,15 @@ While before listing were used to built individual pages, the homepage was built
     - docencia/posts/*/*.qmd
 ```
 
-Will be called like this:
+Will be called like this on the document body:
 
 ``` html
 #docencia
 ```
 
-By default, Quarto proportionate three listing templates: **default**, **table** and **grid**. Here, we used **grid** for *docencia* and *proyectos* listings, and **default** for *publication*, *tesis* and *blog* listing.
+By default, Quarto proportionates three listing templates: **default**, **table** and **grid**. Here we have used **grid** for *docencia* and *proyectos* listings, and **default** for *publication*, *tesis* and *blog* listings.
 
-However, you can also create [custom listings](https://quarto.org/docs/websites/website-listings-custom.html) by using EJS templates. We take Quarto's developer [Mickaël Canouil](https://mickael.canouil.fr) code for creating a [gallery listing](https://github.com/quarto-dev/quarto-cli/discussions/5972#discussioncomment-10303996). The EJS template for look like this:
+However, you can also create [Custom Listings](https://quarto.org/docs/websites/website-listings-custom.html) using EJS templates. We take the code for creating a [gallery listing](https://github.com/quarto-dev/quarto-cli/discussions/5972#discussioncomment-10303996) from Quarto developer [Mickaël Canouil](https://mickael.canouil.fr). The EJS template used looks like this:
 
 ``` html
 <style type="text/css">
@@ -247,13 +246,13 @@ img.grid-item:hover {
 :::
 ```
 
-As you can see, is nothing too fancy, and with basic CSS knowledge you might be able to figure this out. The [results](https://juancarloscastillo.github.io/jc-quarto/#galeriah1), however, are great.
+As you can see, nothing too fancy, and with basic CSS knowledge you might be able to figure it out. The [results](https://juancarloscastillo.github.io/jc-quarto/#galeriah1) are great though.
 
-Sadly, I believe this feature is very underused at the moment. I would bet that in a couple of years there will be plenty of awesome EJS templates available for everyone to choose. For now, however, given its tremendous potential to customize your site, it might be worth the trouble to explore it by yourself.
+Unfortunately, I think this feature is very underused at the moment. I would bet that in a few years there will be plenty of great EJS templates for everyone to choose from. For now, though, given its enormous potential to customise your site, it might be worth exploring for yourself.
 
 ### Body
 
-Here is how a section of this site homepage is build. As you can see, here listing is being called inside a `section-block`.
+Here is how a section of this site's homepage is built. As you can see, the listing here is called inside a `section block`.
 
 ``` html
 ::: {.parallax-container}
@@ -280,7 +279,7 @@ Also, a couple of very interesting tricks can be taken from this example:
 
 **Parallax**
 
-Thanks to [Yan Holtz](https://www.yan-holtz.com), who create this feature to apply a very nice parallax effect in a Quarto Website. To make it work, you have to write some code in your `.css` file, as [he explain in this website](https://www.productive-r-workflow.com/quarto-tricks#parallax), where you could find a lot of other very cool tricks for your own.
+Thanks to [Yan Holtz](https://www.yan-holtz.com) for creating this feature to add a very nice parallax effect to a Quarto website. To make it work, you need to write some code in your `.css` file, as [he explains on this website](https://www.productive-r-workflow.com/quarto-tricks#parallax), where you can find lots of other very cool tricks to do on your own.
 
 ``` css
 .parallax-container {
@@ -311,9 +310,9 @@ Thanks to [Yan Holtz](https://www.yan-holtz.com), who create this feature to app
 
 **Section Scrolling Navigation**
 
-I wanted to maintain this feature from my old webpage, where when you click on the navbar it does not redirects you to another page, but scroll the page to a section within the home page.
+I wanted to keep this feature from my old site, where when you clicked on the navbar, it did not take you to another page, but scrolled to a section within the home page.
 
-We accomplished this by **anchor** the section with an `#` (as in `{#proyectosh1}`). This create a "tag" that allows to identify a section within a page. You can then replace the reference in the navbar options in your `_quarto.yml` as it follows.
+We achieved this by **anchoring** the section with a `#` (as in `{#proyectosh1}`). This creates a "tag" that allows you to identify a section within a page. You can then replace the reference in the navbar options in your `_quarto.yml` like this
 
 ``` yaml
 website:
@@ -324,9 +323,9 @@ website:
         text: Proyectos
 ```
 
-You could also use the listing-ID as an anchor. However, this might feel a bit odd since scrolling would take you directly to the listing content rather than the section title -- creating a slight *overshoot* effect.
+You could also use the listing ID as an anchor. However, this might feel a bit odd, as scrolling would take you directly to the listing content, rather than the section title -- creating a slight *overshoot* effect.
 
-By default, you are going to *jump* from a section to other. If your prefer a more *smooth* effect, as the one I used in my page, you can specify it in your `.css` file.
+By default, you will *jump* from one section to another. If you prefer a more *smooth* effect, like the one I used in my page, you can specify this in your `.css` file.
 
 ``` css
 html {
@@ -336,16 +335,16 @@ html {
 
 ## How to manage your publications
 
-For my old page, I wrote this function for automatically extract publications stored in Zotero and publish them as a publication record in hugo-academic using blogdown/R. The challenge now was migrating all my publications and presentations to my new website, losing as little information as possible.
+For my old site I wrote this function to automatically extract publications stored in Zotero and publish them as a publication record in hugo-academic using blogdown/R. The challenge now was to migrate all my publications and presentations to my new site while losing as little information as possible.
 
-The basic workflow its pretty much the same as before, and you can see it [here](https://juancarloscastillo.github.io/jc-quarto/blog/posts/zotero-academic/). Here I will explain the main changes we need to do for adapting the function to Quarto.
+The basic workflow is pretty much the same as before, and you can see it [here](https://juancarloscastillo.github.io/jc-quarto/blog/posts/zotero-academic/). Here I will explain the main changes we need to make to adapt the function to Quarto.
 
 ::: callout-note
 ## Function
 You can access to the full code [here](https://raw.githubusercontent.com/juancarloscastillo/jc-quarto/refs/heads/main/publication/posts/bibtex_2academic_plus.R)
 :::
 
-First of all, of course, you need to change the file extension, so you have `.qmd` files now. So you need to pass from this:
+First of all, of course, you need to change the file extension, so that you now have `.qmd' files. So you need to pass from this:
 
 ``` r
     filename <- paste(x[["date"]], x[["title"]] %>%
@@ -368,7 +367,7 @@ To this:
 
 I also added `str_remove_all(fixed("?"))` since Quarto seemed not to render files that ended `?.qmd`
 
-Actually, if you run the function after changing that you will already have a `.qmd` for all your publications. Then, all you need to do is list this files in your `publication.qmd`, like this:
+In fact, if you run the function after changing this, you will already have a `.qmd` for all your publications. Then all you need to do is list these files in your `publication.qmd` like this:
 
 ``` yaml
 title: "Publicaciones y Presentaciones"
@@ -384,9 +383,9 @@ listing:
 title-block-banner: true
 ```
 
-It might not be as stylized as Hugo (for now), but it is pretty functional, as it list all your publications and create an individually entry for each one.
+It may not be as stylised as Hugo (for now), but it is quite functional, listing all your publications and creating an individual entry for each one.
 
-Of course, you might want further customization, since the YAML might be off yet. Specially, you need to change the way links and icons are treated, so you can add documents, slides or repositories of your work. This is how we accomplished that:
+Of course, you may want to customise it further, as YAML may not be ready yet. In particular, you need to change the way links and icons are handled so that you can add documents, slides or repositories of your work. This is how we did it:
 
 ``` yaml
     url_fields <- c("url_pdf", "url_preprint", "url_dataset", 
@@ -516,10 +515,10 @@ about:
 
 :::callout-note
 # Important
-This code only make sense if you worked on your Zotero's annotations before. If you are building a Quarto site from the scratch, it might be better if you just copy the YAML's about sections and paste it in your Zotero's annotations, and work the function from there
+This code only makes sense if you have previously worked on your Zotero annotations. If you are building a Quarto site from scratch, it might be better to just copy YAML's about section and paste it into your Zotero annotations, and work on the function from there.
 :::
 
-You can customize the body as you want. Here, for example, we write some code for include *how-to-cite* box at the end of the document.
+You can customise the body to suit your needs. Here, for example, we write some code to include a *how-to-cite* box at the end of the document.
 
 ```yaml
 # ----------------- GENERACIÓN DE CALL OUT "HOW TO CITE" -----------------
@@ -555,9 +554,9 @@ You can customize the body as you want. Here, for example, we write some code fo
 
 ## Resources
 
-Normally, Quarto will be able to render any local file as you proportionate a correct path inside your project. However, some files -- specially, presentations -- might need other auxiliary files --tipically, custom CSS files -- for its correct visualization. By default, Quarto will not include any of this auxiliary files in your output directory. You probably will notice this is happening because the file will load, due the path is correct, but it will stay blank. 
+Normally, Quarto will be able to render any local file if you give it the correct path within your project. However, some files - particularly presentations - may require other auxiliary files - notably custom CSS files - to render them correctly. By default, Quarto will not include any of these auxiliary files in your output directory. You will probably notice this because the file will load, as the path is correct, but it will remain blank.
 
-The solution from this is the `resource` option in your `_quarto.yml`. Like this:
+The solution for this is the `resource` option in your `_quarto.yml`. Like this:
 
 ```yaml
   type: website
@@ -569,10 +568,10 @@ You can of course write any path (o paths) you need to include.
 
 ## Extensions
 
-You can use **extensions** for further customization of your site. After installing, they will be hosted on a `_extensions` folder in your root directory.
+You can use **extensions** to further customise your site. Once installed, they are hosted in an `_extensions` folder in your root directory.
 
-Here, we used [Garrick Aden-Buie's](https://www.garrickadenbuie.com/about/) [Now](https://pkg.garrickadenbuie.com/quarto-now/) extension for set the last-updated field in the page-footer. 
+Here we used [Garrick Aden-Buie's](https://www.garrickadenbuie.com/about/) [Now](https://pkg.garrickadenbuie.com/quarto-now/) extension to set the last updated field in the page footer.
 
 ## Another Stuff
 
-Migrating your old content to a new website might be the right time to check all your links are working well. There is tools that allows you to scan your whole website and detect dead links, but many of them are either paid or freemium. There is some [free alternatives](https://www.deadlinkchecker.com/), but you need to be wary, since the information might not be totally correct, altought it might be a good starting point. 
+Migrating your old content to a new website may be the right time to check that all your links are working properly. There are tools that allow you to scan your entire website and detect dead links, but many of them are either paid or freemium. There are some [free alternatives] (https://www.deadlinkchecker.com/), but you need to be careful as the information may not be entirely accurate, although it might be a good place to start. 
