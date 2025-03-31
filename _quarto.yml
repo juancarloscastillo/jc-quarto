@@ -1,6 +1,7 @@
 project:
   type: website
   resources:
+          - filter.js
           - documents/*/*
           - documents/talleres-cursos/multinivel_taller/*
           - documents/talleres-cursos/multinivel_taller/libs/*/*
@@ -45,6 +46,7 @@ website:
       - contacto.qmd
 format:
   html:
+    include-after-body: filter.js
     theme: 
       dark: darkly
       light: flatly

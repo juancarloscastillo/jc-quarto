@@ -20,7 +20,7 @@ about:
     - icon: github
       href: https://github.com/juancarloscastillo
     - icon: envelope
-      href: contacto.html
+      href: /contacto.html
 
 listing:
 - id: publication
@@ -28,7 +28,7 @@ listing:
     - publication/posts/*.qmd
   sort: date desc
   type: default
-  fields: [title, date, author, categories]
+  fields: [title, date, author]
   max-items: 5
   categories: false
   sort-ui: false
@@ -54,8 +54,9 @@ listing:
   sort: date desc
   type: grid
   grid-columns: 3
+  max-items: 6
   image-height: 150px
-  fields: [image, title, description, categories]
+  fields: [image, title, description]
   categories: false
   sort-ui: false
   filter-ui: [categories]
@@ -80,7 +81,7 @@ listing:
     - tesis/posts/*.qmd
   sort: date desc
   type: default
-  fields: [title, date, author, categories]
+  fields: [title, date, author]
   max-items: 5
   categories: false
   sort-ui: false
@@ -131,6 +132,10 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 <p align="left" style="font-size:36px; font-weight:bold;">Proyectos</p>
 
 :::{#proyectos}
+:::
+
+::: {.button}
+[Todas los proyectos](proyectos/proyectos.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
 :::
 
 

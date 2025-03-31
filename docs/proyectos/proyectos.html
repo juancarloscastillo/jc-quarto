@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-date"],
     };
@@ -194,13 +194,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Proyectos</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -211,11 +211,11 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Q09FUw==">COES <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rk9OREFQ">FONDAP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rm9uZGVjeXQ=">Fondecyt <span class="quarto-category-count">(6)</span></div><div class="category" data-category="TWlsZW5pbw==">Milenio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VmFyaW9z">Varios <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
@@ -241,6 +241,11 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Núcleo Milenio de Desigualdades y Oportunidades Digitales
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('TWlsZW5pbw=='); return false;">
+Milenio
+</div>
+</div>
 <div class="card-text listing-description">
 Concepto: Las tecnologías digitales han reconfigurado estructuras de poder y la vida pública, pero la prometida inclusión con la masificación de herramientas digitales ha…
 </div>
@@ -281,6 +286,11 @@ Mar 31, 2022
 <h5 class="no-anchor card-title listing-title">
 PRICE
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 El Programa de Investigación en Ciudadanía Escolar (PRICE) se constituye a partir de la vinculación de distintos proyectos de investigación que desde el año 2011 se han…
 </div>
@@ -301,6 +311,11 @@ Mar 31, 2022
 <h5 class="no-anchor card-title listing-title">
 Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 Una de las características de Chile como caso de estudio a nivel internacional son las desigualdades en logro académico. Estas desigualdades en la etapa escolar han sido…
 </div>
@@ -341,6 +356,11 @@ Mar 31, 2021
 <h5 class="no-anchor card-title listing-title">
 Observatorio de Cohesión Social
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Q09FUw=='); return false;">
+COES
+</div>
+</div>
 <div class="card-text listing-description">
 El Observatorio de Cohesión Social (OCS) es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES), desde donde se busca contribuir al estudio de la…
 </div>
@@ -361,6 +381,11 @@ Mar 31, 2021
 <h5 class="no-anchor card-title listing-title">
 Formación Ciudadana II: Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela.
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 La investigación propuesta hará intenso uso del conocimiento secundario existente sobre educación ciudadana que realiza la escolaridad en Chile, aprovechando las bases de…
 </div>
@@ -381,6 +406,11 @@ Mar 31, 2018
 <h5 class="no-anchor card-title listing-title">
 Economía moral de la meritocracia y preferencias redistributivas
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 El objetivo general de nuestra investigación fue <strong>analizar la relación entre creencias en la meritocracia y preferencias redistributivas desde una perspectiva de economía moral</strong>…
 </div>
@@ -401,6 +431,11 @@ Apr 27, 2016
 <h5 class="no-anchor card-title listing-title">
 Formación ciudadana I Socialización política y experiencia escolar - Chile en contexto internacional
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 La hipótesis general de investigación es que el currículo escolar, junto a una serie de factores contextuales, poseen una influencia en la formación cívica y ciudadana. El…
 </div>
@@ -421,6 +456,11 @@ Mar 31, 2015
 <h5 class="no-anchor card-title listing-title">
 COES
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rk9OREFQ'); return false;">
+FONDAP
+</div>
+</div>
 <div class="card-text listing-description">
 El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por el programa FONDAP de ANID y desarrolla investigación colaborativa en temas relacionados al…
 </div>
@@ -441,6 +481,11 @@ Dec 1, 2013
 <h5 class="no-anchor card-title listing-title">
 Social justice and citizenship participation: An international comparison with focus on the case of Chile
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Rm9uZGVjeXQ='); return false;">
+Fondecyt
+</div>
+</div>
 <div class="card-text listing-description">
 El proyecto de investigación “Justicia distributiva y participación ciudadana” se desarrolló entre los años 2012 y 2015, y tuvo como principal objetivo analizar el rol que…
 </div>
@@ -461,6 +506,11 @@ Mar 31, 2013
 <h5 class="no-anchor card-title listing-title">
 Otros proyectos
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('VmFyaW9z'); return false;">
+Varios
+</div>
+</div>
 <div class="card-text listing-description">
 <strong>Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC</strong> (2013 - 2014) CONICYT DRI 130074, principal researcher.
 </div>
@@ -478,6 +528,55 @@ Mar 31, 2010
 No matching items
 </div>
 </div></main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".quarto-listing .listing-category").forEach(tag => {
+        tag.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            let category = this.textContent.trim().toLowerCase();
+            let section = this.closest(".quarto-listing-container-grid"); // Find the nearest section
+            let items = section.querySelectorAll(".g-col-1");
+
+            // Reset visibility of all items in this section
+            items.forEach(item => {
+                item.style.display = "none"; // Hide everything by default
+            });
+
+            // Show only matching items
+            let found = false;
+            items.forEach(item => {
+                let encodedCategory = item.dataset.categories;
+
+                try {
+                    let decodedCategories = atob(encodedCategory).toLowerCase(); // Decode base64
+                    if (decodedCategories.includes(category)) {
+                        item.style.display = "block";
+                        found = true;
+                    }
+                } catch (error) {
+                    console.error("Error decoding category:", error);
+                }
+            });
+
+            // Remove existing "No matching items" messages
+            section.querySelectorAll(".listing-no-matching").forEach(msg => msg.remove());
+
+            // If no items match, show "No matching items" message
+            if (!found) {
+                let noMatchMessage = document.createElement("div");
+                noMatchMessage.classList.add("listing-no-matching");
+                noMatchMessage.style.textAlign = "center";
+                noMatchMessage.style.padding = "10px";
+                noMatchMessage.style.color = "#888";
+                noMatchMessage.innerHTML = "No matching items";
+                section.querySelector(".list.grid").appendChild(noMatchMessage);
+            }
+        });
+    });
+});
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1056,7 +1155,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-03-14</p>
+<p>Last Update: 2025-03-31</p>
 </div>
   </div>
 </footer>

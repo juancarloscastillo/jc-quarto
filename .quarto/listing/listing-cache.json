@@ -11,10 +11,9 @@
       "docencia/posts/*/*.qmd",
       "proyectos/posts/*/*.qmd",
       "blog/posts/*/*.qmd",
+      "!blog/posts/drafts/*.qmd",
       "tesis/posts/*.qmd",
-      "images/albums/gallery/*",
-      "!blog/posts/labelled-data-R/index.qmd",
-      "!blog/posts/drafts/*.qmd"
+      "images/albums/gallery/*"
     ],
     "proyectos/proyectos.qmd": [
       "posts"

@@ -5,8 +5,8 @@ listing:
   contents: posts
   sort: "date desc"
   type: grid
-  categories: false
-  fields: [image, title, description, date]
+  categories: true
+  fields: [image, title, description, date, categories]
   image-align: left
   filter-ui: [title, date]
   page-size: 1000

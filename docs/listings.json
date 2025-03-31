@@ -185,32 +185,6 @@
     ]
   },
   {
-    "listing": "/docencia/docencia.html",
-    "items": [
-      "/docencia/posts/coloquio/index.html",
-      "/docencia/posts/desarrollo-tesis/index.html",
-      "/docencia/posts/correlacional/index.html",
-      "/docencia/posts/multinivel/index.html",
-      "/docencia/posts/encuestas-sociales/index.html",
-      "/docencia/posts/ciencia-social-abierta/index.html",
-      "/docencia/posts/estrategias-ic/index.html",
-      "/docencia/posts/metodologia1/index.html",
-      "/docencia/posts/estadistica-multivariada/index.html",
-      "/docencia/posts/talleres-seminarios/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/blog.html",
-    "items": [
-      "/blog/posts/escritura-academica/index.html",
-      "/blog/posts/risc-bremen/index.html",
-      "/blog/posts/ISA-2023/index.html",
-      "/blog/posts/tesisfacsodown/index.html",
-      "/blog/posts/zotero-academic/index.html",
-      "/blog/posts/defensas-presentaciones/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/publication/posts/2024_The_Socialization_of.html",
@@ -399,6 +373,32 @@
       "/tesis/posts/2015_¿Qué_puede_hacer_la_.html",
       "/tesis/posts/2014_Evaluación_de_la_imp.html",
       "/tesis/posts/2014_Stability_and_change.html"
+    ]
+  },
+  {
+    "listing": "/blog/blog.html",
+    "items": [
+      "/blog/posts/escritura-academica/index.html",
+      "/blog/posts/risc-bremen/index.html",
+      "/blog/posts/ISA-2023/index.html",
+      "/blog/posts/tesisfacsodown/index.html",
+      "/blog/posts/zotero-academic/index.html",
+      "/blog/posts/defensas-presentaciones/index.html"
+    ]
+  },
+  {
+    "listing": "/docencia/docencia.html",
+    "items": [
+      "/docencia/posts/coloquio/index.html",
+      "/docencia/posts/desarrollo-tesis/index.html",
+      "/docencia/posts/correlacional/index.html",
+      "/docencia/posts/multinivel/index.html",
+      "/docencia/posts/encuestas-sociales/index.html",
+      "/docencia/posts/ciencia-social-abierta/index.html",
+      "/docencia/posts/estrategias-ic/index.html",
+      "/docencia/posts/metodologia1/index.html",
+      "/docencia/posts/estadistica-multivariada/index.html",
+      "/docencia/posts/talleres-seminarios/index.html"
     ]
   }
 ]
