@@ -46,7 +46,6 @@ website:
       - contacto.qmd
 format:
   html:
-    include-after-body: filter.js
     theme: 
       dark: darkly
       light: flatly

@@ -107,18 +107,22 @@ a:hover {
 }
 
 .section-block {
-  margin: 1em auto;
-  padding-top: 1.5em;
-  padding-bottom: 1.8em;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 1.1em;
   box-sizing: border-box;
-  max-width: 100%;
-  width: 100vw;
 }
 
 .post-contents {
 	padding-left: 1.5em
 	padding-right: 1.5em;
 	margin: 1rem;
+}
+
+.quarto-about-trestles{
+	max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /*-- Google Calendar --*/
@@ -154,3 +158,6 @@ a:hover {
   border: 0;
 }
 
+.navbar-logo {
+  max-height: 100px;
+}

@@ -1,10 +1,11 @@
 ```{=html}
 <style type="text/css">
 .grid-gallery {
-  columns: 5 200px;
+  columns: 4 200px;
   column-gap: 0.5rem;
-  width: 90%;
   margin: 0 auto;
+  padding-bottom: 1.1em;
+  box-sizing: border-box;
 }
 .grid-item {
   width: 150px;
@@ -29,4 +30,3 @@ img.grid-item:hover {
 ![](<%= item.path %>){.grid-item .lightbox loading="lazy" group="quarto-grid-gallery"}
 :::
 <% } %>
-:::
