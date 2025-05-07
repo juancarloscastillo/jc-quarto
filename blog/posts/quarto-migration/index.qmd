@@ -1,18 +1,26 @@
 ---
-title: Migrating my website to Quarto
+title: Migrating my Academic (Hugo Wowchemy) website to Quarto
 author: ["Juan-Carlos Castillo", "Gabriel Cortés"]
 date: "2025-03-25"  #year-
 # date-modified: "2021-12-13"
-draft: true # Is this an unpublished draft?
+# draft: true # Is this an unpublished draft?
 about:
   template: marquee
   image: "featured.jpeg"  
 editor: visual
 ---
 
-<!-- Creo que el comienzo de esta entrada debería escribirla JC, explicando sus motivaciones para hacer la migración. -->
+All started with the Academic Hugo template. As many academics, when I discovered about 6 years ago I though it was the best way to build a nice website for displaying my academic work with an easy markdown base. I particularly liked the way in which it showed the publications, an essential part of our work. But ... maybe too good to be true. Along the last years it became increasingly intrincated when undertaken by Wowchemy, and lately by [Hugoblox](https://github.com/HugoBlox/hugo-blox-builder?tab=readme-ov-file). From my point of view, with Wowchemy and Hugoblox the website was becoming more and more difficult to maintain, and I was not able to make it work as I wanted. Besides, they started charging for it. It was time to move to something else, and by that time everyone was talking about Quarto.
+
+For a while I started following academic websites built with Quarto, and I was amazed by the possibilities it offered. I was particularly impressed by the [Quarto website](https://quarto.org/docs/websites/) itself, which is built with Quarto. I also found a lot of interesting websites built with Quarto, such as [Yan Holtz's](https://www.yan-holtz.com) and [Garrick Aden-Buie's](https://www.garrickadenbuie.com/about/). So I decided to give it a try.
+
+I started by building a new website from scratch, but I quickly realized that I wanted to keep my old content, the closest possible to Academic Hugo. So I decided to migrate my old website to Quarto. This article is a summary of the steps I took to migrate my website from Hugo Academic to Quarto. This was my original website: [jc-castillo.github.io](https://jc-castillo.github.io). And this is my new website: [jc-quarto.github.io](https://jc-quarto.github.io).
+
+This article is not a tutorial on how to build a website with Quarto. There are already plenty of resources on this topic, and I will not repeat them here. You can find a lot of information in the [Quarto documentation](https://quarto.org/docs/websites/), which is very well written and easy to follow. I will also not go into detail about the differences between Hugo and Quarto, as there are already many articles on this topic. You can find a good summary of the differences between Hugo and Quarto in [this article](https://www.rstudio.com/blog/introducing-quarto/).
 
 Although you can use this as a guide to building a Quarto site from scratch, most of this article is actually devoted to explaining how to migrate a site already built on Hugo Academic to Quarto. If you are building a site from scratch, the [Quarto original documentation](https://quarto.org/docs/websites/) is a good place to start. Even though this is a newer tool, there are already a number of [Academic sites built on Quarto](https://quarto.org/docs/gallery/#websites), including the [Quarto official website itself](https://github.com/quarto-dev/quarto-web), that you can check out for ideas.
+
+I had the idea, set up the project, generated the basic structure, and the migration was mostly carried on by my research assistant [Gabriel Cortés](mailto:gabriel.cortes@uchile.cl). He did a great job, so if you are interested in something like this, he is the guy.
 
 ## Project Structure
 
@@ -58,9 +66,9 @@ project:
 
 If migrating to a new site meant starting from scratch and losing all your previous content, you might not be too excited about trying something new. Fortunately, migrating content from Hugo to Quarto is fairly straightforward.
 
-The first thing you need to do is change all your old `.rmd' and `.md' files to `.qmd`. We managed to do this manually, but if you have tons of entries you may want to explore some automation. In that case, you should thank [Nick Tierney](https://www.njtierney.com/about/) for tweaking [this very simple function](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) to convert `.rmd` to `.qmd`.
+The first thing you need to do is change all your old `.rmd` and `.md` files to `.qmd`. We managed to do this manually, but if you have tons of entries you may want to explore some automation. In that case, you should thank [Nick Tierney](https://www.njtierney.com/about/) for tweaking [this very simple function](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) to convert `.rmd` to `.qmd`.
 
-Next, you need to adapt your brand new `.qmd' YAMLs. This is not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are much simpler than Markdown's. For example, this is my old *Docencia* Markdown's YAML.
+Next, you need to adapt your brand new \`.qmd' YAMLs. This is not as straightforward as the previous step, but we have the advantage that Quarto YAMLs are much simpler than Markdown's. For example, this is my old *Docencia* Markdown's YAML.
 
 ``` yaml
 # An instance of the Pages widget.
@@ -124,7 +132,7 @@ title-block-banner: true
 
 So you only need to write this very concise chunk of YAML once, and then just copy and paste it to every page you need.
 
-If you have a page that has no other subdirectory, you can just leave this `.qmd' in your root directory and be done with it! Just like the [links](https://github.com/juancarloscastillo/jc-quarto/blob/main/links.qmd) page in this site.
+If you have a page that has no other subdirectory, you can just leave this \`.qmd' in your root directory and be done with it! Just like the [links](https://github.com/juancarloscastillo/jc-quarto/blob/main/links.qmd) page in this site.
 
 However, if you have many entries, you may need to follow a different structure. Here is the one we use:
 
@@ -189,6 +197,7 @@ about:
 
 ::: callout-note
 ## Important
+
 Currently, Quarto only supports Bootstrap Icons. So if you were using any other icon packages in Hugo, you will need to replace them for bootstrap icons. [More information](https://icons.getbootstrap.com)
 :::
 
@@ -337,14 +346,15 @@ html {
 
 For my old site I wrote this function to automatically extract publications stored in Zotero and publish them as a publication record in hugo-academic using blogdown/R. The challenge now was to migrate all my publications and presentations to my new site while losing as little information as possible.
 
-The basic workflow is pretty much the same as before, and you can see it [here](https://juancarloscastillo.github.io/jc-quarto/blog/posts/zotero-academic/). Here I will explain the main changes we need to make to adapt the function to Quarto.
+The basic workflow is pretty much the same as before, and you can see it [here](https://jc-castillo.com/jc-quarto/blog/posts/zotero-academic/). Here I will explain the main changes we need to make to adapt the function to Quarto.
 
 ::: callout-note
 ## Function
+
 You can access to the full code [here](https://raw.githubusercontent.com/juancarloscastillo/jc-quarto/refs/heads/main/publication/posts/bibtex_2academic_plus.R)
 :::
 
-First of all, of course, you need to change the file extension, so that you now have `.qmd' files. So you need to pass from this:
+First of all, of course, you need to change the file extension, so that you now have \`.qmd' files. So you need to pass from this:
 
 ``` r
     filename <- paste(x[["date"]], x[["title"]] %>%
@@ -389,7 +399,7 @@ Of course, you may want to customise it further, as YAML may not be ready yet. I
 
 ``` yaml
     url_fields <- c("url_pdf", "url_preprint", "url_dataset", 
-    								"url_project", "url_slides", "url_video", "url_poster")
+                                    "url_project", "url_slides", "url_video", "url_poster")
 
      # ----------------- LIMPIEZA Y EXTRACCIÓN DE LINKS -----------------
       
@@ -399,56 +409,56 @@ Of course, you may want to customise it further, as YAML may not be ready yet. I
       
       # 1. Eliminar el bloque de "Prof. Guía"
       x[["annotation"]] <- gsub(
-      	"- icon: graduation-cap.*?(?=- icon|$)",  # patrón multilinea hasta el siguiente icon o fin
-      	"",
-      	x[["annotation"]],
-      	perl = TRUE
+        "- icon: graduation-cap.*?(?=- icon|$)",  # patrón multilinea hasta el siguiente icon o fin
+        "",
+        x[["annotation"]],
+        perl = TRUE
       )
       
       # 2. Extraer íconos y enlaces del annotation (todos los "- icon: ... href: ..." o "- icon: ... web: ...")
       matches <- str_match_all(
-      	x[["annotation"]],
-      	"- icon: ([^\\n]+)\\s*\\n\\s*(icon_pack: [^\\n]+\\s*\\n)?\\s*(name: [^\\n]+\\s*\\n)?\\s*(web:|href:) ([^\\n]+)"
+        x[["annotation"]],
+        "- icon: ([^\\n]+)\\s*\\n\\s*(icon_pack: [^\\n]+\\s*\\n)?\\s*(name: [^\\n]+\\s*\\n)?\\s*(web:|href:) ([^\\n]+)"
       )[[1]]
       
       # Crear lista con los links extraídos y transformados
       if (nrow(matches) > 0) {
-      	annotation_links <- apply(matches, 1, function(row) {
-      		icon_name <- row[2]
-      		url <- row[6]
-      		
-      		if (grepl("github\\.com", url)) {
-      			icon_name <- "github"
-      		} else if (!is.na(icon_name) && icon_name == "file") {
-      			icon_name <- "file-pdf-fill"  # cambiar file a file-pdf-fill
-      		}
-      		
-      		
-      		list(icon = icon_name, href = url)
-      	})
+        annotation_links <- apply(matches, 1, function(row) {
+            icon_name <- row[2]
+            url <- row[6]
+            
+            if (grepl("github\\.com", url)) {
+                icon_name <- "github"
+            } else if (!is.na(icon_name) && icon_name == "file") {
+                icon_name <- "file-pdf-fill"  # cambiar file a file-pdf-fill
+            }
+            
+            
+            list(icon = icon_name, href = url)
+        })
       }
       
       # 3. Eliminar bloques de iconos + enlaces de annotation (incluyendo los que comienzan con #)
       x[["annotation"]] <- gsub(
-      	"(\\n|^)#?\\s*-\\s*icon:\\s*[^\\n]+\\s*\\n\\s*(icon_pack:\\s*[^\\n]+\\s*\\n)?\\s*(name:\\s*[^\\n]+\\s*\\n)?\\s*(web:|href:)\\s*[^\\n]+\\n?",
-      	"",
-      	x[["annotation"]],
-      	perl = TRUE
+        "(\\n|^)#?\\s*-\\s*icon:\\s*[^\\n]+\\s*\\n\\s*(icon_pack:\\s*[^\\n]+\\s*\\n)?\\s*(name:\\s*[^\\n]+\\s*\\n)?\\s*(web:|href:)\\s*[^\\n]+\\n?",
+        "",
+        x[["annotation"]],
+        perl = TRUE
       )
       
       # 4. Eliminar cualquier bloque "links:" vacío o mal formado que venga de Zotero
       x[["annotation"]] <- gsub(
-      	"\\n?links:\\s*(\\n\\s*-.*)?",
-      	"",
-      	x[["annotation"]],
-      	perl = TRUE
+        "\\n?links:\\s*(\\n\\s*-.*)?",
+        "",
+        x[["annotation"]],
+        perl = TRUE
       )
       
       # 5. Eliminar cualquier campo de URL residual (como "url_pdf : \"\"")
       x[["annotation"]] <- gsub(
-      	"url_[^:]+:\\s*\"[^\"]*\"\\s*",
-      	"",
-      	x[["annotation"]]
+        "url_[^:]+:\\s*\"[^\"]*\"\\s*",
+        "",
+        x[["annotation"]]
       )
       
       # 6. Limpiar líneas en blanco adicionales
@@ -459,24 +469,24 @@ Of course, you may want to customise it further, as YAML may not be ready yet. I
       
       # Mapa de íconos para campos especiales (url_pdf, url_project, etc.)
       icon_map <- list(
-      	"url_slides"   = list(icon = "file-slides-fill"),
-      	"url_video"    = list(icon = "camara-video-fill"),
-      	"url_poster"   = list(icon = "image-fill"),
-      	"url_pdf"      = list(icon = "file-pdf-fill"),
-      	"url_preprint" = list(icon = "files-alt"),
-      	"url_dataset"  = list(icon = "database"),
-      	"url_project"  = list(icon = "archive")
+        "url_slides"   = list(icon = "file-slides-fill"),
+        "url_video"    = list(icon = "camara-video-fill"),
+        "url_poster"   = list(icon = "image-fill"),
+        "url_pdf"      = list(icon = "file-pdf-fill"),
+        "url_preprint" = list(icon = "files-alt"),
+        "url_dataset"  = list(icon = "database"),
+        "url_project"  = list(icon = "archive")
       )
       
       # Recolectar los links especiales
       links <- list()
       for (field in names(icon_map)) {
-      	if (!is.null(x[[field]]) && !is.na(x[[field]]) && x[[field]] != "") {
-      		links <- append(links, list(list(
-      			icon = icon_map[[field]]$icon,
-      			href = x[[field]]
-      		)))
-      	}
+        if (!is.null(x[[field]]) && !is.na(x[[field]]) && x[[field]] != "") {
+            links <- append(links, list(list(
+                icon = icon_map[[field]]$icon,
+                href = x[[field]]
+            )))
+        }
       }
       
       # ----------------- COMBINAR Y ESCRIBIR LINKS EN 'ABOUT' -----------------
@@ -489,17 +499,17 @@ Of course, you may want to customise it further, as YAML may not be ready yet. I
       write("  template: marquee", fileConn, append = T)
       
       if (length(all_links) > 0) {
-      	write("  links:", fileConn, append = T)
-      	for (link in all_links) {
-      		write(paste0("    - icon: ", link[["icon"]]), fileConn, append = T)
-      		write(paste0("      href: ", link[["href"]]), fileConn, append = T)
-      	}
+        write("  links:", fileConn, append = T)
+        for (link in all_links) {
+            write(paste0("    - icon: ", link[["icon"]]), fileConn, append = T)
+            write(paste0("      href: ", link[["href"]]), fileConn, append = T)
+        }
       }
 ```
 
 With this code, you should obtain a YAML like this:
 
-```yaml
+``` yaml
 title : "Social Cohesion and Attitudinal Changes toward Migration"
 date : "2024-01-01"
 author : ["Juan-Carlos Castillo"]
@@ -513,43 +523,44 @@ about:
       href: https://ocscoes.github.io/presentaciones/global-solidarities-Jan2024/bremen_global_sol2024.html
 ```
 
-:::callout-note
+::: callout-note
 # Important
+
 This code only makes sense if you have previously worked on your Zotero annotations. If you are building a Quarto site from scratch, it might be better to just copy YAML's about section and paste it into your Zotero annotations, and work on the function from there.
 :::
 
 You can customise the body to suit your needs. Here, for example, we write some code to include a *how-to-cite* box at the end of the document.
 
-```yaml
+``` yaml
 # ----------------- GENERACIÓN DE CALL OUT "HOW TO CITE" -----------------
-      	
-      	# Preparar autores
-      	authors <- x[["author"]]
-      	authors <- str_replace_all(authors, " and ", ", ")  # Cambiar 'and' por ', ' para lista de autores
-      	authors <- stringi::stri_trans_general(authors, "latin-ascii")  # Eliminar tildes
-      	authors <- gsub("\\{", "", authors)  # Limpiar llaves
-      	authors <- gsub("\\}", "", authors)
-      	
-      	# Año
-      	year <- ifelse(!is.na(x[["year"]]), x[["year"]], "s.f.")  # "s.f." si falta el año
-      	
-      	# Título
-      	title <- x[["title"]]
-      	
-      	source <- publication  # Usar directamente la variable que ya creaste
-      	
-      	# Construir cita formateada (HTML-safe)
-      	citation_text <- paste0(authors, " (", year, "). *", title, "*")
-      	if (source != "") {
-      		citation_text <- paste0(citation_text, ". ", source)
-      	}
-      	
-      	# ----------------- ESCRIBIR COMO CALLOUT -----------------
-      	
-      	# Escribir el callout al final del archivo
-      	write("\n\n::: {.callout-note title=\"How to cite this work\"}\n", fileConn, append = T)
-      	write(citation_text, fileConn, append = T)
-      	write("\n:::\n", fileConn, append = T)
+        
+        # Preparar autores
+        authors <- x[["author"]]
+        authors <- str_replace_all(authors, " and ", ", ")  # Cambiar 'and' por ', ' para lista de autores
+        authors <- stringi::stri_trans_general(authors, "latin-ascii")  # Eliminar tildes
+        authors <- gsub("\\{", "", authors)  # Limpiar llaves
+        authors <- gsub("\\}", "", authors)
+        
+        # Año
+        year <- ifelse(!is.na(x[["year"]]), x[["year"]], "s.f.")  # "s.f." si falta el año
+        
+        # Título
+        title <- x[["title"]]
+        
+        source <- publication  # Usar directamente la variable que ya creaste
+        
+        # Construir cita formateada (HTML-safe)
+        citation_text <- paste0(authors, " (", year, "). *", title, "*")
+        if (source != "") {
+            citation_text <- paste0(citation_text, ". ", source)
+        }
+        
+        # ----------------- ESCRIBIR COMO CALLOUT -----------------
+        
+        # Escribir el callout al final del archivo
+        write("\n\n::: {.callout-note title=\"How to cite this work\"}\n", fileConn, append = T)
+        write(citation_text, fileConn, append = T)
+        write("\n:::\n", fileConn, append = T)
 ```
 
 ## Resources
@@ -558,13 +569,13 @@ Normally, Quarto will be able to render any local file if you give it the correc
 
 The solution for this is the `resource` option in your `_quarto.yml`. Like this:
 
-```yaml
+``` yaml
   type: website
   resources:
           - documents/*/*
-```  
+```
 
-You can of course write any path (o paths) you need to include. 
+You can of course write any path (o paths) you need to include.
 
 ## Extensions
 
@@ -574,4 +585,4 @@ Here we used [Garrick Aden-Buie's](https://www.garrickadenbuie.com/about/) [Now]
 
 ## Another Stuff
 
-Migrating your old content to a new website may be the right time to check that all your links are working properly. There are tools that allow you to scan your entire website and detect dead links, but many of them are either paid or freemium. There are some [free alternatives] (https://www.deadlinkchecker.com/), but you need to be careful as the information may not be entirely accurate, although it might be a good place to start. 
+Migrating your old content to a new website may be the right time to check that all your links are working properly. There are tools that allow you to scan your entire website and detect dead links, but many of them are either paid or freemium. There are some \[free alternatives\] (https://www.deadlinkchecker.com/), but you need to be careful as the information may not be entirely accurate, although it might be a good place to start.
