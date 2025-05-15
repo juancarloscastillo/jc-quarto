@@ -94,10 +94,10 @@ listing:
   categories: false
 ---
 
-<link rel="me" href="https://mastodon.social/@hegang">
+<!-- <link rel="me" href="https://mastodon.social/@hegang"> -->
 
-<!--This is my personal clarity, please delete or replace with your own clarity-->
-{{< include /includes/_msclarity.qmd >}}
+<!-- <!--This is my personal clarity, please delete or replace with your own clarity-->
+<!-- {{< include /includes/_msclarity.qmd >}} -->
 
 :::{#hero-heading}
 
