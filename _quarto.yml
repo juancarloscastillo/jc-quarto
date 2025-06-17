@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: website 
   resources:
           - filter.js
           - documents/*/*
@@ -30,16 +30,16 @@ website:
          href: https://github.com/juancarloscastillo
     # pinned: true
     left:
-      - href: index.qmd#publicationh1
-        text: Publicaciones y Presentaciones
-      - href: index.qmd#docenciah1
-        text: Docencia
       - href: index.qmd#proyectosh1
         text: Proyectos
+      - href: index.qmd#publicationh1
+        text: Publicaciones
+      - href: index.qmd#docenciah1
+        text: Docencia
+      - href: index.qmd#tesish1
+        text: Tesis  
       - href: index.qmd#blogh1
         text: Blog
-      - href: index.qmd#tesish1
-        text: Tesis
       - href: index.qmd#galeriah1
         text: Galería
       - links.qmd
@@ -52,7 +52,9 @@ format:
     css: 
       - styles.css
     toc: true
-    linkcolor: "#6C8EBF"
+    linkcolor: "#e1cc97"
+    extensions:
+      - banner-override 
 
 
 

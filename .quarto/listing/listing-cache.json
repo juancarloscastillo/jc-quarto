@@ -6,15 +6,6 @@
     "docencia/docencia.qmd": [
       "posts"
     ],
-    "proyectos/proyectos.qmd": [
-      "posts"
-    ],
-    "publication/publication.qmd": [
-      "posts/*.qmd"
-    ],
-    "tesis/tesis.qmd": [
-      "posts/*.qmd"
-    ],
     "index.qmd": [
       "publication/posts/*.qmd",
       "docencia/posts/*/*.qmd",
@@ -23,6 +14,15 @@
       "!blog/posts/drafts/*.qmd",
       "tesis/posts/*.qmd",
       "images/albums/gallery/*"
+    ],
+    "proyectos/proyectos.qmd": [
+      "posts"
+    ],
+    "publication/publication.qmd": [
+      "posts/*.qmd"
+    ],
+    "tesis/tesis.qmd": [
+      "posts/*.qmd"
     ]
   }
 }

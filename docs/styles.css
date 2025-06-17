@@ -9,24 +9,28 @@ html {
 } /*Esto para que al hacer click en los links del navbar la página no "salte", sino que se deslice */
 
 .btn{
-	background-color: #6C8EBF;
-	border-color: #6C8EBF;
+	background-color: #bf956c;
+	border-color: #bf956c;
 } /* Color de los botones */
 
 .btn:hover{
-	background-color: #00BFFF;
-	border-color: #00BFFF ;
+	background-color: #5d4732;
+	border-color: #5d4732 ;
 } /* Resaltado */
 
 /* Cambia el color de los enlaces en estado hover */
 a:hover {
-    color: #00BFFF;
+    color: #c38244;
+}
+
+.navbar {
+  background-color: #655e4a;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffffff;
-  font-weight: 400;
-  background-color: #6C8EBF;
+  color: #050505;
+  font-weight: 600;
+  background-color: #655e4a;
 }
 
 /*-- sidebar --*/
@@ -35,7 +39,7 @@ a:hover {
 .sidebar nav[role=doc-toc] ul>li>a.active {
   border-left: 1px solid #6c8ebf;
   font-weight: 500;
-  color: #6C8EBF !important;
+  color: #948041 !important;
 }
 
 .sidebar nav[role=doc-toc]>ul a {
@@ -53,7 +57,7 @@ a:hover {
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
   border-left: 1px solid #6c8ebf;
-  color: #6C8EBF !important;
+  color: #9f7138 !important;
 }
 
 .toc-actions a {
@@ -65,6 +69,31 @@ a:hover {
   color: inherit !important; /* Mantiene el color original en lugar de cambiarlo */
   text-decoration: none; /* Opcional: elimina el subrayado al hacer hover */
 }
+
+/*titulo de las páginas
+
+header.quarto-title-block {
+  background-color: #89721f !important;
+  color: #ffffff !important;
+}
+
+*/
+
+
+@media (prefers-color-scheme: dark) {
+/*
+  body {
+    color: #a38d4b;
+  }
+*/
+  .listing-title {
+    color: #82712c;  /* example: make titles yellowish in dark mode */
+  }
+}
+
+.listing-description {
+    color: #ffffff !important;
+  }
 
 
 /*-- parallax --*/
@@ -80,7 +109,22 @@ a:hover {
 }
 
 .parallax-image-container {
-  background-image: url(images/background-about.png);
+  background-image: url(images/background-about2.png);
+  background-attachment: fixed;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.8em;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100vw;
+}
+
+.parallax-image-container2 {
+  background-image: url(images/trianglify-dark.png);
   background-attachment: fixed;
   opacity: 1;
   background-position: center;
