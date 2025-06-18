@@ -167,7 +167,14 @@ header.quarto-title-block {
 	max-width: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
+  margin-top: 5rem !important;
 }
+
+
+
+
+
+
 
 /*-- Google Calendar --*/
 

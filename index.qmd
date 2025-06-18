@@ -9,7 +9,7 @@ image: "images/jc-winter.png"
 about:
   id: hero-heading
   template: trestles
-  image-width: 75%
+  image-width: 300px
   image-shape: round
   links:
     - icon: mortarboard-fill
@@ -101,6 +101,7 @@ listing:
 
 :::{#hero-heading}
 
+<br>
 
 ¡Bienvenid_ a mi sitio! Acá busco poner a disposición mi trabajo académico de investigación, docencia y extensión de la manera más abierta posible.
 
@@ -109,6 +110,11 @@ Soy profesor asociado en el **Departamento de Sociología de la Universidad de C
 Realicé mi doctorado en sociología en el [Instituto de Ciencias Sociales](https://www.sowi.hu-berlin.de/de) de la [Universidad de Humboldt](https://www.hu-berlin.de/de), Berlin. Me dedico a temas de justicia distributiva desde una metodología cuantitativa, utilizando metodos multinivel, ecuaciones estructurales, y herramientas de ciencia abierta.
 
 Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _Ciudad del Sol_ ... y de crímenes macabros](https://www.google.com/search?q=cr%C3%ADmenes+en+quilpu%C3%A9).
+
+<br>
+<br>
+<br>
+
 :::
 
 <!-- ## Recent Posts -->
@@ -141,7 +147,7 @@ Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _
 ::: {.section-container}
 ::: {.section-block}
 ::: {style="text-align: left;"}
-
+<br>
 
 ::: {#publicationh1}
 :::
