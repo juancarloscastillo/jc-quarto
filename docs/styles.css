@@ -11,6 +11,7 @@ html {
 .btn{
 	background-color: #bf956c;
 	border-color: #bf956c;
+
 } /* Color de los botones */
 
 .btn:hover{
@@ -37,13 +38,13 @@ a:hover {
 
 
 .sidebar nav[role=doc-toc] ul>li>a.active {
-  border-left: 1px solid #6c8ebf;
+  border-left: 1px solid #948041;
   font-weight: 500;
   color: #948041 !important;
 }
 
 .sidebar nav[role=doc-toc]>ul a {
-  border-left: none;
+  border-left: 1px solid #948041;
   padding-left: 0.6rem;
 }
 
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-  border-left: 1px solid #6c8ebf;
+  border-left: 1px solid #9f7138;
   color: #9f7138 !important;
 }
 
@@ -211,4 +212,29 @@ header.quarto-title-block {
 
 .navbar-logo {
   max-height: 100px;
+}
+
+
+/*Hover image*/
+
+.hover-image-wrapper {
+  position: relative;
+  color: #ccad00;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hover-image-inline {
+  display: none;
+  position: absolute;
+  top: 1.5em; /* Adjust as needed */
+  left: 0;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.hover-image-wrapper:hover .hover-image-inline {
+  display: block;
 }

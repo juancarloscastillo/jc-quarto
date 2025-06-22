@@ -5,7 +5,7 @@ page-layout: custom
 format: html
 page-navigation: false
 toc: false
-image: "images/jc-winter.png"
+image: "images/conconFoto.png"
 about:
   id: hero-heading
   template: trestles
@@ -107,9 +107,9 @@ listing:
 
 Soy profesor asociado en el **Departamento de Sociología de la Universidad de Chile** desde 2019, investigador principal del [Centro de Estudios de Conflicto y Cohesión social COES](https://coes.cl/) desde 2013, e investigador principal del [Núcleo Milenio de Desigualdades y Oportunidades Digitales NUDOS](). Antes fui profesor en el Instituto de Sociología de la Pontificia Universidad Católica de Chile (2014-2018) y coordinador del área de investigación del Centro de Medición MIDE UC (2010-2013).
 
-Realicé mi doctorado en sociología en el [Instituto de Ciencias Sociales](https://www.sowi.hu-berlin.de/de) de la [Universidad de Humboldt](https://www.hu-berlin.de/de), Berlin. Me dedico a temas de justicia distributiva desde una metodología cuantitativa, utilizando metodos multinivel, ecuaciones estructurales, y herramientas de ciencia abierta.
+Realicé mi doctorado en sociología en el [Instituto de Ciencias Sociales](https://www.sowi.hu-berlin.de/de) de la [Universidad de Humboldt](https://www.hu-berlin.de/de), Berlin. Desde entonces me dedico principalmente a la investigación en temas de justicia distributiva desde una metodología cuantitativa, utilizando metodos multinivel, ecuaciones estructurales, y herramientas de ciencia abierta.
 
-Estudié en la escuela 227 de Miraflores, Viña del Mar. Y nací en [Quilpué, _Ciudad del Sol_ ... y de crímenes macabros](https://www.google.com/search?q=cr%C3%ADmenes+en+quilpu%C3%A9).
+Estudié en la <span class="hover-image-wrapper"> escuela 227 de Miraflores, Viña del Mar <img src="/images/227.jpg" class="hover-image-inline" /> </span>. Y nací en  [Quilpué, _Ciudad del Sol_ ... y de crímenes macabros](https://www.google.com/search?q=cr%C3%ADmenes+en+quilpu%C3%A9).
 
 <br>
 <br>
