@@ -1,0 +1,23 @@
+---
+title : "Merit as an Attitude: Chilean School Communities’ Repertoires and the Perception of the “Good Student” in a Post-Pandemic Scenario"
+date : "2025-09-01"
+author : ["Camila {Moyano Davila}", "Samanta Alarcon-Arcos", "Nicolas Angelcos", "J-C Castillo", "Mauricio Salgado"]
+categories : ["Journal Article"]
+publication : "Social Justice Research, 38(3) 264--289  [https://doi.org/10.1007/s11211-025-00456-2](https://doi.org/10.1007/s11211-025-00456-2)"
+publication_short : "Social Justice Research, 38(3) 264--289  [https://doi.org/10.1007/s11211-025-00456-2](https://doi.org/10.1007/s11211-025-00456-2)"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Camila Moyano Davila, Samanta Alarcon-Arcos, Nicolas Angelcos, J-C Castillo, Mauricio Salgado (2025). *Merit as an Attitude: Chilean School Communities’ Repertoires and the Perception of the “Good Student” in a Post-Pandemic Scenario*. Social Justice Research, 38(3) 264--289  [https://doi.org/10.1007/s11211-025-00456-2](https://doi.org/10.1007/s11211-025-00456-2)
+
+:::
+

@@ -1,56 +1,93 @@
 ---
-title: Coloquio de investigación en desigualdad y ciudadanía
+title: Coloquio de investigación en justicia distributiva y desigualdad socioeconómica
 categories: [cursos]
 draft: false # Is this an unpublished draft?
 about:
   template: marquee
-  image: "featured.jpg"  
+  image: "featured.png"  
 ---
 
-El objetivo de este coloquio mensual es presentar trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de desigualdad y/o ciudadanía, y que utilizan metodologías de análisis cuantitativo. Para estudiantes de:
 
-- Seminario de grado (4to)
-- Seminario de título 1 y 2 (5to)
-- Magister/educación continua
-- Doctorado
+# Objetivo
 
-Para detalles de los requisitos de evaluación (para quienes lo requieran) ver página de [Desarrollo de tesis ](/post/desarrollo-tesis/)
+El objetivo de este coloquio semestral es generar un espacio de presentación y retroalimentación colectiva a trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de justicia distributiva, desigualdad y /o merecimiento, y que utilizan metodologías de análisis cuantitativo. Está dirigido a estudiantes que realizan su trabajo de titulación/seminario/tesis de pre y postgrado. También está abierto a asistentes de investigación que participen en temáticas relacionadas.
 
-### 1er sem 2022
+# Desarrollo del coloquio
 
-Título 2:
+Cada estudiante presentará su trabajo al menos una vez durante el semestre. Por regla general el espacio es de una hora, 20-25 min de presentación y el resto de preguntas, comentarios y retroalimentación.
 
-- Presentaciones Jueves 7 de Abril 2022 15-17:00
-- Inscritos
-  - Andreas Laffert
-  - Martín Venegas
+En cada presentación también habrá una persona (comentarista) a cargo de hacer al menos tres preguntas o comentarios sobre la presentación, para lo cual también hay que inscribirse. El/la comentarista parte con su intervención posterior a la presentación, y luego se abre la ronda de preguntas a la audiencia.
 
+# Buenas prácticas
 
-Título 1:
+Se encarece la escucha activa y respetuosa, esto es:
 
-- Presentaciones Jueves 5 de Mayo 2022 15-18:00
-- Inscritos:
-  - Karen Sepulveda
-  - Héctor Lara
-  - Paula Larenas
-  - Catalina Miranda
+-   sin computador abierto
 
-Magíster/posgrado:
+-   teléfonos en silencio y guardados
 
-- Presentaciones Jueves 9 de Junio 2022 15-18:00
-- Inscritos:
-  - Anaís Herrera
-  - Kevin Carrasco
-  - Francisco Meneses
-  - Matías Retamales
+-   anotar preguntas y comentarios en papel/libreta
 
-Doctorado:
+**Preguntar** es signo de interés y también demuestra voluntad de colaboración, para que así el trabajo presentado pueda mejorar. Por lo tanto, la retroalimentación que sirve es la que es capaz de mostrar posibles puntos ciegos y que sería importante tener en cuenta al momento de hacer la entrega final y la defensa. Es lo que hace valer la pena presentar y que no sea un mero trámite. Si es solo un trámite, no sirve.
 
-- Dai Amante
+Las preguntas y comentarios van por regla general al final, pero también pueden darse preguntas breves de comprensión durante la presentación (ej: qué variable va en el eje X? puedes repetir lo último por favor? etc.)
 
+Para quienes presentan, también se sugiere:
 
-# Semestres anteriores
+-   dar un buen contexto al trabajo
 
-## Calendarización 2do sem 2021
+-   claridad en motivación, problema, pregunta y argumento (en este trabajo, mi argumento central es: ...)
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRe36nX3SsL8poUp0of2aJT8-b19IRfGJfy1yvUQFcEDNFR0F4VSrJSN9xVTQDLikHng94vw8uGTAIF/pubhtml?widget=true&amp;headers=false" width="700" height="650"></iframe>
+-   anotar las preguntas
+
+-   repetir/refrasear la pregunta realizada para confirmar que se está entendiendo bien
+
+-   preguntar si se entendió la respuesta
+
+# Calendarización
+
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| Fecha                       | Presenta                                                                                                                                       | Comenta                                                                  |
++=============================+================================================================================================================================================+==========================================================================+
+| 14-08                       | Felipe Estay, candidato a doctor PUC:                                                                                                          | JC Castillo                                                              |
+|                             |                                                                                                                                                |                                                                          |
+|                             | Percepciones de la Desigualdad en Chile: Un Análisis Experimental sobre el Impacto de la Información en la Justificación del Sistema Económico |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 21-08                       | Juan Carlos Castillo:                                                                                                                          |                                                                          |
+|                             |                                                                                                                                                |                                                                          |
+|                             | Justicia de mercado y meritocracia: Conceptos, medición, y factores asociados                                                                  |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 28-08                       | Matías Montero (presenta a las 17:00 en CIAE)                                                                                                  | ------------------------------------------------------------------------ |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 04-09                       | Andreas Laffert                                                                                                                                |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 11-09                       | Propuesta seminario grado (I):                                                                                                                 |                                                                          |
+|                             |                                                                                                                                                |                                                                          |
+|                             | Cristóbal Mejías - Katherine Aravena                                                                                                           |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 17-09                       | Receso                                                                                                                                         |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 25-09                       | Propuesta seminario grado (II):                                                                                                                |                                                                          |
+|                             |                                                                                                                                                |                                                                          |
+|                             | Ismael Aguayo - Victoria Arias                                                                                                                 |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 02-10                       | Título II: Tomás Valencia                                                                                                                      |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 09-10                       | —                                                                                                                                              |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 16-10                       | Título II: Franco Acevedo                                                                                                                      |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 23-10                       | (conferencia COES)                                                                                                                             |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 30-10                       | Título II: Juan Pablo Díaz                                                                                                                     |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 06-11                       | ------------------------------------------------------------------------                                                                       |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 13-11                       | Magíster 1°: Tomás Urzúa                                                                                                                       |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 20-11                       | Magíster 2°: Neyem Cares                                                                                                                       |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| 27-11                       | Magíster 2°: Sophia Karoussis                                                                                                                  |                                                                          |
++-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+
+[Coloquio 2021-2022](/docencia/posts/coloquio/coloquio21-22.html)

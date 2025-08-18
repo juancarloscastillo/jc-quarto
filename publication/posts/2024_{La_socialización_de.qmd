@@ -1,0 +1,23 @@
+---
+title : "{La socialización de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en chile}"
+date : "2024-01-01"
+author : ["Kevin Carrasco", "Juan Diego Garcia-Castro", "Juan-Carlos Castillo"]
+categories : ["Book Section"]
+publication : "  In Gonzalo Assusa & Gabriela Benza: {America Latina desigual: Preguntas, enfoques y tendencias actuales}. Mexico: Siglo XXI Editores. ISBN: 978-607-03-1388-2"
+publication_short : "  In Gonzalo Assusa & Gabriela Benza: {America Latina desigual: Preguntas, enfoques y tendencias actuales}. Mexico: Siglo XXI Editores. ISBN: 978-607-03-1388-2"
+abstract : "En ciencias sociales la desigualdad no es una mera subárea temática. Antes bien, resulta un gesto epistemológico constituyente de las disciplinas, un modo de preguntarse sobre la realidad y abordar problemas de investigación, así como un resultado de la propia reproducción de la vida social. En este marco, el presente libro se propone brindar un panorama de las indagaciones y miradas que han acompañado al renovado interés por la desigualdad en América Latina desde principios de siglo. Un primer conjunto de capítulos pone el foco en las características distintivas y en las transformaciones históricas y recientes de las estructuras sociales de América Latina. Un segundo bloque se centra en las experiencias, identidades, preferencias políticas y biografías desiguales en la región. Finalmente, los capítulos que se reúnen en la tercera parte del libro abordan nuevas preguntas y enfoques en torno a las desigualdades. En su conjunto, este volumen constituye un insumo fundamental para la construcción de consensos sociales y de agendas políticas que promuevan la igualdad en nuestras sociedades. La colección Miradas Latinoamericanas. Un Estado del Debate tiene como objetivo relevar las novedades teóricas, metodológicas y temáticas en diversos campos del saber, tanto a través de perspectivas trans e interdisciplinares, como desde diferentes tradiciones intelectuales. Los libros que integran esta colección reúnen trabajos que exponen las novedades y dan cuenta de las transformaciones en relación con las temáticas, abordajes, enfoques teóricos, preguntas y objetos de investigación en los campos de las ciencias sociales y las humanidades, para poner en valor la originalidad, la relevancia y el impacto del conocimiento producido desde la región"
+abstract_short : ""
+about:
+  template: marquee
+---
+---
+[Link to pdf](/documents/pdf/carrasco-socializacion-meritocracia.pdf)
+![](https://m.media-amazon.com/images/I/41JN8DUE-RL.jpg)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Kevin Carrasco, Juan Diego Garcia-Castro, Juan-Carlos Castillo (2024). *{La socialización de las actitudes hacia la desigualdad y meritocracia en la etapa escolar en chile}*.   In Gonzalo Assusa & Gabriela Benza: {America Latina desigual: Preguntas, enfoques y tendencias actuales}. Mexico: Siglo XXI Editores. ISBN: 978-607-03-1388-2
+
+:::
+

@@ -1462,5 +1462,125 @@
   },
   "blog/posts/drafts/vsc-settings/index.qmd": {
     "index.html": "b6cac2ad"
+  },
+  "blog/posts/drafts/ubuntu-linux/index.qmd": {
+    "index.html": "c5871ef9"
+  },
+  "publication/posts/2024_The_{{Socialization}.qmd": {
+    "2024_The_{{Socialization}.html": "f804c3b0"
+  },
+  "publication/posts/2025_Changes_in_the_{{Jus.qmd": {
+    "2025_Changes_in_the_{{Jus.html": "c15ff581"
+  },
+  "publication/posts/2025_Merit_as_an_{{Attitu.qmd": {
+    "2025_Merit_as_an_{{Attitu.html": "feeea639"
+  },
+  "publication/posts/2025_The_Reliability_of_R.qmd": {
+    "2025_The_Reliability_of_R.html": "061dd762"
+  },
+  "publication/posts/2009_¿{{Cuál}}_Es_La_{{Br.qmd": {
+    "2009_¿{{Cuál}}_Es_La_{{Br.html": "af4960ce"
+  },
+  "publication/posts/2011_Legitimacy_of_{{Ineq.qmd": {
+    "2011_Legitimacy_of_{{Ineq.html": "4025b560"
+  },
+  "publication/posts/2012_{Contrastes_entre_la.qmd": {
+    "2012_{Contrastes_entre_la.html": "bffdc823"
+  },
+  "publication/posts/2012_{Percepción_de_Desig.qmd": {
+    "2012_{Percepción_de_Desig.html": "976a58a4"
+  },
+  "publication/posts/2012_{¿Son_los_chilenos_i.qmd": {
+    "2012_{¿Son_los_chilenos_i.html": "386762c1"
+  },
+  "publication/posts/2013_{Clivajes_partidario.qmd": {
+    "2013_{Clivajes_partidario.html": "2b6b8818"
+  },
+  "publication/posts/2013_{Educación,_equidad_.qmd": {
+    "2013_{Educación,_equidad_.html": "73c0b013"
+  },
+  "publication/posts/2014_{Actitudes_hacia_el_.qmd": {
+    "2014_{Actitudes_hacia_el_.html": "b870259b"
+  },
+  "publication/posts/2015_Desigualdad_{{Social.qmd": {
+    "2015_Desigualdad_{{Social.html": "f221f031"
+  },
+  "publication/posts/2015_Inequality,_{{Distri.qmd": {
+    "2015_Inequality,_{{Distri.html": "96ce4894"
+  },
+  "publication/posts/2015_Poverty_{{Attributio.qmd": {
+    "2015_Poverty_{{Attributio.html": "4b1f99f2"
+  },
+  "publication/posts/2015_{Educación_ciudadana.qmd": {
+    "2015_{Educación_ciudadana.html": "a06575b1"
+  },
+  "publication/posts/2016_{Sintomatología_en_a.qmd": {
+    "2016_{Sintomatología_en_a.html": "20511f24"
+  },
+  "publication/posts/2017_Political_{{Trust}}_.qmd": {
+    "2017_Political_{{Trust}}_.html": "2e533242"
+  },
+  "publication/posts/2017_{Investigando_a_la_é.qmd": {
+    "2017_{Investigando_a_la_é.html": "a1d2b585"
+  },
+  "publication/posts/2018_Measurement_{{Model}.qmd": {
+    "2018_Measurement_{{Model}.html": "5251d981"
+  },
+  "publication/posts/2018_The_{{Political_Soci.qmd": {
+    "2018_The_{{Political_Soci.html": "3dcb563f"
+  },
+  "publication/posts/2018_{Dimensiones_Comunes.qmd": {
+    "2018_{Dimensiones_Comunes.html": "ce08862c"
+  },
+  "publication/posts/2019_Deserving_a_{{Just_P.qmd": {
+    "2019_Deserving_a_{{Just_P.html": "18fcadc3"
+  },
+  "publication/posts/2019_Risk_{{Exposure}},_{.qmd": {
+    "2019_Risk_{{Exposure}},_{.html": "cba006ba"
+  },
+  "publication/posts/2019_The_{{Crowdsourced_R.qmd": {
+    "2019_The_{{Crowdsourced_R.html": "4e70235d"
+  },
+  "publication/posts/2019_{Medición_de_actitud.qmd": {
+    "2019_{Medición_de_actitud.html": "0e90b46b"
+  },
+  "publication/posts/2020_Patterns_of_{{Civic}.qmd": {
+    "2020_Patterns_of_{{Civic}.html": "fc771f07"
+  },
+  "publication/posts/2020_Young_{{Citizens_Par.qmd": {
+    "2020_Young_{{Citizens_Par.html": "4c1cf2b1"
+  },
+  "publication/posts/2020_¿{{Fruto}}_Del_Esfue.qmd": {
+    "2020_¿{{Fruto}}_Del_Esfue.html": "f5e4ba12"
+  },
+  "publication/posts/2021_Measuring_{{Attitude.qmd": {
+    "2021_Measuring_{{Attitude.html": "1e2b276f"
+  },
+  "publication/posts/2021_Measuring_{{Percepti.qmd": {
+    "2021_Measuring_{{Percepti.html": "783a8552"
+  },
+  "publication/posts/2022_Cohesión_Social_En_{.qmd": {
+    "2022_Cohesión_Social_En_{.html": "145fb5e8"
+  },
+  "publication/posts/2022_Trust_in_{{Political.qmd": {
+    "2022_Trust_in_{{Political.html": "1526edb6"
+  },
+  "publication/posts/2024_{La_socialización_de.qmd": {
+    "2024_{La_socialización_de.html": "f5c9ea37"
+  },
+  "publication/posts/2025_Changes_in_the_Justi.qmd": {
+    "2025_Changes_in_the_Justi.html": "e7003f33"
+  },
+  "publication/posts/2025_Merit_as_an_Attitude.qmd": {
+    "2025_Merit_as_an_Attitude.html": "b3063566"
+  },
+  "docencia/posts/coloquio/coloquio21-22.qmd": {
+    "coloquio21-22.html": "d207ec0d"
+  },
+  "proyectos/posts/fondecyt-jusmer/index.qmd": {
+    "index.html": "caa3c506"
+  },
+  "docencia/posts/coloquio/coloquio2021-22/coloquio21-22.qmd": {
+    "coloquio21-22.html": "4b45a711"
   }
 }

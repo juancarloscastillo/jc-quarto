@@ -1,0 +1,22 @@
+---
+title : "{Actitudes hacia el trabajo y justicia salarial en Chile}"
+date : "2014-01-01"
+author : ["Juan-Carlos Castillo"]
+categories : ["Report"]
+publication : " {Temas de la Agenda Pública} (66) 33--44 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile"
+publication_short : " {Temas de la Agenda Pública} (66) 33--44 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile"
+abstract : "Este artículo es parte de un número especial de Temas de la Agenda Pública (de Políticas Públicas UC) donde se analizaron percepciones y preferencias sobre temas laborales en Chile con la Encuesta Bicentenario 2013. También se utilizaron datos de la encuesta Justicia y Participación Política del proyecto FONDECYT Social Justice and Citizenship Participation y del ISSP 2009."
+abstract_short : ""
+about:
+  template: marquee
+---
+---
+[Reporte completo](https://politicaspublicas.uc.cl/publicacion/serie-temas-de-la-agenda/serie-no-66-encuesta-nacional-bicentenario-universidad-catolica-adimark-2013/)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo (2014). *{Actitudes hacia el trabajo y justicia salarial en Chile}*.  {Temas de la Agenda Pública} (66) 33--44 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile
+
+:::
+

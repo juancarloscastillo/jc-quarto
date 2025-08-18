@@ -1,0 +1,63 @@
+---
+title: ¿Por qué cambiarse a Linux? Una guía para no morir en el intento
+categories: [academic]
+# Date published
+date: "2021-05-25"  #year-
+date-modified: "2021-12-13"
+draft: true # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+
+Si no te molestan las actualizaciones automáticas de windows, su estética, sus antivirus, sus menúes, su administrador de archivos, y su foco monopólico y comercial, tal vez no vale la pena seguir leyendo. Y si no te molesta la hipersofisticación  monopólica hipster sobrevalorada, excesivamente cara, tanto y más comercial y cerrada del mundo Mac, mejor tampoco seguir leyendo. 
+
+Este post es principalmente para personas que se mueven en el mundo académico y que no están satisfechos ni tranquilos con el duopolio comercial disponible, tanto de sistemas operativos como de programas cuyo fin es la generación de ganancias y no el desarrollo del conocimiento. En particular, para quienes aprecian el desarrollo de herramientas de software generadas de manera colaborativa por mentes generosas de nuestra sociedad, abiertas a cualquier persona de manera libre y sin un fin comercial. En resumen, un entorno de trabajo más afín a quienes trabajan en la generación de conocimiento abierto y libre de barreras de pago.
+
+Y así llegamos a Linux y sus "distribuciones" [...].
+
+Requisitos: computador con conexión a internet y un pendrive / USB stick de al menos 6g
+
+# Instalación de Ubuntu
+
+Tres principales opciones:
+
+a. instalar en paralelo a otro sistema operativo (ej: Mac / Windows). Esto permite elegir al momento de iniciar el computador si es que se quiere utilizar uno u otro.
+
+  - ventajas: se pueden aprovechar ambos mundos a la vez, y permite una entrada más exploratoria y menos radical a Ubuntu. Se puede ver como una especie de modo de prueba. 
+  - desventajas: en lo técnico, requiere una partición previa del disco duro (que no es la verdad muy complicada, preguntar a GPT). Pero la mayor limitación es que implica duplicar recursos del computador (ej: tener instalados programas en ambos sistemas). No debería ser problema para un computador con alta capacidad. 
+
+b. En el caso de Windows, se cuenta con la opción de instalar Ubuntu dentro de Windows ([Windows Subsystem for Linux - WSL](https://learn.microsoft.com/en-us/windows/wsl/install)). Es un poco extraño, pero puede funcionar para probar y explorar.
+
+c. Instalar Ubuntu como el sistema operativo (único) del computador. Implica un formateo completo durante el proceso de instalación, por lo tanto hay que respaldar en un disco externo toda la información de archivos que se quieran traspasar al computador. Si los archivos se encuentran en algún servicio de cloud tipo Dropbox o Drive no es necesario, ya que luego se bajan de la nube. 
+
+Una opción también menos radical es instalar Ubuntu en la alternativa c en un computador que no se esté utilizando, para poder probar bien ahí como funciona. No importa si el computador es muy viejo, Ubuntu está preparado para trabajar con pocos recursos.
+
+En adelante sigo solo con la instalación con la alternativa c.
+
+## Bajar versión de Ubuntu para instalar
+
+Revisar esta página: [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop). Se recomienda elegir la última version LTS (Long Term Support), que es la primera que aparece. En general hay disponible una versión más reciente que aún no es LTS, por lo tanto se encuentra aún en modo de prueba y es mejor irse a la segura con LTS.
+
+## Creación de disco booteable usb
+
+Una vez que ya se bajó el archivo, se requiere grabarlo en el pendrive, pero de una manera especial para que quede "booteable". Esto quiere decir que cuando se inicie el computador, se pueda leer como un sistema operativo y no como un archivo. Para eso:
+
+- en windows: seguir instrucciones [aquí](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview) 
+- en mac (en caso que quieras Ubuntu en Mac): [aquí](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview).
+
+## Hacer partir el computador desde el USB
+
+Para esto se requiere que al iniciar el computador se abra el menú del "BIOS", que es el de las opciones básicas iniciales del computador. En general es presionando F2 luego del botón de encendido, pero esto puede variar según computador. Para saber como entrar al bios desde su computador, GPT.
+
+Entonces:
+
+- apagar computador
+- insertar usb booteable con Ubuntu
+- encender computador y presionar F2 (o alternativa según computador)
+- aparece el Bios set up, buscar la opción boot options. Acá debe aparecer un listado con dos o o tres opciones de boot, mover la del usb al principio de la "boot sequence".
+- save / apply changes (según corresponda), y salir
+- debería reiniciar desde el usb y comenzar la instalación
+- seleccionar la primera opción de la pantalla en negro: "Try or install ubuntu"
+
+
