@@ -1,6 +1,6 @@
 ---
 title: "Justicia de Mercado y Merecimiento del Bienestar Social"
-subtitle:  FONDECYT Regular 1250518 (2021-2024).
+subtitle:  FONDECYT Regular 1250518 (2025-2028).
 categories: [Fondecyt]
 # Date published
 date: "2025-03-31"  #year-
