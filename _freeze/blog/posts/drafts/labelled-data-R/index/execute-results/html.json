@@ -1,0 +1,15 @@
+{
+  "hash": "179034331d28cb67349e2207ea254c71",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Trabajando con vectores etiquetados (labelled vectors) en R\ncategories: [academic]\n# Date published\ndate: \"2022-11-22\"  #year-\n# date-modified: \"2021-12-13\"\ndraft: true # Is this an unpublished draft?\nabout:\n  template: marquee\n---\n\n# Intro (AUN COMO DRAFT; CAMBIAR EN YAML)\n\nAl cambiarme hace años de Stata a R una de las cosas más difíciles fue el manejo inicial de datos, muchas veces llamado limpieza, procesamiento o ajustes, y que yo prefiero llamar preparación. En esto, algo simple como etiquetar valores, variables o recodificar, y que era (es) muy fácil en Stata, en R era (es) un suplicio. R es inicialmente un programa de modelamiento estadístico, y su paso a un público más heterogéneo (por ejemplo, ciencias sociales) ha sido algo de los últimos años. Por eso inicialmente en R no teníamos algo a lo que estabamos acostumbrados: variables numéricas con valores etiquetados (ej: 1=totalmente en desacuerdo). Lo que había en R eran vectores numéricos (sin posibilidad de etiquetas) y factores (con etiquetas, pero sin propiedades numéricas intervalares). Es decir, si optábamos por etiquetar, ya no podíamos hacer operaciones simples (como un promedio) con la variable.\n\nEsto se soluciona con el **vector etiquetado** (labelled vector), que aparece más recientemente en R. Este formato ahora es común en la lectura de datos de otros formatos (ej: spss) mediate la librería haven, que mantiene las etiquetas como atributos. Ahora, esa solución trae consigo una serie de procedimientos para poder trabajar los datos con esas etiquetas sin volverse loco. Por ejemplo, pueden pasar cosas como que ciertos valores se recodifican a NA, pero aún así la etiqueta sigue existiendo en las tablas con frecuencia 0.\n\n## Ejemplo\n\nVamos a cargar primero datos de la encuesta ELSOC\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# o mejor desde archivo stata o spss??\n```\n:::\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\npacman::p_load(dplyr, sjmisc, codebook, sjlabelled)\nload(url(\"https://multivariada.netlify.com/assignment/data/original/ELSOC_W01_v3.10.RData\"))\nfrq(elsoc_2016$c18_09)\nelsoc_2016$c18_09 <- set_na(elsoc_2016$c18_09, na=c(-888,-999), as.tag = TRUE) #definir valores perdidos\nelsoc_2016$c18_09_rec <-codebook::reverse_labelled_values(elsoc_2016$c18_09)\nfrq(elsoc_2016$c18_09)\nfrq(elsoc_2016$c18_09_rec)\n```\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,6 +1,6 @@
 <% if (listing.items && listing.items.length) { %>
   <div class="listing-container">
-    <% listing.items.forEach(item => { %>
+    <% listing.items.forEach((item, idx) => { %>
       <div class="listing-item">
         <h3><a href="<%= item.page_url %>"><%= item.title %></a></h3>
         <% if (item.description) { %>
@@ -18,7 +18,14 @@
             <% }) %>
           </div>
         <% } %>
+        <!-- Previous/Next navigation -->
+        <nav class="post-nav">
+          <% if (idx > 0) { %>
+            <a href="<%= listing.items[idx - 1].page_url %>">&laquo; Anterior: <%= listing.items[idx - 1].title %></a>
+          <% } %>
+          <% if (idx < listing.items.length - 1) { %>
+            <a href="<%= listing.items[idx + 1].page_url %>">Siguiente: <%= listing.items[idx + 1].title %> &raquo;</a>
+          <% } %>
+        </nav>
       </div>
     <% }) %>
-  </div>
-<% } %>

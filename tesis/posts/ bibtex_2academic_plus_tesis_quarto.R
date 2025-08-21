@@ -492,3 +492,8 @@ bibtex_2academic(bibfile  = my_bibfile,
                   outfold   = out_fold,
                   abstract  = TRUE,
                   overwrite = TRUE)
+
+
+
+# Correr esta línea
+# source("tesis/posts/bibtex_2academic_plus_tesis_quarto.R")

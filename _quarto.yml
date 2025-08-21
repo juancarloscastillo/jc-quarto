@@ -44,6 +44,7 @@ website:
         text: Galería
       - links.qmd
       - contacto.qmd
+  page-navigation: true
 format:
   html:
     theme: 
@@ -55,7 +56,7 @@ format:
     linkcolor: "#e1cc97"
     extensions:
       - banner-override 
-
+freeze: auto
 
 
 
