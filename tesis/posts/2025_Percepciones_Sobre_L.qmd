@@ -1,0 +1,21 @@
+---
+title : "Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático"
+date : "2025-01-01"
+author : ["Octavio Villarroel"]
+publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "La presente investigación busca dar cuenta de las repercusiones que pueden tener las tecnologías digitales en la meritocracia. En concreto, se estudiarán las percepciones sobre la figura de la micro-celebridad y la influencia que estas podrían tener en la concepción de la meritocracia, particularmente en su dimensión individualista y credencialista. Dicho esto, se plantean dos hipótesis: (1) por un lado, la micro-celebridad podría fortalecer el aspecto individualista de la meritocracia; y, (2) por otro lado, podría inhibir el elemento credencialista de esta última. Para llevar esto a cabo, se empleará metodología de tipo cualitativa, optando por la elaboración de 4 focus group compuestos por estudiantes universitarios de entre 18 a 25 años según tipo de universidad a la que asisten. Esta investigación busca entregar pistas sobre hacia dónde apuntan las nuevas generaciones en lo que respecta a trayectorias de movilidad social y meritocracia, como también el posible rol que juega el nivel socioeconómico en la formulación de aquello. Palabras clave: tecnologías digitales, trayectorias de movilidad digital, micro-celebridad, meritocracia"
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Octavio Villarroel (2025). *Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

@@ -9,9 +9,9 @@ abstract_short : ""
 categories : ["Guía o cotutor"]
 about:
   template: marquee
-#  links:
-#    - icon: file-pdf-fill
-#      href: documents/pdf/retamales.pdf
+  links:
+    - icon: file-pdf-fill
+      href: documents/pdf/retamales.pdf
 ---
 ---
 
