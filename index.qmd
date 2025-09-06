@@ -101,11 +101,9 @@ listing:
 
 :::{#hero-heading}
 
-<br>
-
 ¡Bienvenid_ a mi sitio! Acá busco poner a disposición mi trabajo académico de investigación, docencia y extensión de la manera más abierta posible.
 
-Soy profesor asociado en el **Departamento de Sociología de la Universidad de Chile** desde 2019, investigador principal del [Centro de Estudios de Conflicto y Cohesión social COES](https://coes.cl/) desde 2013, e investigador principal del [Núcleo Milenio de Desigualdades y Oportunidades Digitales NUDOS](). Antes fui profesor en el Instituto de Sociología de la Pontificia Universidad Católica de Chile (2014-2018) y coordinador del área de investigación del Centro de Medición MIDE UC (2010-2013).
+Soy profesor titular en el **Departamento de Sociología de la Universidad de Chile**, investigador principal del [Centro de Estudios de Conflicto y Cohesión social COES](https://coes.cl/) desde 2013, e investigador principal del [Núcleo Milenio de Desigualdades y Oportunidades Digitales NUDOS](). Antes fui profesor en el Instituto de Sociología de la Pontificia Universidad Católica de Chile (2014-2018) y coordinador del área de investigación del Centro de Medición MIDE UC (2010-2013).
 
 Realicé mi doctorado en sociología en el [Instituto de Ciencias Sociales](https://www.sowi.hu-berlin.de/de) de la [Universidad de Humboldt](https://www.hu-berlin.de/de), Berlin. Desde entonces me dedico principalmente a la investigación en temas de justicia distributiva desde una metodología cuantitativa, utilizando metodos multinivel, ecuaciones estructurales, y herramientas de ciencia abierta.
 
