@@ -25,10 +25,11 @@ website:
     right: |
        Last Update: {{< modified isodate>}} 
   navbar:
-    tools: 
+    tools:
+       - icon: translate
+         href: https://1-jc--castillo-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_enc=1    # pinned: true
        - icon: github
          href: https://github.com/juancarloscastillo
-    # pinned: true
     left:
       - href: index.qmd#proyectosh1
         text: Proyectos
@@ -55,7 +56,7 @@ format:
     toc: true
     linkcolor: "#e1cc97"
     extensions:
-      - banner-override 
+      - banner-override
 freeze: auto
 
 
