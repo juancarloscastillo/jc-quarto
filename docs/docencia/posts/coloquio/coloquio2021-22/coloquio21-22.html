@@ -69,100 +69,150 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-/* Oculta la barra superior de Google Translate */
+/* Oculta la barra superior */
 .goog-te-banner-frame.skiptranslate { display: none !important; }
 body { top: 0 !important; }
 
-/* Botón-bandera en navbar */
+/* Evita saltos por iframes */
+html body .skiptranslate > iframe { visibility: hidden !important; }
+
+/* Contenedor del widget: lo queremos en DOM pero discreto */
+.gtrans-slot { width: 0; height: 0; overflow: hidden; }
+
+/* Botón-bandera */
 .nav-item.gtrans-flag { display: flex; align-items: center; }
 .nav-item.gtrans-flag a {
   text-decoration: none; font-size: 1.1rem; line-height: 1;
   padding: 0 .4rem; cursor: pointer;
 }
-
-/* Evita saltos por iframes */
-html body .skiptranslate > iframe { visibility: hidden !important; }
 </style>
 
 <script>
-/* Utilidades para cookie googtrans */
-function setGoogTransCookie(lang) {
-  // lang debe ser 'es' o 'en'
-  const val = `/auto/${lang}`;
-  const d = new Date();
-  d.setFullYear(d.getFullYear() + 1);
-  const expires = `; expires=${d.toUTCString()}`;
-  const base = `googtrans=${val}${expires}; path=/`;
-
-  // host actual y dominio raíz (maneja www. y subdominios)
-  const host = location.hostname;
-  const root = '.' + host.replace(/^www\./, '');
-
-  // Escribimos varias variantes por seguridad
-  document.cookie = base;                         // host exacto
-  document.cookie = `${base}; domain=${host}`;    // host exacto con domain
-  document.cookie = `${base}; domain=${root}`;    // dominio raíz con punto
-}
-
-function getCurrentLang() {
-  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
-  if (!m) return 'es';
-  const val = decodeURIComponent(m[1]); // ej. "/auto/en"
-  const parts = val.split('/');
-  return parts[parts.length - 1] || 'es';
-}
-
-function ensureFlagButton() {
+// -------- Utilidades --------
+function findRightNav() {
   const targets = document.querySelectorAll(
     '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
   );
-  let rightNav = null;
-  targets.forEach(el => { if (!rightNav && el) rightNav = el; });
-  if (!rightNav) return null;
-
-  let btn = document.getElementById('gtrans-flag-toggle');
-  if (!btn) {
-    const li = document.createElement('li');
-    li.className = 'nav-item gtrans-flag';
-    li.innerHTML = `<a id="gtrans-flag-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">🌐</a>`;
-    rightNav.appendChild(li);
-    btn = li.querySelector('a');
-  }
-  return btn;
+  for (const el of targets) if (el) return el;
+  return null;
 }
-
-function updateFlagEmoji() {
+function currentLangFromCookie() {
+  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+  if (!m) return 'es';
+  const v = decodeURIComponent(m[1]).split('/');
+  return v[v.length - 1] || 'es';
+}
+function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
-  const lang = getCurrentLang();
+  const lang = currentLangFromCookie();
   a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
   a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+function setCookieAndReload(lang) {
+  const val = `/auto/${lang}`;
+  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+  const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
+  const host = location.hostname;
+  const root = '.' + host.replace(/^www\./,'');
+  document.cookie = base;
+  document.cookie = `${base}; domain=${host}`;
+  document.cookie = `${base}; domain=${root}`;
+  location.reload();
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = ensureFlagButton();
-  updateFlagEmoji();
+// -------- Inserta elementos en navbar --------
+function ensureNavItems() {
+  const right = findRightNav();
+  if (!right) return false;
 
-  if (btn && !btn._attached) {
-    btn._attached = true;
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const current = getCurrentLang();
-      const next = (current === 'en') ? 'es' : 'en';
-      setGoogTransCookie(next);
-      // Recarga: el script de Google aplicará la traducción automáticamente
-      location.reload();
-    });
+  // Bandera
+  if (!document.getElementById('gtrans-flag-toggle')) {
+    const li = document.createElement('li');
+    li.className = 'nav-item gtrans-flag';
+    li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma">🌐</a>`;
+    right.appendChild(li);
   }
-});
 
-// Tras la recarga, cuando la traducción se aplique, actualizamos la bandera:
-window.addEventListener('load', updateFlagEmoji);
+  // Contenedor oculto del widget
+  if (!document.getElementById('google_translate_element')) {
+    const li2 = document.createElement('li');
+    li2.className = 'nav-item';
+    li2.innerHTML = `<div id="google_translate_element" class="gtrans-slot"></div>`;
+    right.appendChild(li2);
+  }
+  return true;
+}
+
+// -------- Cambiar idioma usando el combo del widget --------
+function changeViaCombo(lang) {
+  const combo = document.querySelector('select.goog-te-combo');
+  if (!combo) return false;
+  // IMPORTANTE: Google espera códigos en minúsculas tipo 'en'/'es'
+  combo.value = lang;
+  combo.dispatchEvent(new Event('change'));
+  setTimeout(updateFlag, 700);
+  return true;
+}
+
+// -------- Callback oficial de Google --------
+function googleTranslateElementInit() {
+  // Montamos el widget (necesario para que Google traduzca)
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'es',
+      includedLanguages: 'es,en',   // permite ir y volver sin recarga
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+
+  // Una vez listo el DOM, conectamos eventos
+  const tryWire = () => {
+    ensureNavItems();
+    updateFlag();
+
+    const btn = document.getElementById('gtrans-flag-toggle');
+    if (btn && !btn._wired) {
+      btn._wired = true;
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const current = currentLangFromCookie();
+        const next = (current === 'en') ? 'es' : 'en';
+        // 1) Intento directo con combo
+        if (!changeViaCombo(next)) {
+          // 2) Fallback robusto
+          setCookieAndReload(next);
+        }
+      });
+    }
+  };
+
+  // Espera a que Google inyecte el combo y conéctalo
+  let tries = 0;
+  const t = setInterval(() => {
+    tries++;
+    tryWire();
+    if (document.querySelector('select.goog-te-combo') || tries > 30) {
+      clearInterval(t);
+    }
+  }, 200);
+}
+
+// Exponer callback global
+window.googleTranslateElementInit = googleTranslateElementInit;
+
+// Primer pintado de navbar (por si el callback tarda)
+document.addEventListener('DOMContentLoaded', () => {
+  ensureNavItems();
+  updateFlag();
+});
 </script>
 
-<!-- Carga la librería de Google Translate (necesario para que, tras la recarga, lea la cookie) -->
-<script src="//translate.google.com/translate_a/element.js"></script>
+<!-- Carga la librería con callback -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 <link rel="stylesheet" href="../../../../styles.css">
