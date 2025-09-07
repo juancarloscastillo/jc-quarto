@@ -238,3 +238,26 @@ header.quarto-title-block {
 .hover-image-wrapper:hover .hover-image-inline {
   display: block;
 }
+
+/* translation */
+
+/* Oculta la barra superior de Google Translate */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body { top: 0 !important; }
+
+/* Oculta el aviso flotante (si apareciera) */
+.goog-te-gadget-icon { display: none !important; }
+
+/* Estilo del selector para integrarlo en la navbar */
+.gtrans-slot select {
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  padding: 0.1rem 0.25rem;
+  color: inherit;
+}
+
+/* Evita que el iframe mueva el layout */
+html body .skiptranslate > iframe { visibility: hidden !important; }

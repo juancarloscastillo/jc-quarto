@@ -100,6 +100,101 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+/* Oculta la barra superior de Google Translate */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+/* Botón-bandera en navbar */
+.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag a {
+  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  padding: 0 .4rem; cursor: pointer;
+}
+
+/* Evita saltos por iframes */
+html body .skiptranslate > iframe { visibility: hidden !important; }
+</style>
+
+<script>
+/* Utilidades para cookie googtrans */
+function setGoogTransCookie(lang) {
+  // lang debe ser 'es' o 'en'
+  const val = `/auto/${lang}`;
+  const d = new Date();
+  d.setFullYear(d.getFullYear() + 1);
+  const expires = `; expires=${d.toUTCString()}`;
+  const base = `googtrans=${val}${expires}; path=/`;
+
+  // host actual y dominio raíz (maneja www. y subdominios)
+  const host = location.hostname;
+  const root = '.' + host.replace(/^www\./, '');
+
+  // Escribimos varias variantes por seguridad
+  document.cookie = base;                         // host exacto
+  document.cookie = `${base}; domain=${host}`;    // host exacto con domain
+  document.cookie = `${base}; domain=${root}`;    // dominio raíz con punto
+}
+
+function getCurrentLang() {
+  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+  if (!m) return 'es';
+  const val = decodeURIComponent(m[1]); // ej. "/auto/en"
+  const parts = val.split('/');
+  return parts[parts.length - 1] || 'es';
+}
+
+function ensureFlagButton() {
+  const targets = document.querySelectorAll(
+    '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
+  );
+  let rightNav = null;
+  targets.forEach(el => { if (!rightNav && el) rightNav = el; });
+  if (!rightNav) return null;
+
+  let btn = document.getElementById('gtrans-flag-toggle');
+  if (!btn) {
+    const li = document.createElement('li');
+    li.className = 'nav-item gtrans-flag';
+    li.innerHTML = `<a id="gtrans-flag-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">🌐</a>`;
+    rightNav.appendChild(li);
+    btn = li.querySelector('a');
+  }
+  return btn;
+}
+
+function updateFlagEmoji() {
+  const a = document.getElementById('gtrans-flag-toggle');
+  if (!a) return;
+  const lang = getCurrentLang();
+  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  a.setAttribute('aria-label', a.title);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = ensureFlagButton();
+  updateFlagEmoji();
+
+  if (btn && !btn._attached) {
+    btn._attached = true;
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const current = getCurrentLang();
+      const next = (current === 'en') ? 'es' : 'en';
+      setGoogTransCookie(next);
+      // Recarga: el script de Google aplicará la traducción automáticamente
+      location.reload();
+    });
+  }
+});
+
+// Tras la recarga, cuando la traducción se aplique, actualizamos la bandera:
+window.addEventListener('load', updateFlagEmoji);
+</script>
+
+<!-- Carga la librería de Google Translate (necesario para que, tras la recarga, lea la cookie) -->
+<script src="//translate.google.com/translate_a/element.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -345,8 +440,9 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/juancarloscastillo" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="../#" title="🌐 Idioma" class="quarto-navigation-tool px-1" aria-label="🌐 Idioma"><i class="bi bi-"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -395,7 +491,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1742871600000" data-listing-file-modified-sort="1746628135903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1742875200000" data-listing-file-modified-sort="1746628135903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
 <a href="../blog/posts/quarto-migration/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/quarto-migration/featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -414,7 +510,7 @@ Mar 25, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1665802800000" data-listing-file-modified-sort="1755726805330" data-listing-date-modified-sort="1639364400000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1994">
+<div class="g-col-1" data-index="1" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1665806400000" data-listing-file-modified-sort="1755726805330" data-listing-date-modified-sort="1639368000000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1994">
 <a href="../blog/posts/escritura-academica/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/escritura-academica/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -433,7 +529,7 @@ Oct 15, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1659326400000" data-listing-file-modified-sort="1742304175539" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
+<div class="g-col-1" data-index="2" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1659330000000" data-listing-file-modified-sort="1742304175539" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
 <a href="../blog/posts/risc-bremen/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/risc-bremen/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -452,7 +548,7 @@ Aug 1, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cmVkaXN0cmlidXRpdmUlMjBwcmVmZXJlbmNlcw==" data-listing-date-sort="1657771200000" data-listing-file-modified-sort="1742304175363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="333">
+<div class="g-col-1" data-index="3" data-categories="cmVkaXN0cmlidXRpdmUlMjBwcmVmZXJlbmNlcw==" data-listing-date-sort="1657774800000" data-listing-file-modified-sort="1742304175363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="333">
 <a href="../blog/posts/ISA-2023/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/ISA-2023/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -471,7 +567,7 @@ Jul 14, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1657339200000" data-listing-file-modified-sort="1744470279808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
+<div class="g-col-1" data-index="4" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1657342800000" data-listing-file-modified-sort="1744470279808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
 <a href="../blog/posts/tesisfacsodown/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/tesisfacsodown/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -490,7 +586,7 @@ Jul 9, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1742304175540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1894">
+<div class="g-col-1" data-index="5" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1639368000000" data-listing-file-modified-sort="1742304175540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1894">
 <a href="../blog/posts/zotero-academic/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/zotero-academic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -509,7 +605,7 @@ Dec 13, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1621915200000" data-listing-file-modified-sort="1744470279806" data-listing-date-modified-sort="1639364400000" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
+<div class="g-col-1" data-index="6" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1621918800000" data-listing-file-modified-sort="1744470279806" data-listing-date-modified-sort="1639368000000" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
 <a href="../blog/posts/defensas-presentaciones/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/defensas-presentaciones/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>

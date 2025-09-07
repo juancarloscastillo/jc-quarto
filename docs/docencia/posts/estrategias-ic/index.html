@@ -70,6 +70,101 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+/* Oculta la barra superior de Google Translate */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0 !important; }
+
+/* Botón-bandera en navbar */
+.nav-item.gtrans-flag { display: flex; align-items: center; }
+.nav-item.gtrans-flag a {
+  text-decoration: none; font-size: 1.1rem; line-height: 1;
+  padding: 0 .4rem; cursor: pointer;
+}
+
+/* Evita saltos por iframes */
+html body .skiptranslate > iframe { visibility: hidden !important; }
+</style>
+
+<script>
+/* Utilidades para cookie googtrans */
+function setGoogTransCookie(lang) {
+  // lang debe ser 'es' o 'en'
+  const val = `/auto/${lang}`;
+  const d = new Date();
+  d.setFullYear(d.getFullYear() + 1);
+  const expires = `; expires=${d.toUTCString()}`;
+  const base = `googtrans=${val}${expires}; path=/`;
+
+  // host actual y dominio raíz (maneja www. y subdominios)
+  const host = location.hostname;
+  const root = '.' + host.replace(/^www\./, '');
+
+  // Escribimos varias variantes por seguridad
+  document.cookie = base;                         // host exacto
+  document.cookie = `${base}; domain=${host}`;    // host exacto con domain
+  document.cookie = `${base}; domain=${root}`;    // dominio raíz con punto
+}
+
+function getCurrentLang() {
+  const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+  if (!m) return 'es';
+  const val = decodeURIComponent(m[1]); // ej. "/auto/en"
+  const parts = val.split('/');
+  return parts[parts.length - 1] || 'es';
+}
+
+function ensureFlagButton() {
+  const targets = document.querySelectorAll(
+    '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
+  );
+  let rightNav = null;
+  targets.forEach(el => { if (!rightNav && el) rightNav = el; });
+  if (!rightNav) return null;
+
+  let btn = document.getElementById('gtrans-flag-toggle');
+  if (!btn) {
+    const li = document.createElement('li');
+    li.className = 'nav-item gtrans-flag';
+    li.innerHTML = `<a id="gtrans-flag-toggle" aria-label="Cambiar idioma" title="Cambiar idioma">🌐</a>`;
+    rightNav.appendChild(li);
+    btn = li.querySelector('a');
+  }
+  return btn;
+}
+
+function updateFlagEmoji() {
+  const a = document.getElementById('gtrans-flag-toggle');
+  if (!a) return;
+  const lang = getCurrentLang();
+  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  a.setAttribute('aria-label', a.title);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = ensureFlagButton();
+  updateFlagEmoji();
+
+  if (btn && !btn._attached) {
+    btn._attached = true;
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const current = getCurrentLang();
+      const next = (current === 'en') ? 'es' : 'en';
+      setGoogTransCookie(next);
+      // Recarga: el script de Google aplicará la traducción automáticamente
+      location.reload();
+    });
+  }
+});
+
+// Tras la recarga, cuando la traducción se aplique, actualizamos la bandera:
+window.addEventListener('load', updateFlagEmoji);
+</script>
+
+<!-- Carga la librería de Google Translate (necesario para que, tras la recarga, lea la cookie) -->
+<script src="//translate.google.com/translate_a/element.js"></script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -286,8 +381,9 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://github.com/juancarloscastillo" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="../../../#" title="🌐 Idioma" class="quarto-navigation-tool px-1" aria-label="🌐 Idioma"><i class="bi bi-"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->

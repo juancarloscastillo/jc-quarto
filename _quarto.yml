@@ -1,17 +1,18 @@
 project:
   type: website 
   resources:
-          - filter.js
-          - documents/*/*
-          - documents/talleres-cursos/multinivel_taller/*
-          - documents/talleres-cursos/multinivel_taller/libs/*/*
-          - documents/talleres-cursos/multinivel_taller/taller-multinivel-files/*/*
-          - documents/talleres-cursos/tallerATOM/*/*/*/*
-          - documents/doctorado-psicologia/*/*/*/*/*
-          - documents/talleres-cursos/escritura-academica/libs/*
+    - filter.js
+    - documents/*/*
+    - documents/talleres-cursos/multinivel_taller/*
+    - documents/talleres-cursos/multinivel_taller/libs/*/*
+    - documents/talleres-cursos/multinivel_taller/taller-multinivel-files/*/*
+    - documents/talleres-cursos/tallerATOM/*/*/*/*
+    - documents/doctorado-psicologia/*/*/*/*/*
+    - documents/talleres-cursos/escritura-academica/libs/*
   render:
-        - "*.qmd"
+    - "*.qmd"
   output-dir: "docs"
+
 website:
   title: "jc-castillo"
   page-footer:
@@ -26,10 +27,12 @@ website:
        Last Update: {{< modified isodate>}} 
   navbar:
     tools:
-       - icon: translate
-         href: https://1-jc--castillo-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_enc=1    # pinned: true
-       - icon: github
-         href: https://github.com/juancarloscastillo
+      # Quitamos el icono de Google Translate y dejamos GitHub:
+      - icon: github
+        href: https://github.com/juancarloscastillo
+      - text: "🌐 Idioma"
+        href: "#"
+        id: google_translate_placeholder      
     left:
       - href: index.qmd#proyectosh1
         text: Proyectos
@@ -46,6 +49,7 @@ website:
       - links.qmd
       - contacto.qmd
   page-navigation: true
+
 format:
   html:
     theme: 
@@ -57,7 +61,6 @@ format:
     linkcolor: "#e1cc97"
     extensions:
       - banner-override
+    include-in-header: translate.html
+
 freeze: auto
-
-
-
