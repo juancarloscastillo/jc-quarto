@@ -138,10 +138,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);
@@ -555,7 +557,7 @@ El objetivo de este coloquio mensual es presentar trabajos en desarrollo que se 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y3Vyc29z" data-listing-file-modified-sort="1756177583907" data-listing-reading-time-sort="40" data-listing-word-count-sort="7839">
+<div class="g-col-1" data-index="1" data-categories="Y3Vyc29z" data-listing-file-modified-sort="1757470165445" data-listing-reading-time-sort="39" data-listing-word-count-sort="7723">
 <a href="../docencia/posts/coloquio/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/coloquio/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -569,7 +571,7 @@ El objetivo de este coloquio semestral es generar un espacio de presentación y 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1724821200000" data-listing-file-modified-sort="1744470279808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="529">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1724817600000" data-listing-file-modified-sort="1744470279808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="529">
 <a href="../docencia/posts/desarrollo-tesis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/desarrollo-tesis/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -588,7 +590,7 @@ Aug 28, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Y3Vyc29z" data-listing-date-sort="1690866000000" data-listing-file-modified-sort="1742304175543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
+<div class="g-col-1" data-index="3" data-categories="Y3Vyc29z" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1742304175543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
 <a href="../docencia/posts/correlacional/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/correlacional/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -607,7 +609,7 @@ Aug 1, 2023
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Y3Vyc29z" data-listing-date-sort="1690866000000" data-listing-file-modified-sort="1742304175548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
+<div class="g-col-1" data-index="4" data-categories="Y3Vyc29z" data-listing-date-sort="1690862400000" data-listing-file-modified-sort="1742304175548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="173">
 <a href="../docencia/posts/multinivel/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/multinivel/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -626,7 +628,7 @@ Aug 1, 2023
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Y3Vyc29z" data-listing-date-sort="1639368000000" data-listing-file-modified-sort="1742304175544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<div class="g-col-1" data-index="5" data-categories="Y3Vyc29z" data-listing-date-sort="1639364400000" data-listing-file-modified-sort="1742304175544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
 <a href="../docencia/posts/encuestas-sociales/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/encuestas-sociales/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -645,7 +647,7 @@ Dec 13, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Y3Vyc29z" data-listing-date-sort="1583035200000" data-listing-file-modified-sort="1742582916126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<div class="g-col-1" data-index="6" data-categories="Y3Vyc29z" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1742582916126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
 <a href="../docencia/posts/ciencia-social-abierta/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/ciencia-social-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -664,7 +666,7 @@ Mar 1, 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Y3Vyc29z" data-listing-date-sort="1583035200000" data-listing-file-modified-sort="1742304175548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="g-col-1" data-index="7" data-categories="Y3Vyc29z" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1742304175548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <a href="../docencia/posts/estrategias-ic/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/estrategias-ic/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -683,7 +685,7 @@ Mar 1, 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Y3Vyc29z" data-listing-date-sort="1583035200000" data-listing-file-modified-sort="1742304175548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
+<div class="g-col-1" data-index="8" data-categories="Y3Vyc29z" data-listing-date-sort="1583031600000" data-listing-file-modified-sort="1742304175548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
 <a href="../docencia/posts/metodologia1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/metodologia1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -702,7 +704,7 @@ Mar 1, 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Y3Vyc29z" data-listing-date-sort="1551412800000" data-listing-file-modified-sort="1742304175545" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="g-col-1" data-index="9" data-categories="Y3Vyc29z" data-listing-date-sort="1551409200000" data-listing-file-modified-sort="1742304175545" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <a href="../docencia/posts/estadistica-multivariada/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/estadistica-multivariada/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -721,7 +723,7 @@ Mar 1, 2019
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Y3Vyc29z" data-listing-date-sort="1527224400000" data-listing-file-modified-sort="1744470279808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<div class="g-col-1" data-index="10" data-categories="Y3Vyc29z" data-listing-date-sort="1527220800000" data-listing-file-modified-sort="1744470279808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
 <a href="../docencia/posts/talleres-seminarios/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/talleres-seminarios/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>

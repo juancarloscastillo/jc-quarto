@@ -106,10 +106,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);
@@ -527,14 +529,14 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="even">
 <td>04-09</td>
 <td>Andreas Laffert</td>
-<td></td>
+<td>Katherine Aravena</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>11-09</td>
+<td>10-09</td>
 <td><p>Propuesta seminario grado (I):</p>
 <p>Cristóbal Mejías - Katherine Aravena</p></td>
-<td></td>
+<td>Juan Pablo Díaz</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -547,13 +549,13 @@ document.addEventListener('DOMContentLoaded', () => {
 <td>25-09</td>
 <td><p>Propuesta seminario grado (II):</p>
 <p>Ismael Aguayo - Victoria Arias</p></td>
-<td></td>
+<td>Tomás Valencia</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>02-10</td>
 <td>Título II: Tomás Valencia</td>
-<td></td>
+<td>Tomás Urzúa</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -565,7 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="even">
 <td>16-10</td>
 <td>Título II: Franco Acevedo</td>
-<td></td>
+<td>Sophia Karoussis</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -577,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="even">
 <td>30-10</td>
 <td>Título II: Juan Pablo Díaz</td>
-<td></td>
+<td>Neyem Cares</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -589,19 +591,19 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="even">
 <td>13-11</td>
 <td>Magíster 1°: Tomás Urzúa</td>
-<td></td>
+<td>Andreas Laffert</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>20-11</td>
 <td>Magíster 2°: Neyem Cares</td>
-<td></td>
+<td>Juan C. Castillo</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>27-11</td>
 <td>Magíster 2°: Sophia Karoussis</td>
-<td></td>
+<td>René Canales</td>
 <td></td>
 </tr>
 </tbody>
@@ -1036,7 +1038,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-08-25</p>
+<p>Last Update: 2025-09-09</p>
 </div>
   </div>
 </footer>
