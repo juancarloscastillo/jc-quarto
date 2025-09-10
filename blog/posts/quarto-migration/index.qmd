@@ -585,4 +585,4 @@ Here we used [Garrick Aden-Buie's](https://www.garrickadenbuie.com/about/) [Now]
 
 ## Another Stuff
 
-Migrating your old content to a new website may be the right time to check that all your links are working properly. There are tools that allow you to scan your entire website and detect dead links, but many of them are either paid or freemium. There are some \[free alternatives\] (https://www.deadlinkchecker.com/), but you need to be careful as the information may not be entirely accurate, although it might be a good place to start.
+Migrating your old content to a new website may be the right time to check that all your links are working properly. There are tools that allow you to scan your entire website and detect dead links, but many of them are either paid or freemium. There are some [free alternatives](https://www.deadlinkchecker.com/), but you need to be careful as the information may not be entirely accurate, although it might be a good place to start.
