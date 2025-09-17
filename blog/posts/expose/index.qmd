@@ -1,0 +1,93 @@
+---
+title: Exposé - Propuesta de investigación para trabajo de tesis
+categories: [academic]
+# Date published
+date: "2025-09-17"  #year-
+# date-modified:  
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.jpeg"  
+---
+
+# Pauta de Exposé para Tesis de Pregrado en Sociología
+
+## Introducción
+
+El **exposé de tesis** es un documento breve (entre 2 y 4 páginas) cuyo propósito es presentar de manera clara y estructurada la idea de investigación. Su función es orientar tanto al/la estudiante como a su profesor/a guía en la definición del tema, mostrando:  
+
+- La relevancia sociológica del problema a estudiar.  
+- La claridad en las preguntas y objetivos de investigación.  
+- La coherencia entre marco teórico, metodología y alcance del trabajo.  
+- La factibilidad del proyecto en el tiempo y recursos disponibles.  
+
+Más que un informe acabado, el exposé funciona como una **carta de navegación** inicial que servirá de base para el desarrollo de la tesis.  
+
+---
+
+## 1. Título tentativo
+Debe ser claro, específico y reflejar el objeto de estudio.  
+
+**Ejemplo**:  
+*“Percepciones de meritocracia y justificación de desigualdades en el ámbito escolar en Chile”*.
+
+---
+
+## 2. Planteamiento del problema
+Presentar el fenómeno social a estudiar y su relevancia. Explicar por qué es un problema de investigación.  
+
+**Ejemplo**:  
+“En el contexto de las crecientes desigualdades educativas en Chile, comprender cómo los estudiantes justifican dichas desigualdades a partir de creencias meritocráticas es fundamental para analizar las bases culturales de la estratificación social”.
+
+---
+
+## 3. Pregunta(s) de investigación
+Formular una pregunta principal y, si corresponde, subpreguntas.  
+
+**Ejemplo**:  
+- ¿Cómo influyen las percepciones de meritocracia en la justificación de las desigualdades educativas entre estudiantes de secundaria?  
+- ¿Existen diferencias según el tipo de establecimiento educativo?
+
+---
+
+## 4. Objetivos
+- **General**: vinculado con la pregunta principal.  
+- **Específicos**: derivan del objetivo general y orientan el trabajo empírico.  
+
+**Ejemplo**:  
+- **General**: Analizar la relación entre percepciones de meritocracia y justificación de desigualdades educativas en estudiantes de secundaria.  
+- **Específicos**:  
+  1. Describir las percepciones de meritocracia de estudiantes en distintos tipos de establecimientos.  
+  2. Identificar patrones de justificación de desigualdades educativas.  
+  3. Explorar la asociación entre percepciones meritocráticas y justificaciones de desigualdad.
+
+---
+
+## 5. Marco teórico/referencial
+Breve revisión de conceptos centrales y literatura relevante.  
+
+**Ejes posibles**:  
+- Teoría de la justicia y meritocracia (Rawls, Young).  
+- Estudios sobre creencias de justicia en educación.  
+- Investigaciones previas en Chile y América Latina.
+
+---
+
+## 6. Metodología
+- **Enfoque**: cuantitativo, cualitativo o mixto.  
+- **Técnicas**: encuesta, entrevistas, análisis de documentos, etc.  
+- **Población/muestra**: a quiénes se estudiará y cómo se seleccionará.  
+
+**Ejemplo**:  
+- Diseño cuantitativo mediante encuesta a 200 estudiantes de 2º y 3º medio en tres tipos de establecimientos (municipales, subvencionados y privados).  
+- Análisis estadístico de asociaciones entre percepciones y justificaciones.  
+
+---
+
+## 7. Cronograma tentativo
+Tabla simple con actividades y meses.  
+
+**Ejemplo**:  
+
+| Mes | Actividad |
+|-----|-----------|

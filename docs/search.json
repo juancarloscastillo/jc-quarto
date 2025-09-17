@@ -774,7 +774,7 @@
     "href": "docencia/posts/desarrollo-tesis/index.html#informes-y-fechas",
     "title": "Guía de memorias y tesis",
     "section": "Informes y fechas",
-    "text": "Informes y fechas\nSe entregarán 2 informes durante el semestre, uno de avance y uno final. Cada informe debe ir acompañado de un párrafo de autoevaluación y de una nota.\n\nSeminario de grado:\n\ninforme de avance: contempla la definición del problema de investigación, objeto de estudio, pregunta de investigación, revisión inicial de literatura, propuesta de sección metodológica disponibilidad de datos. (app. 1000 palabras).\ninforme final: debe incorporar los comentarios al informe de avance y avanzar en la propuesta metodológica incluyendo análisis preliminares univariados. (app 4000 palabras)\n\nSeminario de título 1\n\ninforme de avance: ajuste de antecedentes conceptuales y finalización de sección metodológica. (app 5000 palabras)\ninforme final: incorporación de comentarios y avance de análisis bivariados (app. 8000 palabras)\n\nSeminario de título 2\n\ninforme de avance: finalización de análisis y contraste de hipótesis, borrador de conclusión\ninforme final: incorporación de comentarios y finalización de conclusiones. (app 10000/12000 palabras)\n\n\n\n\nFuncionamiento:\n\nseminaristas/tesistas se incorporan a canal de Slack, donde se comparte información relativa a las investigaciones y se hace entrega de los informes\nla entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar tesisfacsodown (video taller aquí), que permite ambas salidas. Documento de presentación aquí\nlos comentarios se realizarán mediante hypotes.is en el caso de informes en html, o se enviarán comentarios por Slack\nDespués de la entrega de cada informe, anotarse en los horarios de reunión con estudiantes para recibir retroalimentación\nRecomendaciones de escritura académica aquí, video sesión disponible aquí\nPara facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de Git/Github\nTambién por temas de apertura se recomienda inscribir el proyecto en el Open Science Framework\n\n\n\nCalendario de actividades (2do sem 2024)\n\nAgosto: primera reunión de organización\nSeptiembre:\n\nMiércoles 11: reunión\nMiércoles 25: reunión\n\nOctubre\n\nViernes 4: entrega informe de avance\nMiércoles 16: reunión\nMiércoles 30: reunión\n\nNoviembre\n\nMiércoles 13: reunión\nViernes 22: entrega informe final\nMiércoles 27: presentación oral final\n\n\nLos horarios de reuniones grupales de miércoles en la tarde son por lo general a las 15:00 para seminario de grado, y a las 16:00 para seminario de título\nAdemás de estas actividades, luego de la entrega de cada informe se realizará una reunión de retroalimentación individual del trabajo."
+    "text": "Informes y fechas\nSe entregarán 2 informes durante el semestre, uno de avance y uno final. Cada informe debe ir acompañado de un párrafo de autoevaluación y de una nota.\n\nSeminario de grado:\n\ninforme de avance: contempla la definición del problema de investigación, objeto de estudio, pregunta de investigación, revisión inicial de literatura, propuesta de sección metodológica disponibilidad de datos. (app. 1000 palabras).\ninforme final: debe incorporar los comentarios al informe de avance y avanzar en la propuesta metodológica incluyendo análisis preliminares univariados. (app 4000 palabras)\n\nSeminario de título 1\n\ninforme de avance: ajuste de antecedentes conceptuales y finalización de sección metodológica. (app 5000 palabras)\ninforme final: incorporación de comentarios y avance de análisis bivariados (app. 8000 palabras)\n\nSeminario de título 2\n\ninforme de avance: finalización de análisis y contraste de hipótesis, borrador de conclusión\ninforme final: incorporación de comentarios y finalización de conclusiones. (app 10000/12000 palabras)\n\n\n\n\nFuncionamiento:\n\nseminaristas/tesistas se incorporan a canal de Slack, donde se comparte información relativa a las investigaciones y se hace entrega de los informes\nla entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar tesisfacsodown (video taller aquí), que permite ambas salidas. Documento de presentación aquí\nlos comentarios se realizarán mediante hypotes.is en el caso de informes en html, o se enviarán comentarios por Slack\nDespués de la entrega de cada informe, anotarse en los horarios de reunión con estudiantes para recibir retroalimentación\nRecomendaciones de escritura académica aquí, video sesión disponible aquí\nPara facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de Git/Github\nTambién por temas de apertura se recomienda inscribir el proyecto en el Open Science Framework\n\nLos horarios de reuniones grupales de miércoles en la tarde son por lo general a las 15:00 para seminario de grado, y a las 16:00 para seminario de título\nAdemás de estas actividades, luego de la entrega de cada informe se realizará una reunión de retroalimentación individual del trabajo."
   },
   {
     "objectID": "docencia/posts/coloquio/index.html",
@@ -928,7 +928,7 @@
     "href": "blog/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Migrating my Academic (Hugo Wowchemy) website to Quarto\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\nEscritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales\n\n\n\n\n\n\nOct 15, 2022\n\n\n\n\n\n\n\n\n\n\n\nResearch stay at the Institute of Social Cohesion\n\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\nPanels at International Sociological Association - ISA conference, Melbourne 2023\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\ntesisfacsodown\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\nExtract publications to hugo-academic / wowchemy from Zotero-BetterBibTex\n\n\n\n\n\n\nDec 13, 2021\n\n\n\n\n\n\n\n\n\n\n\nSugerencias para defensas y presentaciones\n\n\n\n\n\n\nMay 25, 2021\n\n\n\n\n\n\nNo matching items"
+    "text": "Exposé - Propuesta de investigación para trabajo de tesis\n\n\n\n\n\n\nSep 17, 2025\n\n\n\n\n\n\n\n\n\n\n\nMigrating my Academic (Hugo Wowchemy) website to Quarto\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\nEscritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales\n\n\n\n\n\n\nOct 15, 2022\n\n\n\n\n\n\n\n\n\n\n\nResearch stay at the Institute of Social Cohesion\n\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\nPanels at International Sociological Association - ISA conference, Melbourne 2023\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\ntesisfacsodown\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\nExtract publications to hugo-academic / wowchemy from Zotero-BetterBibTex\n\n\n\n\n\n\nDec 13, 2021\n\n\n\n\n\n\n\n\n\n\n\nSugerencias para defensas y presentaciones\n\n\n\n\n\n\nMay 25, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -1776,5 +1776,68 @@
     "title": "Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático",
     "section": "",
     "text": "How to cite this work\n\n\n\nOctavio Villarroel (2025). Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático. Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+  },
+  {
+    "objectID": "blog/posts/expose/index.html",
+    "href": "blog/posts/expose/index.html",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "El exposé de tesis es un documento breve (entre 2 y 4 páginas) cuyo propósito es presentar de manera clara y estructurada la idea de investigación. Su función es orientar tanto al/la estudiante como a su profesor/a guía en la definición del tema, mostrando:\n\nLa relevancia sociológica del problema a estudiar.\n\nLa claridad en las preguntas y objetivos de investigación.\n\nLa coherencia entre marco teórico, metodología y alcance del trabajo.\n\nLa factibilidad del proyecto en el tiempo y recursos disponibles.\n\nMás que un informe acabado, el exposé funciona como una carta de navegación inicial que servirá de base para el desarrollo de la tesis.\n\n\n\n\nDebe ser claro, específico y reflejar el objeto de estudio.\nEjemplo:\n“Percepciones de meritocracia y justificación de desigualdades en el ámbito escolar en Chile”.\n\n\n\n\nPresentar el fenómeno social a estudiar y su relevancia. Explicar por qué es un problema de investigación.\nEjemplo:\n“En el contexto de las crecientes desigualdades educativas en Chile, comprender cómo los estudiantes justifican dichas desigualdades a partir de creencias meritocráticas es fundamental para analizar las bases culturales de la estratificación social”.\n\n\n\n\nFormular una pregunta principal y, si corresponde, subpreguntas.\nEjemplo:\n- ¿Cómo influyen las percepciones de meritocracia en la justificación de las desigualdades educativas entre estudiantes de secundaria?\n- ¿Existen diferencias según el tipo de establecimiento educativo?\n\n\n\n\n\nGeneral: vinculado con la pregunta principal.\n\nEspecíficos: derivan del objetivo general y orientan el trabajo empírico.\n\nEjemplo:\n- General: Analizar la relación entre percepciones de meritocracia y justificación de desigualdades educativas en estudiantes de secundaria.\n- Específicos:\n1. Describir las percepciones de meritocracia de estudiantes en distintos tipos de establecimientos.\n2. Identificar patrones de justificación de desigualdades educativas.\n3. Explorar la asociación entre percepciones meritocráticas y justificaciones de desigualdad.\n\n\n\n\nBreve revisión de conceptos centrales y literatura relevante.\nEjes posibles:\n- Teoría de la justicia y meritocracia (Rawls, Young).\n- Estudios sobre creencias de justicia en educación.\n- Investigaciones previas en Chile y América Latina.\n\n\n\n\n\nEnfoque: cuantitativo, cualitativo o mixto.\n\nTécnicas: encuesta, entrevistas, análisis de documentos, etc.\n\nPoblación/muestra: a quiénes se estudiará y cómo se seleccionará.\n\nEjemplo:\n- Diseño cuantitativo mediante encuesta a 200 estudiantes de 2º y 3º medio en tres tipos de establecimientos (municipales, subvencionados y privados).\n- Análisis estadístico de asociaciones entre percepciones y justificaciones.\n\n\n\n\nTabla simple con actividades y meses.\nEjemplo:\n\n\n\nMes\nActividad"
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#introducción",
+    "href": "blog/posts/expose/index.html#introducción",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "El exposé de tesis es un documento breve (entre 2 y 4 páginas) cuyo propósito es presentar de manera clara y estructurada la idea de investigación. Su función es orientar tanto al/la estudiante como a su profesor/a guía en la definición del tema, mostrando:\n\nLa relevancia sociológica del problema a estudiar.\n\nLa claridad en las preguntas y objetivos de investigación.\n\nLa coherencia entre marco teórico, metodología y alcance del trabajo.\n\nLa factibilidad del proyecto en el tiempo y recursos disponibles.\n\nMás que un informe acabado, el exposé funciona como una carta de navegación inicial que servirá de base para el desarrollo de la tesis."
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#título-tentativo",
+    "href": "blog/posts/expose/index.html#título-tentativo",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Debe ser claro, específico y reflejar el objeto de estudio.\nEjemplo:\n“Percepciones de meritocracia y justificación de desigualdades en el ámbito escolar en Chile”."
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#planteamiento-del-problema",
+    "href": "blog/posts/expose/index.html#planteamiento-del-problema",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Presentar el fenómeno social a estudiar y su relevancia. Explicar por qué es un problema de investigación.\nEjemplo:\n“En el contexto de las crecientes desigualdades educativas en Chile, comprender cómo los estudiantes justifican dichas desigualdades a partir de creencias meritocráticas es fundamental para analizar las bases culturales de la estratificación social”."
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#preguntas-de-investigación",
+    "href": "blog/posts/expose/index.html#preguntas-de-investigación",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Formular una pregunta principal y, si corresponde, subpreguntas.\nEjemplo:\n- ¿Cómo influyen las percepciones de meritocracia en la justificación de las desigualdades educativas entre estudiantes de secundaria?\n- ¿Existen diferencias según el tipo de establecimiento educativo?"
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#objetivos",
+    "href": "blog/posts/expose/index.html#objetivos",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "General: vinculado con la pregunta principal.\n\nEspecíficos: derivan del objetivo general y orientan el trabajo empírico.\n\nEjemplo:\n- General: Analizar la relación entre percepciones de meritocracia y justificación de desigualdades educativas en estudiantes de secundaria.\n- Específicos:\n1. Describir las percepciones de meritocracia de estudiantes en distintos tipos de establecimientos.\n2. Identificar patrones de justificación de desigualdades educativas.\n3. Explorar la asociación entre percepciones meritocráticas y justificaciones de desigualdad."
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#marco-teóricoreferencial",
+    "href": "blog/posts/expose/index.html#marco-teóricoreferencial",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Breve revisión de conceptos centrales y literatura relevante.\nEjes posibles:\n- Teoría de la justicia y meritocracia (Rawls, Young).\n- Estudios sobre creencias de justicia en educación.\n- Investigaciones previas en Chile y América Latina."
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#metodología",
+    "href": "blog/posts/expose/index.html#metodología",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Enfoque: cuantitativo, cualitativo o mixto.\n\nTécnicas: encuesta, entrevistas, análisis de documentos, etc.\n\nPoblación/muestra: a quiénes se estudiará y cómo se seleccionará.\n\nEjemplo:\n- Diseño cuantitativo mediante encuesta a 200 estudiantes de 2º y 3º medio en tres tipos de establecimientos (municipales, subvencionados y privados).\n- Análisis estadístico de asociaciones entre percepciones y justificaciones."
+  },
+  {
+    "objectID": "blog/posts/expose/index.html#cronograma-tentativo",
+    "href": "blog/posts/expose/index.html#cronograma-tentativo",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Tabla simple con actividades y meses.\nEjemplo:\n\n\n\nMes\nActividad"
   }
 ]

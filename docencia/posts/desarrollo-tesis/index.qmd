@@ -57,31 +57,11 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final. Cada i
 
 - También por temas de apertura se recomienda inscribir el proyecto en el [Open Science Framework](https://osf.io/)
 
-### Calendario de actividades (2do sem 2024)
-
-- Agosto: primera reunión de organización
-
-- Septiembre: 
-  - Miércoles 11: reunión
-  - Miércoles 25: reunión
-
-- Octubre
-  - Viernes 4: entrega informe de avance
-  - Miércoles 16: reunión
-  - Miércoles 30: reunión
-
-- Noviembre
-  - Miércoles 13: reunión
-  - Viernes 22: entrega informe final
-  - Miércoles 27: presentación oral final
-
 Los horarios de reuniones grupales de miércoles en la tarde son por lo general a las 15:00 para seminario de grado, y a las 16:00 para seminario de título
 
 Además de estas actividades, luego de la entrega de cada informe se realizará una reunión de retroalimentación individual del trabajo.
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_b52380b872af208e4f98dfc1f82c7fffc7bbe57879364d0c2096c3f892bc4986%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
 
 
 # Links

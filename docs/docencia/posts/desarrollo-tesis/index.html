@@ -107,10 +107,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);
@@ -449,7 +451,6 @@ document.addEventListener('DOMContentLoaded', () => {
   <li><a href="#informes-y-fechas" id="toc-informes-y-fechas" class="nav-link active" data-scroll-target="#informes-y-fechas">Informes y fechas</a>
   <ul class="collapse">
   <li><a href="#funcionamiento" id="toc-funcionamiento" class="nav-link" data-scroll-target="#funcionamiento">Funcionamiento:</a></li>
-  <li><a href="#calendario-de-actividades-2do-sem-2024" id="toc-calendario-de-actividades-2do-sem-2024" class="nav-link" data-scroll-target="#calendario-de-actividades-2do-sem-2024">Calendario de actividades (2do sem 2024)</a></li>
   </ul></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   </ul>
@@ -514,29 +515,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <li><p>Recomendaciones de escritura académica <a href="http://bit.ly/2e4rKiK">aquí</a>, video sesión disponible <a href="https://www.dropbox.com/s/4if7bpbbhuo7406/zoom_0.mp4?raw=1">aquí</a></p></li>
 <li><p>Para facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de <a href="https://github.com/">Git/Github</a></p></li>
 <li><p>También por temas de apertura se recomienda inscribir el proyecto en el <a href="https://osf.io/">Open Science Framework</a></p></li>
-</ul>
-</section>
-<section id="calendario-de-actividades-2do-sem-2024" class="level3">
-<h3 data-anchor-id="calendario-de-actividades-2do-sem-2024">Calendario de actividades (2do sem 2024)</h3>
-<ul>
-<li><p>Agosto: primera reunión de organización</p></li>
-<li><p>Septiembre:</p>
-<ul>
-<li>Miércoles 11: reunión</li>
-<li>Miércoles 25: reunión</li>
-</ul></li>
-<li><p>Octubre</p>
-<ul>
-<li>Viernes 4: entrega informe de avance</li>
-<li>Miércoles 16: reunión</li>
-<li>Miércoles 30: reunión</li>
-</ul></li>
-<li><p>Noviembre</p>
-<ul>
-<li>Miércoles 13: reunión</li>
-<li>Viernes 22: entrega informe final</li>
-<li>Miércoles 27: presentación oral final</li>
-</ul></li>
 </ul>
 <p>Los horarios de reuniones grupales de miércoles en la tarde son por lo general a las 15:00 para seminario de grado, y a las 16:00 para seminario de título</p>
 <p>Además de estas actividades, luego de la entrega de cada informe se realizará una reunión de retroalimentación individual del trabajo.</p>
@@ -988,7 +966,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-04-12</p>
+<p>Last Update: 2025-09-17</p>
 </div>
   </div>
 </footer>
