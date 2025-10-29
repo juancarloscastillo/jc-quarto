@@ -138,10 +138,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);
@@ -541,7 +543,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1743393600000" data-listing-file-modified-sort="1755726092619" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="600">
+<div class="g-col-1" data-index="0" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1743390000000" data-listing-file-modified-sort="1755726092619" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="600">
 <a href="../proyectos/posts/fondecyt-jusmer/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/fondecyt-jusmer/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -565,7 +567,7 @@ Mar 31, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="TWlsZW5pbw==" data-listing-date-sort="1680235200000" data-listing-file-modified-sort="1742304175608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
+<div class="g-col-1" data-index="1" data-categories="TWlsZW5pbw==" data-listing-date-sort="1680231600000" data-listing-file-modified-sort="1742304175608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
 <a href="../proyectos/posts/nudos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/nudos/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -589,7 +591,7 @@ Mar 31, 2023
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1648699200000" data-listing-file-modified-sort="1742304175607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1252">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1742304175607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1252">
 <a href="../proyectos/posts/minicoes-ciencia-abierta/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/minicoes-ciencia-abierta/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -608,7 +610,7 @@ Mar 31, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1648699200000" data-listing-file-modified-sort="1744470280616" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
+<div class="g-col-1" data-index="3" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1648695600000" data-listing-file-modified-sort="1744470280616" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
 <a href="../proyectos/posts/price/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/price/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -632,7 +634,7 @@ Mar 31, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1617163200000" data-listing-file-modified-sort="1742583245157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<div class="g-col-1" data-index="4" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1742583245157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
 <a href="../proyectos/posts/fondecyt-edumer/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/fondecyt-edumer/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -656,7 +658,7 @@ Mar 31, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1617163200000" data-listing-file-modified-sort="1742304175607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<div class="g-col-1" data-index="5" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1742304175607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
 <a href="../proyectos/posts/lisa/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/lisa/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -675,7 +677,7 @@ Mar 31, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Q09FUw==" data-listing-date-sort="1617163200000" data-listing-file-modified-sort="1742304175608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
+<div class="g-col-1" data-index="6" data-categories="Q09FUw==" data-listing-date-sort="1617159600000" data-listing-file-modified-sort="1742304175608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
 <a href="../proyectos/posts/ocs-coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/ocs-coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -699,7 +701,7 @@ Mar 31, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1522468800000" data-listing-file-modified-sort="1742304175604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="g-col-1" data-index="7" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1522465200000" data-listing-file-modified-sort="1742304175604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
 <a href="../proyectos/posts/fondecyt-ciudadania2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/fondecyt-ciudadania2/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -723,7 +725,7 @@ Mar 31, 2018
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1461729600000" data-listing-file-modified-sort="1744470280616" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1906">
+<div class="g-col-1" data-index="8" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1744470280616" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1906">
 <a href="../proyectos/posts/fondecyt-economiamoral/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/fondecyt-economiamoral/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -747,7 +749,7 @@ Apr 27, 2016
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1427774400000" data-listing-file-modified-sort="1742304175602" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
+<div class="g-col-1" data-index="9" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1427770800000" data-listing-file-modified-sort="1742304175602" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
 <a href="../proyectos/posts/fondecyt-ciudadania1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/fondecyt-ciudadania1/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -771,7 +773,7 @@ Mar 31, 2015
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Rk9OREFQ" data-listing-date-sort="1385870400000" data-listing-file-modified-sort="1742304175599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
+<div class="g-col-1" data-index="10" data-categories="Rk9OREFQ" data-listing-date-sort="1385866800000" data-listing-file-modified-sort="1742304175599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="91">
 <a href="../proyectos/posts/coes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/coes/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -795,7 +797,7 @@ Dec 1, 2013
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1364702400000" data-listing-file-modified-sort="1742304175606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="639">
+<div class="g-col-1" data-index="11" data-categories="Rm9uZGVjeXQ=" data-listing-date-sort="1364698800000" data-listing-file-modified-sort="1742304175606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="639">
 <a href="../proyectos/posts/fondecyt-iniciacion/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/fondecyt-iniciacion/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -819,7 +821,7 @@ Mar 31, 2013
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="VmFyaW9z" data-listing-date-sort="1270008000000" data-listing-file-modified-sort="1742304175608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="12" data-categories="VmFyaW9z" data-listing-date-sort="1270004400000" data-listing-file-modified-sort="1742304175608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <a href="../proyectos/posts/otros-proyectos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>

@@ -33,3 +33,10 @@ Versiones:
 
 - [2021](https://cienciasocialabierta.netlify.app/)
 - [2020](https://version2020--cienciasocialabierta.netlify.app/)
+
+## Taller Ciencia Abierta 2025
+
+
+(F para pantalla completa)
+<iframe width="700"  height="450" src="https://jc-castillo.com/documents/talleres-cursos/clase-etica2025/clase-etica2025.html" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

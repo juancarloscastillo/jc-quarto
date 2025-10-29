@@ -107,10 +107,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);

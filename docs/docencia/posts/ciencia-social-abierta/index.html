@@ -108,10 +108,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);
@@ -220,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -443,7 +445,14 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#taller-ciencia-abierta-2025" id="toc-taller-ciencia-abierta-2025" class="nav-link active" data-scroll-target="#taller-ciencia-abierta-2025">Taller Ciencia Abierta 2025</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <div class="quarto-about-marquee">
   <div class="about-image-container">
@@ -473,6 +482,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </header> <main class="content" id="quarto-document-content">
 
+
 <div class="button-container" style="display: flex; gap: 10px;">
 <div class="button">
 <p><a href="https://cienciasocialabierta.netlify.app" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;"><i class="bi bi-link-45deg"></i></a></p>
@@ -490,8 +500,12 @@ document.addEventListener('DOMContentLoaded', () => {
 <li><a href="https://cienciasocialabierta.netlify.app/">2021</a></li>
 <li><a href="https://version2020--cienciasocialabierta.netlify.app/">2020</a></li>
 </ul>
+<section id="taller-ciencia-abierta-2025" class="level2">
+<h2 data-anchor-id="taller-ciencia-abierta-2025">Taller Ciencia Abierta 2025</h2>
+<p>(F para pantalla completa) <iframe width="700" height="450" src="https://jc-castillo.com/documents/talleres-cursos/clase-etica2025/clase-etica2025.html" title="Xaringan presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
 
 
+</section>
 </main> 
   </div>
 </div>
@@ -918,7 +932,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-03-21</p>
+<p>Last Update: 2025-10-29</p>
 </div>
   </div>
 </footer>

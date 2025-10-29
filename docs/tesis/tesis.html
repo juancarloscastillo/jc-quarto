@@ -138,10 +138,12 @@ function updateFlag() {
   const a = document.getElementById('gtrans-flag-toggle');
   if (!a) return;
   const lang = currentLangFromCookie();
-  a.textContent = (lang === 'en') ? '🇪🇸' : '🇬🇧';
-  a.title = (lang === 'en') ? 'Ver en español' : 'View in English';
+  // 🔽 Aquí cambiamos la bandera
+  a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+  a.title = (lang === 'en') ? 'Ver en español (Chile)' : 'View in English';
   a.setAttribute('aria-label', a.title);
 }
+
 function setCookieAndReload(lang) {
   const val = `/auto/${lang}`;
   const d = new Date(); d.setFullYear(d.getFullYear() + 1);
@@ -541,7 +543,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735704000000" data-listing-file-modified-sort="1756179516829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Del Apoyo a La Acción: El Rol Del Miedo y La Orientación Política En Las  Justificaciones de Violencia En Contexto de Protesta Social">
+<div class="quarto-post image-right" data-index="0" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1756179516829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Del Apoyo a La Acción: El Rol Del Miedo y La Orientación Política En Las  Justificaciones de Violencia En Contexto de Protesta Social">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2025_Del_Apoyo_a_La_Acció.html" class="no-external">Del Apoyo a La Acción: El Rol Del Miedo y La Orientación Política En Las Justificaciones de Violencia En Contexto de Protesta Social</a>
@@ -563,7 +565,7 @@ Carlos Anriquez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735704000000" data-listing-file-modified-sort="1756179516835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdades Educativas En La Alfabetización Computacional e Informacional de  Estudiantes de 8vo Año Básico En Chile.">
+<div class="quarto-post image-right" data-index="1" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1756179516835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdades Educativas En La Alfabetización Computacional e Informacional de  Estudiantes de 8vo Año Básico En Chile.">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2025_Desigualdades_Educat.html" class="no-external">Desigualdades Educativas En La Alfabetización Computacional e Informacional de Estudiantes de 8vo Año Básico En Chile.</a>
@@ -585,7 +587,7 @@ Bladimir Beltran
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735704000000" data-listing-file-modified-sort="1756179516906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático">
+<div class="quarto-post image-right" data-index="2" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1756179516906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2025_Percepciones_Sobre_L.html" class="no-external">Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático</a>
@@ -607,7 +609,7 @@ Octavio Villarroel
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1709265600000" data-listing-file-modified-sort="1756179516886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Rol de La Socialización Familiar y Escolar En La Percepción de Meritocracia En Las Notas: Un Estudio Multinivel de Estudiantes En Chile">
+<div class="quarto-post image-right" data-index="3" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1709262000000" data-listing-file-modified-sort="1756179516886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Rol de La Socialización Familiar y Escolar En La Percepción de Meritocracia En Las Notas: Un Estudio Multinivel de Estudiantes En Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2024_El_Rol_de_La_Sociali.html" class="no-external">El Rol de La Socialización Familiar y Escolar En La Percepción de Meritocracia En Las Notas: Un Estudio Multinivel de Estudiantes En Chile</a>
@@ -629,7 +631,7 @@ Matias Retamales
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1704081600000" data-listing-file-modified-sort="1756179516865" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Conflicto Intercultural Entre El Estado Chileno y La Causa Mapuche Por Autodeterminación">
+<div class="quarto-post image-right" data-index="4" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1756179516865" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Conflicto Intercultural Entre El Estado Chileno y La Causa Mapuche Por Autodeterminación">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2024_El_Conflicto_Intercu.html" class="no-external">El Conflicto Intercultural Entre El Estado Chileno y La Causa Mapuche Por Autodeterminación</a>
@@ -651,7 +653,7 @@ Paula Larenas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677643200000" data-listing-file-modified-sort="1756179516844" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="527" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aceptar La Diversidad En El Vecindario: Procesos de Socialización Política de Actitudes Hacia La Diversidad Social En Estudiantes Chilenos">
+<div class="quarto-post image-right" data-index="5" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1756179516844" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="527" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aceptar La Diversidad En El Vecindario: Procesos de Socialización Política de Actitudes Hacia La Diversidad Social En Estudiantes Chilenos">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2023_Aceptar_La_Diversida.html" class="no-external">Aceptar La Diversidad En El Vecindario: Procesos de Socialización Política de Actitudes Hacia La Diversidad Social En Estudiantes Chilenos</a>
@@ -673,7 +675,7 @@ Kevin Carrasco
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677643200000" data-listing-file-modified-sort="1756179516867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Lenguaje Como Brecha de La Formación Ciudadana: El Rol de La Comprensión Lectora Sobre Las Habilidades Para La Ciudadanía y El Conocimiento Cívico.">
+<div class="quarto-post image-right" data-index="6" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1756179516867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Lenguaje Como Brecha de La Formación Ciudadana: El Rol de La Comprensión Lectora Sobre Las Habilidades Para La Ciudadanía y El Conocimiento Cívico.">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2023_El_Lenguaje_Como_Bre.html" class="no-external">El Lenguaje Como Brecha de La Formación Ciudadana: El Rol de La Comprensión Lectora Sobre Las Habilidades Para La Ciudadanía y El Conocimiento Cívico.</a>
@@ -695,7 +697,7 @@ Francisco Meneses
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677643200000" data-listing-file-modified-sort="1756179516859" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué Pueden Hacer Las Escuelas Para Promover Actitudes Positivas Hacia La Igualdad de Derechos?">
+<div class="quarto-post image-right" data-index="7" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1677639600000" data-listing-file-modified-sort="1756179516859" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué Pueden Hacer Las Escuelas Para Promover Actitudes Positivas Hacia La Igualdad de Derechos?">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2023_¿Qué_Pueden_Hacer_La.html" class="no-external">¿Qué Pueden Hacer Las Escuelas Para Promover Actitudes Positivas Hacia La Igualdad de Derechos?</a>
@@ -717,7 +719,7 @@ Anais Herrera
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1672545600000" data-listing-file-modified-sort="1756179516863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="404" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Ellos Contra Nosotros: Las Percepciones Del Conflicto Social">
+<div class="quarto-post image-right" data-index="8" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1672542000000" data-listing-file-modified-sort="1756179516863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="404" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Ellos Contra Nosotros: Las Percepciones Del Conflicto Social">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2023_Ellos_Contra_Nosotro.html" class="no-external">Ellos Contra Nosotros: Las Percepciones Del Conflicto Social</a>
@@ -739,7 +741,7 @@ Andreas Lafferte
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641009600000" data-listing-file-modified-sort="1756179516894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Bienestar, Trabajo Doméstico y Uso Del Tiempo: Un Análisis Cuantitativo Del Bienestar de Las Mujeres En Chile">
+<div class="quarto-post image-right" data-index="9" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1756179516894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Bienestar, Trabajo Doméstico y Uso Del Tiempo: Un Análisis Cuantitativo Del Bienestar de Las Mujeres En Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2022_Bienestar,_Trabajo_D.html" class="no-external">Bienestar, Trabajo Doméstico y Uso Del Tiempo: Un Análisis Cuantitativo Del Bienestar de Las Mujeres En Chile</a>
@@ -761,7 +763,7 @@ Karen Tapia
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641009600000" data-listing-file-modified-sort="1756179516898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Determinantes de La Percepción de Seguridad Frente al Delito En La Región Metropolitana">
+<div class="quarto-post image-right" data-index="10" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1756179516898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Determinantes de La Percepción de Seguridad Frente al Delito En La Región Metropolitana">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2022_Determinantes_de_La_.html" class="no-external">Determinantes de La Percepción de Seguridad Frente al Delito En La Región Metropolitana</a>
@@ -783,7 +785,7 @@ Javiera Urrutia
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641009600000" data-listing-file-modified-sort="1756179516851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="281" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Efecto de Las Creencias Meritocráticas Sobre Las Atribuciones de Pobreza y Riqueza">
+<div class="quarto-post image-right" data-index="11" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1756179516851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="281" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="El Efecto de Las Creencias Meritocráticas Sobre Las Atribuciones de Pobreza y Riqueza">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2022_El_Efecto_de_Las_Cre.html" class="no-external">El Efecto de Las Creencias Meritocráticas Sobre Las Atribuciones de Pobreza y Riqueza</a>
@@ -805,7 +807,7 @@ Sebastian Cortinez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641009600000" data-listing-file-modified-sort="1756179516871" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Factores Determinantes de Las Trayectorias de Deserción Permanente En Educación Superior: El Efecto de Las Ayudas Financieras Estatales y La Política de Gratuidad">
+<div class="quarto-post image-right" data-index="12" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1756179516871" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Factores Determinantes de Las Trayectorias de Deserción Permanente En Educación Superior: El Efecto de Las Ayudas Financieras Estatales y La Política de Gratuidad">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2022_Factores_Determinant.html" class="no-external">Factores Determinantes de Las Trayectorias de Deserción Permanente En Educación Superior: El Efecto de Las Ayudas Financieras Estatales y La Política de Gratuidad</a>
@@ -827,7 +829,7 @@ Catalina Miranda
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641009600000" data-listing-file-modified-sort="1756179516902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="530" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Quién Justifica Qué? El Rol Del Sentido de Injusticia En Las Justificaciones de Violencia En Contexto de Protesta">
+<div class="quarto-post image-right" data-index="13" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1641006000000" data-listing-file-modified-sort="1756179516902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="530" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Quién Justifica Qué? El Rol Del Sentido de Injusticia En Las Justificaciones de Violencia En Contexto de Protesta">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2022_¿Quién_Justifica_Qué.html" class="no-external">¿Quién Justifica Qué? El Rol Del Sentido de Injusticia En Las Justificaciones de Violencia En Contexto de Protesta</a>
@@ -849,7 +851,7 @@ Martin Venegas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1609473600000" data-listing-file-modified-sort="1756179516900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Enfermedades Crónicas No Transmisibles y El Efecto Protector de La Cohesión Social En Chile">
+<div class="quarto-post image-right" data-index="14" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1609470000000" data-listing-file-modified-sort="1756179516900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Enfermedades Crónicas No Transmisibles y El Efecto Protector de La Cohesión Social En Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2021_Enfermedades_Crónica.html" class="no-external">Enfermedades Crónicas No Transmisibles y El Efecto Protector de La Cohesión Social En Chile</a>
@@ -871,7 +873,7 @@ Simon Varas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1609473600000" data-listing-file-modified-sort="1756179516837" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La Composición Social de Las Escuelas y Su Relación Con El Rendimiento Académico En Lenguaje y Matemática de Los Estudiantes Secundarios Chilenos">
+<div class="quarto-post image-right" data-index="15" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1609470000000" data-listing-file-modified-sort="1756179516837" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La Composición Social de Las Escuelas y Su Relación Con El Rendimiento Académico En Lenguaje y Matemática de Los Estudiantes Secundarios Chilenos">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2021_La_Composición_Socia.html" class="no-external">La Composición Social de Las Escuelas y Su Relación Con El Rendimiento Académico En Lenguaje y Matemática de Los Estudiantes Secundarios Chilenos</a>
@@ -893,7 +895,7 @@ Carlos Budnevich
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546315200000" data-listing-file-modified-sort="1756179516833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Explorando La Asociación Entre Redes de Contacto Ocupacionales y La Justificación de La Desigualdad Social En Chile">
+<div class="quarto-post image-right" data-index="16" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1756179516833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Explorando La Asociación Entre Redes de Contacto Ocupacionales y La Justificación de La Desigualdad Social En Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2019_Explorando_La_Asocia.html" class="no-external">Explorando La Asociación Entre Redes de Contacto Ocupacionales y La Justificación de La Desigualdad Social En Chile</a>
@@ -915,7 +917,7 @@ Guillermo Beck
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546315200000" data-listing-file-modified-sort="1756179516884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="324" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.">
+<div class="quarto-post image-right" data-index="17" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1756179516884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="324" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2019_Intereses_Fluidos_Mo.html" class="no-external">Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.</a>
@@ -937,7 +939,7 @@ Alejandro Plaza
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546315200000" data-listing-file-modified-sort="1756179516910" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="445" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Inégalité Subjective Au Chili. Représentation Des Différences Sociales (in)Justes à Travers Le Temps">
+<div class="quarto-post image-right" data-index="18" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1756179516910" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="445" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Inégalité Subjective Au Chili. Représentation Des Différences Sociales (in)Justes à Travers Le Temps">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2019_Inégalité_Subjective.html" class="no-external">Inégalité Subjective Au Chili. Représentation Des Différences Sociales (in)Justes à Travers Le Temps</a>
@@ -959,7 +961,7 @@ Rodrigo Yanez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1522555200000" data-listing-file-modified-sort="1756179516869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="420" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y Ciudadanía: Una Aproximación Intergeneracional">
+<div class="quarto-post image-right" data-index="19" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1522551600000" data-listing-file-modified-sort="1756179516869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="420" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y Ciudadanía: Una Aproximación Intergeneracional">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Desigualdad_y_Ciudad.html" class="no-external">Desigualdad y Ciudadanía: Una Aproximación Intergeneracional</a>
@@ -981,7 +983,7 @@ Daniel Miranda
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1517457600000" data-listing-file-modified-sort="1756179516846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="352" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Menos Confianza, Menos Estado? El Impacto de La Corrupción Sobre Las Preferencias Redistributivas">
+<div class="quarto-post image-right" data-index="20" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1517454000000" data-listing-file-modified-sort="1756179516846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="352" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Menos Confianza, Menos Estado? El Impacto de La Corrupción Sobre Las Preferencias Redistributivas">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_¿Menos_Confianza,_Me.html" class="no-external">¿Menos Confianza, Menos Estado? El Impacto de La Corrupción Sobre Las Preferencias Redistributivas</a>
@@ -1003,7 +1005,7 @@ Francisca Castro
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516875" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="258" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Balance Legistlativo, Adhesión al Sistema Político y Preferencias Redistributivas En América Latina">
+<div class="quarto-post image-right" data-index="21" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516875" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="258" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Balance Legistlativo, Adhesión al Sistema Político y Preferencias Redistributivas En América Latina">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Balance_Legistlativo.html" class="no-external">Balance Legistlativo, Adhesión al Sistema Político y Preferencias Redistributivas En América Latina</a>
@@ -1025,7 +1027,7 @@ Sofia Montedonico
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Chile: Sociodemografía e Inser- Ción Laboral de Los Inmigrantes Re- Cientes. El Caso de Los Haitianos y Venezolanos.">
+<div class="quarto-post image-right" data-index="22" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Chile: Sociodemografía e Inser- Ción Laboral de Los Inmigrantes Re- Cientes. El Caso de Los Haitianos y Venezolanos.">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Chile_Sociodemografí.html" class="no-external">Chile: Sociodemografía e Inser- Ción Laboral de Los Inmigrantes Re- Cientes. El Caso de Los Haitianos y Venezolanos.</a>
@@ -1047,7 +1049,7 @@ Andres {Gonzalez Ide}, Daniel Gonzalez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="292" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina">
+<div class="quarto-post image-right" data-index="23" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="292" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Desigualdad,_Desarro.html" class="no-external">Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina</a>
@@ -1069,7 +1071,7 @@ Gonzalo Franetovic
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="418" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Estatus Social Subjetivo y Percepción de Meritocracia: El Caso de Chile">
+<div class="quarto-post image-right" data-index="24" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="418" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Estatus Social Subjetivo y Percepción de Meritocracia: El Caso de Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Estatus_Social_Subje.html" class="no-external">Estatus Social Subjetivo y Percepción de Meritocracia: El Caso de Chile</a>
@@ -1091,7 +1093,7 @@ Julio Iturra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516848" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Facilitadores y Limitantes En La Contratación de Migrantes Desde El Empleador Del Sector Terciario de Producción">
+<div class="quarto-post image-right" data-index="25" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516848" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Facilitadores y Limitantes En La Contratación de Migrantes Desde El Empleador Del Sector Terciario de Producción">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Facilitadores_y_Limi.html" class="no-external">Facilitadores y Limitantes En La Contratación de Migrantes Desde El Empleador Del Sector Terciario de Producción</a>
@@ -1113,7 +1115,7 @@ Juan Francisco Concha, Maria Belen Saavedra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La Dimensión Subjetiva de La Desigualdad de Género En Ingresos: Factores Individuales Asociados a Evaluación de Lo Percibido y Lo Justo">
+<div class="quarto-post image-right" data-index="26" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="La Dimensión Subjetiva de La Desigualdad de Género En Ingresos: Factores Individuales Asociados a Evaluación de Lo Percibido y Lo Justo">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_La_Dimensión_Subjeti.html" class="no-external">La Dimensión Subjetiva de La Desigualdad de Género En Ingresos: Factores Individuales Asociados a Evaluación de Lo Percibido y Lo Justo</a>
@@ -1135,7 +1137,7 @@ Sebastian Rojas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514779200000" data-listing-file-modified-sort="1756179516880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prácticas de Inclusión y Exclusión de Estudiantes En Situación de Migración: Un Estudio de Caso En Dos Escuelas Municipales de La Comuna de Renca En Santiago">
+<div class="quarto-post image-right" data-index="27" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1514775600000" data-listing-file-modified-sort="1756179516880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prácticas de Inclusión y Exclusión de Estudiantes En Situación de Migración: Un Estudio de Caso En Dos Escuelas Municipales de La Comuna de Renca En Santiago">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2018_Prácticas_de_Inclusi.html" class="no-external">Prácticas de Inclusión y Exclusión de Estudiantes En Situación de Migración: Un Estudio de Caso En Dos Escuelas Municipales de La Comuna de Renca En Santiago</a>
@@ -1157,7 +1159,7 @@ Amanda Nogueira, Teresa Lihn
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1512100800000" data-listing-file-modified-sort="1756179516879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Justicia de Las Pensiones En Chile: Una Evaluación Desde Las Características Individuales y Las Preferencias Distributivas de La Población En La Región Metropolitana">
+<div class="quarto-post image-right" data-index="28" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1512097200000" data-listing-file-modified-sort="1756179516879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Justicia de Las Pensiones En Chile: Una Evaluación Desde Las Características Individuales y Las Preferencias Distributivas de La Población En La Región Metropolitana">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2017_Justicia_de_Las_Pens.html" class="no-external">Justicia de Las Pensiones En Chile: Una Evaluación Desde Las Características Individuales y Las Preferencias Distributivas de La Población En La Región Metropolitana</a>
@@ -1179,7 +1181,7 @@ Esteban Munoz
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483243200000" data-listing-file-modified-sort="1756179516849" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Construyendo Involucramiento Comunitario: Casos de Parque Metropolitano Cerro Chena y Mapocho Limpio">
+<div class="quarto-post image-right" data-index="29" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1756179516849" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Construyendo Involucramiento Comunitario: Casos de Parque Metropolitano Cerro Chena y Mapocho Limpio">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2017_Construyendo_Involuc.html" class="no-external">Construyendo Involucramiento Comunitario: Casos de Parque Metropolitano Cerro Chena y Mapocho Limpio</a>
@@ -1201,7 +1203,7 @@ Pablo Contreras, Valentina Terra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483243200000" data-listing-file-modified-sort="1756179516877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="La Formación Continua En Docencia Del Profesorado Universitario Efectos Sobre La Práctica y Autopercepción Docente">
+<div class="quarto-post image-right" data-index="30" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1756179516877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="La Formación Continua En Docencia Del Profesorado Universitario Efectos Sobre La Práctica y Autopercepción Docente">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2017_La_Formación_Continu.html" class="no-external">La Formación Continua En Docencia Del Profesorado Universitario Efectos Sobre La Práctica y Autopercepción Docente</a>
@@ -1223,7 +1225,7 @@ Cristian Munoz, Raul Cofre
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483243200000" data-listing-file-modified-sort="1756179516873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Mecanismos de Participación Ciudadana">
+<div class="quarto-post image-right" data-index="31" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1756179516873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Mecanismos de Participación Ciudadana">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2017_Mecanismos_de_Partic.html" class="no-external">Mecanismos de Participación Ciudadana</a>
@@ -1245,7 +1247,7 @@ Alonso Moller, Gabriela Zuniga
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1483243200000" data-listing-file-modified-sort="1756179516890" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Merezco Estar Aquı́: Un Estudio Multinivel Sobre La Relación Entre Meritocracia y Educación">
+<div class="quarto-post image-right" data-index="32" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1756179516890" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Merezco Estar Aquı́: Un Estudio Multinivel Sobre La Relación Entre Meritocracia y Educación">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2017_Merezco_Estar_Aquı́_.html" class="no-external">Merezco Estar Aquı́: Un Estudio Multinivel Sobre La Relación Entre Meritocracia y Educación</a>
@@ -1267,7 +1269,7 @@ Diego Sandoval
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483243200000" data-listing-file-modified-sort="1756179516855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Relevancia de La Convocatoria de Investigación En Educación Del Consejo Nacional de Educación En La Trayectoria Académica de Los Finalistas Adjudicados y No Adjudicados de Los Años 2014. 2015 y 2016.">
+<div class="quarto-post image-right" data-index="33" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1483239600000" data-listing-file-modified-sort="1756179516855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Relevancia de La Convocatoria de Investigación En Educación Del Consejo Nacional de Educación En La Trayectoria Académica de Los Finalistas Adjudicados y No Adjudicados de Los Años 2014. 2015 y 2016.">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2017_Relevancia_de_La_Con.html" class="no-external">Relevancia de La Convocatoria de Investigación En Educación Del Consejo Nacional de Educación En La Trayectoria Académica de Los Finalistas Adjudicados y No Adjudicados de Los Años 2014. 2015 y 2016.</a>
@@ -1289,7 +1291,7 @@ Javier Garcia, Valentina Riquelme
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451620800000" data-listing-file-modified-sort="1756179516822" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="249" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y Compromiso Cı́vico de Los Jóvenes Chilenos: Una Mirada al Perı́odo (2009-2014)">
+<div class="quarto-post image-right" data-index="34" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1756179516822" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="249" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Desigualdad y Compromiso Cı́vico de Los Jóvenes Chilenos: Una Mirada al Perı́odo (2009-2014)">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2016_Desigualdad_y_Compro.html" class="no-external">Desigualdad y Compromiso Cı́vico de Los Jóvenes Chilenos: Una Mirada al Perı́odo (2009-2014)</a>
@@ -1311,7 +1313,7 @@ Francisca Acevedo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="35" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451620800000" data-listing-file-modified-sort="1756179516882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="297" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Legitimidad Del Sistema Económico y Participación Ciudadana: Una Aproximación a La Relación Entre Percepciones Individuales y Actividad Política En Chile">
+<div class="quarto-post image-right" data-index="35" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1756179516882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="297" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Legitimidad Del Sistema Económico y Participación Ciudadana: Una Aproximación a La Relación Entre Percepciones Individuales y Actividad Política En Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2016_Legitimidad_Del_Sist.html" class="no-external">Legitimidad Del Sistema Económico y Participación Ciudadana: Una Aproximación a La Relación Entre Percepciones Individuales y Actividad Política En Chile</a>
@@ -1333,7 +1335,7 @@ Matias Placencio-Castro
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451620800000" data-listing-file-modified-sort="1756179516904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Medición En Ciudadanía: Equivalencia y Propiedades Psicométricas de Una Escala de Percepción En Estudiantes">
+<div class="quarto-post image-right" data-index="36" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1451617200000" data-listing-file-modified-sort="1756179516904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Medición En Ciudadanía: Equivalencia y Propiedades Psicométricas de Una Escala de Percepción En Estudiantes">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2016_Medición_En_Ciudadan.html" class="no-external">Medición En Ciudadanía: Equivalencia y Propiedades Psicométricas de Una Escala de Percepción En Estudiantes</a>
@@ -1355,7 +1357,7 @@ Federico Viertel
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1420084800000" data-listing-file-modified-sort="1756179516896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aspectos Subjetivos de La Meritocracia y Su Relación Con La Percepción de La Desigualdad En Chile">
+<div class="quarto-post image-right" data-index="37" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1756179516896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="337" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="Aspectos Subjetivos de La Meritocracia y Su Relación Con La Percepción de La Desigualdad En Chile">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2015_Aspectos_Subjetivos_.html" class="no-external">Aspectos Subjetivos de La Meritocracia y Su Relación Con La Percepción de La Desigualdad En Chile</a>
@@ -1377,7 +1379,7 @@ Alex Torres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420084800000" data-listing-file-modified-sort="1756179516827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Discusión Teórica y Empírica Sobre La Élite Económica Chilena">
+<div class="quarto-post image-right" data-index="38" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1756179516827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Discusión Teórica y Empírica Sobre La Élite Económica Chilena">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2015_Discusión_Teórica_y_.html" class="no-external">Discusión Teórica y Empírica Sobre La Élite Económica Chilena</a>
@@ -1399,7 +1401,7 @@ Josefina Amenabar, Javiera Sanchez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420084800000" data-listing-file-modified-sort="1756179516826" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prevención En Salud Mental En La Atención Primaria de Salud">
+<div class="quarto-post image-right" data-index="39" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1756179516826" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Prevención En Salud Mental En La Atención Primaria de Salud">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2015_Prevención_En_Salud_.html" class="no-external">Prevención En Salud Mental En La Atención Primaria de Salud</a>
@@ -1421,7 +1423,7 @@ Nassim Ajraz, Natalia Sanchez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420084800000" data-listing-file-modified-sort="1756179516831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Todos Somos Amigos, Pero Unos Más Que Otros      ~ Estudio   ~Exploratorio   ~Sobre      ~Segregación    ~En     ~La     ~ Sala      ~de     ~Clases">
+<div class="quarto-post image-right" data-index="40" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1756179516831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Todos Somos Amigos, Pero Unos Más Que Otros      ~ Estudio   ~Exploratorio   ~Sobre      ~Segregación    ~En     ~La     ~ Sala      ~de     ~Clases">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2015_Todos_Somos_Amigos,_.html" class="no-external">Todos Somos Amigos, Pero Unos Más Que Otros ~ Estudio ~Exploratorio ~Sobre ~Segregación ~En ~La ~ Sala ~de ~Clases</a>
@@ -1443,7 +1445,7 @@ Maria Jose Barros, Pablo Torres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="41" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1420084800000" data-listing-file-modified-sort="1756179516892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="537" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué Puede Hacer La Cultura de La Escuela Para Aumentar La Participación Política de Sus Estudiantes? Un Estudio Exploratorio Sobre El Rol Del Liderazgo Distribuido y El Compromiso Organizacional Docente En Escuelas Chilenas">
+<div class="quarto-post image-right" data-index="41" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1420081200000" data-listing-file-modified-sort="1756179516892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="537" data-listing-categories-sort="Guía o cotutor" data-listing-title-sort="¿Qué Puede Hacer La Cultura de La Escuela Para Aumentar La Participación Política de Sus Estudiantes? Un Estudio Exploratorio Sobre El Rol Del Liderazgo Distribuido y El Compromiso Organizacional Docente En Escuelas Chilenas">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2015_¿Qué_Puede_Hacer_La_.html" class="no-external">¿Qué Puede Hacer La Cultura de La Escuela Para Aumentar La Participación Política de Sus Estudiantes? Un Estudio Exploratorio Sobre El Rol Del Liderazgo Distribuido y El Compromiso Organizacional Docente En Escuelas Chilenas</a>
@@ -1465,7 +1467,7 @@ Eduardo Santander
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="42" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1388548800000" data-listing-file-modified-sort="1756179516824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Evaluación de La Implementación, Gestión y Utilización de La Ley 20.500">
+<div class="quarto-post image-right" data-index="42" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1388545200000" data-listing-file-modified-sort="1756179516824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Evaluación de La Implementación, Gestión y Utilización de La Ley 20.500">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2014_Evaluación_de_La_Imp.html" class="no-external">Evaluación de La Implementación, Gestión y Utilización de La Ley 20.500</a>
@@ -1487,7 +1489,7 @@ Veronica Acevedo, Candela Arellano
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="43" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1388548800000" data-listing-file-modified-sort="1756179516908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Stability and Change in Political Right-Wing Groups in Chile: Understanding the Shift among Right Wingers to the Center">
+<div class="quarto-post image-right" data-index="43" data-categories="TWllbWJybyUyMGNvbWl0JUMzJUE5JTIwZXZhbHVhZG9y" data-listing-date-sort="1388545200000" data-listing-file-modified-sort="1756179516908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-categories-sort="Miembro comité evaluador" data-listing-title-sort="Stability and Change in Political Right-Wing Groups in Chile: Understanding the Shift among Right Wingers to the Center">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../tesis/posts/2014_Stability_and_Change.html" class="no-external">Stability and Change in Political Right-Wing Groups in Chile: Understanding the Shift among Right Wingers to the Center</a>
