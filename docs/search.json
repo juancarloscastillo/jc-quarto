@@ -791,6 +791,13 @@
     "text": "Partiendo desde la concepción de Ciencia Abierta (Open Science) y de investigación reproducible, este curso presenta formas alternativas a la manera tradicional de concebir la generación de conocimiento de manera cerrada y competitiva, y desde ahí se proponen y ejercitan una serie de herramientas técnicas en el análisis de datos que facilitan la reproducibilidad, colaboración y comunicación de procesos de investigación.\nEl curso permitirá a los participantes lograr un producto de investigación (artículo, documento de trabajo) con foco en el análisis de datos realizado de manera abierta y reproducible.\nCada versión del curso tiene una página web desde su primera versión en el año 2020. Las versiones se encuentran alojadas en Github, se desarrollan principalmente con Blogdown/Hugo y el deploy se realiza en Netlify.\nVersiones:"
   },
   {
+    "objectID": "docencia/posts/ciencia-social-abierta/index.html#taller-ciencia-abierta-2025",
+    "href": "docencia/posts/ciencia-social-abierta/index.html#taller-ciencia-abierta-2025",
+    "title": "Ciencia Social Abierta",
+    "section": "Taller Ciencia Abierta 2025",
+    "text": "Taller Ciencia Abierta 2025\n(F para pantalla completa)"
+  },
+  {
     "objectID": "contacto.html",
     "href": "contacto.html",
     "title": "Contacto",
@@ -924,6 +931,83 @@
     "text": "3.3 Métodos\n\nDescripción de lo que se va a mostrar en la sección siguiente de análisis: secciones, caracterísiticas de los métodos empleados, sentido del orden de presentación, software/librerías utilizadas"
   },
   {
+    "objectID": "blog/posts/clase-etica2025/index.html",
+    "href": "blog/posts/clase-etica2025/index.html",
+    "title": "Clase Ética y Ciencia Abierta",
+    "section": "",
+    "text": "Presentación como profesor invitado en curso Ética de la investigación en Ciencias Sociales - Postgrado FACSO 2025"
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#introducción",
+    "href": "blog/posts/clase-etica2025/index.html#introducción",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "El exposé de tesis es un documento breve (entre 2 y 4 páginas) cuyo propósito es presentar de manera clara y estructurada la idea de investigación. Su función es orientar tanto al/la estudiante como a su profesor/a guía en la definición del tema, mostrando:\n\nLa relevancia sociológica del problema a estudiar.\n\nLa claridad en las preguntas y objetivos de investigación.\n\nLa coherencia entre marco teórico, metodología y alcance del trabajo.\n\nLa factibilidad del proyecto en el tiempo y recursos disponibles.\n\nMás que un informe acabado, el exposé funciona como una carta de navegación inicial que servirá de base para el desarrollo de la tesis."
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#título-tentativo",
+    "href": "blog/posts/clase-etica2025/index.html#título-tentativo",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Debe ser claro, específico y reflejar el objeto de estudio.\nEjemplo:\n“Percepciones de meritocracia y justificación de desigualdades en el ámbito escolar en Chile”."
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#planteamiento-del-problema",
+    "href": "blog/posts/clase-etica2025/index.html#planteamiento-del-problema",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Presentar el fenómeno social a estudiar y su relevancia. Explicar por qué es un problema de investigación.\nEjemplo:\n“En el contexto de las crecientes desigualdades educativas en Chile, comprender cómo los estudiantes justifican dichas desigualdades a partir de creencias meritocráticas es fundamental para analizar las bases culturales de la estratificación social”."
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#preguntas-de-investigación",
+    "href": "blog/posts/clase-etica2025/index.html#preguntas-de-investigación",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Formular una pregunta principal y, si corresponde, subpreguntas.\nEjemplo:\n- ¿Cómo influyen las percepciones de meritocracia en la justificación de las desigualdades educativas entre estudiantes de secundaria?\n- ¿Existen diferencias según el tipo de establecimiento educativo?"
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#objetivos",
+    "href": "blog/posts/clase-etica2025/index.html#objetivos",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "General: vinculado con la pregunta principal.\n\nEspecíficos: derivan del objetivo general y orientan el trabajo empírico.\n\nEjemplo:\n- General: Analizar la relación entre percepciones de meritocracia y justificación de desigualdades educativas en estudiantes de secundaria.\n- Específicos:\n1. Describir las percepciones de meritocracia de estudiantes en distintos tipos de establecimientos.\n2. Identificar patrones de justificación de desigualdades educativas.\n3. Explorar la asociación entre percepciones meritocráticas y justificaciones de desigualdad."
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#marco-teóricoreferencial",
+    "href": "blog/posts/clase-etica2025/index.html#marco-teóricoreferencial",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Breve revisión de conceptos centrales y literatura relevante.\nEjes posibles:\n- Teoría de la justicia y meritocracia (Rawls, Young).\n- Estudios sobre creencias de justicia en educación.\n- Investigaciones previas en Chile y América Latina."
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#metodología",
+    "href": "blog/posts/clase-etica2025/index.html#metodología",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Enfoque: cuantitativo, cualitativo o mixto.\n\nTécnicas: encuesta, entrevistas, análisis de documentos, etc.\n\nPoblación/muestra: a quiénes se estudiará y cómo se seleccionará.\n\nEjemplo:\n- Diseño cuantitativo mediante encuesta a 200 estudiantes de 2º y 3º medio en tres tipos de establecimientos (municipales, subvencionados y privados).\n- Análisis estadístico de asociaciones entre percepciones y justificaciones."
+  },
+  {
+    "objectID": "blog/posts/clase-etica2025/index.html#cronograma-tentativo",
+    "href": "blog/posts/clase-etica2025/index.html#cronograma-tentativo",
+    "title": "Exposé - Propuesta de investigación para trabajo de tesis",
+    "section": "",
+    "text": "Tabla simple con actividades y meses.\nEjemplo:\n\n\n\nMes\nActividad"
+  },
+  {
+    "objectID": "blog/blog.html",
+    "href": "blog/blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Clase Ética y Ciencia Abierta\n\n\n\n\n\n\nOct 29, 2025\n\n\n\n\n\n\n\n\n\n\n\nExposé - Propuesta de investigación para trabajo de tesis\n\n\n\n\n\n\nSep 17, 2025\n\n\n\n\n\n\n\n\n\n\n\nMigrating my Academic (Hugo Wowchemy) website to Quarto\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\nEscritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales\n\n\n\n\n\n\nOct 15, 2022\n\n\n\n\n\n\n\n\n\n\n\nResearch stay at the Institute of Social Cohesion\n\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\nPanels at International Sociological Association - ISA conference, Melbourne 2023\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\ntesisfacsodown\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\nExtract publications to hugo-academic / wowchemy from Zotero-BetterBibTex\n\n\n\n\n\n\nDec 13, 2021\n\n\n\n\n\n\n\n\n\n\n\nSugerencias para defensas y presentaciones\n\n\n\n\n\n\nMay 25, 2021\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "blog/posts/ISA-2023/index.html",
     "href": "blog/posts/ISA-2023/index.html",
     "title": "Panels at International Sociological Association - ISA conference, Melbourne 2023",
@@ -950,20 +1034,6 @@
     "title": "Panels at International Sociological Association - ISA conference, Melbourne 2023",
     "section": "Session Organizers",
     "text": "Session Organizers\nLiza STEELE, Associate Professor CUNY John Jay College & The Graduate Center, United States Email: liza.steele@gmail.com\nNate BREZNAU, University of Bremen, Germany\nJuan Carlos CASTILLO, Universidad de Chile"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "blog/blog.html",
-    "href": "blog/blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Exposé - Propuesta de investigación para trabajo de tesis\n\n\n\n\n\n\nSep 17, 2025\n\n\n\n\n\n\n\n\n\n\n\nMigrating my Academic (Hugo Wowchemy) website to Quarto\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\nEscritura académica - Estructura, contenidos y recomendaciones para trabajos de investigación empírica en ciencias sociales\n\n\n\n\n\n\nOct 15, 2022\n\n\n\n\n\n\n\n\n\n\n\nResearch stay at the Institute of Social Cohesion\n\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\nPanels at International Sociological Association - ISA conference, Melbourne 2023\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\ntesisfacsodown\n\n\n\n\n\n\nJul 9, 2022\n\n\n\n\n\n\n\n\n\n\n\nExtract publications to hugo-academic / wowchemy from Zotero-BetterBibTex\n\n\n\n\n\n\nDec 13, 2021\n\n\n\n\n\n\n\n\n\n\n\nSugerencias para defensas y presentaciones\n\n\n\n\n\n\nMay 25, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/defensas-presentaciones/index.html",
@@ -1839,12 +1909,5 @@
     "title": "Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático",
     "section": "",
     "text": "How to cite this work\n\n\n\nOctavio Villarroel (2025). Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático. Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
-  },
-  {
-    "objectID": "docencia/posts/ciencia-social-abierta/index.html#taller-ciencia-abierta-2025",
-    "href": "docencia/posts/ciencia-social-abierta/index.html#taller-ciencia-abierta-2025",
-    "title": "Ciencia Social Abierta",
-    "section": "Taller Ciencia Abierta 2025",
-    "text": "Taller Ciencia Abierta 2025\n(F para pantalla completa)"
   }
 ]

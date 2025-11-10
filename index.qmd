@@ -1,6 +1,5 @@
 ---
-title: "Juan Carlos C
-astillo"
+title: "Juan Carlos Castillo"
 pagetitle: "JC Castillo Website"
 page-layout: custom
 format: html

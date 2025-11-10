@@ -8,7 +8,9 @@ project:
     - documents/talleres-cursos/multinivel_taller/taller-multinivel-files/*/*
     - documents/talleres-cursos/tallerATOM/*/*/*/*
     - documents/doctorado-psicologia/*/*/*/*/*
+    - documents/clase-etica2025/*/*/*/*/*
     - documents/talleres-cursos/escritura-academica/libs/*
+    - documents/talleres-cursos/*/*/*/*
   render:
     - "*.qmd"
   output-dir: "docs"

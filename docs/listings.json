@@ -69,6 +69,7 @@
   {
     "listing": "/blog/blog.html",
     "items": [
+      "/blog/posts/clase-etica2025/index.html",
       "/blog/posts/expose/index.html",
       "/blog/posts/quarto-migration/index.html",
       "/blog/posts/escritura-academica/index.html",
@@ -241,6 +242,7 @@
       "/proyectos/posts/coes/index.html",
       "/proyectos/posts/fondecyt-iniciacion/index.html",
       "/proyectos/posts/otros-proyectos/index.html",
+      "/blog/posts/clase-etica2025/index.html",
       "/blog/posts/expose/index.html",
       "/blog/posts/quarto-migration/index.html",
       "/blog/posts/escritura-academica/index.html",
