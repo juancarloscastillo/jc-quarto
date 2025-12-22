@@ -1,0 +1,72 @@
+---
+title: "Actitudes ante la justicia distributiva: enfoques experimentales sobre redistribución y merecimiento"
+subtitle: "I Workshop 2026 · Proyecto Fondecyt Nº 1250518"
+categories: [Fondecyt, Workshop, Redistribución, Merecimiento]
+date: "2025-12-22" 
+draft: false
+toc: true
+format:
+  html:
+    css: styles-team.css
+about:
+  template: marquee
+  image: "featured.png"
+bibliography: "jusmer.bib"
+csl: "apa6.csl"
+---
+
+## I Workshop 2026 · Proyecto Fondecyt Nº1250518 🎓🧪
+
+::: {.callout-note}
+### Información práctica
+- **Fecha:** 23 de enero de 2026  
+- **Hora:** 09:30–13:00  
+- **Lugar:** Sala 332 — Facultad de Ciencias Sociales, Universidad de Chile  
+  Av. Capitán Ignacio Carrera Pinto 1045, Ñuñoa, Santiago, Chile. 📍  
+:::
+
+---
+
+## Antecedentes
+
+Desde inicios de los años 1980, muchos países han reducido programas de bienestar universal y han avanzado hacia la privatización y la mercantilización de bienes públicos y servicios sociales [@gingrich_making_2011]. En América Latina —y de forma marcada en Chile— este giro extendió la lógica de mercado a áreas clave de la reproducción social [@ferre_welfare_2023; @madariaga_three_2020], reordenando no solo las instituciones, sino también los criterios con los que se evalúa qué distribuciones son “justas” [@fourcade_moral_2007; @koos_moral_2019]. En este escenario, el mercado opera como un sistema distributivo: no solo coordina intercambios, sino que asigna recursos valiosos y distribuye riesgos mediante reglas que suelen estratificar el acceso y la calidad [@lindh_bringing_2023]. Por eso, hoy resulta clave estudiar las **preferencias por justicia de mercado**, entendidas como el grado en que las personas consideran legítimo que criterios como la capacidad de pago o la contribución definan el acceso a servicios esenciales —salud, educación o pensiones— y, en la práctica, la redistribución efectiva del bienestar [@lindh_public_2015; @immergut_it_2020; @castillo_perceptions_2025].
+
+En este contexto, el proyecto [Fondecyt Nº 1250518 **“Justicia de mercado y merecimiento del bienestar social”**](https://jc-castillo.com/proyectos/posts/fondecyt-jusmer/) se ubica en la intersección entre preferencias redistributivas y principios de justicia distributiva, poniendo el foco en el mercado como agente de asignación que desempeña un papel central en la redistribución efectiva del bienestar. La premisa central del proyecto es que la legitimidad de arreglos orientados por el mercado depende de **qué criterios de merecimiento se priorizan** [@vanoorschot_social_2017]—en particular, el control individual/“mérito” por sobre la necesidad y la igualdad— y de cómo estos marcos conectan posiciones sociales y creencias sobre la desigualdad con actitudes hacia la redistribución estatal y no estatal en dominios críticos del bienestar.
+
+---
+
+## Objetivo del workshop
+
+Este workshop tiene por objetivo **compartir y discutir evidencia experimental y estrategias de identificación causal para estudiar actitudes hacia la desigualdad, la redistribución y el merecimiento en distintos ámbitos del bienestar**, incluyendo tanto políticas estatales como arreglos mediados por el mercado (por ejemplo, salud, educación y pensiones). El encuentro reunirá trabajos en curso y publicados para comparar diseños y resultados, identificar puntos de convergencia y de debate, y recoger insumos para nuevas propuestas experimentales que puedan incorporarse a la encuesta 2026 del proyecto FONDECYT JUSMER. Con ello, se busca abrir un espacio de colaboración que fortalezca la evidencia empírica en Chile sobre los mecanismos que estructuran estas actitudes y preferencias.
+
+---
+
+## Formato
+
+Cada expositor/a tendrá **20 minutos para presentar** su trabajo y **15 minutos de comentarios** de los asistentes por ponencia.
+
+---
+
+## Cronograma
+
+| Horario | Actividad | Presentadora/or | Afiliación / Proyecto |
+|---|---|---|---|
+| 09:30–09:45 | Café y bienvenida |  |  |
+| 09:45–10:20 | Presentación | **Alejandra Vásquez** | Profesora asociada, Facultad de Administración y Economía, Universidad de Santiago de Chile. Investigadora principal Fondecyt Nº 11230744 *“Aversion to Inequality in Chile: A study on the interaction between individual and social preferences.”* |
+| 10:20–10:55 | Presentación | **Rafel Carranza** | Profesor asistente, Escuela de Gobierno, Pontificia Universidad Católica de Chile. Investigador principal del proyecto *Wealth and Social Cohesion from a Relational Perspective (WESOREL).* |
+| 10:55–11:05 | Pausa |  |  |
+| 11:05–11:40 | Presentación | **Mauricio Salgado** | Investigador, Centro de Estudios Públicos (CEP). |
+| 11:40–12:15 | Presentación | **Juan Carlos Castillo** | Profesor titular, Departamento de Sociología, Universidad de Chile. Investigador principal COES y del Fondecyt Nº 1250518. |
+| 12:15–13:00 | Discusión general y cierre |  |  |
+
+
+
+## Referencias
+
+
+::: {#refs}
+:::
+
+
+
+

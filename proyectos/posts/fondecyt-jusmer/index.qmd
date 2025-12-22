@@ -67,9 +67,13 @@ El objetivo general del proyecto es **analizar las preferencias por justicia de 
 # Tesistas Universidad de Chile
 
 ## Postgrado
-- Tomás Urzúa
+
+- [Tomás Urzúa](https://github.com/tomasurzuam)  
+  Magíster en Ciencias Sociales (U. de Chile)  
+  Tema: "Preferencias de mercado en la educación: Un análisis de clases latentes sobre creencias meritocráticas en Chile"
 
 ## Pregrado
+
 - Victoria Arias  
 - Ismael Aguayo  
 - Cristóbal Mejías
