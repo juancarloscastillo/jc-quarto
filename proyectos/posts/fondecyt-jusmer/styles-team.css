@@ -1,0 +1,85 @@
+/* --- Team layout --- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-top: .75rem;
+}
+
+/* IP centrado arriba */
+.team-ip {
+  grid-column: 4 / span 6;
+}
+
+/* Asistentes abajo, dos columnas */
+.team-a1 { grid-column: 1 / span 6; }
+.team-a2 { grid-column: 7 / span 6; }
+
+/* Mobile: todo en una columna */
+@media (max-width: 900px) {
+  .team-ip, .team-a1, .team-a2 { grid-column: 1 / span 12; }
+}
+
+/* --- Cards --- */
+.team-card {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  height: 100%;              /* todas mismas */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagen con altura fija para igualdad visual */
+.team-media{
+  position: relative;
+  width: 100%;
+  height: 320px;          /* más alto */
+  background: #f3f4f6;
+  overflow: hidden;
+}
+
+.team-photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  object-position: 50% 20%; /* sube el encuadre (más frente, menos corte de cabeza) */
+  display: block;
+}
+
+
+
+/* Badge sobre la foto */
+.team-badge {
+  position: absolute !important;
+  left: .75rem;
+  bottom: .75rem;
+  z-index: 5;
+  display: inline-block;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  font-size: .78rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(6px);
+}
+
+/* Cuerpo con altura consistente */
+.team-body {
+  padding: .9rem 1rem 1rem 1rem;
+  flex: 1;                    /* empuja a igual altura */
+}
+
+.team-name {
+  font-weight: 700;
+  margin: 0 0 .25rem 0;
+}
+
+.team-affil {
+  margin: 0;
+  color: rgba(0,0,0,.65);
+  font-size: .92rem;
+}
