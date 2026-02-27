@@ -1,0 +1,21 @@
+---
+title : "De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La  Creación de Los Planes de Formación Ciudadana."
+date : "2026-01-01"
+author : ["Javier Santibanez"]
+publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+abstract : "La presente investigación explora las relaciones entre la justificación de la violencia en  contexto de protesta social, la orientación política y el miedo en Chile en el escenario post  estallido social. Se propone que tanto el miedo como la orientación política juegan un papel  clave en la evaluación normativa de la violencia, ya sea por parte de Carabineros o de los  manifestantes. La investigación utiliza datos del Estudio Longitudinal Social de Chile (ELSOC), y se basa  en modelos de regresión logística ordinal para analizar cómo la orientación política y el  miedo influyen en las justificaciones de la violencia. Se proponen cinco hipótesis respecto a  la relación entre estos elementos.  Los hallazgos indican que las personas con orientación política de derecha tienen más  probabilidades de justificar la violencia policial, mientras que aquellos con orientación de  izquierda tienden a justificar más la violencia de los manifestantes. Otro hallazgo clave es  que el miedo a manifestantes violentos aumenta la probabilidad de justificar la violencia de  Carabineros, mientras que el miedo a Carabineros no es estadísticamente significativo en la  justificación de la violencia de los manifestantes.  Además, el nivel educativo y la edad se identifican como factores importantes: a mayor nivel  educativo, menor justificación de ambas formas de violencia. Finalmente, se discuten los  hallazgos respecto a la relación de la orientación política y el miedo en las justificaciones de la violencia en contextos de alta conflictividad social, como el vivido en Chile post estallido  social. Palabras clave: justificación de la violencia, orientación política, miedo, Carabineros,  protesta social."
+abstract_short : ""
+categories : ["Guía o cotutor"]
+about:
+  template: marquee
+---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Javier Santibanez (2026). *De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La  Creación de Los Planes de Formación Ciudadana.*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+
+:::
+

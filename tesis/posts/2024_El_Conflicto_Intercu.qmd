@@ -2,8 +2,8 @@
 title : "El Conflicto Intercultural Entre El Estado Chileno y La Causa Mapuche Por Autodeterminación"
 date : "2024-01-01"
 author : ["Paula Larenas"]
-publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
-publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication : " - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 abstract : "Esta memoria se interroga sobre cómo inciden las relaciones interculturales mapuche-chileno en la percepción del conflicto en la macrozona sur en personas mayores de edad que residen en la Región Metropolitana, Bío-Bío, Araucanía, Los Ríos y Los Lagos. La hipótesis sugiere que la percepción del conflicto se incremente a medida que aumenta la percepción negativa de lo mapuche. Se ponen en juego un total de 17 variables a partir del análisis del Estudio longitudinal de relaciones interculturales (ELRI) y se despliega una estrategia analítica que incluye análisis factorial, correlaciones y regresiones. Los hallazgos señalan que una posición favorable frente a las demandas del pueblo mapuche se relaciona con una percepción positiva del conflicto y una posición favorable al actuar de carabineros y la preponderancia de lo chileno sobre lo mapuche se relaciona con una percepción negativa del conflicto. Se concluye que el análisis realizado contribuye a la comprensión de las relaciones de interculturalidad y sus efectos sobre la percepción del conflicto mapuche."
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -30,7 +30,7 @@ sus efectos sobre la percepción del conflicto mapuche.
 
 ::: {.callout-note title="How to cite this work"}
 
-Paula Larenas (2024). *El Conflicto Intercultural Entre El Estado Chileno y La Causa Mapuche Por Autodeterminación*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Paula Larenas (2024). *El Conflicto Intercultural Entre El Estado Chileno y La Causa Mapuche Por Autodeterminación*.  - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

@@ -10,7 +10,7 @@ about:
   id: hero-heading
   template: trestles
   image-width: 300px
-  image-shape: round
+  image-shape: round  
   links:
     - icon: mortarboard-fill
       href: https://scholar.google.es/citations?user=CPJ0qfQAAAAJ&hl=es&oi=ao

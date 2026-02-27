@@ -1,0 +1,23 @@
+---
+title : "Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)"
+date : "2025-09-01"
+author : ["Juan Carlos Castillo", "Andreas Laffert", "Kevin Carrasco", "Julio Iturra-Sanhueza"]
+categories : ["Journal Article"]
+publication : "Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)"
+publication_short : "Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)"
+abstract : "Introduction               Several countries have experienced a shift toward the privatization and commodification of public goods, welfare policies, and social services. In Latin America, Chile stands out as a paradigmatic case where this trend has led to the extensive marketization of essential services. From a moral economy perspective, the extent to which individuals consider it fair for access to such services to depend on market criteria has been conceptualized as market justice preferences. This study investigates the relationship between perceptions of economic inequality, meritocratic beliefs, and market justice preferences in Chile between 2016 and 2023.                                         Methods               Using six waves of panel data from the Chilean Longitudinal Social Survey-ELSOC (Nobservations = 8,643; Nindividuals = 1,687), the analysis examines how subjective assessments of inequality shape attitudes toward the role of merit in access to key social services such as healthcare, education, and pensions.                                         Results               The findings show that greater perceived inequality is associated with lower market justice preferences. However, individuals who believe that effort is rewarded are more likely to legitimize existing disparities. In contrast, the perception that talent is rewarded shows a negative effect on market justice preferences; an effect that intensifies as perceived inequality increases over time. The study also considers the influence of major social movements during this period, which appear to have reshaped public discourse on justice and fairness.                                         Discussion               These findings contribute to a deeper understanding of how distributive beliefs evolve in contexts marked by persistent inequality and entrenched neoliberal frameworks. They indicate that while perceptions of inequality tend to undermine support for market justice, meritocratic beliefs-particularly those emphasizing effort-reinforce its legitimacy. By contrast, talent-based meritocratic perceptions weaken it, especially as inequality becomes more salient. The results also suggest that major collective events, such as the 2019 protests, did not fundamentally alter these underlying associations."
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan Carlos Castillo, Andreas Laffert, Kevin Carrasco, Julio Iturra-Sanhueza (2025). *Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)*. Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)
+
+:::
+

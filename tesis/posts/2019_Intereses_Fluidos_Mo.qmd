@@ -2,8 +2,8 @@
 title : "Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países."
 date : "2019-01-01"
 author : ["Alejandro Plaza"]
-publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
-publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication : " - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " - Pontificia Universidad Católica de Chile. Santiago de Chile"
 abstract : "La distribución y asignación de recursos y derechos sociales de manera justa ha sido un problema de interés para diferentes ramas de las ciencias sociales, donde la filosofía ha colaborado en el desarrollo de debate teórico en la materia, mientras que ramas con foco más empírico han aportado en la comprensión del impacto a nivel social que existe en torno a la distribución de diferentes recursos y derechos, y que se ha conceptualizado como justicia distributiva ..."
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -48,7 +48,7 @@ Desigualdad, Desarrollo Económico.# Documento
 
 ::: {.callout-note title="How to cite this work"}
 
-Alejandro Plaza (2019). *Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Alejandro Plaza (2019). *Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.*.  - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

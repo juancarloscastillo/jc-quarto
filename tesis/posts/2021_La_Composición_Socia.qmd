@@ -2,8 +2,8 @@
 title : "La Composición Social de Las Escuelas y Su Relación Con El Rendimiento Académico En Lenguaje y Matemática de Los Estudiantes Secundarios Chilenos"
 date : "2021-01-01"
 author : ["Carlos Budnevich"]
-publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
-publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication : " - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 abstract : "La masiva intromisión de agentes privados en la educación a partir de las reformas de 1980 derivó en la configuración de un mercado escolar, teniendo dos grandes consecuencias ..."
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -47,7 +47,7 @@ composición escolar, rendimiento académico.
 
 ::: {.callout-note title="How to cite this work"}
 
-Carlos Budnevich (2021). *La Composición Social de Las Escuelas y Su Relación Con El Rendimiento Académico En Lenguaje y Matemática de Los Estudiantes Secundarios Chilenos*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Carlos Budnevich (2021). *La Composición Social de Las Escuelas y Su Relación Con El Rendimiento Académico En Lenguaje y Matemática de Los Estudiantes Secundarios Chilenos*.  - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

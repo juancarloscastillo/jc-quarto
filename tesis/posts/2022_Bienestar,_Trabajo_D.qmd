@@ -2,8 +2,8 @@
 title : "Bienestar, Trabajo Doméstico y Uso Del Tiempo: Un Análisis Cuantitativo Del Bienestar de Las Mujeres En Chile"
 date : "2022-01-01"
 author : ["Karen Tapia"]
-publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
-publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication : " - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+publication_short : " - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 abstract : "(Abstract not available)"
 abstract_short : ""
 categories : ["Guía o cotutor"]
@@ -27,7 +27,7 @@ Palabras clave: Bienestar, satisfacción con la vida, carga doméstica, trabajo 
 
 ::: {.callout-note title="How to cite this work"}
 
-Karen Tapia (2022). *Bienestar, Trabajo Doméstico y Uso Del Tiempo: Un Análisis Cuantitativo Del Bienestar de Las Mujeres En Chile*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Karen Tapia (2022). *Bienestar, Trabajo Doméstico y Uso Del Tiempo: Un Análisis Cuantitativo Del Bienestar de Las Mujeres En Chile*.  - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 
