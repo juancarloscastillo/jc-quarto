@@ -1,0 +1,21 @@
+---
+title : "What Are Just Salaries for Different Occupations in Chile? A Factorial Survey Approach"
+date : "2009-07-01"
+author : ["J. Castillo"]
+categories : ["Conference paper"]
+publication : " 21st World Congress of Political Science – IPSA. Santiago de Chile: Universidad de Chile"
+publication_short : " 21st World Congress of Political Science – IPSA. Santiago de Chile: Universidad de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+J. Castillo (2009). *What Are Just Salaries for Different Occupations in Chile? A Factorial Survey Approach*.  21st World Congress of Political Science – IPSA. Santiago de Chile: Universidad de Chile
+
+:::
+

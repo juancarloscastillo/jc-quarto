@@ -1,0 +1,21 @@
+---
+title : "Explanations of Poverty: A Comparison of Germany, the Czech Republic and Chile"
+date : "2007-04-01"
+author : ["\relax JC Castillo"]
+categories : ["Presentation"]
+publication : " International Social Justice Project  Meeting . Budapest, Social Sciences Faculty, Eötvös Loránd University"
+publication_short : " International Social Justice Project  Meeting . Budapest, Social Sciences Faculty, Eötvös Loránd University"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+\relax JC Castillo (2007). *Explanations of Poverty: A Comparison of Germany, the Czech Republic and Chile*.  International Social Justice Project  Meeting . Budapest, Social Sciences Faculty, Eötvös Loránd University
+
+:::
+

@@ -1,0 +1,20 @@
+---
+title : "Discusión Teórica y Empírica Sobre La Élite Económica Chilena"
+date : "2015-01-01"
+author : ["Josefina Amenabar", "Javiera Sanchez"]
+categories : ["Manuscript"]
+publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Josefina Amenabar, Javiera Sanchez (2015). *Discusión Teórica y Empírica Sobre La Élite Económica Chilena*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

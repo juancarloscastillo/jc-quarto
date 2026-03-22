@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publication .list');
+    const listingTargetEl = window.document.querySelector('#listing-publications .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -89,7 +89,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publication'] = new List('listing-publication', options);
+    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-presentations .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-presentations'] = new List('listing-presentations', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -606,8 +634,12 @@ window.Quarto = {
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#publicationh1"> 
+    <a class="nav-link" href="./references/publications/index.html"> 
 <span class="menu-text">Publicaciones</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references/presentations/index.html#presentationsh1"> 
+<span class="menu-text">Presentaciones</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#docenciah1"> 
@@ -810,22 +842,39 @@ El Laboratorio de Ciencia Social Abierta es una iniciativa del Centro de Estudio
 <div class="section-block">
 <div style="text-align: left;">
 <p><br></p>
-<div id="publicationh1">
+<div class="{#references/publicationsh1}">
 
 </div>
 <p align="left" style="font-size:36px; font-weight:bold;">
-Publicaciones y Presentaciones recientes
+Publications
 </p>
-<div id="listing-publication" class="quarto-listing quarto-listing-container-default">
+<div id="listing-publications" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1772211052734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="quarto-post image-right" data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1774185045643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./publication/posts/2025_Changes_in_the_Justi.html" class="no-external">Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic</a>
+<a href="./references/publications/posts/2026_Justification_Trajec.html" class="no-external">Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2025_Changes_in_the_Justi.html" class="no-external">
+<a href="./references/publications/posts/2026_Justification_Trajec.html" class="no-external">
+<div class="listing-date">
+Mar 1, 2026
+</div>
+<div class="listing-author">
+Juan Carlos Castillo, Rene Canales-Selles, Andreas Laffert, Tomas Urzua
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774185045624" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/publications/posts/2025_Changes_in_the_Justi.html" class="no-external">Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/publications/posts/2025_Changes_in_the_Justi.html" class="no-external">
 <div class="listing-date">
 Sep 1, 2025
 </div>
@@ -835,14 +884,14 @@ J-C Castillo, Julio Iturra, Kevin Carrasco
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1772211052840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="quarto-post image-right" data-index="2" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774185045693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./publication/posts/2025_Merit_as_an_Attitude.html" class="no-external">Merit as an Attitude: Chilean School Communities’ Repertoires and the Perception of the “Good Student” in a Post-Pandemic Scenario</a>
+<a href="./references/publications/posts/2025_Merit_as_an_Attitude.html" class="no-external">Merit as an Attitude: Chilean School Communities’ Repertoires and the Perception of the “Good Student” in a Post-Pandemic Scenario</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2025_Merit_as_an_Attitude.html" class="no-external">
+<a href="./references/publications/posts/2025_Merit_as_an_Attitude.html" class="no-external">
 <div class="listing-date">
 Sep 1, 2025
 </div>
@@ -852,14 +901,14 @@ Camila {Moyano Davila}, Samanta Alarcon-Arcos, Nicolas Angelcos, J-C Castillo, M
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1772211052785" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="quarto-post image-right" data-index="3" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774185045656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./publication/posts/2025_Perceptions_of_Inequ.html" class="no-external">Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)</a>
+<a href="./references/publications/posts/2025_Perceptions_of_Inequ.html" class="no-external">Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2025_Perceptions_of_Inequ.html" class="no-external">
+<a href="./references/publications/posts/2025_Perceptions_of_Inequ.html" class="no-external">
 <div class="listing-date">
 Sep 1, 2025
 </div>
@@ -869,14 +918,14 @@ Juan Carlos Castillo, Andreas Laffert, Kevin Carrasco, Julio Iturra-Sanhueza
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1740798000000" data-listing-file-modified-sort="1772211052727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
+<div class="quarto-post image-right" data-index="4" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1740798000000" data-listing-file-modified-sort="1774185045619" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./publication/posts/2025_The_Reliability_of_R.html" class="no-external">The Reliability of Replications: A Study in Computational Reproductions</a>
+<a href="./references/publications/posts/2025_The_Reliability_of_R.html" class="no-external">The Reliability of Replications: A Study in Computational Reproductions</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2025_The_Reliability_of_R.html" class="no-external">
+<a href="./references/publications/posts/2025_The_Reliability_of_R.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2025
 </div>
@@ -886,19 +935,110 @@ Nate Breznau, Eike Mark Rinke, Alexander Wuttke, Muna Adem, Jule Adriaans, Esra 
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1730430000000" data-listing-file-modified-sort="1772211052794" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div class="button">
+<p><a href="./references/publications/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las publicaciones</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-text">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
+<p><br></p>
+<div class="{#references/presentationsh1}">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Presentations
+</p>
+<div id="listing-presentations" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1719806400000" data-listing-file-modified-sort="1774185045930" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./publication/posts/2024_The_Socialization_of.html" class="no-external">The Socialization of Meritocracy and Market Justice Preferences at School</a>
+<a href="./references/presentations/posts/2024_Measuring_Social_Coh.html" class="no-external">Measuring Social Cohesion in Chile with Longitudinal Survey Data</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./publication/posts/2024_The_Socialization_of.html" class="no-external">
+<a href="./references/presentations/posts/2024_Measuring_Social_Coh.html" class="no-external">
 <div class="listing-date">
-Nov 1, 2024
+Jul 1, 2024
 </div>
 <div class="listing-author">
-Juan Carlos Castillo, Mauricio Salgado, Kevin Carrasco, Andreas Laffert
+Juan-Carlos Castillo
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1774185045902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/presentations/posts/2024_Barreras_Para_La_Cie.html" class="no-external">Barreras Para La Ciencia Abierta En La Investigación En Ciencias Sociales En Chile.</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/presentations/posts/2024_Barreras_Para_La_Cie.html" class="no-external">
+<div class="listing-date">
+May 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1774185045931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/presentations/posts/2024_Meritocracia_y_Justi.html" class="no-external">Meritocracia y Justificación de Desigualdad En La Etapa Escolar: Un Experimento de Encuesta.</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/presentations/posts/2024_Meritocracia_y_Justi.html" class="no-external">
+<div class="listing-date">
+May 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo, Kevin Carrasco
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1714536000000" data-listing-file-modified-sort="1774185045912" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/presentations/posts/2024_¿Las_Estudiantes_Sub.html" class="no-external">¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/presentations/posts/2024_¿Las_Estudiantes_Sub.html" class="no-external">
+<div class="listing-date">
+May 1, 2024
+</div>
+<div class="listing-author">
+Juan-Carlos Castillo, Nicolas Tobar
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1711940400000" data-listing-file-modified-sort="1774185045955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/presentations/posts/2024_Does_Information_abo.html" class="no-external">Does Information about Inequality Affects Opportunity Beliefs? Results from a Survey Experiment</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/presentations/posts/2024_Does_Information_abo.html" class="no-external">
+<div class="listing-date">
+Apr 1, 2024
+</div>
+<div class="listing-author">
+Luis Maldonado, Juan-Carlos Castillo, Julio Iturra
 </div>
 </a>
 </div>
@@ -907,7 +1047,7 @@ Juan Carlos Castillo, Mauricio Salgado, Kevin Carrasco, Andreas Laffert
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="button">
-<p><a href="./publication/publication.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las publicaciones</a></p>
+<p><a href="./references/presentations/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las presentaciones</a></p>
 </div>
 </div>
 </div>
@@ -1084,14 +1224,31 @@ Guía y Comité de Tesis
 </p>
 <div id="listing-tesis" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1772211821257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<div class="quarto-post image-right" data-index="0" data-categories="TWFudXNjcmlwdA==" data-listing-date-sort="1796094000000" data-listing-file-modified-sort="1774185046221" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./tesis/posts/2026_De_La_Institucionali.html" class="no-external">De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La Creación de Los Planes de Formación Ciudadana.</a>
+<a href="./references/thesis/posts/2026_[En_Desarrollo]_Pref.html" class="no-external">[En Desarrollo] Preferencias de Mercado En La Educación: Un Análisis de Clases Latentes Sobre Creencias Meritocráticas En Perspectiva Comparada</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2026_De_La_Institucionali.html" class="no-external">
+<a href="./references/thesis/posts/2026_[En_Desarrollo]_Pref.html" class="no-external">
+<div class="listing-date">
+Dec 1, 2026
+</div>
+<div class="listing-author">
+Tomas Urzua
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="TWFudXNjcmlwdA==" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1774185046216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/thesis/posts/2026_De_La_Institucionali.html" class="no-external">De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La Creación de Los Planes de Formación Ciudadana.</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/thesis/posts/2026_De_La_Institucionali.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2026
 </div>
@@ -1101,14 +1258,14 @@ Javier Santibanez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1772211821246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<div class="quarto-post image-right" data-index="2" data-categories="TWFudXNjcmlwdA==" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1774185046193" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./tesis/posts/2026_Minorías_Masculinas_.html" class="no-external">Minorías Masculinas En Pedagogía: Un Estudio de Las Trayectorias Académicas de Hombres En Chile (2007–2024)</a>
+<a href="./references/thesis/posts/2026_Minorías_Masculinas_.html" class="no-external">Minorías Masculinas En Pedagogía: Un Estudio de Las Trayectorias Académicas de Hombres En Chile (2007–2024)</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2026_Minorías_Masculinas_.html" class="no-external">
+<a href="./references/thesis/posts/2026_Minorías_Masculinas_.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2026
 </div>
@@ -1118,14 +1275,31 @@ Sophia Karoussis
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1772211821237" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<div class="quarto-post image-right" data-index="3" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1772220469589" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./tesis/posts/2025_Del_Apoyo_a_La_Acció.html" class="no-external">Del Apoyo a La Acción: El Rol Del Miedo y La Orientación Política En Las Justificaciones de Violencia En Contexto de Protesta Social</a>
+<a href="./references/thesis/posts/2026_Preferencias_de_Merc.html" class="no-external">Preferencias de Mercado En La Educación: Un Análisis de Clases Latentes Sobre Creencias Meritocráticas En Perspectiva Comparada</a>
 </h3>
 </div>
 <div class="metadata">
-<a href="./tesis/posts/2025_Del_Apoyo_a_La_Acció.html" class="no-external">
+<a href="./references/thesis/posts/2026_Preferencias_de_Merc.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2026
+</div>
+<div class="listing-author">
+Tomas Urzua
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="TWFudXNjcmlwdA==" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1774185046167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./references/thesis/posts/2025_Del_Apoyo_a_La_Acció.html" class="no-external">Del Apoyo a La Acción: El Rol Del Miedo y La Orientación Política En Las Justificaciones de Violencia En Contexto de Protesta Social</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./references/thesis/posts/2025_Del_Apoyo_a_La_Acció.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2025
 </div>
@@ -1135,45 +1309,11 @@ Carlos Anriquez
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1772211821241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tesis/posts/2025_Desigualdades_Educat.html" class="no-external">Desigualdades Educativas En La Alfabetización Computacional e Informacional de Estudiantes de 8vo Año Básico En Chile.</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./tesis/posts/2025_Desigualdades_Educat.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2025
-</div>
-<div class="listing-author">
-Bladimir Beltran
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="R3UlQzMlQURhJTIwbyUyMGNvdHV0b3I=" data-listing-date-sort="1735700400000" data-listing-file-modified-sort="1772211821263" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tesis/posts/2025_Percepciones_Sobre_L.html" class="no-external">Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./tesis/posts/2025_Percepciones_Sobre_L.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2025
-</div>
-<div class="listing-author">
-Octavio Villarroel
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <div class="button">
-<p><a href="./tesis/tesis.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las tesis</a></p>
+<p><a href="tesis/tesis.qmd" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Todas las tesis</a></p>
 </div>
 </div>
 </div>
@@ -1191,7 +1331,30 @@ Post Recientes
 </p>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Rm9uZGVjeXQlMkNXb3Jrc2hvcCUyQ1JlZGlzdHJpYnVjaSVDMyVCM24lMkNNZXJlY2ltaWVudG8=" data-listing-date-sort="1766372400000" data-listing-file-modified-sort="1766430491038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="598">
+<div class="quarto-post image-right" data-index="0" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1773630000000" data-listing-file-modified-sort="1774195317432" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2052">
+<div class="thumbnail"><a href="./blog/posts/zotero-quarto-website/index.html" class="no-external">
+
+<p class="card-img-top"><img src="blog/posts/zotero-quarto-website/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/posts/zotero-quarto-website/index.html" class="no-external">References lists from Zotero to a Quarto website</a>
+</h3>
+<div class="delink listing-description"><a href="./blog/posts/zotero-quarto-website/index.html" class="no-external">
+This post is intended to be a practical guide for automatically extracting information from Zotero and generating publication records in a Quarto academic website. The…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./blog/posts/zotero-quarto-website/index.html" class="no-external">
+<div class="listing-date">
+Mar 16, 2026
+</div>
+<div class="listing-reading-time">11 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Rm9uZGVjeXQlMkNXb3Jrc2hvcCUyQ1JlZGlzdHJpYnVjaSVDMyVCM24lMkNNZXJlY2ltaWVudG8=" data-listing-date-sort="1766372400000" data-listing-file-modified-sort="1766430491038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="598">
 <div class="thumbnail"><a href="./blog/posts/workshop-jusmer-2026/index.html" class="no-external">
 
 <p class="card-img-top"><img src="blog/posts/workshop-jusmer-2026/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -1214,7 +1377,7 @@ Dec 22, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1761706800000" data-listing-file-modified-sort="1762801801394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+<div class="quarto-post image-right" data-index="2" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1761706800000" data-listing-file-modified-sort="1762801801394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
 <div class="thumbnail"><a href="./blog/posts/clase-etica2025/index.html" class="no-external">
 
 <p class="card-img-top"><img src="blog/posts/clase-etica2025/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -1237,7 +1400,7 @@ Oct 29, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1758078000000" data-listing-file-modified-sort="1758116016569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
+<div class="quarto-post image-right" data-index="3" data-categories="YWNhZGVtaWM=" data-listing-date-sort="1758078000000" data-listing-file-modified-sort="1758116016569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
 <div class="thumbnail"><a href="./blog/posts/expose/index.html" class="no-external">
 
 <p class="card-img-top"><img src="blog/posts/expose/featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -1257,32 +1420,6 @@ El <strong>exposé de tesis</strong> es un documento breve (entre 2 y 4 páginas
 Sep 17, 2025
 </div>
 <div class="listing-reading-time">3 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1742871600000" data-listing-file-modified-sort="1746628135903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
-<div class="thumbnail"><a href="./blog/posts/quarto-migration/index.html" class="no-external">
-
-<p class="card-img-top"><img src="blog/posts/quarto-migration/featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/posts/quarto-migration/index.html" class="no-external">Migrating my Academic (Hugo Wowchemy) website to Quarto</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/posts/quarto-migration/index.html" class="no-external">
-All started with the Academic Hugo template. As many academics, when I discovered about 6 years ago I though it was the best way to build a nice website for displaying my…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/posts/quarto-migration/index.html" class="no-external">
-<div class="listing-date">
-Mar 25, 2025
-</div>
-<div class="listing-author">
-Juan-Carlos Castillo, Gabriel Cortés
-</div>
-<div class="listing-reading-time">23 min</div>
 </a>
 </div>
 </div>
@@ -1901,7 +2038,7 @@ img.grid-item:hover {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2026-02-27</p>
+<p>Last Update: 2026-03-22</p>
 </div>
   </div>
 </footer>

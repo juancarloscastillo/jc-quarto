@@ -1,0 +1,24 @@
+{
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.quarto/**": true,
+    "**/_site/**": true,
+    "**/_freeze/**": true,
+    "**/docs/site_libs/**": true,
+    "**/_site/site_libs/**": true,
+    "**/.Rproj.user/**": true
+  },
+  "search.exclude": {
+    "**/.quarto/**": true,
+    "**/_site/**": true,
+    "**/_freeze/**": true,
+    "**/docs/site_libs/**": true,
+    "**/_site/site_libs/**": true
+  },
+  "files.exclude": {
+    "**/.quarto": true,
+    "**/_site": true,
+    "**/_freeze": true
+  }
+}

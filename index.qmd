@@ -20,9 +20,9 @@ about:
       href: /contacto.html
 
 listing:
-- id: publication
+- id: publications
   contents: 
-    - publication/posts/*.qmd
+    - references/publications/posts/*.qmd
   sort: date desc
   type: default
   fields: [title, date, author]
@@ -31,7 +31,19 @@ listing:
   sort-ui: false
   feed: false
   page-size: 500
-  
+
+- id: presentations
+  contents: 
+    - references/presentations/posts/*.qmd
+  sort: date desc
+  type: default
+  fields: [title, date, author]
+  max-items: 5
+  categories: false
+  sort-ui: false
+  feed: false
+  page-size: 500
+
 - id: docencia
   contents: 
     - docencia/posts/*/*.qmd
@@ -75,7 +87,7 @@ listing:
   
 - id: tesis
   contents:
-    - tesis/posts/*.qmd
+    - references/thesis/posts/*.qmd
   sort: date desc
   type: default
   fields: [title, date, author]
@@ -147,22 +159,48 @@ Estudi√© en la <span class="hover-image-wrapper"> escuela 227 de Miraflores, Vi√
 ::: {style="text-align: left;"}
 <br>
 
-::: {#publicationh1}
+::: {#references/publicationsh1}
 :::
 
-<p align="left" style="font-size:36px; font-weight:bold;">Publicaciones y Presentaciones recientes</p>
+<p align="left" style="font-size:36px; font-weight:bold;">Publications</p>
 
-:::{#publication}
+:::{#publications}
 :::
 
 ::: {.button}
-[Todas las publicaciones](publication/publication.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+[Todas las publicaciones](references/publications/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
 :::
 
 :::
 :::
 :::
 :::
+
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+<br>
+
+::: {#references/presentationsh1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Presentations</p>
+
+:::{#presentations}
+:::
+
+::: {.button}
+[Todas las presentaciones](references/presentations/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+:::
+:::
+
+
+
 
 ::: {.parallax-container}
 ::: {.parallax-image-container}

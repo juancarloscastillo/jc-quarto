@@ -1,0 +1,22 @@
+---
+title : "Herramientas Para La Apertura Del Flujo de Investigación Científica"
+date : "2022-06-01"
+author : ["Juan-Carlos Castillo"]
+categories : ["Presentation"]
+publication : " Presentación En El Seminario: Ciencia Abierta, ¿es Ciencia Accesible? . Universidad Iberoamericana de México  (Online)"
+publication_short : " Presentación En El Seminario: Ciencia Abierta, ¿es Ciencia Accesible? . Universidad Iberoamericana de México  (Online)"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+---
+[Github Repo](https://github.com/lisa-coes/presentaciones)
+
+
+::: {.callout-note title="How to cite this work"}
+
+Juan-Carlos Castillo (2022). *Herramientas Para La Apertura Del Flujo de Investigación Científica*.  Presentación En El Seminario: Ciencia Abierta, ¿es Ciencia Accesible? . Universidad Iberoamericana de México  (Online)
+
+:::
+

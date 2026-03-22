@@ -1,0 +1,22 @@
+---
+title : "Legitimation and Justice Ideologies in Contexts of Extreme Economic Inequalities."
+date : "2007-01-01"
+author : ["\relax JC Castillo"]
+categories : ["Conference paper"]
+publication : " 4 July, 2007. Portland"
+publication_short : " 4 July, 2007. Portland"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+---
+International Social Justice Project - Working Paper N°125
+
+
+::: {.callout-note title="How to cite this work"}
+
+\relax JC Castillo (2007). *Legitimation and Justice Ideologies in Contexts of Extreme Economic Inequalities.*.  4 July, 2007. Portland
+
+:::
+

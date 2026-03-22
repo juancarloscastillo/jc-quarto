@@ -1609,5 +1609,671 @@
   },
   "tesis/posts/2026_Minorías_Masculinas_.qmd": {
     "2026_Minorías_Masculinas_.html": "93db5343"
+  },
+  "publication/posts/2025_Perceptions_of_Inequ.qmd": {
+    "2025_Perceptions_of_Inequ.html": "2a725195"
+  },
+  "tesis/posts/2026_Preferencias_de_Merc.qmd": {
+    "2026_Preferencias_de_Merc.html": "064305a2"
+  },
+  "blog/posts/quarto-zotero-hook/index.qmd": {
+    "index.html": "5b3cf921"
+  },
+  "references/publications/posts/2002_Creencias_En_La_Just.qmd": {
+    "2002_Creencias_En_La_Just.html": "e7f3fd08"
+  },
+  "references/publications/posts/2006_Justice_Ideologies_i.qmd": {
+    "2006_Justice_Ideologies_i.html": "748ef33a"
+  },
+  "references/publications/posts/2007_Explanations_of_Pove.qmd": {
+    "2007_Explanations_of_Pove.html": "c7e6be51"
+  },
+  "references/publications/posts/2007_Internal_and_Externa.qmd": {
+    "2007_Internal_and_Externa.html": "b7690e2b"
+  },
+  "references/publications/posts/2007_Justice_Ideologies_a.qmd": {
+    "2007_Justice_Ideologies_a.html": "5163f3ac"
+  },
+  "references/publications/posts/2007_Legitimation_and_Jus.qmd": {
+    "2007_Legitimation_and_Jus.html": "f67cee42"
+  },
+  "references/publications/posts/2008_On_the_Justice_of_Oc.qmd": {
+    "2008_On_the_Justice_of_Oc.html": "607fbc08"
+  },
+  "references/publications/posts/2008_Perception_and_Legit.qmd": {
+    "2008_Perception_and_Legit.html": "0fb54650"
+  },
+  "references/publications/posts/2008_The_Empirical_Approa.qmd": {
+    "2008_The_Empirical_Approa.html": "086b4909"
+  },
+  "references/publications/posts/2008_The_Legitimacy_of_th.qmd": {
+    "2008_The_Legitimacy_of_th.html": "b1dfa23a"
+  },
+  "references/publications/posts/2009_Consensus_and_Legiti.qmd": {
+    "2009_Consensus_and_Legiti.html": "1529ccef"
+  },
+  "references/publications/posts/2009_Perception_and_Legit.qmd": {
+    "2009_Perception_and_Legit.html": "9f9bbd52"
+  },
+  "references/publications/posts/2009_The_Influence_of_Att.qmd": {
+    "2009_The_Influence_of_Att.html": "6c38cb69"
+  },
+  "references/publications/posts/2009_The_Legitimacy_of_So.qmd": {
+    "2009_The_Legitimacy_of_So.html": "6331c94f"
+  },
+  "references/publications/posts/2009_What_Are_Just_Salari.qmd": {
+    "2009_What_Are_Just_Salari.html": "50aba84a"
+  },
+  "references/publications/posts/2009_¿Consenso_o_Conflict.qmd": {
+    "2009_¿Consenso_o_Conflict.html": "3fb0c311"
+  },
+  "references/publications/posts/2009_¿Cuál_Es_La_Brecha_S.qmd": {
+    "2009_¿Cuál_Es_La_Brecha_S.html": "2c77b665"
+  },
+  "references/publications/posts/2010_Is_Inequality_Becomi.qmd": {
+    "2010_Is_Inequality_Becomi.html": "345c9048"
+  },
+  "references/publications/posts/2010_Sobre_La_Estabilidad.qmd": {
+    "2010_Sobre_La_Estabilidad.html": "a425ecfe"
+  },
+  "references/publications/posts/2011_Authoritarianism,_So.qmd": {
+    "2011_Authoritarianism,_So.html": "ee0562e3"
+  },
+  "references/publications/posts/2011_Legitimacy_of_Inequa.qmd": {
+    "2011_Legitimacy_of_Inequa.html": "185d40aa"
+  },
+  "references/publications/posts/2011_The_Legitimacy_of_Ec.qmd": {
+    "2011_The_Legitimacy_of_Ec.html": "a7535160"
+  },
+  "references/publications/posts/2012_Contrastes_entre_la_.qmd": {
+    "2012_Contrastes_entre_la_.html": "c76e4a4e"
+  },
+  "references/publications/posts/2012_Is_Inequality_Becomi.qmd": {
+    "2012_Is_Inequality_Becomi.html": "da2c2255"
+  },
+  "references/publications/posts/2012_La_Legitimidad_de_La.qmd": {
+    "2012_La_Legitimidad_de_La.html": "48624d8f"
+  },
+  "references/publications/posts/2012_Percepción_de_Desigu.qmd": {
+    "2012_Percepción_de_Desigu.html": "39fc6997"
+  },
+  "references/publications/posts/2012_Sobre_El_Estudio_Emp.qmd": {
+    "2012_Sobre_El_Estudio_Emp.html": "0e0b6109"
+  },
+  "references/publications/posts/2012_Social_Origin_and_Ci.qmd": {
+    "2012_Social_Origin_and_Ci.html": "94f0265e"
+  },
+  "references/publications/posts/2012_¿Son_los_chilenos_ig.qmd": {
+    "2012_¿Son_los_chilenos_ig.html": "fc60382a"
+  },
+  "references/publications/posts/2013_Argumentative_Writin.qmd": {
+    "2013_Argumentative_Writin.html": "d9be1d24"
+  },
+  "references/publications/posts/2013_Assessment_of_Argume.qmd": {
+    "2013_Assessment_of_Argume.html": "f0246061"
+  },
+  "references/publications/posts/2013_Clivajes_partidarios.qmd": {
+    "2013_Clivajes_partidarios.html": "a98a19a9"
+  },
+  "references/publications/posts/2013_Educación,_equidad_y.qmd": {
+    "2013_Educación,_equidad_y.html": "1d969e4e"
+  },
+  "references/publications/posts/2013_Todos_Somos_de_Clase.qmd": {
+    "2013_Todos_Somos_de_Clase.html": "8f3b848f"
+  },
+  "references/publications/posts/2014_Actitudes_hacia_el_t.qmd": {
+    "2014_Actitudes_hacia_el_t.html": "b1238989"
+  },
+  "references/publications/posts/2014_Procedural_Justice,_.qmd": {
+    "2014_Procedural_Justice,_.html": "ea3cc4f7"
+  },
+  "references/publications/posts/2014_Redistribución_e_Imp.qmd": {
+    "2014_Redistribución_e_Imp.html": "ca57c281"
+  },
+  "references/publications/posts/2014_Social_Inequality_an.qmd": {
+    "2014_Social_Inequality_an.html": "d2c11f49"
+  },
+  "references/publications/posts/2015_Aprendizaje_de_La_Ci.qmd": {
+    "2015_Aprendizaje_de_La_Ci.html": "60142d21"
+  },
+  "references/publications/posts/2015_Curricular_Guideline.qmd": {
+    "2015_Curricular_Guideline.html": "f27b2b2b"
+  },
+  "references/publications/posts/2015_Desigualdad_Económic.qmd": {
+    "2015_Desigualdad_Económic.html": "ba5f894c"
+  },
+  "references/publications/posts/2015_Desigualdad_Social_y.qmd": {
+    "2015_Desigualdad_Social_y.html": "fd71b6fb"
+  },
+  "references/publications/posts/2015_Educación_ciudadana_.qmd": {
+    "2015_Educación_ciudadana_.html": "171a1160"
+  },
+  "references/publications/posts/2015_Income_Inequality,_D.qmd": {
+    "2015_Income_Inequality,_D.html": "5efceab5"
+  },
+  "references/publications/posts/2015_Inequality,_Distribu.qmd": {
+    "2015_Inequality,_Distribu.html": "f43a66f9"
+  },
+  "references/publications/posts/2015_Mitigating_the_Polit.qmd": {
+    "2015_Mitigating_the_Polit.html": "d7657422"
+  },
+  "references/publications/posts/2015_Percepción_de_Confli.qmd": {
+    "2015_Percepción_de_Confli.html": "ee878584"
+  },
+  "references/publications/posts/2015_Poverty_Attributions.qmd": {
+    "2015_Poverty_Attributions.html": "c1248e20"
+  },
+  "references/publications/posts/2016_Just_Salaries_in_Une.qmd": {
+    "2016_Just_Salaries_in_Une.html": "c78c551b"
+  },
+  "references/publications/posts/2016_Sintomatología_en_ad.qmd": {
+    "2016_Sintomatología_en_ad.html": "594272e3"
+  },
+  "references/publications/posts/2017_Investigando_a_la_él.qmd": {
+    "2017_Investigando_a_la_él.html": "1ad3f049"
+  },
+  "references/publications/posts/2017_Political_Trust_in_L.qmd": {
+    "2017_Political_Trust_in_L.html": "54ae8b05"
+  },
+  "references/publications/posts/2018_Dimensiones_Comunes_.qmd": {
+    "2018_Dimensiones_Comunes_.html": "35caa029"
+  },
+  "references/publications/posts/2018_Income,_Egalitariani.qmd": {
+    "2018_Income,_Egalitariani.html": "155296a6"
+  },
+  "references/publications/posts/2018_Measurement_Model_an.qmd": {
+    "2018_Measurement_Model_an.html": "d4972ebd"
+  },
+  "references/publications/posts/2018_The_Political_Social.qmd": {
+    "2018_The_Political_Social.html": "21a374a3"
+  },
+  "references/publications/posts/2019_Cambios_En_La_Percep.qmd": {
+    "2019_Cambios_En_La_Percep.html": "ebbe0559"
+  },
+  "references/publications/posts/2019_Deserving_a_Just_Pen.qmd": {
+    "2019_Deserving_a_Just_Pen.html": "44d558f3"
+  },
+  "references/publications/posts/2019_Medición_de_actitude.qmd": {
+    "2019_Medición_de_actitude.html": "1f83d019"
+  },
+  "references/publications/posts/2019_Meritocracia_y_Desig.qmd": {
+    "2019_Meritocracia_y_Desig.html": "87a15c8e"
+  },
+  "references/publications/posts/2019_Meritocracia_y_Redis.qmd": {
+    "2019_Meritocracia_y_Redis.html": "e890bf30"
+  },
+  "references/publications/posts/2019_Risk_Exposure,_Human.qmd": {
+    "2019_Risk_Exposure,_Human.html": "b090bd15"
+  },
+  "references/publications/posts/2019_Studying_Meritocracy.qmd": {
+    "2019_Studying_Meritocracy.html": "d4c8b359"
+  },
+  "references/publications/posts/2019_The_Crowdsourced_Rep.qmd": {
+    "2019_The_Crowdsourced_Rep.html": "fc0cdd30"
+  },
+  "references/publications/posts/2020_Dinámicas_de_Legitim.qmd": {
+    "2020_Dinámicas_de_Legitim.html": "b43bb522"
+  },
+  "references/publications/posts/2020_Economic_Elites’_Att.qmd": {
+    "2020_Economic_Elites’_Att.html": "ed18cd54"
+  },
+  "references/publications/posts/2020_Patterns_of_Civic_an.qmd": {
+    "2020_Patterns_of_Civic_an.html": "336a486d"
+  },
+  "references/publications/posts/2020_Young_Citizens_Parti.qmd": {
+    "2020_Young_Citizens_Parti.html": "089da462"
+  },
+  "references/publications/posts/2020_¿Fruto_Del_Esfuerzo_.qmd": {
+    "2020_¿Fruto_Del_Esfuerzo_.html": "94af85a3"
+  },
+  "references/publications/posts/2021_Cambios_En_La_Partic.qmd": {
+    "2021_Cambios_En_La_Partic.html": "0cc69bdd"
+  },
+  "references/publications/posts/2021_Conceptos_y_Medición.qmd": {
+    "2021_Conceptos_y_Medición.html": "7fab5d25"
+  },
+  "references/publications/posts/2021_Concepts_and_Measure.qmd": {
+    "2021_Concepts_and_Measure.html": "716d5b0d"
+  },
+  "references/publications/posts/2021_Impuestos,_Redistrib.qmd": {
+    "2021_Impuestos,_Redistrib.html": "f05fd499"
+  },
+  "references/publications/posts/2021_Measuring_Attitudes_.qmd": {
+    "2021_Measuring_Attitudes_.html": "d625bdc6"
+  },
+  "references/publications/posts/2021_Measuring_Perception.qmd": {
+    "2021_Measuring_Perception.html": "83b613ab"
+  },
+  "references/publications/posts/2021_Socialización_de_La_.qmd": {
+    "2021_Socialización_de_La_.html": "6c0ce6ef"
+  },
+  "references/publications/posts/2022_Cohesión_Social_En_C.qmd": {
+    "2022_Cohesión_Social_En_C.html": "00a49aa3"
+  },
+  "references/publications/posts/2022_Does_Information_abo.qmd": {
+    "2022_Does_Information_abo.html": "6982b5f7"
+  },
+  "references/publications/posts/2022_Enfermedades_Crónica.qmd": {
+    "2022_Enfermedades_Crónica.html": "4695ba95"
+  },
+  "references/publications/posts/2022_Hacia_Una_Propuesta_.qmd": {
+    "2022_Hacia_Una_Propuesta_.html": "8f0e2c7c"
+  },
+  "references/publications/posts/2022_Herramientas_Para_La.qmd": {
+    "2022_Herramientas_Para_La.html": "81bcebfb"
+  },
+  "references/publications/posts/2022_Measurement_and_Anal.qmd": {
+    "2022_Measurement_and_Anal.html": "092f6ab6"
+  },
+  "references/publications/posts/2022_Observing_Many_Resea.qmd": {
+    "2022_Observing_Many_Resea.html": "03ecc7b0"
+  },
+  "references/publications/posts/2022_Perceived_Economic_I.qmd": {
+    "2022_Perceived_Economic_I.html": "160b9499"
+  },
+  "references/publications/posts/2022_Percepciones_de_Desi.qmd": {
+    "2022_Percepciones_de_Desi.html": "aec1b9a5"
+  },
+  "references/publications/posts/2022_Perception_of_Econom.qmd": {
+    "2022_Perception_of_Econom.html": "77a56fec"
+  },
+  "references/publications/posts/2022_Preferences_for_Redi.qmd": {
+    "2022_Preferences_for_Redi.html": "a6838f68"
+  },
+  "references/publications/posts/2022_Presentación_Cohesió.qmd": {
+    "2022_Presentación_Cohesió.html": "4d4a886f"
+  },
+  "references/publications/posts/2022_Protocolos_Reproduci.qmd": {
+    "2022_Protocolos_Reproduci.html": "195e47fb"
+  },
+  "references/publications/posts/2022_Redes_de_Contacto_y_.qmd": {
+    "2022_Redes_de_Contacto_y_.html": "8a9b7fa9"
+  },
+  "references/publications/posts/2022_Taller_Introducción_.qmd": {
+    "2022_Taller_Introducción_.html": "d9b163a6"
+  },
+  "references/publications/posts/2022_Taller_Preregistros_.qmd": {
+    "2022_Taller_Preregistros_.html": "d75f46f4"
+  },
+  "references/publications/posts/2022_The_Ideological_Unde.qmd": {
+    "2022_The_Ideological_Unde.html": "a07413c4"
+  },
+  "references/publications/posts/2022_The_Two_Faces_of_Sup.qmd": {
+    "2022_The_Two_Faces_of_Sup.html": "c66cf7e2"
+  },
+  "references/publications/posts/2022_Trust_in_Political_I.qmd": {
+    "2022_Trust_in_Political_I.html": "6a2d8a03"
+  },
+  "references/publications/posts/2022_Youth_Dispositions_t.qmd": {
+    "2022_Youth_Dispositions_t.html": "fd6ebbbe"
+  },
+  "references/publications/posts/2023_A_Multidimensional_A.qmd": {
+    "2023_A_Multidimensional_A.html": "af6c98ba"
+  },
+  "references/publications/posts/2023_Brechas_de_Género_En.qmd": {
+    "2023_Brechas_de_Género_En.html": "47aedcca"
+  },
+  "references/publications/posts/2023_Concepts,_Measuremen.qmd": {
+    "2023_Concepts,_Measuremen.html": "344564ff"
+  },
+  "references/publications/posts/2023_Diseño_y_Gestión_de_.qmd": {
+    "2023_Diseño_y_Gestión_de_.html": "9d541b47"
+  },
+  "references/publications/posts/2023_Flujo_y_Componentes_.qmd": {
+    "2023_Flujo_y_Componentes_.html": "c0e773e7"
+  },
+  "references/publications/posts/2023_Perceived_Salary_and.qmd": {
+    "2023_Perceived_Salary_and.html": "f7b622c1"
+  },
+  "references/publications/posts/2023_Percepción_de_Desigu.qmd": {
+    "2023_Percepción_de_Desigu.html": "34a6d9b2"
+  },
+  "references/publications/posts/2023_Perceptions_and_Pref.qmd": {
+    "2023_Perceptions_and_Pref.html": "f4b89ba9"
+  },
+  "references/publications/posts/2023_Social_Cohesion_and_.qmd": {
+    "2023_Social_Cohesion_and_.html": "3a16a0da"
+  },
+  "references/publications/posts/2023_Socialización_de_La_.qmd": {
+    "2023_Socialización_de_La_.html": "1e51a389"
+  },
+  "references/publications/posts/2023_The_Socialization_of.qmd": {
+    "2023_The_Socialization_of.html": "1d66c9a5"
+  },
+  "references/publications/posts/2024_Barreras_Para_La_Cie.qmd": {
+    "2024_Barreras_Para_La_Cie.html": "1bae26a8"
+  },
+  "references/publications/posts/2024_Does_Information_abo.qmd": {
+    "2024_Does_Information_abo.html": "2c6bffe1"
+  },
+  "references/publications/posts/2024_Herramientas_de_Cien.qmd": {
+    "2024_Herramientas_de_Cien.html": "6449d860"
+  },
+  "references/publications/posts/2024_La_socialización_de_.qmd": {
+    "2024_La_socialización_de_.html": "124cc799"
+  },
+  "references/publications/posts/2024_Measuring_Social_Coh.qmd": {
+    "2024_Measuring_Social_Coh.html": "c08c786f"
+  },
+  "references/publications/posts/2024_Meritocracia_y_Justi.qmd": {
+    "2024_Meritocracia_y_Justi.html": "86f15cf6"
+  },
+  "references/publications/posts/2024_Social_Cohesion_and_.qmd": {
+    "2024_Social_Cohesion_and_.html": "2a41236e"
+  },
+  "references/publications/posts/2024_Social_Inequalities_.qmd": {
+    "2024_Social_Inequalities_.html": "5371d428"
+  },
+  "references/publications/posts/2024_The_Socialization_of.qmd": {
+    "2024_The_Socialization_of.html": "0f947465"
+  },
+  "references/publications/posts/2024_¿Las_Estudiantes_Sub.qmd": {
+    "2024_¿Las_Estudiantes_Sub.html": "dc81e27e"
+  },
+  "references/publications/posts/2025_Changes_in_the_Justi.qmd": {
+    "2025_Changes_in_the_Justi.html": "dbfef8bb"
+  },
+  "references/publications/posts/2025_Merit_as_an_Attitude.qmd": {
+    "2025_Merit_as_an_Attitude.html": "f65e783e"
+  },
+  "references/publications/posts/2025_Perceptions_of_Inequ.qmd": {
+    "2025_Perceptions_of_Inequ.html": "7d5196fc"
+  },
+  "references/publications/posts/2025_The_Reliability_of_R.qmd": {
+    "2025_The_Reliability_of_R.html": "e8c10358"
+  },
+  "references/publications/publication.qmd": {
+    "publication.html": "5208c836"
+  },
+  "references/thesis/posts/2014_Evaluación_de_La_Imp.qmd": {
+    "2014_Evaluación_de_La_Imp.html": "a8e07563"
+  },
+  "references/thesis/posts/2014_Stability_and_Change.qmd": {
+    "2014_Stability_and_Change.html": "85b555ea"
+  },
+  "references/thesis/posts/2015_Aspectos_Subjetivos_.qmd": {
+    "2015_Aspectos_Subjetivos_.html": "182b15c8"
+  },
+  "references/thesis/posts/2015_Discusión_Teórica_y_.qmd": {
+    "2015_Discusión_Teórica_y_.html": "1fa73964"
+  },
+  "references/thesis/posts/2015_Prevención_En_Salud_.qmd": {
+    "2015_Prevención_En_Salud_.html": "7eb4b8b2"
+  },
+  "references/thesis/posts/2015_Todos_Somos_Amigos,_.qmd": {
+    "2015_Todos_Somos_Amigos,_.html": "0c2ce387"
+  },
+  "references/thesis/posts/2015_¿Qué_Puede_Hacer_La_.qmd": {
+    "2015_¿Qué_Puede_Hacer_La_.html": "fd9c6f5e"
+  },
+  "references/thesis/posts/2016_Desigualdad_y_Compro.qmd": {
+    "2016_Desigualdad_y_Compro.html": "649ffb38"
+  },
+  "references/thesis/posts/2016_Legitimidad_Del_Sist.qmd": {
+    "2016_Legitimidad_Del_Sist.html": "f8922b8d"
+  },
+  "references/thesis/posts/2016_Medición_En_Ciudadan.qmd": {
+    "2016_Medición_En_Ciudadan.html": "e94cb24a"
+  },
+  "references/thesis/posts/2017_Construyendo_Involuc.qmd": {
+    "2017_Construyendo_Involuc.html": "d172ea25"
+  },
+  "references/thesis/posts/2017_Justicia_de_Las_Pens.qmd": {
+    "2017_Justicia_de_Las_Pens.html": "834b2415"
+  },
+  "references/thesis/posts/2017_La_Formación_Continu.qmd": {
+    "2017_La_Formación_Continu.html": "ab559e9e"
+  },
+  "references/thesis/posts/2017_Mecanismos_de_Partic.qmd": {
+    "2017_Mecanismos_de_Partic.html": "bbbd3ab9"
+  },
+  "references/thesis/posts/2017_Merezco_Estar_Aquı́_.qmd": {
+    "2017_Merezco_Estar_Aquı́_.html": "5af231e9"
+  },
+  "references/thesis/posts/2017_Relevancia_de_La_Con.qmd": {
+    "2017_Relevancia_de_La_Con.html": "9c830f4a"
+  },
+  "references/thesis/posts/2018_Balance_Legistlativo.qmd": {
+    "2018_Balance_Legistlativo.html": "673c9a3b"
+  },
+  "references/thesis/posts/2018_Chile_Sociodemografí.qmd": {
+    "2018_Chile_Sociodemografí.html": "c6954648"
+  },
+  "references/thesis/posts/2018_Desigualdad,_Desarro.qmd": {
+    "2018_Desigualdad,_Desarro.html": "449d5bae"
+  },
+  "references/thesis/posts/2018_Desigualdad_y_Ciudad.qmd": {
+    "2018_Desigualdad_y_Ciudad.html": "be712aa5"
+  },
+  "references/thesis/posts/2018_Estatus_Social_Subje.qmd": {
+    "2018_Estatus_Social_Subje.html": "34ac60eb"
+  },
+  "references/thesis/posts/2018_Facilitadores_y_Limi.qmd": {
+    "2018_Facilitadores_y_Limi.html": "500c1e3b"
+  },
+  "references/thesis/posts/2018_La_Dimensión_Subjeti.qmd": {
+    "2018_La_Dimensión_Subjeti.html": "a06b7b5c"
+  },
+  "references/thesis/posts/2018_Prácticas_de_Inclusi.qmd": {
+    "2018_Prácticas_de_Inclusi.html": "89714bc5"
+  },
+  "references/thesis/posts/2018_¿Menos_Confianza,_Me.qmd": {
+    "2018_¿Menos_Confianza,_Me.html": "a8479924"
+  },
+  "references/thesis/posts/2019_Explorando_La_Asocia.qmd": {
+    "2019_Explorando_La_Asocia.html": "23a3387a"
+  },
+  "references/thesis/posts/2019_Intereses_Fluidos_Mo.qmd": {
+    "2019_Intereses_Fluidos_Mo.html": "645f427c"
+  },
+  "references/thesis/posts/2019_Inégalité_Subjective.qmd": {
+    "2019_Inégalité_Subjective.html": "767df82c"
+  },
+  "references/thesis/posts/2021_Enfermedades_Crónica.qmd": {
+    "2021_Enfermedades_Crónica.html": "098ffac9"
+  },
+  "references/thesis/posts/2021_La_Composición_Socia.qmd": {
+    "2021_La_Composición_Socia.html": "8a5e8678"
+  },
+  "references/thesis/posts/2022_Bienestar,_Trabajo_D.qmd": {
+    "2022_Bienestar,_Trabajo_D.html": "a782f6f7"
+  },
+  "references/thesis/posts/2022_Determinantes_de_La_.qmd": {
+    "2022_Determinantes_de_La_.html": "53d8de36"
+  },
+  "references/thesis/posts/2022_El_Efecto_de_Las_Cre.qmd": {
+    "2022_El_Efecto_de_Las_Cre.html": "58a77b7d"
+  },
+  "references/thesis/posts/2022_Factores_Determinant.qmd": {
+    "2022_Factores_Determinant.html": "916cd16a"
+  },
+  "references/thesis/posts/2022_¿Quién_Justifica_Qué.qmd": {
+    "2022_¿Quién_Justifica_Qué.html": "c794a4e0"
+  },
+  "references/thesis/posts/2023_Aceptar_La_Diversida.qmd": {
+    "2023_Aceptar_La_Diversida.html": "870c866e"
+  },
+  "references/thesis/posts/2023_El_Lenguaje_Como_Bre.qmd": {
+    "2023_El_Lenguaje_Como_Bre.html": "5fab6d4e"
+  },
+  "references/thesis/posts/2023_Ellos_Contra_Nosotro.qmd": {
+    "2023_Ellos_Contra_Nosotro.html": "e93e4dff"
+  },
+  "references/thesis/posts/2023_¿Qué_Pueden_Hacer_La.qmd": {
+    "2023_¿Qué_Pueden_Hacer_La.html": "a19bbd62"
+  },
+  "references/thesis/posts/2024_El_Conflicto_Intercu.qmd": {
+    "2024_El_Conflicto_Intercu.html": "61850277"
+  },
+  "references/thesis/posts/2024_El_Rol_de_La_Sociali.qmd": {
+    "2024_El_Rol_de_La_Sociali.html": "058d7127"
+  },
+  "references/thesis/posts/2025_Del_Apoyo_a_La_Acció.qmd": {
+    "2025_Del_Apoyo_a_La_Acció.html": "98ce3bbb"
+  },
+  "references/thesis/posts/2025_Desigualdades_Educat.qmd": {
+    "2025_Desigualdades_Educat.html": "a572da58"
+  },
+  "references/thesis/posts/2025_Percepciones_Sobre_L.qmd": {
+    "2025_Percepciones_Sobre_L.html": "56ca8575"
+  },
+  "references/thesis/posts/2026_De_La_Institucionali.qmd": {
+    "2026_De_La_Institucionali.html": "2a710092"
+  },
+  "references/thesis/posts/2026_Minorías_Masculinas_.qmd": {
+    "2026_Minorías_Masculinas_.html": "76797a53"
+  },
+  "references/thesis/posts/2026_Preferencias_de_Merc.qmd": {
+    "2026_Preferencias_de_Merc.html": "7740895e"
+  },
+  "references/thesis/tesis.qmd": {
+    "tesis.html": "859d2716"
+  },
+  "references/publications/index.qmd": {
+    "index.html": "5035fb30"
+  },
+  "references/presentations/index.qmd": {
+    "index.html": "5790fb7c"
+  },
+  "references/presentations/posts/2006_Justice_Ideologies_i.qmd": {
+    "2006_Justice_Ideologies_i.html": "2187556a"
+  },
+  "references/presentations/posts/2007_Explanations_of_Pove.qmd": {
+    "2007_Explanations_of_Pove.html": "b16d2010"
+  },
+  "references/presentations/posts/2007_Justice_Ideologies_a.qmd": {
+    "2007_Justice_Ideologies_a.html": "4bb92990"
+  },
+  "references/presentations/posts/2007_Legitimation_and_Jus.qmd": {
+    "2007_Legitimation_and_Jus.html": "c37a11f7"
+  },
+  "references/presentations/posts/2008_On_the_Justice_of_Oc.qmd": {
+    "2008_On_the_Justice_of_Oc.html": "6f979f06"
+  },
+  "references/presentations/posts/2008_Perception_and_Legit.qmd": {
+    "2008_Perception_and_Legit.html": "bd4f88a0"
+  },
+  "references/presentations/posts/2008_The_Empirical_Approa.qmd": {
+    "2008_The_Empirical_Approa.html": "eee420ac"
+  },
+  "references/presentations/posts/2008_The_Legitimacy_of_th.qmd": {
+    "2008_The_Legitimacy_of_th.html": "d296670b"
+  },
+  "references/presentations/posts/2009_Consensus_and_Legiti.qmd": {
+    "2009_Consensus_and_Legiti.html": "81d316d7"
+  },
+  "references/presentations/posts/2009_Perception_and_Legit.qmd": {
+    "2009_Perception_and_Legit.html": "100f0c45"
+  },
+  "references/presentations/posts/2009_The_Influence_of_Att.qmd": {
+    "2009_The_Influence_of_Att.html": "94a988b3"
+  },
+  "references/presentations/posts/2009_The_Legitimacy_of_So.qmd": {
+    "2009_The_Legitimacy_of_So.html": "aedc728d"
+  },
+  "references/presentations/posts/2009_What_Are_Just_Salari.qmd": {
+    "2009_What_Are_Just_Salari.html": "11dd1e6e"
+  },
+  "references/presentations/posts/2009_¿Consenso_o_Conflict.qmd": {
+    "2009_¿Consenso_o_Conflict.html": "713c5fed"
+  },
+  "references/presentations/posts/2010_Is_Inequality_Becomi.qmd": {
+    "2010_Is_Inequality_Becomi.html": "a7a74bc9"
+  },
+  "references/presentations/posts/2011_Authoritarianism,_So.qmd": {
+    "2011_Authoritarianism,_So.html": "f469d2b6"
+  },
+  "references/presentations/posts/2012_Social_Origin_and_Ci.qmd": {
+    "2012_Social_Origin_and_Ci.html": "012a2f37"
+  },
+  "references/presentations/posts/2020_Dinámicas_de_Legitim.qmd": {
+    "2020_Dinámicas_de_Legitim.html": "be9569e6"
+  },
+  "references/presentations/posts/2021_Concepts_and_Measure.qmd": {
+    "2021_Concepts_and_Measure.html": "2b9aa5f9"
+  },
+  "references/presentations/posts/2021_Socialización_de_La_.qmd": {
+    "2021_Socialización_de_La_.html": "7a7c2bc1"
+  },
+  "references/presentations/posts/2022_Herramientas_Para_La.qmd": {
+    "2022_Herramientas_Para_La.html": "70292d34"
+  },
+  "references/presentations/posts/2022_Measurement_and_Anal.qmd": {
+    "2022_Measurement_and_Anal.html": "11f131d5"
+  },
+  "references/presentations/posts/2022_Percepciones_de_Desi.qmd": {
+    "2022_Percepciones_de_Desi.html": "eca8f93d"
+  },
+  "references/presentations/posts/2022_Presentación_Cohesió.qmd": {
+    "2022_Presentación_Cohesió.html": "6193a332"
+  },
+  "references/presentations/posts/2022_Protocolos_Reproduci.qmd": {
+    "2022_Protocolos_Reproduci.html": "6b0043b8"
+  },
+  "references/presentations/posts/2022_Taller_Introducción_.qmd": {
+    "2022_Taller_Introducción_.html": "6676de2b"
+  },
+  "references/presentations/posts/2022_Taller_Preregistros_.qmd": {
+    "2022_Taller_Preregistros_.html": "8f2aa43f"
+  },
+  "references/presentations/posts/2022_Youth_Dispositions_t.qmd": {
+    "2022_Youth_Dispositions_t.html": "de98eec8"
+  },
+  "references/presentations/posts/2023_Brechas_de_Género_En.qmd": {
+    "2023_Brechas_de_Género_En.html": "4e1dd890"
+  },
+  "references/presentations/posts/2023_Concepts,_Measuremen.qmd": {
+    "2023_Concepts,_Measuremen.html": "271bf11c"
+  },
+  "references/presentations/posts/2023_Diseño_y_Gestión_de_.qmd": {
+    "2023_Diseño_y_Gestión_de_.html": "72e6672b"
+  },
+  "references/presentations/posts/2023_Flujo_y_Componentes_.qmd": {
+    "2023_Flujo_y_Componentes_.html": "42756cb1"
+  },
+  "references/presentations/posts/2023_Perceived_Salary_and.qmd": {
+    "2023_Perceived_Salary_and.html": "58f68187"
+  },
+  "references/presentations/posts/2023_Perceptions_and_Pref.qmd": {
+    "2023_Perceptions_and_Pref.html": "cc13b91c"
+  },
+  "references/presentations/posts/2023_Socialización_de_La_.qmd": {
+    "2023_Socialización_de_La_.html": "26085bee"
+  },
+  "references/presentations/posts/2023_The_Socialization_of.qmd": {
+    "2023_The_Socialization_of.html": "de0d5b57"
+  },
+  "references/presentations/posts/2024_Barreras_Para_La_Cie.qmd": {
+    "2024_Barreras_Para_La_Cie.html": "e54c571a"
+  },
+  "references/presentations/posts/2024_Does_Information_abo.qmd": {
+    "2024_Does_Information_abo.html": "3c1c2def"
+  },
+  "references/presentations/posts/2024_Herramientas_de_Cien.qmd": {
+    "2024_Herramientas_de_Cien.html": "d214cd60"
+  },
+  "references/presentations/posts/2024_Measuring_Social_Coh.qmd": {
+    "2024_Measuring_Social_Coh.html": "2e30786e"
+  },
+  "references/presentations/posts/2024_Meritocracia_y_Justi.qmd": {
+    "2024_Meritocracia_y_Justi.html": "d4ecb71b"
+  },
+  "references/presentations/posts/2024_Social_Cohesion_and_.qmd": {
+    "2024_Social_Cohesion_and_.html": "3a3e47f5"
+  },
+  "references/presentations/posts/2024_Social_Inequalities_.qmd": {
+    "2024_Social_Inequalities_.html": "15dbd9e6"
+  },
+  "references/presentations/posts/2024_¿Las_Estudiantes_Sub.qmd": {
+    "2024_¿Las_Estudiantes_Sub.html": "97772e7c"
+  },
+  "references/publications/posts/2026_Justification_Trajec.qmd": {
+    "2026_Justification_Trajec.html": "7423642c"
+  },
+  "blog/posts/zotero-quarto-website/index.qmd": {
+    "index.html": "c0ff1a59"
+  },
+  "references/thesis/posts/2026_[En_Desarrollo]_Pref.qmd": {
+    "2026_[En_Desarrollo]_Pref.html": "4bb24edd"
   }
 }

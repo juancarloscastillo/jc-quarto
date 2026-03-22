@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run: pre-render R scripts",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "Rscript tesis/posts/bibtex_2academic_plus_tesis_quarto.R && Rscript publication/posts/bibtex_2academic_plus.R"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

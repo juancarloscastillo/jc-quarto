@@ -1,0 +1,20 @@
+---
+title : "Mecanismos de Participación Ciudadana"
+date : "2017-01-01"
+author : ["Alonso Moller", "Gabriela Zuniga"]
+categories : ["Manuscript"]
+publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Alonso Moller, Gabriela Zuniga (2017). *Mecanismos de Participación Ciudadana*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

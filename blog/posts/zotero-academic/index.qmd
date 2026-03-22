@@ -11,6 +11,13 @@ about:
 ---
 This post explains how to automatically extract publications stored in Zotero (or in any reference manager exportable to Bibtex) and publish them as a publication record in hugo-academic using blogdown/R
 
+::: {.callout-warning}
+## Outdated post
+
+This post is outdated, as I no longer use the hugo-academic theme for my website. However, I keep it here as it might be useful for some people. If you want to know about the alternative for linking Zotero entries to my **Quarto website**, check [this post](/blog/posts/quarto-zotero-hook/index.html).
+:::
+
+
 ## Overview
 
 After developing and maintaining a [personal website generated vía Rmarkdown/Jekyll](https://juancarloscastillo.github.io/jc-castillo/) for some years, I decided to look for an alternative that allowed me a better organization of my academic work. I wanted to be able to establish links between many things  that where connected but in my site appeared as unrelated, and I also wanted a smoother navigation and searching of content, hopefully using some R tools. After looking for a while the best choice I found was the static site generator [hugo](https://gohugo.io/) via [R/blogdown](https://bookdown.org/yihui/blogdown/), which I was already using for websites of some of my seminars. After trying a couple of themes I decided to choose the more traditional way for this kind of objective, which is the academic theme.

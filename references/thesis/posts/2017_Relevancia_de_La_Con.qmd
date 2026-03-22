@@ -1,0 +1,20 @@
+---
+title : "Relevancia de La Convocatoria de Investigación En Educación Del Consejo Nacional de Educación En La Trayectoria Académica de Los Finalistas Adjudicados y No Adjudicados de Los Años 2014. 2015 y 2016."
+date : "2017-01-01"
+author : ["Javier Garcia", "Valentina Riquelme"]
+categories : ["Manuscript"]
+publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Javier Garcia, Valentina Riquelme (2017). *Relevancia de La Convocatoria de Investigación En Educación Del Consejo Nacional de Educación En La Trayectoria Académica de Los Finalistas Adjudicados y No Adjudicados de Los Años 2014. 2015 y 2016.*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+
+:::
+

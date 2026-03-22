@@ -38,9 +38,11 @@ website:
     left:
       - href: index.qmd#proyectosh1
         text: Proyectos
-      - href: index.qmd#publicationh1
+      - file: references/publications/index.qmd
         text: Publicaciones
-      - href: index.qmd#docenciah1
+      - file: references/presentations/index.qmd
+        text: Presentaciones
+      - href: index.qmd#docenciah1      
         text: Docencia
       - href: index.qmd#tesish1
         text: Tesis  
