@@ -1,7 +1,7 @@
 ---
 title : "Clivajes partidarios y cambios en preferencias distributivas en Chile"
 date : "2013-01-01"
-author : ["Juan-Carlos Castillo", "Ignacio Madero", "Alan Salamovich"]
+author : "Castillo, Juan-Carlos; Madero, Ignacio & Salamovich, Alan"
 categories : ["Journal Article"]
 publication : "Revista de Ciencia Política, 33(2) 469--488  [https://doi.org/10.4067/S0718-090X2013000200003](https://doi.org/10.4067/S0718-090X2013000200003)"
 publication_short : "Revista de Ciencia Política, 33(2) 469--488  [https://doi.org/10.4067/S0718-090X2013000200003](https://doi.org/10.4067/S0718-090X2013000200003)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Ignacio Madero, Alan Salamovich (2013). *Clivajes partidarios y cambios en preferencias distributivas en Chile*. Revista de Ciencia Política, 33(2) 469--488  [https://doi.org/10.4067/S0718-090X2013000200003](https://doi.org/10.4067/S0718-090X2013000200003)
+Castillo, Juan-Carlos; Madero, Ignacio & Salamovich, Alan (2013). *Clivajes partidarios y cambios en preferencias distributivas en Chile*. Revista de Ciencia Política, 33(2) 469--488  [https://doi.org/10.4067/S0718-090X2013000200003](https://doi.org/10.4067/S0718-090X2013000200003)
 
 :::
 

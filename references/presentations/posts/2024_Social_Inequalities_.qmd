@@ -1,7 +1,7 @@
 ---
 title : "Social Inequalities in the Global South"
 date : "2024-04-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Presentation"]
 publication : " Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz"
 publication_short : " Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz"
@@ -19,7 +19,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2024). *Social Inequalities in the Global South*.  Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz
+Castillo, Juan-Carlos (2024). *Social Inequalities in the Global South*.  Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Cambios En La Percepción y Justificación de Desigualdad Salarial En Chile"
 date : "2019-01-01"
-author : ["Juan-Carlos Castillo", "Francisco Meneses", "Julio Iturra", "Luis Maldonado"]
+author : "Castillo, Juan-Carlos; Meneses, Francisco; Iturra, Julio & Maldonado, Luis"
 categories : ["Journal Article"]
 publication : "Análisis del Año 149--163 "
 publication_short : "Análisis del Año 149--163 "
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Francisco Meneses, Julio Iturra, Luis Maldonado (2019). *Cambios En La Percepción y Justificación de Desigualdad Salarial En Chile*. Análisis del Año 149--163 
+Castillo, Juan-Carlos; Meneses, Francisco; Iturra, Julio & Maldonado, Luis (2019). *Cambios En La Percepción y Justificación de Desigualdad Salarial En Chile*. Análisis del Año 149--163 
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)"
 date : "2025-09-01"
-author : ["Juan Carlos Castillo", "Andreas Laffert", "Kevin Carrasco", "Julio Iturra-Sanhueza"]
+author : "Castillo, Juan Carlos; Laffert, Andreas; Carrasco, Kevin & Iturra-Sanhueza, Julio"
 categories : ["Journal Article"]
 publication : "Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)"
 publication_short : "Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Carlos Castillo, Andreas Laffert, Kevin Carrasco, Julio Iturra-Sanhueza (2025). *Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)*. Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)
+Castillo, Juan Carlos; Laffert, Andreas; Carrasco, Kevin & Iturra-Sanhueza, Julio (2025). *Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)*. Frontiers in Sociology, 10 1634219  [https://doi.org/10.3389/fsoc.2025.1634219](https://doi.org/10.3389/fsoc.2025.1634219)
 
 :::
 

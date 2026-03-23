@@ -1,7 +1,7 @@
 ---
 title : "Balance Legistlativo, Adhesión al Sistema Político y Preferencias Redistributivas En América Latina"
 date : "2018-01-01"
-author : ["Sofia Montedonico"]
+author : "Montedonico, Sofia"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -46,7 +46,7 @@ dado que algún elemento de ello genera un desincentivo hacia la redistribución
 
 ::: {.callout-note title="How to cite this work"}
 
-Sofia Montedonico (2018). *Balance Legistlativo, Adhesión al Sistema Político y Preferencias Redistributivas En América Latina*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Montedonico, Sofia (2018). *Balance Legistlativo, Adhesión al Sistema Político y Preferencias Redistributivas En América Latina*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Desigualdad Social y Cambios En Las Expectativas de Participación Política de Los Estudiantes En Chile"
 date : "2015-01-01"
-author : ["Juan-Carlos Castillo", "Daniel Miranda", "Macarena Bonhomme"]
+author : "Castillo, Juan-Carlos; Miranda, Daniel & Bonhomme, Macarena"
 categories : ["Book Section"]
 publication : "  In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 459--486 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3"
 publication_short : "  In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 459--486 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3"
@@ -18,7 +18,7 @@ Proyecto Fondecyt Formación Ciudadana I
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Daniel Miranda, Macarena Bonhomme (2015). *Desigualdad Social y Cambios En Las Expectativas de Participación Política de Los Estudiantes En Chile*.   In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 459--486 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3
+Castillo, Juan-Carlos; Miranda, Daniel & Bonhomme, Macarena (2015). *Desigualdad Social y Cambios En Las Expectativas de Participación Política de Los Estudiantes En Chile*.   In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 459--486 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3
 
 :::
 

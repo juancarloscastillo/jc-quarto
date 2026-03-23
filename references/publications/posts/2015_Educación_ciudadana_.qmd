@@ -1,7 +1,7 @@
 ---
 title : "Educación ciudadana en América Latina: Prioridades de los currículos escolares"
 date : "2015-11-01"
-author : ["Cristian Cox", "Martin Bascope", "Juan-Carlos Castillo", "Daniel Miranda", "Macarena Bonhomme"]
+author : "Cox, Cristian; Bascope, Martin; Castillo, Juan-Carlos; Miranda, Daniel & Bonhomme, Macarena"
 categories : ["Report"]
 publication : " International Bureau of Education (IBE) Working papers on Curriculum Issues (14). Geneva UNESCO"
 publication_short : " International Bureau of Education (IBE) Working papers on Curriculum Issues (14). Geneva UNESCO"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Cristian Cox, Martin Bascope, Juan-Carlos Castillo, Daniel Miranda, Macarena Bonhomme (2015). *Educación ciudadana en América Latina: Prioridades de los currículos escolares*.  International Bureau of Education (IBE) Working papers on Curriculum Issues (14). Geneva UNESCO
+Cox, Cristian; Bascope, Martin; Castillo, Juan-Carlos; Miranda, Daniel & Bonhomme, Macarena (2015). *Educación ciudadana en América Latina: Prioridades de los currículos escolares*.  International Bureau of Education (IBE) Working papers on Curriculum Issues (14). Geneva UNESCO
 
 :::
 

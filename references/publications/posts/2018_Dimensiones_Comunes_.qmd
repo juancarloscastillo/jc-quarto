@@ -1,7 +1,7 @@
 ---
 title : "Dimensiones Comunes a las Atribuciones de Pobreza y Riqueza"
 date : "2018-12-01"
-author : ["Juan-Carlos Castillo", "Mauricio Rivera-Gutierrez"]
+author : "Castillo, Juan-Carlos & Rivera-Gutierrez, Mauricio"
 categories : ["Journal Article"]
 publication : "Psykhe, 27(2) [https://doi.org/10.7764/psykhe.27.2.1152](https://doi.org/10.7764/psykhe.27.2.1152)"
 publication_short : "Psykhe, 27(2) [https://doi.org/10.7764/psykhe.27.2.1152](https://doi.org/10.7764/psykhe.27.2.1152)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Mauricio Rivera-Gutierrez (2018). *Dimensiones Comunes a las Atribuciones de Pobreza y Riqueza*. Psykhe, 27(2) [https://doi.org/10.7764/psykhe.27.2.1152](https://doi.org/10.7764/psykhe.27.2.1152)
+Castillo, Juan-Carlos & Rivera-Gutierrez, Mauricio (2018). *Dimensiones Comunes a las Atribuciones de Pobreza y Riqueza*. Psykhe, 27(2) [https://doi.org/10.7764/psykhe.27.2.1152](https://doi.org/10.7764/psykhe.27.2.1152)
 
 :::
 

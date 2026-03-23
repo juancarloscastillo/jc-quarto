@@ -1,7 +1,7 @@
 ---
 title : "Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático"
 date : "2025-01-01"
-author : ["Octavio Villarroel"]
+author : "Villarroel, Octavio"
 categories : ["Manuscript"]
 publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Octavio Villarroel (2025). *Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Villarroel, Octavio (2025). *Percepciones Sobre La Figura de La Micro-Celebridad: Una Aproximación al Impacto de Las Trayectorias de Movilidad Digital En El Ideario Meritocrático*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

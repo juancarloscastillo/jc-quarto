@@ -1,7 +1,7 @@
 ---
 title : "The Socialization of Meritocracy and Market Justice Preferences at School"
 date : "2024-11-01"
-author : ["Juan Carlos Castillo", "Mauricio Salgado", "Kevin Carrasco", "Andreas Laffert"]
+author : "Castillo, Juan Carlos; Salgado, Mauricio; Carrasco, Kevin & Laffert, Andreas"
 categories : ["Journal Article"]
 publication : "Societies, 14(11) 214 : Multidisciplinary Digital Publishing Institute [https://doi.org/10.3390/soc14110214](https://doi.org/10.3390/soc14110214)"
 publication_short : "Societies, 14(11) 214 : Multidisciplinary Digital Publishing Institute [https://doi.org/10.3390/soc14110214](https://doi.org/10.3390/soc14110214)"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Carlos Castillo, Mauricio Salgado, Kevin Carrasco, Andreas Laffert (2024). *The Socialization of Meritocracy and Market Justice Preferences at School*. Societies, 14(11) 214 : Multidisciplinary Digital Publishing Institute [https://doi.org/10.3390/soc14110214](https://doi.org/10.3390/soc14110214)
+Castillo, Juan Carlos; Salgado, Mauricio; Carrasco, Kevin & Laffert, Andreas (2024). *The Socialization of Meritocracy and Market Justice Preferences at School*. Societies, 14(11) 214 : Multidisciplinary Digital Publishing Institute [https://doi.org/10.3390/soc14110214](https://doi.org/10.3390/soc14110214)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Social Origin and Citizenship Participation in Latin American Schools"
 date : "2012-04-01"
-author : ["J. Castillo", "C. Cox", "M. Bascope", "D. Miranda", "J. Escobar"]
+author : "Castillo, J.; Cox, C.; Bascope, M.; Miranda, D. & Escobar, J."
 categories : ["Conference paper"]
 publication : " Annual Meeting of the American Educational Research Association – AERA. Vancouver"
 publication_short : " Annual Meeting of the American Educational Research Association – AERA. Vancouver"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-J. Castillo, C. Cox, M. Bascope, D. Miranda, J. Escobar (2012). *Social Origin and Citizenship Participation in Latin American Schools*.  Annual Meeting of the American Educational Research Association – AERA. Vancouver
+Castillo, J.; Cox, C.; Bascope, M.; Miranda, D. & Escobar, J. (2012). *Social Origin and Citizenship Participation in Latin American Schools*.  Annual Meeting of the American Educational Research Association – AERA. Vancouver
 
 :::
 

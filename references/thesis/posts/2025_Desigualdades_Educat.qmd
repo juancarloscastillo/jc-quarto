@@ -1,7 +1,7 @@
 ---
 title : "Desigualdades Educativas En La Alfabetización Computacional e Informacional de  Estudiantes de 8vo Año Básico En Chile."
 date : "2025-01-01"
-author : ["Bladimir Beltran"]
+author : "Beltran, Bladimir"
 categories : ["Manuscript"]
 publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Bladimir Beltran (2025). *Desigualdades Educativas En La Alfabetización Computacional e Informacional de  Estudiantes de 8vo Año Básico En Chile.*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Beltran, Bladimir (2025). *Desigualdades Educativas En La Alfabetización Computacional e Informacional de  Estudiantes de 8vo Año Básico En Chile.*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

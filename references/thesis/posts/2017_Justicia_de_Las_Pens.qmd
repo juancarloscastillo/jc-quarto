@@ -1,7 +1,7 @@
 ---
 title : "Justicia de Las Pensiones En Chile: Una Evaluación Desde Las Características Individuales y Las Preferencias Distributivas de La Población En La Región Metropolitana"
 date : "2017-12-01"
-author : ["Esteban Munoz"]
+author : "Munoz, Esteban"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -49,7 +49,7 @@ razonable o, en este caso, una pensión justa.
 
 ::: {.callout-note title="How to cite this work"}
 
-Esteban Munoz (2017). *Justicia de Las Pensiones En Chile: Una Evaluación Desde Las Características Individuales y Las Preferencias Distributivas de La Población En La Región Metropolitana*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Munoz, Esteban (2017). *Justicia de Las Pensiones En Chile: Una Evaluación Desde Las Características Individuales y Las Preferencias Distributivas de La Población En La Región Metropolitana*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

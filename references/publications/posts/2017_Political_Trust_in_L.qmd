@@ -1,7 +1,7 @@
 ---
 title : "Political Trust in Latin America"
 date : "2017-01-01"
-author : ["Matias Bargsted", "Nicolas Somma", "Juan-Carlos Castillo"]
+author : "Bargsted, Matias; Somma, Nicolas & Castillo, Juan-Carlos"
 categories : ["Book Section"]
 publication : "  In Sonja Zmerli & Tom W. G. {van der Meer}: Handbook on Political Trust 395--417 . Cheltenham, UK ; Northampton, MA: Edward Elgar Publishing. ISBN: 978-1-78254-510-1"
 publication_short : "  In Sonja Zmerli & Tom W. G. {van der Meer}: Handbook on Political Trust 395--417 . Cheltenham, UK ; Northampton, MA: Edward Elgar Publishing. ISBN: 978-1-78254-510-1"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Matias Bargsted, Nicolas Somma, Juan-Carlos Castillo (2017). *Political Trust in Latin America*.   In Sonja Zmerli & Tom W. G. {van der Meer}: Handbook on Political Trust 395--417 . Cheltenham, UK ; Northampton, MA: Edward Elgar Publishing. ISBN: 978-1-78254-510-1
+Bargsted, Matias; Somma, Nicolas & Castillo, Juan-Carlos (2017). *Political Trust in Latin America*.   In Sonja Zmerli & Tom W. G. {van der Meer}: Handbook on Political Trust 395--417 . Cheltenham, UK ; Northampton, MA: Edward Elgar Publishing. ISBN: 978-1-78254-510-1
 
 :::
 

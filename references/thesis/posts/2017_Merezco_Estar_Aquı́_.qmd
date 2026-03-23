@@ -1,7 +1,7 @@
 ---
 title : "Merezco Estar Aquı́: Un Estudio Multinivel Sobre La Relación Entre Meritocracia y Educación"
 date : "2017-01-01"
-author : ["Diego Sandoval"]
+author : "Sandoval, Diego"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -47,7 +47,7 @@ modera la relación entre edad y las variables dependientes.
 
 ::: {.callout-note title="How to cite this work"}
 
-Diego Sandoval (2017). *Merezco Estar Aquı́: Un Estudio Multinivel Sobre La Relación Entre Meritocracia y Educación*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Sandoval, Diego (2017). *Merezco Estar Aquı́: Un Estudio Multinivel Sobre La Relación Entre Meritocracia y Educación*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

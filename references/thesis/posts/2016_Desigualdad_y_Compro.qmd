@@ -1,7 +1,7 @@
 ---
 title : "Desigualdad y Compromiso Cı́vico de Los Jóvenes Chilenos: Una Mirada al Perı́odo (2009-2014)"
 date : "2016-01-01"
-author : ["Francisca Acevedo"]
+author : "Acevedo, Francisca"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -46,7 +46,7 @@ los cambios ocurridos en el último tiempo (a partir de los años 2011-2012).
 
 ::: {.callout-note title="How to cite this work"}
 
-Francisca Acevedo (2016). *Desigualdad y Compromiso Cı́vico de Los Jóvenes Chilenos: Una Mirada al Perı́odo (2009-2014)*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Acevedo, Francisca (2016). *Desigualdad y Compromiso Cı́vico de Los Jóvenes Chilenos: Una Mirada al Perı́odo (2009-2014)*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

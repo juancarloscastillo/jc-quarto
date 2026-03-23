@@ -1,7 +1,7 @@
 ---
 title : "Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina"
 date : "2018-01-01"
-author : ["Gonzalo Franetovic"]
+author : "Franetovic, Gonzalo"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -50,7 +50,7 @@ que conforman nuestra región.
 
 ::: {.callout-note title="How to cite this work"}
 
-Gonzalo Franetovic (2018). *Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Franetovic, Gonzalo (2018). *Desigualdad, Desarrollo Económico y Preferencias Redistributivas En América Latina*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

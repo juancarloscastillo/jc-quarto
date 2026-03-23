@@ -1,7 +1,7 @@
 ---
 title : "Mitigating the Political Participation Gap from the School: The Roles of Civic Knowledge and Classroom Climate"
 date : "2015-01-01"
-author : ["Juan-Carlos Castillo", "Daniel Miranda", "Macarena Bonhomme", "Cristian Cox", "Martin Bascope"]
+author : "Castillo, Juan-Carlos; Miranda, Daniel; Bonhomme, Macarena; Cox, Cristian & Bascope, Martin"
 categories : ["Journal Article"]
 publication : "Journal of Youth Studies, 18(1) 16--35  [https://doi.org/10.1080/13676261.2014.933199](https://doi.org/10.1080/13676261.2014.933199)"
 publication_short : "Journal of Youth Studies, 18(1) 16--35  [https://doi.org/10.1080/13676261.2014.933199](https://doi.org/10.1080/13676261.2014.933199)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Daniel Miranda, Macarena Bonhomme, Cristian Cox, Martin Bascope (2015). *Mitigating the Political Participation Gap from the School: The Roles of Civic Knowledge and Classroom Climate*. Journal of Youth Studies, 18(1) 16--35  [https://doi.org/10.1080/13676261.2014.933199](https://doi.org/10.1080/13676261.2014.933199)
+Castillo, Juan-Carlos; Miranda, Daniel; Bonhomme, Macarena; Cox, Cristian & Bascope, Martin (2015). *Mitigating the Political Participation Gap from the School: The Roles of Civic Knowledge and Classroom Climate*. Journal of Youth Studies, 18(1) 16--35  [https://doi.org/10.1080/13676261.2014.933199](https://doi.org/10.1080/13676261.2014.933199)
 
 :::
 

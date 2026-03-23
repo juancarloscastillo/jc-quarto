@@ -1,7 +1,7 @@
 ---
 title : "Measuring Social Cohesion in Chile  with Longitudinal Survey Data"
 date : "2024-07-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Presentation"]
 publication : " Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen"
 publication_short : " Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen"
@@ -28,7 +28,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2024). *Measuring Social Cohesion in Chile  with Longitudinal Survey Data*.  Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen
+Castillo, Juan-Carlos (2024). *Measuring Social Cohesion in Chile  with Longitudinal Survey Data*.  Presentation at the Workshop International Perspectives on the Measurement of Social Cohesion: Insights from Australia, Chile, and Germany . Bremen
 
 :::
 

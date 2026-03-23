@@ -1,7 +1,7 @@
 ---
 title : "Todos Somos de Clase Media: Sobre El Estatus Social Subjetivo En Chile"
 date : "2013-01-01"
-author : ["Juan-Carlos Castillo", "Daniel Miranda", "Ignacio Madero Cabib"]
+author : "Castillo, Juan-Carlos; Miranda, Daniel & Cabib, Ignacio Madero"
 categories : ["Journal Article"]
 publication : "Latin American Research Review, 48(1) 155--173  [https://doi.org/10.1353/lar.2013.0006](https://doi.org/10.1353/lar.2013.0006)"
 publication_short : "Latin American Research Review, 48(1) 155--173  [https://doi.org/10.1353/lar.2013.0006](https://doi.org/10.1353/lar.2013.0006)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Daniel Miranda, Ignacio Madero Cabib (2013). *Todos Somos de Clase Media: Sobre El Estatus Social Subjetivo En Chile*. Latin American Research Review, 48(1) 155--173  [https://doi.org/10.1353/lar.2013.0006](https://doi.org/10.1353/lar.2013.0006)
+Castillo, Juan-Carlos; Miranda, Daniel & Cabib, Ignacio Madero (2013). *Todos Somos de Clase Media: Sobre El Estatus Social Subjetivo En Chile*. Latin American Research Review, 48(1) 155--173  [https://doi.org/10.1353/lar.2013.0006](https://doi.org/10.1353/lar.2013.0006)
 
 :::
 

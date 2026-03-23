@@ -1,7 +1,7 @@
 ---
 title : "De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La  Creación de Los Planes de Formación Ciudadana."
 date : "2026-01-01"
-author : ["Javier Santibanez"]
+author : "Santibanez, Javier"
 categories : ["Manuscript"]
 publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Javier Santibanez (2026). *De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La  Creación de Los Planes de Formación Ciudadana.*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Santibanez, Javier (2026). *De La Institucionalidad al Papel. Efectos de La Ambigüedad Institucional En La  Creación de Los Planes de Formación Ciudadana.*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Patterns of Civic and Political Commitment in Early Adolescence"
 date : "2020-01-01"
-author : ["M. Loreto Martinez", "Patricio Cumsille", "Ignacio Loyola", "Juan-Carlos Castillo"]
+author : "Martinez, M. Loreto; Cumsille, Patricio; Loyola, Ignacio & Castillo, Juan-Carlos"
 categories : ["Journal Article"]
 publication : "The Journal of Early Adolescence, 40(1) 5--27  [https://doi.org/10.1177/0272431618824714](https://doi.org/10.1177/0272431618824714)"
 publication_short : "The Journal of Early Adolescence, 40(1) 5--27  [https://doi.org/10.1177/0272431618824714](https://doi.org/10.1177/0272431618824714)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-M. Loreto Martinez, Patricio Cumsille, Ignacio Loyola, Juan-Carlos Castillo (2020). *Patterns of Civic and Political Commitment in Early Adolescence*. The Journal of Early Adolescence, 40(1) 5--27  [https://doi.org/10.1177/0272431618824714](https://doi.org/10.1177/0272431618824714)
+Martinez, M. Loreto; Cumsille, Patricio; Loyola, Ignacio & Castillo, Juan-Carlos (2020). *Patterns of Civic and Political Commitment in Early Adolescence*. The Journal of Early Adolescence, 40(1) 5--27  [https://doi.org/10.1177/0272431618824714](https://doi.org/10.1177/0272431618824714)
 
 :::
 

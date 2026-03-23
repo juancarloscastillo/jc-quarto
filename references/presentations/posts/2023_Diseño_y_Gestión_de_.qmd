@@ -1,7 +1,7 @@
 ---
 title : "Diseño y Gestión de Proyectos de Investigación Abiertos"
 date : "2023-01-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Presentation"]
 publication : " Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central . Santiago"
 publication_short : " Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central . Santiago"
@@ -26,7 +26,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2023). *Diseño y Gestión de Proyectos de Investigación Abiertos*.  Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central . Santiago
+Castillo, Juan-Carlos (2023). *Diseño y Gestión de Proyectos de Investigación Abiertos*.  Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central . Santiago
 
 :::
 

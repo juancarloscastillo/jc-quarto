@@ -1,7 +1,7 @@
 ---
 title : "Determinantes de La Percepción de Seguridad Frente al Delito En La Región Metropolitana"
 date : "2022-01-01"
-author : ["Javiera Urrutia"]
+author : "Urrutia, Javiera"
 categories : ["Manuscript"]
 publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -48,7 +48,7 @@ una ciudad en donde sus habitantes se sientan seguros de vivir.
 
 ::: {.callout-note title="How to cite this work"}
 
-Javiera Urrutia (2022). *Determinantes de La Percepción de Seguridad Frente al Delito En La Región Metropolitana*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Urrutia, Javiera (2022). *Determinantes de La Percepción de Seguridad Frente al Delito En La Región Metropolitana*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

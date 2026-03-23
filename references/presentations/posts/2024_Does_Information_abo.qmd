@@ -1,7 +1,7 @@
 ---
 title : "Does Information about Inequality Affects Opportunity Beliefs? Results from a Survey Experiment"
 date : "2024-04-01"
-author : ["Luis Maldonado", "Juan-Carlos Castillo", "Julio Iturra"]
+author : "Maldonado, Luis; Castillo, Juan-Carlos & Iturra, Julio"
 categories : ["Presentation"]
 publication : " Poster Presented at the Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz"
 publication_short : " Poster Presented at the Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Luis Maldonado, Juan-Carlos Castillo, Julio Iturra (2024). *Does Information about Inequality Affects Opportunity Beliefs? Results from a Survey Experiment*.  Poster Presented at the Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz
+Maldonado, Luis; Castillo, Juan-Carlos & Iturra, Julio (2024). *Does Information about Inequality Affects Opportunity Beliefs? Results from a Survey Experiment*.  Poster Presented at the Inequality Conference - Exellence Cluster  The Politics of Inequality . Konstanz
 
 :::
 

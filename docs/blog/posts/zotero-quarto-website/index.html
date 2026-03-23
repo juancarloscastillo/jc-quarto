@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap-d6a400f3cf106e594a1d87addbc3c4b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark-b6a2bde65a57ab910137b7c739597dee.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -454,17 +456,23 @@ document.addEventListener('DOMContentLoaded', () => {
   <ul>
   <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
   <li><a href="#the-workflow" id="toc-the-workflow" class="nav-link" data-scroll-target="#the-workflow">The workflow:</a></li>
-  <li><a href="#zotero-collection" id="toc-zotero-collection" class="nav-link" data-scroll-target="#zotero-collection">1. Zotero collection</a></li>
-  <li><a href="#preparing-your-website" id="toc-preparing-your-website" class="nav-link" data-scroll-target="#preparing-your-website">2. Preparing your Website</a>
+  <li><a href="#preparing-your-quarto-website" id="toc-preparing-your-quarto-website" class="nav-link" data-scroll-target="#preparing-your-quarto-website">1. Preparing your Quarto Website</a>
   <ul class="collapse">
   <li><a href="#folders-files" id="toc-folders-files" class="nav-link" data-scroll-target="#folders-files">Folders &amp; files</a></li>
   <li><a href="#yml-navigation" id="toc-yml-navigation" class="nav-link" data-scroll-target="#yml-navigation">yml navigation</a></li>
   </ul></li>
-  <li><a href="#export-a-synced-bibtex-file-from-your-zotero-folder" id="toc-export-a-synced-bibtex-file-from-your-zotero-folder" class="nav-link" data-scroll-target="#export-a-synced-bibtex-file-from-your-zotero-folder">2. Export a synced <code>bibtex</code> file from your Zotero folder</a></li>
-  <li><a href="#bibtex_2academic-r-script" id="toc-bibtex_2academic-r-script" class="nav-link" data-scroll-target="#bibtex_2academic-r-script">3. <code>bibtex_2academic</code> R script</a></li>
+  <li><a href="#zotero-collection" id="toc-zotero-collection" class="nav-link" data-scroll-target="#zotero-collection">2. Zotero collection</a></li>
+  <li><a href="#export-a-synced-bibtex-file-from-your-zotero-folders" id="toc-export-a-synced-bibtex-file-from-your-zotero-folders" class="nav-link" data-scroll-target="#export-a-synced-bibtex-file-from-your-zotero-folders">3. Export a synced <code>bibtex</code> file from your Zotero folder(s)</a>
+  <ul class="collapse">
+  <li><a href="#installing-and-configuring-betterbibtex" id="toc-installing-and-configuring-betterbibtex" class="nav-link" data-scroll-target="#installing-and-configuring-betterbibtex">Installing and configuring BetterBibTex</a></li>
+  <li><a href="#exporting-the-collection" id="toc-exporting-the-collection" class="nav-link" data-scroll-target="#exporting-the-collection">Exporting the collection</a></li>
+  </ul></li>
+  <li><a href="#run-bibtex2quarto-r-script" id="toc-run-bibtex2quarto-r-script" class="nav-link" data-scroll-target="#run-bibtex2quarto-r-script">4. Run <code>bibtex2quarto</code> R script</a>
+  <ul class="collapse">
   <li><a href="#about-the-overwriting-option" id="toc-about-the-overwriting-option" class="nav-link" data-scroll-target="#about-the-overwriting-option">About the overwriting option</a></li>
-  <li><a href="#update-1-add-conferences-and-presentations" id="toc-update-1-add-conferences-and-presentations" class="nav-link" data-scroll-target="#update-1-add-conferences-and-presentations">Update 1: add conferences and presentations</a></li>
-  <li><a href="#update-2-additional-yaml-options-for-nice-buttons-links" id="toc-update-2-additional-yaml-options-for-nice-buttons-links" class="nav-link" data-scroll-target="#update-2-additional-yaml-options-for-nice-buttons-links">Update 2: additional YAML options for nice buttons links</a></li>
+  </ul></li>
+  <li><a href="#further-customization-1-additional-yaml-options-for-nice-buttons-links-photos-and-videos" id="toc-further-customization-1-additional-yaml-options-for-nice-buttons-links-photos-and-videos" class="nav-link" data-scroll-target="#further-customization-1-additional-yaml-options-for-nice-buttons-links-photos-and-videos">Further customization 1: additional YAML options for nice buttons links, photos and videos</a></li>
+  <li><a href="#further-customization-2-additional-yaml-options-for-nice-buttons-links-photos-and-videos" id="toc-further-customization-2-additional-yaml-options-for-nice-buttons-links-photos-and-videos" class="nav-link" data-scroll-target="#further-customization-2-additional-yaml-options-for-nice-buttons-links-photos-and-videos">Further customization 2: additional YAML options for nice buttons links, photos and videos</a></li>
   </ul>
 </nav>
     </div>
@@ -496,8 +504,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <section id="motivation" class="level2">
 <h2 data-anchor-id="motivation">Motivation</h2>
 <p>Academic publications are one of the most important outputs of our work as scientists. As their visibility is key, there are several platforms where we can share them, such as ResearchGate, Google Scholar, etc. However, these platforms are not under our control and they have their own rules and algorithms that might not be the best for us. For instance, they might not allow to share preprints or other types of outputs that are not peer-reviewed papers, which are also important for our work. Moreover, they might not allow to customize the way we present our publications, which is something that we can do in our personal websites.</p>
-<p>In this context, having a personal website where we can share our publications in a way that we control is a great option. However, maintaining this website updated with our latest publications can be a hassle, especially if we have many publications and we want to keep it updated with the latest information. This is where the workflow that I propose in this post comes in handy, as it allows to automatically extract information from Zotero and generate publication records in a Quarto academic website.</p>
-<p>You can have a look at the result of the workflow in action in this <a href="../../../references/publications/index.html">quarto website</a>, where I have a section for publications that is automatically updated with the information stored in Zotero.</p>
+<p>In this context, having a personal website where we can share our publications in a way that we control is a great option. However, maintaining this website updated with our latest publications can be a hassle, especially if we have many publications and we want to keep it updated with the latest information. This is where the workflow that I propose in this post comes in handy, as it allows to automatically extract information from Zotero and generate publication records in a Quarto academic website. So, you only need to keep your Zotero library updated with your latest publications, and the website will be automatically updated with the information stored in Zotero.</p>
+<p>You can have a look at the result of the workflow in action in this <a href="../../../references/publications/index.html">quarto website</a>, where I have a section for publications that is automatically updated with the information stored in my Zotero.</p>
 </section>
 <section id="the-workflow" class="level2">
 <h2 data-anchor-id="the-workflow">The workflow:</h2>
@@ -507,27 +515,14 @@ document.addEventListener('DOMContentLoaded', () => {
 <figcaption>workflow</figcaption>
 </figure>
 </div>
-<p>The pieces:</p>
-<ol type="1">
-<li>A Zotero collection where you save your academic publications; let’s call it <code>publications</code> folder</li>
-<li>A synced bibtex file from Zotero, whih runs autonmatically thorough the add-on <em>BetterBibTex</em></li>
-<li>An R script that extracts information from the bibtex file and generates markdown files for each publication in the academic website; let’s call it <code>bibtex2quarto.R</code></li>
-</ol>
+<p>The pieces: 1. A Quarto website where you want to show your publications (and other academic outputs) 2. A Zotero collection/folder where you save your publications (and other academic outputs) 3. A synced bibtex file from Zotero, whih runs autonmatically thorough the add-on <em>BetterBibTex</em> 4. An R script that extracts information from the bibtex file and generates markdown files for each publication in the academic website; let’s call it <code>bibtex2quarto.R</code></p>
 </section>
-<section id="zotero-collection" class="level2">
-<h2 data-anchor-id="zotero-collection">1. Zotero collection</h2>
-<p>Zotero allows to organize your references in folders, which then can be exported independently to other formats. I recommend this folder structure in Zotero:</p>
-<pre class="{html}"><code>├── references
-│   ├── publications
-│   ├── presentations
-│   └── thesis</code></pre>
-<p>Although this post is focused on publications, the same workflow can be applied to presentations and thesis, as long as you have a folder for each of them in Zotero and you export a synced bibtex file for each of them (details in the next step). In this way, you can have different sections in your website for each type of academic production, and they will be automatically updated with the information stored in Zotero.</p>
-</section>
-<section id="preparing-your-website" class="level2">
-<h2 data-anchor-id="preparing-your-website">2. Preparing your Website</h2>
+<section id="preparing-your-quarto-website" class="level2">
+<h2 data-anchor-id="preparing-your-quarto-website">1. Preparing your Quarto Website</h2>
+<p>This post assumes that you already have a Quarto website, and you want to add a section for publications that is automatically updated with the information stored in Zotero. If you do not have a Quarto website yet, you can follow the instructions in this <a href="[/blog/posts/quarto-website/index.qmd](https://drganghe.github.io/quarto-academic-site-examples.html)">post</a> to create one from scratch.</p>
 <section id="folders-files" class="level3">
 <h3 data-anchor-id="folders-files">Folders &amp; files</h3>
-<p>In your Quarto website, you can have a section for publications, presentations and thesis, which will be automatically updated with the information stored in Zotero. You need to add a references folder to the root with the following structure:</p>
+<p>In your Quarto website, you can have a section for publications, presentations and thesis, which will be automatically updated with the information stored in Zotero. You need to add a references folder to the project root with the following structure:</p>
 <pre class="{html}"><code>└── references
     ├── bibtex2quarto.R
     ├── presentations
@@ -542,7 +537,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ├── index.qmd
         ├── posts
         └── thesis.bib</code></pre>
-<p>You can download the folder from here: <a href="">references folder</a> and paste it in the root of your website project. This folder contains all the information and files needed for the workflow, including the R script <code>bibtex2quarto.R</code> and the <code>index.qmd</code> files for each section. You just need to customize the <code>index.qmd</code> files with the title and other information that you want to show in your website.</p>
+<p>You can download the folder from here: <a href="https://downgit.github.io/#/home?url=https://github.com/juancarloscastillo/jc-quarto/tree/main/blog/posts/zotero-quarto-website/references">references folder</a> and paste it in the root of your website project. This folder contains all the information and files needed for the workflow, including the R script <code>bibtex2quarto.R</code> and the <code>index.qmd</code> files for each section. You just need to customize the <code>index.qmd</code> files with the title and other information that you want to show in your website.</p>
+<p>If you just want to show the publications in your website, you can delete the presentations and thesis folders, and the corresponding lines in the <code>_quarto.yml</code> file (see next step).</p>
 </section>
 <section id="yml-navigation" class="level3">
 <h3 data-anchor-id="yml-navigation">yml navigation</h3>
@@ -551,46 +547,49 @@ document.addEventListener('DOMContentLoaded', () => {
   navbar:
     left:
       - file: references/publications/index.qmd
-        text: Publicaciones
+        text: Publications
       - file: references/presentations/index.qmd
-        text: Presentaciones
+        text: Presentations
       - file: references/thesis/index.qmd
-        text: Tesis  </code></pre>
-<p>After rendering the website, you should be able to see the sections for publications, presentations and thesis in the navigation bar of your website, and one example record in each.</p>
-<p>Now let’s replace the example records with yours.</p>
+        text: Thesis  </code></pre>
+<p>After rendering the website, you should be able to see the sections for publications, presentations and thesis in the navigation bar of your website, and one example record in each. Now let’s replace the example records with your references.</p>
+<p>If you want only some of the sections, just delete the corresponding lines in the <code>_quarto.yml</code> file.</p>
 </section>
 </section>
-<section id="export-a-synced-bibtex-file-from-your-zotero-folder" class="level2">
-<h2 data-anchor-id="export-a-synced-bibtex-file-from-your-zotero-folder">2. Export a synced <code>bibtex</code> file from your Zotero folder</h2>
-<p>A bibtex file is needed as an input for generating publication records. In order to keep this file synced with your Zotero collection you can use the Zotero add-on <a href="https://retorque.re/zotero-better-bibtex/">BetterBibTex</a>. Once installed, a bit of customization in Tools &gt; Preferences &gt; BetterBibTex tab</p>
+<section id="zotero-collection" class="level2">
+<h2 data-anchor-id="zotero-collection">2. Zotero collection</h2>
+<p>Zotero allows to organize your references in folders, which then can be exported independently to other formats. I recommend this folder structure in Zotero:</p>
+<pre class="{html}"><code>├── references
+│   ├── publications
+│   ├── presentations
+│   └── thesis</code></pre>
+<p>Although this post is focused on publications, the same workflow can be applied to presentations and thesis, as long as you have a folder for each of them in Zotero and you export a synced bibtex file for each of them (details in the next step). In this way, you can have different sections in your website for each type of academic production, and they will be automatically updated with the information stored in Zotero.</p>
+</section>
+<section id="export-a-synced-bibtex-file-from-your-zotero-folders" class="level2">
+<h2 data-anchor-id="export-a-synced-bibtex-file-from-your-zotero-folders">3. Export a synced <code>bibtex</code> file from your Zotero folder(s)</h2>
+<section id="installing-and-configuring-betterbibtex" class="level3">
+<h3 data-anchor-id="installing-and-configuring-betterbibtex">Installing and configuring BetterBibTex</h3>
+<p>Follow the instructions to install the Zotero add-on <a href="https://retorque.re/zotero-better-bibtex/installation/index.html">BetterBibTex</a>. This add-on allows to export a synced bibtex file from your Zotero collection, which is needed for the next step of the workflow.</p>
+<p>Once installed, a bit of customization. Go to Edit &gt; Settings &gt; Better Bibtex tab</p>
 <ul>
-<li>in Export tab
+<li><p>in Citation key: paste the following in the “Citation key formula” field: <code>auth.lower+"_"+shorttitle(1).lower+"_"+year</code></p></li>
+<li><p>in Export tab</p>
 <ul>
 <li>Bibtex tab uncheck “Export unicode …”, otherwhise there are problems with special characters</li>
 <li>Add URLs to Bibtex export: select in the URL field</li>
 </ul></li>
-<li>in Miscellaneous tab (within Export, not the other one)
+<li><p>in Miscellaneous tab (within Export, not the other one)</p>
 <ul>
 <li>uncheck “Apply case-protection to capitalized words by enclosing them in braces”</li>
 </ul></li>
 </ul>
-<p>Before export the collection, generate the following folder structure in your website project (that mirrors the one in Zotero):</p>
-<pre class="{html}"><code>├── references
-│   ├── presentations
-│   │   └── posts
-│   ├── publications
-│   │   └── posts
-│   └── thesis
-│       └── posts</code></pre>
-<p>Now we are ready to export the collection:</p>
-<ul>
-<li>right click over your Zotero folder <em>publications</em></li>
-<li>export collection</li>
-<li>format: Better BibTex</li>
-<li><strong>IMPORTANT</strong>: select “Keep updated”. In this way, they are synced automatically</li>
-<li>ok, and save it in a folder named <em>publications</em>, preferably in the root of your proyect, with the name <code>academic-publications.bib</code> (this is the name that the R script will look for, so it is important to keep it).</li>
-</ul>
-<p>These steps create an <code>academic-publications.bib</code> file in your website folder. Any reference that you add afterwards, as well as any modification to any of your record, it will updated with the bibtex file available for your website.</p>
+<p>Close the settings and we are ready to export the collection.</p>
+</section>
+<section id="exporting-the-collection" class="level3">
+<h3 data-anchor-id="exporting-the-collection">Exporting the collection</h3>
+<p>Steps: - right click over your Zotero folder <em>publications</em> - export collection - select format: Better BibTex - <strong>IMPORTANT</strong>: select “Keep updated”. In this way, references are synced and updated automatically (when Zotero is open). - save it in the <em>references/publications</em> folder, with the name <code>publications.bib</code> – choose “replace”, as in this folder there is already a publications.bib example file.</p>
+<p>Any reference that you add afterwards, as well as any modification to any of your record, it will updated with the bibtex file available for your website.</p>
+<p>Follow the same steps in case you want to export the presentations and thesis folders, with the corresponding names for the bibtex files: <code>presentations.bib</code> and <code>thesis.bib</code>, which should be saved in their corresponding folders.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -601,92 +600,35 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Finally, this assumes that you have a relatively ordered and completed set of references. Please check, in my case sometimes authors’ names appear written differently in different references, which for a bibtex file means two different authors. I also recommend to add an abstract to each reference, as it is the body of the publication record in your website. There is no need to do this at the beginning as further updates on Zotero will be reflected in your website after the following step.</p>
+<p>The workflow assumes that you have a relatively ordered and completed set of references. The easiest and better way to do it is via the Zotero connector in your browser. Check coherence in authors names, sometimes they appear written differently in different references, which for a bibtex file means two different authors.</p>
 <p>So far I have tried this with the following entries: journal, books, chapters and reports, and they are rendered pretty well.</p>
 <p>Also: check whether every reference has a bibtex key (!), otherwise the script will not work. You can use the “automatic key” option in BetterBibTex preferences: - go to your collection - select all the references (Ctrl+a) - right button &gt; Better Bibtex &gt; Regenerate Bibtex key</p>
 </div>
 </div>
 </section>
-<section id="bibtex_2academic-r-script" class="level2">
-<h2 data-anchor-id="bibtex_2academic-r-script">3. <code>bibtex_2academic</code> R script</h2>
-<p>This R script consists of an R function based on the one by <a href="https://www.r-bloggers.com/2018/03/automatically-importing-publications-from-bibtex-to-a-hugo-academic-blog-2/">Busetto</a> which basically extracts information from each Bibtex record stored in a .bib file and generates a quarto (qmd) file for each record in the folder.</p>
-<p>The first part of the script creates the function <code>bibtex_2academic</code> and the second runs the script specifying a) the bib file, and b) the folder where the publication records (as markdown files) are saved. The script uses the <code>pacman</code> package to install/load libraries, so if it is not installed the script does it and it might take a while just the first time.</p>
-<p>The default project structure proposed for this is:</p>
-<pre class="{html}"><code>|-- publication
-  publication.qmd
-  |--posts
-    bibtex_2academic_plus.R
-    academic-publications.bib</code></pre>
-<p>The content of the <code>publication.qmd</code> file is the following:</p>
-<pre class="{html}"><code>---
-title: "Publicaciones y Presentaciones"
-page-layout: full
-listing:
-  contents: posts/*.qmd
-  sort: "date desc"
-  type: default
-  categories: true
-  fields: [title, date, author, categories]
-  filter-ui: [categories, date]
-  page-size: 1000
-title-block-banner: true
----</code></pre>
-<p>The default way to do this is:</p>
-<ul>
-<li>save the <a href="https://raw.githubusercontent.com/juancarloscastillo/jc-quarto/refs/heads/main/publication/posts/bibtex_2academic_plus.R">bibtex_2academic_plus.R</a> file in the publication folder</li>
-<li>save your bib file in the same folder with the name <code>academic-publications.bib</code> (details in previous step)</li>
-<li>run the script from R. Assuming that your working directory is the root folder of the website project, run: <code>source("content/publication/bibtex_2academic.R")</code></li>
-</ul>
-<p>After running the script, the publication folder should have as many markdown files as the number of references in your Zotero synced folder (and in your generated bib file). After rendering the site with blogdown (<code>blogdown::serve_site()</code> from terminal) you should be able to see the list of publications rendered in the default widget “Recent publications” and in <code>[your website address]/publications/</code></p>
 </section>
-<section id="about-the-overwriting-option" class="level2">
-<h2 data-anchor-id="about-the-overwriting-option">About the overwriting option</h2>
-<p>There are two approaches for this citations-academic workflow: 1) to generate the markdown files and then to add additional details and customization there to each markdown file, or 2) make all the modifications within Zotero and do not touch the markdown files generated by this script. Although the first approach allows to add some more fancy stuff manually, I prefer to use the second one and only add information and modifications within Zotero. But, if you go for the first one you should change the “overwrite” option at the end of the script to <em>false</em>, otherwise any change you make locally in the bib file will be lost when running the script again.</p>
+<section id="run-bibtex2quarto-r-script" class="level2">
+<h2 data-anchor-id="run-bibtex2quarto-r-script">4. Run <code>bibtex2quarto</code> R script</h2>
+<p>This R script consists of an R function based on the one by <a href="https://www.r-bloggers.com/2018/03/automatically-importing-publications-from-bibtex-to-a-hugo-academic-blog-2/">Busetto</a> which basically extracts information from each Bibtex record stored in a .bib file and generates a quarto (qmd) file (or “post”) for each record in the folder.</p>
+<p>The first part of the script creates the function <code>bibtex2quarto</code> and the second runs the script specifying a) the bib file, and b) the folder where the publication records (as markdown files) are saved.</p>
+<p>To run the script from R: - make sure that your woking directory is your website project. - run from the console: <code>source("references/bibtex2quarto.R")</code></p>
+<p>After running the script, the publication folder should have as many markdown files as the number of references in your Zotero synced folder (and in your generated bib file).</p>
+<section id="about-the-overwriting-option" class="level3">
+<h3 data-anchor-id="about-the-overwriting-option">About the overwriting option</h3>
+<p>By default, If you want to make any modification to the generated markdown files, you can do it manually in each file. However, if you run the script again, all the modifications will be lost as the script will overwrite the existing markdown files. To avoid this, you can change the “overwrite” option at the end of the script to <em>false</em>, which will prevent the script from overwriting existing files. In this way, you can make modifications to the markdown files without worrying about losing them when running the script again. However, if you want to keep the workflow as automatic as possible, I recommend to make all the modifications within Zotero and do not touch the markdown files generated by this script. In this way, any modification you make in Zotero will be automatically reflected in the generated markdown files when you run the script, and you will not have to worry about losing any modifications when running the script again.</p>
 </section>
-<section id="update-1-add-conferences-and-presentations" class="level2">
-<h2 data-anchor-id="update-1-add-conferences-and-presentations">Update 1: add conferences and presentations</h2>
-<p>I wasn’t sure whether to make a different tab for each type of academic production (papers, presentations, conferences), but at the end I decided to make just one big archive of “academic production” as they can be easily sorted within the same page with the drop-down button. It was more complicated than I thought, as some Zotero types where not well recognized by the script and by Wowchemy. So, this is what I did:</p>
-<ul>
-<li>Conference presentations are registered in Zotero as “conference papers”, other talks as “presentations”</li>
-<li>Conferences papers works fine, but presentations are a Zotero type which is not recognized in bibtex records. I changed the script and passed the “Misc” (miscellaneous category) to “Presentations”. Still, this is not recognized by Wowchemy so I followed the instructions to <a href="https://wowchemy.com/docs/hugo-tutorials/language/">change options in the language pack</a>:
-<ul>
-<li>create a i18n folder in the root</li>
-<li>save here the english language file <strong>en.yaml</strong> from <a href="https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/wowchemy/i18n/en.yaml">here</a></li>
-<li>in <code>id: pub_uncat</code> change translation from “Uncategorized” to “Presentation”</li>
-<li>the details of the presentation (as place, etc) should be added to the “type” field in Zotero</li>
-</ul></li>
-</ul>
 </section>
-<section id="update-2-additional-yaml-options-for-nice-buttons-links" class="level2">
-<h2 data-anchor-id="update-2-additional-yaml-options-for-nice-buttons-links">Update 2: additional YAML options for nice buttons links</h2>
-<p>A nice capacity of the hugo academic publications template is the possibility to add different buttons that declare the availability of additional information, such as github repo, video, pdf, etc., as so far it appear with the “source document” button when adding a url in the Zotero record. This was tricky because these options are in the YAML section, and further customization options in this script go in the Extra field from Zotero. So, this is how it works:</p>
-<ul>
-<li><p>divide the Extra field into a YAML section and additional information section, so it could be possible to use this same field for YAML options. For this to work you have to specify with <code>---</code> in the Zotero Extra field. Above the <code>---</code> you can specify YAML options, and below any additional information.</p></li>
-<li><p>disadvantage: well, you have to write <code>---</code> in every extra field, independently of including YAML info or not. This is such a bore when you have many Zotero entries, but from my perspective it is worthwhile.</p></li>
-<li><p>copy and paste the following in the extra field:</p></li>
-</ul>
-<pre><code>url_pdf : ""
-url_project: ""
-url_slides: ""
-url_video: ""
-url_poster: ""
-# links:
-#- icon: github
-#  icon_pack: fab
-#  name: Github
-#  web:
----
-</code></pre>
-<ul>
-<li>note: if you do not need all the options you can just delete accordingly <strong>EXCEPT FOR THE PDF at the beginning (url_pdf:““)</strong>, otherwise the code crushes. So leave it although you do not need it. Hope to solve it sometime with my limited programming abilities.</li>
-</ul>
-<p>If you want to add customized buttons just uncomment the lines from <em>links</em> onwards, and you can copy and paste them below in case of any other customized icons, for instance for a pre-registration button with a nice OSF icon:</p>
-<pre><code>links:
-- icon: osf
-  icon_pack: ai
-  name: Pre-registration
-  web: https://osf.io/muv9r/</code></pre>
-<p>In case you want to use these options I created a different code, <code>bibtex_2academic_plus.R</code>, available <a href="https://raw.githubusercontent.com/juancarloscastillo/jc-academic/master/content/publication/bibtex_2academic_plus.R">here</a>. Enjoy!</p>
+<section id="further-customization-1-additional-yaml-options-for-nice-buttons-links-photos-and-videos" class="level2">
+<h2 data-anchor-id="further-customization-1-additional-yaml-options-for-nice-buttons-links-photos-and-videos">Further customization 1: additional YAML options for nice buttons links, photos and videos</h2>
+<p>If you are good at Quarto / html / css, probably you can customize the generated markdown files to include additional information, such as links to a github repo, videos, pdfs, etc. However, this is not very practical if you have many references and you want to keep the workflow as automatic as possible. The idea is to use the “Extra” field in Zotero to include additional information that can be extracted by the R script and included in the generated markdown files.</p>
+<p>For instance, take a look at this presentation record in the <a href="https://jc-castillo.com/references/presentations/posts/2024_%C2%BFlas_estudiantes_sub">presentations section</a>. In the “Extra” field of this record in Zotero, I included the following information:</p>
+<pre class="{html}"><code>[ Project Repo](https://github.com/milenio-nudos/multilevel_icils_gender_chile)
+![](/images/congsocio2024nudos.png)
+## Documento de presentación
+&lt;iframe width="700"  height="450" src="https://nudos.quarto.pub/prealas-2024/#/las-estudiantes-subestiman-sus-habilidades-tecnológicas" title="Quarto presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+</section>
+<section id="further-customization-2-additional-yaml-options-for-nice-buttons-links-photos-and-videos" class="level2">
+<h2 data-anchor-id="further-customization-2-additional-yaml-options-for-nice-buttons-links-photos-and-videos">Further customization 2: additional YAML options for nice buttons links, photos and videos</h2>
 
 
 </section>

@@ -1,7 +1,7 @@
 ---
 title : "Educación, equidad y creencias distributivas: Evidencias del caso chileno"
 date : "2013-01-01"
-author : ["Juan-Carlos Castillo", "Ignacio Madero-Cabib", "Daniel Miranda"]
+author : "Castillo, Juan-Carlos; Madero-Cabib, Ignacio & Miranda, Daniel"
 categories : ["Journal Article"]
 publication : "Sociedad Hoy(24) 13--31 "
 publication_short : "Sociedad Hoy(24) 13--31 "
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Ignacio Madero-Cabib, Daniel Miranda (2013). *Educación, equidad y creencias distributivas: Evidencias del caso chileno*. Sociedad Hoy(24) 13--31 
+Castillo, Juan-Carlos; Madero-Cabib, Ignacio & Miranda, Daniel (2013). *Educación, equidad y creencias distributivas: Evidencias del caso chileno*. Sociedad Hoy(24) 13--31 
 
 :::
 

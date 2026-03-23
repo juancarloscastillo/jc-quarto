@@ -1,7 +1,7 @@
 ---
 title : "Aceptar La Diversidad En El Vecindario: Procesos de Socialización Política de Actitudes Hacia La Diversidad Social En Estudiantes Chilenos"
 date : "2023-03-01"
-author : ["Kevin Carrasco"]
+author : "Carrasco, Kevin"
 categories : ["Manuscript"]
 publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -35,7 +35,7 @@ Utilizando datos de 4801 estudiantes y apoderados provenientes del Primer estudi
 
 ::: {.callout-note title="How to cite this work"}
 
-Kevin Carrasco (2023). *Aceptar La Diversidad En El Vecindario: Procesos de Socialización Política de Actitudes Hacia La Diversidad Social En Estudiantes Chilenos*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Carrasco, Kevin (2023). *Aceptar La Diversidad En El Vecindario: Procesos de Socialización Política de Actitudes Hacia La Diversidad Social En Estudiantes Chilenos*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

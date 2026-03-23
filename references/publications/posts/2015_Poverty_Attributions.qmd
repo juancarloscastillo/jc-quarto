@@ -1,7 +1,7 @@
 ---
 title : "Poverty Attributions and the Perceived Justice of Income Inequality: A Comparison of East and West Germany"
 date : "2015-09-01"
-author : ["Simone M. Schneider", "Juan-Carlos Castillo"]
+author : "Schneider, Simone M. & Castillo, Juan-Carlos"
 categories : ["Journal Article"]
 publication : "Social Psychology Quarterly, 78(3) 263--282  [https://doi.org/10.1177/0190272515589298](https://doi.org/10.1177/0190272515589298)"
 publication_short : "Social Psychology Quarterly, 78(3) 263--282  [https://doi.org/10.1177/0190272515589298](https://doi.org/10.1177/0190272515589298)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Simone M. Schneider, Juan-Carlos Castillo (2015). *Poverty Attributions and the Perceived Justice of Income Inequality: A Comparison of East and West Germany*. Social Psychology Quarterly, 78(3) 263--282  [https://doi.org/10.1177/0190272515589298](https://doi.org/10.1177/0190272515589298)
+Schneider, Simone M. & Castillo, Juan-Carlos (2015). *Poverty Attributions and the Perceived Justice of Income Inequality: A Comparison of East and West Germany*. Social Psychology Quarterly, 78(3) 263--282  [https://doi.org/10.1177/0190272515589298](https://doi.org/10.1177/0190272515589298)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "[En Desarrollo] Preferencias de Mercado En La Educación: Un Análisis de Clases Latentes Sobre Creencias Meritocráticas En Perspectiva Comparada"
 date : "2026-12-01"
-author : ["Tomas Urzua"]
+author : "Urzua, Tomas"
 categories : ["Manuscript"]
 publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Tomas Urzua (2026). *[En Desarrollo] Preferencias de Mercado En La Educación: Un Análisis de Clases Latentes Sobre Creencias Meritocráticas En Perspectiva Comparada*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Urzua, Tomas (2026). *[En Desarrollo] Preferencias de Mercado En La Educación: Un Análisis de Clases Latentes Sobre Creencias Meritocráticas En Perspectiva Comparada*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

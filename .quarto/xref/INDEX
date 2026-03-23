@@ -2275,5 +2275,20 @@
   },
   "references/thesis/posts/2026_[En_Desarrollo]_Pref.qmd": {
     "2026_[En_Desarrollo]_Pref.html": "4bb24edd"
+  },
+  "blog/posts/zotero-quarto-website/references/presentations/index.qmd": {
+    "index.html": "81303567"
+  },
+  "blog/posts/zotero-quarto-website/references/publications/index.qmd": {
+    "index.html": "d5fa7742"
+  },
+  "blog/posts/zotero-quarto-website/references/thesis/index.qmd": {
+    "index.html": "972eed03"
+  },
+  "references/thesis/index.qmd": {
+    "index.html": "de58e60b"
+  },
+  "proyectos/posts/datasoc/index.qmd": {
+    "index.html": "57a1c2f2"
   }
 }

@@ -1,7 +1,7 @@
 ---
 title : "Risk Exposure, Humanitarianism and Willingness to Pay for Universal Healthcare: A Cross-National Analysis of 28 Countries"
 date : "2019-09-01"
-author : ["Luis Maldonado", "Francisco Olivos", "Juan-Carlos Castillo", "Jorge Atria", "Ariel Azar"]
+author : "Maldonado, Luis; Olivos, Francisco; Castillo, Juan-Carlos; Atria, Jorge & Azar, Ariel"
 categories : ["Journal Article"]
 publication : "Social Justice Research, 32(3) 349--383  [https://doi.org/10.1007/s11211-019-00336-6](https://doi.org/10.1007/s11211-019-00336-6)"
 publication_short : "Social Justice Research, 32(3) 349--383  [https://doi.org/10.1007/s11211-019-00336-6](https://doi.org/10.1007/s11211-019-00336-6)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Luis Maldonado, Francisco Olivos, Juan-Carlos Castillo, Jorge Atria, Ariel Azar (2019). *Risk Exposure, Humanitarianism and Willingness to Pay for Universal Healthcare: A Cross-National Analysis of 28 Countries*. Social Justice Research, 32(3) 349--383  [https://doi.org/10.1007/s11211-019-00336-6](https://doi.org/10.1007/s11211-019-00336-6)
+Maldonado, Luis; Olivos, Francisco; Castillo, Juan-Carlos; Atria, Jorge & Azar, Ariel (2019). *Risk Exposure, Humanitarianism and Willingness to Pay for Universal Healthcare: A Cross-National Analysis of 28 Countries*. Social Justice Research, 32(3) 349--383  [https://doi.org/10.1007/s11211-019-00336-6](https://doi.org/10.1007/s11211-019-00336-6)
 
 :::
 

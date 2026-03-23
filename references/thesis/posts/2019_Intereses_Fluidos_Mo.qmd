@@ -1,7 +1,7 @@
 ---
 title : "Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países."
 date : "2019-01-01"
-author : ["Alejandro Plaza"]
+author : "Plaza, Alejandro"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -55,7 +55,7 @@ Desigualdad, Desarrollo Económico.# Documento
 
 ::: {.callout-note title="How to cite this work"}
 
-Alejandro Plaza (2019). *Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Plaza, Alejandro (2019). *Intereses Fluidos: Movilidad Social y Preferencias Por La Redistribución En 37 Países.*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Perception and Legitimacy of Income Inequality in International Comparison"
 date : "2008-08-01"
-author : ["\relax JC Castillo", "J. Gerlitz", "M. Schrenker"]
+author : "Castillo, \relax JC; Gerlitz, J. & Schrenker, M."
 categories : ["Presentation"]
 publication : " . Boston"
 publication_short : " . Boston"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-\relax JC Castillo, J. Gerlitz, M. Schrenker (2008). *Perception and Legitimacy of Income Inequality in International Comparison*.  . Boston
+Castillo, \relax JC; Gerlitz, J. & Schrenker, M. (2008). *Perception and Legitimacy of Income Inequality in International Comparison*.  . Boston
 
 :::
 

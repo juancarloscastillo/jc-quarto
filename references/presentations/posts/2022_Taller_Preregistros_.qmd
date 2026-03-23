@@ -1,7 +1,7 @@
 ---
 title : "Taller Preregistros ELSOC"
 date : "2022-09-01"
-author : ["Juan-Carlos Castillo", "Kevin Carrasco"]
+author : "Castillo, Juan-Carlos & Carrasco, Kevin"
 categories : ["Presentation"]
 publication : " Laboratorio de Investigación Social Abierta (LISA) - COES . Santiago, Campus Lo Contador, Universidad Catolica"
 publication_short : " Laboratorio de Investigación Social Abierta (LISA) - COES . Santiago, Campus Lo Contador, Universidad Catolica"
@@ -35,7 +35,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco (2022). *Taller Preregistros ELSOC*.  Laboratorio de Investigación Social Abierta (LISA) - COES . Santiago, Campus Lo Contador, Universidad Catolica
+Castillo, Juan-Carlos & Carrasco, Kevin (2022). *Taller Preregistros ELSOC*.  Laboratorio de Investigación Social Abierta (LISA) - COES . Santiago, Campus Lo Contador, Universidad Catolica
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "¿Qué Puede Hacer La Cultura de La Escuela Para Aumentar La Participación Política de Sus Estudiantes? Un Estudio Exploratorio Sobre El Rol Del Liderazgo Distribuido y El Compromiso Organizacional Docente En Escuelas Chilenas"
 date : "2015-01-01"
-author : ["Eduardo Santander"]
+author : "Santander, Eduardo"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -70,7 +70,7 @@ escuelas chilenas.
 
 ::: {.callout-note title="How to cite this work"}
 
-Eduardo Santander (2015). *¿Qué Puede Hacer La Cultura de La Escuela Para Aumentar La Participación Política de Sus Estudiantes? Un Estudio Exploratorio Sobre El Rol Del Liderazgo Distribuido y El Compromiso Organizacional Docente En Escuelas Chilenas*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Santander, Eduardo (2015). *¿Qué Puede Hacer La Cultura de La Escuela Para Aumentar La Participación Política de Sus Estudiantes? Un Estudio Exploratorio Sobre El Rol Del Liderazgo Distribuido y El Compromiso Organizacional Docente En Escuelas Chilenas*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

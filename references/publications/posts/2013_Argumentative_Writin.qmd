@@ -1,7 +1,7 @@
 ---
 title : "Argumentative Writing and Academic Achievement: A Longitudinal Study"
 date : "2013-12-01"
-author : ["David D. Preiss", "Juan-Carlos Castillo", "Elena L. Grigorenko", "Jorge Manzi"]
+author : "Preiss, David D.; Castillo, Juan-Carlos; Grigorenko, Elena L. & Manzi, Jorge"
 categories : ["Journal Article"]
 publication : "Learning and Individual Differences, 28 204--211  [https://doi.org/10.1016/j.lindif.2012.12.013](https://doi.org/10.1016/j.lindif.2012.12.013)"
 publication_short : "Learning and Individual Differences, 28 204--211  [https://doi.org/10.1016/j.lindif.2012.12.013](https://doi.org/10.1016/j.lindif.2012.12.013)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-David D. Preiss, Juan-Carlos Castillo, Elena L. Grigorenko, Jorge Manzi (2013). *Argumentative Writing and Academic Achievement: A Longitudinal Study*. Learning and Individual Differences, 28 204--211  [https://doi.org/10.1016/j.lindif.2012.12.013](https://doi.org/10.1016/j.lindif.2012.12.013)
+Preiss, David D.; Castillo, Juan-Carlos; Grigorenko, Elena L. & Manzi, Jorge (2013). *Argumentative Writing and Academic Achievement: A Longitudinal Study*. Learning and Individual Differences, 28 204--211  [https://doi.org/10.1016/j.lindif.2012.12.013](https://doi.org/10.1016/j.lindif.2012.12.013)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Stability and Change in Political Right-Wing Groups in Chile: Understanding the Shift among Right Wingers to the Center"
 date : "2014-01-01"
-author : ["Nicolas Villarroel"]
+author : "Villarroel, Nicolas"
 categories : ["Manuscript"]
 publication : " Magister En Psicología Social - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Psicología Social - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -24,7 +24,7 @@ Based on the five trajectories of political identification developed by Carvacho
 
 ::: {.callout-note title="How to cite this work"}
 
-Nicolas Villarroel (2014). *Stability and Change in Political Right-Wing Groups in Chile: Understanding the Shift among Right Wingers to the Center*.  Magister En Psicología Social - Pontificia Universidad Católica de Chile. Santiago de Chile
+Villarroel, Nicolas (2014). *Stability and Change in Political Right-Wing Groups in Chile: Understanding the Shift among Right Wingers to the Center*.  Magister En Psicología Social - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

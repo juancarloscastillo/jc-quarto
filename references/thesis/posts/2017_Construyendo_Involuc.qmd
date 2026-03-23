@@ -1,7 +1,7 @@
 ---
 title : "Construyendo Involucramiento Comunitario: Casos de Parque Metropolitano Cerro Chena y Mapocho Limpio"
 date : "2017-01-01"
-author : ["Pablo Contreras", "Valentina Terra"]
+author : "Contreras, Pablo & Terra, Valentina"
 categories : ["Manuscript"]
 publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Pablo Contreras, Valentina Terra (2017). *Construyendo Involucramiento Comunitario: Casos de Parque Metropolitano Cerro Chena y Mapocho Limpio*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Contreras, Pablo & Terra, Valentina (2017). *Construyendo Involucramiento Comunitario: Casos de Parque Metropolitano Cerro Chena y Mapocho Limpio*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

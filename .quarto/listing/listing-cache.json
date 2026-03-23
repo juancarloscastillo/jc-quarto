@@ -3,6 +3,15 @@
     "blog/blog.qmd": [
       "posts"
     ],
+    "blog/posts/zotero-quarto-website/references/presentations/index.qmd": [
+      "posts/*.qmd"
+    ],
+    "blog/posts/zotero-quarto-website/references/publications/index.qmd": [
+      "posts/*.qmd"
+    ],
+    "blog/posts/zotero-quarto-website/references/thesis/index.qmd": [
+      "posts/*.qmd"
+    ],
     "docencia/docencia.qmd": [
       "posts"
     ],
@@ -25,7 +34,7 @@
     "references/publications/index.qmd": [
       "posts/*.qmd"
     ],
-    "references/thesis/tesis.qmd": [
+    "references/thesis/index.qmd": [
       "posts/*.qmd"
     ]
   }

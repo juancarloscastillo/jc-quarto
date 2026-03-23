@@ -1,7 +1,7 @@
 ---
 title : "Perceived Economic Inequality Measures: Their Reflection on Objective Inequalities and Their Effects on Support for Redistribution"
 date : "2022-12-01"
-author : ["Juan Diego Garcia-Castro", "Efrain Garcia-Sanchez", "Guillermo B. Willis", "Juan-Carlos Castillo", "Rosa Rodriguez-Bailon"]
+author : "Garcia-Castro, Juan Diego; Garcia-Sanchez, Efrain; Willis, Guillermo B.; Castillo, Juan-Carlos & Rodriguez-Bailon, Rosa"
 categories : ["Journal Article"]
 publication : "Social Psychology, 53 [https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498](https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498)"
 publication_short : "Social Psychology, 53 [https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498](https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498)"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Diego Garcia-Castro, Efrain Garcia-Sanchez, Guillermo B. Willis, Juan-Carlos Castillo, Rosa Rodriguez-Bailon (2022). *Perceived Economic Inequality Measures: Their Reflection on Objective Inequalities and Their Effects on Support for Redistribution*. Social Psychology, 53 [https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498](https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498)
+Garcia-Castro, Juan Diego; Garcia-Sanchez, Efrain; Willis, Guillermo B.; Castillo, Juan-Carlos & Rodriguez-Bailon, Rosa (2022). *Perceived Economic Inequality Measures: Their Reflection on Objective Inequalities and Their Effects on Support for Redistribution*. Social Psychology, 53 [https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498](https://doi.org/https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000498)
 
 :::
 

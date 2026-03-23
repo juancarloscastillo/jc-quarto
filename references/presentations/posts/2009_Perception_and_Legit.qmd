@@ -1,7 +1,7 @@
 ---
 title : "Perception and Legitimacy of Economic Inequality in Chile"
 date : "2009-09-01"
-author : ["J. Castillo"]
+author : "Castillo, J."
 categories : ["Conference paper"]
 publication : " 5th ECPR General Conference. Potsdam, Potsdam University"
 publication_short : " 5th ECPR General Conference. Potsdam, Potsdam University"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-J. Castillo (2009). *Perception and Legitimacy of Economic Inequality in Chile*.  5th ECPR General Conference. Potsdam, Potsdam University
+Castillo, J. (2009). *Perception and Legitimacy of Economic Inequality in Chile*.  5th ECPR General Conference. Potsdam, Potsdam University
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Income, Egalitarianism and Attitudes towards Healthcare Policy: A Study on Public Attitudes in~29~Countries"
 date : "2018-01-01"
-author : ["A. Azar", "L. Maldonado", "Juan-Carlos Castillo", "J. Atria"]
+author : "Azar, A.; Maldonado, L.; Castillo, Juan-Carlos & Atria, J."
 categories : ["Journal Article"]
 publication : "Public Health, 154 59--69  [https://doi.org/10.1016/j.puhe.2017.09.007](https://doi.org/10.1016/j.puhe.2017.09.007)"
 publication_short : "Public Health, 154 59--69  [https://doi.org/10.1016/j.puhe.2017.09.007](https://doi.org/10.1016/j.puhe.2017.09.007)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-A. Azar, L. Maldonado, Juan-Carlos Castillo, J. Atria (2018). *Income, Egalitarianism and Attitudes towards Healthcare Policy: A Study on Public Attitudes in~29~Countries*. Public Health, 154 59--69  [https://doi.org/10.1016/j.puhe.2017.09.007](https://doi.org/10.1016/j.puhe.2017.09.007)
+Azar, A.; Maldonado, L.; Castillo, Juan-Carlos & Atria, J. (2018). *Income, Egalitarianism and Attitudes towards Healthcare Policy: A Study on Public Attitudes in~29~Countries*. Public Health, 154 59--69  [https://doi.org/10.1016/j.puhe.2017.09.007](https://doi.org/10.1016/j.puhe.2017.09.007)
 
 :::
 

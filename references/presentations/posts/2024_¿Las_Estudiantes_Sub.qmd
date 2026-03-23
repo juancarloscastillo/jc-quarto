@@ -1,7 +1,7 @@
 ---
 title : "¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos"
 date : "2024-05-01"
-author : ["Juan-Carlos Castillo", "Nicolas Tobar"]
+author : "Castillo, Juan-Carlos; Tobar, Nicolas & Miranda, Daniel"
 categories : ["Presentation"]
 publication : " Congreso Chileno de Sociología - PreAlas . Santiago"
 publication_short : " Congreso Chileno de Sociología - PreAlas . Santiago"
@@ -10,16 +10,26 @@ abstract_short : ""
 about:
   template: marquee
 ---
-# ![](/images/congsocio2024nudos.png)
+[< fa brands github size=2x > Project Repo](https://github.com/milenio-nudos/multilevel_icils_gender_chile)
+
+![](/images/congsocio2024nudos.png)width=100%
 
 ## Documento de presentación
 
-<iframe width="700"  height="450" src="https://nudos.quarto.pub/prealas-2024/#/las-estudiantes-subestiman-sus-habilidades-tecnológicas" title="Quarto presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; padding-top: 56.25%;">
+  <iframe src="https://nudos.quarto.pub/prealas-2024/#/las-estudiantes-subestiman-sus-habilidades-tecnológicas" title="Quarto presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+::: .callout-note title="How to cite this work"
+
+Juan-Carlos Castillo, Nicolas Tobar (2024). *¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos*.  Congreso Chileno de Sociología - PreAlas . Santiago
+
+:::
 
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Nicolas Tobar (2024). *¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos*.  Congreso Chileno de Sociología - PreAlas . Santiago
+Castillo, Juan-Carlos; Tobar, Nicolas & Miranda, Daniel (2024). *¿Las Estudiantes Subestiman Sus Habilidades Tecnológicas? Diferencias de Género En Autoeficacia Digital En Contextos Escolares Chilenos*.  Congreso Chileno de Sociología - PreAlas . Santiago
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Percepción de Desigualdad Económica y Su Influencia Sobre La Justificación de Las Diferencias de Ingreso Legítimas"
 date : "2023-01-01"
-author : ["Julio Iturra", "Juan-Carlos Castillo", "Catalina Rufs", "Luis Maldonado"]
+author : "Iturra, Julio; Castillo, Juan-Carlos; Rufs, Catalina & Maldonado, Luis"
 categories : ["Journal Article"]
 publication : "Estudios Sociológicos, 4(122) [https://doi.org/10.24201/es.2023v41n122.2260](https://doi.org/10.24201/es.2023v41n122.2260)"
 publication_short : "Estudios Sociológicos, 4(122) [https://doi.org/10.24201/es.2023v41n122.2260](https://doi.org/10.24201/es.2023v41n122.2260)"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Julio Iturra, Juan-Carlos Castillo, Catalina Rufs, Luis Maldonado (2023). *Percepción de Desigualdad Económica y Su Influencia Sobre La Justificación de Las Diferencias de Ingreso Legítimas*. Estudios Sociológicos, 4(122) [https://doi.org/10.24201/es.2023v41n122.2260](https://doi.org/10.24201/es.2023v41n122.2260)
+Iturra, Julio; Castillo, Juan-Carlos; Rufs, Catalina & Maldonado, Luis (2023). *Percepción de Desigualdad Económica y Su Influencia Sobre La Justificación de Las Diferencias de Ingreso Legítimas*. Estudios Sociológicos, 4(122) [https://doi.org/10.24201/es.2023v41n122.2260](https://doi.org/10.24201/es.2023v41n122.2260)
 
 :::
 

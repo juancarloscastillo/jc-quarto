@@ -1,7 +1,7 @@
 ---
 title : "Legitimidad Del Sistema Económico y Participación Ciudadana: Una Aproximación a La Relación Entre Percepciones Individuales y Actividad Política En Chile"
 date : "2016-01-01"
-author : ["Matias Placencio-Castro"]
+author : "Placencio-Castro, Matias"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -34,7 +34,7 @@ Los resultados preliminares sugieren que las percepciones sobre la legitimidad d
 
 ::: {.callout-note title="How to cite this work"}
 
-Matias Placencio-Castro (2016). *Legitimidad Del Sistema Económico y Participación Ciudadana: Una Aproximación a La Relación Entre Percepciones Individuales y Actividad Política En Chile*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Placencio-Castro, Matias (2016). *Legitimidad Del Sistema Económico y Participación Ciudadana: Una Aproximación a La Relación Entre Percepciones Individuales y Actividad Política En Chile*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

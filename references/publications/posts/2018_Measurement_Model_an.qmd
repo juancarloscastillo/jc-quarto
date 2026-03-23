@@ -1,7 +1,7 @@
 ---
 title : "Measurement Model and Invariance Testing of Scales Measuring Egalitarian Values in ICCS 2009"
 date : "2018-01-01"
-author : ["Daniel Miranda", "Juan-Carlos Castillo"]
+author : "Miranda, Daniel & Castillo, Juan-Carlos"
 categories : ["Book Section"]
 publication : "  In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 19--31 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_3](https://doi.org/10.1007/978-3-319-78692-6_3). ISBN: 978-3-319-78691-9 978-3-319-78692-6"
 publication_short : "  In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 19--31 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_3](https://doi.org/10.1007/978-3-319-78692-6_3). ISBN: 978-3-319-78691-9 978-3-319-78692-6"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda, Juan-Carlos Castillo (2018). *Measurement Model and Invariance Testing of Scales Measuring Egalitarian Values in ICCS 2009*.   In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 19--31 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_3](https://doi.org/10.1007/978-3-319-78692-6_3). ISBN: 978-3-319-78691-9 978-3-319-78692-6
+Miranda, Daniel & Castillo, Juan-Carlos (2018). *Measurement Model and Invariance Testing of Scales Measuring Egalitarian Values in ICCS 2009*.   In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 19--31 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_3](https://doi.org/10.1007/978-3-319-78692-6_3). ISBN: 978-3-319-78691-9 978-3-319-78692-6
 
 :::
 

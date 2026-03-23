@@ -1,11 +1,11 @@
 ---
 title : "Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic"
 date : "2025-09-01"
-author : ["J-C Castillo", "Julio Iturra", "Kevin Carrasco"]
+author : "Castillo, Juan-Carlos; Iturra, Julio & Carrasco, Kevin"
 categories : ["Journal Article"]
 publication : "Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)"
 publication_short : "Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)"
-abstract : "(Abstract not available)"
+abstract : "Education is considered a key tool for social mobility and equality of opportunities. However, despite the widespread value of education, disparities in educational outcomes persist over time. This paper is guided by the following research questions: To what extent are such educational disparities justified in society? Is the justification of educational inequality affected in periods of personal and social vulnerability, as in the COVID-19 pandemic? And, what are the main factors driving this kind of justification? The Chilean case offers an interesting context for this study given its high economic inequality, deep neoliberal policies, and commodification of social services such as education. This economic and cultural environment has promoted meritocratic ideals, whereby individual talent and effort are considered key to get ahead in life, disregarding opportunities linked to social origin. The central argument of this article is that the justification of inequalities weakens during periods of vulnerability and crisis (such as the health and economic crisis resulting from the COVID-19 pandemic). Furthermore, we argue that such changes could be linked to a challenge of meritocratic ideals. For testing the research hypotheses we estimate a series of longitudinal multilevel models with data from a Chilean longitudinal panel survey (2016 – 2023, 6 waves, N = 2,927). Whereas we find support for the association between the perception of meritocracy and justification of inequality, the analyses that involved changes over time showed an increase in the justification of inequality in education. The discussion of these results delves into the social consequences of justifying inequality in a sensitive area as education, as well as the persistence of meritocratic ideals despite challenging events."
 abstract_short : ""
 about:
   template: marquee
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-J-C Castillo, Julio Iturra, Kevin Carrasco (2025). *Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic*. Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)
+Castillo, Juan-Carlos; Iturra, Julio & Carrasco, Kevin (2025). *Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic*. Social Justice Research, 38(3) 240--263  [https://doi.org/10.1007/s11211-025-00458-0](https://doi.org/10.1007/s11211-025-00458-0)
 
 :::
 

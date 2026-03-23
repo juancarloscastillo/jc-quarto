@@ -1,7 +1,7 @@
 ---
 title : "Assessment of Argumentative Writing and Critical Thinking in Higher Education: Educational Correlates and Gender Differences"
 date : "2013-12-01"
-author : ["David D. Preiss", "Juan-Carlos Castillo", "Paulina Flotts", "Ernesto {San Martin}"]
+author : "Preiss, David D.; Castillo, Juan-Carlos; Flotts, Paulina & San Martin, Ernesto"
 categories : ["Journal Article"]
 publication : "Learning and Individual Differences, 28 193--203  [https://doi.org/10.1016/j.lindif.2013.06.004](https://doi.org/10.1016/j.lindif.2013.06.004)"
 publication_short : "Learning and Individual Differences, 28 193--203  [https://doi.org/10.1016/j.lindif.2013.06.004](https://doi.org/10.1016/j.lindif.2013.06.004)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-David D. Preiss, Juan-Carlos Castillo, Paulina Flotts, Ernesto San Martin (2013). *Assessment of Argumentative Writing and Critical Thinking in Higher Education: Educational Correlates and Gender Differences*. Learning and Individual Differences, 28 193--203  [https://doi.org/10.1016/j.lindif.2013.06.004](https://doi.org/10.1016/j.lindif.2013.06.004)
+Preiss, David D.; Castillo, Juan-Carlos; Flotts, Paulina & San Martin, Ernesto (2013). *Assessment of Argumentative Writing and Critical Thinking in Higher Education: Educational Correlates and Gender Differences*. Learning and Individual Differences, 28 193--203  [https://doi.org/10.1016/j.lindif.2013.06.004](https://doi.org/10.1016/j.lindif.2013.06.004)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Concepts, Measurement and Indicators of Social Cohesion: A Longitudinal Perspective"
 date : "2023-06-01"
-author : ["Juan-Carlos Castillo", "Ignacio Caceres", "Kevin Carrasco"]
+author : "Castillo, Juan-Carlos; Caceres, Ignacio & Carrasco, Kevin"
 categories : ["Presentation"]
 publication : " ISA XX World Congress of Sociology . Melbourne"
 publication_short : " ISA XX World Congress of Sociology . Melbourne"
@@ -28,7 +28,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Ignacio Caceres, Kevin Carrasco (2023). *Concepts, Measurement and Indicators of Social Cohesion: A Longitudinal Perspective*.  ISA XX World Congress of Sociology . Melbourne
+Castillo, Juan-Carlos; Caceres, Ignacio & Carrasco, Kevin (2023). *Concepts, Measurement and Indicators of Social Cohesion: A Longitudinal Perspective*.  ISA XX World Congress of Sociology . Melbourne
 
 :::
 

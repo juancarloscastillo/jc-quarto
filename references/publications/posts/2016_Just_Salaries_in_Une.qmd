@@ -1,7 +1,7 @@
 ---
 title : "Just Salaries in Unequal Conditions: An Exploratory Factorial Survey Study in Chile."
 date : "2016-01-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Journal Article"]
 publication : "Cuadernos ISUC, 1(2) 1--30 "
 publication_short : "Cuadernos ISUC, 1(2) 1--30 "
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2016). *Just Salaries in Unequal Conditions: An Exploratory Factorial Survey Study in Chile.*. Cuadernos ISUC, 1(2) 1--30 
+Castillo, Juan-Carlos (2016). *Just Salaries in Unequal Conditions: An Exploratory Factorial Survey Study in Chile.*. Cuadernos ISUC, 1(2) 1--30 
 
 :::
 

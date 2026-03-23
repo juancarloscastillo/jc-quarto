@@ -1,7 +1,7 @@
 ---
 title : "Authoritarianism, Social Dominance, and Trust in Public Institutions."
 date : "2011-07-01"
-author : ["J. Castillo", "D. Miranda", "P. Torres"]
+author : "Castillo, J.; Miranda, D. & Torres, P."
 categories : ["Conference paper"]
 publication : " Annual Scientific Meeting of the International Society of Political Psychology – ISPP. Bilgi University, Istambul"
 publication_short : " Annual Scientific Meeting of the International Society of Political Psychology – ISPP. Bilgi University, Istambul"
@@ -17,7 +17,7 @@ Second line
 
 ::: {.callout-note title="How to cite this work"}
 
-J. Castillo, D. Miranda, P. Torres (2011). *Authoritarianism, Social Dominance, and Trust in Public Institutions.*.  Annual Scientific Meeting of the International Society of Political Psychology – ISPP. Bilgi University, Istambul
+Castillo, J.; Miranda, D. & Torres, P. (2011). *Authoritarianism, Social Dominance, and Trust in Public Institutions.*.  Annual Scientific Meeting of the International Society of Political Psychology – ISPP. Bilgi University, Istambul
 
 :::
 

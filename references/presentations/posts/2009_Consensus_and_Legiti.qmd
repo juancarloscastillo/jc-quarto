@@ -1,7 +1,7 @@
 ---
 title : "Consensus and Legitimacy of Earnings Inequality"
 date : "2009-05-01"
-author : ["J. Castillo"]
+author : "Castillo, J."
 categories : ["Presentation"]
 publication : " International Social Justice Project  Meeting . Haifa, Haifa University"
 publication_short : " International Social Justice Project  Meeting . Haifa, Haifa University"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-J. Castillo (2009). *Consensus and Legitimacy of Earnings Inequality*.  International Social Justice Project  Meeting . Haifa, Haifa University
+Castillo, J. (2009). *Consensus and Legitimacy of Earnings Inequality*.  International Social Justice Project  Meeting . Haifa, Haifa University
 
 :::
 

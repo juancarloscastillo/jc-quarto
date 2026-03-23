@@ -1,7 +1,7 @@
 ---
 title : "Enfermedades Crónicas No Transmisibles y El Potencial Efecto Protector de La Cohesión Social En Chile."
 date : "2022-01-01"
-author : ["Simon Varas", "Juan-Carlos Castillo", "Marcela Ferrer"]
+author : "Varas, Simon; Castillo, Juan-Carlos & Ferrer, Marcela"
 categories : ["Journal Article"]
 publication : "Revista IT Salud Comunitaria y  Sociedad, 9(9)"
 publication_short : "Revista IT Salud Comunitaria y  Sociedad, 9(9)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Simon Varas, Juan-Carlos Castillo, Marcela Ferrer (2022). *Enfermedades Crónicas No Transmisibles y El Potencial Efecto Protector de La Cohesión Social En Chile.*. Revista IT Salud Comunitaria y  Sociedad, 9(9)
+Varas, Simon; Castillo, Juan-Carlos & Ferrer, Marcela (2022). *Enfermedades Crónicas No Transmisibles y El Potencial Efecto Protector de La Cohesión Social En Chile.*. Revista IT Salud Comunitaria y  Sociedad, 9(9)
 
 :::
 

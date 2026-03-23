@@ -1,7 +1,7 @@
 ---
 title : "Concepts and Measurement of Social Cohesion in International Perspective"
 date : "2021-09-01"
-author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Ignacio Caceres"]
+author : "Castillo, Juan-Carlos; Carrasco, Kevin & Caceres, Ignacio"
 categories : ["Presentation"]
 publication : " 3rd Akademie Für Soziologie (AS) Conference: Cohesive Societies? Analytical-Empirical Perspectives . Leipzig (Online)"
 publication_short : " 3rd Akademie Für Soziologie (AS) Conference: Cohesive Societies? Analytical-Empirical Perspectives . Leipzig (Online)"
@@ -25,7 +25,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco, Ignacio Caceres (2021). *Concepts and Measurement of Social Cohesion in International Perspective*.  3rd Akademie Für Soziologie (AS) Conference: Cohesive Societies? Analytical-Empirical Perspectives . Leipzig (Online)
+Castillo, Juan-Carlos; Carrasco, Kevin & Caceres, Ignacio (2021). *Concepts and Measurement of Social Cohesion in International Perspective*.  3rd Akademie Für Soziologie (AS) Conference: Cohesive Societies? Analytical-Empirical Perspectives . Leipzig (Online)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "¿Quién Justifica Qué? El Rol Del Sentido de Injusticia En Las Justificaciones de Violencia En Contexto de Protesta"
 date : "2022-01-01"
-author : ["Martin Venegas"]
+author : "Venegas, Martin"
 categories : ["Manuscript"]
 publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -35,7 +35,7 @@ Los resultados mostraron evidencia para el primer par de hipótesis y evidencia 
 
 ::: {.callout-note title="How to cite this work"}
 
-Martin Venegas (2022). *¿Quién Justifica Qué? El Rol Del Sentido de Injusticia En Las Justificaciones de Violencia En Contexto de Protesta*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Venegas, Martin (2022). *¿Quién Justifica Qué? El Rol Del Sentido de Injusticia En Las Justificaciones de Violencia En Contexto de Protesta*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

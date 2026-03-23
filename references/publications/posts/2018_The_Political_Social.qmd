@@ -1,7 +1,7 @@
 ---
 title : "The Political Socialization of Attitudes Toward Equal Rights from a Comparative Perspective"
 date : "2018-01-01"
-author : ["Daniel Miranda", "Juan-Carlos Castillo", "Patricio Cumsille"]
+author : "Miranda, Daniel; Castillo, Juan-Carlos & Cumsille, Patricio"
 categories : ["Book Section"]
 publication : "  In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 103--123 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_7](https://doi.org/10.1007/978-3-319-78692-6_7). ISBN: 978-3-319-78692-6"
 publication_short : "  In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 103--123 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_7](https://doi.org/10.1007/978-3-319-78692-6_7). ISBN: 978-3-319-78692-6"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda, Juan-Carlos Castillo, Patricio Cumsille (2018). *The Political Socialization of Attitudes Toward Equal Rights from a Comparative Perspective*.   In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 103--123 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_7](https://doi.org/10.1007/978-3-319-78692-6_7). ISBN: 978-3-319-78692-6
+Miranda, Daniel; Castillo, Juan-Carlos & Cumsille, Patricio (2018). *The Political Socialization of Attitudes Toward Equal Rights from a Comparative Perspective*.   In Andrés Sandoval-Hernández, Maria Magdalena Isac & Daniel Miranda: Teaching Tolerance in a Globalized World 103--123 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-319-78692-6_7](https://doi.org/10.1007/978-3-319-78692-6_7). ISBN: 978-3-319-78692-6
 
 :::
 

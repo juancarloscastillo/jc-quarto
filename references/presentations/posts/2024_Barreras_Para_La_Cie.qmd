@@ -1,7 +1,7 @@
 ---
 title : "Barreras Para La Ciencia Abierta En La Investigación En Ciencias Sociales En Chile."
 date : "2024-05-01"
-author : ["Juan-Carlos Castillo", "Kevin Carrasco", "Cristobal Ortiz"]
+author : "Castillo, Juan-Carlos; Carrasco, Kevin & Ortiz, Cristobal"
 categories : ["Presentation"]
 publication : " Congreso Chileno de Sociología - PreAlas . Santiago"
 publication_short : " Congreso Chileno de Sociología - PreAlas . Santiago"
@@ -20,7 +20,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco, Cristobal Ortiz (2024). *Barreras Para La Ciencia Abierta En La Investigación En Ciencias Sociales En Chile.*.  Congreso Chileno de Sociología - PreAlas . Santiago
+Castillo, Juan-Carlos; Carrasco, Kevin & Ortiz, Cristobal (2024). *Barreras Para La Ciencia Abierta En La Investigación En Ciencias Sociales En Chile.*.  Congreso Chileno de Sociología - PreAlas . Santiago
 
 :::
 

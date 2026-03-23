@@ -1,7 +1,7 @@
 ---
 title : "Socialización de La Meritocracia: El Rol de La Familia y La Escuela"
 date : "2021-11-01"
-author : ["Juan-Carlos Castillo", "Julio Iturra", "Francisco Meneses", "Martin Venegas"]
+author : "Castillo, Juan-Carlos; Iturra, Julio; Meneses, Francisco & Venegas, Martin"
 categories : ["Conference paper"]
 publication : " VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES"
 publication_short : " VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Julio Iturra, Francisco Meneses, Martin Venegas (2021). *Socialización de La Meritocracia: El Rol de La Familia y La Escuela*.  VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES
+Castillo, Juan-Carlos; Iturra, Julio; Meneses, Francisco & Venegas, Martin (2021). *Socialización de La Meritocracia: El Rol de La Familia y La Escuela*.  VIII Conferencia Internacional COES: Cohesión Social En Tiempos Turbulentos. Santiago: COES
 
 :::
 

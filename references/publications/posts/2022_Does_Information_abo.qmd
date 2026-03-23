@@ -1,7 +1,7 @@
 ---
 title : "Does Information about Economic Inequality Affect Opportunity Beliefs? Results from Survey Experiments in Post-Authoritarian Chile"
 date : "2022-01-01"
-author : ["Luis Maldonado", "Juan-Carlos Castillo", "Francisco Olivos", "Julio Iturra", "Jorge Atria"]
+author : "Maldonado, Luis; Castillo, Juan-Carlos; Olivos, Francisco; Iturra, Julio & Atria, Jorge"
 categories : ["Manuscript"]
 publication : " AAA - OOO. UUU"
 publication_short : " AAA - OOO. UUU"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Luis Maldonado, Juan-Carlos Castillo, Francisco Olivos, Julio Iturra, Jorge Atria (2022). *Does Information about Economic Inequality Affect Opportunity Beliefs? Results from Survey Experiments in Post-Authoritarian Chile*.  AAA - OOO. UUU
+Maldonado, Luis; Castillo, Juan-Carlos; Olivos, Francisco; Iturra, Julio & Atria, Jorge (2022). *Does Information about Economic Inequality Affect Opportunity Beliefs? Results from Survey Experiments in Post-Authoritarian Chile*.  AAA - OOO. UUU
 
 :::
 

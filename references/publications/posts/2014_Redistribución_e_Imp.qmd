@@ -1,7 +1,7 @@
 ---
 title : "Redistribución e Impuestos: Un Análisis Desde La Opinión Pública"
 date : "2014-01-01"
-author : ["Juan-Carlos Castillo", "Francisco Olivos"]
+author : "Castillo, Juan-Carlos & Olivos, Francisco"
 categories : ["Book Section"]
 publication : "  In Jorge Atria: Tributación En Sociedad: Impuestos y Redistribución En El Chile Del Siglo XXI 143--166 . Santiago de Chile: Uqbar Editores. ISBN: 978-956-9171-43-7"
 publication_short : "  In Jorge Atria: Tributación En Sociedad: Impuestos y Redistribución En El Chile Del Siglo XXI 143--166 . Santiago de Chile: Uqbar Editores. ISBN: 978-956-9171-43-7"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Francisco Olivos (2014). *Redistribución e Impuestos: Un Análisis Desde La Opinión Pública*.   In Jorge Atria: Tributación En Sociedad: Impuestos y Redistribución En El Chile Del Siglo XXI 143--166 . Santiago de Chile: Uqbar Editores. ISBN: 978-956-9171-43-7
+Castillo, Juan-Carlos & Olivos, Francisco (2014). *Redistribución e Impuestos: Un Análisis Desde La Opinión Pública*.   In Jorge Atria: Tributación En Sociedad: Impuestos y Redistribución En El Chile Del Siglo XXI 143--166 . Santiago de Chile: Uqbar Editores. ISBN: 978-956-9171-43-7
 
 :::
 

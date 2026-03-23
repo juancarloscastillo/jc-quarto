@@ -1,7 +1,7 @@
 ---
 title : "Minorías Masculinas En Pedagogía: Un Estudio de Las Trayectorias Académicas de Hombres En Chile (2007–2024)"
 date : "2026-01-01"
-author : ["Sophia Karoussis"]
+author : "Karoussis, Sophia"
 categories : ["Manuscript"]
 publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Sophia Karoussis (2026). *Minorías Masculinas En Pedagogía: Un Estudio de Las Trayectorias Académicas de Hombres En Chile (2007–2024)*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Karoussis, Sophia (2026). *Minorías Masculinas En Pedagogía: Un Estudio de Las Trayectorias Académicas de Hombres En Chile (2007–2024)*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

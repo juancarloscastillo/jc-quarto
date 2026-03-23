@@ -1,7 +1,7 @@
 ---
 title : "¿Qué Pueden Hacer Las Escuelas Para Promover Actitudes Positivas Hacia La Igualdad de Derechos?"
 date : "2023-03-01"
-author : ["Anais Herrera"]
+author : "Herrera, Anais"
 categories : ["Manuscript"]
 publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -48,7 +48,7 @@ de derechas analizadas en el estudio.
 
 ::: {.callout-note title="How to cite this work"}
 
-Anais Herrera (2023). *¿Qué Pueden Hacer Las Escuelas Para Promover Actitudes Positivas Hacia La Igualdad de Derechos?*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Herrera, Anais (2023). *¿Qué Pueden Hacer Las Escuelas Para Promover Actitudes Positivas Hacia La Igualdad de Derechos?*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

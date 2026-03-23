@@ -1,7 +1,7 @@
 ---
 title : "The Legitimacy of the Distributive System: A Comparison of Germany and Chile"
 date : "2008-07-01"
-author : ["J. Castillo", "S. Schneider"]
+author : "Castillo, J. & Schneider, S."
 categories : ["Conference paper"]
 publication : " 31st Conference of the International Society of Political Psychology - ISPP (Paris, 9-12 July).. Paris"
 publication_short : " 31st Conference of the International Society of Political Psychology - ISPP (Paris, 9-12 July).. Paris"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-J. Castillo, S. Schneider (2008). *The Legitimacy of the Distributive System: A Comparison of Germany and Chile*.  31st Conference of the International Society of Political Psychology - ISPP (Paris, 9-12 July).. Paris
+Castillo, J. & Schneider, S. (2008). *The Legitimacy of the Distributive System: A Comparison of Germany and Chile*.  31st Conference of the International Society of Political Psychology - ISPP (Paris, 9-12 July).. Paris
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "¿Son los chilenos igualmente solidarios?la influencia de los recursos personales en las donaciones de dinero"
 date : "2012-06-01"
-author : ["Juan-Carlos Castillo", "Paola Leal", "Ignacio Madero", "Daniel Miranda"]
+author : "Castillo, Juan-Carlos; Leal, Paola; Madero, Ignacio & Miranda, Daniel"
 categories : ["Journal Article"]
 publication : "Opinião Pública, 18 154--176  [https://doi.org/10.1590/S0104-62762012000100008](https://doi.org/10.1590/S0104-62762012000100008)"
 publication_short : "Opinião Pública, 18 154--176  [https://doi.org/10.1590/S0104-62762012000100008](https://doi.org/10.1590/S0104-62762012000100008)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Paola Leal, Ignacio Madero, Daniel Miranda (2012). *¿Son los chilenos igualmente solidarios?la influencia de los recursos personales en las donaciones de dinero*. Opinião Pública, 18 154--176  [https://doi.org/10.1590/S0104-62762012000100008](https://doi.org/10.1590/S0104-62762012000100008)
+Castillo, Juan-Carlos; Leal, Paola; Madero, Ignacio & Miranda, Daniel (2012). *¿Son los chilenos igualmente solidarios?la influencia de los recursos personales en las donaciones de dinero*. Opinião Pública, 18 154--176  [https://doi.org/10.1590/S0104-62762012000100008](https://doi.org/10.1590/S0104-62762012000100008)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Measuring Attitudes Towards Gender Equality in International Tests: Implications for Their Validity"
 date : "2021-01-01"
-author : ["Juan-Carlos Castillo", "Daniel Miranda", "Angelica Bonilla"]
+author : "Castillo, Juan-Carlos; Miranda, Daniel & Bonilla, Angelica"
 categories : ["Book Section"]
 publication : "  In Jorge Manzi, María Rosa García & Sandy Taut: Validity of Educational Assessments in Chile and Latin America 259--280 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-030-78390-7_11](https://doi.org/10.1007/978-3-030-78390-7_11). ISBN: 978-3-030-78390-7"
 publication_short : "  In Jorge Manzi, María Rosa García & Sandy Taut: Validity of Educational Assessments in Chile and Latin America 259--280 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-030-78390-7_11](https://doi.org/10.1007/978-3-030-78390-7_11). ISBN: 978-3-030-78390-7"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Daniel Miranda, Angelica Bonilla (2021). *Measuring Attitudes Towards Gender Equality in International Tests: Implications for Their Validity*.   In Jorge Manzi, María Rosa García & Sandy Taut: Validity of Educational Assessments in Chile and Latin America 259--280 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-030-78390-7_11](https://doi.org/10.1007/978-3-030-78390-7_11). ISBN: 978-3-030-78390-7
+Castillo, Juan-Carlos; Miranda, Daniel & Bonilla, Angelica (2021). *Measuring Attitudes Towards Gender Equality in International Tests: Implications for Their Validity*.   In Jorge Manzi, María Rosa García & Sandy Taut: Validity of Educational Assessments in Chile and Latin America 259--280 . Cham: Springer International Publishing [https://doi.org/10.1007/978-3-030-78390-7_11](https://doi.org/10.1007/978-3-030-78390-7_11). ISBN: 978-3-030-78390-7
 
 :::
 

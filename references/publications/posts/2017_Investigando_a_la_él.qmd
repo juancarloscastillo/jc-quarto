@@ -1,7 +1,7 @@
 ---
 title : "Investigando a la élite económica: Lecciones y desafíos a partir del caso de Chile"
 date : "2017-12-01"
-author : ["Jorge Atria", "Josefina Amenabar", "Javiera Sanchez", "Juan-Carlos Castillo", "Matias Cocina"]
+author : "Atria, Jorge; Amenabar, Josefina; Sanchez, Javiera; Castillo, Juan-Carlos & Cocina, Matias"
 categories : ["Journal Article"]
 publication : "Cultura, Hombre y Sociedad, 27(2) 5--36  [https://doi.org/10.7770/cuhso-v27n2-art1244](https://doi.org/10.7770/cuhso-v27n2-art1244)"
 publication_short : "Cultura, Hombre y Sociedad, 27(2) 5--36  [https://doi.org/10.7770/cuhso-v27n2-art1244](https://doi.org/10.7770/cuhso-v27n2-art1244)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Jorge Atria, Josefina Amenabar, Javiera Sanchez, Juan-Carlos Castillo, Matias Cocina (2017). *Investigando a la élite económica: Lecciones y desafíos a partir del caso de Chile*. Cultura, Hombre y Sociedad, 27(2) 5--36  [https://doi.org/10.7770/cuhso-v27n2-art1244](https://doi.org/10.7770/cuhso-v27n2-art1244)
+Atria, Jorge; Amenabar, Josefina; Sanchez, Javiera; Castillo, Juan-Carlos & Cocina, Matias (2017). *Investigando a la élite económica: Lecciones y desafíos a partir del caso de Chile*. Cultura, Hombre y Sociedad, 27(2) 5--36  [https://doi.org/10.7770/cuhso-v27n2-art1244](https://doi.org/10.7770/cuhso-v27n2-art1244)
 
 :::
 

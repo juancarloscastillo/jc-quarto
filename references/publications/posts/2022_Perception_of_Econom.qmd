@@ -1,7 +1,7 @@
 ---
 title : "Perception of Economic Inequality: Concepts, Associated Factors and Prospects of a Burgeoning Research Agenda"
 date : "2022-01-01"
-author : ["Juan-Carlos Castillo", "Juan Diego Garcia-Castro", "Martin Venegas"]
+author : "Castillo, Juan-Carlos; Garcia-Castro, Juan Diego & Venegas, Martin"
 categories : ["Journal Article"]
 publication : "International Journal of Social Psychology, 37(1) 180--207  [https://doi.org/10.1080/02134748.2021.2009275](https://doi.org/10.1080/02134748.2021.2009275)"
 publication_short : "International Journal of Social Psychology, 37(1) 180--207  [https://doi.org/10.1080/02134748.2021.2009275](https://doi.org/10.1080/02134748.2021.2009275)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Juan Diego Garcia-Castro, Martin Venegas (2022). *Perception of Economic Inequality: Concepts, Associated Factors and Prospects of a Burgeoning Research Agenda*. International Journal of Social Psychology, 37(1) 180--207  [https://doi.org/10.1080/02134748.2021.2009275](https://doi.org/10.1080/02134748.2021.2009275)
+Castillo, Juan-Carlos; Garcia-Castro, Juan Diego & Venegas, Martin (2022). *Perception of Economic Inequality: Concepts, Associated Factors and Prospects of a Burgeoning Research Agenda*. International Journal of Social Psychology, 37(1) 180--207  [https://doi.org/10.1080/02134748.2021.2009275](https://doi.org/10.1080/02134748.2021.2009275)
 
 :::
 

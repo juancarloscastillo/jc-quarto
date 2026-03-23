@@ -1,7 +1,7 @@
 ---
 title : "Todos Somos Amigos, Pero Unos Más Que Otros	  ~ Estudio	  ~Exploratorio	  ~Sobre	  ~Segregación	  ~En	  ~La	  ~ Sala	  ~de	  ~Clases"
 date : "2015-01-01"
-author : ["Maria Jose Barros", "Pablo Torres"]
+author : "Barros, Maria Jose & Torres, Pablo"
 categories : ["Manuscript"]
 publication : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -14,7 +14,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Maria Jose Barros, Pablo Torres (2015). *Todos Somos Amigos, Pero Unos Más Que Otros	  ~ Estudio	  ~Exploratorio	  ~Sobre	  ~Segregación	  ~En	  ~La	  ~ Sala	  ~de	  ~Clases*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Barros, Maria Jose & Torres, Pablo (2015). *Todos Somos Amigos, Pero Unos Más Que Otros	  ~ Estudio	  ~Exploratorio	  ~Sobre	  ~Segregación	  ~En	  ~La	  ~ Sala	  ~de	  ~Clases*.  Taller Titulación - Pregrado Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

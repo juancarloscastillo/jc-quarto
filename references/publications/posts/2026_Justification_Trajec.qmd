@@ -1,7 +1,7 @@
 ---
 title : "Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy"
 date : "2026-03-01"
-author : ["Juan Carlos Castillo", "Rene Canales-Selles", "Andreas Laffert", "Tomas Urzua"]
+author : "Castillo, Juan Carlos; Canales-Selles, Rene; Laffert, Andreas & Urzua, Tomas"
 categories : ["Journal Article"]
 publication : "Frontiers in Sociology, 11 1771856  [https://doi.org/10.3389/fsoc.2026.1771856](https://doi.org/10.3389/fsoc.2026.1771856)"
 publication_short : "Frontiers in Sociology, 11 1771856  [https://doi.org/10.3389/fsoc.2026.1771856](https://doi.org/10.3389/fsoc.2026.1771856)"
@@ -9,15 +9,13 @@ abstract : "Introduction               The Chilean pension system, characterized
 abstract_short : ""
 about:
   template: marquee
-  links:
-    - icon: NA
-      href: NA
 ---
+[< fa brands github size=2x > Project Repo](https://github.com/jus-mer/stratification-market-justice)
 
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Carlos Castillo, Rene Canales-Selles, Andreas Laffert, Tomas Urzua (2026). *Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy*. Frontiers in Sociology, 11 1771856  [https://doi.org/10.3389/fsoc.2026.1771856](https://doi.org/10.3389/fsoc.2026.1771856)
+Castillo, Juan Carlos; Canales-Selles, Rene; Laffert, Andreas & Urzua, Tomas (2026). *Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy*. Frontiers in Sociology, 11 1771856  [https://doi.org/10.3389/fsoc.2026.1771856](https://doi.org/10.3389/fsoc.2026.1771856)
 
 :::
 

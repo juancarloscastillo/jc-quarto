@@ -1,7 +1,7 @@
 ---
 title : "Percepción de Desigualdad Económica en Chile: Medición, Diferencias y Determinantes"
 date : "2012-05-01"
-author : ["Juan-Carlos Castillo", "Daniel Miranda", "Diego Carrasco"]
+author : "Castillo, Juan-Carlos; Miranda, Daniel & Carrasco, Diego"
 categories : ["Journal Article"]
 publication : "Psykhe, 21(1) 99--114  [https://doi.org/10.4067/S0718-22282012000100007](https://doi.org/10.4067/S0718-22282012000100007)"
 publication_short : "Psykhe, 21(1) 99--114  [https://doi.org/10.4067/S0718-22282012000100007](https://doi.org/10.4067/S0718-22282012000100007)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Daniel Miranda, Diego Carrasco (2012). *Percepción de Desigualdad Económica en Chile: Medición, Diferencias y Determinantes*. Psykhe, 21(1) 99--114  [https://doi.org/10.4067/S0718-22282012000100007](https://doi.org/10.4067/S0718-22282012000100007)
+Castillo, Juan-Carlos; Miranda, Daniel & Carrasco, Diego (2012). *Percepción de Desigualdad Económica en Chile: Medición, Diferencias y Determinantes*. Psykhe, 21(1) 99--114  [https://doi.org/10.4067/S0718-22282012000100007](https://doi.org/10.4067/S0718-22282012000100007)
 
 :::
 

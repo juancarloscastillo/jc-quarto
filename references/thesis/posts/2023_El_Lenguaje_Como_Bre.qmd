@@ -1,7 +1,7 @@
 ---
 title : "El Lenguaje Como Brecha de La Formación Ciudadana: El Rol de La Comprensión Lectora Sobre Las Habilidades Para La Ciudadanía y El Conocimiento Cívico."
 date : "2023-03-01"
-author : ["Francisco Meneses"]
+author : "Meneses, Francisco"
 categories : ["Manuscript"]
 publication : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -31,7 +31,7 @@ Actualmente se espera que la educación ciudadana sea capaz de preparar a los j�
 
 ::: {.callout-note title="How to cite this work"}
 
-Francisco Meneses (2023). *El Lenguaje Como Brecha de La Formación Ciudadana: El Rol de La Comprensión Lectora Sobre Las Habilidades Para La Ciudadanía y El Conocimiento Cívico.*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Meneses, Francisco (2023). *El Lenguaje Como Brecha de La Formación Ciudadana: El Rol de La Comprensión Lectora Sobre Las Habilidades Para La Ciudadanía y El Conocimiento Cívico.*.  Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

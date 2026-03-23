@@ -1,7 +1,7 @@
 ---
 title : "The Empirical Approach to the Study of Social Justice: A Research Agenda for Latin America"
 date : "2008-02-01"
-author : ["J. Castillo", "K. Muhleck", "B. Wegener"]
+author : "Castillo, J.; Muhleck, K. & Wegener, B."
 categories : ["Presentation"]
 publication : " Seminar of the Regional Bureau for Latin America and the Caribbean of United Nations Development Program (RBLAC-UNDP) . Mexico"
 publication_short : " Seminar of the Regional Bureau for Latin America and the Caribbean of United Nations Development Program (RBLAC-UNDP) . Mexico"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-J. Castillo, K. Muhleck, B. Wegener (2008). *The Empirical Approach to the Study of Social Justice: A Research Agenda for Latin America*.  Seminar of the Regional Bureau for Latin America and the Caribbean of United Nations Development Program (RBLAC-UNDP) . Mexico
+Castillo, J.; Muhleck, K. & Wegener, B. (2008). *The Empirical Approach to the Study of Social Justice: A Research Agenda for Latin America*.  Seminar of the Regional Bureau for Latin America and the Caribbean of United Nations Development Program (RBLAC-UNDP) . Mexico
 
 :::
 

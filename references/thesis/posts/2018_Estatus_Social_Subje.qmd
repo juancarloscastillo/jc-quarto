@@ -1,7 +1,7 @@
 ---
 title : "Estatus Social Subjetivo y Percepción de Meritocracia: El Caso de Chile"
 date : "2018-01-01"
-author : ["Julio Iturra"]
+author : "Iturra, Julio"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -62,7 +62,7 @@ sobre la meritocracia en Chile.
 
 ::: {.callout-note title="How to cite this work"}
 
-Julio Iturra (2018). *Estatus Social Subjetivo y Percepción de Meritocracia: El Caso de Chile*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Iturra, Julio (2018). *Estatus Social Subjetivo y Percepción de Meritocracia: El Caso de Chile*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

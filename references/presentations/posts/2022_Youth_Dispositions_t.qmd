@@ -1,7 +1,7 @@
 ---
 title : "Youth Dispositions to Participate in Disruptive and Pacific Actions"
 date : "2022-10-01"
-author : ["Daniel Miranda", "Juan-Carlos Castillo"]
+author : "Miranda, Daniel & Castillo, Juan-Carlos"
 categories : ["Presentation"]
 publication : " Conferece INVALSI  Data -  A Tool for Teaching and Scientific Research . Rome"
 publication_short : " Conferece INVALSI  Data -  A Tool for Teaching and Scientific Research . Rome"
@@ -39,7 +39,7 @@ En la conferencia, junto a Daniel Miranda y Diego Carrasco
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda, Juan-Carlos Castillo (2022). *Youth Dispositions to Participate in Disruptive and Pacific Actions*.  Conferece INVALSI  Data -  A Tool for Teaching and Scientific Research . Rome
+Miranda, Daniel & Castillo, Juan-Carlos (2022). *Youth Dispositions to Participate in Disruptive and Pacific Actions*.  Conferece INVALSI  Data -  A Tool for Teaching and Scientific Research . Rome
 
 :::
 

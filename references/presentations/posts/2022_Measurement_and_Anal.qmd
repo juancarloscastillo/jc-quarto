@@ -1,7 +1,7 @@
 ---
 title : "Measurement and Analysis of Social Cohesion"
 date : "2022-01-01"
-author : ["Juan-Carlos Castillo", "Matias Bargsted"]
+author : "Castillo, Juan-Carlos & Bargsted, Matias"
 categories : ["Presentation"]
 publication : " Research Institute Social Cohesion - Jahrestagung Forschungscluster 2 . Bremen  (Online)"
 publication_short : " Research Institute Social Cohesion - Jahrestagung Forschungscluster 2 . Bremen  (Online)"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Matias Bargsted (2022). *Measurement and Analysis of Social Cohesion*.  Research Institute Social Cohesion - Jahrestagung Forschungscluster 2 . Bremen  (Online)
+Castillo, Juan-Carlos & Bargsted, Matias (2022). *Measurement and Analysis of Social Cohesion*.  Research Institute Social Cohesion - Jahrestagung Forschungscluster 2 . Bremen  (Online)
 
 :::
 

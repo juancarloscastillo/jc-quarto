@@ -1,7 +1,7 @@
 ---
 title : "Deserving a Just Pension: A Factorial Survey Approach*"
 date : "2019-01-01"
-author : ["Juan-Carlos Castillo", "Francisco Olivos", "Ariel Azar"]
+author : "Castillo, Juan-Carlos; Olivos, Francisco & Azar, Ariel"
 categories : ["Journal Article"]
 publication : "Social Science Quarterly, 100(1) 359--378  [https://doi.org/10.1111/ssqu.12539](https://doi.org/10.1111/ssqu.12539)"
 publication_short : "Social Science Quarterly, 100(1) 359--378  [https://doi.org/10.1111/ssqu.12539](https://doi.org/10.1111/ssqu.12539)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Francisco Olivos, Ariel Azar (2019). *Deserving a Just Pension: A Factorial Survey Approach**. Social Science Quarterly, 100(1) 359--378  [https://doi.org/10.1111/ssqu.12539](https://doi.org/10.1111/ssqu.12539)
+Castillo, Juan-Carlos; Olivos, Francisco & Azar, Ariel (2019). *Deserving a Just Pension: A Factorial Survey Approach**. Social Science Quarterly, 100(1) 359--378  [https://doi.org/10.1111/ssqu.12539](https://doi.org/10.1111/ssqu.12539)
 
 :::
 

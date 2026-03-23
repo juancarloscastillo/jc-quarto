@@ -1,7 +1,7 @@
 ---
 title : "Contrastes entre la desigualdad económica objetiva y subjetiva en Chile"
 date : "2012-01-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Report"]
 publication : " Temas de la Agenda Pública (57) 1--18 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile"
 publication_short : " Temas de la Agenda Pública (57) 1--18 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2012). *Contrastes entre la desigualdad económica objetiva y subjetiva en Chile*.  Temas de la Agenda Pública (57) 1--18 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile
+Castillo, Juan-Carlos (2012). *Contrastes entre la desigualdad económica objetiva y subjetiva en Chile*.  Temas de la Agenda Pública (57) 1--18 . Santiago Centro UC de Políticas Públicas, Universidad Católica de Chile
 
 :::
 

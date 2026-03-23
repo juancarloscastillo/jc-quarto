@@ -1,7 +1,7 @@
 ---
 title : "Aspectos Subjetivos de La Meritocracia y Su Relación Con La Percepción de La Desigualdad En Chile"
 date : "2015-01-01"
-author : ["Alex Torres"]
+author : "Torres, Alex"
 categories : ["Manuscript"]
 publication : " Magister En Psicología Social Comunitaria - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Psicología Social Comunitaria - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -55,7 +55,7 @@ a desear mayores brechas salariales entre ocupaciones de alto y bajo estatus (cr
 
 ::: {.callout-note title="How to cite this work"}
 
-Alex Torres (2015). *Aspectos Subjetivos de La Meritocracia y Su Relación Con La Percepción de La Desigualdad En Chile*.  Magister En Psicología Social Comunitaria - Pontificia Universidad Católica de Chile. Santiago de Chile
+Torres, Alex (2015). *Aspectos Subjetivos de La Meritocracia y Su Relación Con La Percepción de La Desigualdad En Chile*.  Magister En Psicología Social Comunitaria - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

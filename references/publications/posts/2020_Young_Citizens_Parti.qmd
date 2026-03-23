@@ -1,7 +1,7 @@
 ---
 title : "Young Citizens Participation: Empirical Testing of a Conceptual Model"
 date : "2020-03-01"
-author : ["Daniel Miranda", "Juan-Carlos Castillo", "Andres Sandoval-Hernandez"]
+author : "Miranda, Daniel; Castillo, Juan-Carlos & Sandoval-Hernandez, Andres"
 categories : ["Journal Article"]
 publication : "Youth & Society, 52(2) 251--271  [https://doi.org/10.1177/0044118X17741024](https://doi.org/10.1177/0044118X17741024)"
 publication_short : "Youth & Society, 52(2) 251--271  [https://doi.org/10.1177/0044118X17741024](https://doi.org/10.1177/0044118X17741024)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda, Juan-Carlos Castillo, Andres Sandoval-Hernandez (2020). *Young Citizens Participation: Empirical Testing of a Conceptual Model*. Youth & Society, 52(2) 251--271  [https://doi.org/10.1177/0044118X17741024](https://doi.org/10.1177/0044118X17741024)
+Miranda, Daniel; Castillo, Juan-Carlos & Sandoval-Hernandez, Andres (2020). *Young Citizens Participation: Empirical Testing of a Conceptual Model*. Youth & Society, 52(2) 251--271  [https://doi.org/10.1177/0044118X17741024](https://doi.org/10.1177/0044118X17741024)
 
 :::
 

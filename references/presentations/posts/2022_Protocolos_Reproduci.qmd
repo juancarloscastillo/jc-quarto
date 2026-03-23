@@ -1,7 +1,7 @@
 ---
 title : "Protocolos Reproducibles y Reportes Dinámicos Con R / Rmarkdown"
 date : "2022-01-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Presentation"]
 publication : " Laboratorio de Investigación Social Abierta (LISA) - COES . Online"
 publication_short : " Laboratorio de Investigación Social Abierta (LISA) - COES . Online"
@@ -18,7 +18,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2022). *Protocolos Reproducibles y Reportes Dinámicos Con R / Rmarkdown*.  Laboratorio de Investigación Social Abierta (LISA) - COES . Online
+Castillo, Juan-Carlos (2022). *Protocolos Reproducibles y Reportes Dinámicos Con R / Rmarkdown*.  Laboratorio de Investigación Social Abierta (LISA) - COES . Online
 
 :::
 

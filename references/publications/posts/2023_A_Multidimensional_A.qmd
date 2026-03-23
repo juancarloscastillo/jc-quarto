@@ -1,7 +1,7 @@
 ---
 title : "A Multidimensional Approach for Measuring Meritocratic Beliefs: Advantages, Limitations and Alternatives to the ISSP Social Inequality Survey"
 date : "2023-10-01"
-author : ["Juan-Carlos Castillo", "Julio Iturra", "Luis Maldonado", "Jorge Atria", "Francisco Meneses"]
+author : "Castillo, Juan-Carlos; Iturra, Julio; Maldonado, Luis; Atria, Jorge & Meneses, Francisco"
 categories : ["Journal Article"]
 publication : "International Journal of Sociology, Online first [https://doi.org/10.1080/00207659.2023.2274712](https://doi.org/10.1080/00207659.2023.2274712)"
 publication_short : "International Journal of Sociology, Online first [https://doi.org/10.1080/00207659.2023.2274712](https://doi.org/10.1080/00207659.2023.2274712)"
@@ -17,7 +17,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Julio Iturra, Luis Maldonado, Jorge Atria, Francisco Meneses (2023). *A Multidimensional Approach for Measuring Meritocratic Beliefs: Advantages, Limitations and Alternatives to the ISSP Social Inequality Survey*. International Journal of Sociology, Online first [https://doi.org/10.1080/00207659.2023.2274712](https://doi.org/10.1080/00207659.2023.2274712)
+Castillo, Juan-Carlos; Iturra, Julio; Maldonado, Luis; Atria, Jorge & Meneses, Francisco (2023). *A Multidimensional Approach for Measuring Meritocratic Beliefs: Advantages, Limitations and Alternatives to the ISSP Social Inequality Survey*. International Journal of Sociology, Online first [https://doi.org/10.1080/00207659.2023.2274712](https://doi.org/10.1080/00207659.2023.2274712)
 
 :::
 

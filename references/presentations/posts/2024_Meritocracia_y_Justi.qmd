@@ -1,7 +1,7 @@
 ---
 title : "Meritocracia y Justificación de Desigualdad En La Etapa Escolar: Un Experimento de Encuesta."
 date : "2024-05-01"
-author : ["Juan-Carlos Castillo", "Kevin Carrasco"]
+author : "Castillo, Juan-Carlos & Carrasco, Kevin"
 categories : ["Presentation"]
 publication : " Congreso Chileno de Sociología - PreAlas . Santiago"
 publication_short : " Congreso Chileno de Sociología - PreAlas . Santiago"
@@ -25,7 +25,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Kevin Carrasco (2024). *Meritocracia y Justificación de Desigualdad En La Etapa Escolar: Un Experimento de Encuesta.*.  Congreso Chileno de Sociología - PreAlas . Santiago
+Castillo, Juan-Carlos & Carrasco, Kevin (2024). *Meritocracia y Justificación de Desigualdad En La Etapa Escolar: Un Experimento de Encuesta.*.  Congreso Chileno de Sociología - PreAlas . Santiago
 
 :::
 

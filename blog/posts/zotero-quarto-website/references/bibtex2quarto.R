@@ -5,6 +5,63 @@ bibtex_2academic <- function(bibfile,
                              abstract = TRUE,
                              overwrite = FALSE) {
 
+  invert_author_names <- function(author_string) {
+    if (is.null(author_string) || is.na(author_string) || author_string == "") {
+      return(author_string)
+    }
+
+    authors <- unlist(strsplit(author_string, "\\s+and\\s+", perl = TRUE))
+    authors <- trimws(authors)
+
+    surname_particles <- c(
+      "da", "das", "de", "del", "della", "delle", "dels", "der", "di", "do", "dos",
+      "du", "el", "la", "las", "le", "los", "van", "von", "y",
+      "san", "santa", "st", "st."
+    )
+
+    authors <- vapply(authors, function(author_name) {
+      # Remove BibTeX protection braces from personal names.
+      author_name <- gsub("[{}]", "", author_name)
+      author_name <- trimws(author_name)
+
+      # Keep names already in BibTeX-style "Surname, Name" format.
+      if (grepl(",", author_name, fixed = TRUE)) {
+        comma_parts <- unlist(strsplit(author_name, ",", fixed = TRUE))
+        surname <- trimws(comma_parts[1])
+        given_names <- trimws(paste(comma_parts[-1], collapse = " "))
+        if (given_names == "") {
+          return(surname)
+        }
+        return(paste0(surname, ", ", given_names))
+      }
+
+      parts <- unlist(strsplit(author_name, "\\s+", perl = TRUE))
+      if (length(parts) < 2) {
+        return(author_name)
+      }
+
+      # Build surname from the right, preserving particles like "de", "van", "San", etc.
+      idx <- length(parts)
+      surname_idx <- idx
+
+      while (idx > 1) {
+        prev_token <- tolower(parts[idx - 1])
+        if (prev_token %in% surname_particles) {
+          surname_idx <- idx - 1
+          idx <- idx - 1
+        } else {
+          break
+        }
+      }
+
+      surname <- paste(parts[surname_idx:length(parts)], collapse = " ")
+      given_names <- paste(parts[seq_len(surname_idx - 1)], collapse = " ")
+      paste0(surname, ", ", given_names)
+    }, character(1))
+
+    paste(authors, collapse = " and ")
+  }
+
   if (!require("pacman")) install.packages("pacman")
   pacman::p_load(RefManageR, dplyr, stringr, anytime, tidyr, stringi)
 
@@ -231,10 +288,22 @@ bibtex_2academic <- function(bibfile,
       write(paste0("date : \"", anydate(x[["date2"]]), "\""), fileConn, append = T)
 #      write(paste0("date : \"", x[["year"]], "-",  x[["month"]] , "-", "01" , "\""), fileConn, append = T)
 
-      # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")
-      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")
-      write(paste0("author : [\"", auth_hugo,"\"]"), fileConn, append = T)
+      # Authors formatted as "A; B & C" for display in listing and post pages.
+      author_inverted <- invert_author_names(x[["author"]])
+      auth_clean <- stringi::stri_trans_general(author_inverted, "latin-ascii")
+      auth_vec <- trimws(unlist(strsplit(auth_clean, " and ", fixed = TRUE)))
+      if (length(auth_vec) <= 1) {
+        auth_display <- paste(auth_vec, collapse = "")
+      } else if (length(auth_vec) == 2) {
+        auth_display <- paste(auth_vec, collapse = " & ")
+      } else {
+        auth_display <- paste0(
+          paste(auth_vec[-length(auth_vec)], collapse = "; "),
+          " & ",
+          auth_vec[length(auth_vec)]
+        )
+      }
+      write(paste0("author : \"", auth_display, "\""), fileConn, append = T)
 
       # Publication type. Legend:
       # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article
@@ -400,11 +469,23 @@ bibtex_2academic <- function(bibfile,
       	# ----------------- GENERACIÓN DE CALL OUT "HOW TO CITE" -----------------
       	
       	# Preparar autores
-      	authors <- x[["author"]]
-      	authors <- str_replace_all(authors, " and ", ", ")  # Cambiar 'and' por ', ' para lista de autores
-      	authors <- stringi::stri_trans_general(authors, "latin-ascii")  # Eliminar tildes
-      	authors <- gsub("\\{", "", authors)  # Limpiar llaves
-      	authors <- gsub("\\}", "", authors)
+        authors <- author_inverted
+        authors <- stringi::stri_trans_general(authors, "latin-ascii")  # Eliminar tildes
+        authors <- gsub("\\{", "", authors)  # Limpiar llaves
+        authors <- gsub("\\}", "", authors)
+
+        authors_vec <- trimws(unlist(strsplit(authors, " and ", fixed = TRUE)))
+        if (length(authors_vec) <= 1) {
+          authors <- authors_vec
+        } else if (length(authors_vec) == 2) {
+          authors <- paste(authors_vec, collapse = " & ")
+        } else {
+          authors <- paste0(
+            paste(authors_vec[-length(authors_vec)], collapse = "; "),
+            " & ",
+            authors_vec[length(authors_vec)]
+          )
+        }
       	
       	# Año
       	year <- ifelse(!is.na(x[["year"]]), x[["year"]], "s.f.")  # "s.f." si falta el año

@@ -1,7 +1,7 @@
 ---
 title : "La Legitimidad de Las Desigualdades Salariales. Una Aproximación Multidimensional"
 date : "2012-09-01"
-author : ["Juan-Carlos Castillo"]
+author : "Castillo, Juan-Carlos"
 categories : ["Journal Article"]
 publication : "Revista Internacional de Sociología, 70(3) 533--560  [https://doi.org/10.3989/ris.2010.11.22](https://doi.org/10.3989/ris.2010.11.22)"
 publication_short : "Revista Internacional de Sociología, 70(3) 533--560  [https://doi.org/10.3989/ris.2010.11.22](https://doi.org/10.3989/ris.2010.11.22)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo (2012). *La Legitimidad de Las Desigualdades Salariales. Una Aproximación Multidimensional*. Revista Internacional de Sociología, 70(3) 533--560  [https://doi.org/10.3989/ris.2010.11.22](https://doi.org/10.3989/ris.2010.11.22)
+Castillo, Juan-Carlos (2012). *La Legitimidad de Las Desigualdades Salariales. Una Aproximación Multidimensional*. Revista Internacional de Sociología, 70(3) 533--560  [https://doi.org/10.3989/ris.2010.11.22](https://doi.org/10.3989/ris.2010.11.22)
 
 :::
 

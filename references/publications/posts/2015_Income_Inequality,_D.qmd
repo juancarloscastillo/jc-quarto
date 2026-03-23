@@ -1,7 +1,7 @@
 ---
 title : "Income Inequality, Distributive Fairness and Political Trust in Latin America"
 date : "2015-01-01"
-author : ["Sonja Zmerli", "Juan-Carlos Castillo"]
+author : "Zmerli, Sonja & Castillo, Juan-Carlos"
 categories : ["Journal Article"]
 publication : "Social Science Research, 52 179--192  [https://doi.org/10.1016/j.ssresearch.2015.02.003](https://doi.org/10.1016/j.ssresearch.2015.02.003)"
 publication_short : "Social Science Research, 52 179--192  [https://doi.org/10.1016/j.ssresearch.2015.02.003](https://doi.org/10.1016/j.ssresearch.2015.02.003)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Sonja Zmerli, Juan-Carlos Castillo (2015). *Income Inequality, Distributive Fairness and Political Trust in Latin America*. Social Science Research, 52 179--192  [https://doi.org/10.1016/j.ssresearch.2015.02.003](https://doi.org/10.1016/j.ssresearch.2015.02.003)
+Zmerli, Sonja & Castillo, Juan-Carlos (2015). *Income Inequality, Distributive Fairness and Political Trust in Latin America*. Social Science Research, 52 179--192  [https://doi.org/10.1016/j.ssresearch.2015.02.003](https://doi.org/10.1016/j.ssresearch.2015.02.003)
 
 :::
 

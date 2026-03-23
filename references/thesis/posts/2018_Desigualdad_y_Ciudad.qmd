@@ -1,7 +1,7 @@
 ---
 title : "Desigualdad y Ciudadanía: Una Aproximación Intergeneracional"
 date : "2018-04-01"
-author : ["Daniel Miranda"]
+author : "Miranda, Daniel"
 categories : ["Manuscript"]
 publication : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -66,7 +66,7 @@ políticas en diversos contextos y el abordaje de estas preguntas de investigaci
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda (2018). *Desigualdad y Ciudadanía: Una Aproximación Intergeneracional*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
+Miranda, Daniel (2018). *Desigualdad y Ciudadanía: Una Aproximación Intergeneracional*.  Magister En Sociología - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

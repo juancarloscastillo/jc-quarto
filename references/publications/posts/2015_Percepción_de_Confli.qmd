@@ -1,7 +1,7 @@
 ---
 title : "Percepción de Conflicto En Chile: Un Análisis Desde La Opinión Pública 2006-2013"
 date : "2015-01-01"
-author : ["Francisco Olivos", "Bernardo Mackenna", "Juan-Carlos Castillo", "Matias Bargsted"]
+author : "Olivos, Francisco; Mackenna, Bernardo; Castillo, Juan-Carlos & Bargsted, Matias"
 categories : ["Book Section"]
 publication : "  In Mayarí Castillo & Claudia Maldonado: Desigualdades: Tolerancia, Legitimación y Conflicto En Las Sociedades Latinoamericanas. Santiago de Chile: RIL Editores. ISBN: 978-956-01-0176-1"
 publication_short : "  In Mayarí Castillo & Claudia Maldonado: Desigualdades: Tolerancia, Legitimación y Conflicto En Las Sociedades Latinoamericanas. Santiago de Chile: RIL Editores. ISBN: 978-956-01-0176-1"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Francisco Olivos, Bernardo Mackenna, Juan-Carlos Castillo, Matias Bargsted (2015). *Percepción de Conflicto En Chile: Un Análisis Desde La Opinión Pública 2006-2013*.   In Mayarí Castillo & Claudia Maldonado: Desigualdades: Tolerancia, Legitimación y Conflicto En Las Sociedades Latinoamericanas. Santiago de Chile: RIL Editores. ISBN: 978-956-01-0176-1
+Olivos, Francisco; Mackenna, Bernardo; Castillo, Juan-Carlos & Bargsted, Matias (2015). *Percepción de Conflicto En Chile: Un Análisis Desde La Opinión Pública 2006-2013*.   In Mayarí Castillo & Claudia Maldonado: Desigualdades: Tolerancia, Legitimación y Conflicto En Las Sociedades Latinoamericanas. Santiago de Chile: RIL Editores. ISBN: 978-956-01-0176-1
 
 :::
 

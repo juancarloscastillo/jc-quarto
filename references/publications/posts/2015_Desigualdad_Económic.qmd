@@ -1,7 +1,7 @@
 ---
 title : "Desigualdad Económica y Conocimiento Cívico. Chile En Comparación Internacional"
 date : "2015-01-01"
-author : ["Daniel Miranda", "Juan-Carlos Castillo", "Andres Sandoval-Hernandez"]
+author : "Miranda, Daniel; Castillo, Juan-Carlos & Sandoval-Hernandez, Andres"
 categories : ["Book Section"]
 publication : "  In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 487--524 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3"
 publication_short : "  In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 487--524 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3"
@@ -18,7 +18,7 @@ Proyecto Fondecyt Formación Ciudadana I
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda, Juan-Carlos Castillo, Andres Sandoval-Hernandez (2015). *Desigualdad Económica y Conocimiento Cívico. Chile En Comparación Internacional*.   In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 487--524 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3
+Miranda, Daniel; Castillo, Juan-Carlos & Sandoval-Hernandez, Andres (2015). *Desigualdad Económica y Conocimiento Cívico. Chile En Comparación Internacional*.   In Cristián Cox & Juan-Carlos Castillo: Aprendizaje de La Ciudadanía: Contextos, Experiencias y Resultados 487--524 . Santiago: Ediciones Universidad Católica de Chile. ISBN: 978-956-14-1513-3
 
 :::
 

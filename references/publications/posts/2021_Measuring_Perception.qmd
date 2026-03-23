@@ -1,7 +1,7 @@
 ---
 title : "Measuring Perceptions and Preferences for Meritocracy"
 date : "2021-12-01"
-author : ["Juan Castillo", "Julio Cesar Iturra Sanhueza", "Francisco Javier Meneses Rivas", "Luis Maldonado", "Jorge Atria"]
+author : "Castillo, Juan; Sanhueza, Julio Cesar Iturra; Rivas, Francisco Javier Meneses; Maldonado, Luis & Atria, Jorge"
 categories : ["Journal Article"]
 publication : "Socarxiv OSF preprint"
 publication_short : "Socarxiv OSF preprint"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan Castillo, Julio Cesar Iturra Sanhueza, Francisco Javier Meneses Rivas, Luis Maldonado, Jorge Atria (2021). *Measuring Perceptions and Preferences for Meritocracy*. Socarxiv OSF preprint
+Castillo, Juan; Sanhueza, Julio Cesar Iturra; Rivas, Francisco Javier Meneses; Maldonado, Luis & Atria, Jorge (2021). *Measuring Perceptions and Preferences for Meritocracy*. Socarxiv OSF preprint
 
 :::
 

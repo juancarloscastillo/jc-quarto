@@ -1,7 +1,7 @@
 ---
 title : "The Legitimacy of Social Inequality in Comparative Perspective: Do People and Countries Differ in Their Poverty Attributions?"
 date : "2009-01-01"
-author : ["S. Schneider", "J. Castillo"]
+author : "Schneider, S. & Castillo, J."
 categories : ["Report"]
 publication : " . Santiago de Chile Universidad de Chile"
 publication_short : " . Santiago de Chile Universidad de Chile"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-S. Schneider, J. Castillo (2009). *The Legitimacy of Social Inequality in Comparative Perspective: Do People and Countries Differ in Their Poverty Attributions?*.  . Santiago de Chile Universidad de Chile
+Schneider, S. & Castillo, J. (2009). *The Legitimacy of Social Inequality in Comparative Perspective: Do People and Countries Differ in Their Poverty Attributions?*.  . Santiago de Chile Universidad de Chile
 
 :::
 

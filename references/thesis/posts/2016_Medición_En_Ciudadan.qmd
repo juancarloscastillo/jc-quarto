@@ -1,7 +1,7 @@
 ---
 title : "Medición En Ciudadanía: Equivalencia y Propiedades Psicométricas de Una Escala de Percepción En Estudiantes"
 date : "2016-01-01"
-author : ["Federico Viertel"]
+author : "Viertel, Federico"
 categories : ["Manuscript"]
 publication : " Magister En Medición - Pontificia Universidad Católica de Chile. Santiago de Chile"
 publication_short : " Magister En Medición - Pontificia Universidad Católica de Chile. Santiago de Chile"
@@ -42,7 +42,7 @@ metodológicos de las posibles fuentes de sesgo.
 
 ::: {.callout-note title="How to cite this work"}
 
-Federico Viertel (2016). *Medición En Ciudadanía: Equivalencia y Propiedades Psicométricas de Una Escala de Percepción En Estudiantes*.  Magister En Medición - Pontificia Universidad Católica de Chile. Santiago de Chile
+Viertel, Federico (2016). *Medición En Ciudadanía: Equivalencia y Propiedades Psicométricas de Una Escala de Percepción En Estudiantes*.  Magister En Medición - Pontificia Universidad Católica de Chile. Santiago de Chile
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title : "Trust in Political Institutions and Support for Authoritarianism in Latin American Students – Does Civic Knowledge Make a Difference?"
 date : "2022-01-01"
-author : ["Daniel Miranda", "Juan-Carlos Castillo", "Catalina Miranda", "Jose Conejeros"]
+author : "Miranda, Daniel; Castillo, Juan-Carlos; Miranda, Catalina & Conejeros, Jose"
 categories : ["Book Section"]
 publication : "  In Ashley Weinberg: Psychology of Democracy: Of the People, By the People, For the People 173--194 . Cambridge: Cambridge University Press. ISBN: 978-1-108-47775-8"
 publication_short : "  In Ashley Weinberg: Psychology of Democracy: Of the People, By the People, For the People 173--194 . Cambridge: Cambridge University Press. ISBN: 978-1-108-47775-8"
@@ -20,7 +20,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Daniel Miranda, Juan-Carlos Castillo, Catalina Miranda, Jose Conejeros (2022). *Trust in Political Institutions and Support for Authoritarianism in Latin American Students – Does Civic Knowledge Make a Difference?*.   In Ashley Weinberg: Psychology of Democracy: Of the People, By the People, For the People 173--194 . Cambridge: Cambridge University Press. ISBN: 978-1-108-47775-8
+Miranda, Daniel; Castillo, Juan-Carlos; Miranda, Catalina & Conejeros, Jose (2022). *Trust in Political Institutions and Support for Authoritarianism in Latin American Students – Does Civic Knowledge Make a Difference?*.   In Ashley Weinberg: Psychology of Democracy: Of the People, By the People, For the People 173--194 . Cambridge: Cambridge University Press. ISBN: 978-1-108-47775-8
 
 :::
 

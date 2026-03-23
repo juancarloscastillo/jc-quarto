@@ -1,7 +1,7 @@
 ---
 title : "Enfermedades Crónicas No Transmisibles y El Efecto Protector de La Cohesión Social En Chile"
 date : "2021-01-01"
-author : ["Simon Varas"]
+author : "Varas, Simon"
 categories : ["Manuscript"]
 publication : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
 publication_short : " Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
@@ -41,7 +41,7 @@ potencialmente protector en la carga de ECNT
 
 ::: {.callout-note title="How to cite this work"}
 
-Simon Varas (2021). *Enfermedades Crónicas No Transmisibles y El Efecto Protector de La Cohesión Social En Chile*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
+Varas, Simon (2021). *Enfermedades Crónicas No Transmisibles y El Efecto Protector de La Cohesión Social En Chile*.  Licenciatura En Sociología - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile
 
 :::
 

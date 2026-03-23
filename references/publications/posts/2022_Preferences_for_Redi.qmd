@@ -1,7 +1,7 @@
 ---
 title : "Preferences for Redistribution in Unequal Contexts: Changes in Latin America between 2008 and 2018"
 date : "2022-01-01"
-author : ["Gonzalo Franetovic", "Juan-Carlos Castillo"]
+author : "Franetovic, Gonzalo & Castillo, Juan-Carlos"
 categories : ["Journal Article"]
 publication : "Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.806458](https://doi.org/10.3389/fsoc.2022.806458)"
 publication_short : "Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.806458](https://doi.org/10.3389/fsoc.2022.806458)"
@@ -16,7 +16,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Gonzalo Franetovic, Juan-Carlos Castillo (2022). *Preferences for Redistribution in Unequal Contexts: Changes in Latin America between 2008 and 2018*. Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.806458](https://doi.org/10.3389/fsoc.2022.806458)
+Franetovic, Gonzalo & Castillo, Juan-Carlos (2022). *Preferences for Redistribution in Unequal Contexts: Changes in Latin America between 2008 and 2018*. Frontiers in Sociology [https://doi.org/10.3389/fsoc.2022.806458](https://doi.org/10.3389/fsoc.2022.806458)
 
 :::
 

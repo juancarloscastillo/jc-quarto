@@ -1,7 +1,7 @@
 ---
 title : "Inégalité Subjective Au Chili. Représentation Des Différences Sociales (in)Justes à Travers Le Temps"
 date : "2019-01-01"
-author : ["Rodrigo Yanez"]
+author : "Yanez, Rodrigo"
 categories : ["Manuscript"]
 publication : " Doctorado En Sociología - EHESS. Paris"
 publication_short : " Doctorado En Sociología - EHESS. Paris"
@@ -73,7 +73,7 @@ Keywords. Subjective inequality, social representations, social justice, Chile
 
 ::: {.callout-note title="How to cite this work"}
 
-Rodrigo Yanez (2019). *Inégalité Subjective Au Chili. Représentation Des Différences Sociales (in)Justes à Travers Le Temps*.  Doctorado En Sociología - EHESS. Paris
+Yanez, Rodrigo (2019). *Inégalité Subjective Au Chili. Représentation Des Différences Sociales (in)Justes à Travers Le Temps*.  Doctorado En Sociología - EHESS. Paris
 
 :::
 

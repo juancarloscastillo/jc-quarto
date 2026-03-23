@@ -1,7 +1,7 @@
 ---
 title : "Inequality, Distributive Justice and Political Participation: An Analysis of the Case of Chile"
 date : "2015-10-01"
-author : ["Juan-Carlos Castillo", "Diego Palacios", "Alfredo Joignant", "Maximiliano Tham"]
+author : "Castillo, Juan-Carlos; Palacios, Diego; Joignant, Alfredo & Tham, Maximiliano"
 categories : ["Journal Article"]
 publication : "Bulletin of Latin American Research, 34(4) 486--502  [https://doi.org/10.1111/blar.12369](https://doi.org/10.1111/blar.12369)"
 publication_short : "Bulletin of Latin American Research, 34(4) 486--502  [https://doi.org/10.1111/blar.12369](https://doi.org/10.1111/blar.12369)"
@@ -15,7 +15,7 @@ about:
 
 ::: {.callout-note title="How to cite this work"}
 
-Juan-Carlos Castillo, Diego Palacios, Alfredo Joignant, Maximiliano Tham (2015). *Inequality, Distributive Justice and Political Participation: An Analysis of the Case of Chile*. Bulletin of Latin American Research, 34(4) 486--502  [https://doi.org/10.1111/blar.12369](https://doi.org/10.1111/blar.12369)
+Castillo, Juan-Carlos; Palacios, Diego; Joignant, Alfredo & Tham, Maximiliano (2015). *Inequality, Distributive Justice and Political Participation: An Analysis of the Case of Chile*. Bulletin of Latin American Research, 34(4) 486--502  [https://doi.org/10.1111/blar.12369](https://doi.org/10.1111/blar.12369)
 
 :::
 

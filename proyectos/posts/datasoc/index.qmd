@@ -1,0 +1,15 @@
+---
+title: "DataSoc"
+subtitle: "Ciencia de Datos Sociales"  
+categories: 
+# Date published
+date: "2026-03-322"  #year-
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"
+---
+
+# DataSoc: Ciencia de Datos Sociales{-}
+
+**DataSOC** es el Centro de Datos Sociales de la Facultad de Ciencias Sociales de la Universidad de Chile. Su objetivo es posicionar a FACSO como un referente en el análisis, procesamiento, gestión y transferencia de datos sociales, en un marco de ciencia abierta, guiado por altos estándares conceptuales, metodológicos y éticos.
