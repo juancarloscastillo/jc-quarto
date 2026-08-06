@@ -227,8 +227,8 @@
       "/references/presentations/posts/2007_Legitimation_and_Jus.html",
       "/references/presentations/posts/2006_Justice_Ideologies_i.html",
       "/docencia/posts/coloquio/index.html",
-      "/docencia/posts/desarrollo-tesis/index.html",
       "/docencia/posts/correlacional/index.html",
+      "/docencia/posts/desarrollo-tesis/index.html",
       "/docencia/posts/multinivel/index.html",
       "/docencia/posts/encuestas-sociales/index.html",
       "/docencia/posts/ciencia-social-abierta/index.html",
@@ -315,9 +315,10 @@
     "listing": "/docencia/docencia.html",
     "items": [
       "/docencia/posts/coloquio/coloquio2021-22/coloquio21-22.html",
+      "/docencia/posts/coloquio/coloquio2025/index.html",
       "/docencia/posts/coloquio/index.html",
-      "/docencia/posts/desarrollo-tesis/index.html",
       "/docencia/posts/correlacional/index.html",
+      "/docencia/posts/desarrollo-tesis/index.html",
       "/docencia/posts/multinivel/index.html",
       "/docencia/posts/encuestas-sociales/index.html",
       "/docencia/posts/ciencia-social-abierta/index.html",
@@ -346,12 +347,18 @@
       "/blog/posts/clase-etica2025/index.html",
       "/blog/posts/expose/index.html",
       "/blog/posts/quarto-migration/index.html",
+      "/blog/posts/drafts/labelled-data-R/index.html",
       "/blog/posts/escritura-academica/index.html",
       "/blog/posts/risc-bremen/index.html",
       "/blog/posts/ISA-2023/index.html",
+      "/blog/posts/drafts/vsc-settings/index.html",
       "/blog/posts/tesisfacsodown/index.html",
       "/blog/posts/zotero-academic/index.html",
-      "/blog/posts/defensas-presentaciones/index.html"
+      "/blog/posts/drafts/revision-bibliografica/index.html",
+      "/blog/posts/defensas-presentaciones/index.html",
+      "/blog/posts/drafts/IA/index.html",
+      "/blog/posts/drafts/informe-quarto/index.html",
+      "/blog/posts/drafts/ubuntu-linux/index.html"
     ]
   },
   {

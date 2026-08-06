@@ -1,21 +1,57 @@
 ---
-title: Coloquio de investigación en justicia distributiva y desigualdad socioeconómica
+title: Seminario de Investigación Avanzada en Justicia Distributiva y Ciudadanía - 2026
 categories: [cursos]
 draft: false # Is this an unpublished draft?
 about:
   template: marquee
-  image: "featured.png"  
+  image: "featured.jpg"  
 ---
 
-# Objetivo
+# Descripción
 
-El objetivo de este coloquio semestral es generar un espacio de presentación y retroalimentación colectiva a trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de justicia distributiva, desigualdad y /o merecimiento, y que utilizan metodologías de análisis cuantitativo. Está dirigido a estudiantes que realizan su trabajo de titulación/seminario/tesis de pre y postgrado. También está abierto a asistentes de investigación que participen en temáticas relacionadas.
+Este curso tiene una estructura de coloquio de investigación cuyo propósito es debatir críticamente investigaciones en torno a desigualdad y ciudadanía. En el seminario participarán estudiantes de pregrado, postgrado y académicos, generando espacios de intercambio y retroalimentación rigurosa. En cada sesión dos participantes presentarán sus propias investigaciones, para luego abrir paso a una discusión entre todos/as los/as presentes orientada a la reflexión del proceso investigativo en sus dimensiones teóricas y metodológicas.
 
-# Desarrollo del coloquio
+El formato pretende que todos/as los/as participantes inscritos/as cumplan tres roles en algún momento del seminario:
 
-Cada estudiante presentará su trabajo al menos una vez durante el semestre. Por regla general el espacio es de una hora, 20-25 min de presentación y el resto de preguntas, comentarios y retroalimentación.
+-   presentador/a de su propia investigación
+-   comentarista crítico/a en otras sesiones
+-   integrador/a de comentarios mediante un informe de revisión y retroalimentación
 
-En cada presentación también habrá una persona (comentarista) a cargo de hacer al menos tres preguntas o comentarios sobre la presentación, para lo cual también hay que inscribirse. El/la comentarista parte con su intervención posterior a la presentación, y luego se abre la ronda de preguntas a la audiencia.
+Este modelo favorece el desarrollo simultáneo de competencias para el ámbito investigativo tales como la difusión de conocimiento científico, la formulación de crítica constructiva, y la reflexión sobre fortalezas y debilidades de investigaciones propias y ajenas.
+
+El seminario busca promover espacios de diálogo entre distintos niveles de formación (pregrado-postgrado-academia) y una perspectiva de ciencia abierta, donde se valora la transparencia metodológica, la reproducibilidad y la generación colaborativa de conocimiento sobre fenómenos de desigualdad y participación ciudadana en contextos contemporáneos.
+
+En años anteriores este espacio ya ha sido utilizado para presentar trabajos de investigación, pero a partir de esta versión 2026 se formaliza como un espacio de formación en la carrera de sociología, dando la posibilidad a estudiantes de obtener créditos académicos por su participación, en el formato de un ramo optativo de pre y postgrado.
+
+La versión oficial del programa se puede ver [aquí](/docencia/posts/coloquio/files/programa_2026.pdf).
+
+# Propósito general
+
+El seminario de investigación busca que estudiantes y académicos desarrollen competencias para teorizar, diseñar, ejecutar y comunicar investigaciones rigurosas sobre desigualdad y ciudadanía a través de exposiciones, realización de comentarios críticos y revisión entre pares.
+
+Los/as participantes fortalecerán su capacidad para identificar preguntas relevantes, evaluar críticamente el rigor metodológico y empírico, comunicar hallazgos de manera clara, generar retroalimentación constructiva y reconocer la diversidad de perspectivas en el estudio de estas temáticas. 
+
+El curso promueve la participación activa en el intercambio de ideas entre distintos niveles de formación, brindando una perspectiva de la investigación como proceso colaborativo, transparente y orientado a la comprensión de las desigualdades en contextos contemporáneos.
+
+# Metodología
+
+El seminario se organiza en formato de coloquio de investigación y se estructura en sesiones semanales de 2 horas. Cada sesión contempla la presentación de dos presentaciones, seguida de comentarios críticos y de una discusión abierta.
+
+Estructura de sesiones (por bloque):
+
+-   Presentación de investigación por parte del/la autor/a (20 minutos)
+-   Comentarios estructurados por parte de un participante (20-minutos)
+-   Discusión abierta con todo el coloquio (20minutos)
+
+
+# Evaluación
+
+La evaluación del seminario se basa en el desempeño en los tres roles principales que deben cumplir todos/as los/as participantes, así como en la participación activa en las discusiones. La ponderación de cada componente es la siguiente:
+
+-   Presentación de investigación propia (30%): calidad de la presentación oral, claridad en la comunicación de la pregunta, marco conceptual, diseño metodológico y hallazgos. Se considera la capacidad de responder a críticas y de reflexionar sobre las propias limitaciones.
+-   Comentarios críticos en otras sesiones (30%): Calidad y profundidad de la retroalimentación proporcionada Se evalúan la identificación de fortalezas y debilidades en las investigaciones comentadas, la constructividad de las sugerencias y el respeto académico en la crítica.
+-   Informe de revisión sistemática (30%): Elaboración de un informe escrito que sintetice el análisis crítico de una investigación presentada en el seminario, integrando los hallazgos principales, la evaluación metodológica y las recomendaciones.
+-   Participación activa en discusiones (10%): contribuciones reflexivas en las sesiones de discusión abierta, preguntas pertinentes y un diálogo constructivo entre los participantes. Para esta parte de la evaluación se considerará la asistencia y también un párrafo de autoevaluación sobre la contribución a la discusión y al aprendizaje colectivo.
 
 # Buenas prácticas
 
@@ -27,7 +63,7 @@ Se encarece la escucha activa y respetuosa, esto es:
 
 -   anotar preguntas y comentarios en papel/libreta
 
-**Preguntar** es signo de interés y también demuestra voluntad de colaboración, para que así el trabajo presentado pueda mejorar. Por lo tanto, la retroalimentación que sirve es la que es capaz de mostrar posibles puntos ciegos y que sería importante tener en cuenta al momento de hacer la entrega final y la defensa. Es lo que hace valer la pena presentar y que no sea un mero trámite. Si es solo un trámite, no sirve.
+**Preguntar** es signo de interés y también demuestra voluntad de colaboración, para que así el trabajo presentado pueda mejorar. Por lo tanto, la retroalimentación que sirve es la que es capaz de mostrar posibles puntos ciegos y que sería importante tener en cuenta al momento de hacer la entrega final/defensa. Es lo que hace valer la pena presentar y que no sea un mero trámite. Si es solo un trámite, no sirve.
 
 Las preguntas y comentarios van por regla general al final, pero también pueden darse preguntas breves de comprensión durante la presentación (ej: qué variable va en el eje X? puedes repetir lo último por favor? etc.)
 
@@ -45,46 +81,73 @@ Para quienes presentan, también se sugiere:
 
 # Calendarización
 
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| # Fecha | # Presenta                                                                                                                                                                                                                                                           | # Comenta                                                                |        |
-|         |                                                                                                                                                                                                                                                                      |                                                                          |        |
-| 14-08   | Felipe Estay, candidato a doctor PUC:                                                                                                                                                                                                                                | JC Castillo                                                              |        |
-|         |                                                                                                                                                                                                                                                                      |                                                                          |        |
-|         | Percepciones de la Desigualdad en Chile: Un Análisis Experimental sobre el Impacto de la Información en la Justificación del Sistema Económico                                                                                                                       |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 21-08   | Andreas Laffert & René Canales: [Creencias en Meritocracia en la Etapa Escolar: Conceptos, Medición e Invarianza](https://educacion-meritocracia.github.io/merit-factorial/presentations/JornadasUDP_2025/udp_2025.html#/creencias-en-meritocracia-en-etapa-escolar) |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 28-08   | Matías Montero (presenta a las 17:00 en CIAE)                                                                                                                                                                                                                        | ------------------------------------------------------------------------ |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 04-09   | Andreas Laffert                                                                                                                                                                                                                                                      | Katherine Aravena                                                        |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 10-09   | Propuesta seminario grado (I):                                                                                                                                                                                                                                       | Juan Pablo Díaz                                                          |        |
-|         |                                                                                                                                                                                                                                                                      |                                                                          |        |
-|         | Cristóbal Mejías - Katherine Aravena                                                                                                                                                                                                                                 |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 17-09   | Receso                                                                                                                                                                                                                                                               |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 25-09   | Propuesta seminario grado (II):                                                                                                                                                                                                                                      | Tomás Valencia                                                           |        |
-|         |                                                                                                                                                                                                                                                                      |                                                                          |        |
-|         | Ismael Aguayo - Victoria Arias                                                                                                                                                                                                                                       |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 02-10   | Título II: Tomás Valencia                                                                                                                                                                                                                                            | Tomás Urzúa                                                              |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 09-10   | —                                                                                                                                                                                                                                                                    |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 16-10   | Título II: Franco Acevedo                                                                                                                                                                                                                                            | Sophia Karoussis                                                         |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 23-10   | (conferencia COES)                                                                                                                                                                                                                                                   |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 30-10   | Título II: Juan Pablo Díaz                                                                                                                                                                                                                                           | Neyem Cares                                                              |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 06-11   | ------------------------------------------------------------------------                                                                                                                                                                                             |                                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 13-11   | Magíster 1°: Tomás Urzúa                                                                                                                                                                                                                                             | Andreas Laffert                                                          |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 20-11   | Magíster 2°: Neyem Cares                                                                                                                                                                                                                                             | Juan C. Castillo                                                         |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
-| 27-11   | Magíster 2°: Sophia Karoussis                                                                                                                                                                                                                                        | René Canales                                                             |        |
-+---------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+--------+
++------------+-------------------------------------------------------+------------+
+| # Fecha    | # Temas / presentaciones                              | # Comenta  |
+|            |                                                       |            |
+| 06-08      | Presentación del programa y organización del semestre |            |
++------------+-------------------------------------------------------+------------+
+| 13-08      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 20-08      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 27-09      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 03-09      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 10-09      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 17-09      | (RECESO)                                              |            |
++------------+-------------------------------------------------------+------------+
+| 24-09      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 01-10      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 08-10      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 15-10      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 22-10      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 29-10      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 05-11      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 12-11      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 19-11      |                                                       |            |
++------------+-------------------------------------------------------+------------+
+| 26-11      |                                                       |            |
++------------+-------------------------------------------------------+------------+
 
-[Coloquio 2021-2022](/docencia/posts/coloquio/coloquio21-22.html)
+# Referencias
+
+-   Aczel, B., Szaszi, B., Clelland, H. T., Kovacs, M., Holzmeister, F., van Ravenzwaaij, D., Schulz-Kümpel, H., Hoffmann, S., Nilsonne, G., Kosa, L., Torma, Z. A., Abdelfatah, Y., Aberson, C. L., Acar, O. A., Acem, E., Adamkovic, M., Adamovich, T., Adiasto, K., Ahnström, L., … Nosek, B. A. (2026). Investigating the analytical robustness of the social and behavioural sciences. Nature, 652(8108), 135–142. https://doi.org/10.1038/s41586-025-09844-9
+
+-   Aksoy, O., Manzo, G., Birkelund, G. E., & Raub, W. (2026). Standards in sociology: A position statement at the 25th anniversary of the European Academy of Sociology. Rationality and Society, 38(2), 267–280. https://doi.org/10.1177/10434631261444988
+
+-   Auspurg, K., & Brüderl, J. (2022). How to increase reproducibility and credibility of sociological research. In Handbook of Sociological Science (pp. 512–527). Edward Elgar Publishing. https://www.elgaronline.com/view/book/9781789909432/book-part-9781789909432-37.xml
+
+-   Bowers, J., & Voors, M. (2017). Cómo mejorar su relación con su futuro yo. Revista de Ciencia Política, 36(3), 829–848.
+
+-   Breznau, N. (2021). Does Sociology Need Open Science? Societies, 11(1), 9. https://doi.org/10.3390/soc11010009
+
+-   Christensen, G. S., Freese, J., & Miguel, E. (2019). Transparent and reproducible social science research: How to do open science. University of California Press.
+
+-   Freese, J., Rauf, T., & Voelkel, J. G. (2022). Advances in transparency and reproducibility in the social sciences. Social Science Research, 102770. https://doi.org/10.1016/j.ssresearch.2022.102770
+
+-   **Hancock, G. R., & Mueller, R. O. (2010). The Reviewers Guide to Quantitative Methods in the Social Sciences (1st ed.). Routledge.**
+
+-   **Harinck, F., & Leeuwen, E. van. (2020). The Art of Presenting: Delivering Successful Presentations in the Social Sciences and Humanities. Cambridge University Press. https://doi.org/10.1017/9781316488348**
+
+-   Koch, T., & Vanderstraeten, R. (2019). Internationalizing a national scientific community? Changes in publication and citation practices in Chile, 1976–2015. Current Sociology, 67(5), 723–741. https://doi.org/10.1177/0011392118807514
+
+# Recursos
+
+- [Sugerencias para defensas y presentaciones](/blog/posts/defensas-presentaciones/index.qmd)
+-   [Organizing Your Social Sciences Research Assignments: Giving an Oral Presentation](https://libguides.usc.edu/writingguide/assignments/oralpresentation)
+
+# Versiones anteriores
+
+[Coloquio 2025](/docencia/posts/coloquio/coloquio2025/)
+
+[Coloquio 2021-2022](/docencia/posts/coloquio/coloquio2021-22/coloquio21-22.html)
