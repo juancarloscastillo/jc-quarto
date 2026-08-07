@@ -29,7 +29,7 @@ La versión oficial del programa se puede ver [aquí](/docencia/posts/coloquio/f
 
 El seminario de investigación busca que estudiantes y académicos desarrollen competencias para teorizar, diseñar, ejecutar y comunicar investigaciones rigurosas sobre desigualdad y ciudadanía a través de exposiciones, realización de comentarios críticos y revisión entre pares.
 
-Los/as participantes fortalecerán su capacidad para identificar preguntas relevantes, evaluar críticamente el rigor metodológico y empírico, comunicar hallazgos de manera clara, generar retroalimentación constructiva y reconocer la diversidad de perspectivas en el estudio de estas temáticas. 
+Los/as participantes fortalecerán su capacidad para identificar preguntas relevantes, evaluar críticamente el rigor metodológico y empírico, comunicar hallazgos de manera clara, generar retroalimentación constructiva y reconocer la diversidad de perspectivas en el estudio de estas temáticas.
 
 El curso promueve la participación activa en el intercambio de ideas entre distintos niveles de formación, brindando una perspectiva de la investigación como proceso colaborativo, transparente y orientado a la comprensión de las desigualdades en contextos contemporáneos.
 
@@ -42,7 +42,6 @@ Estructura de sesiones (por bloque):
 -   Presentación de investigación por parte del/la autor/a (20 minutos)
 -   Comentarios estructurados por parte de un participante (20-minutos)
 -   Discusión abierta con todo el coloquio (20minutos)
-
 
 # Evaluación
 
@@ -88,11 +87,11 @@ Para quienes presentan, también se sugiere:
 +------------+-------------------------------------------------------+------------+
 | 13-08      |                                                       |            |
 +------------+-------------------------------------------------------+------------+
-| 20-08      |                                                       |            |
+| 20-08      | Vicente Rojas                                         |            |
 +------------+-------------------------------------------------------+------------+
-| 27-09      |                                                       |            |
+| 27-08      | invitado                                              |            |
 +------------+-------------------------------------------------------+------------+
-| 03-09      |                                                       |            |
+| 03-09      | Neyem                                                 |            |
 +------------+-------------------------------------------------------+------------+
 | 10-09      |                                                       |            |
 +------------+-------------------------------------------------------+------------+
@@ -102,19 +101,19 @@ Para quienes presentan, también se sugiere:
 +------------+-------------------------------------------------------+------------+
 | 01-10      |                                                       |            |
 +------------+-------------------------------------------------------+------------+
-| 08-10      |                                                       |            |
+| 08-10      | Felipe                                                |            |
 +------------+-------------------------------------------------------+------------+
-| 15-10      |                                                       |            |
+| 15-10      | Valentina                                             |            |
 +------------+-------------------------------------------------------+------------+
-| 22-10      |                                                       |            |
+| 22-10      | Nicolas Outerbridge                                   |            |
 +------------+-------------------------------------------------------+------------+
-| 29-10      |                                                       |            |
+| 29-10      | Tomás Urzúa                                           |            |
 +------------+-------------------------------------------------------+------------+
 | 05-11      |                                                       |            |
 +------------+-------------------------------------------------------+------------+
-| 12-11      |                                                       |            |
+| 12-11      | Ismael                                                |            |
 +------------+-------------------------------------------------------+------------+
-| 19-11      |                                                       |            |
+| 19-11      | Victoria                                              |            |
 +------------+-------------------------------------------------------+------------+
 | 26-11      |                                                       |            |
 +------------+-------------------------------------------------------+------------+
@@ -143,7 +142,7 @@ Para quienes presentan, también se sugiere:
 
 # Recursos
 
-- [Sugerencias para defensas y presentaciones](/blog/posts/defensas-presentaciones/index.qmd)
+-   [Sugerencias para defensas y presentaciones](/blog/posts/defensas-presentaciones/index.qmd)
 -   [Organizing Your Social Sciences Research Assignments: Giving an Oral Presentation](https://libguides.usc.edu/writingguide/assignments/oralpresentation)
 
 # Versiones anteriores
