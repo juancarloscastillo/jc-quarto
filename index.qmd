@@ -239,7 +239,7 @@ Estudi√© en la <span class="hover-image-wrapper"> escuela 227 de Miraflores, Vi√
 :::
 
 ::: {.button}
-[Todas las tesis](tesis/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+[Todas las tesis](references/thesis/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
 :::
 
 :::
