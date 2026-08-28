@@ -47,7 +47,7 @@ Se entregarán 3 informes durante el semestre, dos de avance y uno final. Cada i
 
 - seminaristas/tesistas se incorporan a [canal de Slack](https://join.slack.com/t/seminarios-facso/shared_invite/zt-2pz3yo72o-tz4yi7zRGTEFZLZQbkBx1Q), donde se comparte información relativa a las investigaciones y se hace entrega de los informes
 
-- la entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar la plantilla [ReportesFACSO_plantilla Quarto](https://github.com/data-soc/ReportesFACSO_plantillaQuarto), que permite ambas salidas. 
+- la entrega de informes puede ser en pdf o html, idealmente generados con (R)Markdown o Quarto. Se recomienda usar la [plantilla Quarto](https://data-soc.github.io/plantilla_quarto/), que permite ambas salidas. 
 
 - los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/) en el caso de informes en html, o se enviarán comentarios por Slack
 
