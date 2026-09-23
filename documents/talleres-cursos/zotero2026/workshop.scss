@@ -1,0 +1,355 @@
+/*-- scss:defaults --*/
+
+// colors
+$body-bg: #ffffff !default;
+$body-color: #211e1e !default;
+$link-color: #810b11 !default;
+$selection-bg: #ffffff !default;
+
+
+// headings
+$presentation-heading-color: #c02424 !default;
+
+$heading1Size: 3.00em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+
+// code blocks
+$code-block-border-color: #93a1a1 !default;
+
+
+
+/* ======= Hotspots sobre imagen para anotaciones paso a paso ======= */
+.ui-annot {
+  position: relative;
+  width: 100%;
+}
+.ui-annot .ui-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hotspot {
+  position: absolute;
+  border: 4px solid var(--lisa-red, #D91A2A);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  background: rgba(217,26,42,.10);              /* leve velo rojo */
+  backdrop-filter: saturate(110%) brightness(102%);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  display: flex; align-items: flex-start; justify-content: flex-start;
+}
+
+/* Etiqueta del hotspot */
+.hotspot > span {
+  display: inline-block;
+  margin: 6px 8px;
+  padding: .18rem .45rem;
+  font-weight: 800;
+  line-height: 1;
+  background: #fff;
+  color: #111827;
+  border: 2px solid var(--lisa-red, #D91A2A);
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* Efecto al mostrar (fragment) */
+.reveal .fragment.visible.hotspot {
+  background: rgba(217,26,42,.14);
+  box-shadow: 0 10px 28px rgba(0,0,0,.20);
+}
+
+/* En pantallas pequeñas, engrosar etiquetas y bordes un poco menos */
+@media (max-width: 840px){
+  .hotspot { border-width: 3px; }
+  .hotspot > span { font-size: .9em; }
+}
+
+/* Oculta todo hotspot/etiqueta hasta que el fragment sea visible */
+.reveal .hotspot { opacity: 0; visibility: hidden; }
+.reveal .fragment.visible.hotspot { opacity: 1; visibility: visible; }
+
+/* Imagen anotada */
+.ui-annot { position: relative; width: 100%; }
+.ui-annot .ui-img { display: block; width: 100%; height: auto; border-radius: 10px; }
+
+/* Cuadros */
+.hotspot {
+  position: absolute;
+  border: 4px solid var(--lisa-red, #D91A2A);
+  border-radius: 12px;
+  background: rgba(217,26,42,.10);
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  pointer-events: none;             /* no captura clics al presentar */
+  opacity: 0; visibility: hidden;   /* oculto hasta que el fragment esté visible */
+  transition: background .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+/* Etiqueta generada por CSS */
+.hotspot::after {
+  content: attr(data-label);
+  position: absolute; top: 6px; left: 8px;
+  display: inline-block;
+  padding: .18rem .45rem;
+  font-weight: 800; line-height: 1;
+  background: #fff; color: #111827;
+  border: 2px solid var(--lisa-red, #D91A2A);
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* Cuando el fragment aparece */
+.reveal .fragment.visible.hotspot {
+  opacity: 1; visibility: visible;
+  background: rgba(217,26,42,.14);
+  box-shadow: 0 10px 28px rgba(0,0,0,.20);
+}
+
+@media (max-width: 840px){
+  .hotspot { border-width: 3px; }
+  .hotspot::after { font-size: .9em; }
+}
+
+/* ===== Etiquetas de hotspots: tamaño más discreto y consistente ===== */
+
+/* Tamaño base más pequeño (fluido con la pantalla) */
+.ui-annot .hotspot::after {
+  /* antes dependía del tamaño de texto global; ahora lo fijamos con clamp */
+  font-size: clamp(0.62rem, 1.3vw, 0.9rem);
+  letter-spacing: 0;
+  padding: .14rem .40rem;         /* un poco menos de padding */
+  border-width: 2px;              /* borde más fino en la etiqueta */
+}
+
+/* Bordes de los cuadros un poco más delgados para no “gritar” */
+.ui-annot .hotspot {
+  border-width: 3px;
+}
+
+/* Variante aún más pequeña por slide (opcional)
+   En la slide usa: <div class="ui-annot ui-annot--sm"> … */
+.ui-annot--sm .hotspot::after { 
+  font-size: clamp(0.56rem, 1.1vw, 0.8rem); 
+  padding: .12rem .36rem; 
+}
+.ui-annot--sm .hotspot { border-width: 2.5px; }
+
+/* En móviles/ventanas angostas reducir un poquito más */
+@media (max-width: 840px){
+  .ui-annot .hotspot::after { font-size: clamp(0.58rem, 2.4vw, 0.85rem); }
+  .ui-annot .hotspot { border-width: 2.5px; }
+}
+
+/* Etiqueta a la derecha del cuadro (alineada verticalmente) */
+.hotspot.right-label::after {
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  /* si quieres que parezca “globo”: */
+  border-radius: 999px;
+  padding: .14rem .45rem;
+}
+
+/* etiquetas y bordes discretos para anotaciones */
+.ui-annot .hotspot { border-width: 3px; }
+.ui-annot .hotspot::after { font-size: clamp(0.62rem, 1.3vw, 0.9rem); padding:.14rem .4rem; }
+.hotspot.right-label::after { left: calc(100% + 10px); top: 50%; transform: translateY(-50%); white-space: nowrap; }
+.ui-annot--sm .hotspot { border-width: 2.5px; }
+.ui-annot--sm .hotspot::after { font-size: clamp(0.56rem, 1.1vw, 0.8rem); padding:.12rem .36rem; }
+
+/* Forzar número de slide RevealJS */
+.reveal .slide-number,
+.reveal .slide-number-a11y {
+  display: block !important;
+  opacity: 1 !important;
+  color: #211e1e !important;   /* mismo color que body-color */
+  font-size: 0.8em;
+  right: 1.2em;
+  bottom: 1.2em;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* de edumer */
+
+
+.box-4,
+.section-title-4 {
+  background-color: #E0343E;
+}
+
+.box-4{
+  color: #FFFFFF;
+}
+
+.box-7, .box-inv-7, .box-6, .box-inv-6, .box-5, .box-inv-5, .box-4, .box-inv-4, .box-3, .box-inv-3, .box-2, .box-inv-2, .box-1, .box-inv-1 {
+  margin: 0em auto;
+  overflow: hidden;
+  padding: 0.1em 0.4em;
+  font-weight: 600;
+  display: table;
+  text-align: center;
+}
+
+.float-left .box-4, .float-left .box-inv-4,
+.float-right .box-4, .float-right .box-inv-4 {
+  display: inline;
+}
+
+.sp-after-half {
+  margin-bottom: 0.7em !important;
+}
+
+.sp-after {
+  margin-bottom: 1em !important;
+}
+
+
+.left-column2 {
+  width: 25%;
+  height: 92%;
+  float: left;
+}
+.left-column2 h2, .left-column2 h3 {
+  color: #dc322f;
+}
+
+.right-column2 {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+  padding-right: 0em;
+}
+
+.coment h1{
+  color: #cb3365;
+}
+
+
+.right-column3 {
+  float: right;
+  width: 55%;
+}
+
+.gris {
+  background-color: #758686;
+  color: #fdf6e3;
+
+}
+.gris h1 {
+  color: #FFFFFF;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.gris h2 {
+  color: #183636;
+  font-size: 60px;
+  text-align: right;
+}
+
+.gris h3 {
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.espaciosimple{
+  line-height: 0.9em
+} 
+
+
+.espaciosimplelineas{
+  line-height: 0.3  em
+} 
+
+.table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+
+.slarge { font-size: 150%
+  
+}
+
+.xlarge { 
+  font-size: 115%
+
+}
+
+.large { font-size: 95%
+}
+
+.mlarge { font-size: 80%
+  
+}
+
+.medium { font-size: 85%
+}
+
+.small { font-size: 75%
+}
+
+
+.tiny { 
+    font-size: 60%;
+    line-height: 1.2em;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px #cb4b16;
+  padding-left: 1em;
+}
+
+float-left .box-4, .float-left .box-inv-4,
+.float-right .box-4, .float-right .box-inv-4 {
+  display: inline;
+}
+
+.sp-after-half {
+  margin-bottom: 0.7em !important;
+}
+
+.sp-after {
+  margin-bottom: 1em !important;
+}
+
+.box-inv-4,
+.section-title-inv-4 {
+  background-color: #f2d9d9;
+}
+
+.box-inv-4,
+.title-inv-4 h1,
+.section-title-inv-4 h1 {
+  color: #6e1a09;
+}
+
+.box-inv-5,
+.section-title-inv-5 {
+  background-color: #92220C;
+}
+.box-inv-5,
+.title-inv-5 h1,
+.section-title-inv-5 h1 {
+  color: #FFFFFF;
+}

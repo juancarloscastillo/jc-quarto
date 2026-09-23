@@ -1,0 +1,905 @@
+/* =========================================================
+   LISA light — RevealJS / Quarto (paleta del logo LISA)
+   Blanco + Negro + Rojo LISA (#D91A2A)
+   ========================================================= */
+
+/*-- scss:defaults --*/
+$backgroundColor: #FFFFFF;
+$mainFont: 'Noto Serif', serif;
+$mainFontSize: 30px;
+$mainColor: #111827;
+$blockMargin: 20px;
+
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Cabin', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headingColor: #111827;
+$headingLineHeight: 1.15;
+$headingLetterSpacing: 0.2px;
+$headingTextTransform: none;
+$headingFontWeight: 800;
+
+$heading1Size: 1.9em;
+$heading2Size: 1.55em;
+$heading3Size: 1.22em;
+$heading4Size: 1.00em;
+
+$codeFont: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+$lisa-white:   #FFFFFF;
+$lisa-black:   #111111;
+$lisa-gray:    #4B5563;
+$lisa-muted:   #9CA3AF;
+$lisa-border:  #E5E7EB;
+$lisa-red:     #D91A2A;
+
+$linkColor: $lisa-red;
+$linkColorHover: $lisa-black;
+
+$selectionBackgroundColor: rgba(217, 26, 42, .18);
+$selectionColor: #111111;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* =========================================================
+   PORTADA — DISEÑO CENTRADO, COMPACTO Y ROBUSTO
+   ========================================================= */
+
+/* Contenedor portada */
+.cover{
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.5vh 4vw 1vh;
+  min-height: 68vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+/* Logo plano grande (escala con altura/anchura) */
+.cover-logo{
+  display: block;
+  width: clamp(300px, 40vw, 600px);
+  height: auto;
+  margin: 0 auto 12px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Kicker rojo */
+.cover-kicker{
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:800;
+  font-size:.9rem;
+  color:$lisa-red;
+  margin:.2rem 0 .4rem;
+}
+
+/* Título de portada (usar: {.cover-title}) */
+h1.cover-title, .cover-title{
+  font-family: $headingFont;
+  font-weight: 800;
+  color: $headingColor;
+  line-height: 1.14;
+  margin: .15rem 0 .6rem;
+  font-size: clamp(36px, 5.4vw, 58px);
+}
+
+/* Tarjeta autoría */
+.cover-card{
+  background:#FAFAFA;
+  border:1px solid $lisa-border;
+  border-radius:18px;
+  padding:.7rem .95rem;
+  box-shadow:0 10px 18px rgba(17,24,39,.06);
+  margin-bottom:.4rem;
+}
+.cover-card p{ margin:.12rem 0; font-size:.98rem; color:#334155; }
+.cover-card p strong{ font-weight:800; }
+
+/* Meta */
+.cover-meta{
+  color:$lisa-muted;
+  font-size:.92rem;
+  margin:.25rem 0 .55rem;
+}
+
+/* Ajustes por ALTURA del viewport */
+@media (max-height: 820px){
+  .cover      { padding: 1vh 4vw .5vh; min-height: 64vh; }
+  .cover-logo { width: clamp(280px, 36vw, 520px); margin-bottom: 10px; }
+  .cover-title{ font-size: clamp(34px, 5vw, 54px); }
+  .cover-card { padding:.6rem .9rem; }
+}
+@media (max-height: 720px){
+  .cover      { padding: .8vh 4vw .4vh; min-height: 60vh; }
+  .cover-logo { width: clamp(250px, 32vw, 480px); }
+  .cover-title{ font-size: clamp(32px, 4.6vw, 50px); margin-bottom:.5rem; }
+  .cover-card { padding:.55rem .85rem; }
+  .cover-card p{ font-size:.95rem; }
+  .cover-meta { font-size:.9rem; }
+}
+/* Móviles angostos */
+@media (max-width: 520px){
+  .cover-logo { width: clamp(220px, 70vw, 420px); }
+  .cover-title{ font-size: clamp(30px, 7vw, 44px); }
+}
+
+/* =========================================================
+   BASE REVEAL
+   ========================================================= */
+.reveal { font-size: 28px; line-height: 1.35; color: $mainColor; }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: $headingFont; color: $headingColor;
+  letter-spacing: $headingLetterSpacing; font-weight: $headingFontWeight;
+}
+.reveal h1 { font-size: $heading1Size; }
+.reveal h2 { font-size: $heading2Size; }
+.reveal h3 { font-size: $heading3Size; }
+.reveal h4 { font-size: $heading4Size; color: #1F2937; } /* este gris será override al final */
+
+.reveal a {
+  color: $linkColor; text-decoration: none; border-bottom: 2px solid rgba(217,26,42,.35);
+}
+.reveal a:hover { color: $linkColorHover; border-bottom-color: $lisa-red; }
+::selection { background: $selectionBackgroundColor; color: $selectionColor; }
+
+.reveal hr {
+  border: none; height: 1px; margin: 1rem 0 1.25rem;
+  background: linear-gradient(90deg, transparent, $lisa-border, transparent);
+}
+
+.reveal pre code {
+  background: #F8FAFC !important; border: 1px solid $lisa-border;
+  border-radius: 10px; padding: 1rem 1.2rem; font-size: .9em;
+}
+.reveal code:not(pre code) {
+  background: #F3F4F6; padding: .08em .35em; border-radius: 6px; border: 1px solid $lisa-border;
+}
+
+.badge-accent {
+  display: inline-block; border: 1px solid $lisa-border; border-left: 6px solid $lisa-red;
+  background: #FAFAFA; padding: .6rem .9rem; border-radius: 12px; color: $mainColor;
+}
+
+.center { text-align: center; }
+.middle { display: flex; align-items: center; justify-content: center; min-height: 60vh; }
+.scrollable-x { overflow-x: auto; padding-bottom: .25rem; border-bottom: 1px dashed $lisa-border; }
+.column-right { text-align: right; }
+
+/* Tablas y citas */
+.reveal table { width: 100%; border-collapse: collapse; margin: .6rem 0 1rem; font-size: .9em; }
+.reveal th, .reveal td { border: 1px solid $lisa-border; padding: .55rem .6rem; }
+.reveal th { background: #F8FAFC; color: #0F172A; }
+blockquote {
+  border-left: 6px solid $lisa-red; background: #FAFAFA; padding: .8rem 1rem; border-radius: 10px; color: #1F2937;
+}
+
+/* Utilitarios color */
+.black { color: $lisa-black; } .red { color: $lisa-red; }
+.gray  { color: $lisa-gray; } .grey { color: $lisa-muted; } .white { color: #fff; }
+
+/* Fondos */
+.reveal section[data-background-color="#FFFFFF"] { color: $mainColor; }
+.reveal section[data-background-color="#000000"] { color: #FFFFFF; }
+.reveal section[data-background-color="#D91A2A"] { color: #FFFFFF; }
+
+/* ===== Portada compacta (fallback si no usas .cover) ===== */
+.reveal .slides section:first-of-type h1{
+  font-size: clamp(36px, 5vw, 56px) !important;
+  line-height: 1.14 !important;
+  margin: .15rem 0 .6rem !important;
+}
+
+/* Ajustes por ALTURA del viewport para fallback */
+@media (max-height: 820px){
+  .reveal .slides section:first-of-type h1{
+    font-size: clamp(32px, 4.6vw, 50px) !important;
+  }
+}
+@media (max-height: 720px){
+  .reveal .slides section:first-of-type h1{
+    font-size: clamp(30px, 4.2vw, 46px) !important;
+  }
+}
+@media (max-width: 520px){
+  .reveal .slides section:first-of-type h1{
+    font-size: clamp(28px, 6.8vw, 40px) !important;
+  }
+}
+
+/* ================== Botón GitHub — versión mínima y muy pequeña ================== */
+.btn{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.42rem .78rem;
+  border:2px solid transparent; border-radius:10px;
+  font-weight:700; letter-spacing:.01em; line-height:1;
+  text-decoration:none !important;
+  transition:transform .12s ease, box-shadow .12s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  box-shadow:0 3px 8px rgba(17,24,39,.06);
+  color:inherit;
+}
+.btn:focus{ outline:0; box-shadow:0 0 0 3px rgba(217,26,42,.25); }
+.btn:active{ transform:translateY(1px); }
+
+.btn-condensed{ box-shadow:0 2px 6px rgba(17,24,39,.05); letter-spacing:.005em; }
+.btn-xs{ padding:.30rem .60rem; font-size:.86em; border-radius:9px; gap:.38rem; }
+.btn-xxs{ padding:.18rem .44rem; font-size:.74em; border-radius:8px; gap:.30rem; }
+
+.btn-github,
+.btn-github:link,
+.btn-github:visited{
+  background:#D91A2A; border-color:#D91A2A; color:#fff !important;
+}
+.btn-github:hover{
+  background:#b51622; border-color:#b51622; color:#fff !important;
+}
+
+/* Ícono GitHub (Octocat) embebido como SVG */
+.btn-github::before{
+  content:"";
+  width:1em; height:1em;
+  display:inline-block; transform:translateY(1px);
+  background-repeat:no-repeat; background-size:contain;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='98' height='96' viewBox='0 0 98 96' fill='white'><path d='M48.9 0C21.9 0 0 22 0 49.2c0 21.7 13.8 40 33 46.4 2.4.5 3.3-1 3.3-2.3 0-1.1 0-4.1-.1-8-13.4 2.9-16.2-6.5-16.2-6.5-2.2-5.6-5.5-7-5.5-7-4.5-3 .3-3 .3-3 5 .3 7.6 5.2 7.6 5.2 4.4 7.6 11.5 5.4 14.3 4.1.5-3.2 1.7-5.4 3.1-6.7-10.7-1.2-21.9-5.4-21.9-24.1 0-5.3 1.9-9.6 5-13-0.5-1.2-2.2-6.2.5-12.9 0 0 4.1-1.3 13.4 5 3.9-1.1 8.1-1.6 12.2-1.6s8.3.5 12.2 1.6c9.3-6.3 13.4-5 13.4-5 2.7 6.7 1 11.7.5 12.9 3.1 3.4 5 7.7 5 13 0 18.7-11.2 22.9-21.9 24.1 1.8 1.6 3.3 4.7 3.3 9.4 0 6.8-.1 12.3-.1 14 0 1.3.9 2.9 3.3 2.3 19.2-6.4 33-24.7 33-46.4C97.8 22 75.9 0 48.9 0z'/></svg>");
+}
+.btn-github.btn-xs::before{ width:.95em; height:.95em; }
+.btn-github.btn-xxs::before{ width:.9em; height:.9em; }
+
+/* Responsivo */
+.btn-rwd{
+  font-size: clamp(11px, 0.8vw, 13px) !important;
+  padding: clamp(.16rem, 0.35vw, .30rem) clamp(.36rem, 0.7vw,  .60rem) !important;
+  border-radius: 8px;
+}
+.btn-github.btn-rwd::before{ width: 1em; height: 1em; }
+@media (min-width: 1600px){
+  .btn-github.btn-xxs.btn-rwd{
+    font-size: 12px !important; padding: .16rem .40rem !important;
+  }
+}
+@media (min-width: 1920px){
+  .btn-github.btn-xxs.btn-rwd{
+    font-size: 11px !important; padding: .14rem .36rem !important;
+  }
+}
+
+/* =========================================================
+   OVERRIDES AL FINAL — Encabezados y slide de plan/objetivo
+   ========================================================= */
+
+/* Exponer rojo LISA como var CSS (útil en JS o temas mixtos) */
+:root { --lisa-red: #{$lisa-red}; }
+
+/* 1) Encabezados: TODOS rojos EXCEPTO el título de portada .cover-title
+   (nota: el orden aquí es crucial para ganar a reglas anteriores) */
+.reveal .slides section h1:not(.cover-title),
+.reveal .slides section h2,
+.reveal .slides section h3,
+.reveal .slides section h4 {
+  color: var(--lisa-red) !important;
+}
+
+/* Excepción portada (h1.cover-title SIN rojo) */
+.reveal .slides section h1.cover-title,
+.reveal h1.cover-title {
+  color: #111827 !important;
+}
+
+/* Aire y ritmo tipográfico bajo encabezados */
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3,
+.reveal .slides section h4 {
+  line-height: 1.10;
+  margin-top: 0;
+  margin-bottom: clamp(0.8rem, 1.6vw, 1.25rem);
+  letter-spacing: -0.2px;
+}
+
+/* 2) Columnas del layout “columns” con un poco más de espacio */
+.reveal .columns { column-gap: 3rem; }
+
+/* 3) Estilo de la lista del plan (aplicar en QMD con fenced div .plan-list) */
+.plan-list {
+  ol {
+    margin: 0.45rem 0 0 1.2rem;
+    padding: 0;
+  }
+  li {
+    margin: 0.35rem 0;
+  }
+}
+
+/* 4) Tarjeta del objetivo */
+.objective-card {
+  border-left: 6px solid var(--lisa-red);
+  background: rgba(217, 26, 42, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+}
+
+/* 5) (Opcional) desactivar fragmentos en una slide marcada
+   Usar en QMD:  # Objetivo y plan {data-state="no-fragments"} */
+section[data-state="no-fragments"] .fragment {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Título de portada en NEGRO */
+.reveal .slides section h1.cover-title,
+.reveal h1.cover-title {
+  color: $lisa-black !important;  /* o #000 si prefieres negro absoluto */
+}
+
+/* ========= TITULO DE PORTADA EN NEGRO (dos vías) ========= */
+
+/* A) Portada generada por YAML (title slide automática de Quarto) */
+.reveal .slides section.title-slide h1 {
+  color: $lisa-black !important;
+}
+
+/* B) Portada manual con clase .cover-title en el cuerpo */
+.reveal .slides section h1.cover-title,
+.reveal h1.cover-title {
+  color: $lisa-black !important;
+}
+
+/* (Opcional) si decides poner un id al título de portada: */
+.reveal .slides section h1#titulo-portada {
+  color: $lisa-black !important;
+}
+
+/* ===== H2 (##) más grande y “arriba” ===== */
+
+/* Tamaño fluido y jerarquía fuerte para h2 */
+.reveal .slides section h2 {
+  /* más grande que tu $heading2Size */
+  font-size: clamp(2.1rem, 4.6vw, 3.2rem);  /* ajusta el tope si quieres */
+  line-height: 1.08;                        /* compacto sin aplastar */
+  letter-spacing: -0.2px;
+  margin-bottom: clamp(0.9rem, 1.8vw, 1.35rem);
+}
+
+/* Opcional: empujar el h2 un pelín hacia arriba dentro de la slide */
+.reveal .slides section > h2:first-child {
+  margin-top: -0.4rem;   /* hazlo -0.4rem si quieres aún más arriba */
+}
+
+/* UTILIDAD para alinear una slide completa arriba (si usas center: true) */
+/* En el .qmd, marca la slide con:  {... .align-top} */
+.reveal .slides section.align-top {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;   /* arriba */
+  /* evita que Reveal centre verticalmente esta slide */
+}
+
+/* Centrar siempre la imagen de portada con clase .cover-logo */
+.reveal .slides section img.cover-logo {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Si Quarto envuelve la imagen en <figure>, centramos el figure */
+.reveal .slides section figure:has(img.cover-logo) {
+  text-align: center;
+}
+
+/* ======= Hotspots sobre imagen para anotaciones paso a paso ======= */
+.ui-annot {
+  position: relative;
+  width: 100%;
+}
+.ui-annot .ui-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hotspot {
+  position: absolute;
+  border: 4px solid var(--lisa-red, #D91A2A);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  background: rgba(217,26,42,.10);              /* leve velo rojo */
+  backdrop-filter: saturate(110%) brightness(102%);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  display: flex; align-items: flex-start; justify-content: flex-start;
+}
+
+/* Etiqueta del hotspot */
+.hotspot > span {
+  display: inline-block;
+  margin: 6px 8px;
+  padding: .18rem .45rem;
+  font-weight: 800;
+  line-height: 1;
+  background: #fff;
+  color: #111827;
+  border: 2px solid var(--lisa-red, #D91A2A);
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* Efecto al mostrar (fragment) */
+.reveal .fragment.visible.hotspot {
+  background: rgba(217,26,42,.14);
+  box-shadow: 0 10px 28px rgba(0,0,0,.20);
+}
+
+/* En pantallas pequeñas, engrosar etiquetas y bordes un poco menos */
+@media (max-width: 840px){
+  .hotspot { border-width: 3px; }
+  .hotspot > span { font-size: .9em; }
+}
+
+/* Oculta todo hotspot/etiqueta hasta que el fragment sea visible */
+.reveal .hotspot { opacity: 0; visibility: hidden; }
+.reveal .fragment.visible.hotspot { opacity: 1; visibility: visible; }
+
+/* Imagen anotada */
+.ui-annot { position: relative; width: 100%; }
+.ui-annot .ui-img { display: block; width: 100%; height: auto; border-radius: 10px; }
+
+/* Cuadros */
+.hotspot {
+  position: absolute;
+  border: 4px solid var(--lisa-red, #D91A2A);
+  border-radius: 12px;
+  background: rgba(217,26,42,.10);
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  pointer-events: none;             /* no captura clics al presentar */
+  opacity: 0; visibility: hidden;   /* oculto hasta que el fragment esté visible */
+  transition: background .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+/* Etiqueta generada por CSS */
+.hotspot::after {
+  content: attr(data-label);
+  position: absolute; top: 6px; left: 8px;
+  display: inline-block;
+  padding: .18rem .45rem;
+  font-weight: 800; line-height: 1;
+  background: #fff; color: #111827;
+  border: 2px solid var(--lisa-red, #D91A2A);
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* Cuando el fragment aparece */
+.reveal .fragment.visible.hotspot {
+  opacity: 1; visibility: visible;
+  background: rgba(217,26,42,.14);
+  box-shadow: 0 10px 28px rgba(0,0,0,.20);
+}
+
+@media (max-width: 840px){
+  .hotspot { border-width: 3px; }
+  .hotspot::after { font-size: .9em; }
+}
+
+/* ===== Etiquetas de hotspots: tamaño más discreto y consistente ===== */
+
+/* Tamaño base más pequeño (fluido con la pantalla) */
+.ui-annot .hotspot::after {
+  /* antes dependía del tamaño de texto global; ahora lo fijamos con clamp */
+  font-size: clamp(0.62rem, 1.3vw, 0.9rem);
+  letter-spacing: 0;
+  padding: .14rem .40rem;         /* un poco menos de padding */
+  border-width: 2px;              /* borde más fino en la etiqueta */
+}
+
+/* Bordes de los cuadros un poco más delgados para no “gritar” */
+.ui-annot .hotspot {
+  border-width: 3px;
+}
+
+/* Variante aún más pequeña por slide (opcional)
+   En la slide usa: <div class="ui-annot ui-annot--sm"> … */
+.ui-annot--sm .hotspot::after { 
+  font-size: clamp(0.56rem, 1.1vw, 0.8rem); 
+  padding: .12rem .36rem; 
+}
+.ui-annot--sm .hotspot { border-width: 2.5px; }
+
+/* En móviles/ventanas angostas reducir un poquito más */
+@media (max-width: 840px){
+  .ui-annot .hotspot::after { font-size: clamp(0.58rem, 2.4vw, 0.85rem); }
+  .ui-annot .hotspot { border-width: 2.5px; }
+}
+
+/* Etiqueta a la derecha del cuadro (alineada verticalmente) */
+.hotspot.right-label::after {
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  /* si quieres que parezca “globo”: */
+  border-radius: 999px;
+  padding: .14rem .45rem;
+}
+
+/* etiquetas y bordes discretos para anotaciones */
+.ui-annot .hotspot { border-width: 3px; }
+.ui-annot .hotspot::after { font-size: clamp(0.62rem, 1.3vw, 0.9rem); padding:.14rem .4rem; }
+.hotspot.right-label::after { left: calc(100% + 10px); top: 50%; transform: translateY(-50%); white-space: nowrap; }
+.ui-annot--sm .hotspot { border-width: 2.5px; }
+.ui-annot--sm .hotspot::after { font-size: clamp(0.56rem, 1.1vw, 0.8rem); padding:.12rem .36rem; }
+
+
+/* ---- Rail (barra izquierda) + callouts a la derecha ---- */
+.ui-annot--rail{
+  position: relative; min-height: 72vh;
+  --rail-w: 90px;
+  padding-left: calc(var(--rail-w) + 18px);
+}
+.ui-annot--rail .ui-img.rail{
+  position: absolute; left: 0; top: 0;
+  width: var(--rail-w); max-height: 78vh; height: auto;
+  border-radius: 12px; box-shadow: 0 8px 22px rgba(0,0,0,.18);
+}
+
+/* Estado por defecto: visibles (por si fragments no corren) */
+.ui-annot--rail .callout{
+  position: absolute; left: calc(var(--rail-w) + 18px);
+  width: var(--callout-w, 560px); max-width: min(70vw, 900px);
+  border-radius: 14px; border: 3px solid var(--lisa-red,#D91A2A);
+  background: rgba(217,26,42,.10);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  padding: .2rem 0; overflow: hidden;
+}
+.ui-annot--rail .callout .tag{
+  display:inline-block; font-weight:800;
+  background:#fff; border:2px solid var(--lisa-red,#D91A2A);
+  border-radius:999px; padding:.14rem .45rem; margin:.55rem .6rem .35rem;
+}
+.ui-annot--rail .callout p{ margin:0 .8rem .7rem; font-size:clamp(.78rem,1.1vw,.95rem); color:#111827; }
+.ui-annot--rail .callout::before{
+  content:""; position:absolute; left:-14px; top:50%; transform:translateY(-50%);
+  width:14px; height:2px; background:var(--lisa-red,#D91A2A); box-shadow:0 0 0 4px #fff; border-radius:2px;
+}
+
+/* MODO paso a paso: solo si el contenedor tiene .step-mode */
+.ui-annot--rail.step-mode .fragment .callout{
+  width: 0; opacity: 0; transform: translateX(-10px);
+  transition: width .35s ease, opacity .22s ease, transform .22s ease, padding .2s ease;
+  padding: 0;
+}
+.ui-annot--rail.step-mode .fragment.visible .callout{
+  width: var(--callout-w, 560px); opacity: 1; transform: none; padding: .2rem 0;
+}
+
+/* Variante compacta (opcional) */
+.ui-annot--rail.ui-annot--sm .callout{ border-width: 2.5px; }
+.ui-annot--rail.ui-annot--sm .callout .tag{ padding:.12rem .38rem; font-size:clamp(.68rem,1vw,.84rem); }
+
+/* Texto compacto para slides con mucho contenido */
+.text-compact {
+  font-size: 0.92em;        /* un poquito más pequeño */
+  line-height: 1.28;        /* más ceñido */
+}
+.text-compact p { margin: .25rem 0 .55rem; }
+.text-compact strong { font-weight: 800; }
+
+/* Ajuste de listas (cuando se usen) */
+.text-compact ul li,
+.text-compact ol li { margin: .28rem 0; }
+
+/* Imagen de barra: que no se desborde ni se pegue demasiado */
+.reveal img[alt="Barra de actividad VS Code"] {
+  display:block; margin: .2rem auto 0; max-height: 70vh;
+  border-radius: 12px; box-shadow: 0 8px 22px rgba(0,0,0,.12);
+}
+
+/* ===== Mapa de iconos (columna derecha limpia y compacta) ===== */
+.icon-map {
+  font-size: .94em;              /* texto un poco más pequeño */
+  line-height: 1.28;             /* compacto pero legible */
+}
+.icon-map ul { list-style: none; margin: 0; padding: 0; }
+.icon-map li {
+  padding: .42rem .2rem .55rem;
+  border-top: 1px solid rgba(17,24,39,.10);
+}
+.icon-map li:first-child { border-top: 0; }
+
+/* Resaltar el “título” de cada línea: ① Explorer, ② Search, etc. */
+.icon-map li > strong:first-child {
+  color: var(--lisa-red, #D91A2A);
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+/* Mimos tipográficos para los detalles y atajos */
+.icon-map em { color: #374151; font-weight: 600; font-style: italic; }
+.icon-map code {
+  font-size: .88em;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  padding: .06em .35em;
+  border-radius: 6px;
+}
+
+/* Imagen de la barra: tamaño y sombra sobrios */
+.reveal img[alt="Barra de actividad VS Code"]{
+  display: block;
+  margin: .2rem auto 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.12);
+  max-height: 70vh;   /* evita desbordes en pantallas pequeñas */
+}
+.icon-map { font-size:.94em; line-height:1.28; }
+.icon-map ul { list-style:none; margin:0; padding:0; }
+.icon-map li { padding:.42rem .2rem .55rem; border-top:1px solid rgba(17,24,39,.10); }
+.icon-map li:first-child { border-top:0; }
+.icon-map li > strong:first-child { color:var(--lisa-red,#D91A2A); font-weight:800; letter-spacing:.2px; }
+.reveal img[alt="Barra de actividad VS Code"]{
+  display:block; margin:.2rem auto 0; border-radius:12px;
+  box-shadow:0 8px 22px rgba(0,0,0,.12); max-height:70vh;
+}
+
+/* Escalas para la columna de texto (elige una sola clase) */
+.icon-map.icon-sm{
+  /* intermedio: cómodo a distancia */
+  font-size: clamp(0.82rem, 1.05vw, 0.95rem);
+  line-height: 1.26;
+}
+.icon-map.icon-sm li{
+  padding: .3rem .12rem .38rem;     /* aire moderado */
+}
+
+/* Por si quieres alternar rápido en otras slides: */
+.icon-map.icon-md{                   /* un pelín más grande */
+  font-size: clamp(0.88rem, 1.12vw, 1.02rem);
+  line-height: 1.28;
+}
+.icon-map.icon-lg{                   /* grande (por defecto visual) */
+  font-size: clamp(0.94rem, 1.18vw, 1.08rem);
+  line-height: 1.30;
+}
+
+/* Un poco más pequeño SOLO para el bloque de "Comandos rápidos" */
+.quick-mini { font-size: 0.92em; line-height: 1.26; }
+.quick-mini li { margin: .26rem 0; }
+.quick-mini code { font-size: 0.9em; }
+
+/* Desactivar fragments SOLO en la slide con clase .nofrags */
+.reveal .slides section.nofrags .fragment {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Bloque de "Comandos rápidos": un toque más pequeño y compacto */
+.quick-mini {
+  font-size: 0.74em;        /* ligeramente menor que la izquierda */
+  line-height: 1.26;
+}
+.quick-mini li { margin: .26rem 0; }
+.quick-mini code { font-size: 0.9em; }
+
+/* Ajuste general de listas en la columna izquierda para que no “griten” */
+.reveal .columns > .column:first-child li { margin: .34rem 0; }
+
+/* =========================================================
+   Slide: Mini flujo + Atajos esenciales — tarjetas elegantes
+   ========================================================= */
+
+/* Contenedor de columnas: un pelín más de separación visual */
+.reveal .columns { column-gap: 2.2rem; }
+
+/* --------- Tarjetas base (reutilizable) --------- */
+.card-quick{
+  background: #FAFAFA;
+  border: 1px solid $lisa-border;
+  border-left: 6px solid $lisa-red;
+  border-radius: 16px;
+  padding: .9rem 1rem;
+  box-shadow: 0 10px 22px rgba(17,24,39,.08);
+  transition: box-shadow .18s ease, transform .18s ease, border-color .2s ease;
+}
+.card-quick:hover{
+  box-shadow: 0 12px 28px rgba(17,24,39,.10);
+  transform: translateY(-1px);
+  border-left-color: darken($lisa-red, 6%);
+}
+
+/* Variante compacta (como en tus ejemplos) */
+.card-quick.card-compact{
+  font-size: .94em;       /* ajusta aquí si quieres más/menos compacto */
+  line-height: 1.28;
+}
+
+/* Títulos dentro de la tarjeta */
+.card-quick h2,.card-quick h3,.card-quick h4{
+  margin: 0 0 .55rem;
+  font-weight: 800;
+  line-height: 1.18;
+  color: $lisa-black !important;   /* los títulos de las tarjetas en negro */
+}
+
+/* Separación de listas y párrafos en tarjetas */
+.card-quick p{ margin: .35rem 0 .55rem; }
+.card-quick ul, .card-quick ol{ margin: .2rem 0 .2rem 1.1rem; }
+.card-quick li{ margin: .26rem 0; }
+
+/* --------- Estilo “paso a paso” para el Mini flujo (OL) --------- */
+.card-quick ol{
+  list-style: none; counter-reset: step;
+  margin-left: 0; padding-left: 0;
+}
+.card-quick ol > li{
+  position: relative; padding-left: 2.4rem; margin: .34rem 0 .5rem;
+}
+.card-quick ol > li::before{
+  counter-increment: step; content: counter(step);
+  position: absolute; left: 0; top: .05rem;
+  width: 1.6rem; height: 1.6rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 800; color: #fff; background: $lisa-red;
+  border-radius: 999px; box-shadow: 0 4px 10px rgba(217,26,42,.25);
+}
+
+/* Sub-bullets del Mini flujo: guiones discretos */
+.card-quick ol > li ul{ margin: .28rem 0 .4rem 0; padding-left: 0; }
+.card-quick ol > li ul li{
+  list-style: none; position: relative; padding-left: 1rem; margin: .18rem 0;
+}
+.card-quick ol > li ul li::before{
+  content: "–"; position: absolute; left: 0; color: #6B7280;
+}
+
+/* Tips dentro del Mini flujo (blockquote) */
+.card-quick blockquote{
+  margin: .6rem 0 0; padding: .55rem .7rem;
+  background: #F9FAFB; border-left: 5px solid $lisa-red;
+  border-radius: 10px; color: #1F2937;
+  box-shadow: 0 4px 10px rgba(17,24,39,.05);
+}
+.card-quick blockquote p{ margin: .2rem 0; }
+
+/* --------- Estilo para la tarjeta de Atajos (UL) --------- */
+/* Bullets con “píldora” gris suave y código discreto */
+.card-quick ul{ list-style: none; margin-left: 0; padding-left: 0; }
+.card-quick ul li{
+  position: relative; padding-left: 1.1rem;
+}
+.card-quick ul li::before{
+  content: ""; position: absolute; left: 0; top: .55em;
+  width: .42rem; height: .42rem; border-radius: 999px;
+  background: #E5E7EB; box-shadow: inset 0 0 0 2px #E5E7EB;
+}
+.card-quick code{
+  font-size: .9em; background: #F3F4F6; border: 1px solid $lisa-border;
+  padding: .02em .32em; border-radius: 6px;
+}
+
+/* --------- Afinados responsivos (pantallas chicas o poca altura) --------- */
+@media (max-width: 980px){
+  .card-quick.card-compact{ font-size: .92em; }
+}
+@media (max-height: 760px){
+  .card-quick{ padding: .75rem .9rem; }
+  .card-quick.card-compact{ font-size: .92em; line-height: 1.26; }
+  .card-quick ol > li{ padding-left: 2.2rem; }
+  .card-quick ol > li::before{ width: 1.5rem; height: 1.5rem; }
+}
+
+/* --------- Imagen de la barra (en otras slides) coherente --------- */
+.reveal img[alt="Barra de actividad VS Code"]{
+  display:block; margin:.2rem auto 0; border-radius:12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.12); max-height:70vh;
+}
+
+
+/* Callouts un poco más “tarjeta” */
+.callout { border-radius: 14px; box-shadow: 0 10px 22px rgba(17,24,39,.08); }
+.callout.note  > .callout-header { background: #F3F4F6; }
+.callout.tip   > .callout-header { background: rgba(217,26,42,.10); color: #111; }
+
+
+/* ===== Tarjeta LISA (rojo) — usar junto a .card-quick =====
+   En el .qmd:  ::: {.card-quick .card-compact .lisa}  */
+.card-quick.lisa{
+  background: rgba($lisa-red, .08);                 /* rojo muy suave */
+  border: 1px solid mix($lisa-red, $lisa-border, 40%);
+  border-left: 8px solid $lisa-red;
+  box-shadow: 0 12px 26px rgba($lisa-black, .08);
+}
+.card-quick.lisa:hover{
+  border-left-color: darken($lisa-red, 6%);
+  box-shadow: 0 14px 30px rgba($lisa-black, .10);
+}
+
+.card-quick.lisa h2,
+.card-quick.lisa h3,
+.card-quick.lisa h4{
+  color: $lisa-black !important;
+  margin-bottom: .55rem;
+}
+
+.card-quick.lisa code{
+  background: #fff;
+  border: 1px solid mix($lisa-red, $lisa-border, 35%);
+}
+
+/* Variante un poquito más compacta (opcional) */
+.card-quick.lisa.card-compact{ font-size: .94em; line-height: 1.28; }
+
+/* Caja LISA roja genérica */
+.box-lisa{
+  background: rgba($lisa-red, .08);
+  border: 1px solid mix($lisa-red, $lisa-border, 40%);
+  border-left: 8px solid $lisa-red;
+  border-radius: 16px;
+  padding: .9rem 1rem;
+  box-shadow: 0 10px 22px rgba(17,24,39,.08);
+  font-size: .96em; line-height: 1.28;
+}
+.box-lisa h2, .box-lisa h3, .box-lisa h4{
+  margin: 0 0 .55rem; color: $lisa-black !important; font-weight: 800;
+}
+.box-lisa p{ margin: .32rem 0 .52rem; }
+.box-lisa ul, .box-lisa ol{ margin: .2rem 0 .2rem 1.1rem; }
+.box-lisa li{ margin: .24rem 0; }
+.box-lisa code{
+  background: #fff; border: 1px solid mix($lisa-red, $lisa-border, 35%);
+  padding: .02em .32em; border-radius: 6px; font-size: .9em;
+}
+/* Variante más pequeña para la tarjeta de la derecha */
+.box-lisa.box-small{ font-size: .90em; line-height: 1.24; }
+
+/* Un pelín más de separación entre columnas */
+.reveal .columns{ column-gap: 2.2rem; }
+
+/* ===== Paleta LISA ===== */
+:root{
+  --lisa-red: #D91A2A;
+  --lisa-red-deep:#b51622;
+  --lisa-red-soft:#fff4f5;   /* fondo suave para modo claro */
+  --lisa-red-line:#f4c8cc;   /* borde claro */
+}
+.quarto-dark :root{
+  --lisa-red-soft:#2a0e12;   /* fondo suave en modo oscuro */
+  --lisa-red-line:#7a1e27;   /* borde en oscuro */
+}
+
+/* ===== Card “roja LISA” ===== */
+.card-lisa{
+  border:1px solid var(--lisa-red-line);
+  background:var(--lisa-red-soft);
+  border-radius:.8rem;
+}
+.card-lisa h4, .card-lisa h5, .card-lisa h6{
+  color:var(--lisa-red);
+  margin-top:.5rem;
+}
+.card-lisa .card-body{ padding:1rem 1.1rem; }
+.card-lisa .badge{ background:var(--lisa-red); }
+
+/* ===== Callout “rojo LISA” ===== */
+.callout-lisa{
+  border-left:6px solid var(--lisa-red) !important;
+  background:var(--lisa-red-soft) !important;
+}
+.callout-lisa .callout-title{
+  color:var(--lisa-red) !important;
+  font-weight:700;
+}
+
+/* ===== Botón “rojo LISA” (opcional) ===== */
+.btn-lisa{
+  background:var(--lisa-red);
+  color:#fff !important;
+  border-color:var(--lisa-red);
+}
+.btn-lisa:hover{ background:var(--lisa-red-deep); border-color:var(--lisa-red-deep); }
