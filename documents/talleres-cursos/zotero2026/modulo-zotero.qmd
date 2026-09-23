@@ -6,11 +6,20 @@ format:
     transition-speed: slow
     slide-number: true
     show-slide-number: print
+    scrollable: true
 editor: source  
 ---
-# Módulo 5 - Automatización de referencias con Zotero {background-color="#a81014" .white style="font-size:30px; display:flex; align-items:left; justify-content:center; height:70vh; font-weight:700;"}
+# Automatización de referencias con Zotero {background-color="#a81014" .white style="font-size:30px; display:flex; align-items:left; justify-content:center; height:70vh; font-weight:700;"}
 
 <br>
+<br>
+
+Prof. Juan Carlos Castillo
+
+Departamento de Sociología, Universidad de Chile
+
+<br>
+Presentación para estudiantes ITEP, Septiembre 2026
 <br>
 
 <p align="right">
@@ -22,39 +31,54 @@ editor: source
 
 :::{.incremental style="font-size:55px; font-weight:bold;"}
 
-- 1.- Gestores de referencias
-- 2.- Citas en texto plano
-- 3.- Automatización de referencias bibliográficas
+- 1.- Introducción a Zotero
+- 2.- Funcionamiento
+- 3.- Citación y bilbiografía automatizada
 
 :::
 
-# Gestores de referencias {background-color="#a81014"}
+# Introducción {background-color="#a81014"}
 
-## Referencias: un trabajo de hormiga 
+## Referencias: un trabajo de hormiga
 
+:::{.incremental}
 - Todo trabajo de investigación necesita un apartado de referencias, el cual usualmente es construido a modo manual
 
 - Elaborar las referencias de esta manera puede transformarse en una tarea laboriosa y, a veces, estresante
 
 - Existen herramientas que pueden amenizar en gran medida este proceso
+:::
 
 ## Gestores de referencias
 
+:::{.incremental}
 - Los software especializados en referencias permiten recolectar, organizar y compartir estos elementos
 
 - A día de hoy, existe una gran oferta en cuanto a programas de referencias bibliográficas: Endnote, Mendeley, Refworks, Zotero
 
 - De aquí en adelante trabajaremos con Zotero, software libre y de código abierto
+:::
 
 ## Zotero
 
+:::{.incremental}
 - Para instalar: [https://www.zotero.org](zotero.org)
 
 - Además, se recomienda instalar su extensión de [Google Chrome](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?utm_source=ext_app_menu), la cual permite integrar referencias con 1 solo click
- 
+:::
+
 ## Vista general
 
 ![](images/vista-zotero.png)
+
+# Funcionamiento de Zotero {background-color="#a81014"}
+
+:::{.incremental}
+- Guardar referencias
+- Carpetas y subcarpetas
+- Zotero online
+- Carpetas compartidas
+:::
 
 ## Guardar referencias
 
@@ -94,159 +118,78 @@ Cuando hay una referencia presente en la página, presiona el botón del conecto
 :::
 ::::
 
-# Citas en texto plano {background-color="#a81014"}
+## Carpetas y subcarpetas
 
-## BibTex
+:::{.incremental}
+- Zotero permite organizar las referencias en **colecciones** (carpetas) y **subcolecciones**, tal como en un explorador de archivos
 
-::::{.columns}
-:::{.column width="50%"}
-- formato de almacenamiento de citas en texto plano (no es un programa)
+- Una misma referencia puede agregarse a varias carpetas sin duplicarse: la biblioteca general ("Mi biblioteca") siempre contiene todos los ítems
 
+- Es posible arrastrar y soltar referencias entre carpetas, o usar clic derecho > *Add to Collection*
 
-- Un archivo Bibtex tiene extensión **.bib**, donde deben estar almacenadas todas las referencias citadas en el texto
+- Recomendación: organizar por proyecto, curso o capítulo de tesis, y usar **etiquetas (tags)** como criterio transversal (ej. método, autor, tema)
 :::
 
-:::{.column width="50%"}
-![](images/bibtex.png)
+## Zotero online
+
+:::{.incremental}
+- Al crear una cuenta gratuita en [zotero.org](https://www.zotero.org), la biblioteca local se puede **sincronizar** con la nube
+
+- Ventajas de la sincronización:
+  - Acceso a las referencias desde cualquier computador o dispositivo
+  - Respaldo automático ante pérdida o cambio de equipo
+  - Consulta y edición desde la interfaz web (zotero.org/mylibrary)
+
+- La cuenta gratuita incluye 300 MB de almacenamiento para archivos adjuntos (PDFs); se puede ampliar con planes pagados
+:::
+
+## Carpetas compartidas
+
+:::{.incremental}
+- Zotero permite crear **bibliotecas de grupo (Group Libraries)** para trabajar en equipo
+
+- Tipos de grupo:
+  - *Privado*: solo miembros invitados ven las referencias
+  - *Público*: cualquiera puede ver la biblioteca (con o sin unirse)
+
+- Útil para equipos de investigación, seminarios o coordinación de bibliografía de un curso
+
+- Cada integrante mantiene su biblioteca personal además de acceder a las carpetas compartidas del grupo
+:::
+
+# Automatización de citación y bibliografía {background-color="#a81014"}
+
+## Contenidos de esta sección
+
+:::{.incremental style="font-size:45px;"}
+- Complemento para Word / Google Docs
+- Estilos de citación (CSL)
+:::
+
+## Complemento para Word / Google Docs
+
+::::{.columns}
+:::{.column width="70%"}
+:::{.incremental}
+- Al instalar Zotero se agrega automáticamente un complemento para **Word** (y existe uno para Google Docs)
+- *Add/Edit Citation*: busca al autor, título o año y la cita se inserta con el formato correcto
+- *Add/Edit Bibliography*: genera y actualiza la lista de referencias al final del documento
+- Si se edita, elimina o reordena una Complemencita, la bibliografía se actualiza automáticamente
+:::
+:::
+
+:::{.column width="30%"}
+![](images/word.jpg){width=100%}
 :::
 ::::
 
-## Estructura de referencia en BibTex
-
-![](images/bibtex-ej.png)
-
-## Archivo BibTex (.bib)
+## Estilos de citación (CSL)
 
 :::{.incremental}
-- Un archivo bibtex tiene múltiples referencias una después de la otra, el orden no es relevante.
-
-- Cada referencia posee una serie de campos con información necesaria para poder citar
-
-- Este formato se puede ingresar manualmente, copiar y pegar de otras fuentes, o automatizar desde software de gestión de referencias (detalles más adelante)
+- Zotero incluye miles de estilos de citación mediante **Citation Style Language (CSL)**: APA, Chicago, Vancouver, ASA, entre otros
+- Se agregan más estilos en *Zotero > Preferencias > Cite > Estilos > Obtener estilos adicionales*
+- El estilo elegido se aplica automáticamente a **todas** las citas y a la bibliografía del documento
+- Cambiar de estilo (ej. de APA a Vancouver) actualiza el documento completo con un clic
 :::
 
-## Estilo de citación (.csl)
-
-:::{.incremental}
-- Además de las referencias en .bib, necesitamos poder dar el estilo de formato deseado a citas y bibliografía, mediante archivos  **csl** (Citation Style Language) 
-
-- Estos estilos (en archivos .csl) se pueden bajar desde repositorios. Se recomienda el siguiente: [https://www.zotero.org/styles](https://www.zotero.org/styles)
-:::
-
-## Puntos claves de la citación
-
-La forma de citar es a través de la **citation key** que identifica la referencia, añadiendo un @ como prefijo. Ej:
-
-```
-- Tal como señala [@sabbagh_dimension_2003], los principales resultados ...
-
-```
-
-Al renderizar, esto genera:
-
-- **Tal como señala Sabbagh (2003), los principales resultados ...**
-
-## Maneras de citar
-
-| Se escribe                                         	| Renderiza                     	|
-|----------------------------------------------------	|-------------------------------	|
-| `Como dice @sabbagh_dimension_2003`                	| Como dice Sabbagh (2003)      	|
-| `Sabbagh [-@sabbagh_dimension_2003] dice ... `       	| Sabbagh (2020) dice ...       	|
-| `Sabbagh [-@sabbagh_dimension_2003, pp.35] dice ...` 	| Sabbagh (2020, p.35) dice ... 	|
-
-# Automatización de referencias bibliográficas {background-color="#a81014"}
-
-## Zotero y BibTex
-
-:::{.incremental}
-
-Zotero cuenta con dos utilidades claves, las cuales permiten:
-
-- Automatizar la generación de un archivo .bib a partir de una biblioteca 
-
-- Automatizar la incorporación de referencias bibliográficas a un documento
-
-:::
-
-## Generación de archivo .bib
-
-::::{.columns}
-:::{.column width="50%"}
-- Se pueden utilizar todas las referencias de una biblioteca o seleccionar algunas de ellas
-
-- Carpeta -> boton derecho -> export -> formato Bibtex
-
-- Guardar archivo .bib en carpeta del proyecto
-:::
-
-:::{.column width="50%"}
-![](images/export-bib.png)
-:::
-::::
-
-## BetterBibTex
-
-- Plug-in de Zotero que permite exportación de archivos .bib automática y sincronizada
-
-:::{.incremental}
-- Instalación: 
-
-  - Bajar archivo desde el sitio del desarrollador: [https://retorque.re/zotero-better-bibtex/installation/](https://retorque.re/zotero-better-bibtex/installation/)
-
-  - En Zotero: Tools -> Plugins -> Ruedita dentada -> Install plugin from file
-  
-  - Reiniciar Zotero
-:::
-
-## 
-
-![](images/zotero-plugin.png)
-
-## 
-
-![](images/zotero-set.png)
-
-## Exportando referencias
-
-- Posicionarse sobre carpeta, botón derecho y `Export collection`
-  
-      - Formato: Better BibTex
-      - Keep updated (sincronización automática)
-      - dar ruta hacia carpeta del proyecto
-  
-- Precaución: no carácteres especiales ni espacios en el nombre del archivo .bib
-
-## 
-
-![](images/exportbibtex.gif)
-
-## Citation key
-
-:::{.incremental}
-
-- Existen múltiples formas de organizar las claves BibTex
-
-- Mantener un mismo formato es importante, sobre todo para trabajo colaborativo
-
-- Se generan desde la pestaña Citation Keys de BetterBibTex
-
-- Recomendación: `[auth:lower]_[shorttitle1:lower]_[year]`
-
-:::
-
-## Referencias en documentos Quarto
-
-- Para esto, se añaden algunas especificaciones en el preámbulo del documento (YAML), por ejemplo:
-
-
-```
----
-bibliography: referencias.bib
-csl: apa.csl
----
-
- Y aquí comienza el documento ...
-
-```
-
-## Referencias
+# Más información: [Guía de inicio rápido zotero.org/support/quick_start_guide](https://www.zotero.org/support/quick_start_guide)

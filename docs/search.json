@@ -2116,148 +2116,232 @@
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#contenidos",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#contenidos",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
-    "section": "",
-    "text": "1.- Gestores de referencias\n2.- Citas en texto plano\n3.- Automatización de referencias bibliográficas"
+    "title": "jc-castillo",
+    "section": "Contenidos",
+    "text": "Contenidos\n\n\n1.- Introducción a Zotero\n2.- Funcionamiento\n3.- Citación y bilbiografía automatizada"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias-un-trabajo-de-hormiga",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias-un-trabajo-de-hormiga",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Referencias: un trabajo de hormiga",
     "text": "Referencias: un trabajo de hormiga\n\nTodo trabajo de investigación necesita un apartado de referencias, el cual usualmente es construido a modo manual\nElaborar las referencias de esta manera puede transformarse en una tarea laboriosa y, a veces, estresante\nExisten herramientas que pueden amenizar en gran medida este proceso"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#gestores-de-referencias-1",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#gestores-de-referencias-1",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Gestores de referencias",
     "text": "Gestores de referencias\n\nLos software especializados en referencias permiten recolectar, organizar y compartir estos elementos\nA día de hoy, existe una gran oferta en cuanto a programas de referencias bibliográficas: Endnote, Mendeley, Refworks, Zotero\nDe aquí en adelante trabajaremos con Zotero, software libre y de código abierto"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#zotero",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#zotero",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Zotero",
     "text": "Zotero\n\nPara instalar: https://www.zotero.org\nAdemás, se recomienda instalar su extensión de Google Chrome, la cual permite integrar referencias con 1 solo click"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#vista-general",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#vista-general",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Vista general",
     "text": "Vista general"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#guardar-referencias",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#guardar-referencias",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Guardar referencias",
     "text": "Guardar referencias\n\n\n1) Desde el navegador:\nCuando hay una referencia presente en la página, presiona el botón del conector y la referencia se guardará automáticamente\n(Zotero debe estar abierto)."
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#section",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#section",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "",
     "text": "2): Desde Zotero: vía DOI/ISBN/ISSN"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#section-1",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#section-1",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "",
     "text": "2): Desde Zotero: modo manual"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#bibtex",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#bibtex",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "BibTex",
     "text": "BibTex\n\n\n\nformato de almacenamiento de citas en texto plano (no es un programa)\nUn archivo Bibtex tiene extensión .bib, donde deben estar almacenadas todas las referencias citadas en el texto"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#estructura-de-referencia-en-bibtex",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#estructura-de-referencia-en-bibtex",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Estructura de referencia en BibTex",
     "text": "Estructura de referencia en BibTex"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#archivo-bibtex-.bib",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#archivo-bibtex-.bib",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Archivo BibTex (.bib)",
-    "text": "Archivo BibTex (.bib)\n\n\nUn archivo bibtex tiene múltiples referencias una después de la otra, el orden no es relevante.\nCada referencia posee una serie de campos con información necesaria para poder citar\nEste formato se puede ingresar manualmente, copiar y pegar de otras fuentes, o automatizar desde software de gestión de referencias (detalles más adelante)"
+    "text": "Archivo BibTex (.bib)\n\nUn archivo bibtex tiene múltiples referencias una después de la otra, el orden no es relevante.\nCada referencia posee una serie de campos con información necesaria para poder citar\nEste formato se puede ingresar manualmente, copiar y pegar de otras fuentes, o automatizar desde software de gestión de referencias (detalles más adelante)"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#estilo-de-citación-.csl",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#estilo-de-citación-.csl",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Estilo de citación (.csl)",
-    "text": "Estilo de citación (.csl)\n\n\nAdemás de las referencias en .bib, necesitamos poder dar el estilo de formato deseado a citas y bibliografía, mediante archivos csl (Citation Style Language)\nEstos estilos (en archivos .csl) se pueden bajar desde repositorios. Se recomienda el siguiente: https://www.zotero.org/styles"
+    "text": "Estilo de citación (.csl)\n\nAdemás de las referencias en .bib, necesitamos poder dar el estilo de formato deseado a citas y bibliografía, mediante archivos csl (Citation Style Language)\nEstos estilos (en archivos .csl) se pueden bajar desde repositorios. Se recomienda el siguiente: https://www.zotero.org/styles"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#puntos-claves-de-la-citación",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#puntos-claves-de-la-citación",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Puntos claves de la citación",
     "text": "Puntos claves de la citación\nLa forma de citar es a través de la citation key que identifica la referencia, añadiendo un @ como prefijo. Ej:\n- Tal como señala [@sabbagh_dimension_2003], los principales resultados ...\n\nAl renderizar, esto genera:\n\nTal como señala Sabbagh (2003), los principales resultados …"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#maneras-de-citar",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#maneras-de-citar",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Maneras de citar",
     "text": "Maneras de citar\n\n\n\n\n\n\n\nSe escribe\nRenderiza\n\n\n\n\nComo dice @sabbagh_dimension_2003\nComo dice Sabbagh (2003)\n\n\nSabbagh [-@sabbagh_dimension_2003] dice ...\nSabbagh (2020) dice …\n\n\nSabbagh [-@sabbagh_dimension_2003, pp.35] dice ...\nSabbagh (2020, p.35) dice …"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#zotero-y-bibtex",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#zotero-y-bibtex",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Zotero y BibTex",
-    "text": "Zotero y BibTex\n\nZotero cuenta con dos utilidades claves, las cuales permiten:\n\nAutomatizar la generación de un archivo .bib a partir de una biblioteca\nAutomatizar la incorporación de referencias bibliográficas a un documento"
+    "text": "Zotero y BibTex\nZotero cuenta con dos utilidades claves, las cuales permiten:\n\nAutomatizar la generación de un archivo .bib a partir de una biblioteca\nAutomatizar la incorporación de referencias bibliográficas a un documento"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#generación-de-archivo-.bib",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#generación-de-archivo-.bib",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Generación de archivo .bib",
     "text": "Generación de archivo .bib\n\n\n\nSe pueden utilizar todas las referencias de una biblioteca o seleccionar algunas de ellas\nCarpeta -&gt; boton derecho -&gt; export -&gt; formato Bibtex\nGuardar archivo .bib en carpeta del proyecto"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#betterbibtex",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#betterbibtex",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "BetterBibTex",
-    "text": "BetterBibTex\n\nPlug-in de Zotero que permite exportación de archivos .bib automática y sincronizada\n\n\n\nInstalación:\n\nBajar archivo desde el sitio del desarrollador: https://retorque.re/zotero-better-bibtex/installation/\nEn Zotero: Tools -&gt; Plugins -&gt; Ruedita dentada -&gt; Install plugin from file\nReiniciar Zotero"
+    "text": "BetterBibTex\n\nPlug-in de Zotero que permite exportación de archivos .bib automática y sincronizada\n\n\nInstalación:\n\nBajar archivo desde el sitio del desarrollador: https://retorque.re/zotero-better-bibtex/installation/\nEn Zotero: Tools -&gt; Plugins -&gt; Ruedita dentada -&gt; Install plugin from file\nReiniciar Zotero"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#exportando-referencias",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#exportando-referencias",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Exportando referencias",
     "text": "Exportando referencias\n\nPosicionarse sobre carpeta, botón derecho y Export collection\n- Formato: Better BibTex\n- Keep updated (sincronización automática)\n- dar ruta hacia carpeta del proyecto\nPrecaución: no carácteres especiales ni espacios en el nombre del archivo .bib"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#citation-key",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#citation-key",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Citation key",
-    "text": "Citation key\n\n\nExisten múltiples formas de organizar las claves BibTex\nMantener un mismo formato es importante, sobre todo para trabajo colaborativo\nSe generan desde la pestaña Citation Keys de BetterBibTex\nRecomendación: [auth:lower]_[shorttitle1:lower]_[year]"
+    "text": "Citation key\n\nExisten múltiples formas de organizar las claves BibTex\nMantener un mismo formato es importante, sobre todo para trabajo colaborativo\nSe generan desde la pestaña Citation Keys de BetterBibTex\nRecomendación: [auth:lower]_[shorttitle1:lower]_[year]"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias-en-documentos-quarto",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias-en-documentos-quarto",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Referencias en documentos Quarto",
     "text": "Referencias en documentos Quarto\n\nPara esto, se añaden algunas especificaciones en el preámbulo del documento (YAML), por ejemplo:\n\n---\nbibliography: referencias.bib\ncsl: apa.csl\n---\n\n Y aquí comienza el documento ..."
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias",
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias",
-    "title": "Módulo 5 - Automatización de referencias con Zotero",
+    "title": "jc-castillo",
     "section": "Referencias",
     "text": "Referencias"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#gestores-de-referencias",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#gestores-de-referencias",
+    "title": "jc-castillo",
+    "section": "Gestores de referencias",
+    "text": "Gestores de referencias\n\nLos software especializados en referencias permiten recolectar, organizar y compartir estos elementos\nA día de hoy, existe una gran oferta en cuanto a programas de referencias bibliográficas: Endnote, Mendeley, Refworks, Zotero\nDe aquí en adelante trabajaremos con Zotero, software libre y de código abierto"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#carpetas-y-subcarpetas",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#carpetas-y-subcarpetas",
+    "title": "jc-castillo",
+    "section": "Carpetas y subcarpetas",
+    "text": "Carpetas y subcarpetas\n\nZotero permite organizar las referencias en colecciones (carpetas) y subcolecciones, tal como en un explorador de archivos\nUna misma referencia puede agregarse a varias carpetas sin duplicarse: la biblioteca general (“Mi biblioteca”) siempre contiene todos los ítems\nEs posible arrastrar y soltar referencias entre carpetas, o usar clic derecho &gt; Add to Collection\nRecomendación: organizar por proyecto, curso o capítulo de tesis, y usar etiquetas (tags) como criterio transversal (ej. método, autor, tema)"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#zotero-online",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#zotero-online",
+    "title": "jc-castillo",
+    "section": "Zotero online",
+    "text": "Zotero online\n\nAl crear una cuenta gratuita en zotero.org, la biblioteca local se puede sincronizar con la nube\nVentajas de la sincronización:\n\nAcceso a las referencias desde cualquier computador o dispositivo\nRespaldo automático ante pérdida o cambio de equipo\nConsulta y edición desde la interfaz web (zotero.org/mylibrary)\n\nLa cuenta gratuita incluye 300 MB de almacenamiento para archivos adjuntos (PDFs); se puede ampliar con planes pagados"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#carpetas-compartidas",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#carpetas-compartidas",
+    "title": "jc-castillo",
+    "section": "Carpetas compartidas",
+    "text": "Carpetas compartidas\n\nZotero permite crear bibliotecas de grupo (Group Libraries) para trabajar en equipo\nTipos de grupo:\n\nPrivado: solo miembros invitados ven las referencias\nPúblico: cualquiera puede ver la biblioteca (con o sin unirse)\n\nÚtil para equipos de investigación, seminarios o coordinación de bibliografía de un curso\nCada integrante mantiene su biblioteca personal además de acceder a las carpetas compartidas del grupo"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#contenidos-de-esta-sección",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#contenidos-de-esta-sección",
+    "title": "jc-castillo",
+    "section": "Contenidos de esta sección",
+    "text": "Contenidos de esta sección\n\n\nComplemento para Word / Google Docs\nEstilos de citación (CSL)"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#estilos-de-citación-csl",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#estilos-de-citación-csl",
+    "title": "jc-castillo",
+    "section": "Estilos de citación (CSL)",
+    "text": "Estilos de citación (CSL)\n\nZotero incluye miles de estilos de citación mediante Citation Style Language (CSL): APA, Chicago, Vancouver, ASA, entre otros\nSe agregan más estilos en Zotero &gt; Preferencias &gt; Cite &gt; Estilos &gt; Obtener estilos adicionales\nEl estilo elegido se aplica automáticamente a todas las citas y a la bibliografía del documento\nCambiar de estilo (ej. de APA a Vancouver) actualiza el documento completo con un clic"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#complemento-para-word-google-docs",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#complemento-para-word-google-docs",
+    "title": "jc-castillo",
+    "section": "Complemento para Word / Google Docs",
+    "text": "Complemento para Word / Google Docs\n\n\n\nAl instalar Zotero se agrega automáticamente un complemento para Word (y existe uno para Google Docs)\nAdd/Edit Citation: busca al autor, título o año y la cita se inserta con el formato correcto\nAdd/Edit Bibliography: genera y actualiza la lista de referencias al final del documento\nSi se edita, elimina o reordena una Complemencita, la bibliografía se actualiza automáticamente"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#better-bibtex",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#better-bibtex",
+    "title": "jc-castillo",
+    "section": "Better BibTeX",
+    "text": "Better BibTeX\n\n\n\nPlugin adicional para Zotero orientado a usuarios de LaTeX, Quarto, RMarkdown y Pandoc\nExporta la biblioteca a formato .bib, el estándar para citar en estos entornos\nGenera citekeys automáticos y estables (ej. castillo_actitudes_2018)\nCon la opción Keep updated, el archivo .bib se actualiza solo cada vez que cambia la biblioteca"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#exportar-la-biblioteca-a-bibtex",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#exportar-la-biblioteca-a-bibtex",
+    "title": "jc-castillo",
+    "section": "Exportar la biblioteca a BibTeX",
+    "text": "Exportar la biblioteca a BibTeX\n\n\n\nClic derecho sobre una colección &gt; Export Collection\nFormato: Better BibTeX\nActivar Keep updated para mantener el archivo sincronizado\nGuardar el archivo .bib en la carpeta del proyecto Quarto"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#anatomía-de-una-entrada-bibtex",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#anatomía-de-una-entrada-bibtex",
+    "title": "jc-castillo",
+    "section": "Anatomía de una entrada BibTeX",
+    "text": "Anatomía de una entrada BibTeX"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#citar-en-quarto",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#citar-en-quarto",
+    "title": "jc-castillo",
+    "section": "Citar en Quarto",
+    "text": "Citar en Quarto\n\nEn el YAML del documento se declara la biblioteca:\nbibliography: referencias.bib\nEn el texto, se cita con @citekey (in-text) o [@citekey] (entre paréntesis)\nPandoc/Quarto genera la bibliografía automáticamente al final, en el estilo por defecto (o el indicado con csl:)\nLa extensión de VSCode Citation Picker for Zotero permite buscar y autocompletar citas desde Zotero sin salir del editor"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#flujo-completo",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#flujo-completo",
+    "title": "jc-castillo",
+    "section": "Flujo completo",
+    "text": "Flujo completo\n\n\n\nGuardar y organizar referencias en Zotero\n\n\nExportar la colección con Better BibTeX a referencias.bib\n\n\nDeclarar bibliography: referencias.bib en el YAML de Quarto\n\n\nCitar con @citekey en el texto\n\n\nRenderizar: Quarto genera citas y bibliografía automáticamente"
   }
 ]

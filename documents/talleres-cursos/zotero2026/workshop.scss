@@ -163,6 +163,17 @@ $code-block-border-color: #93a1a1 !default;
 .ui-annot--sm .hotspot { border-width: 2.5px; }
 .ui-annot--sm .hotspot::after { font-size: clamp(0.56rem, 1.1vw, 0.8rem); padding:.12rem .36rem; }
 
+/* ===== Listas incrementales: destacar solo el último ítem mostrado ===== */
+.reveal .slides section .fragment.visible:not(.current-fragment) {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.reveal .slides section .fragment.current-fragment {
+  font-weight: 700;
+  color: #a81014;
+}
+
 /* Forzar número de slide RevealJS */
 .reveal .slide-number,
 .reveal .slide-number-a11y {
