@@ -2118,7 +2118,7 @@
     "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#contenidos",
     "title": "jc-castillo",
     "section": "Contenidos",
-    "text": "Contenidos\n\n\n1.- Introducción a Zotero\n2.- Funcionamiento\n3.- Citación y bilbiografía automatizada"
+    "text": "Contenidos\n\n\n1.- Introducción a Zotero\n2.- Funcionamiento\n3.- Citación y bilbiografía automatizada\n4.- Extras"
   },
   {
     "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#referencias-un-trabajo-de-hormiga",
@@ -2343,5 +2343,33 @@
     "title": "jc-castillo",
     "section": "Flujo completo",
     "text": "Flujo completo\n\n\n\nGuardar y organizar referencias en Zotero\n\n\nExportar la colección con Better BibTeX a referencias.bib\n\n\nDeclarar bibliography: referencias.bib en el YAML de Quarto\n\n\nCitar con @citekey en el texto\n\n\nRenderizar: Quarto genera citas y bibliografía automáticamente"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#importar-colecciones-desde-otros-gestores",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#importar-colecciones-desde-otros-gestores",
+    "title": "jc-castillo",
+    "section": "Importar colecciones desde otros gestores",
+    "text": "Importar colecciones desde otros gestores\n\nZotero permite migrar bibliotecas existentes desde Archivo &gt; Importar…\nDesde Mendeley: Zotero 7 puede importar directamente la base de datos local de Mendeley Desktop; alternativamente, exportar desde Mendeley en formato .ris o .bib\nDesde EndNote, Refworks u otros: exportar la biblioteca en formato estándar (RIS, BibTeX o EndNote XML) e importar el archivo en Zotero\nAl importar, se puede crear una colección nueva con los ítems importados, lo que facilita revisar duplicados\nLos duplicados se pueden fusionar desde Duplicate Items en el panel izquierdo"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#conexión-con-research-rabbit",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#conexión-con-research-rabbit",
+    "title": "jc-castillo",
+    "section": "Conexión con Research Rabbit",
+    "text": "Conexión con Research Rabbit\n\nResearch Rabbit es una herramienta gratuita de descubrimiento de literatura: a partir de un conjunto de artículos, sugiere trabajos similares, citados y citantes, y muestra redes de autores\nSe puede sincronizar con Zotero: importar colecciones de Zotero como punto de partida y, a la inversa, enviar de vuelta a Zotero los artículos encontrados\nPasos básicos:\n\nCrear una cuenta en Research Rabbit\nEn Settings / Integrations, conectar la cuenta de Zotero (autorización vía zotero.org)\nImportar una colección de Zotero, explorar recomendaciones y agregar los artículos de interés a la colección sincronizada\n\nFlujo recomendado: Zotero (organizar) → Research Rabbit (descubrir) → Zotero (guardar y citar)"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#importar",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#importar",
+    "title": "jc-castillo",
+    "section": "Importar",
+    "text": "Importar\n\nZotero permite migrar bibliotecas existentes desde Archivo &gt; Importar…\nDesde Mendeley: Zotero 7 puede importar directamente la base de datos local de Mendeley Desktop; alternativamente, exportar desde Mendeley en formato .ris o .bib\nDesde EndNote, Refworks u otros: exportar la biblioteca en formato estándar (RIS, BibTeX o EndNote XML) e importar el archivo en Zotero\nAl importar, se puede crear una colección nueva con los ítems importados, lo que facilita revisar duplicados\nLos duplicados se pueden fusionar desde Duplicate Items en el panel izquierdo"
+  },
+  {
+    "objectID": "documents/talleres-cursos/zotero2026/modulo-zotero.html#research-rabbit",
+    "href": "documents/talleres-cursos/zotero2026/modulo-zotero.html#research-rabbit",
+    "title": "jc-castillo",
+    "section": "Research Rabbit",
+    "text": "Research Rabbit\n\nResearch Rabbit es una herramienta gratuita de descubrimiento de literatura: a partir de un conjunto de artículos, sugiere trabajos similares, citados y citantes, y muestra redes de autores\nSe puede sincronizar con Zotero: importar colecciones de Zotero como punto de partida y, a la inversa, enviar de vuelta a Zotero los artículos encontrados\nPasos básicos:\n\nCrear una cuenta en Research Rabbit\nEn Settings / Integrations, conectar la cuenta de Zotero (autorización vía zotero.org)\nImportar una colección de Zotero, explorar recomendaciones y agregar los artículos de interés a la colección sincronizada\n\nFlujo recomendado: Zotero (organizar) → Research Rabbit (descubrir) → Zotero (guardar y citar)"
   }
 ]

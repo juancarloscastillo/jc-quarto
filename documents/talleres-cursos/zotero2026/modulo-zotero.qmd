@@ -34,6 +34,7 @@ Presentación para estudiantes ITEP, Septiembre 2026
 - 1.- Introducción a Zotero
 - 2.- Funcionamiento
 - 3.- Citación y bilbiografía automatizada
+- 4.- Extras
 
 :::
 
@@ -190,6 +191,42 @@ Cuando hay una referencia presente en la página, presiona el botón del conecto
 - Se agregan más estilos en *Zotero > Preferencias > Cite > Estilos > Obtener estilos adicionales*
 - El estilo elegido se aplica automáticamente a **todas** las citas y a la bibliografía del documento
 - Cambiar de estilo (ej. de APA a Vancouver) actualiza el documento completo con un clic
+:::
+
+# Extras {background-color="#a81014"}
+
+:::{.incremental style="font-size:45px;"}
+- Importar colecciones desde otros gestores
+- Conexión con Research Rabbit
+:::
+
+## Importar 
+
+:::{.incremental}
+- Zotero permite migrar bibliotecas existentes desde *Archivo > Importar...*
+
+- Desde **Mendeley**: Zotero 7 puede importar directamente la base de datos local de Mendeley Desktop; alternativamente, exportar desde Mendeley en formato `.ris` o `.bib`
+
+- Desde **EndNote, Refworks** u otros: exportar la biblioteca en formato estándar (RIS, BibTeX o EndNote XML) e importar el archivo en Zotero
+
+- Al importar, se puede crear una **colección nueva** con los ítems importados, lo que facilita revisar duplicados
+
+- Los duplicados se pueden fusionar desde *Duplicate Items* en el panel izquierdo
+:::
+
+## Research Rabbit
+
+:::{.incremental}
+- [Research Rabbit](https://www.researchrabbit.ai) es una herramienta gratuita de descubrimiento de literatura: a partir de un conjunto de artículos, sugiere trabajos similares, citados y citantes, y muestra redes de autores
+
+- Se puede **sincronizar con Zotero**: importar colecciones de Zotero como punto de partida y, a la inversa, enviar de vuelta a Zotero los artículos encontrados
+
+- Pasos básicos:
+  - Crear una cuenta en Research Rabbit
+  - En *Settings / Integrations*, conectar la cuenta de Zotero (autorización vía zotero.org)
+  - Importar una colección de Zotero, explorar recomendaciones y agregar los artículos de interés a la colección sincronizada
+
+- Flujo recomendado: **Zotero** (organizar) → **Research Rabbit** (descubrir) → **Zotero** (guardar y citar)
 :::
 
 # Más información: [Guía de inicio rápido zotero.org/support/quick_start_guide](https://www.zotero.org/support/quick_start_guide)
