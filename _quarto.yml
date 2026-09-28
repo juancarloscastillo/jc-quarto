@@ -1,5 +1,5 @@
 project:
-  type: website 
+  type: website
   resources:
     - filter.js
     - documents/*/*

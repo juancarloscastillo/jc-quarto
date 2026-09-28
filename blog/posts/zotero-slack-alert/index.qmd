@@ -1,0 +1,18 @@
+---
+title: "Zotero-Slack Alert"
+categories: []
+date: "2026-09-28" 
+draft: false
+toc: true
+format:
+  html:
+    css: styles-team.css
+about:
+  template: marquee
+  image: "featured.png"
+bibliography: "jusmer.bib"
+csl: "apa6.csl"
+---
+
+{{< include _readme-upstream.md >}}
+
