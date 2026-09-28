@@ -509,16 +509,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <tbody>
 <tr class="odd">
 <td><code>SLACK_WEBHOOK</code></td>
-<td>Go to <a href="https://datasoc-workspace.slack.com/marketplace/A0F7XDUAZ-incoming-webhooks">Slack Incoming Webhooks</a>.</td>
+<td>Go to <a href="https://datasoc-workspace.slack.com/marketplace/A0F7XDUAZ-incoming-webhooks">Slack Incoming Webhooks</a>.<br>1. Select the workspace in the up-right corner<br>2. Click “Add to Slack”<br>3. Choose the channel</td>
+</tr>
+<tr class="even">
+<td><code>ZOTERO_API_KEY</code></td>
+<td>Create an API key in <a href="https://www.zotero.org/settings/security#applications">Zotero account settings (API Keys)</a> with permissions for the target group/library. IMPORTANT: enable <em>Read access to groups</em> and <em>Read access to items</em>. Copy and save the generated key.</td>
+</tr>
+<tr class="odd">
+<td><code>GROUP_ID</code></td>
+<td>Go to your Zotero web library and copy the <strong>number</strong> in the URL after <code>groups</code>, for example <code>https://www.zotero.org/groups/&lt;group_id_number&gt;/...</code></td>
+</tr>
+<tr class="even">
+<td><code>COLLECTION_KEY</code> (optional)</td>
+<td>In Zotero, open the folder/collection you want to monitor and copy the code that appears after <code>collections</code> in the URL. Example: in <code>.../collections/25QRNU6T/collection</code>, the key is <code>25QRNU6T</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>INCLUDE_SUBCOLLECTIONS</code> (optional)</td>
+<td>Set <code>true</code> to include items from nested subcollections, or set <code>false</code> (or leave unset) to monitor only the selected collection.</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Select the workspace in the up-right corner</li>
-<li>Click “Add to Slack”</li>
-<li>Choose the channel | | <code>ZOTERO_API_KEY</code> | Create an API key in <a href="https://www.zotero.org/settings/security#applications">Zotero account settings (API Keys)</a> with permissions for the target group/library. IMPORTANT: enable <em>Read access to groups</em> and <em>Read access to items</em>. Copy and save the generated key. | | <code>GROUP_ID</code> |</li>
-<li>Go to your Zotero web library and copy the <strong>number</strong> in the URL after <code>groups</code>, for example <code>https://www.zotero.org/groups/&lt;group_id_number&gt;/...</code> | <code>COLLECTION_KEY</code> (optional) | In Zotero, open the folder/collection you want to monitor and copy the code that appears after <code>collections</code> in the URL. Example: in <code>.../collections/25QRNU6T/collection</code>, the key is <code>25QRNU6T</code>. | | <code>INCLUDE_SUBCOLLECTIONS</code> (optional) | Set <code>true</code> to include items from nested subcollections, or set <code>false</code> (or leave unset) to monitor only the selected collection. |</li>
-</ul>
 <p>Optional features are described at the end of this README.</p>
 </section>
 <section id="now-settings-the-secrets-in-github" class="level2">

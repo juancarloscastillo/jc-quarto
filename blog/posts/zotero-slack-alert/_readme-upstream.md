@@ -16,13 +16,9 @@ It assumes that you have:
 
 | Secret name | How to get it |
 | --- | --- |
-| `SLACK_WEBHOOK` | Go to [Slack Incoming Webhooks](https://datasoc-workspace.slack.com/marketplace/A0F7XDUAZ-incoming-webhooks). 
-- Select the workspace in the up-right corner
-- Click "Add to Slack"
-- Choose the channel |
+| `SLACK_WEBHOOK` | Go to [Slack Incoming Webhooks](https://datasoc-workspace.slack.com/marketplace/A0F7XDUAZ-incoming-webhooks).<br>1. Select the workspace in the up-right corner<br>2. Click "Add to Slack"<br>3. Choose the channel |
 | `ZOTERO_API_KEY` | Create an API key in [Zotero account settings (API Keys)](https://www.zotero.org/settings/security#applications) with permissions for the target group/library. IMPORTANT: enable _Read access to groups_ and _Read access to items_. Copy and save the generated key.  |
-| `GROUP_ID` | 
-- Go to your Zotero web library and copy the **number** in the URL after `groups`, for example `https://www.zotero.org/groups/<group_id_number>/...`
+| `GROUP_ID` | Go to your Zotero web library and copy the **number** in the URL after `groups`, for example `https://www.zotero.org/groups/<group_id_number>/...` |
 | `COLLECTION_KEY` (optional) | In Zotero, open the folder/collection you want to monitor and copy the code that appears after `collections` in the URL. Example: in `.../collections/25QRNU6T/collection`, the key is `25QRNU6T`. |
 | `INCLUDE_SUBCOLLECTIONS` (optional) | Set `true` to include items from nested subcollections, or set `false` (or leave unset) to monitor only the selected collection. |
 
