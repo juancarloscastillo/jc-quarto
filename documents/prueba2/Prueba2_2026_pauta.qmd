@@ -1,0 +1,330 @@
+---
+title: "Prueba 2: Correlación y Chi² - Pauta"
+lang: es
+execute:
+  warning: false
+  message: false
+---
+
+```{=html}
+<style>
+/* Bloques de pauta: se eliminan al generar la versión de la prueba sin respuestas */
+.pauta { border-left: 4px solid #2c7fb8; background: #f3f7fb; padding: .6rem 1rem; margin: .5rem 0 1.5rem; border-radius: 0 6px 6px 0; }
+.pauta::before { content: "Pauta"; display: block; font-weight: 700; color: #2c7fb8; margin-bottom: .4rem; }
+</style>
+```
+
+Pauta de corrección. Bases: `base_A.csv` (RUT par) y `base_B.csv` (RUT impar), generadas con `simular_datos.R`. Los resultados de cada versión se calculan a partir de las bases y se muestran lado a lado.
+
+```{r}
+#| label: calculos-pauta
+#| echo: false
+#| warning: false
+# Las bases se leen del sitio del curso
+url_bases <- "https://correlacional.metodos-facso.org/files/data/prueba2/"
+bases <- list(
+  A = read.csv(paste0(url_bases, "base_A.csv")),
+  B = read.csv(paste0(url_bases, "base_B.csv"))
+)
+
+fmt <- function(x, d = 2) format(round(x, d), nsmall = d, decimal.mark = ",", trim = TRUE)
+fmt_p <- function(p) if (p < .001) "< 0,001" else fmt(p, 3)
+magnitud <- function(r) {
+  a <- abs(r)
+  if (a < .10) "nula" else if (a < .30) "pequeña" else if (a < .50) "moderada" else "grande"
+}
+confianza <- function(p) {
+  if (p < .001) "sig. al 99,9%" else if (p < .01) "sig. al 99%" else if (p < .05) "sig. al 95%" else "no sig."
+}
+pares <- list(c("edad", "izq_der"), c("sexo", "izq_der"), c("sexo", "edad"))
+nombre_par <- function(par) paste(par, collapse = " – ")
+
+resultados <- lapply(bases, function(d) {
+  d3 <- d[, c("izq_der", "edad", "sexo")]
+  lw <- d3[complete.cases(d3), ]
+  cor_par <- function(datos, par) {
+    ct <- cor.test(datos[[par[1]]], datos[[par[2]]])
+    list(r = unname(ct$estimate), p = ct$p.value,
+         n = sum(complete.cases(datos[, par])))
+  }
+  tabla <- table(factor(d$sexo, 0:1, c("Hombre", "Mujer")),
+                 factor(d$clase, 1:3, c("Baja", "Media", "Alta")))
+  chi <- chisq.test(tabla)
+  list(
+    na = colSums(is.na(d3)),
+    n_lw = nrow(lw),
+    pw = lapply(pares, cor_par, datos = d3),
+    lw = lapply(pares, cor_par, datos = lw),
+    tabla = tabla,
+    chi = chi,
+    # polychoric imprime un aviso con print() al recibir una tabla; se descarta esa salida
+    polic = { capture.output(rho <- psych::polychoric(tabla)$rho); rho }
+  )
+})
+A <- resultados$A
+B <- resultados$B
+```
+
+## Instrucciones generales
+
+- Esta prueba se contesta en este formulario de manera individual y presencial en la sala, ya sea con su computador personal o alguno de la sala de computación.
+- Tiene dos partes: una relacionada con correlaciones y otra con Chi².
+- Las preguntas se responden en este formulario, donde también se debe pegar el código correspondiente a cada pregunta. 
+- A modo de respaldo (por posibles fallas de UCursos), se sugiere responder las preguntas en un documento aparte (ej, en un word local), y luego cortar y pegar las respuestas en este mismo formulario. Guardar el documento como respaldo personal.
+- Se estima que cada pregunta no debería tomar más de 30 minutos, por lo que la prueba está pensada para poder ser contestada en alrededor de una hora. De todas maneras, se dispondrá de 90 minutos máximo para responder.
+- En caso de preguntas, se levanta la mano y alguien del equipo docente se acercará.
+- No se permite salir de la sala; en caso excepcional o emergencia se autorizará la salida en compañía de un/a ayudante.
+- Se permite usar recursos web, no plataformas de comunicación ni inteligencia artificial.
+
+## Enunciado
+
+Un centro de estudios aplicó una encuesta a 500 personas para analizar la relación entre orientación política (izquierda-derecha) y características sociodemográficas. La base contiene las siguientes variables:
+
+- `id`: identificador único de la encuesta.
+- `izq_der`: autoubicación en la escala izquierda-derecha, de 1 (izquierda) a 10 (derecha).
+- `edad`: edad en años.
+- `sexo`: sexo de la persona (0 = Hombre, 1 = Mujer).
+- `clase`: clase social subjetiva (1 = Baja, 2 = Media, 3 = Alta).
+
+La base de datos se encuentra disponible en el link escrito en la pizarra (existen dos bases, A y B: RUT terminado en número par responde con la base A y RUT impar con la base B).
+
+### Pregunta 1: ¿Cómo se relacionan la orientación política, la edad y el sexo?
+
+::: {.pauta}
+```{r}
+#| eval: false
+pacman::p_load(dplyr, sjPlot, psych, ggplot2)
+
+datos <- read.csv("https://correlacional.metodos-facso.org/files/data/prueba2/base_A.csv")   # o base_B.csv
+datos_cor <- datos |> select(izq_der, edad, sexo)
+```
+:::
+
+**1.1** Calcule el número de casos perdidos por pares de variables. En base a ello, decida si utilizará eliminación por lista (*listwise*) o por pares (*pairwise*) para estimar la matriz de correlaciones, y justifique su decisión. **(1 pt)**
+
+::: {.pauta}
+```{r}
+#| eval: false
+colSums(is.na(datos_cor))       # perdidos por variable
+sum(complete.cases(datos_cor))  # N con listwise
+psych::pairwiseCount(datos_cor) # N por par con pairwise
+```
+
+```{r}
+#| echo: false
+fila_na <- function(v) c(A$na[[v]], B$na[[v]])
+tab_na <- rbind(
+  "Perdidos en izq_der" = fila_na("izq_der"),
+  "Perdidos en edad" = fila_na("edad"),
+  "Perdidos en sexo" = fila_na("sexo"),
+  "N listwise" = c(A$n_lw, B$n_lw),
+  setNames(lapply(seq_along(pares), function(i) c(A$pw[[i]]$n, B$pw[[i]]$n)),
+           paste("N pairwise", sapply(pares, nombre_par))) |> do.call(what = rbind)
+)
+knitr::kable(tab_na, col.names = c("Base A", "Base B"))
+```
+
+- En la base A los perdidos se concentran en `izq_der`; en la base B, en `edad`. En ambas, *listwise* pierde bastantes más casos que *pairwise* en los pares que no incluyen la variable con más perdidos.
+- Ambas decisiones son válidas si se justifican:
+  - *Pairwise*: aprovecha más información por coeficiente.
+  - *Listwise*: todos los coeficientes se calculan sobre los mismos casos, lo que los hace comparables entre sí.
+- Puntaje completo requiere reportar los perdidos **y** justificar la decisión aludiendo a la pérdida de casos o a la comparabilidad.
+:::
+
+**1.2** Genere un gráfico de dispersión (nube de puntos) entre `edad` y `izq_der`, y comente la relación observada. **(1 pt)**
+
+::: {.pauta}
+```{r}
+#| eval: false
+ggplot(datos_cor, aes(x = edad, y = izq_der)) +
+  geom_jitter(width = 0.3, height = 0.3, alpha = 0.4) +
+  geom_smooth(method = "lm")
+```
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+#| fig-width: 5
+#| fig-height: 4
+for (v in names(bases)) {
+  print(
+    ggplot2::ggplot(bases[[v]], ggplot2::aes(x = edad, y = izq_der)) +
+      ggplot2::geom_jitter(width = 0.3, height = 0.3, alpha = 0.4, na.rm = TRUE) +
+      ggplot2::geom_smooth(method = "lm", formula = y ~ x, na.rm = TRUE) +
+      ggplot2::labs(title = paste("Base", v)) +
+      ggplot2::theme_minimal()
+  )
+}
+```
+
+| | Base A | Base B |
+|---|---|---|
+| Comentario esperado | Tendencia positiva clara (a mayor edad, más a la derecha), con dispersión; coherente con una asociación `r magnitud(A$pw[[1]]$r)` | Tendencia positiva leve, con mucha dispersión; coherente con una asociación `r magnitud(B$pw[[1]]$r)` |
+
+- Gráfico (0,5 pt) y comentario (0,5 pt). Como `izq_der` tiene solo 10 valores, los puntos se ordenan en franjas horizontales; aceptar si se menciona.
+:::
+
+**1.3** Calcule y reporte la matriz de correlaciones entre `izq_der`, `edad` y `sexo`.  **(2 pt)**
+
+::: {.pauta}
+```{r}
+#| eval: false
+sjPlot::tab_corr(datos_cor,
+                 na.deletion = "pairwise",  # o "listwise"
+                 triangle = "lower")
+# alternativa
+psych::corr.test(datos_cor, use = "pairwise")
+```
+
+```{r}
+#| echo: false
+celda <- function(x) sprintf("%s (p %s)", fmt(x$r), fmt_p(x$p))
+tab_cor <- data.frame(
+  Par = sapply(pares, nombre_par),
+  `A pairwise` = sapply(A$pw, celda),
+  `A listwise` = sapply(A$lw, celda),
+  `B pairwise` = sapply(B$pw, celda),
+  `B listwise` = sapply(B$lw, celda),
+  check.names = FALSE
+)
+knitr::kable(tab_cor)
+```
+:::
+
+**1.4** Interprete cada uno de los coeficientes de la matriz considerando: a) el tipo de correlación estimada, b) la significación estadística y c) la magnitud del efecto. **(3 pts)**
+
+::: {.pauta}
+```{r}
+#| echo: false
+interp <- function(x) sprintf("%s, %s, %s", ifelse(x$r > 0, "positiva", "negativa"), magnitud(x$r), confianza(x$p))
+tab_int <- data.frame(
+  Par = sapply(pares, nombre_par),
+  Tipo = c("Pearson", "Punto biserial", "Punto biserial"),
+  `Base A (pairwise)` = sapply(A$pw, interp),
+  `Base A (listwise)` = sapply(A$lw, interp),
+  `Base B (pairwise)` = sapply(B$pw, interp),
+  `Base B (listwise)` = sapply(B$lw, interp),
+  check.names = FALSE
+)
+knitr::kable(tab_int)
+```
+
+Interpretación sustantiva esperada:
+
+| Par | Base A | Base B |
+|---|---|---|
+| edad – izq_der | A mayor edad, mayor ubicación hacia la derecha (asociación moderada). | A mayor edad, levemente más a la derecha (asociación pequeña). |
+| sexo – izq_der | **Depende del tratamiento de perdidos.** *Pairwise*: significativa al 95%; las mujeres (1) se ubican levemente más a la izquierda. *Listwise*: no significativa; no se puede afirmar que hombres y mujeres difieran en orientación política. | No hay evidencia de diferencias en orientación política entre hombres y mujeres. |
+| sexo – edad | No hay evidencia de diferencias de edad entre hombres y mujeres. | **Depende del tratamiento de perdidos.** *Pairwise*: significativa al 95%; las mujeres tienden a tener levemente más edad que los hombres. *Listwise*: no significativa; no se puede afirmar que difieran en edad. |
+
+- a) tipo (1 pt): Pearson para edad–izq_der; punto biserial para los pares con sexo. Aceptar mención de que `izq_der` es ordinal de 10 puntos y que se trata como continua (o que Spearman sería una alternativa).
+- b) significación (1 pt): valor p o nivel de confianza para cada par, incluyendo la decisión de no rechazar H0 en los pares no significativos.
+- c) magnitud (1 pt): criterios de Cohen (0,1 pequeña, 0,3 moderada, 0,5 grande).
+- Corregir según el tratamiento de perdidos que eligió cada estudiante en 1.1: en cada base hay un par cuya significación cambia (A: sexo–izq_der; B: sexo–edad). Ambas conclusiones son correctas si son coherentes con la decisión tomada. Valorar si el estudiante advierte que el resultado está en el límite (p cercano a 0,05).
+:::
+
+**Bonus** Reporte e interprete la varianza compartida entre edad y orientación política. **(0,5 pts)**
+
+::: {.pauta}
+| | Base A | Base B |
+|---|---|---|
+| r² edad – izq_der | `r fmt(A$pw[[1]]$r)`² = `r fmt(A$pw[[1]]$r^2, 3)` (`r fmt(100 * A$pw[[1]]$r^2, 1)`%) | `r fmt(B$pw[[1]]$r)`² = `r fmt(B$pw[[1]]$r^2, 3)` (`r fmt(100 * B$pw[[1]]$r^2, 1)`%) |
+
+La edad y la orientación política comparten ese porcentaje de su varianza; el resto de la variación en `izq_der` se relaciona con otros factores.
+:::
+
+### Pregunta 2: ¿Se asocia el sexo con la clase social?
+
+**2.1** Genere la tabla de contingencia entre `sexo` y `clase`, incluyendo porcentajes por fila (base A) o por columna (base B). **(1 pt)**
+
+::: {.pauta}
+```{r}
+#| eval: false
+sjPlot::sjt.xtab(var.row = datos$sexo, var.col = datos$clase,
+                 show.summary = F, emph.total = T)
+# Base A: % por fila (show.row.prc = TRUE); Base B: % por columna (show.col.prc = TRUE)
+
+# alternativa
+tabla <- table(datos$sexo, datos$clase)
+addmargins(tabla)
+round(prop.table(tabla, margin = 1) * 100, 1)  # Base A: % por fila (clase dentro de cada sexo)
+round(prop.table(tabla, margin = 2) * 100, 1)  # Base B: % por columna (sexo dentro de cada clase)
+```
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+con_total <- function(t) { m <- addmargins(t); dimnames(m) <- lapply(dimnames(m), sub, pattern = "^Sum$", replacement = "Total"); m }
+knitr::kable(con_total(A$tabla), caption = paste0("Base A (N = ", sum(A$tabla), ")"))
+knitr::kable(con_total(B$tabla), caption = paste0("Base B (N = ", sum(B$tabla), ")"))
+```
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+pct <- function(x, margen) round(100 * prop.table(x$tabla, margin = margen), 1)
+knitr::kable(pct(A, 1), caption = "Base A: % por fila (clase dentro de cada sexo)", format.args = list(decimal.mark = ","))
+knitr::kable(pct(B, 2), caption = "Base B: % por columna (sexo dentro de cada clase)", format.args = list(decimal.mark = ","))
+```
+:::
+
+**2.2** Calcule y reporte la frecuencia esperada de la celda mujer / clase baja. Muestre cómo la obtuvo (procedimiento de cálculo para llegar al resultado). **(1 pt)**
+
+::: {.pauta}
+$$E = \frac{\text{total fila} \times \text{total columna}}{N}$$
+
+```{r}
+#| eval: false
+chisq.test(tabla)$expected
+```
+
+```{r}
+#| echo: false
+esperada <- function(x) {
+  fila <- sum(x$tabla["Mujer", ]); col <- sum(x$tabla[, "Baja"]); n <- sum(x$tabla)
+  sprintf("%d × %d / %d = **%s** (observado: %d)", fila, col, n,
+          fmt(fila * col / n), x$tabla["Mujer", "Baja"])
+}
+knitr::kable(data.frame(`Base A` = esperada(A), `Base B` = esperada(B), check.names = FALSE))
+```
+
+Puntaje completo requiere el valor y el procedimiento. Aceptar como plus que se compare con la frecuencia observada.
+:::
+
+**2.3** Reporte e interprete el Chi² en términos de inferencia estadística y sustantivo considerando el contexto del problema. Justifique los grados de libertad utilizados **(3 pts)**
+
+::: {.pauta}
+```{r}
+#| eval: false
+chisq.test(tabla)
+```
+
+```{r}
+#| echo: false
+fila_chi <- function(x) c(fmt(unname(x$chi$statistic)), unname(x$chi$parameter), fmt_p(x$chi$p.value),
+                          if (x$chi$p.value < .05) "Se rechaza H0" else "No se rechaza H0")
+tab_chi <- rbind(fila_chi(A), fila_chi(B))
+dimnames(tab_chi) <- list(NULL, c("χ²", "gl", "p", "Decisión (α = 0,05)"))
+knitr::kable(t(tab_chi), col.names = c("Base A", "Base B"))
+```
+
+| | Base A | Base B |
+|---|---|---|
+| Inferencia | Se rechaza H0 de independencia: existe asociación estadísticamente significativa entre sexo y clase social en la población. | No se rechaza H0: no hay evidencia suficiente para afirmar que sexo y clase social estén asociados en la población. |
+| Interpretación sustantiva | Con % por fila: el `r fmt(pct(A, 1)["Mujer", "Baja"], 1)`% de las mujeres se ubica en clase baja, frente al `r fmt(pct(A, 1)["Hombre", "Baja"], 1)`% de los hombres; en clase alta, `r fmt(pct(A, 1)["Mujer", "Alta"], 1)`% de las mujeres frente a `r fmt(pct(A, 1)["Hombre", "Alta"], 1)`% de los hombres. Las mujeres se ubican más en clase baja y menos en clase alta. | Con % por columna: las mujeres son entre el `r fmt(min(pct(B, 2)["Mujer", ]), 1)`% y el `r fmt(max(pct(B, 2)["Mujer", ]), 1)`% de cada clase, es decir, la composición por sexo es similar en las tres clases; las diferencias son compatibles con el azar. |
+
+- Reporte (1 pt): χ², gl y valor p, justificando los grados de libertad: gl = (filas − 1) × (columnas − 1) = (2 − 1) × (3 − 1) = 2.
+- Inferencia (1 pt): decisión respecto de H0 con su nivel de confianza.
+- Interpretación sustantiva (1 pt): referida al contexto (sexo y clase social subjetiva), apoyada en los porcentajes que corresponden a su base (por fila en A, por columna en B) y sin atribuir causalidad.
+- En tablas mayores a 2x2 `chisq.test` no aplica corrección de Yates, por lo que el resultado coincide con el cálculo manual.
+:::
+
+**Bonus** ¿Qué coeficiente de correlación se podría aplicar en este caso y por qué? **(0,5 pts)**
+
+::: {.pauta}
+Correlación **policórica** (`psych::polychoric(tabla)`), porque `clase` es una variable ordinal categórica y `sexo` es dicotómica; ninguna es continua, así que no corresponde Pearson ni punto biserial. Aceptar también Spearman/Kendall si se justifica por el carácter ordinal de `clase`. Tetracórica no corresponde porque `clase` tiene tres categorías.
+
+| | Base A | Base B |
+|---|---|---|
+| ρ policórica | `r fmt(A$polic)` | `r fmt(B$polic)` |
+:::
