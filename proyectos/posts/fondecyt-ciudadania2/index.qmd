@@ -1,4 +1,5 @@
 ---
+order: 10
 title: "Formación Ciudadana II: Socialización política y educación para la ciudadanía - El rol de la familia y de la escuela. "
 subtitle: FONDECYT Regular (2018-2021) - Investigador Principal Cristián Cox
 summary: "Este proyecto es una segunda parte del Fondecyt de Formación Ciudadana (I), también junto a Cristián Cox (Investigador Principal) y Daniel Miranda, y se suma Camila Jara. Se desarrollauna Encuesta Panel de Formación Ciudadana (PACES), con cuestionarios a una muestra representativa de padres, docentes y estudiantes de enseñanza media"

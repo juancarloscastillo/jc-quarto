@@ -138,6 +138,20 @@ window.googleTranslateElementInit = googleTranslateElementInit;
 
 // Primer pintado de navbar (por si el callback tarda)
 document.addEventListener('DOMContentLoaded', () => {
+  // El nombre del sitio no se traduce (Google lo convertía en "jc-castle")
+  document.querySelectorAll('.navbar-title').forEach((el) => {
+    el.classList.add('notranslate');
+    el.setAttribute('translate', 'no');
+  });
+  // Google también traduce el título de la pestaña, donde notranslate no aplica
+  const titulo = document.querySelector('title');
+  if (titulo) {
+    new MutationObserver(() => {
+      if (/jc-castle/i.test(document.title)) {
+        document.title = document.title.replace(/jc-castle/i, 'jc-castillo');
+      }
+    }).observe(titulo, { childList: true, characterData: true, subtree: true });
+  }
   ensureNavItems();
   updateFlag();
 });

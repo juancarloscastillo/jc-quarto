@@ -20,13 +20,19 @@
       "references/presentations/posts/*.qmd",
       "docencia/posts/*/*.qmd",
       "proyectos/posts/*/*.qmd",
+      "!proyectos/posts/fondecyt-jusmer/index.qmd",
+      "!proyectos/posts/datasoc/index.qmd",
+      "proyectos/externos/proyectos-externos.yml",
       "blog/posts/*/*.qmd",
       "!blog/posts/drafts/*.qmd",
       "references/thesis/posts/*.qmd",
       "images/albums/gallery/*"
     ],
     "proyectos/proyectos.qmd": [
-      "posts"
+      "posts/*/*.qmd",
+      "!posts/fondecyt-jusmer/index.qmd",
+      "!posts/datasoc/index.qmd",
+      "externos/proyectos-externos.yml"
     ],
     "references/presentations/index.qmd": [
       "posts/*.qmd"

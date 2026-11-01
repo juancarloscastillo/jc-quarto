@@ -1,6 +1,104 @@
 /* css styles */
 .about-link i {
-    font-size: 3em; /* Tamaño del ícono */
+    font-size: 1.6em; /* Tamaño del ícono */
+}
+
+/* íconos centrados dentro de cada cuadro */
+.quarto-about-trestles .about-entity .about-links .about-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quarto-about-trestles .about-link-text:empty {
+  display: none;
+}
+
+.quarto-about-trestles .about-link i.bi {
+  margin-right: 0;
+}
+
+/* íconos agregados a mano (ResearchGate, RC42): mismo tamaño que los bootstrap icons */
+.about-link .icono-extra {
+  height: 1.6em;
+  width: auto;
+}
+
+.about-link .icono-rg {
+  height: 1.3em;
+}
+
+@media (max-width: 991.98px) {
+  .about-link i {
+    font-size: 1.3em;
+  }
+
+  .about-link .icono-extra {
+    height: 1.3em;
+  }
+
+  .about-link .icono-rg {
+    height: 1.05em;
+  }
+
+  /* los <br> del final del texto dejan demasiado espacio en celular */
+  #hero-heading br {
+    display: none;
+  }
+
+  /* en celular la foto no queda pegada a la navbar */
+  body div.quarto-about-trestles {
+    padding-top: 2.5rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* en celular: foto, nombre, texto y al final los íconos en fila */
+  body div.quarto-about-trestles .about-entity {
+    display: contents !important;
+  }
+
+  body div.quarto-about-trestles .about-image {
+    order: 1;
+    align-self: center;
+  }
+
+  body div.quarto-about-trestles #title-block-header {
+    order: 2;
+    text-align: center;
+  }
+
+  body div.quarto-about-trestles .about-contents {
+    order: 3;
+  }
+
+  body div.quarto-about-trestles .about-entity .about-links {
+    order: 4;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+    width: auto;
+    padding-bottom: 2em;
+  }
+
+  body div.quarto-about-trestles .about-entity .about-links .about-link {
+    width: 2.6em;
+    height: 2.6em;
+    padding: 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body div.quarto-about-trestles .about-link i.bi {
+    margin-right: 0;
+  }
+
+  body div.quarto-about-trestles .about-link-text {
+    display: none;
+  }
 }
 
 
@@ -9,42 +107,34 @@ html {
 } /*Esto para que al hacer click en los links del navbar la página no "salte", sino que se deslice */
 
 .btn{
-	background-color: #bf956c;
-	border-color: #bf956c;
+	background-color: #5c7a5f;
+	border-color: #5c7a5f;
 
 } /* Color de los botones */
 
 .btn:hover{
-	background-color: #5d4732;
-	border-color: #5d4732 ;
+	background-color: #3e5541;
+	border-color: #3e5541;
 } /* Resaltado */
 
-/* Cambia el color de los enlaces en estado hover */
-a:hover {
-    color: #c38244;
-}
-
-.navbar {
-  background-color: #655e4a;
-}
+/* Colores de links y navbar: ver salvia-claro.scss y salvia-oscuro.scss */
 
 .navbar-nav .nav-link:hover {
-  color: #050505;
+  color: #f4f7f2;
   font-weight: 600;
-  background-color: #655e4a;
 }
 
 /*-- sidebar --*/
 
 
 .sidebar nav[role=doc-toc] ul>li>a.active {
-  border-left: 1px solid #948041;
+  border-left: 1px solid #4a6b4f;
   font-weight: 500;
-  color: #948041 !important;
+  color: #4a6b4f !important;
 }
 
 .sidebar nav[role=doc-toc]>ul a {
-  border-left: 1px solid #948041;
+  border-left: 1px solid #9caf88;
   padding-left: 0.6rem;
 }
 
@@ -53,16 +143,28 @@ a:hover {
   line-height: 1.1rem;
   padding-bottom: 0.2rem;
   padding-top: 0.2rem;
+}
+
+body.quarto-dark .sidebar nav[role=doc-toc]>ul li a {
   color: white;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-  border-left: 1px solid #9f7138;
-  color: #9f7138 !important;
+  border-left: 1px solid #4a6b4f;
+  color: #4a6b4f !important;
+}
+
+body.quarto-dark .sidebar nav[role=doc-toc] ul>li>a.active,
+body.quarto-dark .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  border-left-color: #a9c4a4;
+  color: #a9c4a4 !important;
 }
 
 .toc-actions a {
   font-weight: 500;
+}
+
+body.quarto-dark .toc-actions a {
   color: white;
 }
 
@@ -81,20 +183,193 @@ header.quarto-title-block {
 */
 
 
-@media (prefers-color-scheme: dark) {
-/*
-  body {
-    color: #a38d4b;
+/* Colores de listings solo en modo oscuro (clase que pone el toggle de Quarto) */
+body.quarto-dark .listing-title {
+  color: #a9c4a4;
+}
+
+body.quarto-dark .listing-description {
+  color: #ffffff !important;
+}
+
+/* Post recientes: panel translúcido sobre el fondo para mejorar contraste */
+#listing-blog .quarto-post {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: none;
+}
+
+body.quarto-dark #listing-blog .quarto-post {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+
+/*-- tarjetas de listings (grid): verde en ambos modos --*/
+
+/* un tono más claro que .bloque-verde para que se distingan sobre esas secciones */
+body .quarto-grid-item.card {
+  background-color: #3e5541;
+  border: 1px solid #adb5bd;
+  border-radius: 12px;
+  color: #f4f7f2;
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* imagen = 1/3 de la altura, texto = 2/3 */
+  overflow: hidden;
+}
+
+body .quarto-grid-item .listing-title {
+  color: #f6cfd6;
+  /* títulos largos en 4 líneas, para que las tarjetas tengan altura pareja */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+body .quarto-grid-item .listing-description,
+body .quarto-grid-item .listing-date,
+body .quarto-grid-item .listing-author {
+  color: #f4f7f2;
+}
+
+body .quarto-grid-item .listing-categories .listing-category {
+  border-color: rgba(244, 247, 242, 0.5);
+  color: #f4f7f2;
+}
+
+.quarto-grid-item .card-img-top {
+  height: auto !important;
+  margin-bottom: 0;
+  min-height: 0;
+  overflow: hidden; /* recorta el zoom */
+  position: relative;
+}
+
+/* categorías en una fila sobre el listing: las tarjetas usan todo el ancho, como en docencia */
+@media (min-width: 992px) {
+  #quarto-content:has(.quarto-listing-category) > main {
+    grid-column: page-start / page-end;
+    grid-row: 2;
   }
-*/
-  .listing-title {
-    color: #82712c;  /* example: make titles yellowish in dark mode */
+
+  #quarto-content:has(.quarto-listing-category) > #quarto-margin-sidebar {
+    grid-column: page-start / page-end;
+    grid-row: 1;
+    max-height: none;
+    padding-top: 1rem;
+    position: static;
+  }
+
+  #quarto-margin-sidebar .quarto-listing-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
   }
 }
 
-.listing-description {
-    color: #ffffff !important;
+/* zoom de la imagen al pasar el mouse */
+.quarto-grid-item .card-img-top img {
+  border-radius: 0;
+  height: 100% !important;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  transition: transform 0.35s ease;
+  width: 100%;
+}
+
+.quarto-grid-item:hover .card-img-top img {
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quarto-grid-item .card-img-top img {
+    transition: none;
   }
+
+  .quarto-grid-item:hover .card-img-top img {
+    transform: none;
+  }
+}
+
+
+/*-- bloques verdes intercalados en el inicio --*/
+
+.bloque-verde {
+  background-color: #2f3d32;
+  color: #f4f7f2;
+}
+
+/* listas simples (publicaciones, posts) sobre el verde */
+body .bloque-verde .quarto-listing-container-default .listing-title {
+  color: #f6cfd6;
+}
+
+/* el texto del link es blanco en ambos modos; post recientes tiene panel propio */
+body .bloque-verde .quarto-listing-container-default:not(#listing-blog) .listing-title a {
+  color: #ffffff;
+}
+
+.bloque-verde .quarto-listing-container-default .listing-date,
+.bloque-verde .quarto-listing-container-default .listing-author,
+.bloque-verde .quarto-listing-container-default .listing-reading-time {
+  color: #e3ebdf;
+}
+
+/* post recientes en modo claro: panel blanco, texto oscuro */
+body.quarto-light .bloque-verde #listing-blog .quarto-post {
+  color: #1c2420;
+}
+
+body.quarto-light .bloque-verde #listing-blog .listing-title {
+  color: #3e5541;
+}
+
+body.quarto-light .bloque-verde #listing-blog .listing-date,
+body.quarto-light .bloque-verde #listing-blog .listing-author,
+body.quarto-light .bloque-verde #listing-blog .listing-reading-time {
+  color: #4f5f53;
+}
+
+.bloque-verde .btn {
+  background-color: #f6cfd6;
+  border-color: #f6cfd6;
+  color: #1c2420;
+}
+
+.bloque-verde .btn:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #1c2420;
+}
+
+
+/*-- links de la descripción (hero) --*/
+
+#hero-heading a,
+#hero-heading a:hover {
+  text-decoration: none;
+}
+
+#hero-heading a,
+#hero-heading .hover-image-wrapper {
+  font-weight: 500;
+  color: #f6cfd6;
+}
+
+#hero-heading a:hover {
+  color: #ffffff;
+}
+
+body.quarto-light .hover-image-wrapper {
+  color: #4a6b4f;
+}
+
+body.quarto-light #hero-heading .hover-image-wrapper {
+  color: #f6cfd6;
+}
 
 
 /*-- parallax --*/
@@ -110,7 +385,6 @@ header.quarto-title-block {
 }
 
 .parallax-image-container {
-  background-image: url(images/background-about2.png);
   background-attachment: fixed;
   opacity: 1;
   background-position: center;
@@ -125,7 +399,6 @@ header.quarto-title-block {
 }
 
 .parallax-image-container2 {
-  background-image: url(images/trianglify-dark.png);
   background-attachment: fixed;
   opacity: 1;
   background-position: center;
@@ -168,7 +441,23 @@ header.quarto-title-block {
 	max-width: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-top: 5rem !important;
+  margin-top: 0 !important;
+  padding-top: 5rem;
+  /* Fondo verde a todo el ancho de la pantalla */
+  background-color: #2f3d32;
+  box-shadow: 0 0 0 100vmax #2f3d32;
+  clip-path: inset(0 -100vmax);
+  color: #f4f7f2;
+}
+
+.quarto-about-trestles .title,
+.quarto-about-trestles .about-entity .about-links .about-link {
+  color: #f4f7f2;
+  border-color: rgba(244, 247, 242, 0.35);
+}
+
+.quarto-about-trestles .about-entity .about-links .about-link:hover {
+  color: #f6cfd6;
 }
 
 
@@ -219,7 +508,7 @@ header.quarto-title-block {
 
 .hover-image-wrapper {
   position: relative;
-  color: #ccad00;
+  color: #a9c4a4;
   font-weight: bold;
   cursor: pointer;
 }

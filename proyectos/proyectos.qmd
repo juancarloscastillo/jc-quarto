@@ -2,13 +2,18 @@
 title: "Proyectos"
 page-layout: full
 listing:
-  contents: posts
-  sort: "date desc"
+  contents:
+    - posts/*/*.qmd
+    - "!posts/fondecyt-jusmer/index.qmd"
+    - "!posts/datasoc/index.qmd"
+    - externos/proyectos-externos.yml
+  sort: [order, "date desc"]
   type: grid
   categories: true
   fields: [image, title, description, date, categories]
   image-align: left
   filter-ui: [title, date]
   page-size: 1000
+  max-description-length: 120
 title-block-banner: true
 ---

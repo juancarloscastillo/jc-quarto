@@ -1,4 +1,5 @@
 ---
+order: 5
 title: COES
 subtitle: Centro de Estudios de Conflicto y cohesión Social
 description: El Centro de Estudios de Conflicto y Cohesión Social (COES) es financiado por el programa FONDAP de ANID y  desarrolla investigación colaborativa en temas relacionados al conflicto social y la cohesión en Chile, por medio de un equipo multidisciplinario proveniente de las ciencias sociales y humanidades.

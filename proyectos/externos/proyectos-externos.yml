@@ -1,0 +1,15 @@
+# Proyectos cuya tarjeta enlaza a un sitio externo en lugar de su post
+- path: https://jus-mer.com/
+  order: 1
+  title: "Justicia de Mercado y Merecimiento del Bienestar Social"
+  description: "El presente proyecto de investigación se enfoca en analizar las preferencias por justicia de mercado en Chile y su relación con criterios de merecimiento, con un enfoque comparativo internacional y a lo largo del tiempo."
+  categories: [Fondecyt]
+  date: "2025-03-31"
+  image: /proyectos/posts/fondecyt-jusmer/featured.png
+
+- path: https://datasoc.cl/
+  order: 2
+  title: "DataSoc"
+  description: "DataSOC es un proyecto que busca generar un Centro de Datos Sociales de la Facultad de Ciencias Sociales de la Universidad de Chile. Su objetivo es posicionar a FACSO como un referente en el análisis, procesamiento, gestión y transferencia de datos sociales, en un marco de ciencia abierta, guiado por altos estándares conceptuales, metodológicos y éticos."
+  date: "2026-03-22"
+  image: /proyectos/posts/datasoc/featured.png
