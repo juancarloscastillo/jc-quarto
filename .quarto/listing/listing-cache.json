@@ -26,7 +26,9 @@
       "blog/posts/*/*.qmd",
       "!blog/posts/drafts/*.qmd",
       "references/thesis/posts/*.qmd",
-      "images/albums/gallery/*"
+      "images/albums/gallery/*",
+      "herramientas/externos/herramientas-externas.yml",
+      "data/externos/data-externa.yml"
     ],
     "proyectos/proyectos.qmd": [
       "posts/*/*.qmd",
@@ -42,6 +44,12 @@
     ],
     "references/thesis/index.qmd": [
       "posts/*.qmd"
+    ],
+    "herramientas/herramientas.qmd": [
+      "externos/herramientas-externas.yml"
+    ],
+    "data/data.qmd": [
+      "externos/data-externa.yml"
     ]
   }
 }

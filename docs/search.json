@@ -2231,5 +2231,26 @@
     "title": "[En Desarrollo] Preferences for Market Justice in Education: The Role of Meritocratic Beliefs in the Chilean Context",
     "section": "",
     "text": "How to cite this work\n\n\n\nUrzua, Tomas (2026). [En Desarrollo] Preferences for Market Justice in Education: The Role of Meritocratic Beliefs in the Chilean Context. Magister En Ciencias Sociales - Departamento de Sociología, Facultad de Ciencias Sociales, Universidad de Chile. Santiago de Chile"
+  },
+  {
+    "objectID": "herramientas/herramientas.html",
+    "href": "herramientas/herramientas.html",
+    "title": "Herramientas",
+    "section": "",
+    "text": "CriticMarkup VSC-plus\n\n\n\nExtensión VS Code\n\n\n\nExtensión de VS Code para hacer control de cambios y comentarios en archivos Quarto y Markdown, con aceptar/rechazar e importación desde Hypothesis.\n\n\n\n\n\n\n\n\n\n\n\n\nZotero-Slack Alert\n\n\n\nAutomatización\n\nZotero\n\n\n\nPlantilla de GitHub Actions que avisa en un canal de Slack cuando se agregan nuevas referencias a una biblioteca de Zotero.\n\n\n\n\n\n\n\n\n\n\n\n\nDe Zotero a un sitio Quarto\n\n\n\nAutomatización\n\nZotero\n\n\n\nCómo generar automáticamente listados de publicaciones en un sitio web Quarto a partir de una biblioteca de Zotero.\n\n\n\n\n\n\n\n\n\n\n\n\nGit Pull Status\n\n\n\nExtensión VS Code\n\n\n\nExtensión de VS Code que pone la barra de estado en rojo cuando hay commits pendientes de bajar, y permite hacer pull con un clic.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data/data.html",
+    "href": "data/data.html",
+    "title": "Data",
+    "section": "",
+    "text": "Panel\n\nDatos abiertos\n\n\n\nEncuesta panel sobre educación y meritocracia en estudiantes de las regiones Metropolitana y de Valparaíso. La primera ola incluyó también a docentes y apoderados.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExperimento\n\nDatos abiertos\n\n\n\nEncuesta a población adulta en Chile sobre meritocracia, desigualdad y cohesión social, con un experimento factorial de viñetas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPanel\n\nExperimento\n\nEn preparación\n\n\n\nEncuesta panel en línea de tres olas a población adulta sobre justicia de mercado y merecimiento del bienestar social, con un experimento conjoint distributivo.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPanel\n\nDocumentación pendiente\n\n\n\nEncuesta panel de tres olas sobre creencias en la meritocracia y preferencias redistributivas en Chile, del proyecto FONDECYT Regular 2016-2020.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPanel\n\nDocumentación pendiente\n\n\n\nEncuesta cara a cara sobre desigualdad, justicia y participación, con muestra nacional en 2013 y una segunda ola en Santiago en 2014 (FONDECYT Iniciación 11121203).\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data/data.html#acceso-a-los-datos",
+    "href": "data/data.html#acceso-a-los-datos",
+    "title": "Data",
+    "section": "Acceso a los datos",
+    "text": "Acceso a los datos\n\n\n\n\nEstudio\nFechas\nCasos\nFormatos\nManual\nDatos\n\n\n\n\nEDUMER\nOla 1: oct. 2023 – may. 2024Ola 2: ago. – nov. 2024\n902 estudiantes (ola 1), 674 (ola 2)\n.dta, .RData, .sav\nManual\nZenodo\n\n\nEDUMERCO\nDic. 2024 – ene. 2025\n3.484 adultos\n.RData\nManual · DOI\nZenodo\n\n\nJUSMER\nOla 1: nov. 2026Ola 2: mar. 2027Ola 3: ago. 2027\n–\n–\nManual\nEn preparación\n\n\nEconomía Moral\n3 olas, fase final en oct. 2019\nPor documentar\nPor documentar\nPendiente\nPendiente\n\n\nJusticia Social y Participación Ciudadana\nOla 1: 2013Ola 2: 2014 (Santiago)\nAlrededor de 1.200 (ola 1), 430 (ola 2)\nPor documentar\nPendiente\nPendiente\n\n\n\n\nLas bases de EDUMER y EDUMERCO se distribuyen con licencia CC BY 4.0."
   }
 ]

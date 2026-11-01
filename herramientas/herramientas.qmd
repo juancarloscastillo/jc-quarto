@@ -1,0 +1,18 @@
+---
+title: "Herramientas"
+description: "Software y automatizaciones que uso en mi trabajo académico."
+page-layout: full
+body-classes: pagina-herramientas
+listing:
+  contents:
+    - externos/herramientas-externas.yml
+  sort: [order, "date desc"]
+  type: grid
+  categories: true
+  fields: [image, title, description, categories]
+  image-align: left
+  filter-ui: [title]
+  page-size: 1000
+  max-description-length: 160
+title-block-banner: true
+---

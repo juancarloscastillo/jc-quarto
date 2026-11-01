@@ -1,0 +1,37 @@
+---
+title: "Data"
+description: "Encuestas generadas en mis proyectos de investigación, con su documentación metodológica."
+page-layout: full
+body-classes: pagina-data
+toc: false
+listing:
+  id: data
+  contents:
+    - externos/data-externa.yml
+  sort: [order, "date desc"]
+  type: grid
+  categories: true
+  fields: [image, title, description, categories]
+  image-align: left
+  filter-ui: [title]
+  page-size: 1000
+  max-description-length: 180
+title-block-banner: true
+---
+
+:::{#data}
+:::
+
+## Acceso a los datos {.mt-5}
+
+::: {.table-responsive}
+| Estudio | Fechas | Casos | Formatos | Manual | Datos |
+|---------|--------|-------|----------|--------|-------|
+| JUSMER | Ola 1: nov. 2026<br>Ola 2: mar. 2027<br>Ola 3: ago. 2027 | -- | -- | [Manual](https://jus-mer.github.io/survey-jusmer/documentation/docs/index.html) | En preparación |
+| EDUMERCO | Dic. 2024 – ene. 2025 | 3.484 adultos | `.RData` | [Manual](https://educacion-meritocracia.github.io/encuesta-edumerco/documentacion/docs/index.html) · [DOI](https://doi.org/10.5281/zenodo.23397511) | [Zenodo](https://doi.org/10.5281/zenodo.22939453) |
+| EDUMER | Ola 1: oct. 2023 – may. 2024<br>Ola 2: ago. – nov. 2024 | 902 estudiantes (ola 1), 674 (ola 2) | `.dta`, `.RData`, `.sav` | [Manual](https://educacion-meritocracia.github.io/encuesta-edumer/) | [Zenodo](https://doi.org/10.5281/zenodo.22865211) |
+| Economía Moral | 3 olas, fase final en oct. 2019 | Por documentar | Por documentar | Pendiente | Pendiente |
+| Justicia Social y Participación Ciudadana | Ola 1: 2013<br>Ola 2: 2014 (Santiago) | Alrededor de 1.200 (ola 1), 430 (ola 2) | Por documentar | Pendiente | Pendiente |
+:::
+
+Las bases de EDUMER y EDUMERCO se distribuyen con licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

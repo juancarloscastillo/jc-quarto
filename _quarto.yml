@@ -41,12 +41,16 @@ website:
         text: Publicaciones
       - file: references/presentations/index.qmd
         text: Presentaciones
+      - file: data/data.qmd
+        text: Data
       - href: index.qmd#docenciah1      
         text: Docencia
       - href: index.qmd#tesish1
         text: Tesis  
       - href: index.qmd#blogh1
         text: Blog
+      - href: index.qmd#herramientash1
+        text: Herramientas
       - href: index.qmd#galeriah1
         text: Galería
       - links.qmd

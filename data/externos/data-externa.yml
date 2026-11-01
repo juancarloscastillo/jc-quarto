@@ -1,0 +1,37 @@
+# Tarjetas de la sección Data. Cada una enlaza al manual metodológico de la encuesta
+- path: https://educacion-meritocracia.github.io/encuesta-edumer/
+  order: 3
+  title: "EDUMER"
+  description: "Encuesta panel sobre educación y meritocracia en estudiantes de las regiones Metropolitana y de Valparaíso. La primera ola incluyó también a docentes y apoderados."
+  categories: [Panel, Datos abiertos]
+  date: "2024-11-22"
+  image: /proyectos/posts/fondecyt-edumer/featured.png
+
+- path: https://educacion-meritocracia.github.io/encuesta-edumerco/documentacion/docs/index.html
+  order: 2
+  title: "EDUMERCO"
+  description: "Encuesta a población adulta en Chile sobre meritocracia, desigualdad y cohesión social, con un experimento factorial de viñetas."
+  categories: [Experimento, Datos abiertos]
+  date: "2025-01-28"
+  image: /data/images/edumerco.png
+
+- path: https://jus-mer.github.io/survey-jusmer/documentation/docs/index.html
+  order: 1
+  title: "Encuesta Panel JUSMER"
+  description: "Encuesta panel en línea de tres olas a población adulta sobre justicia de mercado y merecimiento del bienestar social, con un experimento conjoint distributivo."
+  categories: [Panel, Experimento, En preparación]
+  image: /proyectos/posts/fondecyt-jusmer/featured.png
+
+- path: /proyectos/posts/fondecyt-economiamoral/index.html
+  order: 4
+  title: "Economía Moral"
+  description: "Encuesta panel de tres olas sobre creencias en la meritocracia y preferencias redistributivas en Chile, del proyecto FONDECYT Regular 2016-2020."
+  categories: [Panel, Documentación pendiente]
+  image: /proyectos/posts/fondecyt-economiamoral/featured.jpg
+
+- path: /proyectos/posts/fondecyt-iniciacion/index.html
+  order: 5
+  title: "Justicia Social y Participación Ciudadana"
+  description: "Encuesta cara a cara sobre desigualdad, justicia y participación, con muestra nacional en 2013 y una segunda ola en Santiago en 2014 (FONDECYT Iniciación 11121203)."
+  categories: [Panel, Documentación pendiente]
+  image: /proyectos/posts/fondecyt-iniciacion/featured.jpg

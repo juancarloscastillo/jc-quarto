@@ -244,6 +244,62 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-herramientas .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-order","listing-title","listing-description","listing-categories","listing-date","listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-herramientas'] = new List('listing-herramientas', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-data .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-order","listing-title","listing-description","listing-categories","listing-date","listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-data'] = new List('listing-data', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-listing-gallery .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -656,6 +712,10 @@ window.Quarto = {
 <span class="menu-text">Presentaciones</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./data/data.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./index.html#docenciah1"> 
 <span class="menu-text">Docencia</span></a>
   </li>  
@@ -666,6 +726,10 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="./index.html#blogh1"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#herramientash1"> 
+<span class="menu-text">Herramientas</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#galeriah1"> 
@@ -1203,6 +1267,146 @@ Dec 22, 2025
 </div>
 <div class="button">
 <p><a href="./blog/blog.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Ver más</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-text">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
+<div id="herramientash1">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Herramientas
+</p>
+<div id="listing-herramientas" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="RXh0ZW5zaSVDMyVCM24lMjBWUyUyMENvZGU=" data-listing-date-sort="1792033200000">
+<a href="https://marketplace.visualstudio.com/items?itemName=juancastillov.criticmarkup-vsc-plus" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./herramientas/images/criticmarkup.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+CriticMarkup VSC-plus
+</h5>
+<div class="card-text listing-description delink">
+<p>Extensión de VS Code para hacer control de cambios y comentarios en archivos Quarto y Markdown, con aceptar/rechazar e…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="QXV0b21hdGl6YWNpJUMzJUIzbiUyQ1pvdGVybw==" data-listing-date-sort="1790564400000">
+<a href="./blog/posts/zotero-slack-alert/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./blog/posts/zotero-slack-alert/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Zotero-Slack Alert
+</h5>
+<div class="card-text listing-description delink">
+<p>Plantilla de GitHub Actions que avisa en un canal de Slack cuando se agregan nuevas referencias a una biblioteca de…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="QXV0b21hdGl6YWNpJUMzJUIzbiUyQ1pvdGVybw==" data-listing-date-sort="1773630000000">
+<a href="./blog/posts/zotero-quarto-website/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./blog/posts/zotero-quarto-website/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+De Zotero a un sitio Quarto
+</h5>
+<div class="card-text listing-description delink">
+<p>Cómo generar automáticamente listados de publicaciones en un sitio web Quarto a partir de una biblioteca de Zotero.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div class="button">
+<p><a href="./herramientas/herramientas.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Ver más</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-text bloque-verde">
+<div class="section-container">
+<div class="section-block">
+<div style="text-align: left;">
+<div id="datah1">
+
+</div>
+<p align="left" style="font-size:36px; font-weight:bold;">
+Data
+</p>
+<div id="listing-data" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UGFuZWwlMkNFeHBlcmltZW50byUyQ0VuJTIwcHJlcGFyYWNpJUMzJUIzbg==">
+<a href="https://jus-mer.github.io/survey-jusmer/documentation/docs/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./proyectos/posts/fondecyt-jusmer/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Encuesta Panel JUSMER
+</h5>
+<div class="card-text listing-description delink">
+<p>Encuesta panel en línea de tres olas a población adulta sobre justicia de mercado y merecimiento del bienestar social…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="RXhwZXJpbWVudG8lMkNEYXRvcyUyMGFiaWVydG9z" data-listing-date-sort="1738033200000">
+<a href="https://educacion-meritocracia.github.io/encuesta-edumerco/documentacion/docs/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./data/images/edumerco.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+EDUMERCO
+</h5>
+<div class="card-text listing-description delink">
+<p>Encuesta a población adulta en Chile sobre meritocracia, desigualdad y cohesión social, con un experimento factorial…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UGFuZWwlMkNEYXRvcyUyMGFiaWVydG9z" data-listing-date-sort="1732244400000">
+<a href="https://educacion-meritocracia.github.io/encuesta-edumer/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./proyectos/posts/fondecyt-edumer/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+EDUMER
+</h5>
+<div class="card-text listing-description delink">
+<p>Encuesta panel sobre educación y meritocracia en estudiantes de las regiones Metropolitana y de Valparaíso. La primera…</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div class="button">
+<p><a href="./data/data.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="margin-top: 0em;">Ver más</a></p>
 </div>
 </div>
 </div>

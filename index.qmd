@@ -102,6 +102,36 @@ listing:
   feed: false
   page-size: 500
   
+- id: herramientas
+  contents:
+    - herramientas/externos/herramientas-externas.yml
+  sort: [order, "date desc"]
+  type: grid
+  grid-columns: 3
+  max-items: 3
+  max-description-length: 120
+  image-height: 150px
+  fields: [image, title, description]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false
+
+- id: data
+  contents:
+    - data/externos/data-externa.yml
+  sort: [order, "date desc"]
+  type: grid
+  grid-columns: 3
+  max-items: 3
+  max-description-length: 120
+  image-height: 150px
+  fields: [image, title, description]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false
+
 - id: listing-gallery
   template: gallery.ejs
   contents:
@@ -291,6 +321,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ::: {.button}
 [Ver más](blog/blog.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+:::
+:::
+
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
+::: {#herramientash1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Herramientas</p>
+
+:::{#herramientas}
+:::
+
+::: {.button}
+[Ver más](herramientas/herramientas.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+:::
+:::
+
+::: {.section-text .bloque-verde}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: left;"}
+
+::: {#datah1}
+:::
+
+<p align="left" style="font-size:36px; font-weight:bold;">Data</p>
+
+:::{#data}
+:::
+
+::: {.button}
+[Ver más](data/data.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
 :::
 
 :::

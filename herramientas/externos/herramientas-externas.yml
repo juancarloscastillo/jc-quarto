@@ -1,0 +1,32 @@
+# Tarjetas de la sección Herramientas. Cada una enlaza a un sitio externo o a un post del blog
+- path: https://marketplace.visualstudio.com/items?itemName=juancastillov.criticmarkup-vsc-plus
+  order: 1
+  title: "CriticMarkup VSC-plus"
+  description: "Extensión de VS Code para hacer control de cambios y comentarios en archivos Quarto y Markdown, con aceptar/rechazar e importación desde Hypothesis."
+  categories: [Extensión VS Code]
+  date: "2026-10-15"
+  image: /herramientas/images/criticmarkup.png
+
+- path: /blog/posts/zotero-slack-alert/index.html
+  order: 2
+  title: "Zotero-Slack Alert"
+  description: "Plantilla de GitHub Actions que avisa en un canal de Slack cuando se agregan nuevas referencias a una biblioteca de Zotero."
+  categories: [Automatización, Zotero]
+  date: "2026-09-28"
+  image: /blog/posts/zotero-slack-alert/featured.png
+
+- path: /blog/posts/zotero-quarto-website/index.html
+  order: 3
+  title: "De Zotero a un sitio Quarto"
+  description: "Cómo generar automáticamente listados de publicaciones en un sitio web Quarto a partir de una biblioteca de Zotero."
+  categories: [Automatización, Zotero]
+  date: "2026-03-16"
+  image: /blog/posts/zotero-quarto-website/featured.png
+
+- path: https://marketplace.visualstudio.com/items?itemName=juancastillov.git-pull-status
+  order: 4
+  title: "Git Pull Status"
+  description: "Extensión de VS Code que pone la barra de estado en rojo cuando hay commits pendientes de bajar, y permite hacer pull con un clic."
+  categories: [Extensión VS Code]
+  date: "2026-09-01"
+  image: /herramientas/images/git-pull-status.png

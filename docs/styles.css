@@ -249,6 +249,11 @@ body .quarto-grid-item .listing-categories .listing-category {
 
 /* categorías en una fila sobre el listing: las tarjetas usan todo el ancho, como en docencia */
 @media (min-width: 992px) {
+  /* evita que la fila de categorías se estire en páginas con pocas tarjetas */
+  #quarto-content:has(.quarto-listing-category) {
+    grid-template-rows: auto 1fr;
+  }
+
   #quarto-content:has(.quarto-listing-category) > main {
     grid-column: page-start / page-end;
     grid-row: 2;
@@ -282,6 +287,22 @@ body .quarto-grid-item .listing-categories .listing-category {
 
 .quarto-grid-item:hover .card-img-top img {
   transform: scale(1.08);
+}
+
+/* herramientas y data: los íconos y logos se muestran completos, sin recorte */
+#listing-herramientas .card-img-top,
+#listing-data .card-img-top,
+body.pagina-herramientas .quarto-grid-item .card-img-top,
+body.pagina-data .quarto-grid-item .card-img-top {
+  background-color: #ffffff;
+}
+
+#listing-herramientas .card-img-top img,
+#listing-data .card-img-top img,
+body.pagina-herramientas .quarto-grid-item .card-img-top img,
+body.pagina-data .quarto-grid-item .card-img-top img {
+  object-fit: contain;
+  padding: 0.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
