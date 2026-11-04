@@ -1,0 +1,19 @@
+---
+title: Clase Ética y Ciencia Abierta
+categories: [academic]
+# Date published
+date: "2026-11-04"  #year-
+# date-modified:  
+draft: false # Is this an unpublished draft?
+about:
+  template: marquee
+  image: "featured.png"  
+---
+
+Presentación como profesor invitado en curso Ética de la investigación en Ciencias Sociales - Postgrado FACSO 2026
+
+
+
+
+
+<iframe src="/documents/talleres-cursos/clase-etica/clase-etica2026.html" width="100%" height="380px" frameborder="0"></iframe>
