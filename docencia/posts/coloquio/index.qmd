@@ -52,6 +52,15 @@ La evaluación del seminario se basa en el desempeño en los tres roles principa
 -   Informe de revisión sistemática (30%): Elaboración de un informe escrito que sintetice el análisis crítico de una investigación presentada en el seminario, integrando los hallazgos principales, la evaluación metodológica y las recomendaciones.
 -   Participación activa en discusiones (10%): contribuciones reflexivas en las sesiones de discusión abierta, preguntas pertinentes y un diálogo constructivo entre los participantes. Para esta parte de la evaluación se considerará la asistencia y también un párrafo de autoevaluación sobre la contribución a la discusión y al aprendizaje colectivo.
 
+## **Pauta del informe de revisión sistemática** (1.500-2.500 palabras+referencias):
+
+1.  **Síntesis**: pregunta, argumento/hipótesis, datos y método, principales resultados.
+2.  **Evaluación general**: aporte del trabajo, principales fortalezas y debilidades.
+3.  **Comentarios principales**: problemas sustantivos (teoría, diseño, medición, análisis, interpretación), cada uno con una sugerencia concreta.
+4.  **Comentarios menores**: redacción, tablas y gráficos, referencias, presentación.
+5.  **Integración de la discusión**: comentarios del/la comentarista y de la audiencia, respuestas del/la autor/a y posición propia frente a ellos.
+6.  **Recomendaciones**: próximos pasos priorizados para el/la autor/a.
+
 # Buenas prácticas
 
 Se encarece la escucha activa y respetuosa, esto es:
@@ -109,11 +118,13 @@ Para quienes presentan, también se sugiere:
 +-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | 29-10                         | Tomás Urzúa                    | Preferences for market justice in education: The role of meritocratic beliefs in the Chilean context                                  | Ismael Aguayo        |
 +-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
-| 05-11                         | Cristóbal Mejías               | Justicia de Mercado en Salud: Un estudio de 30 años en Chile                                                                          |                      |
+| 05-11                         |                                | PaRo                                                                                                                                  |                      |
 +-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | 12-11                         | (suspendido)                   |                                                                                                                                       |                      |
 +-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
-| 19-11                         | Victoria Arias                 | Movilidad social intrageneracional en Chile: Un análisis de los últimos 20 años                                                       |                      |
+| 19-11                         | Cristóbal Mejías               | Justicia de Mercado en Salud: Un estudio de 30 años en Chile                                                                          |                      |
++-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+|                               | Victoria Arias                 | Movilidad social intrageneracional en Chile: Un análisis de los últimos 20 años                                                       |                      |
 +-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | 26-11                         | Ismael Aguayo                  | Resiliencia de la capitalización individual: Mapeando redes discursivas de justicia social en el debate previsional chileno           |                      |
 +-------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+----------------------+
